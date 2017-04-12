@@ -1,0 +1,18 @@
+<form id="updateUser" name="Update Profile">
+	<description>Use this service to update user profile</description>
+	<action>/rest/bean/atg/userprofiling/ProfileFormHandler/updateProfile
+	</action>
+	<params>
+		<param type="text" name="atg-rest-depth" required="true"  class="reqBody" id="atg-rest-depth">6</param>
+		<param type="text" name="atg-rest-input" required="true"  class="reqBody" id="atg-rest-input">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true">json:json,xml:xml</param>
+		<param type="text" name="FirstName" id="value.firstName">Sandeep</param>
+		<param type="text" name="LastName" id="value.lastName">Nayak</param>
+		<param type="text" name="PhoneNumber" id="value.phoneNumber">2342342342</param>
+		<param type="text" name="MobileNumber" id="value.mobileNumber">1231231233</param>
+		<param type="text" name="EmailOptIn" id="emailOptIn">true</param>
+		<param type="text" name="Email" required="true"  id="value.email">archit_goel@infosys.com</param>
+		<param type="text" name="ClientID" required="true"  id="clientID" class="reqHead" >client123</param>
+		<param type="text" name="Token" required="true"  id="token" class="reqHead" >client123</param>
+	</params>
+</form>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE template PUBLIC "-//Art Technology Group, Inc.//DTD PMDT 1.0//EN" "http://www.atg.com/dtds/pmdt/pmdt_1.0.dtd">
+<template item-type="Item Discount" 
+                    author="Patrick Mc Erlean" 
+                    last-modified-by="Keith McCracken" 
+                    creation-date="02/10/2010">
+
+  <ui-description display-name="HEI/LEI Item Discount">
+    <screen-segment display-name-resource="template.common.segmentOfferTitle">
+      <line>
+        <label id="numberOfItemsToDiscountLabel" display-name-resource="template.common.numItemsToDiscountLabel" container-width="120" container-h-align="right"/>
+        <textInput id="numberOfItemsToDiscount_textInput" disable-when-true="unlimited_checkbox" restrict="0-9" validator="/atg/remote/promotion/template/validators/NonZeroDecimalValidator"/> 
+        <checkBox id="unlimited_checkbox" placeholder-value-checked="-1" required="true"/>
+    	  <label id="unlimited_label"  display-name-resource="template.common.unlimitedLabel" />
+      </line>
+      <line>
+        <label id="ApplyDiscountToLabel" display-name-resource="template.common.applyDiscountToLabel" container-width="120" container-h-align="right"/>
+        <radioButtonGroup id="applyDiscountToRBG" placeholder-name="sort_order" id-of-selected-button="lowestPricedItemFirstRB">
+          <radioButton id="lowestPricedItemFirstRB" display-name-resource="template.common.lowestPricedItemFirstRadioButton"  placeholder-value="ascending"/>
+          <radioButton id="highestPricedItemFirstRB" display-name-resource="template.common.highestPricedItemFirstRadioButton"  placeholder-value="descending"/>
+        </radioButtonGroup>
+      </line> 
+      <line>
+        <label id="PSC_label" display-name-resource="template.common.itemsToDiscountLabel" container-width="120" container-h-align="right"/>
+        <includesProductSetCriteria id="PSC" model-path="/atg/remote/promotion/expreditor/psc/PSCExpressionModel"/>
+      </line>
+      <line>
+        <label id="discount_type_label" display-name-resource="template.common.discountTypeLabel" container-width="120" container-h-align="right"/>
+        <comboBox id="discount_type_combobox">
+		      <content-source path="/atg/remote/promotion/template/contentSource/DiscountList"/>
+		    </comboBox>  
+        <label id="discount_type_info_label" display-name-resource="template.common.discountTypeInfoLabel"  styleName="infoText"/>
+      </line>
+      <line>
+        <label id="discount_label" display-name-resource="template.common.discountLabel"  disable-when-true="discount_type_combobox" container-width="120" container-h-align="right"/>
+        <textInput id="discount_textInput" disable-when-true="discount_type_combobox" restrict="0-9\." validator="/atg/remote/promotion/template/validators/NumberValidator"/>
+        <label id="discount_example_label" display-name-resource="template.common.discountInfoLabel"  styleName="infoText"/>
+      </line> 
+      <line>
+        <spacer id="sp1" height="15"/>
+      </line>       
+      <line>
+        <label id="items_to_exclude_label" display-name-resource="template.common.itemsToExcludePSCTitle" styleName="subTitleText"/>
+      </line>
+	    <line>
+		    <horizontalRule id="exclude_hr" percentWidth="100"/>
+	    </line>   
+      <line>
+        <spacer id="sp2" height="5"/>
+      </line>
+      <line>
+        <label id="exPSCInfo" display-name-resource="template.ea.exOfferPSCInfo" />
+      </line>       
+      <line>
+        <label id="offer_items_to_exclude_label" display-name-resource="template.common.itemsToExcludePSCLabel" container-width="120" container-h-align="right"/>        
+        <excludesProductSetCriteria id="exPSC" required="false" model-path="/atg/remote/promotion/expreditor/psc/PSCExpressionModel"/>
+      </line>
+    </screen-segment>
+
+    <multi-element-translators>
+      <multi-element-translator id="unlimited_discount_translator" translator-path="/atg/remote/promotion/template/translators/UnlimitedDiscountTranslator">
+        <placeholder-info placeholder-name="no_of_items_to_discount" translator-output-name="itemNumber"/>  
+        <element-info element-id="numberOfItemsToDiscount_textInput" translator-input-name="itemNumber"/>
+        <element-info element-id="unlimited_checkbox" translator-input-name="unlimited"/>
+      </multi-element-translator> 
+            
+      <multi-element-translator id="PSC_Translator" translator-path="/atg/remote/promotion/expreditor/psc/PSCExpressionTranslator">
+        <placeholder-info placeholder-name="PSC_value" translator-output-name="criteriaPMDL"/>  
+        <element-info element-id="PSC" translator-input-name="includesPSC"/>
+        <element-info element-id="exPSC" translator-input-name="excludesPSC"/>
+      </multi-element-translator>      
+      
+      <multi-element-translator id="discount_translator" translator-path="/atg/remote/promotion/template/translators/DiscountTranslator">
+        <placeholder-info placeholder-name="discount_value" translator-output-name="adjuster"/>  
+        <placeholder-info placeholder-name="discount_type_value" translator-output-name="discount-type"/> 
+        <element-info element-id="discount_type_combobox" translator-input-name="discountType"/>
+        <element-info element-id="discount_textInput" translator-input-name="adjuster"/>
+      </multi-element-translator>    
+    </multi-element-translators>
+  </ui-description>
+
+  <item-properties>
+    <property name="pmdlRule">
+      <![CDATA[
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <!DOCTYPE pricing-model  SYSTEM "dynamosystemresource:/atg/dtds/pmdl/pmdl_1.0.dtd">
+        <pricing-model>
+          <qualifier/>
+          <offer>
+            <discount-structure calculator-type="standard" 
+                                  discount-type="${discount_type_value}" 
+                                  adjuster="${discount_value}">
+              <target>
+                <iterator name="up-to-and-including" number="${no_of_items_to_discount}" sort-by="priceInfo.currentPrice" sort-order="${sort_order}">
+                  <collection-name>items</collection-name>
+                  <element-name>item</element-name>
+                  <element-quantity-property>quantity</element-quantity-property>
+                  ${PSC_value}
+                </iterator>              
+              </target>
+            </discount-structure>                                
+          </offer>
+        </pricing-model>
+      ]]>
+    </property>
+  </item-properties> 
+</template>

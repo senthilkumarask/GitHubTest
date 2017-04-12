@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBSL-5941-Aastha">
+  <ReviewIssue id="IBN9HD61">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-07-03 :: 12:20:08:233 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-07-03 :: 12:24:15:330 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Customer coupon redemption issue</Summary>
+    <Description>Test Data to check not present. No review comments for the code.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

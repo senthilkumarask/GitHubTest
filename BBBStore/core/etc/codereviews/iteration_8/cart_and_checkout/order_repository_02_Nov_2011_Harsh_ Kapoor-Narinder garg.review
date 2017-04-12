@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="order_repository_02_Nov_2011_Harsh_ Kapoor">
+  <ReviewIssue id="GUJG6A70">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 13:11:59:964 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:00:54:371 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder garg</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="3">config/atg/commerce/order/orderrepository.xml</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>xml-combine attribute</Summary>
+    <Description>Please put xml-combine in all item-descriptors that we are extending, with append value.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUJG8UTM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 13:14:00:010 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:00:31:272 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder garg</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="12">config/atg/commerce/order/orderrepository.xml</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>levelor attributes are not yet added with proper name</Summary>
+    <Description>Please add dependencies in the dependency tracker</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

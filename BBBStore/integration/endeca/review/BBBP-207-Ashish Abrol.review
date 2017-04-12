@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-207">
+  <ReviewIssue id="IDLCUZHH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 13:38:34:853 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 14:20:30:903 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish Abrol</ReviewerId>
+    <AssignedTo>Ashish Abrol</AssignedTo>
+    <File line="631">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Compare it like TRUE.equalsIgnoreCase(</Summary>
+    <Description>"true")</Description>
+    <Annotation></Annotation>
+    <Revision>122587</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

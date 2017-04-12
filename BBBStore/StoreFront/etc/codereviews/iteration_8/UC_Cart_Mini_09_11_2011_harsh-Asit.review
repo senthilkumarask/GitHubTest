@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_Mini_09_11_2011_harsh">
+  <ReviewIssue id="GUT574SP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 08:02:25:609 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 00:36:32:296 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="34">j2ee-apps/BBBStore/store.war/sandbox/cart/mini_cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>ItemCount should be total quantity not just item count.</Summary>
+    <Description>So user bought sku1, qty 2, then it should say 2 items,</Description>
+    <Annotation />
+    <Revision>[Asit] - Partial fixed, quantity of GiftWrapItem was not handled. Fixed and checked-in</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTVM4TI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:21:55:494 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 00:29:23:140 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/sandbox/cart/cart_free_shipping_qualifier.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>If there is no Closemess qualifiers, then do we still need the miniCartHeader DIV. CHECK with SiteDEV</Summary>
+    <Description>Otherwise you have to move those div inside the output oparam.</Description>
+    <Annotation />
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTVON4J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:23:52:531 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 00:29:08:531 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="3">j2ee-apps/BBBStore/store.war/sandbox/cart/mini_cart.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>OriginiatingRequest is imported but not used</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTVQ8QL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:25:07:197 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 13:05:13:439 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="51">j2ee-apps/BBBStore/store.war/sandbox/cart/mini_cart.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>All text should come from CMS</Summary>
+    <Description>There are no items in the cart.&#xD;
+Items&#xD;
+Subtotal&#xD;
+New item added to your cart</Description>
+    <Annotation />
+    <Revision>CMS driven labels added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTVVBG5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:29:03:989 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 13:05:20:760 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="85">j2ee-apps/BBBStore/store.war/sandbox/cart/order_items.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>All TEXT should come from CMS</Summary>
+    <Description>FREE SHIPPING, Quantity, You save, Just added</Description>
+    <Annotation />
+    <Revision>CMS driven labels added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTWLFQM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:49:22:606 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 00:28:34:687 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="35">j2ee-apps/BBBStore/store.war/sandbox/cart/order_items.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Instead of using param.count to higlight the just added item, we should use actual commerceItemId which just got added.</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Closing after discussion with Harsh. The count logic is working. At this stage we might not need actual itemId</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTWOPYI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 20:51:55:818 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 00:27:12:843 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="33">j2ee-apps/BBBStore/store.war/sandbox/cart/order_items.jsp</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Why there is a &lt;a href for items in mini cart.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTX2ZDT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 21:03:01:217 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 13:06:45:987 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>harsh kapoor</AssignedTo>
+    <File line="30">j2ee-apps/BBBStore/store.war/sandbox/cart/mini_cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check with site dev, this should be &lt;a href, if we keep input type then it will need a FORM also. Also implement it to go to cart.jsp</Summary>
+    <Description />
+    <Annotation />
+    <Revision>Fixed-href attribute is removed After discussion with SiteDevTeam</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>
+

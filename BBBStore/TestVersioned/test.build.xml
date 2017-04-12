@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     26 Oct 2011 12:44:35                                                        
+
+     project    
+                   
+     ====================================================================== -->
+<project name="BBB" default="test" basedir=".">
+	<property file="test.build.properties" />
+	<property name="java.source.dir" value="src/" />
+	<property name="packaging.dir" value="build" />
+	<property name="dist.dir" value="dist" />
+	<property name="javac.dest" value="classes" />
+	<property name="EStore" value="BBBStore.EStore"/>
+	<property name="EStoreVersioned" value="BBBStore.EStore.versioned.catalog"/>
+	<property name="core" value="BBBStore.core"/>
+	<property name="instrumented.dir" value="cobertura-instrumented-classes" />
+	<property name="coveragereport.dir" value="cobertura-reports" />
+	
+	<property name="cobertura.dir" value="../build_lib/cobertura" />
+
+	<path id="cobertura.classpath">
+		<fileset dir="${cobertura.dir}">
+			<include name="cobertura.jar" />
+			<include name="lib/**/*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+
+    <path id="classpath">
+	    <pathelement location="classes"/> 
+    	<fileset dir="lib" includes="*.jar"/>
+  	</path>
+	  
+	<path id="dynamo.classpath.svn">
+	    <fileset dir="${dynamo.home}/../DAS/j2ee-lib">
+	        <include name="**/jboss-javaee.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DAS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DAS-UI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DPS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../DPS-UI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DSS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DCS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DCS-UI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>		
+	    <fileset dir="${dynamo.home}/../DCS-UI/Versioned/lib">
+	        <include name="**/*.jar" />
+	    </fileset>	
+		<fileset dir="${dynamo.home}/../BCC/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../BCC/Versioned/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../FlexUI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../PubPortlet/lib">
+		 <include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../Publishing/base/lib">
+		  <include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+		  <include name="**/*.jar" />
+		</fileset>		
+		<fileset dir="${dynamo.home}/../SiteAdmin/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../SiteAdmin/Versioned/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../AssetUI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../BIZUI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../WebUI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../RL/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	</path>
+	    
+    <path id="bbb.core">
+        <fileset dir="../core/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+	    
+    <path id="bbb.estore.versioned">
+        <fileset dir="../EStore/versioned/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+	
+    <path id="bbb.estore.versioned.catalog">
+        <fileset dir="../EStore/versioned/catalog/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+	  
+
+	  <target name="compile" depends="cleanVersionedTest">
+	  	<javac srcdir="test" destdir="classes" fork="yes">         
+          <classpath refid="dynamo.classpath.svn" />          
+          <classpath refid="bbb.estore.versioned.catalog" />
+	  	  <classpath refid="bbb.core" />
+          <classpath refid="classpath" />
+	  	  <classpath>
+    	  	  <pathelement location="../core/${javac.dest}" />
+    	  	  <pathelement location="../EStore/${javac.dest}"/>
+    		   <pathelement location="../EStore/versioned/catalog/${javac.dest}"/>
+    	  	  <pathelement location="${javac.dest}"/>
+	  	  </classpath>
+        </javac>
+	  	<copy todir="classes">
+       		<fileset dir="test" excludes="**/*.java"/>
+        </copy>
+	  </target>
+
+	<target name="usage">
+		<echo>
+	    These are the targets supported by this ANT build scpript:
+		update - update the working copy from the repository
+		move - moves files from ${test} to ${live}	
+		clean   - clean the folder for a fresh build.
+	    compile   - Will compile the source to the classes dir
+	    archive - creates the EAR
+	    </echo>
+	</target>
+
+	
+	<target name="cleanVersionedTest"  description="delete all class files in test">
+            <delete includeemptydirs="true">
+				<fileset dir="${javac.dest}" includes="**/*" />			
+			</delete>		
+	</target>
+	
+	<target name="copy"  description="copy all files from test">
+		<copy todir="${javac.dest}">
+            <fileset dir="test" excludes="**/*.java"/>
+        </copy>
+    </target>
+	
+	<target name="build" depends="cleanVersionedTest,compile,copy"/>
+
+	<!--target name="compile" description="compiles the source files" depends="cleanStoreFrontTest">
+		
+
+		<javac classpathref="classpath" destdir="${javac.dest}" debug="true">
+			<src path="src"/>	
+			<src path="test"/>				
+			<classpath>
+				<pathelement location="../core/${javac.dest}" />
+				<pathelement location="../EStore/${javac.dest}"/>
+			</classpath>
+		</javac>
+	</target-->
+
+    <target name="test2" depends="run-cobertura-instrumentation" description="runs TestVersioned">  
+		<echo message="Test-Suite TestPIMFeed.java started"/>    	
+    	<copy overwrite="yes" tofile="classes/com/sapient/common/tests/TestConfig.properties" file="classes/com/sapient/common/tests/qa_TestConfig.properties"/>
+    	
+    	<taskdef name="junit1" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask" 
+    	                            classpathref="classpath"/>
+    	  <junit1 printsummary="withOutAndErr" fork="yes" haltonfailure="no" showoutput="yes"> 
+
+			<sysproperty key="net.sourceforge.cobertura.datafile" file="cobertura.ser" />
+
+    	    <classpath>
+				<pathelement location="${basedir}/${instrumented.dir}" />
+          	    <pathelement location="../../WebUI/lib/classes.jar"/>
+          	    <pathelement location="../../BBBStore/core/${javac.dest}" />
+                <pathelement location="../../BBBStore/EStore/${javac.dest}"/>
+                <pathelement location="${javac.dest}"/>   	                   	
+    	 	</classpath>     
+    	    <classpath refid="dynamo.classpath.svn" />
+			<classpath refid="cobertura.classpath" />    	    
+          	<classpath refid="bbb.estore.versioned.catalog" />
+			<classpath refid="bbb.estore.versioned" />
+    	  	<classpath refid="bbb.core" />
+          	<classpath refid="classpath" />          
+    	  	<jvmarg value="-XX:MaxPermSize=256m"/>
+  	            <jvmarg value="-Xms512m"/>
+  	            <jvmarg value="-Xmx1536m"/>
+  	            
+        	  	<sysproperty key="java.protocol.handler.pkgs" value="atg.net.www.protocol"/>
+        	  	<sysproperty key="java.naming.factory.initial" value="atg.j2ee.jndi.SerialInitContextFactory"/>
+        	  	<sysproperty key="java.naming.factory.url.pkgs" value="atg.jndi.url"/>
+    	  	            
+    	        <formatter type="brief" usefile="false"/>
+    	  	    <formatter type="xml"/>
+    	  		  
+    	  	    <batchtest fork="no" todir="reports">
+    	  	      <fileset dir="test">
+    	  	        <include name="com/bbb/commerce/catalog/TestPIMFeed.java"/>
+                  </fileset>    
+    	  	    </batchtest>
+    	    
+    	    </junit1> 
+	</target>
+	
+	<target name="run-cobertura-instrumentation" >
+	<delete dir="${instrumented.dir}" failonerror="true" />
+	<delete file="cobertura.ser" failonerror="true" />
+	
+	<cobertura-instrument todir="${instrumented.dir}" datafile="cobertura.ser">
+		<ignore regex="org.apache.log4j.*" />
+		<fileset dir="../../BBBStore/EStore/versioned/catalog/${javac.dest}">
+			<include name="com/bbb/importprocess/**/*.class" />
+			<exclude name="com/bbb/importprocess/scheduler/*.class" />
+		</fileset>
+	</cobertura-instrument>
+	</target>
+		
+	<target name="copy-report">		
+		<delete file="cobertura.ser" verbose="true" failonerror="true" />
+		<delete dir="../TestVersioned/reports" />
+		<mkdir dir="../TestVersioned/reports" />
+		<copy todir="../TestVersioned/reports">
+			<fileset dir="${dynamo.home}/../BBBStore/TestVersioned/reports" >				
+				<include name="**/*.xml" />
+				<exclude name="test.xml" />				
+			</fileset>
+		</copy>	
+		<copy file="${dynamo.home}/../BBBStore/TestVersioned/cobertura.ser" todir="../TestVersioned"/>
+	</target>
+	
+	<target name="cobertura-reports" depends="copy-report">
+		<delete dir="${coveragereport.dir}" failonerror="true" />
+		<mkdir dir="${coveragereport.dir}" />
+		<cobertura-report format="xml" destdir="${coveragereport.dir}" datafile="cobertura.ser">
+			<fileset dir="../../BBBStore/EStore/versioned/catalog/src">
+				<include name="com/bbb/importprocess/**/*.java" />
+				<exclude name="com/bbb/importprocess/scheduler/*.java" />
+			</fileset>
+		</cobertura-report>
+	</target>
+	
+</project>
+
+
+

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE browse-hierarchy
+  PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Browse Hierarchy//EN"
+  'http://www.atg.com/dtds/browse-hierarchy/browse-hierarchy_1.0.dtd'>
+
+<browse-hierarchy xml-combine="append">
+
+	
+	<!-- Removing Custom Web Browse from Home -->
+	<browse-item id="home" xml-combine="append">
+	    <browse-item reference-id="shipping" xml-combine="remove"/>
+		<browse-item reference-id="cms" xml-combine="remove"/>
+		<browse-item reference-id="labelTemplate" xml-combine="remove"/>
+		<browse-item reference-id="configKeys" xml-combine="remove"/>
+		<browse-item reference-id="schoolsHome" xml-combine="remove"/>
+		<browse-item reference-id="tipsPersonalization" xml-combine="remove"/>
+		<browse-item reference-id="emailRepository" xml-combine="remove"/>
+		<browse-item reference-id="regCat" xml-combine="remove"/>
+		<browse-item reference-id="webAndMobile" />
+		<browse-item reference-id="stofu" />
+		<browse-item reference-id="channelTheme" />
+	</browse-item>
+
+ 
+  	<!-- Web And Mobile Home -->
+	<browse-item id="webAndMobile" label-resource="node.webAndMobile.label" is-root="true" icon-resource="node.webAndMobile.iconSmall">
+	     <browse-item reference-id="shipping"/>
+		<browse-item reference-id="cms"/>
+		<browse-item reference-id="labelTemplate"/>
+		<browse-item reference-id="configKeys"/>
+		<browse-item reference-id="schoolsHome"/>
+		<browse-item reference-id="tipsPersonalization"/>
+		<browse-item reference-id="emailRepository"/>
+		<browse-item reference-id="regCat"/>
+	</browse-item>
+	
+	<browse-item id="stofu" label-resource="node.stofu.label" is-root="true" icon-resource="node.stofu.iconSmall">
+		<browse-item reference-id="ff1"/>
+		<browse-item reference-id="ff2"/>
+	</browse-item>
+	
+	<!-- FF2 Home -->
+	<browse-item id="ff2" label-resource="node.ff2.label" is-root="true" icon-resource="node.ff2.iconSmall">
+		<browse-item reference-id="ipadTemplates"/>
+		<browse-item reference-id="ipadTemplateContents"/>
+	</browse-item>
+
+		<browse-item id="ipadTemplates" label-resource="node.ipadTemplates.label" is-root="true" icon-resource="node.ipadTemplates.iconSmall" show-count="true">
+			<browse-item reference-id="didYouKnowTemplates"/>
+			<browse-item reference-id="BBBGSManagedTemplate"/>
+			<browse-item reference-id="solutionLandingTemplate"/>
+			<browse-item reference-id="goodToKnowTemplate"/>
+		</browse-item>
+
+			<browse-item id="didYouKnowTemplates" label-resource="node.didYouKnowTemplates.label" is-root="false" icon-resource="node.didYouKnow.iconSmall" show-count="true">
+				<list-definition id="alldidYouKnowTemplates" retriever="query" child-type="/com/bbb/ipad/DidYouKnowRepository:didYouKnowTemplate">
+					<retriever-parameter name="query" value="ALL"/>
+				</list-definition>
+			</browse-item>
+		
+			<browse-item id="BBBGSManagedTemplate" label-resource="node.bbbGSManagedTemplate.label" is-root="false" icon-resource="node.bbbGSManagedTemplate.iconSmall" show-count="true">
+				<list-definition id="allbbbGSManagedTemplate" retriever="query" child-type="/com/bbb/ipad/BBBGSManagedRepository:BBBGSManagedRepository">
+					<retriever-parameter name="query" value="ALL"/>
+				</list-definition>
+			</browse-item>
+		
+			<browse-item id="solutionLandingTemplate" label-resource="node.solutionLandingTemplate.label" is-root="false" icon-resource="node.solutionLanding.iconSmall" show-count="true">
+				<list-definition id="allsolutionLandingTemplate" retriever="query" child-type="/com/bbb/ipad/SolutionLandingRepository:solutionLandingTemplate">
+					<retriever-parameter name="query" value="ALL"/>
+				</list-definition>
+			</browse-item>
+			<browse-item id="goodToKnowTemplate" label-resource="node.goodToKnowTemplate.label" is-root="false" icon-resource="node.goodToKnow.iconSmall" show-count="true">
+				<list-definition id="allgoodToKnowTemplate" retriever="query" child-type="/com/bbb/ipad/BBBGSManagedRepository:goodToKnow">
+					<retriever-parameter name="query" value="ALL"/>
+				</list-definition>
+			</browse-item>
+
+
+	<browse-item id="ipadTemplateContents" label-resource="node.ipadTemplateContents.label" is-root="true" icon-resource="node.ipadTemplateContents.iconSmall" show-count="true">
+		<browse-item reference-id="questionsAnswers" />
+		<browse-item reference-id="ipadTabs" />
+	</browse-item>
+
+			<browse-item id="questionsAnswers" label-resource="node.questionsAnswers.label" is-root="true" icon-resource="node.questionsAnswers.iconSmall" show-count="true">
+				<browse-item reference-id="questions" />
+				<browse-item reference-id="answers" />
+				<browse-item reference-id="answerSet" />
+			</browse-item>
+
+				<browse-item id="ipadTabs" label-resource="node.tabs.label" is-root="true" icon-resource="node.tabs.iconSmall" show-count="true">
+					<list-definition id="alltabs" retriever="query" child-type="/com/bbb/stofu/CommonRepository:tab">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+				
+					<browse-item id="questions" label-resource="node.questions.label" is-root="false" icon-resource="node.questions.iconSmall" show-count="true">
+						<list-definition id="allquestions" retriever="query" child-type="/com/bbb/ipad/GuidedSellingQARepository:question">
+							<retriever-parameter name="query" value="ALL" />
+						</list-definition>
+					</browse-item>
+				
+					<browse-item id="answers" label-resource="node.answers.label" is-root="false" icon-resource="node.answers.iconSmall" show-count="true">
+						<list-definition id="allanswers" retriever="query" child-type="/com/bbb/ipad/GuidedSellingQARepository:answer">
+							<retriever-parameter name="query" value="ALL" />
+						</list-definition>
+					</browse-item>
+				
+					<browse-item id="answerSet" label-resource="node.answerSet.label" is-root="false" icon-resource="node.answerSet.iconSmall" show-count="true">
+						<list-definition id="allanswerSet" retriever="query" child-type="/com/bbb/ipad/GuidedSellingQARepository:answerSet">
+							<retriever-parameter name="query" value="ALL" />
+						</list-definition>
+					</browse-item>
+	
+	<!-- FF1 Home -->		
+	<browse-item id="ff1" label-resource="node.ff1.label" is-root="true" icon-resource="node.ff1.iconSmall">
+		<browse-item reference-id="cmsMedia" />
+		<browse-item reference-id="cmsTemplates" />
+	</browse-item>
+
+		<browse-item id="cmsMedia" label-resource="node.cmsMedia.label" is-root="true" icon-resource="node.cmsMedia.iconSmall" show-count="true">
+			<browse-item reference-id="ImageBox" />
+			<browse-item reference-id="ImageCarousel" />
+			<browse-item reference-id="Style" />
+			<browse-item reference-id="CategoryPanel" />
+			<browse-item reference-id="Layout" />
+		</browse-item>
+
+		<browse-item id="cmsTemplates" label-resource="node.cmsTemplates.label" is-root="true" icon-resource="node.cmsTemplates.iconSmall" show-count="true">
+			<browse-item reference-id="attractScreen" />
+			<browse-item reference-id="introScreenTemplate" />
+			<browse-item reference-id="GuidedSellingTemplate" />
+			<browse-item reference-id="IdeaBookStyleTemplate" />
+			<browse-item reference-id="table" />
+			<browse-item reference-id="tableChkList" />
+		</browse-item>
+
+				<browse-item id="ImageBox" label-resource="node.ImageBox.label" is-root="false" icon-resource="node.ImageBox.iconSmall" show-count="true">
+					<list-definition id="allImageBox" retriever="query"
+						child-type="/com/bbb/stofu/CommonRepository:ImageBox">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="ImageCarousel" label-resource="node.ImageCarousel.label" is-root="false" icon-resource="node.ImageCarousel.iconSmall" show-count="true">
+					<list-definition id="allImageCarousel" retriever="query" child-type="/com/bbb/stofu/CommonRepository:ImageCarousel">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="Style" label-resource="node.Style.label" is-root="false" icon-resource="node.Style.iconSmall" show-count="true">
+					<list-definition id="allStyle" retriever="query" child-type="/com/bbb/stofu/CommonRepository:Style">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="CategoryPanel" label-resource="node.CategoryPanel.label" is-root="false" icon-resource="node.CategoryPanel.iconSmall" show-count="true">
+					<list-definition id="allCategoryPanel" retriever="query" child-type="/com/bbb/stofu/CommonRepository:CategoryPanel">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="Layout" label-resource="node.Layout.label" is-root="false" icon-resource="node.Layout.iconSmall" show-count="true">
+					<list-definition id="allLayout" retriever="query" child-type="/com/bbb/stofu/TableRepository:Layout">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="attractScreen" label-resource="node.attractScreen.label" is-root="false" icon-resource="node.attractScreen.iconSmall" show-count="true">
+					<list-definition id="allattractScreen" retriever="query" child-type="/com/bbb/stofu/AttractScreenRepository:AttractScreenTemplate">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="introScreenTemplate" label-resource="node.introScreenTemplate.label" is-root="false" icon-resource="node.introScreenTemplate.iconSmall" show-count="true">
+					<list-definition id="allintroScreenTemplate" retriever="query" child-type="/com/bbb/stofu/IntroScreenRepository:IntroScreenTemplate">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="GuidedSellingTemplate" label-resource="node.GuidedSellingTemplate.label" is-root="false" icon-resource="node.GuidedSellingTemplate.iconSmall" show-count="true">
+					<list-definition id="allGuidedSellingTemplate" retriever="query" child-type="/com/bbb/stofu/GuidedSellingRepository:GuidedSellingTemplate">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="IdeaBookStyleTemplate" label-resource="node.IdeaBookStyleTemplate.label" is-root="false" icon-resource="node.IdeaBookStyleTemplate.iconSmall" show-count="true">
+					<list-definition id="allIdeaBookStyleTemplate" retriever="query" child-type="/com/bbb/stofu/IdeaBookStyleRepository:IdeaBookStyleTemplate">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+			
+				<browse-item id="table" label-resource="node.table.label" is-root="false" icon-resource="node.table.iconSmall" show-count="true">
+					<list-definition id="alltable" retriever="query" child-type="/com/bbb/stofu/TableRepository:table">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+				
+				<browse-item id="tableChkList" label-resource="node.tableChkList.label" is-root="false" icon-resource="node.tableChkList.iconSmall" show-count="true">
+					<list-definition id="alltableChkList" retriever="query" child-type="/com/bbb/stofu/TableCheckList:tableChkList">
+						<retriever-parameter name="query" value="ALL" />
+					</list-definition>
+				</browse-item>
+				
+				<!-- ChannelTheme Repository-->
+		     
+			     <browse-item id="channelTheme" label-resource="node.themes.label" is-root="true" icon-resource="node.channels.iconSmall">
+			        <browse-item reference-id="allChannelThemes"/>			      
+			    </browse-item>
+							
+				<browse-item id="allChannelThemes" label-resource="node.allChannelThemes.label" is-root="false" icon-resource="node.allChannels.iconSmall">
+			 		<list-definition id="channelThemeInfo" retriever="query" child-type="/com/bbb/channelTheme/ChannelThemeRepository:channelThemeInfo">
+			 			 <retriever-parameter name="query" value="ALL" />
+			 		</list-definition>
+			  </browse-item>
+				
+</browse-hierarchy>

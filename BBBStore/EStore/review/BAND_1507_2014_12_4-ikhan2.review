@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_1507_2014_12_4">
+  <ReviewIssue id="I39XS5DK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:13:56:984 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:27:28:182 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="30">src/com/bbb/personalstore/tools/PersonalStoreTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remove space between cariable names and semi colon.</Summary>
+    <Description>private HashMap&lt;String, String&gt; mPSTargetMapping ;&#xD;
+	private HashMap&lt;String, String&gt; mPSCookieMapping ;&#xD;
+	private HashMap&lt;String, String&gt; mPSTrendingConMapping ;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I39Y9W00">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:27:44:640 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:29:59:552 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="36">src/com/bbb/personalstore/tools/PersonalStoreTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Method paramet must ne final.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I39YB4GS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:28:42:268 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:29:30:816 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="81">src/com/bbb/personalstore/tools/PersonalStoreTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Do not put m prefix in method parameters</Summary>
+    <Description>final HashMap&lt;String, String&gt; mPSTargetMapping</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I39YJZHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:35:35:714 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:36:07:039 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="149">src/com/bbb/personalstore/tools/PersonalStoreTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>In java doc comment not throwing all exceptions</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I39YM4SA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:37:15:898 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:37:51:435 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="686">src/com/bbb/personalstore/manager/PersonalStoreManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Throw BBB custom exceptions instead of Repository Exceptions</Summary>
+    <Description>throws RepositoryException, BBBSystemException</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I39YQED4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:40:34:936 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-04 :: 15:41:24:467 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="714">src/com/bbb/personalstore/manager/PersonalStoreManager.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>do not use isLoggingDebug If Codition</Summary>
+    <Description>if(this.isLoggingDebug()){</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

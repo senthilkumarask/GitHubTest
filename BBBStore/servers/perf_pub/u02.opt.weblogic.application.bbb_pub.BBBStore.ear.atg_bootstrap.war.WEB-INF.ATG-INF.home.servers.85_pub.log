@@ -1,0 +1,6 @@
+1 changed. Successfully modified /u02/opt/weblogic/application/bbb_pub/BBBStore.ear/atg_bootstrap.war/WEB-INF/ATG-INF/home/servers/85_pub/localconfig/atg/epub/workflow/process/workflowProcessManager.xml
+2 changed. Successfully modified /u02/opt/weblogic/application/bbb_pub/BBBStore.ear/atg_bootstrap.war/WEB-INF/ATG-INF/home/servers/85_pub/localconfig/atg/scenario/scenarioManager.xml
+1 changed. Successfully modified /u02/opt/weblogic/application/bbb_pub/BBBStore.ear/atg_bootstrap.war/WEB-INF/ATG-INF/home/servers/85_pub/localconfig/atg/dynamo/service/ClientLockManager.properties
+1 changed. Successfully modified /u02/opt/weblogic/application/bbb_pub/BBBStore.ear/atg_bootstrap.war/WEB-INF/ATG-INF/home/servers/85_pub/localconfig/atg/dynamo/service/ClientLockManager_staging.properties
+1 changed. Successfully modified /u02/opt/weblogic/application/bbb_pub/BBBStore.ear/atg_bootstrap.war/WEB-INF/ATG-INF/home/servers/85_pub/localconfig/atg/dynamo/service/ClientLockManager_production.properties
+changed 5 files

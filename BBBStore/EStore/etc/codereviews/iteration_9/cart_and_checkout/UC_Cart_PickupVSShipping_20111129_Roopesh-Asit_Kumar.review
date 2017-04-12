@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_PickupVSShipping_20111129_Roopesh">
+  <ReviewIssue id="GVLHOULF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:39:40:515 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:19:53:875 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="358">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Performance Monitor Call, ensureTransaction Call and synchronized Order block is missing</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLHRCHJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:41:37:015 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:19:43:156 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="359">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>CheckFormRedirect call is needed to redirect user to error page, in case of any form errors before calling the change method.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLHSH4N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:42:29:687 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:19:20:984 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="364">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>checkFormRedirect is required before calling post method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLHT871">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:43:04:765 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:19:14:062 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="369">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Final CheckFormRedirect is required to take use to success page and finally block is needed to commit/rollback the transaction </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLHULRC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:44:09:000 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:18:50:406 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="575">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>All issues identified in handleChangetoStorePick should also be fixed in this method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLHWK7S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 17:45:40:312 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:18:32:968 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="516">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Refactoring - Move the creation of commerceItem, setting the values to CommerceItem Manager. splitItemByQuantity method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLJ9W06">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 18:24:01:734 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:18:23:531 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="534">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This add is not required, we need to remove all shipping group add the new one. bbbItem.getId and getCommerceItemId() is the same thing.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Code has been refactored, will check the refactored code and add issue if needed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLJBLWH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 18:25:21:953 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:17:19:734 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="527">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>In case of CommerceException we need to add system error and take user to system error page.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVMXTK3U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 17:59:00:234 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:16:29:656 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="203">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>You should add formException, otherwise checkform redirect will not that any error happened.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVMYNCQV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 18:22:10:375 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:15:49:578 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="358">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Before Calling Post method you should again call the checkFormRedirect, so that post is not getting called without the success.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJ03ME">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:27:29:750 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:28:07:968 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="239">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Instead of the 2 condition use StringUtils.isBlank method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Instead of this </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJ3NSZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:30:15:875 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:31:28:406 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="189">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Other than quantity update, we shouldn't change anything in pCommerceItem, setting the storeId to null is wrong</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJ6787">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:32:14:359 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:32:57:406 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="199">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Refactoring - create commerce item is common in both the if/else, it should be done out side and then should be associated with correct shipping group.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPPQRPI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:36:11:718 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:37:06:703 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="367">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>RepriceOrder Call is missing in both the handle method</Summary>
+    <Description>You can use runProcessRepriceOrder in the PurchaseProcessHelper</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPPS885">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:37:19:781 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:37:30:968 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="541">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>RepriceOrder Call is missing in both the handle method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPPSSL7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:37:46:171 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 16:55:13:109 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="562">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>changeStore functionality is missing</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVRHVWAV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-03 :: 22:31:46:375 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-03 :: 22:32:52:437 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="1">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>As per ADD we should also add ProcValidateStoreShippingGroup, ValidateShippingGroupByType, ProcValidateStoreShippingGroup &amp; pipeline changes as mentioned in 3.7.5</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

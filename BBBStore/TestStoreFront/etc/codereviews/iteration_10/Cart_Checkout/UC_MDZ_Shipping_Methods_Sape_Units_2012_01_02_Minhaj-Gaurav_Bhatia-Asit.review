@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_MDZ_Shipping_Methods_Sape_Units_2012_01_02_Minhaj-Gaurav_Bhatia">
+  <ReviewIssue id="GWZFHA5K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 02:56:17:000 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:14:54:925 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="188">test/com/bbb/commerce/checkout/droplet/TestGetApplicableShippingMethodsDroplet.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lets add a GiftCard Sku also and then call both perOrder and perSku with 2 item in cart (1 gift card and other any other sku)</Summary>
+    <Description>Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddShippingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddShippingAddress.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestShipToMultiplePeople">
+		<group id="testSplitCurrentItem">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">uattestuser2@gmail.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"3","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="splitCurrentItem" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/splitCurrentItem</obj>
+					<obj id="getCisiItemsRequest" type="string">/rest/bean/com/bbb/commerce/order/purchase/MultiShippingManager/getCommerceItemShippingInfos</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testSplitCurrentItemError">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">uattestuser2@gmail.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"3","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="splitCurrentItem" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/splitCurrentItem</obj>
+					<obj id="getCisiItemsRequest" type="string">/rest/bean/com/bbb/commerce/order/purchase/MultiShippingManager/getCommerceItemShippingInfos</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

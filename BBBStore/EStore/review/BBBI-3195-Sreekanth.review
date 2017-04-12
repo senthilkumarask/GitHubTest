@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-3195">
+  <ReviewIssue id="IQN1MOSO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 21:05:54:696 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 21:07:21:408 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="259">src/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can you check the parameter sequence to putAll method is map&amp;cache key or cachekey &amp;map. Did we test this and is it working?</Summary>
+    <Description>BBBEphCategoryMapCacheLoadTools.this.getCoherenceCacheContainer().putAll(ephCategoryMap, BBBEphCategoryMapCacheLoadTools.this.getCacheName());</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

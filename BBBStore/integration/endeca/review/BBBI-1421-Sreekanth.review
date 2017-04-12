@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1421">
+  <ReviewIssue id="IPK1H7FF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:58:38:043 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:58:50:232 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="4">config/com/bbb/search/endeca/boosting/L2L3BrandBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove space if it's not required</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK1HIV6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:58:52:866 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:59:00:404 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="8">config/com/bbb/search/endeca/boosting/L2L3BrandBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove the extra space</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK1I194">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:59:16:696 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:59:23:119 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="1">config/com/bbb/search/endeca/boosting/L2L3BrandBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove this line</Summary>
+    <Description># /com/bbb/search/endeca/boosting/SearchBoostingStrategy</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK1QSNU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 14:06:05:466 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 14:07:46:227 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="79">src/com/bbb/search/endeca/boosting/L2L3BrandBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add logDebug and print input parameters, while adding make sure no scope for getting null pointer</Summary>
+    <Description>BBBPerforma</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK1R9MX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 14:06:27:465 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 14:06:43:176 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="82">src/com/bbb/search/endeca/boosting/L2L3BrandBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add logDebug to indicate query is null</Summary>
+    <Description>BBBPerf</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMS33PF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 11:59:02:019 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 18:09:40:442 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="125">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There is scope for optimizing the if else and also we should rewrite this logic we will not depend on config key any more for applying boosting. We will relay more on BCC table values</Summary>
+    <Description>if (l2L3BrandPageBoostingEnabled.equalsIgnoreCase(BBBCoreConstants.TRUE)
+				&amp;&amp; BBBEndecaConstants.DEFAULT_0.equalsIgnoreCase(searchQuery.getSortString())
+				&amp;&amp; searchQuery.getCatalogRef() != null){
+					if(originOfTraffic !=null &amp;&amp; originOfTraffic.equalsIgnoreCase(BBBCoreConstants.MOBILEWEB)){
+						if(searchQuery.getCatalogRef().get(BBBEndecaConstants.CATA_ID) == null){
+							logger.logError("No CategoryId found hence Repostitory call not executed and no L2/L3/Brand page boosting performed!");
+						} else if(searchQuery.getKeyWord() == null){
+							l2L3BrandBoostingEnabled = true;
+						} else if(searchQuery.getCatalogRef().get(BBBEndecaConstants.FRM_BRAND_PAGE)!=null &amp;&amp; searchQuery.getCatalogRef().get(BBBEndecaConstants.FRM_BRAND_PAGE).equalsIgnoreCase(BBBCoreConstants.TRUE)) {
+							l2L3BrandBoostingEnabled = true;
+						}
+					} else {
+						if(searchQuery.getCatalogRef().get(BBBEndecaConstants.CATA_REF_ID) == null){
+							logger.logError("No CategoryId found hence Repostitory call not executed and no L2/L3/Brand page boosting performed!");
+						} else if(searchQuery.getKeyWord() == null &amp;&amp; searchQuery.getCatalogRef().get(BBBEndecaConstants.CATA_REF_ID) != null){
+							l2L3BrandBoostingEnabled = true;
+						} else if(searchQuery.getCatalogRef().get(BBBEndecaConstants.FRM_BRAND_PAGE)!=null &amp;&amp; searchQuery.getCatalogRef().get(BBBEndecaConstants.FRM_BRAND_PAGE).equalsIgnoreCase(BBBCoreConstants.TRUE)) {
+							l2L3BrandBoostingEnabled = true;
+						}
+					}
+		} </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMS56CC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:00:38:748 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:01:15:123 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="150">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do not we have any util method for checking both null and empty state of a list?</Summary>
+    <Description>searchBoostingAlgorithm.getAlgorithmComponents() != null &amp;&amp; !searchBoostingAlgorithm.getAlgorithmComponents().isEmpty())</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMSAK1Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:04:49:799 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:06:06:972 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="149">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Is this OPB enabled common for all PLPs OPB boosting? We may need to change now because we are giving flexibility for business to turn off OPB and other algorithms separately at each PLP and algorithm level</Summary>
+    <Description>opbEnabled</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMSJUXI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:12:03:798 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 12:12:32:526 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="117">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Cannot we use getConfigKeyValue(String configType, String key, String defaultValue) method which will take care of handling exception instead of calling class handling the exceptions?</Summary>
+    <Description>getSearchUtil().getCatalogTools().getAllValuesForKey(BBBCoreConstants.FLAG_DRIVEN_FUNCTIONS, BBBCoreConstants.ENABLE_L2_L3_BRAND_PAGE_BOOSTING).get(0);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-5463">
+  <ReviewIssue id="IO42LKAN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-12 :: 14:35:59:807 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-12 :: 14:38:09:973 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Review Comments</Summary>
+    <Description>1) Remove commented code.
+2) Rather creating this 3 variables isdynamicPrice, priceLabelCode &amp; inCartFlag directly set them as the paramenters in included JSP's.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2683">
+  <ReviewIssue id="IQMIASTC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:04:47:328 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:05:23:289 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="509">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can you explain me more on why are we breaking from this loop if it's popular keyword and report seq is 0?</Summary>
+    <Description>else if(reportSeq==0 &amp;&amp; BBBCoreConstants.POPULAR_SEARCHES.equalsIgnoreCase(methodType)){
+								break;
+							}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMILKZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:13:10:414 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:14:10:629 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="1522">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Need more explanation on this loop, are we iterating through the whole array and adding one by one? Cannot we get the length of the array and add it?</Summary>
+    <Description>for(int affectedRecords:affectedRows){
+						omnitureGetResponseVO.setRecordsMoved(omnitureGetResponseVO.getRecordsMoved() + affectedRecords);
+					}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMINFSD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:14:36:973 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 12:14:44:416 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="1569">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Need more explanation on this loop, are we iterating through the whole array and adding one by one? Cannot we get the length of the array and add it?</Summary>
+    <Description>for(int affectedRecords:affectedRows){
+					omnitureGetResponseVO.setRecordsMoved(omnitureGetResponseVO.getRecordsMoved() + affectedRecords);
+				}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMT9ULC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 17:11:58:752 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 17:12:00:535 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="1">review/BBBI-2832-Sreekanth.review</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

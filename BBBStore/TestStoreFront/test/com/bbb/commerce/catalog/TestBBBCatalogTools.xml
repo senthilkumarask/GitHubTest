@@ -1,0 +1,1227 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestBBBCatalogTools.xml 
+	DESCRIPTION: ddtunit data file for BBBCatalogToolsImpl.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.catalog.TestBBBCatalogTools">
+
+		<group id="testGetNonShippableStatesForSku">
+			<test id="testGetNonShippableStatesForSku_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="skuIdNoNonShipStates" type="string">sku40074</obj>
+					<obj id="stateId" type="string">Alabama</obj>
+					<obj id="categoryId" type="string">cat20009</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetNonShippableStatesForSkuInputNull">
+			<test id="testGetNonShippableStatesForSku_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsFreeShipping">
+			<test id="testIsFreeShipping_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="skuIdNoFreeShip" type="string">sku40074</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetFirstActiveParentProductForSKU">
+			<test id="testGetFirstActiveParentProductForSKU_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsFixedPriceShipping">
+			<test id="testIsFixedPriceShipping_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+					<obj id="skuIdGiftCertTrue" type="string">sku40030</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testCategoryDetail">
+			<test id="testCategoryDetail_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="categoryIdNotAvailable" type="string">cat30003</obj>
+					<obj id="categoryId" type="string">cat50001</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSiteDetailFromSiteId">
+			<test id="testGetSiteDetailFromSiteId_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsNexus">
+			<test id="testIsNexus_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="stateId2" type="string">IA</obj>
+					<obj id="stateId" type="string">Alabama</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testIsNexusInputNull">
+			<test id="testIsNexusInputNull_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="stateId2" type="string">IA</obj>
+					<obj id="stateId" type="string">Alabama</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testShippingCostForGiftCard">
+			<test id="testShippingCostForGiftCard_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="stateId" type="string">IA</obj>
+					<obj id="categoryId" type="string">cat20009</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testShippingMethodsForSku">
+			<test id="testShippingMethodsForSku_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="skuIdNotHavingShippingMethods" type="string">sku30001</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetSKUSurcharge">
+			<test id="testGetSKUSurcharge_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku30001</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+					<obj id="noSurchargeSkuId" type="string">sku40030</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+					<obj id="FreeshippingMethodId" type="string">Express</obj>
+					<obj id="FreeskuId" type="string">sku40032</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testCreditCardTypes">
+			<test id="testCreditCardTypes_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testDefaultShippingMethod">
+			<test id="testDefaultShippingMethod_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testShippingCostForGiftCard">
+			<test id="testShippingCostForGiftCard_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+
+					<obj id="shippingMethodId" type="string">1a</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testGetStates">
+			<test id="testGetStates_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="showMilitaryStates" type="string">true</obj>
+				</objs>
+			</test>
+			<test id="testGetStates_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="showMilitaryStates" type="string">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetProductDetails">
+			<test id="testGetProductDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="productId" type="string">prod10013</obj>
+					<obj id="nonCollectionProductId" type="string">prod10033</obj>
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetEverLivingProductDetails">
+			<test id="testGetEverLivingProductDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="productId" type="string">prod60026</obj>
+					<obj id="nonCollectionProductId" type="string">prod60025</obj>
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSkuDetails">
+			<test id="testGetSkuDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="futureDateSkuId" type="string">sku40066</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetEverLivingSkuDetails">
+			<test id="testGetEverLivingSkuDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="futureDateSkuId" type="string">sku40066</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetRegistryTypes">
+			<test id="testGetRegistryTypes_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testGetWrapSkuDetails">
+			<test id="testGetWrapSkuDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testGetCommonGreetings">
+			<test id="testGetCommonGreetings_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testIsGiftCardItem">
+			<test id="testIsGiftCardItem_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+					<obj id="isGiftCardSkuId" type="string">sku30004</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testisGiftWrapItem">
+			<test id="testisGiftWrapItem_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku30004</obj>
+					<obj id="isGiftWrapSkuId" type="string">sku40041</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testGetShippingFee">
+			<test id="testGetShippingFee_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="stateId" type="string">AK</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+					<obj id="subTotalAmount" type="double">15</obj>
+					<obj id="subTotalAmount1" type="double">40</obj>
+					<obj id="nullStateId" type="string">AB</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetConfigValueByconfigType">
+			<test id="testGetConfigValueByconfigType_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="configType" type="string">ContentCatalogKeys</obj>
+				</objs>
+				<asserts>
+					<assert id="configMap" type="java.lang.Integer" action="isGT">0
+					</assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testCleranceProducts">
+			<test id="testCleranceProducts_test1">
+				<objs>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="clearanceCatUS" type="string">cat50001</obj>					
+					<obj id="clearanceCatBuyBuyBaby" type="string">cat20009</obj>
+			    </objs>
+				<asserts>
+					<assert id="listPVOsUS" type="java.lang.Integer" action="isGT">0
+					</assert>					
+					<assert id="listPVOsBuyBuyBaby" type="java.lang.Integer" action="isGT">0
+					</assert>
+				</asserts>
+				
+			</test>
+		</group>
+		<group id="testGetAllValuesForKey">
+			<test id="testGetAllValuesForKey_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="configType" type="string">ContentCatalogKeys</obj>
+					<obj id="key" type="string">rootCollegeId</obj>
+				</objs>
+				<asserts>
+					<assert id="valueList" type="java.lang.Integer" action="isGT">0
+					</assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testIsPackNHoldWindow">
+			<test id="testIsPackNHoldWindow_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testPackNHoldSiteInvalid">
+			<test id="testPackNHoldSiteInvalid_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">invalidsiteId</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSkuThreshold">
+			<test id="testGetSkuThreshold_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40048</obj>
+					<obj id="subDeptJdaNull" type="string">sku40069</obj>
+					<obj id="skuIdpresentinthreshold" type="string">sku40041</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetBrandDetails">
+			<test id="testGetBrandDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="brandId" type="string">100005</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSiteTag">
+			<test id="testGetSiteTag_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetPromotions">
+			<test id="testGetPromotions_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="couponId" type="string">coup123</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetPromotionId">
+			<test id="testGetPromotionId_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="couponId" type="string">ONLBBB110215</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSchoolDetails">
+			<test id="testGetSchoolDetails_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="schoolId" type="string">11269</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetRollUpList">
+			<test id="testGetRollUpList_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="productId" type="string">prod10033</obj>
+					<obj id="firstRollUpValue" type="string">Ivory</obj>
+					<obj id="firstRollUpType" type="string">finish</obj>
+					<obj id="secondRollUpType" type="string">size</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testIsSKUBelowLine">
+			<test id="testIsSKUBelowLine_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40037</obj>
+					<obj id="skuIdForceBelowIsFalse" type="string">sku30004</obj>
+					<obj id="skuIdEcomE" type="string">sku30004</obj>
+					<obj id="caSiteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetCollegeCollections">
+			<test id="testGetCollegeCollections_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="categoryId" type="string">cat50001</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetGiftProducts">
+			<test id="testGetGiftProducts_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testIsLeafNode">
+			<test id="testIsLeafNode_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="trueCategoryId" type="string">cat20007</obj>
+					<obj id="falseCategoryId" type="string">cat20002</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testIsSkuAvailable">
+			<test id="testIsSkuAvailable_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku40037</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetCollegeProduct">
+			<test id="testGetCollegeProduct_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="collegeId" type="string">10008</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetDefaultCountryForSite">
+			<test id="testGetDefaultCountryForSite_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetBopusEligibleStates">
+			<test id="testGetBopusEligibleStates_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetExpectedDeliveryDate">
+			<test id="testGetExpectedDeliveryDate_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="shippingMethodId" type="string">1a</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetParentCategoryForProduct">
+			<test id="testGetParentCategoryForProduct_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="productId" type="string">prod10033</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetParentCategory">
+			<test id="testGetParentCategory_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="rootCategoryId" type="string">cat20001</obj>
+					<obj id="categoryId" type="string">cat20003</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testGetCanadaStoreLocatorInfo">
+			<test id="testGetCanadaStoreLocatorInfo_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetCollegeIdForSite">
+			<test id="testGetCollegeIdForSite_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsFirstLevelCategory">
+			<test id="testIsFirstLevelCategory_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="categoryId" type="string">cat20009</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetParentProductForSku">
+			<test id="testGetParentProductForSku_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40037</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testGetSkuImages">
+			<test id="testGetSkuImages_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40037</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetRootCollegeIdFrmConfig">
+			<test id="testGetRootCollegeIdFrmConfig_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testGetTimeZones">
+			<test id="testGetTimeZones_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testGetcustomerCareEmailAddress">
+			<test id="testGetcustomerCareEmailAddress_test1">
+				<objs>	
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsSkuExcluded">
+			<test id="testIsSkuExcluded_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku10000</obj>
+					<obj id="promotionCode" type="string">10000</obj>
+				</objs>
+			</test>
+			<test id="testIsSkuExcluded_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40057</obj>
+					<obj id="promotionCode" type="string">10000</obj>
+				</objs>
+								
+			</test>
+			<test id="testIsSkuExcluded_test3">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40056</obj>
+					<obj id="promotionCode" type="string">10000</obj>
+				</objs>
+				
+				
+			</test>
+			<test id="testIsSkuExcluded_test4">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku20056</obj>
+					<obj id="promotionCode" type="string">10000</obj>
+				</objs>
+				
+				
+			</test>
+			<test id="testIsSkuExcluded_test5">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40074</obj>
+					<obj id="promotionCode" type="string">10000</obj>
+				</objs>
+			
+				
+			</test>
+		</group>
+		<group id="testIsEcoFeeEligibleForState">
+			<test id="testIsEcoFeeEligibleForState_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="stateId1" type="string">AL</obj>
+					<obj id="stateId2" type="string">FL</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsEcoFeeEligibleForStore">
+			<test id="testIsEcoFeeEligibleForStore_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="storeId1" type="string">2022</obj>
+					<obj id="storeId2" type="string">2023</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetEcoFeeSKUDetailForState">
+			<test id="testGetEcoFeeSKUDetailForState_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="stateId" type="string">BC</obj>
+					<obj id="skuId" type="string">sku60010</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetEcoFeeSKUDetailForStore">
+			<test id="testGetEcoFeeSKUDetailForStore_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="storeId" type="string">2022</obj>
+					<obj id="skuId" type="string">sku60010</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetMaxInventorySKUForProduct">
+			<test id="testGetMaxInventorySKUForProduct_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="productId" type="string">prod10009</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSortSkuByCategory">
+			<test id="testSortSkuByCategory_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">200008</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test3">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test4">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">200008</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test5">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test6">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+				<test id="testSortSkuByCategory_test7">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">200008</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test8">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByCategory_test9">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetCategoryForRegistry">
+			<test id="testGetCategoryForRegistry_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+				</objs>
+			</test>
+			<test id="testGetCategoryForRegistry_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">200003</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetPriceRanges">
+			<test id="testGetPriceRanges_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSortSkuByPrice">
+			<test id="testSortSkuByPrice_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByPrice_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+			<test id="testSortSkuByPrice_test3">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">200008</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+			</group>
+			<group id="testSortSkubyRegistry">
+			<test id="testSortSkubyRegistry_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100002</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+				</objs>
+			</test>
+			<test id="testSortSkubyRegistry_test2">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="registryCode" type="string">100001</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testThirdPartyTagStatus">
+			<test id="testThirdPartyTagStatus_Us">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="tagName" type="string">FBTag</obj>
+				</objs>
+			</test>
+			<test id="testThirdPartyTagStatus_Baby">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="tagName" type="string">FBTag</obj>
+				</objs>
+			</test>
+			<test id="testThirdPartyTagStatus_Ca">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathCanada</obj>
+					<obj id="tagName" type="string">FBTag</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testIsSkuActive">
+			<test id="testIsSkuActive">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSkuPropFlagStatus">
+			<test id="testGetSkuPropFlagStatus">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsProductActive">
+			<test id="testIsProductActive">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="productId" type="string">prod10051</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsEverlivingProduct">
+			<test id="testIsEverlivingProduct">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="productId" type="string">prod10051</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIsSkuActiveForStore">
+			<test id="testIsSkuActiveForStore">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="skuId" type="string">sku40069</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetBccManagedBrand">
+			<test id="testGetBccManagedBrand">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetExpectedDeliveryDateForLTLItem">
+			<test id="testGetExpectedDeliveryDateForLTLItem_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="shippingMethodId" type="string">LC</obj>
+					<obj id="skuId" type="string">sku60195</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetAssemblyCharge">
+			<test id="testGetAssemblyCharge_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku60195</obj>
+				</objs>
+			</test>
+		</group>
+
+		
+		<group id="testShippingMethodsForLTLSku">
+			<test id="testShippingMethodsForSku_test1">
+				<objs>
+					<obj id="BBBCatalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogTools">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="skuId" type="string">17463668</obj>
+					<obj id="skuIdHavingOneShippingMethods" type="string">sku60195</obj>
+					<obj id="notAvailableSkuId" type="string">sku</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

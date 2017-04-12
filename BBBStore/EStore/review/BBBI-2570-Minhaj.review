@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2570">
+  <ReviewIssue id="IQMLIZ15">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 23:05:07:481 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:17:02:640 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="205">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Format the code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMLVQKO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 23:15:03:048 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:13:29:624 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="207">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use BBBConfigRepoUtils.getStringValue for fetching values of all the config keys</Summary>
+    <Description>Instead of calling the catalog tool direclty call BBBConfigRepoUtils.getStringValue method that has better logging and also lead to removal of redundant code, that leads to cleaner code.</Description>
+    <Annotation></Annotation>
+    <Revision>Done. I've changed it for all config key calls.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMML2QI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 23:34:45:210 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:13:42:360 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="207">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove hardcoded values</Summary>
+    <Description>use BBBGiftRegistryConstants.REGISTRY_WS_CALL for value  "RegItemsWSCall"</Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMN0MDT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 23:46:50:513 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:28:51:688 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1671">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add logDebug before returning back from all the methods in any method</Summary>
+    <Description>setCertonaSkuList</Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMNAPNB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 23:54:41:303 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 11:28:58:730 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="522">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why we have initialized the variable in the parent method and passed the variable to the method  - setCertonaSkuList().</Summary>
+    <Description>StringBuilder skuTempList = new StringBuilder("");
+final List&lt;String&gt; skuIds = new ArrayList&lt;String&gt;();
+Map&lt;String, Double&gt; skuIdPriceMap = new HashMap&lt;String, Double&gt;();
+int certonaTopRegCount = 0;
+StringBuilder tempCertonaList = new StringBuilder("");
+ListIterator&lt;RegistryItemVO&gt; regItemsItr = registryItemsAll.listIterator();				
+
+Move them to the method - setCertonaSkuList().</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMNKRVF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-15 :: 00:02:30:747 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 11:29:05:721 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1120">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add logdebug at the end of the method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMP82JV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-15 :: 00:48:37:291 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:13:25:967 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="464">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use BBBConfigRepoUtils.getStringValue for getting config value</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Done. I've changed it for all config key calls.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMPQQS0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-15 :: 01:03:08:496 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 09:43:04:561 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="504">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check the EPH Category population logic.</Summary>
+    <Description>Are we just populating the other categories or all categories in second call?
+/*Iterating over EPH C1s to match with the categoryId passed from request*/</Description>
+    <Annotation></Annotation>
+    <Revision>We are populating only those categories which are coming after the passed categoryId.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQMR4W0I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-15 :: 01:42:08:082 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 09:40:54:236 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1103">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Filtering items code is an old code or something new? Even if some sku/product is not available in the system we were showing it in my items list.</Summary>
+    <Description>Are we not displaying the items that were added from store but not present in the ATG system, there was a requirement for displying such item in my items tab. Please check.
+
+</Description>
+    <Annotation></Annotation>
+    <Revision>It is existing method, it is being called in the older My Items view.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

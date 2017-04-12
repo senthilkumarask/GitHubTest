@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerDoColink">
+  
+      <group id="testDoCoLink">
+        <test id="testDoCoLink_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerDoColink">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerDoColink">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+				<obj id="siteId" type="String">BuyBuyBaby</obj>
+				<obj id="email" type="string">skumar3@sapient.com</obj>
+				<obj id="password" type="string">sunilPASS123</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

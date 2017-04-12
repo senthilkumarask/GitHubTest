@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-835_Onshore_Review">
+  <ReviewIssue id="IMOAGZQ3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:22:22:299 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:22:41:487 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="49">j2ee-apps/BBBStore/store.war/browse/local_store_pdp.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove hardcoded text.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMOAIHLP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:23:32:125 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:23:50:543 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="71">j2ee-apps/BBBStore/store.war/browse/local_store_pdp.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Please remove hardcoded text.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMOAKTDP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:25:20:701 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 23:25:38:454 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="54">j2ee-apps/BBBStore/store.war/browse/local_store_pdp.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove HTML comments.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

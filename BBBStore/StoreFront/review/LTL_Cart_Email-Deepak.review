@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="LTL_Cart_Email">
+  <ReviewIssue id="HX4VUUMU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-02 :: 22:22:58:902 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-02 :: 22:23:28:887 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Deepak</ReviewerId>
+    <AssignedTo>Neha</AssignedTo>
+    <File>LTL_Cart_Email-Deepak.review</File>
+    <Type>Space issue in assembly fee</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Space issue in assembly  fee</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue> 
+  <ReviewIssue id="HX4VYCIB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-02 :: 22:25:42:035 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-02 :: 22:25:44:329 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Neha</AssignedTo>
+    <File>LTL_Cart_Email-Deepak.review</File>
+    <Type>Create Label</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Create label for TBD</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue> 
+</Review>

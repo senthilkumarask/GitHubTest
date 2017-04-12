@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.droplet.TestListPriceSalePriceDroplet">
+		<group id="testService">
+			<test id="test_testService">
+				<objs>
+					<obj id="ListPriceSalePriceDroplet" type="com.bbb.selfservice.droplet.TestListPriceSalePriceDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.droplet.TestListPriceSalePriceDroplet">
+						<item type="string">/com/bbb/common/droplet/ListPriceSalePriceDroplet</item>
+					</obj>					
+				
+					<obj id="productId" type="string">prod60012</obj>
+					<obj id="skuId" type="string">sku60016</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+				<asserts>
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

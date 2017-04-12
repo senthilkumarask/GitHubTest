@@ -1,0 +1,754 @@
+src/atg/rest/processor/BBBRestSecurityProcessor.java:1:	Comment is too large: Too many lines
+src/atg/rest/processor/BBBRestSecurityProcessor.java:9:	Comment is too large: Line too long
+src/atg/rest/processor/BBBRestSecurityProcessor.java:38:	The class 'BBBRestSecurityProcessor' has a Cyclomatic Complexity of 4 (Highest = 17).
+src/atg/rest/processor/BBBRestSecurityProcessor.java:41:	Avoid excessively long variable names like mRestCustomRepoSecurityEnable
+src/atg/rest/processor/BBBRestSecurityProcessor.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/rest/processor/BBBRestSecurityProcessor.java:42:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/rest/processor/BBBRestSecurityProcessor.java:53:	Avoid excessively long variable names like pRestCustomRepoSecurityEnable
+src/atg/rest/processor/BBBRestSecurityProcessor.java:53:	Parameter 'pRestCustomRepoSecurityEnable' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:70:	Parameter 'pHttpsEnabled' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:74:	Comment is too large: Too many lines
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	Found 'UR'-anomaly for variable 'accessControlEntry' (lines '85'-'111').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	Found 'UR'-anomaly for variable 'personaRole' (lines '85'-'116').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	Found 'UR'-anomaly for variable 'personaRole' (lines '85'-'122').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	Parameter 'pRepositoryURI' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	Parameter 'pResponse' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	The method 'checkPersona' has a Cyclomatic Complexity of 17.
+src/atg/rest/processor/BBBRestSecurityProcessor.java:85:	The method checkPersona() has an NPath complexity of 456
+src/atg/rest/processor/BBBRestSecurityProcessor.java:90:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/atg/rest/processor/BBBRestSecurityProcessor.java:90:	Found 'DD'-anomaly for variable 'container' (lines '90'-'96').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:90:	Found 'DU'-anomaly for variable 'container' (lines '90'-'152').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:91:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/atg/rest/processor/BBBRestSecurityProcessor.java:91:	Found 'DD'-anomaly for variable 'csc' (lines '91'-'97').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:91:	Found 'DU'-anomaly for variable 'csc' (lines '91'-'152').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:97:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:104:	Local variable 'accList' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:107:	Local variable 'acl' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:108:	Deeply nested if..then statements are hard to read
+src/atg/rest/processor/BBBRestSecurityProcessor.java:109:	Found 'DD'-anomaly for variable 'check' (lines '109'-'133').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:109:	Found 'DU'-anomaly for variable 'check' (lines '109'-'152').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:110:	Avoid excessively long variable names like accessControlEntry
+src/atg/rest/processor/BBBRestSecurityProcessor.java:110:	Local variable 'accessControlEntry' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:111:	Local variable 'per' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:112:	Local variable 'perlist' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:112:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:113:	Found 'DU'-anomaly for variable 'personaName' (lines '113'-'152').
+src/atg/rest/processor/BBBRestSecurityProcessor.java:113:	Local variable 'personaName' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:113:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:114:	Local variable 'personaRole' could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:120:	Comment is too large: Line too long
+src/atg/rest/processor/BBBRestSecurityProcessor.java:125:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/atg/rest/processor/BBBRestSecurityProcessor.java:145:	New exception is thrown in catch block, original stack trace may be lost
+src/atg/rest/processor/BBBRestSecurityProcessor.java:154:	Comment is too large: Too many lines
+src/atg/rest/processor/BBBRestSecurityProcessor.java:163:	Parameter 'pRepositoryURI' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:163:	Parameter 'pRequest' is not assigned and could be declared final
+src/atg/rest/processor/BBBRestSecurityProcessor.java:163:	Parameter 'pResponse' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:19:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/atg/security/BBBRestClientPersona.java:39:	Parameter 'pClientID' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:46:	Parameter 'pToken' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:61:	Parameter 'pAuthority' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:75:	Parameter 'pAuthenticated' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:83:	Parameter 'pRoleName' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:97:	Parameter 'pRepository' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:101:	Document empty constructor
+src/atg/security/BBBRestClientPersona.java:101:	It is a good practice to call super() in a constructor
+src/atg/security/BBBRestClientPersona.java:104:	It is a good practice to call super() in a constructor
+src/atg/security/BBBRestClientPersona.java:104:	Parameter 'pAuthority' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:108:	Parameter 'pAuthority' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:120:	Ensure you override both equals() and hashCode()
+src/atg/security/BBBRestClientPersona.java:120:	Parameter 'pObject' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Potential violation of Law of Demeter (method chain calls)
+src/atg/security/BBBRestClientPersona.java:121:	Useless parentheses.
+src/atg/security/BBBRestClientPersona.java:121:	Useless parentheses.
+src/atg/security/BBBRestClientPersona.java:121:	Useless parentheses.
+src/atg/security/BBBRestClientPersona.java:121:	Useless parentheses.
+src/atg/security/BBBRestClientPersona.java:124:	Parameter 'persona' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:128:	Return an empty array rather than null.
+src/atg/security/BBBRestClientPersona.java:132:	Document empty method
+src/atg/security/BBBRestClientPersona.java:132:	Parameter 'newSubPersonae' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:135:	Document empty method
+src/atg/security/BBBRestClientPersona.java:135:	Parameter 'newSubPersona' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:138:	Parameter 'oldPersona' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:142:	Parameter 'attributeName' is not assigned and could be declared final
+src/atg/security/BBBRestClientPersona.java:146:	Parameter 'roleName' is not assigned and could be declared final
+src/com/bbb/constants/RestConstants.java:3:	Each class should declare at least one constructor
+src/com/bbb/constants/RestConstants.java:14:	Avoid excessively long variable names like COMPONENT_EXPRESSION
+src/com/bbb/constants/RestConstants.java:19:	Avoid excessively long variable names like SECURE_COMPONENT_INFO
+src/com/bbb/constants/RestConstants.java:25:	Avoid excessively long variable names like APPLICABLE_SITE_ID
+src/com/bbb/constants/RestConstants.java:32:	Avoid excessively long variable names like AUTHROZIED_GROUP_ID
+src/com/bbb/constants/RestConstants.java:33:	Avoid excessively long variable names like NOT_AUTHROZIED_GROUP_ID
+src/com/bbb/constants/RestConstants.java:35:	Avoid excessively long variable names like CLIENT_TOKEN_QUERY
+src/com/bbb/constants/RestConstants.java:37:	Avoid excessively long variable names like ERROR_INVALID_TOKEN
+src/com/bbb/constants/RestConstants.java:38:	Avoid excessively long variable names like ERROR_INVALID_CLIENT_ID
+src/com/bbb/constants/RestConstants.java:49:	Avoid excessively long variable names like TIMESTAMP_DATEFORMAT
+src/com/bbb/constants/RestConstants.java:52:	Avoid excessively long variable names like CA_TIMESTAMP_DATE_FORMAT
+src/com/bbb/pipeline/BBBRestAccessController.java:1:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessController.java:35:	The class 'BBBRestAccessController' has a Cyclomatic Complexity of 3 (Highest = 12).
+src/com/bbb/pipeline/BBBRestAccessController.java:36:	Avoid excessively long variable names like customerLoginRequiredURLs
+src/com/bbb/pipeline/BBBRestAccessController.java:37:	Avoid excessively long variable names like mEnableRestCheckLogin
+src/com/bbb/pipeline/BBBRestAccessController.java:37:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessController.java:38:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessController.java:51:	Parameter 'pRestContextPath' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:65:	Avoid excessively long variable names like pEnableRestCheckLogin
+src/com/bbb/pipeline/BBBRestAccessController.java:65:	Parameter 'pEnableRestCheckLogin' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:75:	Avoid excessively long variable names like customerLoginRequiredURLs
+src/com/bbb/pipeline/BBBRestAccessController.java:75:	Parameter 'customerLoginRequiredURLs' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:80:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessController.java:96:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:96:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:96:	The method 'service' has a Cyclomatic Complexity of 12.
+src/com/bbb/pipeline/BBBRestAccessController.java:97:	Local variable 'methodName' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:104:	Local variable 'contextPath' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:105:	Local variable 'uri' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:106:	Avoid excessively long variable names like uriWithoutContextPath
+src/com/bbb/pipeline/BBBRestAccessController.java:106:	Found 'DD'-anomaly for variable 'uriWithoutContextPath' (lines '106'-'110').
+src/com/bbb/pipeline/BBBRestAccessController.java:106:	Found 'DU'-anomaly for variable 'uriWithoutContextPath' (lines '106'-'134').
+src/com/bbb/pipeline/BBBRestAccessController.java:107:	Found 'DD'-anomaly for variable 'compPath' (lines '107'-'111').
+src/com/bbb/pipeline/BBBRestAccessController.java:107:	Found 'DU'-anomaly for variable 'compPath' (lines '107'-'134').
+src/com/bbb/pipeline/BBBRestAccessController.java:108:	Local variable 'array' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessController.java:110:	Found 'DU'-anomaly for variable 'uriWithoutContextPath' (lines '110'-'134').
+src/com/bbb/pipeline/BBBRestAccessController.java:111:	Found 'DU'-anomaly for variable 'compPath' (lines '111'-'134').
+src/com/bbb/pipeline/BBBRestAccessController.java:115:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessController.java:117:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessController.java:117:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessController.java:117:	These nested if statements could be combined
+src/com/bbb/pipeline/BBBRestAccessController.java:119:	Avoid excessively long variable names like profileComponentName
+src/com/bbb/pipeline/BBBRestAccessController.java:119:	Local variable 'profileComponentName' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:120:	Local variable 'profile' could be declared final
+src/com/bbb/pipeline/BBBRestAccessController.java:121:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessController.java:121:	Useless parentheses.
+src/com/bbb/pipeline/BBBRestAccessController.java:121:	Useless parentheses.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:1:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessServlet.java:14:	Possible God class (WMC=55, ATFD=45, TCC=0.0641025641025641)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:51:	The class 'BBBRestAccessServlet' has a Cyclomatic Complexity of 4 (Highest = 23).
+src/com/bbb/pipeline/BBBRestAccessServlet.java:52:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:53:	Avoid excessively long variable names like mRestCustomSecurityEnable
+src/com/bbb/pipeline/BBBRestAccessServlet.java:53:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:54:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:55:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:56:	Avoid excessively long variable names like mRestSecurityProcessor
+src/com/bbb/pipeline/BBBRestAccessServlet.java:56:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:76:	Avoid excessively long variable names like pRestSecurityProcessor
+src/com/bbb/pipeline/BBBRestAccessServlet.java:76:	Parameter 'pRestSecurityProcessor' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:84:	Parameter 'pUserAuthority' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:92:	Avoid excessively long variable names like pRestCustomSecurityEnable
+src/com/bbb/pipeline/BBBRestAccessServlet.java:92:	Parameter 'pRestCustomSecurityEnable' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:107:	Parameter 'pRepository' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:122:	Parameter 'pHttpsEnabled' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:130:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	Found 'UR'-anomaly for variable 'persona' (lines '144'-'178').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	Found 'UR'-anomaly for variable 'persona' (lines '144'-'180').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	The method 'serviceRESTRequest' has a Cyclomatic Complexity of 23.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:144:	The method serviceRESTRequest() has an NPath complexity of 23052
+src/com/bbb/pipeline/BBBRestAccessServlet.java:145:	Local variable 'methodName' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:151:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:151:	Avoid unused local variables such as 'uri'.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:151:	Found 'DU'-anomaly for variable 'uri' (lines '151'-'241').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:151:	Local variable 'uri' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:152:	Avoid unused local variables such as 'request_type'.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:152:	Found 'DU'-anomaly for variable 'request_type' (lines '152'-'241').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:152:	Local variable 'request_type' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:152:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'request_type' is not final.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:158:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:160:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:160:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:162:	Local variable 'clientID' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:163:	Local variable 'token' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:164:	Local variable 'siteId' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:165:	Found 'DU'-anomaly for variable 'personaMap' (lines '165'-'241').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:165:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/pipeline/BBBRestAccessServlet.java:165:	Local variable 'personaMap' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:173:	Local variable 'perlist' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:173:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:175:	Comment is too large: Line too long
+src/com/bbb/pipeline/BBBRestAccessServlet.java:176:	Local variable 'persona' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:177:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessServlet.java:180:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessServlet.java:184:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:184:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:188:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessServlet.java:195:	Local variable 'items' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:200:	Comment is too large: Line too long
+src/com/bbb/pipeline/BBBRestAccessServlet.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:201:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:201:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:206:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessServlet.java:206:	These nested if statements could be combined
+src/com/bbb/pipeline/BBBRestAccessServlet.java:213:	Local variable 'role' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:213:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:213:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:216:	Avoid if (x != y) ..; else ..;
+src/com/bbb/pipeline/BBBRestAccessServlet.java:216:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:232:	New exception is thrown in catch block, original stack trace may be lost
+src/com/bbb/pipeline/BBBRestAccessServlet.java:243:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessServlet.java:252:	Parameter 'pClientID' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:256:	Found 'DD'-anomaly for variable 'item' (lines '256'-'264').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:258:	Local variable 'repoItemDES' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:259:	Local variable 'view' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:260:	Found 'DD'-anomaly for variable 'stat' (lines '260'-'263').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:261:	Found 'DD'-anomaly for variable 'obj' (lines '261'-'262').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:264:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:273:	Comment is too large: Too many lines
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Found 'UR'-anomaly for variable 'repositoryItem' (lines '282'-'288').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Parameter 'pClientID' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Parameter 'pRole' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Parameter 'pSiteId' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Parameter 'pToken' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	Parameter 'personaMap' is not assigned and could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	The method 'addPersonaToUserProfile' has a Cyclomatic Complexity of 20.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:282:	The method addPersonaToUserProfile() has an NPath complexity of 348
+src/com/bbb/pipeline/BBBRestAccessServlet.java:286:	Local variable 'repositoryItem' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:288:	Local variable 'applicableSite' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:289:	Found 'DU'-anomaly for variable 'isSecurePersona' (lines '289'-'360').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:289:	Local variable 'isSecurePersona' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:290:	Found 'DU'-anomaly for variable 'rolveValue' (lines '290'-'360').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:290:	Local variable 'rolveValue' could be declared final
+src/com/bbb/pipeline/BBBRestAccessServlet.java:297:	Found 'DD'-anomaly for variable 'persona' (lines '297'-'297').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:297:	Found 'DD'-anomaly for variable 'persona' (lines '297'-'302').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:297:	Found 'DD'-anomaly for variable 'persona' (lines '297'-'322').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:297:	Found 'DU'-anomaly for variable 'persona' (lines '297'-'360').
+src/com/bbb/pipeline/BBBRestAccessServlet.java:299:	Comment is too large: Line too long
+src/com/bbb/pipeline/BBBRestAccessServlet.java:301:	Useless parentheses.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:301:	Useless parentheses.
+src/com/bbb/pipeline/BBBRestAccessServlet.java:302:	Avoid instantiating new objects inside loops
+src/com/bbb/pipeline/BBBRestAccessServlet.java:312:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:322:	Avoid instantiating new objects inside loops
+src/com/bbb/pipeline/BBBRestAccessServlet.java:327:	Deeply nested if..then statements are hard to read
+src/com/bbb/pipeline/BBBRestAccessServlet.java:332:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:344:	Avoid if (x != y) ..; else ..;
+src/com/bbb/pipeline/BBBRestAccessServlet.java:344:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/pipeline/BBBRestAccessServlet.java:346:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/cms/vo/GuidesContentVO.java:10:	Avoid using redundant field initializer for 'errorCode'
+src/com/bbb/rest/cms/vo/GuidesContentVO.java:20:	Parameter 'guidesContentList' is not assigned and could be declared final
+src/com/bbb/rest/cms/vo/GuidesContentVO.java:32:	Parameter 'error' is not assigned and could be declared final
+src/com/bbb/rest/cms/vo/GuidesContentVO.java:44:	Parameter 'errorCode' is not assigned and could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:20:	Found 'UR'-anomaly for variable 'address' (lines '20'-'36').
+src/com/bbb/rest/framework/AddressCustomizer.java:20:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:20:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:27:	Local variable 'POBoxAddressList' could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:27:	Variables should start with a lowercase character, 'POBoxAddressList' starts with uppercase character.
+src/com/bbb/rest/framework/AddressCustomizer.java:33:	Avoid excessively long variable names like secondaryAddressMap
+src/com/bbb/rest/framework/AddressCustomizer.java:33:	Local variable 'secondaryAddressMap' could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:33:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/AddressCustomizer.java:34:	Local variable 'address' could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/AddressCustomizer.java:36:	Local variable 'item' could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/AddressCustomizer.java:37:	Avoid instantiating new objects inside loops
+src/com/bbb/rest/framework/AddressCustomizer.java:37:	Local variable 'contactInfo' could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:48:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/rest/framework/AddressCustomizer.java:49:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/rest/framework/AddressCustomizer.java:57:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:57:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/AddressCustomizer.java:57:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:1:	Possible God class (WMC=73, ATFD=20, TCC=0.047619047619047616)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:34:	The class 'BBBJSONOutputCustomizer' has a Cyclomatic Complexity of 5 (Highest = 30).
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:36:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:37:	Avoid using redundant field initializer for 'excludeObjectKeys'
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:38:	Avoid excessively long variable names like excludeObjectValues
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:38:	Avoid using redundant field initializer for 'excludeObjectValues'
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:39:	Avoid excessively long variable names like errorCodeSeparator
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:43:	Avoid excessively long variable names like errorCodeSeparator
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:43:	Parameter 'errorCodeSeparator' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:49:	Parameter 'serviceClassMap' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:55:	Parameter 'dozerBean' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:62:	Parameter 'excludeObjectKeys' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:68:	Avoid excessively long variable names like excludeObjectValues
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:68:	Parameter 'excludeObjectValues' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:74:	The method 'outputBean' has a Cyclomatic Complexity of 18.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:76:	Local variable 'serviceClassName' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:76:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:78:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:80:	Local variable 'formHandler' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:81:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:87:	Local variable 'formHandler' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:90:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:96:	Avoid if (x != y) ..; else ..;
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:98:	Local variable 'destProductVO' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:98:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:118:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:119:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:122:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pContainer' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pJSON' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pResourceName' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:124:	The method 'addMapToJSONObject' has a Cyclomatic Complexity of 30.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:125:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:128:	Found 'DD'-anomaly for variable 'value' (lines '128'-'145').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:128:	Found 'DU'-anomaly for variable 'value' (lines '128'-'211').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:129:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:129:	Local variable 'map' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:130:	Found 'DU'-anomaly for variable 'maxNestingDepth' (lines '130'-'211').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:130:	Local variable 'maxNestingDepth' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:131:	Avoid unused local variables such as 'iter'.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:131:	Local variable 'iter' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:134:	Local variable 'jobj' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:136:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:136:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:136:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:138:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:138:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:138:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:140:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:140:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:141:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:142:	Avoid using dollar signs in variable/method/class/interface names
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:142:	Local variable 'i$' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:142:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:144:	Local variable 'key' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:146:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:146:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:148:	Found 'DD'-anomaly for variable 'objValue' (lines '148'-'150').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:148:	Found 'DD'-anomaly for variable 'objValue' (lines '148'-'152').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:150:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:150:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:152:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:152:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:155:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:155:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:159:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:159:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:159:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:159:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:161:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:161:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:162:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:164:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:164:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:168:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:168:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:170:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:170:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:171:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:173:	Useless parentheses.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:176:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:176:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:176:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:178:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:178:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:178:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:184:	Avoid instantiating new objects inside loops
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:184:	Local variable 'child' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:186:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:186:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:188:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:188:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:190:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:190:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:191:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:192:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:192:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:193:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:193:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:195:	Avoid unused local variables such as 'tempKey'.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:195:	Local variable 'tempKey' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:199:	Avoid if (x != y) ..; else ..;
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:202:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pContainer' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pJSON' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pResourceName' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:215:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:216:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:218:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:219:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:230:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:230:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:231:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:231:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:231:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:231:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:233:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:240:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:240:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:244:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pResourceName' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:246:	The method 'outputBeanValue' has a Cyclomatic Complexity of 11.
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:250:	Found 'DD'-anomaly for variable 'flag' (lines '250'-'285').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:253:	These nested if statements could be combined
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:255:	Found 'DU'-anomaly for variable 'input' (lines '255'-'298').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:255:	Local variable 'input' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:256:	Found 'DU'-anomaly for variable 'output' (lines '256'-'298').
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:256:	Local variable 'output' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:258:	Local variable 'serviceClassName' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:258:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:261:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:262:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:265:	Local variable 'destProductVO' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:265:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:265:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:266:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:301:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:303:	Parameter 'pJSON' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:303:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:308:	Local variable 'json' could be declared final
+src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java:309:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:21:	Parameter 'pEnabled' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:25:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:32:	Parameter 'siteIdProperty' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:36:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:37:	Avoid excessively long variable names like pSiteSessionManager
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:37:	Parameter 'pSiteSessionManager' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:43:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:43:	Found 'DD'-anomaly for variable 'siteId' (lines '43'-'53').
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:43:	Found 'DU'-anomaly for variable 'siteId' (lines '43'-'66').
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:45:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:45:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:46:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:48:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:48:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/rest/framework/BBBRestRuleFilter.java:51:	Local variable 'requestSiteId' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:25:	The class 'BBBXMLOutputCustomizer' has a Cyclomatic Complexity of 4 (Highest = 13).
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:26:	Avoid excessively long variable names like errorCodeSeparator
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:29:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:34:	Parameter 'serviceClassMap' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:40:	Parameter 'dozerBean' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:47:	Avoid excessively long variable names like errorCodeSeparator
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:47:	Parameter 'errorCodeSeparator' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pElement' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:54:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:59:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:59:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:59:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:61:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:63:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:63:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:67:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:67:	Parameter 'pResContainer' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:67:	The method 'outputBean' has a Cyclomatic Complexity of 13.
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:68:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:68:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:69:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:71:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:73:	Local variable 'formHandler' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:75:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:77:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:81:	Local variable 'formHandler' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:95:	Comment is too large: Line too long
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pNestingDepth' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pParsedURI' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pResourceName' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	Parameter 'pValue' is not assigned and could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:97:	The method 'outputBeanValue' has a Cyclomatic Complexity of 11.
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:101:	Found 'DD'-anomaly for variable 'flag' (lines '101'-'136').
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:104:	These nested if statements could be combined
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:106:	Found 'DU'-anomaly for variable 'input' (lines '106'-'149').
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:106:	Local variable 'input' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:107:	Found 'DU'-anomaly for variable 'output' (lines '107'-'149').
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:107:	Local variable 'output' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:109:	Local variable 'serviceClassName' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:109:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:112:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:113:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:116:	Local variable 'destProductVO' could be declared final
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:116:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:116:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/BBBXMLOutputCustomizer.java:117:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:8:	The class 'ContactInforPropertyCustomizer' has a Cyclomatic Complexity of 7 (Highest = 12).
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:9:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:9:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:9:	The method 'getPropertyValue' has a Cyclomatic Complexity of 12.
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'21').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'23').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'25').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'27').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'29').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DD'-anomaly for variable 'returnValue' (lines '10'-'31').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:10:	Found 'DU'-anomaly for variable 'returnValue' (lines '10'-'35').
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:12:	Avoid excessively long variable names like repositoryCotactInfo
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:12:	Local variable 'repositoryCotactInfo' could be declared final
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Useless parentheses.
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:14:	Useless parentheses.
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:15:	Deeply nested if..then statements are hard to read
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:15:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:16:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:18:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:20:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:21:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:21:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:22:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:23:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:23:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:24:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:25:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:25:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:26:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:27:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:27:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:28:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:29:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:29:	Avoid using if...else statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:30:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:30:	Avoid using if statements without curly braces
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:30:	Position literals first in String comparisons
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:38:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:38:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/ContactInforPropertyCustomizer.java:38:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/rest/framework/CreditCardCustomizer.java:11:	Comment is too large: Line too long
+src/com/bbb/rest/framework/CreditCardCustomizer.java:20:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/CreditCardCustomizer.java:20:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/CreditCardCustomizer.java:28:	Found 'DD'-anomaly for variable 'creditCardNumber' (lines '28'-'32').
+src/com/bbb/rest/framework/CreditCardCustomizer.java:39:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/rest/framework/CreditCardCustomizer.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/CreditCardCustomizer.java:42:	Useless parentheses.
+src/com/bbb/rest/framework/CreditCardCustomizer.java:42:	Useless parentheses.
+src/com/bbb/rest/framework/CreditCardCustomizer.java:47:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/CreditCardCustomizer.java:47:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/CreditCardCustomizer.java:47:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:14:	The class 'DatePropertyCustomizer' has a Cyclomatic Complexity of 6 (Highest = 10).
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:16:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'CLASS_VERSION' is not final.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:16:	The field name indicates a constant but its modifiers do not
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:16:	Variables should start with a lowercase character, 'CLASS_VERSION' starts with uppercase character.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:17:	Variables that are final and static should be all capitals, 'DateLOGGING' is not all capitals.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:21:	The method 'getPropertyValue' has a Cyclomatic Complexity of 10.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:27:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:27:	Found 'DD'-anomaly for variable 'date' (lines '27'-'51').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:27:	Found 'DU'-anomaly for variable 'date' (lines '27'-'59').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:28:	Found 'DD'-anomaly for variable 'sdf' (lines '28'-'34').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:28:	Found 'DD'-anomaly for variable 'sdf' (lines '28'-'36').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:28:	Found 'DD'-anomaly for variable 'sdf' (lines '28'-'42').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:28:	Found 'DD'-anomaly for variable 'sdf' (lines '28'-'44').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:28:	Found 'DU'-anomaly for variable 'sdf' (lines '28'-'59').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:29:	Found 'DU'-anomaly for variable 'siteId' (lines '29'-'59').
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:33:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:33:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:34:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:36:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:39:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:39:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:39:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:39:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:41:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:41:	Useless parentheses.
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:42:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:44:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:48:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/rest/framework/DatePropertyCustomizer.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:33:	Comment is too large: Line too long
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:41:	The class 'OrderPropertyCustomizer' has a Cyclomatic Complexity of 6 (Highest = 12).
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:43:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'CLASS_VERSION' is not final.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:43:	The field name indicates a constant but its modifiers do not
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:43:	Variables should start with a lowercase character, 'CLASS_VERSION' starts with uppercase character.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:47:	Variables that are final and static should be all capitals, 'orderCookieAge' is not all capitals.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:48:	Variables that are final and static should be all capitals, 'orderCookiePath' is not all capitals.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:49:	Variables that are final and static should be all capitals, 'cartCookie' is not all capitals.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:51:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:51:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:51:	The method 'getPropertyValue' has a Cyclomatic Complexity of 12.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:59:	Found 'DD'-anomaly for variable 'value' (lines '59'-'63').
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:60:	Found 'DD'-anomaly for variable 'orderVO' (lines '60'-'76').
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:69:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:69:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:73:	Local variable 'orderManager' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:73:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:74:	Local variable 'pRequest' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:75:	Local variable 'pResponse' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:77:	Local variable 'profile' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:79:	Local variable 'parentJsonObject' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:119:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:119:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:119:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:130:	Parameter 'order' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:130:	Parameter 'siteId' is not assigned and could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:132:	Local variable 'jsonRootObject' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:133:	Local variable 'encryptTools' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:138:	Local variable 'jsonCIList' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:140:	Local variable 'iterator' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:140:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:141:	Local variable 'citem' could be declared final
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:144:	Avoid instantiating new objects inside loops
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:149:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:149:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:151:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:151:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/OrderPropertyCustomizer.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:10:	Comment is too large: Line too long
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:18:	The class 'RegistrySummaryVOPropertyCustomizer' has a Cyclomatic Complexity of 8 (Highest = 15).
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:20:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'CLASS_VERSION' is not final.
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:20:	The field name indicates a constant but its modifiers do not
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:20:	Variables should start with a lowercase character, 'CLASS_VERSION' starts with uppercase character.
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:23:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:23:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:23:	The method 'getPropertyValue' has a Cyclomatic Complexity of 15.
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'34').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'36').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'38').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'40').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'42').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'44').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'46').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'50').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'52').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:25:	Found 'DD'-anomaly for variable 'returnValue' (lines '25'-'54').
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:31:	Avoid variables with short names like vo
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:31:	Local variable 'vo' could be declared final
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:68:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:68:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/RegistrySummaryVOPropertyCustomizer.java:68:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:12:	Avoid unused imports such as 'com.bbb.utils.BBBUtility'
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:18:	Parameter 'pPropertyName' is not assigned and could be declared final
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:18:	Parameter 'pResource' is not assigned and could be declared final
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:26:	Found 'DD'-anomaly for variable 'userSiteItems' (lines '26'-'32').
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:28:	Found 'DD'-anomaly for variable 'item' (lines '28'-'34').
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:41:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:49:	Parameter 'arg0' is not assigned and could be declared final
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:49:	Parameter 'arg1' is not assigned and could be declared final
+src/com/bbb/rest/framework/UserSiteItemsCustomizer.java:49:	Parameter 'arg2' is not assigned and could be declared final
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:3:	Avoid unused imports such as 'java.io.File'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:4:	Avoid unused imports such as 'java.io.FileInputStream'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:5:	Avoid unused imports such as 'java.io.FileOutputStream'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:13:	Avoid unused imports such as 'com.bbb.commerce.catalog.BBBCatalogTools'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:15:	Avoid unused imports such as 'com.bbb.exception.BBBBusinessException'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:16:	Avoid unused imports such as 'com.bbb.exception.BBBSystemException'
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:39:	Comment is too large: Too many lines
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:58:	Local variable 'fileName' could be declared final
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:60:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:60:	Found 'DD'-anomaly for variable 'reader' (lines '60'-'76').
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:60:	Found 'DU'-anomaly for variable 'reader' (lines '60'-'81').
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:66:	Found 'DD'-anomaly for variable 'stream' (lines '66'-'68').
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:68:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/restui/xml/droplet/XMLTextDroplet.java:68:	Potential violation of Law of Demeter (method chain calls)

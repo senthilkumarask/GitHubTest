@@ -1,0 +1,29 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_cat_id":1,
+			"rule_id":1,
+			"sku_id":1,
+			"name":"301: Toaster",
+			"rule_evaluation_cd":"1",
+			"sequence_num":1,
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_cat_id":1,
+			"rule_id":2,
+			"sku_id":2,
+			"name":"420: Garbage Can",
+			"rule_evaluation_cd":"0",
+			"sequence_num":2,
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		}
+	]
+}

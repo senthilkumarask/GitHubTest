@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Certona_Profile_Data_Feed_2012_02_09_Rajesh_Saini">
+  <ReviewIssue id="GYFU1781">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 19:07:42:097 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:34:22:898 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="8">config/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>These properties should come from configRepository filePath=d://feedFile//,fileName=profileFeed,batchSize=100,fileExtention=.xml,datePattern=mmddyyhhmmssss</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYFU8VD5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 19:13:39:977 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:34:38:717 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="1">src/com/bbb/certona/utils/CertonaProfileFeedTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Code Header comments missing</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYFU9L9E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 19:14:13:538 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:34:54:697 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="1">src/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Code Header comments missing</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYFV055Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 19:34:52:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:35:09:172 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="159">src/com/bbb/certona/utils/CertonaProfileFeedTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add check for empty also, as discussed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYFVRFSP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 19:56:05:881 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:35:26:619 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="403">src/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Remove this else part, because this condition will never come and if it is null then don't send.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYFX8KCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-09 :: 20:37:24:554 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-16 :: 00:15:07:021 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Rajesh</AssignedTo>
+    <File line="11">config/com/bbb/certona/scheduler/CertonaProfileFeedScheduler.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Move the properties to configRepository schedule=every 5 minutes;typeOfFeed=profile;modeMap=true=full,false=incremental;isFullDataFeed=false;isManualRun=false;userLastModifiedDate=null;userLastModifiedDatePattern=yyyy-MM-dd HH:mm:ss</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

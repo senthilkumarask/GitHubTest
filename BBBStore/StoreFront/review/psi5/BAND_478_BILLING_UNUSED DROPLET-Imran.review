@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_478_BILLING_UNUSED DROPLET">
+  <ReviewIssue id="I10L5N4C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-08 :: 16:51:11:244 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-08 :: 16:51:11:306 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="27">j2ee-apps/BBBStore/store.war/checkout/billing/billing.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

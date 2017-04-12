@@ -1,0 +1,1 @@
+start tortoiseproc /command:revert  /path:* /closeonend:1 /notempfile

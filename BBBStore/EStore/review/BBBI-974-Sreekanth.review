@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-974">
+  <ReviewIssue id="IPHN8AYW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:14:15:752 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 16:01:50:418 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="7">config/com/bbb/eph/scheduler/BBBEphCategoryMapCacheLoadScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>I assume we override this propertly in JOBs 2 JVM</Summary>
+    <Description>schedule=every 1 day
+Can we prepare JOBs 2 JVM layering checkin with accurate schedule?</Description>
+    <Annotation>Layering is already added with schedulerEnabled property. This property is not mentioned there as it would be common for all scheduler run.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHNB8R1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:16:32:845 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:59:21:842 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="33">config/atg/dynamo/Initial.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why do we need entry here if we are running this scheduler only from JOBs JVM?</Summary>
+    <Description>Will this entry does not start scheduler from every JVM? Ofcourse scheduler won't run as we schedulerEnabled property to false but why do we even need to start the scheduler from page serving JVMs?</Description>
+    <Annotation>This entry was added to test scheduler in lower environments. It has been removed now and layering is added in JOBs 02</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHNDSLA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:18:31:870 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:18:43:501 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="8">config/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Does not it need to be false by default?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHNF1VR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:19:30:567 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:19:41:004 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="9">config/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Did we optimize the pool size?</Summary>
+    <Description>poolSize</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHNFU80">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:20:07:296 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:55:56:445 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="11">config/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Let's talk about the purpose of this variable</Summary>
+    <Description>cacheTimeout</Description>
+    <Annotation>cacheTimeout is removed from config.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHNTZAI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:31:07:050 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:55:14:289 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="377">src/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Have concerns on program logic</Summary>
+    <Description>Can you discuss the logic with Gurdeep once, I believe we do not need for loop here. We may just need to initialize the thread pool and keep pumping the records to it. I might have confused let's talk about this logic in call.
+
+int perThreadSearchKeyToFetch = (maxRecordCount / this.getPoolSize()) + 1;
+				logDebug("per thread searchKey to fetch items = "+ perThreadSearchKeyToFetch);
+				
+				int startIndex = 1;
+				int endIndex = perThreadSearchKeyToFetch;
+
+				for (int threadCounter = 0; threadCounter &lt; this
+						.getPoolSize(); threadCounter++) {
+					logDebug("Ready to spawn search key threads inside for loop");
+					
+					Runnable searchKeyThread = new KeywordCacheLoaderRunnableThread(
+							startIndex, endIndex);
+					// execute thread
+					threadPool.execute(searchKeyThread);
+					
+					startIndex = endIndex + 1;
+					endIndex = endIndex
+							+ perThreadSearchKeyToFetch;						
+				}</Description>
+    <Annotation>This has been reviewed by Gurdeep.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHOAFLC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:43:54:672 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:54:08:180 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="263">src/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Do we have proper indexes defined on the tables?</Summary>
+    <Description>rs = preparedStmt.executeQuery();</Description>
+    <Annotation></Annotation>
+    <Revision>yes, Index is already added in table.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPHOCVTZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-16 :: 07:45:49:031 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:53:16:522 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="332">src/com/bbb/eph/tools/BBBEphCategoryMapCacheLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Arch raised concern about sending cache timeout in each key, we should look at it</Summary>
+    <Description>this.getCacheTimeout()</Description>
+    <Annotation>this has been fixed.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

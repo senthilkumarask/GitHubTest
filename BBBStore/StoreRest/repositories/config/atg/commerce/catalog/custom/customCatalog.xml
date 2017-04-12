@@ -1,0 +1,373 @@
+
+<!--startSQLRepository -m BBBStore.core -repository /atg/commerce/catalog/ProductCatalog 
+	-outputSQLFile D:\Nov29_1.sql -->
+
+<gsa-template xml-combine="append">
+
+	<header>
+		<name>BBB Custom Catalog</name>
+	    <author></author>	
+		<version>$Revision: #1 $</version>
+	</header>
+
+
+	<!--/////////////////////////////// -->
+	<!-- category -->
+	<!--/////////////////////////////// -->
+	<item-descriptor name="category" xml-combine="append">
+	<table name="BBB_CATEGORY" type="auxiliary" id-column-name="category_id">
+		<!-- GS related product attributes starts -->
+			<property name="gsImageOrientation" column-name="GS_Image_Orientation" display-name-resource="gsImageOrientation" data-type="enumerated" category-resource="GSCategoryCustom">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="9" />
+				<attribute name="uiwritable" value="true" />
+				<attribute name="useCodeForValue" value="true" />
+				<option value="overlay" code="0" />
+				<option value="nonOverlay" code="1" />
+			</property>
+		<!-- GS related product attributes ends -->
+		</table>
+	</item-descriptor>
+
+
+
+
+
+	<!--/////////////////////////////// -->
+	<!-- product -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="product" xml-combine="append">
+	<table name="BBB_PRODUCT" type="auxiliary" id-column-name="product_id">
+		
+		<property name="primaryCategoryIdDefault" column-name="primary_node_ID_default" display-name-resource="primaryCategoryIdDefault" data-type="string" category-resource="BBBProductCustom" xml-combine="replace" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+			<attribute name="propertySortPriority" value="30" />
+		</property>
+		<property name="gsBBBWebOffered" data-type="boolean" column-name="GS_BBB_WEB_OFFERED" category-resource="productFlagBasics" display-name-resource="productGsBbbWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+		</property>
+		<property name="gsBBBDisabled" data-type="boolean" column-name="GS_BBB_DISABLED" category-resource="productFlagBasics" display-name-resource="productGsBBBDisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+		</property>
+		<property name="gsBABWebOffered" data-type="boolean" column-name="GS_BAB_WEB_OFFERED" category-resource="productFlagBasics" display-name-resource="productGsBABWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+		</property>
+		<property name="gsBABDisabled" data-type="boolean" column-name="GS_BAB_DISABLED" category-resource="productFlagBasics" display-name-resource="productGsBABDisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+		</property>
+		<property name="gsCAWebOffered" data-type="boolean" column-name="GS_CA_WEB_OFFERED" category-resource="productFlagBasics" display-name-resource="productGsCAWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+		</property>
+		<property name="gsCADisabled" data-type="boolean" column-name="GS_CA_DISABLED" category-resource="productFlagBasics" display-name-resource="productGsCADisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+		</property>
+		<property name="gsBBBEnableDate" column-name="gs_bbb_enable_date" display-name-resource="gsBBBEnableDate" data-type="date" category-resource="GSEnableDates">
+        	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources"/>
+        	<attribute name="propertySortPriority" value="1"/>
+        </property>
+        <property name="gsBABEnableDate" column-name="gs_bab_enable_date" display-name-resource="gsBABEnableDate" data-type="date" category-resource="GSEnableDates">
+        	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources"/>
+        	<attribute name="propertySortPriority" value="2"/>
+        </property>
+        <property name="gsCAEnableDate" column-name="gs_ca_enable_date" display-name-resource="gsCAEnableDate" data-type="date" category-resource="GSEnableDates">
+        	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources"/>
+        	<attribute name="propertySortPriority" value="3"/>
+        </property>
+		</table>
+		<table name="BBB_GS_PRODUCT_IMAGES" type="multi" id-column-names="product_id" multi-column-name="SHOT_TYPE">
+			<property name="gsProductImages" column-names="scene7_url" display-name-resource="gsProductImages" data-type="map" component-data-type="String" category-resource="GSProductCustom">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="32" />
+			</property>
+		</table>
+
+		<property name="primaryCategoryId" display-name-resource="primaryCategoryId" data-type="string" hidden="true" queryable="true" xml-combine="replace">
+			<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+				<expression>primaryCategoryIdDefault</expression>
+			</derivation>
+			<attribute name="defaultLocale" value="en_US" />
+			<attribute name="defaultSite" value="BedBathUS" />
+			<attribute name="itemType" value="product" />
+			<attribute name="property" value="primaryCategoryId" />
+			<attribute name="translations" value="prdTranslations" />
+			<attribute name="gsSitePrefix" value="GS_"/>
+		</property>
+		<property name="displayName" xml-combine="remove"/>
+		<property name="displayName" data-type="string"  writable="false" hidden="true" queryable="true" display-name-resource="displayName">
+			<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+		               <expression>displayNameDefault</expression>        
+		        </derivation>
+		        <attribute name="defaultProperty" value="displayNameDefault"/>
+		        <attribute name="defaultLocale" value="en_US"/>
+		        <attribute name="defaultSite" value="BedBathUS"/>
+		        <attribute name="itemType" value="product"/>
+		        <attribute name="property" value="displayName"/>
+		        <attribute name="translations" value="prdTranslations"/>
+			<attribute name="gsSitePrefix" value="GS_"/>
+		</property>
+		<property name="description" xml-combine="remove"/>
+		<property name="description" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="description">
+		  	<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+		       <expression>descriptionDefault</expression>   
+		     </derivation>
+			     <attribute name="defaultProperty" value="descriptionDefault"/>
+			     <attribute name="defaultLocale" value="en_US"/>
+			     <attribute name="defaultSite" value="BedBathUS"/>
+			     <attribute name="itemType" value="product"/>
+		         <attribute name="property" value="description"/>
+		         <attribute name="translations" value="prdTranslations"/>
+		         <attribute name="gsSitePrefix" value="GS_"/>
+		  </property>
+		  <property name="longDescription" xml-combine="remove"/>
+			<property name="longDescription" data-type="big string" writable="false" hidden="true" queryable="true" display-name-resource="longDescription">
+				<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+			      <expression>longDescriptionDefault</expression>   
+			    </derivation>
+			    <attribute name="defaultProperty" value="longDescriptionDefault"/>
+			    <attribute name="defaultLocale" value="en_US"/>
+			    <attribute name="defaultSite" value="BedBathUS"/>
+			    <attribute name="itemType" value="product"/>
+			       <attribute name="property" value="longDescription"/>
+			       <attribute name="translations" value="prdTranslations"/>
+			       <attribute name="gsSitePrefix" value="GS_"/>
+			</property>
+			<property name="priceRangeDescrip" xml-combine="remove"/>
+			<property name="priceRangeDescrip" display-name="priceRangeDescripDerived" data-type="string" writable="false" hidden="true" queryable="true">
+           <derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>priceRangeDescripDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="priceRangeDescripDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="priceRangeDescrip"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+       </property>
+       <property name="webOnly" xml-combine="remove"/>
+     <property name="webOnly" display-name-resource="webOnly" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>webOnlyDefault</expression>        
+            </derivation>
+           <attribute name="defaultProperty" value="webOnlyDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="webOnly"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+      </property>
+      <property name="webOffered" xml-combine="remove"/>
+      <property name="webOffered" display-name-resource="webOffered" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteFlagTranslation">
+                  <expression>webOfferedDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="webOfferedDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="webOffered"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="prodDisable" xml-combine="remove"/>
+    	<property name="prodDisable" display-name-resource="disable" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteFlagTranslation">
+                  <expression>prodDisableDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="prodDisableDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="prodDisable"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="skuLowPrice" xml-combine="remove"/>
+    	<property name="skuLowPrice" display-name-resource="skuLowPrice" data-type="string" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>skuLowPriceDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="skuLowPriceDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="skuLowPrice"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="skuHighPrice" xml-combine="remove"/>
+    	<property name="skuHighPrice" display-name-resource="skuHighPrice" data-type="string" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>skuHighPriceDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="skuHighPriceDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="skuHighPrice"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	
+    	<property name="enableDate" xml-combine="remove"/>
+    	<property name="enableDate" display-name-resource="enableDate" data-type="date" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteDateTranslation">
+                  <expression>enableDateDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="enableDateDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="product"/>
+           <attribute name="property" value="enableDate"/>
+           <attribute name="translations" value="prdTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+			
+	</item-descriptor>
+
+
+	<!--/////////////////////////////// -->
+	<!-- sku -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="sku" xml-combine="append">
+
+		
+		<table name="BBB_GS_SKU_IMAGES" type="multi" id-column-names="sku_id" multi-column-name="SHOT_TYPE">
+			<property name="gsSkuImages" column-names="scene7_url" display-name-resource="gsSkuImages" data-type="map" component-data-type="String" category-resource="GSSKUCustom ">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="30" />
+			</property>
+		</table>
+		
+
+		<table name="BBB_SKU" type="auxiliary" id-column-name="sku_id">
+			<property name="gsBBBWebOffered" data-type="boolean" column-name="GS_BBB_WEB_OFFERED" category-resource="skuFlagBasics" display-name-resource="skuGsBbbWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+			</property>
+			<property name="gsBBBDisabled" data-type="boolean" column-name="GS_BBB_DISABLED" category-resource="skuFlagBasics" display-name-resource="skuGsBBBDisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+			<property name="gsBABWebOffered" data-type="boolean" column-name="GS_BAB_WEB_OFFERED" category-resource="skuFlagBasics" display-name-resource="skuGsBABWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="gsBABDisabled" data-type="boolean" column-name="GS_BAB_DISABLED" category-resource="skuFlagBasics" display-name-resource="skuGsBABDisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+			<property name="gsCAWebOffered" data-type="boolean" column-name="GS_CA_WEB_OFFERED" category-resource="skuFlagBasics" display-name-resource="skuGsCAWebOffered" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+			<property name="gsCADisabled" data-type="boolean" column-name="GS_CA_DISABLED" category-resource="skuFlagBasics" display-name-resource="skuGsCADisabled" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBGSCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+		<property name="displayName" xml-combine="remove"/>
+		<property name="displayName" data-type="string"
+              writable="false" hidden="true" queryable="true" display-name-resource="displayName">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>displayNameDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="displayNameDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="displayName"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    </property>
+    <property name="description" xml-combine="remove"/>
+    <property name="description" data-type="string"
+              writable="false" hidden="true" queryable="true" display-name-resource="description">
+    	<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>descriptionDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="descriptionDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="description"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    </property>
+    <property name="webOnly" xml-combine="remove"/>
+    <property name="webOnly" display-name-resource="webOnly" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>webOnlyDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="webOnlyDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="webOnly"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    </property>
+    <property name="webOffered" xml-combine="remove"/>
+    <property name="webOffered" display-name-resource="webOffered" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteFlagTranslation">
+                  <expression>webOfferedDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="webOfferedDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="webOffered"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="forceBelowLine" xml-combine="remove"/>
+    	 <property name="forceBelowLine" display-name-resource="forceBelowLine" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>forceBelowLineDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="forceBelowLineDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="forceBelowLine"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="disable" xml-combine="remove"/>
+    	<property name="disable" display-name-resource="disable" data-type="boolean" hidden="true" queryable="true">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteFlagTranslation">
+                  <expression>disableDefault</expression>        
+            </derivation>
+        	<attribute name="defaultProperty" value="disableDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="disable"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+    	</property>
+    	<property name="shippingSurcharge" xml-combine="remove"/>
+  		<property name="shippingSurcharge" display-name-resource="shippingSurcharge" data-type="double"  hidden="true" queryable="true">
+  			<derivation user-method="com.bbb.commerce.catalog.StofuSiteTranslation">
+                  <expression>shippingSurchargeDefault</expression>        
+            </derivation>
+ 
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="sku"/>
+           <attribute name="property" value="shippingSurcharge"/>
+           <attribute name="translations" value="skuTranslations"/>
+           <attribute name="gsSitePrefix" value="GS_"/>
+  		</property>
+	</item-descriptor>
+
+</gsa-template>

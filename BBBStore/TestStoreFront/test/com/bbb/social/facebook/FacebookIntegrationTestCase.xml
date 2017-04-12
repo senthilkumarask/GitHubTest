@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.social.facebook.FacebookIntegrationTestCase">
+		<group id="testFacebookLinking">
+			<test id="testFacebookLinking_test1">
+				<objs>
+	                <obj id="fbUnlinkedUser" type="string">amit_1@example.com</obj>
+	                <obj id="fbLinkedUser" type="string">amit_2@example.com</obj>
+	                <obj id="fbLinkErrorUser" type="string">amit_3@example.com</obj>
+				</objs>
+	        </test>
+		</group>
+		<group id="testFacebookLink">
+			<test id="testFacebookLink_test1">
+				<objs>
+	                <obj id="fbUnlinkedUser" type="string">amit_1@example.com</obj>
+	                <obj id="fbValidToken" type="string">AAACEdEose0cBANyLZCNd58nMYUR7afohA6Eebn97L77r6KX1OcGidvKiHuWHfzInTACbTr5cQGNy1bdHaesSOSisE3HkzhVThRZAkNlwZDZD</obj>
+				</objs>
+	        </test>
+		</group>
+		<group id="testFacebookUnlink">
+			<test id="testFacebookUnlink_test1">
+				<objs>
+	                <obj id="fbUnlinkedUser" type="string">amit_1@example.com</obj>
+				</objs>
+	        </test>
+		</group>
+		<group id="testFacebookProfile">
+			<test id="testFacebookProfile_test1"/>
+		</group>		
+	</cluster>
+</ddtunit>

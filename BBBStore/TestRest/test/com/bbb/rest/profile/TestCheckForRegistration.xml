@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.profile.TestCheckForRegistration">
+	
+		<group id="testProfileAvailabilityCheck">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ssharma53@sapient.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="expectedResult" type="string">profile_available_for_migration</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>		
+			
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ssharma53@sapient.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="expectedResult" type="string">profile_already_exist</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>		
+			
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">xyz@atg.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="expectedResult" type="string">profile_available_for_extenstion</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>		
+			
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">xyz@atg.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="expectedResult" type="string">profile_already_exist</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>	
+			
+			<test id="test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">xyz007834@atg.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="expectedResult" type="string">Profile not found</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>	
+				
+		</group>
+
+	
+		<group id="testCheckForRegistration">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">archit_goel@infosys.com</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>			
+		</group>
+		<group id="testCheckForRegistrationError">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">archit_goel123@infosys.com</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">boss@bbb.com</obj>
+					<obj id="checkForRegistrationRequest" type="string">/rest/bean/atg/userprofiling/ProfileTools/checkForRegistration</obj>
+				</objs>
+			</test>			
+		</group>	
+		
+	</cluster>
+</ddtunit>
+ 

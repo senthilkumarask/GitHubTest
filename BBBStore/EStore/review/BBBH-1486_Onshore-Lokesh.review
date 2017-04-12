@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1486_Onshore">
+  <ReviewIssue id="IMMVWBBM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 23:46:36:754 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 23:49:26:302 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Lokesh</AssignedTo>
+    <File line="813">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The logic for cart is incorrect</Summary>
+    <Description>Why are we looping for each store and then checking the eligibility for each item.
+Ideally this is how it should be done:
+1. Out of all the items in the cart, first filter out all the ineligible items in a separate array or list
+2. For the remaining eligible items, check for store-inventory</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

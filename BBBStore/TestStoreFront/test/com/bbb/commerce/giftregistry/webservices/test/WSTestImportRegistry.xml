@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.webservices.test.WSTestImportRegistry">
+     <group id="testImportWSService">
+        <test id="testWSImportService_testws">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.webservices.test.WSTestImportRegistry">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="password" type="String">sunilPASS123#</obj>
+                <obj id="userToken" type="String">20190Token</obj>
+                <obj id="registryId" type="String">350001</obj>
+                <obj id="siteId" type="String">BuyBuyBaby</obj>
+                <obj id="username" type="string">skumar2@sapient.com</obj>
+                <obj id="eventDate" type="string">12/12/2021</obj>
+                <obj id="eventType" type="string">BRD</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="isNoError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+       <group id="testImportWSServiceError">
+        <test id="testWSImportService_testwsError">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.webservices.test.WSTestImportRegistry">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="password" type="String">sunilPASS123#</obj>
+                <obj id="userToken" type="String">20190Token</obj>
+                <obj id="registryId" type="String">350001</obj>
+                <obj id="siteId" type="String">BuyBuyBaby</obj>
+                <obj id="username" type="string">skumssssssar2@sapient.com</obj>
+                <obj id="eventDate" type="string">12/12/2021</obj>
+                <obj id="eventType" type="string">BRD</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="isNoError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Shipping_Multiple_06_01_2012_Jyoti_Asit">
+  <ReviewIssue id="GX3HNL9T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:08:15:281 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:19:20:924 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="43">src/com/bbb/commerce/order/purchase/BBBListStatesDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>This is duplicate of BBBPopulateStatesDroplet class, I like ur class better, but that droplet is it common package so its better there. Move you code to that droplet and use that component in JSP.</Summary>
+    <Description>changed the multiShipping.jsp to use /com/bbb/commerce/common/BBBPopulateStatesDroplet</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3HUQG2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:13:48:578 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:26:18:750 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="150">src/com/bbb/commerce/order/purchase/BBBMultiShippingAddressDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lets add ERROR oparam from exception block.</Summary>
+    <Description>added error param and error oparam.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3I2OJZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:19:59:375 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:28:47:390 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2">src/com/bbb/commerce/order/purchase/BBBCommerceItemShippingInfoTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add a check that if item quantity is less than split quantity then throw CommerceException</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3I4J90">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:21:25:812 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:37:00:841 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="18">src/com/bbb/commerce/order/purchase/BBBCommerceItemShippingInfoTools.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Are we overwriding to reset some value in the newinfo, in that case call super and then set additional property in newinfo and then return.</Summary>
+    <Description>override the method to add ShippingGroupName instead of adding splitShippingGroupName</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3IA9XJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:25:53:671 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:10:25:221 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>What is the change in this droplet and where are we using it?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>changes for getting registrantEmail</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3ID3DG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:28:05:140 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:39:51:873 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1">src/com/bbb/commerce/checkout/droplet/BBBDisplayGiftWrapDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Lets add a method in Order object isBOPUSOrder instead of this droplet. We have same thing in BBBCheckoutManager.isStorePickupItemsPresent.</Summary>
+    <Description>isBopusOrder() is added in BBBOrderImpl and BBBOrder</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3IIV20">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:32:34:296 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 12:43:02:033 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="249">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>If the nonShippableState is null that means the sku can be shipped to any state, so we should just continue to next sku and NOT return false.</Summary>
+    <Description>This method should call the checkItemShipToAddress method, duplicate code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3IM8PS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:35:11:968 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:35:24:312 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="267">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Where are we using this method?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3NA61Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 01:45:46:718 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 01:46:30:796 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2251">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Debug statement is incorrect.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3ND9U1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 01:48:11:593 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 13:33:54:324 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2424">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>The current level should be GIFT only is isOrderIncludesGift is checked otherwise it will be Billing</Summary>
+    <Description>Set the current level ti GIFT if orderincludesgift and sending to getCheckoutProgressStates().getFailureURL() which is the Gifting page.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QZ1GV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:29:06:031 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:29:17:187 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1195">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Why is this commented?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QZRDL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:29:39:609 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:30:05:453 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1131">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need to understand how Ajax is handling the formerrors from JSP</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3R12DF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:30:40:515 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 13:39:23:650 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1224">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No need to call updateOrder here, its getting called in the handle method.</Summary>
+    <Description>commented updateOrder() call in addNewAddress()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3RI15A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 03:43:52:078 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 14:07:30:106 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2785">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Don't set registryId just because item was from registry and user want to sendConfirmation email.</Summary>
+    <Description>RegistryId in Shipping Group will be set only if the address is from registry.
+
+commented the line
+//bbbHGSG.setRegistryId(bbbCommItem.getRegistryId());</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3SDJIY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 04:08:22:234 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 04:09:04:468 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2051">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We need to make this message more specific using CMS key, pass skuName and state.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3SH0CV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 04:11:04:015 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 14:04:20:378 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2552">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We need to put specific message with state and method, from cms key.</Summary>
+    <Description>moved the checkItemShipByMethod to SGFormHandler</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3SKB4X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 04:13:37:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 16:08:37:189 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2627">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lets not add formexception, just assume its not a gift card.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3SLDZC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 04:14:28:296 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 16:08:33:464 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="2656">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Check for BBBCommerceItem to avoid any GiftWrapItem included in nonGiftCardSet.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

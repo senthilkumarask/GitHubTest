@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSurveyDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSurveyDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.survey.TestSurveyDroplet">
+       <group id="testService">
+        <test id="testService_test">
+			<objs>
+				<obj id="surveyDroplet" type="com.bbb.selfservice.droplet.StateDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.survey.TestSurveyDroplet">
+					<item type="string">/com/bbb/selfservice/StateDroplet</item>
+				</obj>
+				<obj id="siteContextManager" type="com.bbb.selfservice.droplet.StateDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.survey.TestSurveyDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				<obj id="locationCode" type="string">CA</obj>
+				<obj id="locationName" type="string">CA</obj>
+				<obj id="locationNexusState" type="boolean">true</obj>
+				<obj id="locationInvalid" type="string">Califo</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>
+	    </test>
+      </group> 
+     
+    </cluster>
+</ddtunit>

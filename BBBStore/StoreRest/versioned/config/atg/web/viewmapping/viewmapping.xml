@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template xml-combine="append">
+<import-items>
+<add-item item-descriptor="attributeValue" id="BBBAvStofuBd">
+  <set-property name="value"><![CDATA[/com/bbb/stofu/StofuTemplateResources]]></set-property>
+</add-item>
+
+<add-item item-descriptor="attributeValue" id="BBBAvIntroScreenSiteInfo">
+  <set-property name="value"><![CDATA[MasterInfo]]></set-property>
+</add-item>
+
+<add-item item-descriptor="attributeValue" id="BBBAvIntroScreenLeftSection">
+  <set-property name="value"><![CDATA[leftInfo]]></set-property>
+</add-item>
+
+<add-item item-descriptor="attributeValue" id="BBBAvIntroScreenRightSection">
+  <set-property name="value"><![CDATA[rightInfo]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemViewMapping" id="BBBIvmIntroSiteInfo">
+  <set-property name="name"><![CDATA[AssetManager Intro Screen Master Info itemViewMapping]]></set-property>
+  <set-property name="displayName"><![CDATA[Master Info]]></set-property>
+  <set-property name="view"><![CDATA[AmIvDef]]></set-property>
+  <set-property name="attributeValues"><![CDATA[includedCategories=BBBAvIntroScreenSiteInfo,resourceBundle=BBBAvStofuBd]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemViewMapping" id="BBBIvmIntroLeftSection">
+  <set-property name="name"><![CDATA[AssetManager Intro Screen Left Section itemViewMapping]]></set-property>
+  <set-property name="displayName"><![CDATA[Left Section]]></set-property>
+  <set-property name="view"><![CDATA[AmIvDef]]></set-property>
+  <set-property name="attributeValues"><![CDATA[includedCategories=BBBAvIntroScreenLeftSection,resourceBundle=BBBAvStofuBd]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemViewMapping" id="BBBIvmIntroRightSection">
+  <set-property name="name"><![CDATA[AssetManager Intro Screen Right Section itemViewMapping]]></set-property>
+  <set-property name="displayName"><![CDATA[Right Section]]></set-property>
+  <set-property name="view"><![CDATA[AmIvDef]]></set-property>
+  <set-property name="attributeValues"><![CDATA[includedCategories=BBBAvIntroScreenRightSection,resourceBundle=BBBAvStofuBd]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemMapping" id="BBBImIntroScreen">
+  <set-property name="name"><![CDATA[AssetManager]]></set-property>
+  <set-property name="description"><![CDATA[AssetManager Intro Screen itemMapping]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="itemPath"><![CDATA[/com/bbb/stofu/IntroScreenRepository]]></set-property>
+  <set-property name="itemName"><![CDATA[IntroScreenTemplate]]></set-property>
+  <set-property name="formHandler"><![CDATA[AmFhDef]]></set-property>
+  <set-property name="viewMappings"><![CDATA[BBBIvmIntroSiteInfo,BBBIvmIntroLeftSection,BBBIvmIntroRightSection]]></set-property>
+</add-item>
+
+<add-item item-descriptor="attributeValue" id="AvRESBnd">
+  <set-property name="value"><![CDATA[/com/bbb/stofu/StofuTemplateResources]]></set-property>
+</add-item>
+<add-item item-descriptor="attributeValue" id="AvImageMasters">
+  <set-property name="value"><![CDATA[MasterInfo]]></set-property>
+</add-item>
+<add-item item-descriptor="attributeValue" id="AvImageView">
+  <set-property name="value"><![CDATA[ImageView]]></set-property>
+</add-item>
+
+<add-item item-descriptor="propertyView" id="AmPvImageBox">
+	<set-property name="name"><![CDATA[AssetManager ImageBox propertyView]]></set-property>
+	<set-property name="description"><![CDATA[AssetManager ImageBox propertyView]]></set-property>
+	<set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+	<set-property name="viewComponent"><![CDATA[com.bbb.assetmanager.editor.view.ImagePanel]]></set-property>
+	<set-property name="isComponentPropertyView"><![CDATA[false]]></set-property>
+	<set-property name="type"><![CDATA[string]]></set-property>
+	<set-property name="isDefault"><![CDATA[false]]></set-property>
+</add-item>
+
+<add-item item-descriptor="propertyView" id="AmPvBigStr">
+  <set-property name="description"><![CDATA[AssetManager big string propertyView]]></set-property>
+  <set-property name="isDefault"><![CDATA[false]]></set-property>
+  <set-property name="attributes"><![CDATA[editorVerticalMargin=AmPvadBigStrEditorVertMargin,editorWidth=AmPvadBigStrEditorWidth,editorMaxHeight=AmPvadBigStrEditorMaxHeight]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="isComponentPropertyView"><![CDATA[false]]></set-property>
+  <set-property name="viewComponent"><![CDATA[atg.assetmanager.editor.view.property.HtmlStringEditor]]></set-property>
+  <set-property name="type"><![CDATA[big string]]></set-property>
+  <set-property name="name"><![CDATA[AssetManager big string propertyView]]></set-property>
+</add-item>
+
+<add-item item-descriptor="propertyView" id="AmPvBigStrPlain">
+  <set-property name="description"><![CDATA[AssetManager plain text big string propertyView]]></set-property>
+  <set-property name="isDefault"><![CDATA[true]]></set-property>
+  <set-property name="attributes"><![CDATA[editorHeight=AmPvadPlainBigStrEditorHeight]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="isComponentPropertyView"><![CDATA[false]]></set-property>
+  <set-property name="viewComponent"><![CDATA[atg.assetmanager.editor.view.property.BigStringPlainTextEditor]]></set-property>
+  <set-property name="type"><![CDATA[big string]]></set-property>
+  <set-property name="name"><![CDATA[AA AssetManager plain text big string propertyView]]></set-property>
+</add-item>
+
+<add-item item-descriptor="propertyViewMapping" id="AmPvmImageBox">
+	<set-property name="description"><![CDATA[ImageView property]]></set-property>
+	<set-property name="propertyView"><![CDATA[AmPvImageBox]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemViewMapping" id="IvmImageMasters">
+  <set-property name="name"><![CDATA[AssetManager Image general itemViewMapping]]></set-property>
+  <set-property name="displayName"><![CDATA[Image Details]]></set-property>
+  <set-property name="view"><![CDATA[AmIvDef]]></set-property>
+  <set-property name="attributeValues"><![CDATA[includedCategories=AvImageMasters,resourceBundle=AvRESBnd]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemViewMapping" id="IvmImageView">
+  <set-property name="name"><![CDATA[AssetManager Image View itemViewMapping]]></set-property>
+  <set-property name="displayName"><![CDATA[Image View]]></set-property>
+  <set-property name="view"><![CDATA[AmIvDef]]></set-property>
+  <set-property name="propertyMappings"><![CDATA[imageView=AmPvmImageBox]]></set-property>
+  <set-property name="attributeValues"><![CDATA[includedCategories=AvImageView,resourceBundle=AvRESBnd]]></set-property>
+</add-item>
+
+
+<add-item item-descriptor="itemMapping" id="AmImImageBox">
+  <set-property name="itemName"><![CDATA[ImageBox]]></set-property>
+  <set-property name="description"><![CDATA[ImageBox itemMapping]]></set-property>
+  <set-property name="attributes"><![CDATA[resourceBundle=AvRESBnd]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="viewMappings"><![CDATA[IvmImageMasters,IvmImageView]]></set-property>
+  <set-property name="formHandler"><![CDATA[AmFhDef]]></set-property>
+  <set-property name="itemPath"><![CDATA[/com/bbb/stofu/CommonRepository]]></set-property>
+  <set-property name="name"><![CDATA[AssetManager]]></set-property>
+</add-item>
+
+<add-item item-descriptor="attributeValue" id="AvMsgKeyEditId">
+<set-property name="value"><![CDATA[true]]></set-property>
+</add-item>
+<add-item item-descriptor="itemMapping" id="AmaMsgKey">
+  <set-property name="name"><![CDATA[AssetManager]]></set-property>
+  <set-property name="description"><![CDATA[AssetManager Message Key itemMapping]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="itemPath"><![CDATA[/com/bbb/catalog/BBBManagedCatalogRepository]]></set-property>
+  <set-property name="itemName"><![CDATA[categoryDetails]]></set-property>
+  <set-property name="formHandler"><![CDATA[AmFhDef]]></set-property>
+  <set-property name="attributes"><![CDATA[showCreationId=AvMsgKeyEditId]]></set-property>
+</add-item>
+
+<!-- <add-item item-descriptor="attributeValue" id="BBBAVChannelEditId">
+ <set-property name="value"><![CDATA[true]]></set-property>
+</add-item>
+
+<add-item item-descriptor="itemMapping" id="BBBIMChannel">
+  <set-property name="name"><![CDATA[AssetManager]]></set-property>
+  <set-property name="description"><![CDATA[AssetManager Channel itemMapping]]></set-property>
+  <set-property name="mode"><![CDATA[AmMmDef]]></set-property>
+  <set-property name="itemPath"><![CDATA[/com/bbb/channel/ChannelRepository]]></set-property>
+  <set-property name="itemName"><![CDATA[channelInfo]]></set-property>
+  <set-property name="formHandler"><![CDATA[AmFhDef]]></set-property>
+  <set-property name="attributes"><![CDATA[showCreationId=BBBAVChannelEditId]]></set-property>
+</add-item> -->
+
+</import-items>
+</gsa-template>

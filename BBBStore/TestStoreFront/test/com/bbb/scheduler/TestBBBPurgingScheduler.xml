@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBPurgingScheduler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBPurgingScheduler.java test case
+
+  HISTORY:
+  Apr 17, 2013  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.scheduler.TestBBBPurgingScheduler">
+       <group id="testPurgeProcess">
+        <test id="testPurgeProcess">
+			<objs>
+				<obj id="bbbpurgingscheduler" type="com.bbb.scheduler.TestBBBPurgingScheduler" hint="call" method="resolveName" calltype="com.bbb.scheduler.TestBBBPurgingScheduler">
+					<item type="string">/com/bbb/scheduler/BBBPurgingScheduler</item>
+				</obj>
+			</objs>			 
+        </test>       
+      </group>           
+    </cluster>
+</ddtunit>
+

@@ -1,0 +1,46 @@
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:21:	Avoid using redundant field initializer for 'mRecipientEmail'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:22:	Avoid using redundant field initializer for 'mSenderEmail'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:23:	Avoid using redundant field initializer for 'mMessage'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:23:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:24:	Avoid using redundant field initializer for 'mSiteId'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:24:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:25:	Avoid using redundant field initializer for 'mSubject'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:26:	Avoid using redundant field initializer for 'sucessUrl'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:27:	Avoid using redundant field initializer for 'errorUrl'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:28:	Avoid using redundant field initializer for 'successMessage'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:29:	Avoid using redundant field initializer for 'emailSender'
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:74:	Parameter 'sucessUrl' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:80:	Parameter 'errorUrl' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:86:	Parameter 'successMessage' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:94:	Parameter 'emailSender' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Avoid excessively long variable names like errorPlaceHolderMap
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Avoid unused method parameters such as 'pRequest'.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Avoid unused method parameters such as 'pResponse'.
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Parameter 'errorPlaceHolderMap' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:97:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:101:	The String literal "Email Address" appears 4 times in this file; the first occurrence is on line 101
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:101:	The String literal "fieldName" appears 4 times in this file; the first occurrence is on line 101
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:120:	Parameter 'pRequest' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:120:	Parameter 'pResponse' is not assigned and could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:123:	Avoid excessively long variable names like errorPlaceHolderMap
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:123:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:123:	Local variable 'errorPlaceHolderMap' could be declared final
+src/com/bbb/email/formhandler/TestEmailFormHandler.java:127:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/TestQAS.java:12:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/integration/TestQAS.java:13:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/integration/TestQAS.java:14:	Avoid variables with short names like s
+src/com/bbb/integration/TestQAS.java:14:	Local variable 's' could be declared final
+src/com/bbb/integration/TestQAS.java:15:	Avoid variables with short names like s1
+src/com/bbb/integration/TestQAS.java:15:	Local variable 's1' could be declared final
+src/com/bbb/integration/TestQAS.java:16:	Avoid variables with short names like s2
+src/com/bbb/integration/TestQAS.java:16:	Local variable 's2' could be declared final
+src/com/bbb/integration/TestQAS.java:17:	Avoid excessively long variable names like qasaddressverification
+src/com/bbb/integration/TestQAS.java:17:	Local variable 'qasaddressverification' could be declared final
+src/com/bbb/integration/TestQAS.java:24:	Local variable 'req' could be declared final
+src/test/TestQASFormHandler.java:19:	Parameter 'address' is not assigned and could be declared final
+src/test/TestQASFormHandler.java:23:	Parameter 'pRequest' is not assigned and could be declared final
+src/test/TestQASFormHandler.java:24:	Parameter 'pResponse' is not assigned and could be declared final

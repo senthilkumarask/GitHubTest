@@ -1,0 +1,14 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will add item to giftregistry</description>
+	<action>/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</action>
+	<params>
+		<param id="atg-rest-depth" required="true" name="atg-rest-depth" class="reqBody" type="text">3</param>
+		<param id="atg-rest-input" required="true" name="atg-rest-input" class="reqBody" type="text">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param id="jasonCollectionObj" required="true" name="jasonCollectionObj" type="text" class="reqBody">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"181479294","qty":"11","price":"$89.99"}],"parentProdId":"1014826360","registryName":"DDD"}</param>
+		<param type="text" name="clientID" id="clientID" required="true" class="reqHead">client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>
+					

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestResultListDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSearchDroplet.java test case
+
+  HISTORY:
+  Nov. 7, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestGuidesVideosDroplet">
+      <group id="testGuidesVideosService">
+        <test id="testGuidesVideosService_test1">
+			<objs>
+				<obj id="guidesVideosDroplet" type="com.bbb.cms.droplet.GuidesVideosDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestGuidesVideosDroplet">
+					<item type="string">/com/bbb/cms/droplet/GuidesVideosDroplet</item>
+				</obj>
+			</objs>
+			
+			<asserts>
+					
+					<assert id="list" type="java.lang.Boolean" action="isFalse">false</assert>
+					
+			</asserts>
+				   
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

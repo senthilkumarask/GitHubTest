@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>International Repository</name>
+		<author>International Shipping team</author>
+		<version>$Id:
+			//application/BorderFree/version/10.0.3/config/com/bbb/internationalShipping/repository/InternationalRepository.xml#1
+			$$Change: 1 $</version>
+	</header>
+
+	<!-- E4X MAPPINGS -->
+	<item-descriptor name="exchangeRates"
+		display-name-resource="exchangeRates" cache-mode="simple"
+		query-expire-timeout="21600000" item-expire-timeout="21600000" query-cache-size="1000" item-cache-size="1000">
+		<table name="E4X_FX_RATES" type="primary" id-column-name="SHOPPER_CURRENCY">
+			<property display-name-resource="quoteId" column-name="QUOTE_ID" name="quoteId" data-type="long" />
+			<property display-name-resource="value" column-name="VALUE" name="value" data-type="double" default="1" />
+			<property display-name-resource="merchantCurrency" column-name="MERCHANT_CURRENCY" name="merchantCurrency" data-type="String" />
+			<property display-name-resource="shopperCurrency" column-name="SHOPPER_CURRENCY" name="shopperCurrency" data-type="String" />
+			<property display-name-resource="quoteName" column-name="QUOTE_NAME" name="quoteName" data-type="String" />
+			<property display-name-resource="roundMethod" column-name="ROUND_METHOD" name="roundMethod" data-type="int" />
+			<property display-name-resource="version" column-name="VERSION" name="version" data-type="int" />
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="ipList" display-name-resource="ipList"
+		cache-mode="simple" query-expire-timeout="604800000" item-expire-timeout="604800000" query-cache-size="500000" item-cache-size="500000">
+		<table name="E4X_IP_LIST" type="primary" id-column-name="FROM_IP">
+			<property display-name-resource="fromIP" column-name="FROM_IP" name="fromIP" data-type="long" />
+			<property display-name-resource="toIP" column-name="TO_IP" name="toIP" data-type="long" />
+			<property display-name-resource="countryCode" column-name="COUNTRY" name="countryCode" data-type="String" />
+		</table>
+
+	</item-descriptor>
+
+	<item-descriptor name="countryList"
+		display-name-resource="countryList" cache-mode="simple"
+		query-expire-timeout="86400000" item-expire-timeout="86400000" query-cache-size="1000" item-cache-size="1000">
+
+		<table name="E4X_COUNTRIES" type="primary" id-column-names="COUNTRY_CODE, MERCHANT_ID">
+			<property display-name-resource="merchantId" column-name="MERCHANT_ID" name="merchantId" data-type="String" />
+			<property display-name-resource="countryCode" column-name="COUNTRY_CODE" name="countryCode" data-type="String" />
+			<property display-name-resource="countryName" column-name="COUNTRY_NAME" name="countryName" data-type="String" />
+			<property display-name-resource="shippingEnabled" column-name="SHIPPING_ENABLED" name="shippingEnabled" data-type="String" />
+			<property display-name-resource="currencyExchangeRate" column-name="CURRENCY_CODE" name="currencyExchangeRate" item-type="exchangeRates" />
+			<property display-name-resource="currencyCode" column-name="CURRENCY_CODE" name="currencyCode" data-type="String" />
+			<property display-name-resource="currencyName" column-name="CURRENCY_NAME" name="currencyName" data-type="String" />
+			<property display-name-resource="currencySymbol" column-name="CURRENCY_SYMBOL" name="currencySymbol" data-type="String" />
+			<property display-name-resource="billingEnabled" column-name="BILLING_IN_CURRENCY" name="billingEnabled" data-type="String" />
+			<property display-name-resource="languageCode" column-name="LANGUAGE_CODE" name="languageCode" data-type="String" />
+			<property display-name-resource="locale" column-name="LOCALE" name="locale" data-type="String" />
+		</table>
+
+		<table name="E4X_PRICING_CUSTOMIZATIONS" type="auxiliary"
+			id-column-names="COD, MERCHANT_ID">
+			<!--<property column-name="MERCHANT_ID" name="merchantId" data-type="String"/> -->
+			<property column-name="PROMOTION_ID" name="promotionId" queryable="true" readable="true" data-type="String" />
+			<property column-name="COD" name="cod" queryable="true" readable="true" data-type="String" />
+			<property column-name="FRONT_LOAD_COEFFICIENT" name="frontLoadCoefficient" data-type="double" default="1" />
+		</table>
+	</item-descriptor>
+
+</gsa-template>

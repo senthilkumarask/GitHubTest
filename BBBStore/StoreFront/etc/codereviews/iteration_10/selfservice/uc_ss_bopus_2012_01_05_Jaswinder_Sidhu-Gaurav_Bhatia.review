@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_ss_bopus_2012_01_05_Jaswinder_Sidhu">
+  <ReviewIssue id="GX1RY2MX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 18:20:48:153 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 18:21:05:236 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="136">j2ee-apps/BBBStore/store.war/selfservice/find_in_store.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Radius - get grom label</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1SWJTP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 18:47:36:733 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 12:06:25:149 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/find_in_store.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>unused SearchInStoreDroplet</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>removed.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1WIX17">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:28:59:131 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:17:25:139 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/find_in_store_result_info.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>JSP is not formatted correctly. Can you ensure that you match tags etc correctly</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>closed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1WPPLE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:34:16:082 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 12:05:53:262 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="46">j2ee-apps/BBBStore/store.war/selfservice/find_in_store_result_info.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>how are we getting enableSelection value? is this a valid statement code test="${param.enableStoreSelection==true}</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>This field will be passed from base page where find in store will integrated.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1WTUJQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:37:29:126 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:37:51:521 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="75">j2ee-apps/BBBStore/store.war/selfservice/find_in_store_result_info.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Requirement missing - view directions and view map not implemented</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1WVACP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:38:36:265 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 12:01:59:300 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="115">j2ee-apps/BBBStore/store.war/selfservice/find_in_store_result_info.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What is this hardcoded text - health and be...</Summary>
+    <Description>						&lt;p&gt;Health &amp; Beauty Department.&lt;/p&gt;</Description>
+    <Annotation></Annotation>
+    <Revision>This will be dynamic based on the speciality code return by mapquest and this is the part of CR.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1X2B9Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:44:04:054 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 12:01:12:918 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="43">j2ee-apps/BBBStore/store.war/selfservice/find_in_store_result.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The text like The following stores were located near 90048 dit modic tem should come from dynamic label</Summary>
+    <Description>This is should label with ${0} for input string</Description>
+    <Annotation></Annotation>
+    <Revision>as discussed closing this.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

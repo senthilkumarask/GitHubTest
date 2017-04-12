@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+      <group id="testExpressCheckoutDroplet">
+        <test id="testDisplayExpressCheckoutDroplet">
+			<objs>
+				
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+                <obj id="currency" type="string">USD</obj>
+                <obj id="sku" type="string">sku60010</obj>
+				<obj id="creditCardNickname" type="string">tcCardNickname1</obj>	
+				<obj id="shippingAddrNickname" type="string">tcShippingAddrNickname01</obj>
+				<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				
+				
+				
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+               
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>
+				
+                <obj id="bbbOrderManager" type="com.bbb.commerce.order.TestBBBOrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>
+               
+				 <obj id="displayExpressCheckoutDroplet" type="com.bbb.commerce.order.droplet.DisplayExpressCheckoutDroplet" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/com/bbb/commerce/cart/droplet/DisplayExpressCheckout</item>
+				</obj>
+                
+				<obj id="expressCheckout" type="com.bbb.commerce.common.ExpressCheckoutVO" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.droplet.TestDisplayExpressCheckoutDroplet">
+					<item type="string">/com/bbb/commerce/common/ExpressCheckoutVO</item>
+				</obj>
+				 
+			</objs>			 
+        </test>
+      </group>         
+    </cluster>
+</ddtunit>
+

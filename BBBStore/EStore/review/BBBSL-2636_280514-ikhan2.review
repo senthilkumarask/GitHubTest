@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBSL-2636_280514">
+  <ReviewIssue id="HVXP4CL0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:00:19:188 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:52:23:626 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="5751">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use synchronized block </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXPCETJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:06:35:335 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:52:11:745 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="3382">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move synchronized inside checkoutRegistration</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXR0SEB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:53:32:291 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:58:02:189 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="407">src/com/bbb/commerce/cart/droplet/StatusChangeMessageDroplet.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Please add clear error messages- Gift messages does not make sense here</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXRM91I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 18:10:13:638 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:57:50:204 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="408">src/com/bbb/commerce/cart/droplet/StatusChangeMessageDroplet.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add rollback =true in CommerceException block</Summary>
+    <Description>Rollback updateOrder transanction in case of commerce exception</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW06VU78">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:53:07:556 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:53:58:835 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="234">src/com/bbb/commerce/checkout/tibco/BBBSubmitOrderHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Rollback should be set to true in case of BBBSystemException</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW06YIKY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:55:12:466 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 10:56:26:809 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="216">src/com/bbb/commerce/checkout/tibco/BBBSubmitOrderHandler.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Don't mark order as unsubmitted again</Summary>
+    <Description>As we discussed earlier this should be optimized by not setting sub-satus flag to 'UNSUBMITTED' again if it is coming from scheduler.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW09YO7D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 12:19:18:601 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 12:21:22:528 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="2643">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Synchorized Order is missing before calling removeCommerceItem</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-925">
+  <ReviewIssue id="IPGA6KU2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-14 :: 22:51:14:042 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-14 :: 22:51:31:054 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgupta</ReviewerId>
+    <AssignedTo>mgupta</AssignedTo>
+    <File line="18">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Class level comments are missing</Summary>
+    <Description>OmnitureBoostedPopularSearchTermsTools</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

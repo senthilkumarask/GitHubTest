@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryFormHandlerAddAll1.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryFormHandlerAddAll1.java test case
+
+  HISTORY:
+  Feb 25, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerAaddAll1">      
+      <group id="testAddAllFromKickStarter">
+        <test id="testHandler_test1">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerAaddAll1">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+			<obj id="jasonCollectionObj" type="string">1013314624,13314624,2,$24.99/1014241353,14241353,1,$27.99/1041176337,41176337,1,$44.99/1040890999,40890999,1,$49.99/1010793874,10793874,4,$29.99/}</obj>
+			<obj id="sessionBean" type="string">/com/bbb/profile/session/SessionBean</obj>
+			<obj id="site" type="string">BedBathUS</obj>
+			<obj id="registryId" type="string">435309595</obj>
+			<obj id="eventType" type="string">Wedding</obj>
+			<obj id="kickStarterId" type="string">DC2800008</obj>
+			<obj id="addAllAction" type="string">AddAllItems</obj>
+			<obj id="login" type="string">some1@example.com</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandlerAaddAll1">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+			</objs>	
+        </test>
+      </group>
+      
+     </cluster>
+</ddtunit>
+

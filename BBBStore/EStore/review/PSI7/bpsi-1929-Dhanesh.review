@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="bpsi-1929">
+  <ReviewIssue id="I9XQWETZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:06:00:791 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:06:03:539 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="15345">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQXB05">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:06:42:485 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:06:47:253 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="15463">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQYIU0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:39:288 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:40:910 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="450">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQYSYO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:52:416 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:53:305 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="452">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQYWGS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:56:956 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:07:58:200 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="456">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQZ10S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:02:860 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:03:976 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="458">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQZ4HA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:07:342 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:08:456 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="465">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQZ9VS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:14:344 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:15:536 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="471">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XQZS6Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:38:075 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:08:40:401 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="72">src/com/bbb/commerce/browse/VDCShippingMessagingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9XR0F2M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:09:07:726 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-21 :: 11:09:09:178 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1">config/com/bbb/commerce/browse/VDCShippingMessagingDroplet.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

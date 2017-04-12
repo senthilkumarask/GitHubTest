@@ -1,0 +1,1 @@
+<dsp:page><c:choose><c:when test="${pageContext.request.secure}"><script type="text/javascript" src="https://connect.facebook.net/en_US/all.js"></script></c:when><c:otherwise><script type="text/javascript" src="//connect.facebook.net/en_US/all.js"></script></c:otherwise></c:choose></dsp:page>

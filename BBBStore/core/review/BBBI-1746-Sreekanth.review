@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1746">
+  <ReviewIssue id="IQK05HXN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:01:14:507 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:10:22:833 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manoj_NK</AssignedTo>
+    <File line="10">config/com/bbb/eph/util/EPHLookUpUtil.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Are not we getting cache name from BCC?</Summary>
+    <Description>keyword-eph-cat-near-cache</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK0Q0YY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:17:12:298 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 17:17:09:339 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="155">src/com/bbb/eph/customizer/BaseCustomizer.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Provide comments on below logic on why are we removing .group(2) etc</Summary>
+    <Description>matcher = getRegexPattern().matcher(searchTerm);
+		boolean sizeMatched = matcher.matches();
+		if (sizeMatched) {
+			
+			 String removedWord=matcher.group(2);
+			 
+			 String group1=matcher.group(1)  ;
+			 
+			 String group3=matcher.group(3);
+			 
+			 String parsedSearchTerm=null;
+			 
+			 if(group1 != null &amp;&amp; group3 != null)
+			 {
+				 parsedSearchTerm=group1.trim() + BBBCoreConstants.SPACE+ group3.trim();
+			 }
+			 else if(group1 != null &amp;&amp; group3 == null)
+			 {
+				 parsedSearchTerm=group1.trim();
+			 }
+			 else if(group3 != null)
+			 {
+				 parsedSearchTerm=group3.trim();
+			 }
+			 
+			 if(removedWord != null)
+			 {
+				 removedWord=removedWord.trim();
+			 }
+			 logDebug(  getName() + " [doMatch] method Start::removedWord:["+removedWord+"],parsedSearchTerm:["+parsedSearchTerm+"]");
+			 if(matchingWordList != null &amp;&amp; ! matchingWordList.contains(removedWord)){
+					matchingWordList.add(removedWord);
+			 	}
+			 return doMatch(parsedSearchTerm,matchingWordList);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK0R0GH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:17:58:289 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 17:16:57:266 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="155">src/com/bbb/eph/customizer/BaseCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we doing the whole matching again because we expect empty matchingWordList in the begining?</Summary>
+    <Description>matcher = getRegexPattern().matcher(searchTerm);
+
+This method will give true if any word in the keyword match with the Regex pattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK0VZEN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:21:50:207 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:37:28:917 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="120">src/com/bbb/eph/customizer/BaseCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are we adding words from same list to that list again?</Summary>
+    <Description>uniqueKeyWordSet.add(wordStr);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK0YTJH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:24:02:573 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:28:15:464 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="137">src/com/bbb/eph/customizer/BaseCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Will it not print a lot in logs?</Summary>
+    <Description>getRegexWordList</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK0ZE1L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:24:29:145 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:27:09:259 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="129">src/com/bbb/eph/customizer/BaseCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Can we print final pattern in debug log in case if we are not printing anywhere else</Summary>
+    <Description>pattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK129J1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:26:43:261 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:27:03:616 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="32">src/com/bbb/eph/customizer/CategorySearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>If we decide to get rid of local maps, we may need to update this code</Summary>
+    <Description>List&lt;String&gt; regexWordList= (List) getBbbSemanticDataCacheContainer().get(KEYWORD_TYPE_UNDERSCORE+CATEGORY_TYPE);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK13CXH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:27:34:325 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:27:41:379 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="35">src/com/bbb/eph/customizer/ColorSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>If we decide to get rid of local maps, we may need to update this code</Summary>
+    <Description>List&lt;String&gt; regexWordList= (List&lt;String&gt;) getBbbSemanticDataCacheContainer().get(KEYWORD_TYPE_UNDERSCORE+COLOR_TYPE);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK13MK8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:27:46:808 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:36:41:297 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="27">src/com/bbb/eph/customizer/ColorSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add comments</Summary>
+    <Description>initializeRegexPattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK13YYZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:28:02:891 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:26:18:618 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="15">src/com/bbb/eph/customizer/ColorSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add comments</Summary>
+    <Description>ColorSearchTermCustomizer</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK14C97">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:28:20:107 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:26:11:652 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="27">src/com/bbb/eph/customizer/ColorSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Performance logging is missing, we are fine if the base class takes care the same</Summary>
+    <Description>initializeRegexPattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK14ZSX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:28:50:625 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:25:25:515 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="13">src/com/bbb/eph/customizer/CategorySearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Comments missing</Summary>
+    <Description>CategorySearchTermCustomizer</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK159VF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:29:03:675 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:24:42:265 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="25">src/com/bbb/eph/customizer/CategorySearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Comments missing</Summary>
+    <Description>initializeRegexPattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK15VE8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:29:31:568 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:29:42:072 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="31">src/com/bbb/eph/customizer/OtherSearchTermCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>If we decide to get rid of local maps, we may need to update this code</Summary>
+    <Description>List&lt;String&gt; regexWordList= (List) getBbbSemanticDataCacheContainer().get(KEYWORD_TYPE_UNDERSCORE+OTHER_TYPE);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK1681H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:29:47:957 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:22:51:210 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="18">src/com/bbb/eph/customizer/OtherSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Comments missing</Summary>
+    <Description>initializeRegexPattern</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK16JWE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 18:30:03:326 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:22:44:805 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="13">src/com/bbb/eph/customizer/OtherSearchTermCustomizer.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Comments missing, performance logging also missing</Summary>
+    <Description>OtherSearchTermCustomizer</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3LVNQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:37:57:638 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:18:53:706 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="270">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Can we use foreach?</Summary>
+    <Description>for( int removeWord =1;removeWord &lt; wordCount; removeWord++)
+
+Can not use for each witout addtional variables </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3NMXP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:39:19:645 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:18:04:006 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="307">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use foreach and variable name j does not make any sense</Summary>
+    <Description>for (int j=0; j&lt;maxWordInCombination; j++)
+
+Name of vaiable updated</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3ORCX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:40:12:033 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:17:39:248 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="316">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Use foreach and variable name i does not make sense</Summary>
+    <Description>for (int i=start; i&lt;=end &amp;&amp; end-i+1 &gt;= maxWordInCombination-index; i++)
+
+name has been updated</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3R9U5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:42:09:293 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 06:17:25:207 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="274">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Variable name does not make sense</Summary>
+    <Description>n
+
+variable name corrected</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3S3FK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:42:47:648 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 05:34:47:545 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="301">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should print final outcome or combination of strings which are formed. I see we are printing in consuming method but checking</Summary>
+    <Description>createAllCombination</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK3V1NL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 19:45:05:313 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 17:10:49:830 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="311">src/com/bbb/eph/util/EPHLookUpUtil.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>.trim() does not take care of removing end space?</Summary>
+    <Description>int lastIndexOfSpace=searchTerm.lastIndexOf(BBBCoreConstants.SPACE);
+	        searchTerm.delete(lastIndexOfSpace, searchTerm.length());</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

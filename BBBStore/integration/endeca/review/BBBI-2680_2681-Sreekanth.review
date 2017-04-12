@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2680_2681">
+  <ReviewIssue id="IQJRQ1HG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 23:35:16:420 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 13:54:45:891 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="496">src/com/bbb/search/endeca/tools/EndecaSearchToolsImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>is this the same cache scheme we are using for light weight query which get number of products and auto correction? I do not see reference of using this at any other place hence asking this question</Summary>
+    <Description>BOOSTING_STRATEGY_CACHE_NAME</Description>
+    <Annotation>Yes</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

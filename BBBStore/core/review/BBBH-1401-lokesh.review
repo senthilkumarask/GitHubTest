@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1401">
+  <ReviewIssue id="INP93XI3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:11:41:787 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:12:14:146 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="2166">src/com/bbb/constants/BBBCoreConstants.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>DELIV URL should not be in constants, it should be defined in config keys</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP97K50">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:14:31:092 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:23:16:478 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="278">src/com/bbb/framework/httpquery/HTTPCallInvoker.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why have we added the check for SDD Response. This should be a generic status code.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9JMN0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:23:54:204 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:24:25:961 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="2">src/com/bbb/sdd/vo/CustomerSddVOReq.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9L2D7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:25:01:243 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:25:34:424 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="2">src/com/bbb/sdd/vo/PackageSddVOReq.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9M0JY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:25:45:550 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:25:54:915 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="7">src/com/bbb/sdd/vo/response/CustomerSddVOResponse.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9MJA1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:26:09:817 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:26:20:794 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="7">src/com/bbb/sdd/vo/response/DeliveryWindowSddVOResponse.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9NW68">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:27:13:184 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:27:24:555 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="7">src/com/bbb/sdd/vo/response/SddVOResponse.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9OFHB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:27:38:207 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:27:45:619 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="7">src/com/bbb/sdd/vo/response/StoreSddVOResponse.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INP9OUCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:27:57:482 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-01 :: 20:28:02:978 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh</ReviewerId>
+    <AssignedTo>neha</AssignedTo>
+    <File line="7">src/com/bbb/sdd/vo/SddRequestVO.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Correct the copyright info</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

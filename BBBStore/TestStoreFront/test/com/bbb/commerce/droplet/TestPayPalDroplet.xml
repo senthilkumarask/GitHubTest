@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.droplet.TestPayPalDroplet">
+		<group id="testPayPalDropletInternationalandPOfailure">
+			<test id="testPayPalDropletInternationalandPOfailure">
+				<objs>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbPriceListManager" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="payPalDroplet" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/commerce/droplet/PaypalDroplet</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku60162
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod60011
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="state" type="string">
+						MA
+					</obj>
+					<obj id="orderId" type="string">
+						134255626
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testPayPalDropletShippingRestriction">
+			<test id="testPayPalDropletShippingRestriction">
+				<objs>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbPriceListManager" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="payPalDroplet" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/commerce/droplet/PaypalDroplet</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku10016
+					</obj>
+					<obj id="productIdZip" type="string">
+						1016991155
+					</obj>	
+					<obj id="state" type="string">
+						AK
+					</obj>
+					<obj id="orderId" type="string">
+						98544789
+					</obj>				
+				</objs>
+			</test>
+		</group>
+		<group id="testPayPalCouponPageRedirect">
+			<test id="testPayPalCouponPageRedirect">
+				<objs>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbPriceListManager" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="payPalDroplet" type="com.bbb.commerce.droplet.TestPayPalDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/commerce/droplet/PaypalDroplet</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku10008
+					</obj>
+					<obj id="productIdZip" type="string">
+						1016991155
+					</obj>
+					<obj id="siteId" type="string">
+						BuyBuyBaby
+					</obj>
+					<obj id="state" type="string">
+						TX
+					</obj>
+					<obj id="orderId" type="string">
+						67785433
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

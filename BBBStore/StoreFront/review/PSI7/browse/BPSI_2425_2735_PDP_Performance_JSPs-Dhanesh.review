@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI_2425_2735_PDP_Performance_JSPs">
+  <ReviewIssue id="I9JH5WOC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:24:41:196 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:24:42:770 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="1561">j2ee-apps/BBBStore/store.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHCP9C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:29:58:176 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:29:59:894 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="35">j2ee-apps/BBBStore/store.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHCV6L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:30:05:853 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:30:08:175 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="40">j2ee-apps/BBBStore/store.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHDRP6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:30:47:994 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:30:49:176 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="47">j2ee-apps/BBBStore/store.war/browse/collectionForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHEAE3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:31:12:219 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:31:13:201 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/browse/collectionForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHF06E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:31:45:638 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:31:47:362 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="47">j2ee-apps/BBBStore/store.war/browse/collectionForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHFOBW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:32:16:940 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:32:18:011 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="167">j2ee-apps/BBBStore/store.war/browse/collectionForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHHM8B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:33:47:531 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:33:48:927 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="22">j2ee-apps/BBBStore/store.war/browse/collectionGridView.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHI0WK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:34:06:548 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:34:08:008 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="13">j2ee-apps/BBBStore/store.war/browse/collectionListView.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHKWGP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:36:20:761 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:36:21:919 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="45">j2ee-apps/BBBStore/store.war/browse/accessoriesForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHL1NT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:36:27:497 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:36:28:487 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="192">j2ee-apps/BBBStore/store.war/browse/accessoriesForms.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JHM1H2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:37:13:910 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:37:16:512 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="19">j2ee-apps/BBBStore/store.war/browse/accessoriesGridView.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JICMGL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:57:54:165 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:57:57:126 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="43">j2ee-apps/BBBStore/store.war/browse/breadcrumb.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JID00P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:58:11:737 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 11:58:15:135 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="51">j2ee-apps/BBBStore/store.war/browse/notifyMeConfirmPopup.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9JIOWCP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 12:07:26:857 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-11 :: 12:07:28:536 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/browse/gadgets/notifyMeRequest.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

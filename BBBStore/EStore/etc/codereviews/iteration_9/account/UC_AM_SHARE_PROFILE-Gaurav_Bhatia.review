@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_AM_SHARE_PROFILE">
+  <ReviewIssue id="GVNLRV1C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 15:39:31:872 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:05:20:673 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="92">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Rename method isUserBelongToOtherGroup to isUserPresentInOtherGroup</Summary>
+    <Description>Rename method isUserBelongToOtherGroup to isUserPresentInOtherGroup</Description>
+    <Annotation></Annotation>
+    <Revision>Resolved and changed to  isUserBelongToOtherGroup </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNM49JI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 15:49:10:542 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:05:41:745 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="107">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>map creation should be outside while loop</Summary>
+    <Description>Map&lt;String, Object&gt; map = (Map&lt;String, Object&gt;) pRepItem
+							.getPropertyValue(mPmgr
+									.getUserSiteItemsPropertyName());
+
+should be created outside while loop</Description>
+    <Annotation></Annotation>
+    <Revision>moved and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNM5M8J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 15:50:13:651 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:06:02:490 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="107">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>map should be renamed to appropriate variable</Summary>
+    <Description>map should be renamed to variable like currentSiteMap</Description>
+    <Annotation></Annotation>
+    <Revision>changed and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNM6JCJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 15:50:56:563 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:06:10:178 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="113">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>tempSite should be renamed to otherGroupSite</Summary>
+    <Description>tempSite should be renamed to otherGroupSite</Description>
+    <Annotation></Annotation>
+    <Revision>changed and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNM7RTH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 15:51:54:197 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:06:18:115 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="117">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>When returning falst need to close perf monitor</Summary>
+    <Description>when returning from method you need to close the perfmonitor</Description>
+    <Annotation></Annotation>
+    <Revision>changed and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNMN0NJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 16:03:45:487 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:06:37:803 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="2016">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>add comment in java to detail out why assocSite is needed</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added in the method detail</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNMSZ7S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 16:08:23:560 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:07:01:092 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="2111">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Whenever log exception , please log buisiness message as well.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNNRAF2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 16:35:04:382 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:07:20:261 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="167">src/com/bbb/account/BBBProfileManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>please log both error and business message whenever logging error</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added and resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

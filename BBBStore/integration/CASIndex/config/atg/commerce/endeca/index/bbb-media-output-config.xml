@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item is-document="true" item-descriptor-name="bbbOtherMedia">
+  <title property-name="id"/>
+  <properties>
+    	<property name="id" output-name="P_Medica_ID" text-searchable="true" type="string"/>
+    	<property name="widget" is-dimension="false" output-name="P_Video_Location" text-searchable="true" type="string"/>
+	<property name="mediaDescription" is-dimension="false" output-name="P_Video_Metadata" text-searchable="true" type="string"/>
+    	<property name="mediaTranscript" is-dimension="false" output-name="P_Video_Transcript" text-searchable="true" type="string"/>
+   	<!--<property name="$siteId" type="string" output-name="P_Product_Site_ID" is-dimension="true"/>
+	<property name="$siteId" type="string" output-name="P_Site_ID" is-dimension="true"/>-->
+    <property name="$itemDescriptor.itemDescriptorName" output-name="record.type" type="string" is-dimension="true"/>
+  </properties>
+</item>

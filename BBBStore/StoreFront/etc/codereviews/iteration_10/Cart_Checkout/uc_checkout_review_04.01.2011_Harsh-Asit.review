@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_checkout_review_04.01.2011_Harsh">
+  <ReviewIssue id="GX1ZIAEJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 21:52:28:651 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:56:13:561 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add pageId param to checkout_header.jsp include based on the page type</Summary>
+    <Description>Add pageId param to checkout_header.jsp include based on the page type</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1ZL3AX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 21:54:39:417 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:55:55:996 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/checkout/preview/review_cart.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add parameter pageID to include of checkout_header.jsp</Summary>
+    <Description>Add pageId param to checkout_header.jsp include based on the page type</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1ZO2K3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 21:56:58:419 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:49:34:792 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="14">j2ee-apps/BBBStore/store.war/checkout/preview/review_cart.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>the pageWrapper attribute is not matching the UE html, billing chekoutReview useMapQuest</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1ZRNM7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 21:59:45:679 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:48:13:093 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="38">j2ee-apps/BBBStore/store.war/checkout/preview/review_cart.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Should we display the number of commerceitems or total quantity in the shippinggroup</Summary>
+    <Description>Total Quantity was supposed to be shown.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1ZSULB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:00:41:375 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:30:58:112 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="2">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_group_order_details.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>unnecessary getvalueof tag, remove it</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1ZV8EP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:02:32:593 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:25:43:391 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="7">j2ee-apps/BBBStore/store.war/checkout/preview/frag/display_address.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>should the registry address section not have link to modify the address?</Summary>
+    <Description>i have forwared this to Asit for closure</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX200RDD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:06:50:449 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 13:22:34:146 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="18">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_method.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>/BBBStore.EStore/src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java, logerror not following the standards for logging framework. Please check the logging framework document and correct the logerrors.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX202BER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:08:03:075 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 12:56:38:348 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="22">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_method.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>date format was not coming correct when I last saw. Please get this correct from the content and catalog team</Summary>
+    <Description>This issue is resolved.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX20A8IA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:14:12:562 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:37:54:601 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="4">j2ee-apps/BBBStore/store.war/checkout/preview/frag/checkout_order_items.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Please reuse the labels from cart/mini cart page.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX20BG3A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:15:09:046 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:11:09:705 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="3">j2ee-apps/BBBStore/store.war/checkout/preview/frag/sku_details.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This should be the displayname of the sku not hardcoded product string.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX20PWZK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:26:24:128 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:11:06:314 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="13">j2ee-apps/BBBStore/store.war/checkout/preview/frag/confirm_detailed_Item_price.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>I see one of the items in the html to say expected delivery date after the item pricing, Please confirm</Summary>
+    <Description>i confirmed with Asit , its not the part of the requirement</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX20YMJZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:33:10:511 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:11:52:732 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="32">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_group_order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>this is not rawtotal ratherall items total. this might confuse during maintenance phase.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX211JZU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:35:27:162 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:10:58:593 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="14">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_group_order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The totaltax property is not getting set in the droplet for shippinggroup. Please correct this.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX214YQK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:38:06:236 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:10:52:921 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="16">j2ee-apps/BBBStore/store.war/checkout/preview/frag/order_store_pickup_info.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>multishipping.jsp is not exposed to user, the url should be shipping.jsp?shippingGr=multi</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX217IUB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:40:05:603 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:37:44:561 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/checkout/preview/frag/order_store_pickup_info.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>The get direction is still pending.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX21P1BO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 22:53:42:708 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:02:16:881 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="312">j2ee-apps/BBBStore/store.war/checkout/preview/review_cart.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This key name is not right. Loremipsum is used for dummy filler text. use something like preview_disclaimer_text or preview_terms_and_conditions</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX228M56">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 23:08:56:154 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:19:56:670 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_group_order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>shipping surcharge are not displayed. Please fix this</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX229X3W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 23:09:57:020 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:11:03:895 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="38">j2ee-apps/BBBStore/store.war/checkout/preview/frag/shipping_group_order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Free shipping messaging is not handled. Please fix this</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX33OAO7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:36:53:575 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:36:57:094 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Harsh</AssignedTo>
+    <File line="1">etc/codereviews/iteration_10/Cart_Checkout/uc_checkout_review_04.01.2011_Harsh-Asit.review</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

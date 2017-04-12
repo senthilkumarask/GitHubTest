@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Misc_Tables_21_12_2011_Sneha_Parvinder">
+  <ReviewIssue id="GWXE35XJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-02 :: 16:41:46:375 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-02 :: 16:41:50:513 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Parvinder</ReviewerId>
+    <AssignedTo>Parvinder</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

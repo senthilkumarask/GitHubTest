@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Email_Template_Cart&amp;Checkout_Narinder_Jyoti">
+  <ReviewIssue id="GZMC0RK0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-03-10 :: 12:57:34:272 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-03-10 :: 12:57:36:048 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Jyoti</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

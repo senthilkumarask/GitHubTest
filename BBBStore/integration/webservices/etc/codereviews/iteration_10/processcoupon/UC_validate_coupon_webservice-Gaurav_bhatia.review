@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_validate_coupon_webservice">
+  <ReviewIssue id="GWGAIWG4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:29:57:124 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:30:49:834 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_bhatia</ReviewerId>
+    <AssignedTo>Gaurav_bhatia</AssignedTo>
+    <File line="94">src/com/bbb/account/ProcessCouponInfoMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>all instance of BBBPerformanceMonitor.start(BBBPerformanceConstants.WEB_SERVICE_CALL needs to be removed except one place where webservice call is made... </Summary>
+    <Description>not all intermediate methods needs this.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGAMKXY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:32:48:838 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:33:30:315 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_bhatia</ReviewerId>
+    <AssignedTo>Gaurav_bhatia</AssignedTo>
+    <File line="90">src/com/bbb/account/ProcessCouponInfoMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>add loggingDebug for getDozerMappedRequest - need to log both input and output VO</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGAO0F6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:33:55:554 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:34:22:634 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_bhatia</ReviewerId>
+    <AssignedTo>Gaurav_bhatia</AssignedTo>
+    <File line="55">src/com/bbb/account/ProcessCouponInfoMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>add logging debug for input pRreqVO and output xml generated </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGAR3PX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:36:19:797 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:36:37:783 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_bhatia</ReviewerId>
+    <AssignedTo>Gaurav_bhatia</AssignedTo>
+    <File line="47">src/com/bbb/account/ProcessCouponInfoUnMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>add logdebug for input and output objects</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-1683_1310205">
+  <ReviewIssue id="IFQA7VRA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:42:53:254 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:44:29:760 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Review Comment For story By sunil</Summary>
+    <Description>1. As discussed with Mayur Will pick mobile in other story.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQA9ZCQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:44:31:226 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:44:54:488 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Review Comment for Varaible</Summary>
+    <Description>change variable name to  answerAttempts</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQAAXSW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:45:15:872 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:45:27:761 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>UE Task is not done is yhis story</Summary>
+    <Description>Any of the UE tasks is not covered in this review.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQABA8L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:45:31:989 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:45:53:285 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Renmove hard coding from jsp</Summary>
+    <Description>Remove &lt;dsp:option value=""&gt;Please select First Question&lt;/dsp:option&gt; from the jsp</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQAC5NN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:46:12:707 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:46:20:257 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>BCC message</Summary>
+    <Description>Bcc message is set up UE need to add the same in BCC, if user attempted more than 3 times with incorrect answers.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQACLWP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:46:33:769 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:46:44:096 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Jupiter file in Jira</Summary>
+    <Description>Add jupiter file and add jupiter location in JIRA.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQADTPU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:47:30:546 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 09:58:45:302 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Bainsla</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Review comment</Summary>
+    <Description>1. As discussed with Mayur Will pick mobile in other story.
+2. Challenge answer should be in XXXX format.
+3. Email functionality need to be validate on Dev Box.
+4. Save button need to change in Saved after submit the answers.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

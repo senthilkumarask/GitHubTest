@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Kick Starters Repository</name>
+		<author>BBB Technical Team</author>
+		<version>1.0</version>
+	</header>                   
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--          kickStarter          -->
+  <!--                               -->
+  <!--///////////////////////////////-->                                                  
+	<item-descriptor name="kickStarter" display-name-resource="kickStarter" cache-mode="simple" display-property="heading1">
+	 <attribute name="resourceBundle" value="com.bbb.kickstarters.BBBKickStarterTemplateResources"/>
+		<table name="BBB_KICK_STARTER" id-column-name="id" type="primary">
+			<property name="heading1" data-type="string" column-name="heading1" display-name-resource="heading1" category-resource="Kick Starter" required="true">							
+			<attribute name="propertySortPriority" value="-9"/>
+			</property>
+			<property name="heading2" data-type="string" column-name="heading2" display-name-resource="heading2" category-resource="Kick Starter" >					
+			<attribute name="propertySortPriority" value="-8"/>
+			</property>
+			<property name="description" data-type="big string" column-name="description" display-name-resource="description" category-resource="Kick Starter Bio" >					
+			<attribute name="propertySortPriority" value="-3"/>
+			</property>
+			 <!-- Image property to hold an image path -->
+			<property name="imageUrl" data-type="string" column-name="image_url" display-name-resource="kickStarterImage" category-resource="Kick Starter" >			
+			<attribute name="propertySortPriority" value="-7"/>
+			</property>
+				 <!-- Image property to hold an image path -->
+			<property name="heroImageUrl" data-type="string" column-name="hero_image_url" display-name-resource="kickStarterHeroImage" category-resource="Kick Starter" >			
+			<attribute name="propertySortPriority" value="-6"/>
+			</property>
+			<property name="priority" column-name="priority" display-name-resource="priority" data-type="int" category-resource="Kick Starter" >
+			<attribute name="propertySortPriority" value="-5"/>
+			</property>
+			 <!-- KickStarter is Active or Not , By default it's Active -->
+			<property name="isActive" data-type="enumerated" column-name="is_active" display-name-resource="isActive" default="Enable" category-resource="Kick Starter Status" >
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Enable" code="1" />
+				<option value="Disable" code="2" />
+				<attribute name="propertySortPriority" value="-4"/>
+			</property>	
+			<property name="imageAltAttr" data-type="string" column-name="image_alt_attr" display-name-resource="kickStarterImageAltAttr" category-resource="Kick Starter" >			
+			<attribute name="propertySortPriority" value="-10"/>
+			</property>
+			<property name="heroImageAltAttr" data-type="string" column-name="hero_image_alt_attr" display-name-resource="kickStarterHeroImageAltAttr" category-resource="Kick Starter" >			
+			<attribute name="propertySortPriority" value="-11"/>
+			</property>
+			<property name="id" data-type="string" column-name="id" />
+			 <!--KickStarter Type  -->
+			<property name="kickstarterType" data-type="enumerated" column-name="kick_starter_type" display-name-resource="kickStarterType" default="Top Consultant" category-resource="Kick Starter Types" >
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Top Consultant" code="1" />
+				<option value="Shop This Look" code="2" />
+				<attribute name="propertySortPriority" value="-1"/>
+			</property>	
+		</table>
+		 <!-- This property has the list of pick list repository items which are specific to  registeryType,customer type,site and channel -->
+		<table name="BBB_KICK_STARTER_PICKLISTS"  type="multi" id-column-names="id">
+			<property  name="kickStarterPicklists" column-name="kick_starter_picklist_id" data-type="set" component-item-type="kickStarterPicklist" category-resource="Kick Starter Picklists" display-name-resource="kickStarterPicklists">
+			 <attribute name="propertySortPriority" value="-2"/>
+             </property>
+		</table>
+ 
+	</item-descriptor>
+	
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--   kickStarterPicklist         -->
+  <!--                               -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="kickStarterPicklist" cache-mode="simple" display-name-resource="kickstarterPicklist" display-property="title" >
+	 <attribute name="resourceBundle" value="com.bbb.kickstarters.BBBKickStarterTemplateResources"/>
+		<table name="BBB_KICK_STARTER_PICKLIST" id-column-name="id" type="primary">	
+		<property name="title" data-type="string" column-name="picklist_title" display-name-resource="title" category-resource="Kick Starter Picklist" >							
+			<attribute name="propertySortPriority" value="-6"/>
+		</property>
+		<!-- This property defines picklist summary description -->
+		<property name="pickListDescription" data-type="string" column-name="picklist_summary_description" display-name-resource="pickListDescription" category-resource="Kick Starter Picklist" >							
+			<attribute name="propertySortPriority" value="-7"/>
+		</property>
+		<!-- This property defines a type of a customer-->
+			<property name="customerType" data-type="enumerated" column-name="customer_type" default="Both" category-resource="Kick Starter Picklist" display-name-resource="customerType" >
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Both" code="0" />
+				<option value="LoggedIn" code="1" />
+				<option value="Anonymous " code="2" />
+				<attribute name="propertySortPriority" value="-2"/>
+			</property>			
+            <!-- This property defines consultant site -->
+		    <property name="sites"   display-name-resource="sites" column-name="site_id"  item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="Kick Starter Picklist Sites"  >
+			 <attribute name="propertySortPriority" value="-4"/>
+		    </property>		
+		    <property name="id" data-type="string" column-name="id" />
+		</table>		
+			
+		  <!-- This property defines the list of registry types -->
+        <table name="BBB_PICKLIST_REG_TYPES" id-column-names="id" type="multi" >
+			<property name="registryTypes" data-type="set"  column-name="registry_type_id"  display-name-resource="registeryTypes" component-item-type="registryType" category-resource="Kick Starter Picklist Registry Types"  >
+			 <attribute name="propertySortPriority" value="-1"/>
+			</property>
+		</table>
+       <!-- This property defines the list of sku  items -->
+		<table name="BBB_PICKLIST_SKUS" id-column-name="id" type="multi" multi-column-name="sequence_num">
+			<property data-type="list" name="pickListSkus" column-name="sku_id"  component-item-type="pickListSKUItem"  category-resource="Kick Starter Picklist Skus" display-name-resource="pickListSKUS" required="true" >			
+			 <attribute name="propertySortPriority" value="-3"/>
+			  </property>
+		</table>		
+        <!-- This property defines the list of consultant channels-->
+       <table name="BBB_PICKLIST_CHANNELS" id-column-names="id" type="multi" >
+			<property name="channels" data-type="set"  column-name="channels_id"  display-name-resource="channels" component-item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository" category-resource="Kick Starter Picklist Channel" >
+			 <attribute name="propertySortPriority" value="-5"/>
+			  </property>
+		</table>
+	</item-descriptor>
+
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--   registryType                -->
+  <!--                               -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="registryType" display-name-resource="registryType" cache-mode="simple"  display-property="registryType">
+    <attribute name="resourceBundle" value="com.bbb.kickstarters.BBBKickStarterTemplateResources"/>
+       <!-- This property will be used to create registry events -->
+	 <table name="bbb_kick_start_reg_type_badge" id-column-name="id" type="primary">
+			<property name="registryType" display-name-resource="registryType"  column-name="registry_type" item-type="registrytype" repository="/atg/multisite/SiteRepository" category-resource="Registry Type" >
+			<attribute name="propertySortPriority" value="-2"/>
+			</property>
+			<property name="registryTypeimageUrl" display-name-resource="registryTypeimageUrl" data-type="string" column-name="registry_image_url" category-resource="Registery Type" >
+			<attribute name="propertySortPriority" value="-1"/>
+			</property>
+			<property name="id" data-type="string" column-name="id" />
+	 </table>
+
+	</item-descriptor>
+ 
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!-- pickListSKUItem               -->
+  <!--                               -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="pickListSKUItem" display-name-resource="pickListSKUItem" cache-mode="simple"  display-property="sku">
+    <attribute name="resourceBundle" value="com.bbb.kickstarters.BBBKickStarterTemplateResources"/>
+		<table name="BBB_PICKLIST_SKU_ITEM" id-column-name="id" type="primary">		
+			 <!-- This property will be used to place sku id -->
+			<property name="sku" column-name="sku_id" display-name-resource="sku"  data-type="string" category-resource="Sku Item" required="true">
+			<attribute name="propertySortPriority" value="-3"/>
+			</property>
+			 <!-- This property will be used to suggest quantity of each sku-->
+			<property name="recommendedQuantity" column-name="recommended_qty" display-name-resource="recommendedQuantity" data-type="int" category-resource="Sku Item" required="true" default="1">		
+			<attribute name="propertySortPriority" value="-2"/>
+			</property>
+            <property name="comment" column-name="sku_comment" display-name-resource="skuComment"  data-type="big string" category-resource="Comment" >
+			<attribute name="propertySortPriority" value="-1"/>
+			</property>
+			<property name="id" data-type="string" column-name="id" />
+		</table>
+	</item-descriptor>
+
+
+  <!--///////////////////////////////-->
+  <!--                              -->
+  <!--   Popular Items              -->
+  <!--                              -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="popularItems" display-name-resource="popularItems" cache-mode="simple"  display-property="title">
+    <attribute name="resourceBundle" value="com.bbb.kickstarters.BBBKickStarterTemplateResources"/>
+ 	 <table name="BBB_POPULAR_ITEMS" id-column-name="id" type="primary">	 	     
+			<property name="searchQuery" display-name-resource="searchQuery" data-type="big string" column-name="search_query" category-resource="Popular Items" required="true">
+			<attribute name="propertySortPriority" value="-3"/>
+			</property>
+			 <!-- This property defines consultant site -->
+		    <property name="sites"   display-name-resource="sites" column-name="site_id"  item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="Popular Items"  >
+			 <attribute name="propertySortPriority" value="-2"/>
+		    </property>	
+		     <property name="title" data-type="string" column-name="query_title" display-name-resource="popularQueryTitle" category-resource="Popular Items" >							
+		 	      <attribute name="propertySortPriority" value="-1"/>
+		    </property>
+		     <property name="resultSize" data-type="int" column-name="result_size" display-name-resource="resultSize" category-resource="Popular Items" default="15" >							
+		 	      <attribute name="propertySortPriority" value="-1"/>
+		    </property>
+			<property name="id" data-type="string" column-name="id" />
+	 </table>	
+	 <!-- This property defines the list of registry types -->
+        <table name="BBB_POPULAR_ITEMS_REG_TYS" id-column-names="id" type="multi" >
+	   <property name="registryType" data-type="set"  column-name="registry_type"  display-name-resource="registryType" component-item-type="registrytype" repository="/atg/multisite/SiteRepository"  category-resource="Popular Items"  >
+	     <attribute name="propertySortPriority" value="-2"/>
+	   </property>
+	 </table>
+	</item-descriptor>
+<!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component
+	 <query-items item-descriptor="kickStarter" quiet="true">ALL</query-items>
+	 <query-items item-descriptor="kickStarterPicklist" quiet="true">ALL</query-items>
+	 <query-items item-descriptor="registryType" quiet="true">ALL</query-items>
+	 <query-items item-descriptor="pickListSKUItem" quiet="true">ALL</query-items>
+	 <query-items item-descriptor="popularItems" quiet="true">ALL</query-items>
+ -->
+</gsa-template>

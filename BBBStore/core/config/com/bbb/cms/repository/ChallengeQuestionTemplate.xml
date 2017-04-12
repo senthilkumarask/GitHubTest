@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>ChallengeQuestionTemplate</name>
+        <author></author>
+    </header>
+     
+  <!--///////////////////////////////-->
+  <!--          challengeQuestion             -->
+  <!--///////////////////////////////-->
+  
+<item-descriptor name="userChallengQuestion" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+	
+	
+	<table name="BBB_USER_CHALLENGE_QUESTION" type="primary" id-column-name="profile_id" >
+		<property name="profileId" column-name="profile_id"  writable="true" cache-mode="disabled" />
+		<property name="challengeQuestion1" column-name="CHALLENGE_QUESTION1"  writable="true" cache-mode="disabled" />
+       <property name="challengeQuestion2" column-name="CHALLENGE_QUESTION2" data-type="string" cache-mode="disabled" />
+       <property name="challengeAnswer1" column-name="CHALLENGE_ANSWER1"  data-type="string" cache-mode="disabled" />
+		<property name="challengeAnswer2" column-name="CHALLENGE_ANSWER2" data-type="string" cache-mode="disabled"/>
+      </table>
+	
+	    
+</item-descriptor>
+</gsa-template>

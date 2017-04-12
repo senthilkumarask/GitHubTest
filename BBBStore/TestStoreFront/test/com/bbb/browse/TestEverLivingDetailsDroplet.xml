@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2014, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestEverLivingDetailsDroplet
+
+  DESCRIPTION: ddtunit data file for EverLivingDetailsDroplet.java test case
+
+  HISTORY:
+  Apr 03, 2014 Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.browse.TestEverLivingDetailsDroplet">
+       <group id="testProcessProductVO">
+        <test id="testProcessProductVO_test">
+			<objs>
+				<obj id="everLivingDetailsDroplet" type="com.bbb.commerce.browse.droplet.EverLivingDetailsDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestEverLivingDetailsDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/EverLivingDetailsDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testProcessCollectionVO">
+        <test id="testProcessCollectionVO_test">
+			<objs>
+				<obj id="everLivingDetailsDropletCollection" type="com.bbb.commerce.browse.droplet.EverLivingDetailsDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestEverLivingDetailsDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/EverLivingDetailsDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

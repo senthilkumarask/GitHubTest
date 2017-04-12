@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_checkout_single_shipping_2011_12_12_narinder_garg">
+  <ReviewIssue id="GW3V53AD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 00:46:04:453 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 00:46:45:421 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="30">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Lets add a method in BBBOrder getNonGiftWrapItem and we should check the count of that.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3V7WHL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 00:48:15:609 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 14:05:52:727 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="87">src/com/bbb/commerce/order/purchase/BBBShippingAddressDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We have a Profile API, which return BBBAddress object and then we should be good.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3VAV0N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 00:50:33:671 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 14:05:44:861 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="235">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No need to set the Id, its already there in BBBRepositoryContactInfoImpl class.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>we are setting the id on BBBAddress object.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3VOI8O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:01:10:296 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:02:51:375 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="161">src/com/bbb/commerce/order/purchase/BBBShippingAddressDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lets move this method to BBBAddressContainer itself</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3VT10X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:04:41:265 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:07:30:906 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="359">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>The registry address will come from order.getRegistryMap, It will return RegistrantVO.</Summary>
+    <Description>Then we have to work with Registry team to make AddressVO implement BBBAddress or extend BBBAddressImpl, so we don't have to copy. Also the display logic (html tags) we will keep in jsp.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3WBY2A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:19:23:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 14:03:51:973 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="298">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>I think retainAll method call will handle the same IF/ELSE logic</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>closing it for now</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3WIM2H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:24:34:937 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 14:03:26:708 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="256">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We will use ShipOnDate for PackNHold, so no need for this again</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3WK1A8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:25:41:312 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 13:59:12:937 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="262">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>No need to set the flag, we will only store the email, if its there we will assume true else false.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3X8D15">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:44:36:281 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:45:00:765 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="463">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need to discuss the requirement.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3XFGYO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:50:07:968 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 13:57:08:533 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="884">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Not clear on the use of PlaceUtils</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>removed the placeutils</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3XK813">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:53:49:671 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 13:56:29:163 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="1874">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>AM track has provided the API for this.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>incorported the APIs</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3XN5Y1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 01:56:06:937 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 13:55:31:308 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>narinder garg</AssignedTo>
+    <File line="1214">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Shipping Confirmation Email is only for Registry Address and its the regisry Email</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Registry Check List Repository</name>
+        <author></author>
+    </header>
+  <item-descriptor name="checkListType" display-name="checkListType" cache-mode="simple" item-cache-timeout="86400000" query-expire-timeout="86400000" query-cache-size="10000" item-cache-size="50000">
+        <table name="BBB_LIST_TYPE" type="primary" id-column-name="type_id">
+         <property name="typeName" data-type="string" column-name="type_name"/>
+         <!--REGISTRY, NONREGISTRY,SERVICES, PROMOTIONAL -->
+         <property name="subTypeCode" data-type="string" column-name="sub_type_code"/>
+         <property name="subTypeName" data-type="string" column-name="sub_type_name"/>         
+        </table>
+    </item-descriptor>	    
+
+<item-descriptor name="checkList" display-name="checkList" cache-mode="simple" item-cache-timeout="86400000" query-expire-timeout="86400000" query-cache-size="10000" item-cache-size="50000">
+        <table name="BBB_LIST" type="primary" id-column-name="list_id">
+            <property name="subTypeCode" data-type="string" column-name="sub_type_code"/>
+            <property name="sequenceNumber" column-names="sequence_num" display-name="sequenceNumber"  data-type="int"/>              
+            <property name="displayName" column-names="display_name" display-name="displayName"  data-type="string"/>
+            <property name="isDisabled" column-names="is_disabled" display-name="isDisabled"  data-type="boolean"/>
+            <property name="siteFlag" column-names="site_flag" display-name="siteFlag"  data-type="string"/>
+        </table>
+        <table name="BBB_LIST_CHLDCAT" type="multi" id-column-name="list_id"  multi-column-name="sequence_num">
+            <property name="checkListCategories" data-type="list" component-item-type="checkListCategory" column-name="list_cat_id"></property>
+        </table>
+    </item-descriptor>
+    <item-descriptor name="checkListCategory" display-name="checkListCategory"	cache-mode="simple" item-cache-timeout="86400000" query-expire-timeout="86400000" query-cache-size="10000" item-cache-size="50000">
+        <table name="BBB_LIST_CATEGORY" type="primary" id-column-name="list_cat_id">
+           <property name="categoryName" column-names="name" display-name="categoryName"  data-type="string"/>
+            <property name="displayName" column-names="display_name" display-name="displayName"  data-type="string"/>
+            <property name="categoryURL" column-names="category_url" display-name="categoryURL"  data-type="string"/>          
+            <property name="imageURL" column-names="image_url" display-name="imageURL"  data-type="string"/>
+            <property name="suggestedQuantity" column-names="suggested_qty" display-name="suggestedQuantity"  data-type="int"/>
+            <property name="primaryParentCategoryId" column-names="primary_parent_cat_id" display-name="primaryParentCategoryId"  data-type="string"/>
+            <property name="isDisabled" column-names="is_disabled" display-name="isDisabled"  data-type="boolean"/>
+            <property name="babyCategoryURL" column-names="baby_category_url" display-name="babyCategoryURL"  data-type="string"/>
+            <property name="babyImageURL" column-names="baby_image_url" display-name="babyImageURL"  data-type="string"/>
+            <property name="caCategoryURL" column-names="ca_category_url" display-name="caCategoryURL"  data-type="string"/>
+            <property name="caImageURL" column-names="ca_image_url" display-name="caImageURL"  data-type="string"/>
+            <property name="tbsCategoryURL" column-names="tbs_category_url" display-name="tbsCategoryURL"  data-type="string"/>
+            <property name="tbsImageURL" column-names="tbs_image_url" display-name="tbsImageURL"  data-type="string"/>
+            <property name="isShowOnCheckList" column-names="is_visible_on_checklist" display-name="isShowOnCheckList"  data-type="boolean"/>
+			<property name="isShowOnRLP" column-names="is_child_prd_needed_to_disp" display-name="isShowOnRLP"  data-type="boolean"/>		
+			<property name="isAlwaysShowOnRLP" column-names="is_visible_on_reg_list" display-name="isAlwaysShowOnRLP"  data-type="boolean"/>	
+			<property name="isConfigComplete" column-names="is_config_complete" display-name=" isConfigComplete"  data-type="boolean"/>	
+			<property name="isDeleted" column-names="is_deleted" display-name="isDeleted"  data-type="boolean"/>
+			<property name="serviceTypeCode" column-names="service_type_cd" display-name="serviceTypeCode"  data-type="string"/>
+        </table>
+        <table name="BBB_LIST_CAT_CHLDCAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+            <property name="childCheckListCategoryId" data-type="list" component-item-type="checkListCategory" column-name="child_list_cat_id"></property>
+        </table>
+    </item-descriptor>
+			
+	
+</gsa-template>

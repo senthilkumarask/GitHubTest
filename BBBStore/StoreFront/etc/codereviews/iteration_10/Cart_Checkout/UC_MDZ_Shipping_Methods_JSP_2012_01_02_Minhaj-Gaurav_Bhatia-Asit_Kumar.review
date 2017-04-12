@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_MDZ_Shipping_Methods_JSP_2012_01_02_Minhaj-Gaurav_Bhatia">
+  <ReviewIssue id="GWZD1UAN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 01:48:17:375 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:16:08:081 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/shipping/shippingMethods.jsp</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Radio button value should be Shipping Method ID, that will be saved in the ShippingGroup, Not the description. Also confirm with Raj.</Summary>
+    <Description>Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZD2TB2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 01:49:02:750 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:16:02:300 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="42">j2ee-apps/BBBStore/store.war/checkout/shipping/shippingMethods.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>For pricing display make sure the formating of $###.##</Summary>
+    <Description>Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZD3LFN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 01:49:39:203 GMT+05:30</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 14:15:58:566 GMT+05:30</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="42">j2ee-apps/BBBStore/store.war/checkout/shipping/shippingMethods.jsp</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Where is the JSP include for MultiShipping? Is Jyoti working on that to use the Map and display on page for each item.</Summary>
+    <Description>Yes Jyoti is working on that, i have given him the jsp code to use in his JSP.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

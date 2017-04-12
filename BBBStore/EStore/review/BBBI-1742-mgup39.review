@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1742">
+  <ReviewIssue id="IPXPGFDA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-27 :: 13:00:52:750 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-27 :: 13:04:22:845 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Initialize Variable</Summary>
+    <Description>recordsToFetch needs to be set inside the else condition to maintain the local scope
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

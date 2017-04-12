@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.catalog.TestProductListDetails">
+		<group id="testProductListDetails">
+			<test id="TestProductListDetails_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">6</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>					 
+					<obj id="productId" type="string">115489,115490,115491</obj>
+					<obj id="host" type="string">localhost</obj>
+					<obj id="port" type="int">7003</obj>
+				</objs>
+			</test>
+			<test id="TestProductListDetails_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">6</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>					 
+					<obj id="productId" type="string">115489,115490</obj>
+					<obj id="host" type="string">localhost</obj>
+					<obj id="port" type="int">7003</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testProductListDetailsErr">
+			<test id="TestProductListDetailsErr_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">6</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>					 
+					<obj id="productId" type="string">1014826360A</obj>
+					<obj id="host" type="string">localhost</obj>
+					<obj id="port" type="int">7003</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

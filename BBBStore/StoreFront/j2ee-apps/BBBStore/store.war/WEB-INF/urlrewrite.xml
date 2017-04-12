@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+
+-->
+<urlrewrite decode-using="null">
+    <!--
+    <rule>
+        <note>
+            The rule means that requests to /test/status/ will be redirected to /rewrite-status
+            the url will be rewritten.
+        </note>
+        <from>/test/status/</from>
+        <to type="redirect">%{context-path}/rewrite-status</to>
+    </rule>
+    <outbound-rule>
+        <note>
+            The outbound-rule specifies that when response.encodeURL is called (if you are using JSTL c:url)
+            the url /rewrite-status will be rewritten to /test/status/.
+
+            The above rule and this outbound-rule means that end users should never see the
+            url /rewrite-status only /test/status/ both in thier location bar and in hyperlinks
+            in your pages.
+        </note>
+        <from>/rewrite-status</from>
+        <to>/test/status/</to>
+    </outbound-rule>
+
+    INSTALLATION
+        in your web.xml add...
+
+        <filter>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+            <init-param>
+                <param-name>logLevel</param-name>
+                <param-value>WARN</param-value>
+            </init-param>
+        </filter>
+        <filter-mapping>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+     EXAMPLES
+
+     Redirect one url
+        <rule>
+            <from>/some/old/page.html</from>
+            <to type="redirect">/very/new/page.html</to>
+        </rule>
+
+    Redirect a directory
+        <rule>
+            <from>/some/olddir/(.*)</from>
+            <to type="redirect">/very/newdir/$1</to>
+        </rule>
+
+    Clean a url
+        <rule>
+            <from>/products/([0-9]+)</from>
+            <to>/products/index.jsp?product_id=$1</to>
+        </rule>
+    eg, /products/1234 will be passed on to /products/index.jsp?product_id=1234 without the user noticing.
+
+    Browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <from>/some/page.html</from>
+            <to>/some/page-for-old-browsers.html</to>
+        </rule>
+    eg, will pass the request for /some/page.html on to /some/page-for-old-browsers.html only for older
+    browsers whose user agent srtings match Mozilla/1, Mozilla/2, Mozilla/3 or Mozilla/4.
+
+    Centralised browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <set type="request" name="browser">moz</set>
+        </rule>
+    eg, all requests will be checked against the condition and if matched
+    request.setAttribute("browser", "moz") will be called.
+
+    -->
+    <!-- rule> <from>^/ss/(.*).jsp$</from> <to>/selfservice/$1.jsp</to> </rule -->
+	<!-- rule> <from>^/selfservice/(.*)$</from> <to>/selfservice/$1.jsp?contentKey=$1</to> </rule-->
+   
+    
+    <rule><from>^(.*);jsessionid=[A-Za-z0-9\-\+\*\._]+(.*)$</from><to type="redirect">$1$2</to></rule>
+    <rule> <from>/null$</from> <to>/blank.gif</to> </rule>
+    <rule> <from>^/gr/(.*)$</from><set type="request" name="originalUrl">/gr/$1</set> <to last="true">/giftregistry/$1.jsp?contentKey=$1&amp;%{query-string}</to> </rule>
+	<rule> <from>^/static/([A-Za-z0-9]*)([/]?)$</from><set type="request" name="originalUrl">/static/$1</set><to last="true">/cms/static/staticpage.jsp?pageName=$1&amp;contentKey=$1&amp;%{query-string}</to> </rule>
+	 <rule> <from>^/images/([A-Za-z0-9]*)([/]?)$</from><set type="request" name="originalUrl">/images/$1</set><to last="true">/cms/static/staticpage.jsp?pageName=$1&amp;contentKey=$1&amp;%{query-string}</to> </rule>
+	<rule> <from>^/registry/([A-Za-z0-9]*)([/]?)$</from> <set type="request" name="originalUrl">/registry/$1</set><to last="true">/bbregistry/registry_features.jsp?pageName=$1&amp;contentKey=$1&amp;%{query-string}</to> </rule>
+
+	<!--  Custom Landing Page redirection url -->
+	<rule> <from>^/category/custom/([^/]*)/([0-9]*)([/]?)$</from> <to last="true">/browse/custom_landing.jsp?categoryId=$2&amp;%{query-string}</to> </rule>
+		
+	<!-- R2.2 SEO Friendly URL Added for category Page : Start-->
+	<!-- L1 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogId=$3&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	
+	<rule> <from>^/category/([^/]*)/([0-9]*)/(fl_[^/]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogRefId=$2&amp;narrowDown=$3&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;narrowDown=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;CatalogRefId=$2&amp;%{query-string}</to> </rule>
+	
+	<!-- L2 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogRefId=$3&amp;narrowDown=$4&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;pagNum=$5&amp;narrowDown=$4&amp;pagFilterOpt=$6&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;CatalogRefId=$3&amp;categoryLevel=L2&amp;%{query-string}</to> </rule>
+	
+	<!-- L2 Category Local Store Pages URLs : Start -->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogRefId=$3&amp;storeID=$4&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$3&amp;storeID=$6&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$3&amp;storeID=$7&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;CatalogRefId=$3&amp;storeID=$5&amp;categoryLevel=L2</to> </rule>
+
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogRefId=$3&amp;narrowDown=$4&amp;storeID=$5&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;pagNum=$5&amp;narrowDown=$4&amp;pagFilterOpt=$6&amp;CatalogRefId=$3&amp;storeID=$7&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$3&amp;storeID=$8&amp;categoryLevel=L2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;CatalogRefId=$3&amp;storeID=$6&amp;categoryLevel=L2</to> </rule>
+	<!-- L2 Category Local Store Pages URLs : End -->
+
+	
+	<!-- L3 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogRefId=$4&amp;narrowDown=$5&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;CatalogId=$6&amp;pagNum=$7&amp;pagFilterOpt=$8&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;CatalogId=$6&amp;CatalogRefId=$4&amp;%{query-string}</to> </rule>
+	
+	<!-- L3 Category Local Store Pages URLs : Start -->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogRefId=$4&amp;storeID=$5</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$4&amp;storeID=$7</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$4&amp;storeID=$8</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;CatalogRefId=$4&amp;storeID=$6</to> </rule>
+
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogRefId=$4&amp;narrowDown=$5&amp;storeID=$6</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$4&amp;storeID=$8</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;CatalogId=$6&amp;pagNum=$7&amp;pagFilterOpt=$8&amp;CatalogRefId=$4&amp;storeID=$9</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/(fl_[^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;narrowDown=$5&amp;CatalogId=$6&amp;CatalogRefId=$4&amp;storeID=$7</to> </rule>
+	<!-- L3 Category Local Store Pages URLs : End -->
+
+	
+	<!-- R2.2 SEO Friendly URL Added for Search Page : Start-->
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;%{query-string}</to> </rule>   	
+	<rule> <from>^/s/([^/]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;pagNum=$2&amp;pagFilterOpt=$3&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;CatalogId=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9\\-]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;CatalogId=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;CatalogId=$2&amp;%{query-string}</to> </rule>
+	<!-- R2.2 SEO Friendly URL Added for Search Page : End-->
+	
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Search Page : Start -->
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;storeID=$4</to> </rule>
+	<rule> <from>^/s/([^/]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;storeID=$2</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;storeID=$6</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;pagNum=$2&amp;pagFilterOpt=$3&amp;storeID=$4</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;storeID=$7</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;CatalogId=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;storeID=$5</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;CatalogId=$4&amp;storeID=$5</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;CatalogId=$2&amp;storeID=$3</to> </rule>
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Search Page : End -->
+
+	
+	<!-- Search as Facet URL added : start-->
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)$</from> <to last="true">/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9\\-]*)$</from>  <to last="true">/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;%{query-string}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9\\-]*)$</from>  <to last="true">/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;CatalogId=$3&amp;%{query-string}</to> </rule>
+	<!-- Search as Facet URL added : end-->
+
+	<!-- Search as Facet Local Store Pages URLs added : Start -->
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;storeID=$5</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;storeID=$3</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;storeID=$7</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;storeID=$5</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;storeID=$8</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;storeID=$6</to> </rule>
+	<rule> <from>^/s/([^/&amp;]*)(&amp;)([^/&amp;]*)/([^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1%26$3&amp;narrowDown=$4&amp;CatalogId=$5&amp;storeID=$6</to> </rule>
+	<rule> <from>^/s/([^/]*)/([^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/search/search.jsp?Keyword=$1&amp;narrowDown=$2&amp;CatalogId=$3&amp;storeID=$4</to> </rule>
+	<!-- Search as Facet Local Store Pages URLs added : End -->
+
+
+	<!-- R2.2 SEO Friendly URL Added for Brand Page : Start-->
+	
+	<rule> <from>^/brand/([^/]*)/([0-9]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;CatalogId=$3&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	
+	<!-- R2.2 SEO Friendly URL Added for Brand Page : End-->
+
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Brand Page : Start -->
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$3</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$5</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$6</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;CatalogId=$3&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$4</to> </rule>
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Brand Page : End -->
+	
+	<!-- R2.2 SEO Friendly Facet URL Added for Brand Page : Start -->
+
+	
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;frmBrandPage=true&amp;brandId=$2&amp;narrowDown=$3&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9]*)-([0-9]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9\\-]*)([/]?)$</from>  <to last="true">/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;frmBrandPage=true&amp;brandId=$2&amp;%{query-string}</to> </rule>
+	<!-- R2.2 SEO Friendly Facet URL Added for Brand Page : End -->
+
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Narrowed Brand Pages : Start -->
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;frmBrandPage=true&amp;brandId=$2&amp;narrowDown=$3&amp;storeID=$4</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$6</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$7</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([^/]*)/([0-9\\-]*)/store-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=$2&amp;narrowDown=$3&amp;CatalogId=$4&amp;frmBrandPage=true&amp;brandId=$2&amp;storeID=$5</to> </rule>
+	<!-- R2.2 SEO Friendly Local Store Pages URLs Added for Narrowed Brand Pages : End -->
+
+
+	
+	<rule> <from>^/product/([^/]*)/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/browse/product_details.jsp?productId=$2&amp;contentKey=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/guide/([^/]*)/([A-Za-z0-9]*)([/]?)$</from> <set type="request" name="originalUrl">/guide/$1/$2</set><to last="true">/cms/guide_detail.jsp?guideId=$2&amp;contentKey=$2&amp;%{query-string}</to> </rule>
+	
+	<rule> <from>^/page/Circulars$</from> <set type="request" name="originalUrl">/page/circulars</set> <to>/browse/gadgets/circular_landing.jsp</to> </rule>
+    <rule> <from>^/page/Circular/(.*)$</from><set type="request" name="originalUrl">/page/circular/$1</set> <to last="true">/browse/gadgets/circular.jsp?cirID=$1&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/Brands$</from> <set type="request" name="originalUrl">/page/brands</set><to last="true">/browse/brands/AllBrands.jsp?pageName=Brands&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/Brands/$</from> <set type="request" name="originalUrl">/page/brands/</set><to last="true">/browse/brands/AllBrands.jsp?pageName=Brands&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GiftCards$</from> <set type="request" name="originalUrl">/page/GiftCards</set><to last="true">/browse/gift_card_grid.jsp?pageName=GiftCards&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GiftCards/$</from> <set type="request" name="originalUrl">/page/GiftCards</set><to last="true">/browse/gift_card_grid.jsp?pageName=GiftCards&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GuidesAdvice$</from> <set type="request" name="originalUrl">/page/GuidesAdvice</set><to last="true">/cms/guides_advice.jsp?pageName=GuidesAdvice&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GuidesAdvice/$</from><set type="request" name="originalUrl">/page/GuidesAdvice/</set> <to last="true">/cms/guides_advice.jsp?pageName=GuidesAdvice&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/ArticleDetail$</from> <set type="request" name="originalUrl">/page/ArticleDetail</set><to last="true">/cms/article_detail_page.jsp?pageName=ArticleDetail&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/ArticleDetail/$</from><set type="request" name="originalUrl">/page/ArticleDetail/</set> <to last="true">/cms/article_detail_page.jsp?pageName=ArticleDetail&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GuideDetail$</from><set type="request" name="originalUrl">/page/GuideDetail</set> <to last="true">/cms/guide_detail.jsp?pageName=GuideDetail&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/GuideDetail/$</from><set type="request" name="originalUrl">/page/GuideDetail/</set> <to last="true">/cms/guide_detail.jsp?pageName=GuideDetail&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BridalShows$</from><set type="request" name="originalUrl">/page/BridalShows</set> <to last="true">/cms/bridal_shows.jsp?pageName=BridalShow&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BridalShows/$</from><set type="request" name="originalUrl">/page/BridalShows/</set> <to last="true">/cms/bridal_shows.jsp?pageName=BridalShow&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BabyEvents$</from><set type="request" name="originalUrl">/page/BabyEvents</set> <to last="true">/cms/bridal_shows.jsp?pageName=BabyEvents&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BabyEvents/$</from><set type="request" name="originalUrl">/page/BabyEvents/</set> <to last="true">/cms/bridal_shows.jsp?pageName=BabyEvents&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/College$</from><set type="request" name="originalUrl">/page/College</set> <to last="true">/bbcollege/college_landing.jsp?pageName=College&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/College/$</from><set type="request" name="originalUrl">/page/College/</set> <to last="true">/bbcollege/college_landing.jsp?pageName=College&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/Registry$</from><set type="request" name="originalUrl">/page/Registry</set> <to last="true">/bbregistry/bridal_landing.jsp?pageName=Bridal&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/Registry/$</from><set type="request" name="originalUrl">/page/Registry/</set> <to last="true">/bbregistry/bridal_landing.jsp?pageName=Bridal&amp;%{query-string}</to> </rule>
+    <rule> <from>^/page/BabyRegistry$</from><set type="request" name="originalUrl">/page/BabyRegistry</set> <to last="true">/bbregistry/baby_landing.jsp?pageName=Baby&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BabyRegistry/$</from><set type="request" name="originalUrl">/page/BabyRegistry</set> <to last="true">/bbregistry/baby_landing.jsp?pageName=Baby&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BabyCanadaRegistry$</from><set type="request" name="originalUrl">/page/BabyCanadaRegistry</set> <to last="true">/bbregistry/baby_canada_landing.jsp?pageName=Bridal&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/BabyCanadaRegistry/$</from><set type="request" name="originalUrl">/page/BabyCanadaRegistry</set> <to last="true">/bbregistry/baby_canada_landing.jsp?pageName=Bridal&amp;%{query-string}</to> </rule>
+	
+   	<rule><from>^/selfservice/ContactUs$</from><set type="request" name="originalUrl">/selfservice/ContactUs</set><to last="true">/selfservice/contact_us.jsp?pageName=ContactUs&amp;%{query-string}</to></rule>
+	<rule><from>^/selfservice/ContactUs/$</from><set type="request" name="originalUrl">/selfservice/ContactUs/</set><to last="true">/selfservice/contact_us.jsp?pageName=ContactUs&amp;%{query-string}</to></rule>
+   	<rule><from>^/account/Login$</from><set type="request" name="originalUrl">/account/Login</set><to last="true">/account/login.jsp?pageName=Login&amp;%{query-string}</to></rule>
+	<rule><from>^/account/Login/$</from><set type="request" name="originalUrl">/account/Login/</set><to last="true">/account/login.jsp?pageName=Login&amp;%{query-string}</to></rule>
+
+   	<rule><from>^/bbregistry/BridalBook$</from><set type="request" name="originalUrl">/bbregistry/BridalBook</set><to last="true">/bbregistry/bridal_book.jsp?pageName=BridalBook&amp;%{query-string}</to></rule>
+   	<rule><from>^/bbregistry/BridalBook/$</from><set type="request" name="originalUrl">/bbregistry/BridalBook/</set><to last="true">/bbregistry/bridal_book.jsp?pageName=BridalBook&amp;%{query-string}</to></rule>
+   	<rule><from>^/bbregistry/BabyBook$</from><set type="request" name="originalUrl">/bbregistry/BabyBook</set><to last="true">/bbregistry/baby_book.jsp?pageName=BabyBook&amp;%{query-string}</to></rule>
+   	<rule><from>^/bbregistry/BabyBook/$</from><set type="request" name="originalUrl">/bbregistry/BabyBook/</set><to last="true">/bbregistry/baby_book.jsp?pageName=BabyBook&amp;%{query-string}</to></rule>
+   	<rule><from>^/bbregistry/HowToBook$</from><set type="request" name="originalUrl">/bbregistry/HowToBook</set><to>/bbregistry/bridal_book_how_to_book.jsp</to></rule>
+   	<rule><from>^/bbregistry/HowToBook/$</from><set type="request" name="originalUrl">/bbregistry/HowToBook/</set><to>/bbregistry/bridal_book_how_to_book.jsp</to></rule>
+   	
+   	
+   	<rule><from>^/wishlist/WishList$</from><set type="request" name="originalUrl">/wishlist/WishList</set><to last="true">/wishlist/wish_list.jsp?pageName=WishList&amp;%{query-string}</to> </rule>
+	<rule><from>^/wishlist/WishList/$</from><set type="request" name="originalUrl">/wishlist/WishList/</set><to last="true">/wishlist/wish_list.jsp?pageName=WishList&amp;%{query-string}</to> </rule>
+   	
+   	<rule><from>^/selfservice/FindStore$</from><set type="request" name="originalUrl">/selfservice/FindStore</set><to last="true">/selfservice/store/find_store.jsp?pageName=FindStore&amp;flashEnabled=true&amp;%{query-string}</to> </rule>
+	<rule><from>^/selfservice/FindStore/$</from><set type="request" name="originalUrl">/selfservice/FindStore/</set><to last="true">/selfservice/store/find_store.jsp?pageName=FindStore&amp;flashEnabled=true&amp;%{query-string}</to> </rule>
+   	
+   	<rule><from>^/selfservice/CanadaStoreLocator$</from><set type="request" name="originalUrl">/selfservice/CanadaStoreLocator</set><to last="true">/selfservice/store/canada_store_locator.jsp?pageName=CanadaStoreLocator&amp;%{query-string}</to> </rule>
+	<rule><from>^/selfservice/CanadaStoreLocator/$</from><set type="request" name="originalUrl">/selfservice/CanadaStoreLocator/</set><to last="true">/selfservice/store/canada_store_locator.jsp?pageName=CanadaStoreLocator&amp;%{query-string}</to> </rule>
+   	
+   	<rule><from>^/selfservice/InvestorRelations$</from><set type="request" name="originalUrl">/selfservice/InvestorRelations</set><to last="true">/selfservice/investor_relations.jsp?pageName=InvestorRelations&amp;%{query-string}</to></rule>
+   	<rule><from>^/selfservice/InvestorRelations/$</from><set type="request" name="originalUrl">/selfservice/InvestorRelations/</set><to last="true">/selfservice/investor_relations.jsp?pageName=InvestorRelations&amp;%{query-string}</to></rule>
+   	
+   	<rule><from>^/selfservice/EasyReturns$</from><set type="request" name="originalUrl">/selfservice/EasyReturns</set><to last="true">/selfservice/easy_returns_form.jsp?pageName=EasyReturns&amp;%{query-string}</to></rule>
+   	<rule><from>^/selfservice/EasyReturns/$</from><set type="request" name="originalUrl">/selfservice/EasyReturns/</set><to last="true">/selfservice/easy_returns_form.jsp?pageName=EasyReturns&amp;%{query-string}</to></rule>
+
+	<rule><from>^/selfservice/FindCollege$</from><set type="request" name="originalUrl">/selfservice/FindCollege</set><to last="true">/selfservice/findyourcollege.jsp?pageName=FindCollege&amp;%{query-string}</to></rule>
+   	<rule><from>^/selfservice/FindCollege/$</from><set type="request" name="originalUrl">/selfservice/FindCollege/</set><to last="true">/selfservice/findyourcollege.jsp?pageName=FindCollege&amp;%{query-string}</to></rule>
+
+ 	<rule><from>^/account/TrackOrder$</from><set type="request" name="originalUrl">/account/TrackOrder</set> <to>/account/track_order.jsp?pageName=TrackOrder&amp;%{query-string}</to></rule>
+	<rule><from>^/account/TrackOrder/$</from> <set type="request" name="originalUrl">/account/TrackOrder/</set><to last="true">/account/track_order.jsp?pageName=TrackOrder&amp;%{query-string}</to></rule>
+
+	<rule> <from>^/selfservice/xmlconfig/config.xml$</from>  <to>/selfservice/store/xmlconfig/config.xml</to> </rule>
+	<rule> <from>^/selfservice/imgs/</from>  <to>/selfservice/store/imgs/</to> </rule>
+	<rule> <from>^/email/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/emailtemplates/fetchPersistedEmail.jsp?token=$1&amp;%{query-string}</to> </rule>
+	
+	<!-- Kick Starters URLs-->
+	<rule> <from>^/kickstarters([/]?)$</from>  <to>/giftregistry/view_kickstarters.jsp</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;eventType=$2&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9 %]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;registryId=$2&amp;eventType=$3&amp;%{query-string}</to> </rule>
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;registryId=$2&amp;eventType=$3/$4&amp;%{query-string}</to> </rule>	
+		
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;eventType=$2&amp;%{query-string}</to> </rule>	
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9 %]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;registryId=$2&amp;eventType=$3&amp;%{query-string}</to> </rule>
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)/([A-Za-z0-9]*)([/]?)$</from>  <to last="true">/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;registryId=$2&amp;eventType=$3/$4&amp;%{query-string}</to> </rule>
+	<!-- Mexico Site URLs-->	
+ 	<rule><from>^/mx([/]?)$</from><to>/mx/bridal_landing.jsp</to></rule>
+ 	
+ 	<!-- Envoy URL -->
+ 	<rule> <from>^/checkoutSuccess([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/checkoutPending([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/checkoutFailure([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/cart$</from> <to>/cart/cart.jsp</to> </rule>	
+	<rule> <from>^/paypalReturn$</from> <to>/checkout/envoy_paypal.jsp</to> </rule>	
+	<rule> <from>^/paypalCancel$</from> <to>/checkout/envoy_paypal.jsp</to> </rule>	
+	
+	<rule> <from>^/page/CollegeEvents$</from><set type="request" name="originalUrl">/page/CollegeEvents</set> <to last="true">/cms/college_events.jsp?pageName=CollegeEvents&amp;%{query-string}</to> </rule>
+	<rule> <from>^/page/CollegeEvents/$</from><set type="request" name="originalUrl">/page/CollegeEvents/</set> <to last="true">/cms/college_events.jsp?pageName=CollegeEvents&amp;%{query-string}</to> </rule>
+	
+	<rule> <from>^/personalstore/$</from><set type="request" name="originalUrl">/personalstore/</set> <to>/personalstore/personalStore.jsp</to> </rule>
+	<!-- Coupon Wallet URLs-->
+	<rule> <from>^/couponWallet/walletLanding/([^/]*)/([^/]*)/([^/]*)([/]?)$</from><set type="request" name="originalUrl">/couponWallet/walletLanding</set><to last="true">/couponWallet/walletLanding.jsp?walletId=$1&amp;action=$2&amp;offerId=$3&amp;emailFlow=true&amp;%{query-string}</to> </rule>
+	<rule> <from>^/couponWallet/walletRegistration([/]?)$</from><set type="request" name="originalUrl">/couponWallet/walletRegistration</set><to last="true">/couponWallet/walletRegistration.jsp?pageName=WalletRegistration&amp;%{query-string}</to> </rule>
+	<rule> <from>^/cw/c/([A-Za-z0-9]*)/([A-Za-z0-9 %]*)([/]?)$</from><set type="request" name="originalUrl">/couponWallet/click</set><to last="true">/couponWallet/click.jsp?d=$1&amp;a=$2&amp;%{query-string}</to> </rule>
+	<rule> <from>^/SameDayDelivery([/]?)$</from><set type="request" name="originalUrl">/static/SameDayDelivery</set><to last="true">/cms/static/staticpage.jsp?pageName=SameDayDelivery&amp;contentKey=SameDayDelivery&amp;%{query-string}</to> </rule>   
+	 
+	 
+	 <!-- Simplify registry URL -->
+	 <rule> <from>^/createRegistry([/]?)$</from> <to>/giftregistry/simpleReg_creation_form.jsp</to> </rule>
+	 
+	 <!-- Checklist Category Pages URL Mapping : Start-->
+	<!-- C1 Checklist Category URLs-->
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$3&amp;contentKey=$3&amp;checklistId=$4&amp;ckDisplayName=$1&amp;cat1Name=$2</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$3&amp;contentKey=$3&amp;checklistId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;ckDisplayName=$1&amp;cat1Name=$2</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$3&amp;contentKey=$3&amp;checklistId=$4&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogId=$5&amp;ckDisplayName=$1&amp;cat1Name=$2</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$3&amp;contentKey=$3&amp;CatalogId=$5&amp;checklistId=$4&amp;ckDisplayName=$1&amp;cat1Name=$2</to> </rule>
+	
+	<!-- C2 Checklist Category URLs  -->
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$4&amp;contentKey=$4&amp;checklistId=$5&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$4&amp;contentKey=$4&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;checklistId=$5&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from><to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$4&amp;contentKey=$4&amp;CatalogId=$6&amp;checklistId=$5&amp;pagNum=$7&amp;pagFilterOpt=$8&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$4&amp;contentKey=$4&amp;CatalogId=$6&amp;checklistId=$5&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3</to> </rule>
+	
+	<!-- C3 Checklist Category URLs-->
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$5&amp;contentKey=$5&amp;checklistId=$6&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3&amp;cat3Name=$4</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$5&amp;contentKey=$5&amp;pagNum=$7&amp;pagFilterOpt=$8&amp;checklistId=$6&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3&amp;cat3Name=$4</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from><to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$5&amp;contentKey=$5&amp;CatalogId=$7&amp;checklistId=$6&amp;pagNum=$8&amp;pagFilterOpt=$9&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3&amp;cat3Name=$4</to> </rule>
+	<rule> <from>^/checklist/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([^/]*)/([0-9\\-]*)([/]?)$</from> <to last="true">/browse/checklistCategory/checklistCategory.jsp?checklistCategoryId=$5&amp;contentKey=$5&amp;CatalogId=$7&amp;checklistId=$6&amp;ckDisplayName=$1&amp;cat1Name=$2&amp;cat2Name=$3&amp;cat3Name=$4</to> </rule>
+	
+	<!-- end --> 
+</urlrewrite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.manager.TestHomePageTemplateManager">
+		<group id="testHomePageTemplateManager">
+			 
+			<test id="testHomePageManager_test1">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.HomePageTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestHomePageTemplateManager">
+						<item type="string">/com/bbb/cms/manager/HomePageTemplateManager</item>
+					</obj>
+					<obj id="siteId1" type="string">BuyBuyBaby</obj>
+					<obj id="siteId2" type="string">BedBathCanada</obj>
+				</objs>
+				
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

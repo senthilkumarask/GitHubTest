@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.catalog.TestCategoryLevel">
+		<group id="testIsFirstLevelCategory">
+			<test id="TestCategoryLevel_test">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="categoryId" type="string">30001</obj>
+					<obj id="getFirstLevelCategoryRequest" type="string">/rest/bean/com/bbb/rest/catalog/BBBRestCatalogToolImpl/isFirstLevelCategory
+					</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testIsFirstLevelCategoryError">
+			<test id="TestCategoryLevel_test_Error">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="categoryId" type="string">545345435ddsd53</obj>
+					<obj id="getFirstLevelCategoryRequest" type="string">/rest/bean/com/bbb/rest/catalog/BBBRestCatalogToolImpl/isFirstLevelCategory
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

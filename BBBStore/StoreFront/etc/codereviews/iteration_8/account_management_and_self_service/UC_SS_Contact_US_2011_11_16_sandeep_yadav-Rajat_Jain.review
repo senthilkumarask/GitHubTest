@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_SS_Contact_US_2011_11_16_sandeep_yadav">
+  <ReviewIssue id="GVB5PKZ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:36:37:556 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:56:07:196 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Wrong Title And Link for FAQ's | Additionally Site Specific Link - No HardCoding</Summary>
+    <Description>1. The title should be fixed to say FAQ's.
+2. Note per the current site this should be a target to the enternal vendor page - note the links per current site  -
+bedbathabdbeyond.com - http://bedbathandbeyond.custhelp.com/
+baby - http://buybuybabycom.custhelp.com/app/answers/list
+bedbathabdbeyond.ca - Not Applicable
+3. These should not be hard coded, specially given they are site specific and should come from content.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB7CMTI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 23:22:32:646 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:56:01:444 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="258">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Co-Registrant Related Stuff Is Not Part Of Contact US</Summary>
+    <Description>I am seeing - CoRegistrantPrimaryPhoneName, CoRegistrantPrimaryPhoneFirstName, CoRegistrantPrimaryPhoneLastName and tons of other stuff for CoRegistrant. This is all registry related stuff. Not sure what is it doing here?
+It should be removed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB7HK1X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 23:26:22:341 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:56:15:692 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>W3C Validation Failed - 21 Errors, 9 warning(s) </Summary>
+    <Description>On running the W3C validation on this page I got - 21 Errors, 9 warning(s).
+You can use the validator at - http://validator.w3.org/check. These should be fixed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB7LKDM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 23:29:29:386 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:55:39:195 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="387">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>HardCoding of Content</Summary>
+    <Description>I am seeing hardcoding of the content in the bottom of the page - note all this should come from CMS, specially this will vary across sites. Example - "900 plus store locations"</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBAUX41">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:00:44:641 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:55:29:579 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="238">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>For Authenitcated Users Confirm Email should also be pre-filled</Summary>
+    <Description>Similar to email field even confirm email should also be defaulted to the profile email if the user is authenicated.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBBOPKX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:23:54:561 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:55:15:410 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="375">j2ee-apps/BBBStore/store.war/selfservice/contact_us.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Email Address Needs to be a PlaceHolder in confirmation/success Message</Summary>
+    <Description>The success message should contain the email as a placeholder that should be replaced in the with the email the user entered on the contact us form. This is annotated in annotation E of SS BRD section 12, its not clearly annotated in the BRD but shown in the wireframe snapshot in the same section. This is per the discussion during a clarification call on this functionality.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBBZZ1M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:32:40:042 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 22:28:40:905 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/survey.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Survey | W3C Validation Failed 12 Errors, 11 warning(s) </Summary>
+    <Description>I got 12 Errors, 11 warning(s) on the W3C validation of the Survey Page.
+Please see validate this using the parser at - http://validator.w3.org/check. These errors should be fixed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBC7NH1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:38:38:293 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:54:58:561 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="65">j2ee-apps/BBBStore/store.war/selfservice/survey.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Survey | Pre-Fill For Authenticated User</Summary>
+    <Description>I am not seeing the pre-filling of fields for email, name (should be firstname + lastname) pre-filled for authenticated user. This should be done on the Survey Page also just like the Contact Us Page.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBF99GX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 03:03:52:305 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:54:51:300 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="7">j2ee-apps/BBBStore/store.war/selfservice/contactus_email.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add Phone Extension In Customer Care Email</Summary>
+    <Description>Do add Phone Extension also in the email. Basically we need to make sure that everything entered in the front end is passed here. I understand there can be some inconsistency in the sample email in BRD - because that did not account for all optional fields. But here in implementation make sure to include all the fields which user is entering.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

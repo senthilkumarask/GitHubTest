@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<!-- ======================================================================
+     26 Oct 2011 12:44:35
+
+     project
+
+     ====================================================================== -->
+<project name="TestRest" default="RunJuntTest" basedir=".">
+        <description>
+            Sample
+    </description>
+<!--    <property environment="env"/>-->
+        <property file="test.build.properties.linux" />
+<!--    <property name="hostname" value="${env.HOSTNAME}"/>-->
+        <property name="javac.dest" value="classes" />
+        <property name="EStore" value="BBBStore.EStore"/>
+        <property name="core" value="BBBStore.core"/>
+        <property name="junitreports" value="reports"/>
+        <property name="instrumented.dir" value="cobertura-instrumented-classes"/>
+        <taskdef name="if" classname="ise.antelope.tasks.IfTask" classpath="../build_lib/atg/atg-ant.jar" />
+        <taskdef name="else" classname="ise.antelope.tasks.ElseTask" classpath="../build_lib/atg/atg-ant.jar" />
+        <property name="cobertura.dir" value="../build_lib/cobertura" />
+
+        <path id="classpath">
+            <pathelement location="classes"/>
+        <fileset dir="lib" includes="*.jar"/>
+        </path>
+
+        <path id="dynamo.classpath.svn">
+        <fileset dir="${weblogic.home}/wlserver_10.3/server/lib">
+            <include name="**/wlclient.jar" />
+            <include name="**/wljmsclient.jar" />
+        </fileset>
+                <fileset dir="${dynamo.home}/../REST/client-lib/java">
+                <include name="**/atg-rest-client-1.0.jar" />
+            </fileset>
+                <fileset dir="${dynamo.home}/../REST/lib">
+                        <include name="**/org.json.jar" />
+                </fileset>
+            <fileset dir="${dynamo.home}/../DAS/j2ee-lib">
+                <include name="**/jboss-javaee.jar" />
+            </fileset>
+            <fileset dir="${dynamo.home}/../DAS/lib">
+                <include name="**/*.jar" />
+            </fileset>
+            <fileset dir="${dynamo.home}/../DAS-UI/lib">
+                <include name="**/*.jar" />
+            </fileset>
+            <fileset dir="${dynamo.home}/../DPS/lib">
+                <include name="**/*.jar" />
+            </fileset>
+            <fileset dir="${dynamo.home}/../DSS/lib">
+                <include name="**/*.jar" />
+            </fileset>
+            <fileset dir="${dynamo.home}/../DCS/lib">
+                <include name="**/*.jar" />
+            </fileset>
+                <fileset dir="${dynamo.home}/../CyberSourceIntegration">
+                <include name="**/*.jar" />
+            </fileset>
+                <!--
+                <fileset dir="${dynamo.home}/../CyberSourceIntegration/BaseServices/lib">
+                <include name="**/*.jar" />
+            </fileset>
+                <fileset dir="${dynamo.home}/../CyberSourceIntegration/FraudManagement/lib">
+                <include name="**/*.jar" />
+            </fileset>
+                <fileset dir="${dynamo.home}/../CyberSourceIntegration/PaymentTokenization/lib">
+                <include name="**/*.jar" />
+            </fileset>          -->
+
+                <fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+                  <include name="**/*.jar" />
+                </fileset>
+        </path>
+
+    <path id="bbb.core">
+        <fileset dir="../core/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <path id="bbb.estore">
+        <fileset dir="../EStore/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+        <path id="bbb.webservices">
+        <fileset dir="../webservices/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.endeca">
+        <fileset dir="../integration/endeca/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.webservices">
+        <fileset dir="../integration/webservices/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.valuelink">
+        <fileset dir="../integration/valuelink/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.cybersource">
+        <fileset dir="../integration/cybersource/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+        <path id="cobertura.classpath">
+                <fileset dir="${cobertura.dir}">
+                        <include name="cobertura.jar" />
+                        <include name="lib/**/*.jar" />
+                </fileset>
+        </path>
+
+        <taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+
+
+        <target name="run-cobertura-instrumentation" depends="compile" description="runs cobertura instrumentation">
+        <delete dir="${instrumented.dir}" failonerror="false" />
+        <delete file="cobertura.ser" verbose="true" failonerror="false" />
+        <cobertura-instrument todir="${instrumented.dir}" datafile="cobertura.ser">
+                <ignore regex="org.apache.log4j.*" />
+                        <fileset dir="../../BBBStore/core/${javac.dest}">
+                        <include name="**/*.class" />
+                        <exclude name="**/*Test.class" />
+                        <exclude name="**/com/bbb/repositorywrapper/*.class" />
+                        <exclude name="**/vo/**/*.class"/>
+                        <exclude name="**/exception/*.class"/>
+                        <exclude name="**/framework/jaxb/survey/*.class"/>
+                        <exclude name="**/framework/jaxb/subscription/*.class"/>
+                        <exclude name="**/framework/jaxb/contactus/*.class"/>
+                        <exclude name="**/email/*.class"/>
+                        <exclude name="**/cms/*.class"/>
+                        <exclude name="**/search/exception/*.class"/>
+                        <exclude name="**/search/bean/**/*.class"/>
+                        <exclude name="**/order/bean/*.class"/>
+                        <exclude name="**/framework/performance/*.class"/>
+                        <exclude name="**/framework/webservices/*.class"/>
+                        <exclude name="**/framework/webservices/handlers/ServiceHandlerInfoLogAdvice.class"/>
+                        <exclude name="**/framework/webservices/handlers/ServiceHandlerPerformanceLogAdvice.class"/>
+                        <exclude name="**/framework/messaging/**/*.class"/>
+                        <exclude name="**/framework/validation/*.class"/>
+                        <exclude name="**/constants/*.class"/>
+                        <exclude name="**/commerce/inventory/InventoryDecrementVO.class"/>
+                        <exclude name="**/commerce/inventory/InventoryDecrementManager.class"/>
+                        <exclude name="**/commerce/catalog/BBBCatalogConstants.class"/>
+                        <exclude name="**/commerce/giftregistry/utility/**/*.class"/>
+                        <exclude name="**/commerce/catalog/SiteProperty.class"/>
+                        <exclude name="**/commerce/checkout/tibco/SubmitOrderVO.class"/>
+                        <exclude name="**/commerce/order/BBBGiftCard.class"/>
+                        <exclude name="**/commerce/order/BBBCreditCard.class"/>
+                        <exclude name="**/commerce/order/feeds/*.class"/>
+                        <exclude name="**/commerce/common/*.class"/>
+                        <exclude name="**/payment/creditcard/BBBCreditCardInfo.class"/>
+                        <exclude name="**/commerce/checkout/BBBCreditCardContainer.class"/>
+                        <exclude name="**/payment/giftcard/*.class"/>
+                        <exclude name="**/ecommerce/order/BBBPropertyNameConstants.class"/>
+                        <exclude name="**/ecommerce/order/BBBShippingGroup.class"/>
+                        <exclude name="**/ecommerce/order/BBBStoreShippingGroup.class"/>
+                        <exclude name="**/ecommerce/order/BBBHardGoodShippingGroup.class"/>
+                        <exclude name="**/ecommerce/order/BBBOrder.class"/>
+                        <exclude name="**/ecommerce/order/BBBOrderImpl.class"/>
+                        <exclude name="**/search/ISearch.class"/>
+                        <exclude name="**/framework/integration/handlers/*.class"/>
+                        <exclude name="**/framework/httpquery/parser/*.class"/>
+                        <exclude name="**/framework/cache/*.class"/>
+                        <exclude name="**/framework/performance/logger/*.class"/>
+                        <exclude name="**/cobertura/*.class"/>
+                        <exclude name="**/account/validatecoupon/*.class"/>
+                        <exclude name="**/account/baby/*.class"/>
+                        <exclude name="**/logging/*.class"/>
+                        <exclude name="**/account/marshaller/*.class"/>
+                </fileset>
+                <fileset dir="../../BBBStore/EStore/${javac.dest}">
+                        <include name="**/*.class" />
+                        <exclude name="**/*Test.class" />
+                        <exclude name="**/cache/listener/*.class"/>
+                        <exclude name="**/cache/*.class"/>
+                        <exclude name="**/vo/*.class"/>
+                        <exclude name="**/selfservice/formhandler/*.class"/>
+                        <exclude name="**/social/facebook/servlet/*.class"/>
+                        <exclude name="**/social/facebook/formhandler/*.class"/>
+                        <exclude name="**/profile/*.class"/>
+                        <exclude name="**/profile/session/*.class"/>
+                        <exclude name="**/pipeline/*.class"/>
+                        <exclude name="**/cms/tags/*.class"/>
+                        <exclude name="**/cms/tools/BVFeedUpdater.class"/>
+                        <exclude name="**/commerce/browse/*.class"/>
+                        <exclude name="**/commerce/giftregistry/bean/*.class"/>
+                        <exclude name="**/commerce/pricing/bean/*.class"/>
+                        <exclude name="**/commerce/pricing/droplet/*.class"/>
+                        <exclude name="**/commerce/cart/*.class"/>
+                        <exclude name="**/commerce/cart/bean/*.class"/>
+                        <exclude name="**/commerce/cart/droplet/*.class"/>
+                        <exclude name="**/commerce/checkout/manager/*.class"/>
+                        <exclude name="**/commerce/checkout/droplet/BBBPackNHoldDroplet.class"/>
+                        <exclude name="**/commerce/catalog/BBBCatalogErrorCodes.class"/>
+                        <exclude name="**/commerce/order/feeds/OrderFeedVO.class"/>
+                        <exclude name="**/commerce/order/droplet/CommerceItemCheckDroplet.class"/>
+                        <exclude name="**/commerce/order/droplet/DisplayExpressCheckoutDroplet.class"/>
+                        <exclude name="**/commerce/order/feeds/OrderFeedMessageListener.class"/>
+                        <exclude name="**/commerce/order/droplet/internal/*.class"/>
+                        <exclude name="**/commerce/order/purchase/CheckoutProgressStates.class"/>
+                        <exclude name="**/commerce/order/purchase/BBBListStatesDroplet.class"/>
+                        <exclude name="**/commerce/order/feeds/OrderFeedTestQueue.class"/>
+                        <exclude name="**/commerce/order/feeds/OrderStatusFeedMarshaller.class"/>
+                        <exclude name="**/commerce/inventory/InventoryFeedJob.class"/>
+                        <exclude name="**/commerce/inventory/InventoryMessageServiceListener.class"/>
+                        <exclude name="**/certona/scheduler/*.class"/>
+                        <exclude name="**/certona/manager/*.class"/>
+                        <exclude name="**/commerce/order/shipping/BBBShippingInfoBean.class"/>
+                        <exclude name="**/atg/commerce/pricing/*.class"/>
+                        <exclude name="**/atg/adapter/gsa/invalidator/*.class"/>
+                        <exclude name="**/selfservice/tibco/api/*.class"/>
+                        <exclude name="**/selfservice/common/*.class"/>
+                        <exclude name="**/framework/crypto/*.class"/>
+                        <exclude name="**/config/tags/*.class"/>
+                        <exclude name="**/feeds/**/*.class"/>
+                        <exclude name="**/config/manager/*.class"/>
+                        <exclude name="**/framework/integration/*.class"/>
+                        <exclude name="**/selfservice/tools/SubscriptionTools.class"/>
+                        <exclude name="**/wishlist/GiftListVO.class"/>
+                    <exclude name="**/wishlist/StoreGiftlistFormHandler.class"/>
+                        <exclude name="**/social/facebook/PropertyManager.class"/>
+                    <exclude name="**/social/facebook/FBConstants.class"/>
+                        <exclude name="**/social/facebook/PropertyManager.class"/>
+                    <exclude name="**/social/facebook/FBConstants.class"/>
+                        <exclude name="**/account/api/BBBAddressVO.class"/>
+                        <exclude name="**/account/api/BBBAddressAPIConstants.class"/>
+                        <exclude name="**/account/api/BBBCreditCardAPIConstants.class"/>
+                        <exclude name="**/account/BBBAddressObject.class"/>
+                        <exclude name="**/tag/droplet/*.class"/>
+                </fileset>
+                <fileset dir="../../BBBStore/integration/endeca/${javac.dest}">
+                        <include name="**/*.class" />
+                        <exclude name="**/*Test.class" />
+                        <exclude name="**/exception/*.class"/>
+                        <exclude name="**/search/endeca/vo/*.class"/>
+                </fileset>
+                <fileset dir="../../BBBStore/webservices/${javac.dest}">
+                        <include name="**/*.class" />
+                        <exclude name="**/commerce/service/pricing/PricingServiceMessageReceiverInOut.class"/>
+                        <exclude name="**/account/service/profile/RequestVO.class"/>
+                        <exclude name="**/account/service/profile/ProfileServiceMessageReceiverInOut.class"/>
+                        <exclude name="**/account/service/profile/ResponseVO.class"/>
+                        <exclude name="**/account/service/profile/ProfileBasicVO.class"/>
+                </fileset>
+
+                         <fileset dir="${javac.dest}">
+                        <include name="**/*.class" />
+                        <exclude name="**/*Test*.class" />
+                        <exclude name="**/framework/*.class" />
+                        <exclude name="**/framework/webservices/test/vo/*.class" />
+                </fileset>
+
+                <fileset dir="../../BBBStore/REST/${javac.dest}">
+                        <include name="**/*.class" />
+                </fileset>
+        </cobertura-instrument>
+</target>
+
+        <target name="compile" depends="cleanTestRest,convert">
+                <javac srcdir="test" destdir="classes" fork="yes" encoding="iso-8859-1" >
+          <classpath refid="dynamo.classpath.svn" />
+          <classpath refid="bbb.estore" />
+          <classpath refid="bbb.core" />
+          <classpath refid="classpath" />
+                  <classpath refid="bbb.webservices" />
+                  <classpath refid="bbb.integration.webservices" />
+                  <classpath refid="bbb.integration.valuelink" />
+                  <classpath>
+                  <pathelement location="../core/${javac.dest}" />
+                  <pathelement location="../EStore/${javac.dest}"/>
+                          <pathelement location="../integration/valuelink/${javac.dest}"/>
+                  <pathelement location="${javac.dest}"/>
+                  </classpath>
+        </javac>
+                <copy todir="classes">
+            <fileset dir="test" excludes="**/*.java"/>
+        </copy>
+        </target>
+
+        <target name="usage">
+                <echo>
+            These are the targets supported by this ANT build scpript:
+                update - update the working copy from the repository
+                move - moves files from ${test} to ${live}
+                clean   - clean the folder for a fresh build.
+            compile   - Will compile the source to the classes dir
+            archive - creates the EAR
+            </echo>
+        </target>
+
+
+        <target name="cleanTestRest"  description="delete all class files in test">
+            <delete includeemptydirs="true">
+                                <fileset dir="${javac.dest}" includes="**/*" />
+                        </delete>
+        </target>
+        <target name="convert" description="converts localhost to env.HOSTNAME" >
+        <echo>CPATH=${hostname}</echo>
+        <replace dir="test" value="${hostname}">
+                <include name="**/BaseTestCase.java"/>
+                <replacetoken>@localhost@</replacetoken>
+        </replace>
+        <replace dir="test" value="${port}">
+                <include name="**/BaseTestCase.java"/>
+                <replacetoken>@port@</replacetoken>
+        </replace>
+        <replace dir="test" value="${userId}">
+                <include name="**/BaseTestCase.java"/>
+                <replacetoken>@userId@</replacetoken>
+        </replace>
+        <replace dir="test" value="${password}">
+                <include name="**/BaseTestCase.java"/>
+                <replacetoken>@password@</replacetoken>
+        </replace>
+        <replace dir="test" value="${clientId}">
+                        <include name="**/BBBRestSession.java"/>
+                        <replacetoken>@clientId@</replacetoken>
+                </replace>
+                <replace dir="test" value="${token}">
+                        <include name="**/BBBRestSession.java"/>
+                        <replacetoken>@token@</replacetoken>
+                </replace>
+
+                <replace dir="test" value="${BedBathUSHostName}">
+                        <include name="**/BaseTestCase.java"/>
+                        <replacetoken>@BedBathUSHostName@</replacetoken>
+                </replace>
+
+                <replace dir="test" value="${BedBathCanadaHostName}">
+                        <include name="**/BaseTestCase.java"/>
+                        <replacetoken>@BedBathCanadaHostName@</replacetoken>
+                </replace>
+
+                <replace dir="test" value="${BuyBuyBabyHostName}">
+                        <include name="**/BaseTestCase.java"/>
+                        <replacetoken>@BuyBuyBabyHostName@</replacetoken>
+                </replace>
+
+</target>
+
+        <target name="RunJuntTest" depends="compile" >
+        <echo message="Junit-Test-Suites started"/>
+                <delete dir="reports"/>
+                <mkdir dir="reports" />
+                <taskdef name="junit1" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask" classpathref="classpath"/>
+
+          <junit1 printsummary="withOutAndErr" fork="yes" maxmemory="2048m" haltonfailure="no" showoutput="yes" forkmode="perBatch">
+                  <sysproperty key="net.sourceforge.cobertura.datafile" file="cobertura.ser" />
+                  <classpath>
+                <pathelement location="${basedir}/${instrumented.dir}" />
+                <pathelement location="../../BBBStore/REST/${javac.dest}"/>
+                <pathelement location="${javac.dest}"/>
+                <pathelement location="../../WebUI/lib/classes.jar"/>
+                <pathelement location="../../BBBStore/core/${javac.dest}" />
+                <pathelement location="../../BBBStore/EStore/${javac.dest}"/>
+                <pathelement location="../../BBBStore/integration/endeca/${javac.dest}"/>
+                <pathelement location="../../BBBStore/integration/webservices/${javac.dest}"/>
+                <pathelement location="../../BBBStore/integration/valuelink/${javac.dest}"/>
+                <pathelement location="../../BBBStore/integration/cybersource/${javac.dest}"/>
+                <pathelement location="../../BBBStore/webservices/${javac.dest}"/>
+                <!--<pathelement location="../../BBBStore/REST/${javac.dest}"/>
+                <pathelement location="${javac.dest}"/> -->
+            </classpath>
+
+                        <classpath refid="dynamo.classpath.svn" />
+                <classpath refid="bbb.webservices" />
+                <classpath refid="bbb.estore" />
+                <classpath refid="bbb.core" />
+                <classpath refid="bbb.integration.endeca" />
+                <classpath refid="bbb.integration.webservices" />
+                <classpath refid="bbb.integration.valuelink"/>
+                <classpath refid="bbb.integration.cybersource"/>
+                <classpath refid="classpath" />
+                <jvmarg value="-XX:NewSize=256m"/>
+                        <jvmarg value="-XX:MaxNewSize=256m"/>
+                        <jvmarg value="-XX:PermSize=256m"/>
+                        <jvmarg value="-XX:MaxPermSize=256m"/>
+                        <jvmarg value="-Xms512m"/>
+                    <jvmarg value="-Xmx1536m"/>
+
+                                <formatter type="brief" usefile="false"/>
+                                <formatter type="xml"/>
+                                <batchtest fork="no" todir="reports">
+                        <fileset dir="test">
+                        <include name="com/bbb/rest/AllTests.java"/>
+                       </fileset>
+                        </batchtest>
+                                </junit1>
+        </target>
+
+
+<!--    <junit1 printsummary="yes" fork="yes" maxmemory="2048m" haltonfailure="no" showoutput="yes" forkmode="perBatch">
+
+                <classpath refid="dynamo.classpath.svn" />
+                    <classpath refid="bbb.webservices" />
+                    <classpath refid="bbb.estore" />
+                <classpath refid="bbb.core" />
+                <classpath refid="bbb.integration.endeca" />
+                <classpath refid="bbb.integration.webservices" />
+                        <classpath refid="bbb.integration.valuelink"/>
+                <classpath refid="bbb.integration.cybersource"/>
+                        <classpath refid="classpath" />
+                <jvmarg value="-XX:NewSize=256m"/>
+                        <jvmarg value="-XX:MaxNewSize=256m"/>
+                        <jvmarg value="-XX:PermSize=256m"/>
+                        <jvmarg value="-XX:MaxPermSize=256m"/>
+                        <jvmarg value="-Xms512m"/>
+                    <jvmarg value="-Xmx1536m"/>
+                <batchtest fork="yes" todir="reports">
+                        <fileset dir="test">
+                        <include name="com/bbb/rest/AllTests.java"/>
+                                </fileset>
+                        </batchtest>
+         </junit1>
+        </target>
+
+        <target name="JunitReport" depends="RunJuntTest" >
+           <mkdir dir="${junitreports}/HTML" />
+            <junitreport todir="${junitreports}">
+              <fileset dir="${junitreports}">
+                <include name="*.xml"/>
+              </fileset>
+
+              <report format="frames" todir="${junitreports}/HTML"/>
+            </junitreport>
+         </target>
+-->
+</project>

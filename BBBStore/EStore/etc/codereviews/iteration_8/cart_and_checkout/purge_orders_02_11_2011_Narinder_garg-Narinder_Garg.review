@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="purge_orders_02_11_2011_Narinder_garg">
+  <ReviewIssue id="GUJIDA0G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:13:25:552 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:23:59:071 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Narinder_Garg</AssignedTo>
+    <File line="38">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move all constants to core module in BBBCoreConstants</Summary>
+    <Description>Move all constants to core module in BBBCoreConstants</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUJIJ1LW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:17:54:596 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-03 :: 14:19:07:672 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Narinder_Garg</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Please follow the logging framework guidelines</Summary>
+    <Description>The document is placed here, https://mia.sapient.resultspace.com/scm/Discovery/trunk/Process_Management/Standards_Processes/coding and review process/Logging Framework.docx
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

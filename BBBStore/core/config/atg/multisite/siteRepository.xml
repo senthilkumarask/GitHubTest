@@ -1,0 +1,439 @@
+<gsa-template xml-combine="append">
+
+   <header>
+    <name>BBB Site Repository</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+
+  <item-descriptor name="siteConfiguration" xml-combine="append" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+
+     <table name="BBB_SITE_ATTRIBUTES" type="auxiliary" id-column-name="id">
+
+      <property name="resourceBundle" column-name="resource_bundle" display-name-resource="resourceBundle" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="0"/>
+      </property>
+      <property name="defaultCountry" column-name="default_country" display-name-resource="defaultCountry" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="1"/>
+      </property>
+      <property name="currency" column-name="currency" display-name-resource="currency" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="2"/>
+      </property>
+      <property name="cssFile" column-name="css_file" display-name-resource="cssFile" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="3"/>
+      </property>
+      <property name="orderShippedFromAddress" column-name="order_shipped_from_address" display-name-resource="orderShippedFromAddress" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="4"/>
+      </property>
+      <property name="backInStockFromAddress" column-name="back_in_stock_from_address" display-name-resource="backInStockFromAddress" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="5"/>
+      </property>
+      <property name="newPasswordFromAddress" column-name="new_password_from_address" display-name-resource="newPasswordFromAddress" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="6"/>
+      </property>
+      <property name="defaultShipMethod" column-name="default_ship_method" display-name-resource="defaultShipMethod" item-type="shippingMethods" category-resource="BBBCustom" repository="/com/bbb/commerce/shipping/ShippingRepository">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="7"/>
+      </property>
+      <property name="customerCarePhoneNumber" column-name="customer_care_phone_number" display-name-resource="customerCarePhoneNumber" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="8"/>
+      </property>
+      <property name="customerCareFaxNumber" column-name="customer_care_fax_number" display-name-resource="customerCareFaxNumber" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="9"/>
+      </property>
+      <property name="customerCareEmailAddress" column-name="customer_care_email_address" display-name-resource="customerCareEmailAddress" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="10"/>
+      </property>
+      <property name="siteEmailAddress" column-name="site_email_address" display-name-resource="siteEmailAddress" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="11"/>
+      </property>
+      <property name="packAndHold" column-name="pack_hold" display-name-resource="packAndHold" data-type="boolean" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="12"/>
+      </property>
+       <property name="packAndHoldStartDate" column-name="pack_hold_start_date" display-name-resource="packAndHoldStartDate" data-type="timestamp" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="13"/>
+      	 </property>
+      	 <property name="packAndHoldEndDate" column-name="pack_hold_end_date" display-name-resource="packAndHoldEndDate" data-type="timestamp" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="14"/>
+      	 </property>
+      <property name="giftWrapSku" column-name="giftWrap_Sku" display-name-resource="giftWrapSku" item-type="sku"  repository="/atg/commerce/catalog/ProductCatalog" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="15"/>
+      </property>
+        <property name="giftWrapProduct" column-name="giftWrap_Product" display-name-resource="giftWrapProduct" item-type="product"  repository="/atg/commerce/catalog/ProductCatalog" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="16"/>
+      </property>
+      <property name="giftWrapPrice" column-name="giftWrapPrice" display-name-resource="giftWrapPrice" data-type="double" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="17"/>
+      </property>
+      
+      <property name="assemblyFeeSku" column-name="assemblyFee_Sku" display-name-resource="assemblyFeeSku" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="18"/>
+      </property>
+        <property name="assemblyFeeProduct" column-name="assemblyFee_Product" display-name-resource="assemblyFeeProduct" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="19"/>
+      </property>
+      <property name="assemblyFeePrice" column-name="assemblyFeePrice" display-name-resource="assemblyFeePrice" data-type="double" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="20"/>
+      </property>
+      
+      <property name="deliveryChargeSku" column-name="deliveryCharge_Sku" display-name-resource="deliveryChargeSku" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="21"/>
+      </property>
+        <property name="deliveryChargeProduct" column-name="deliveryCharge_Product" display-name-resource="deliveryChargeProduct" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="22"/>
+      </property>
+      <property name="deliveryChargePrice" column-name="deliveryChargePrice" display-name-resource="deliveryChargePrice" data-type="double" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="23"/>
+      </property>
+      
+       <property name="siteTag" column-name="site_tag" display-name-resource="siteTag" data-type="string" category-resource="BBBCustom">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="18"/>
+      </property>
+      <property name="siteL3Count" column-name="site_l3_count" display-name-resource="siteL3Count" data-type="string" category-resource="BBBCustom">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="19"/>
+	  </property>
+	  
+	  <!-- Added for  plp|search results Default View | 716- List View redesign Story -->
+	   <property name="defaultViewValue" column-name="default_view_plp" display-name-resource="GridListConfigure" data-type="enumerated" >
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	            <attribute name="propertySortPriority" value="45"/>
+            	<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            		<option value="Grid" code="1"/>
+            		<option value="List" code="2"/>
+            		<option value="Grid4" code="3"/>
+      </property>
+	  
+      <property name="itemOverrideThreshold" column-name="item_override_threshold" display-name-resource="itemThreshold" data-type="double" category-resource="TBSCustom">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="20"/>
+	  </property>
+      <property name="shippingOverrideThreshold" column-name="shipping_override_threshold" display-name-resource="shippingThreshold" data-type="double" category-resource="TBSCustom">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="21"/>
+	  </property>
+      <property name="surchargeOverrideThreshold" column-name="surcharge_override_threshold" display-name-resource="surchargeThreshold" data-type="double" category-resource="TBSCustom">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="22"/>
+	  </property>
+	  <property name="taxOverrideThreshold" column-name="tax_override_threshold" display-name-resource="taxThreshold" data-type="double" category-resource="TBSCustom">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="23"/>
+	  </property>
+	  <property name="giftWrapOverrideThreshold" column-name="gift_wrap_override_threshold" display-name-resource="giftWrapThreshold" data-type="double" category-resource="TBSCustom">
+ 		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+ 		<attribute name="propertySortPriority" value="24"/>
+ 	  </property>
+ 	  <property name="assemblyOverrideThreshold" column-name="assembly_override_threshold" display-name-resource="assemblyThreshold" data-type="double" category-resource="TBSCustom">
+ 		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+ 		<attribute name="propertySortPriority" value="25"/>
+ 	  </property>
+ 	  <property name="deliveryOverrideThreshold" column-name="delivery_override_threshold" display-name-resource="deliveryThreshold" data-type="double" category-resource="TBSCustom">
+ 		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+ 		<attribute name="propertySortPriority" value="26"/>
+ 	  </property>
+	 </table>
+    <table name="BBB_SITE_DEF_SORT" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+      <property name="defSiteSortOption" column-names="DEF_SITE_SORT_ID" display-name-resource="defSiteSortOption" data-type="map" component-item-type="sortingOption"  category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="20"/>
+	   </property>
+	</table>
+	<table name="BBB_SITE_SORT_OPT" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+      <property name="siteSortOptionList" column-names="SORT_OPT_ID" display-name-resource="siteSortOptionList" data-type="map" component-item-type="sortOptionList" category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="21"/>
+      </property>
+	</table>
+	
+	 	
+	<!-- Added Site specific Attribute Values List to be hidden #213 -->
+
+	<table name="BBB_SITE_ATTRVAL_LIST" type="multi" id-column-names="id">
+  		<property name="attributeValue" column-names="attr_val_id" display-name-resource="attributeValues" data-type="set" component-item-type="attributeInfo" category-resource="BBBAttributeValueList" repository="/atg/commerce/catalog/ProductCatalog">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      		<attribute name="propertySortPriority" value="22"/>
+      	</property>
+  	</table>
+
+	 <!-- Added Site specific Attribute Values List to be hidden #213 -->
+
+
+    <table name="BBB_SITE_COMMON_GREETINGS" type="multi" id-column-name="id" multi-column-name="greeting_key">
+      <property name="commonGreetings" column-names="greeting_message" display-name-resource="commonGreetings" data-type="map" component-data-type="string" category-resource="BBBCommonGreetings">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="23"/>
+      </property>
+    </table>
+
+    <table name="BBB_APPLICABLE_SHIP_METHODS" type="multi" id-column-name="id">
+      <property name="applicableShipMethods" column-names="ship_method_cd" display-name-resource="applicableShipMethods" data-type="set" component-item-type="shippingMethods" category-resource="BBBApplicableShipMethods" repository="/com/bbb/commerce/shipping/ShippingRepository">
+      	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      	<attribute name="propertySortPriority" value="24"/>
+      </property>
+    </table>
+
+    <table name="BBB_STATES_LIST" type="multi" id-column-names="id">
+  	<property name="states" column-names="state_id" display-name-resource="states" data-type="set" component-item-type="state" category-resource="BBBStates" repository="/com/bbb/commerce/shipping/ShippingRepository">
+  		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      		<attribute name="propertySortPriority" value="25"/>
+      	</property>
+  </table>
+  <table name="BBB_BOPUS_EXCLUDED_STATES_LIST" type="multi" id-column-names="id">
+  		<property name="bopusExcludedStates" column-names="bopus_excluded_state_id" display-name-resource="bopusExcludedStates" data-type="set" component-item-type="state" category-resource="BBBStates" repository="/com/bbb/commerce/shipping/ShippingRepository">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      		<attribute name="propertySortPriority" value="26"/>
+      	</property>
+  </table>
+
+  <table name="BBB_NEXUS_STATES" type="multi" id-column-names="id">
+  	<property name="nexusStates" column-names="state_id" display-name-resource="nexusStates" data-type="set" component-item-type="state" category-resource="BBBNexusStates" repository="/com/bbb/commerce/shipping/ShippingRepository">
+  		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      		<attribute name="propertySortPriority" value="27"/>
+      	</property>
+  </table>
+
+  <table name="BBB_APPLICABLE_PAYMENT_CARDS" type="multi" id-column-names="id" multi-column-name="sequence_num">
+  	<property name="paymentCards" column-names="payment_card_id" display-name-resource="paymentCards" data-type="list" component-item-type="paymentCard" category-resource="BBBApplicablePaymentCards">
+  		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="28"/>
+      	</property>
+  </table>
+
+  <table name="BBB_REGISTRY_TYPES_SITE" type="multi" id-column-names="id">
+  	<property name="registryTypes" column-names="registry_type_id" display-name-resource="registryTypes" data-type="set" component-item-type="registrytype" category-resource="BBBRegistryTypes">
+  		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="29"/>
+	</property>
+  </table>
+
+   <table name="BBB_TIME_ZONE_LIST" type="multi" id-column-names="id">
+  	<property name="timeZones" column-names="time_zone_id" display-name-resource="timeZones" data-type="set" component-item-type="timezone" category-resource="BBBTimeZone">
+  		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="30"/>
+	</property>
+  </table>
+
+  <table name="BBB_CHAT_ATTRIBUTES" type="auxiliary" id-column-name="id">
+
+      <property name="chatURL" column-name="chat_URL" display-name-resource="chatURL" data-type="string" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="31"/>
+      </property>
+
+      	 	<property name="chatLinkPlaceholder" column-name="chat_link_placeholder" display-name-resource="chatLinkPlaceholder" data-type="enumerated" category-resource="BBBChatAttributes">
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	            <attribute name="propertySortPriority" value="32"/>
+            	<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+	            <option value="Top Right" code="0"/>
+            	<option value="Top Left" code="1"/>
+				<option value="Bottom Left" code="2"/>
+			</property>
+
+      <property name="onOffFlag" column-name="ONOFF_FLAG" display-name-resource="onOffFlag" data-type="boolean" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="33"/>
+      </property>
+      <property name="weekdayOpenTime" column-name="WEEKDAY_OPENTIME" display-name-resource="weekdayOpenTime" data-type="timestamp" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="34"/>
+      </property>
+      <property name="weekdayCloseTime" column-name="WEEKDAY_CLOSETIME" display-name-resource="weekdayCloseTime" data-type="timestamp" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="35"/>
+      </property>
+      <property name="weekendOpenTime" column-name="WEEKEND_OPENTIME" display-name-resource="weekendOpenTime" data-type="timestamp" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="36"/>
+      </property>
+      <property name="weekendCloseTime" column-name="WEEKEND_CLOSETIME" display-name-resource="weekendCloseTime" data-type="timestamp" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="37"/>
+      </property>
+      <property name="chatFlagPDP" column-name="CHAT_FLAG_PDP" display-name-resource="chatFlagPDP" data-type="boolean" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="38"/>
+      </property>
+      <property name="chatOverrideFlagPDP" column-name="CHAT_OVERRIDE_FLAG_PDP" display-name-resource="chatOverrideFlagPDP" data-type="boolean" category-resource="BBBChatAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="39"/>
+      </property>
+	  <property name="daasFlagPDP" column-name="DAAS_FLAG_PDP" display-name-resource="daasFlagPDP" data-type="boolean" category-resource="BBBAskAndAnswerAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="40"/>
+      </property>
+      <property name="daasOverrideFlagPDP" column-name="DAAS_OVERRIDE_FLAG_PDP" display-name-resource="daasOverrideFlagPDP" data-type="boolean" category-resource="BBBAskAndAnswerAttributes">
+      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+		<attribute name="propertySortPriority" value="41"/>
+      </property>
+    </table>
+    
+    
+
+    <table name="BBB_SITE_HOLIDAYS" type="multi" id-column-names="id">
+  		<property name="bbbholidays" column-names="holiday_id" display-name-resource="BBBHolidays" data-type="set" component-item-type="bbbHolidays" category-resource="BBBHolidayInfo">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="42"/>
+		</property>
+  	</table>
+
+	<table name="BBB_SITE_WEEKENDS" type="multi" id-column-names="id">
+		<property name="bbbweekends" column-names="weekend_id" display-name-resource="BBBWeekends" data-type="set" component-item-type="bbbWeekends" category-resource="BBBWeekendsInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources" />
+			<attribute name="propertySortPriority" value="42" />
+		</property>
+	</table>
+	
+	<table name="BBB_SMLR_PRD_IGN_LIST" type="multi" id-column-names="id">
+  		<property name="similarProductIgnoreList" column-names="CATEGORY_ID" display-name-resource="similarProductIgnoreList" data-type="set" component-item-type="category" category-resource="BBBSimilarProductsIgnoreList" repository="/atg/commerce/catalog/ProductCatalog">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="43"/>
+		</property>
+  	</table>
+  	
+  	<!--@author psin52 Added for story 117-A5 | Grid/List view configurable -->
+    <table name="BBB_SITE_VIEW_MAPPING_PDP" type="auxiliary" id-column-name="SITE_ID">
+
+          <property name="onOffListGridFlag" column-name="ONOFFGrid_List_FLAG" display-name-resource="onOffListGridFlag" data-type="enumerated" default="Grid" category-resource="BBBGridListAttributes">
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	            <attribute name="propertySortPriority" value="44"/>
+            	<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+	            <option value="Grid" code="0"/>
+            	<option value="List" code="1"/>
+        	</property>
+    </table>
+
+  </item-descriptor>
+  <item-descriptor name="paymentCard" display-name-resource="PaymentCard" cache-mode="simple" display-property="cardName" item-cache-size="100" query-cache-size="100" >
+  	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+  	<table name="BBB_PAYMENT_CARDS" type="primary" id-column-name="payment_card_id">
+  	<property name="id" column-name="payment_card_id" display-name-resource="paymentCardId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  		<property name="cardName" column-name="card_name" display-name-resource="cardName" data-type="string" category-resource="BBBPaymentCard">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="1"/>
+  		</property>
+  		<property name="cardCode" column-name="card_code" display-name-resource="cardCode" data-type="string" category-resource="BBBPaymentCard">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+  		</property>
+  		<property name="cardImage" column-name="card_image" display-name-resource="cardImage" data-type="string" category-resource="BBBPaymentCard">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="3"/>
+  		</property>
+  		<property name="cardPattern" column-name="card_pattern" display-name-resource="cardPattern" data-type="string" category-resource="BBBPaymentCard">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+  		</property>
+
+  	</table>
+
+  </item-descriptor>
+
+  <item-descriptor name="registrytype" cache-mode="simple" display-name-resource="RegistryType" display-property="registryTypeName" item-cache-size="100" query-cache-size="100">
+	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	<table name="BBB_REGISTRY_TYPE" type="primary" id-column-name="registry_type_id">
+
+		<property name="id" category-resource="BBBRegistry" column-name="registry_type_id" display-name-resource="registryTypeId" data-type="string">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="0"/>
+  		</property>
+       		<property name="registryTypeName" category-resource="BBBRegistry" column-name="registry_type_name" display-name-resource="registryTypeName" data-type="string">
+       			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="1"/>
+  		</property>
+      		<property name="registryTypeDesc" category-resource="BBBRegistry" column-name="registry_type_desc" display-name-resource="registryTypeDesc" data-type="string">
+      			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+  		</property>
+      		<property name="registryTypeIndex" category-resource="BBBRegistry" column-name="registry_type_index" display-name-resource="registryTypeIndex" data-type="string">
+      			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="3"/>
+  		</property>
+  		<property name="registryTypeCode" category-resource="BBBRegistry" column-name="registry_type_code" display-name-resource="registryTypeCode" data-type="string">
+      			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+  		</property>
+   		</table>
+</item-descriptor>
+
+<item-descriptor name="timezone" cache-mode="simple" display-name-resource="TimeZone" display-property="timeZone" item-cache-size="50" query-cache-size="50">
+  	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+  	<table name="BBB_SITE_TIMEZONE" type="primary" id-column-names="time_zone_id">
+  	<property name="id" column-name="time_zone_id" display-name-resource="timeZoneId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  		<property name="timeZone" column-names="time_zone" display-name-resource="timeZone" data-type="string" category-resource="BBBTimeZoneInfo">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+  		</property>
+
+  	</table>
+
+  </item-descriptor>
+
+<item-descriptor name="bbbHolidays" cache-mode="simple" display-name-resource="BBBHoliday" display-property="holidayDate" item-cache-size="100" query-cache-size="100">
+	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	<table name="BBB_HOLIDAYS" type="primary" id-column-name="holiday_id">
+		<property name="id" category-resource="BBBHolidayInfo" column-name="holiday_id" display-name-resource="holidayId" data-type="string">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="0"/>
+  		</property>
+  		<property name="holidayDate" category-resource="BBBHolidayInfo" column-names="holiday_date" display-name-resource="holidayDate" data-type="date" >
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="1"/>
+  		</property>
+  		<property name="holidayDescription" category-resource="BBBHolidayInfo" column-names="holiday_description" display-name-resource="holidayDescription" data-type="string" >
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+  		</property>
+   		</table>
+</item-descriptor>
+
+<item-descriptor name="bbbWeekends" cache-mode="simple" display-name-resource="BBBWeekend" display-property="weekendDays" item-cache-size="100" query-cache-size="100">
+	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+	<table name="BBB_WEEKENDS" type="primary" id-column-name="weekend_id">
+		<property name="id" category-resource="BBBWeekendsInfo" column-name="weekend_id" display-name-resource="weekendId" data-type="string">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="0"/>
+  		</property>
+  		<property name="weekendDays" category-resource="BBBWeekendsInfo" column-names="weekend_days" display-name-resource="weekendDays" data-type="string" >
+  			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+			<attribute name="propertySortPriority" value="1"/>
+  		</property>
+   		</table>
+</item-descriptor>
+
+
+</gsa-template>
+

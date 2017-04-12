@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_cc_wallet">
+  <ReviewIssue id="GVNWE96F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:36:52:791 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:37:27:478 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="83">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>There are 5 PMD P1/P2 errors on this file</Summary>
+    <Description>There are 5 PMD P1/P2 errors on this file</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNWRJXC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:47:13:248 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:47:47:247 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="2353">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add java perf log for method handleCreateNewCreditCard</Summary>
+    <Description>Add java perf log for method handleCreateNewCreditCard</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNXK9ZM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 21:09:33:394 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 21:09:47:628 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="3168">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove commented code</Summary>
+    <Description>remove commented code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

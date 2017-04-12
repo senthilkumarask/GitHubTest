@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="createList"
+	xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<actor-chain id="createList" transaction="TX_SUPPORTS">
+		<form id="list-create" handle="createList" var="listFormHandler"
+			name="/com/admin/formhandler/BBBListFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="displayName" value="${param.display_name}" />
+			<input name="disabled" value="${param.is_disabled}" />
+			<input name="allowDuplicate" value="${param.allow_duplicates}" />
+			<input name="sites" value="${param.site_flag}" />
+			<input name="subTypeCode" value="${param.sub_type_code}" />
+			<input name="sequenceNumber" value="${param.sequence_num}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			<input name="userCreated" value="${param.create_user}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="editList" transaction="TX_SUPPORTS">
+		<form id="list-edit" handle="editList" var="listFormHandler"
+			name="/com/admin/formhandler/BBBListFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+			<input name="displayName" value="${param.display_name}" />
+			<input name="disabled" value="${param.is_disabled}" />
+			<input name="allowDuplicate" value="${param.allow_duplicates}" />
+			<input name="sites" value="${param.site_flag}" />
+			<input name="subTypeCode" value="${param.sub_type_code}" />
+			<input name="sequenceNumber" value="${param.sequence_num}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			<input name="userCreated" value="${param.create_user}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="removeList" transaction="TX_SUPPORTS">
+		<form id="list-remove" handle="removeList" var="listFormHandler"
+			name="/com/admin/formhandler/BBBListFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="addCategory" transaction="TX_SUPPORTS">
+		<form id="list-category-add" handle="addCategoriesToList" var="listFormHandler"
+			name="/com/admin/formhandler/BBBListFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="userCreated" value="${param.create_user}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="removeCategory" transaction="TX_SUPPORTS">
+		<form id="list-category-remove" handle="removeCategoriesFromList"
+			var="listFormHandler" name="/com/admin/formhandler/BBBListFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="reorderCategory" transaction="TX_SUPPORTS">
+		<form id="list-category-reorder" handle="reOrderCategories"
+			var="listFormHandler" name="/com/admin/formhandler/BBBListFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="newSequenceNo" value="${param.sequence_num}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="reorderList" transaction="TX_SUPPORTS">
+		<form id="list-reorder" handle="reOrderList"
+			var="listFormHandler" name="/com/admin/formhandler/BBBListFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="listId" value="${param.list_id}" />
+			<input name="newSequenceNo" value="${param.sequence_num}" />
+		</form>
+	</actor-chain>
+	
+	<actor-chain id="getSiteLists" transaction="TX_SUPPORTS">
+		<droplet var="siteLists" name="/com/admin/droplet/BBBListDroplet"
+			id="siteLists">
+			<input name="site_id" value="${param.site_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getList" transaction="TX_SUPPORTS">
+		<droplet var="getList" name="/com/admin/droplet/BBBListDroplet"
+			id="getList">
+			<input name="list_id" value="${param.list_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getListType" transaction="TX_SUPPORTS">
+		<droplet var="getListType" name="/com/admin/droplet/BBBListTypeDroplet"
+			id="getListType">
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getCategories" transaction="TX_SUPPORTS">
+		<droplet var="getCategories" name="/com/admin/droplet/BBBListCategoryDroplet"
+			id="getCategories">
+			<input name="list_id" value="${param.list_id}" />
+		</droplet>
+	</actor-chain>
+	
+
+
+
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 
+	$$Change: 875535 $ -->
+
+<!-- result of combining: C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml -->

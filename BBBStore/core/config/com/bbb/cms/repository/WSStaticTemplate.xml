@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+        <name>WS Static Page Template</name>
+        <author></author>
+    </header>
+
+	<!--/////////////////////////////////////////////////////////////////////////////////	-->
+  	<!--   Static Page Template for WS Site for Content Pages Scenarios.         		-->
+  	<!--/////////////////////////////////////////////////////////////////////////////////  	-->
+	
+  	<item-descriptor name="mobileSiteStaticContentTemplate" display-name-resource="itemDescriptorMobileSiteStaticContentTemplate"  display-property="pageTitle" cache-mode="simple" item-cache-size="1000" last-modified-property="lastModifiedDate">
+  		<attribute name="updateLastModified" value="true"/>
+  		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+	     <table name="BBB_WS_ST_Content" type="primary" id-column-names="static_template_id">
+	     	<property name="id" column-name="static_template_id" display-name-resource="staticTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+        	</property>
+	        
+	        <property name="pageName" column-name="page_name" data-type="enumerated" display-name-resource="pageName" required="true" category-resource="BasicInfo">
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+             	<attribute name="propertySortPriority" value="1" />
+             	<attribute name="uiwritable" value="true"/>
+				<attribute name="useCodeForValue" value="false"/>
+				<option value="Careers" code="201"/>
+				<option value="CorporateResponsibilityReport" code="202"/>
+				<option value="Others" code="200"/>
+		    </property>
+            
+            <property name="pageTitle" column-name="page_title" data-type="String" display-name-resource="pageTitle" required="true" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="2" />
+            	<attribute name="maxLength" value="20"/>
+            </property>
+       
+            <property name="pageSubHeaderCopy" column-name="page_sub_header_copy" data-type="big string" display-name-resource="pageSubHeaderCopy" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="3" />
+            	<attribute name="maxLength" value="50"/>
+            </property>
+            
+             <property name="pageCopy" column-name="page_copy" data-type="big string" display-name-resource="pageCopy" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="4" />
+	         </property>
+            
+            <property name="carousel" column-name="carousel_CONTAINER" display-name-resource="carouselContainer_mobile" item-type="carousel" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="CarouselInfo">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="3"/>
+	        </property>
+	        
+            <property name="seoUrl" column-name="seo_url" display-name-resource="seoUrl" data-type="string" category-resource="BasicInfo" >
+ 				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+       			<attribute name="propertySortPriority" value="7"/>
+  			</property>
+  			 
+  			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+  			</property>
+  			
+  			<property name="bbbPageName" column-name="bbb_page_name" data-type="String" display-name-resource="bbbPageName" category-resource="BasicInfo" required="true" >
+	             <attribute name="propertySortPriority" value="6" />
+	            </property>
+	            
+			<property name="headTagContent" column-name="HEAD_TAG_CONTENT" data-type="big string" display-name-resource="headTagContent" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="9" />
+            </property>
+            
+            <property name="bodyEndTagContent" column-name="BODY_END_TAG_CONTENT" data-type="big string" display-name-resource="bodyEndTagContent" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="10" />
+            </property>
+            
+            <property name="registryRibbonFlag" column-name="Registry_Ribbon_Flag" display-name-resource="registryRibbonFlag" data-type="boolean" category-resource="BasicInfo" default="false">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="11"/>
+			</property>
+			
+  		</table>
+  		
+	    <table name="BBB_WS_Static_Site" type="multi" id-column-names="static_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="StaticTemplateSites">
+             <attribute name="propertySortPriority" value="5" />
+            </property>
+    	</table>
+    	
+    	<table name="BBB_WS_ST_CONTENT_BOX" type="multi" id-column-names="static_template_id" multi-column-name="sequence_num">
+	  		<property name="pageContents" column-names="content_box_id" display-name-resource="promoContainer1_mobile" data-type="list" component-item-type="contentBox" category-resource="ContentInfo">
+	  			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="4"/>
+	        </property>
+	  	</table>
+	  	
+	  	<property name="noOfContentBoxes" property-type="com.bbb.cms.RecordCountPropertyDescriptor" writable="false" queryable="false" data-type="string" hidden="true">
+     	 	<attribute name="propertyToCount" value="pageContents"/>
+   		</property>
+    	
+    	<table name="BBB_OMINITURE_WSSTATIC_DATA" type="multi" id-column-names="static_template_id"
+           multi-column-name="omniture_key">
+        <property name="TypeOmnitureData" column-names="omniture_value" data-type="map" component-data-type="string" display-name-resource="TypeOmnitureData" category-resource="ContentInfo">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+    	<attribute name="propertySortPriority" value="9"/>
+    	</property>
+    	</table>
+   	</item-descriptor>
+   	
+   	<!--/////////////////////////////////////////////////////////////////////////////////	-->
+  	<!--   Static Page Template for WS Site for Collection of Items Scenarios.         	-->
+  	<!--/////////////////////////////////////////////////////////////////////////////////  	-->
+   	
+   	<item-descriptor name="mobileSiteStaticCollectionTemplate" display-name-resource="itemDescriptorMobileSiteStaticCollectionTemplate"  display-property="pageHeaderCopy" cache-mode="simple" item-cache-size="1000" last-modified-property="lastModifiedDate">
+  		<attribute name="updateLastModified" value="true"/>
+  		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+    	<table name="BBB_WS_ST_Collection" type="primary" id-column-names="static_template_id">
+    		
+    		<property name="id" column-name="static_template_id" display-name-resource="staticTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+        	</property>
+        	
+        	<property name="pageName" column-name="page_name" data-type="enumerated" display-name-resource="pageName" required="true" category-resource="BasicInfo">
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+             	<attribute name="propertySortPriority" value="1" />
+             	<attribute name="uiwritable" value="true"/>
+				<attribute name="useCodeForValue" value="false"/>
+				<option value="FAQ" code="204"/>
+				<option value="FAQDetails" code="205"/>
+				<option value="Others" code="200"/>
+		    </property>
+        	
+        	<property name="pageHeaderCopy" column-name="page_header_copy" data-type="String" display-name-resource="pageHeaderCopy" required="true" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="2" />
+            	<attribute name="maxLength" value="20"/>
+            </property>
+            
+            <property name="imageBox" column-name="carousel_CONTAINER" display-name-resource="carouselContainer_mobile" item-type="imageBox" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="PromoInfo">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="3"/>
+	        </property>
+	        
+	         <property name="pageCopy" column-name="page_copy" data-type="big string" display-name-resource="pageCopy" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="4" />
+	            </property>
+            
+            <!--  Banner Property-->
+            <property name="banner" column-name="PROMO_CONTAINER" display-name-resource="promoContainer_mobile" item-type="links" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="BannerInfo">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="4"/>
+	        </property>
+	        
+        	<property name="seoUrl" column-name="seo_url" display-name-resource="seoUrl" data-type="string" category-resource="BasicInfo" >
+ 				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+       			<attribute name="propertySortPriority" value="8"/>
+  			</property>
+        	
+        	<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="9"/>
+  			</property>
+  			
+  			<property name="bbbPageName" column-name="bbb_page_name" data-type="String" display-name-resource="bbbPageName" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="7" />
+	            </property>
+  		</table>
+  		
+  		<!-- Collection Page Type -->
+  		<table name="BBB_WS_ST_Coll_PCAROUSEL" type="multi" id-column-names="static_template_id" multi-column-name="sequence_num">
+	  		<property name="product" column-names="product_carousel_id" display-name-resource="productList" data-type="list" component-item-type="productCarousel" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="CollectionInfo">
+	  			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="3"/>
+	        </property>
+	  	</table>
+	  	
+	  	<property name="noOfProductsInProductCarousel" property-type="com.bbb.cms.RecordCountPropertyDescriptor" writable="false" queryable="false" data-type="string" hidden="true">
+     	 	<attribute name="propertyToCount" value="product"/>
+   		</property>
+  		
+	    <table name="BBB_WS_Static_Site" type="multi" id-column-names="static_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="StaticTemplateSites">
+             <attribute name="propertySortPriority" value="6" />
+            </property>
+    	</table>
+	</item-descriptor>
+	
+	<!--////////////////////////////////////////////////////////// -->
+  	<!--   Static Page Template for WS Site for Modal Pop Ups. -->
+  	<!--////////////////////////////////////////////////////////// -->
+   	
+   	<item-descriptor name="mobileSiteStaticModalTemplate" display-name-resource="itemDescriptorMobileSiteStaticModalTemplate"  display-property="pageTitle" cache-mode="simple" item-cache-size="1000" last-modified-property="lastModifiedDate">
+  		<attribute name="updateLastModified" value="true"/>
+  		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+    	<table name="BBB_WS_ST_Modal" type="primary" id-column-names="static_template_id">
+    		
+    		<property name="id" column-name="static_template_id" display-name-resource="staticTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+        	</property>
+        	
+        	<property name="pageName" column-name="page_name" data-type="String" display-name-resource="pageName" category-resource="BasicInfo">
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+             	<attribute name="propertySortPriority" value="1" />
+		    </property>
+        	
+        	<property name="pageTitle" column-name="page_title" data-type="String" display-name-resource="pageTitle" required="true" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="2" />
+            </property>
+       
+            <property name="pageMessage" column-name="page_message" data-type="big string" display-name-resource="pageMessage" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="3" />
+            </property>
+            
+            <property name="promoBox" column-name="PROMO_CONTAINER" display-name-resource="promoPopUp_mobile" item-type="imageBox" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="PromoInfo">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="4"/>
+	        </property>
+        	
+        	<property name="seoUrl" column-name="seo_url" display-name-resource="seoUrl" data-type="string" category-resource="BasicInfo" >
+ 				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+       			<attribute name="propertySortPriority" value="7"/>
+  			</property>
+        	
+        	<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+  			</property>
+  		</table>
+  		
+  		<table name="BBB_WS_Static_Site" type="multi" id-column-names="static_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="StaticTemplateSites">
+             <attribute name="propertySortPriority" value="5" />
+            </property>
+    	</table>
+    	
+    	<table name="BBB_OMINITURE_WSSTATIC_DATA" type="multi" id-column-names="static_template_id"
+           multi-column-name="omniture_key">
+        <property name="ModalOmnitureData" column-names="omniture_value" data-type="map" component-data-type="string" display-name-resource="ModalOmnitureData" category-resource="BasicInfo">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+    	<attribute name="propertySortPriority" value="9"/>
+    	</property>
+    	</table>
+	</item-descriptor>
+	
+	<!--///////////////////////////////	-->
+	<!-- Content Box Information 	-->
+	<!--///////////////////////////////	-->
+   
+   	<item-descriptor name="contentBox"   cache-mode="simple" display-property="imagePosition" display-name-resource="contentBox" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <table name="BBB_WS_CONTENTBOX" type="primary" id-column-names="contentbox_id">
+        	
+        	<property name="id" column-name="contentBox_id" display-name-resource="contentBoxId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+			
+            <property name="imagePosition" column-name="image_position" data-type="enumerated" display-name-resource="alignement" required="true" category-resource="BasicInfo">
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+             	<attribute name="propertySortPriority" value="1" />
+             	<attribute name="uiwritable" value="true"/>
+				<attribute name="useCodeForValue" value="false"/>
+				<option value="Left" code="0"/>
+				<option value="Right" code="1"/>
+		    </property>
+		    
+            <property name="content" column-name="content" data-type="big string" display-name-resource="content" category-resource="ContentInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+            	<attribute name="propertySortPriority" value="3" />
+            </property>
+            
+            <property name="imageBox" column-name="IMAGE_CONTAINER" display-name-resource="content_image" item-type="imageBox" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="PromoInfo">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="4"/>
+	        </property>
+        </table>
+     </item-descriptor>
+</gsa-template>

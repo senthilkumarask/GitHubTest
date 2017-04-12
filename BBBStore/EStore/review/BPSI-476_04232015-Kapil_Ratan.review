@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-476_04232015">
+  <ReviewIssue id="I8VGQ3JQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-24 :: 16:05:55:382 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-24 :: 16:12:49:825 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Wrap File Not found and Jaxb Binding in BBBSystemException</Summary>
+    <Description>You should keep error code same as mentioned in IDD</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

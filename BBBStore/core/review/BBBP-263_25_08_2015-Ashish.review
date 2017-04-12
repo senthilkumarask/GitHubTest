@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-263_25_08_2015">
+  <ReviewIssue id="IDRMNC9Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 22:59:11:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:17:46:613 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="111">src/com/bbb/framework/cache/MobileNearCacheInvalidator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Missing javadocs</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMO8A2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 22:59:52:874 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:17:35:326 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="111">src/com/bbb/framework/cache/MobileNearCacheInvalidator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Make constants for admin_name and admin_password</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMR176">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:02:03:666 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:17:23:832 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="186">src/com/bbb/framework/cache/MobileNearCacheInvalidator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Make the POST Call instead of GET to call the spring controller</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMSVWI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:03:30:114 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:17:12:583 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="421">src/com/bbb/framework/cache/BBBCacheInvalidatorSource.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Reuse the existing Method to clear near cache - clearNearMobileCache()</Summary>
+    <Description>clearNearMobileCache</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

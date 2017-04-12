@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.integration.order.TestGetOrderHistoryManager">      
+      <group id="testGetOrderHistory">
+        <test id="test_testGetOrderHistory">
+			<objs>
+			<obj id="orderHistoryManager"
+						type="com.bbb.integration.order.TestGetOrderHistoryManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryManager">
+						<item type="string">/com/bbb/account/OrderHistoryManager</item>
+					</obj>
+			<obj id="siteContextManager"
+						type="com.bbb.integration.order.TestGetOrderHistoryManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryManager">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+                <obj id="siteFlag" type="String">1</obj>
+                <obj id="memberID" type="String">memberid_343434</obj>
+                <obj id="profileId" type="String">110002</obj>
+				<obj id="serviceName" type="String">getOrderHistory</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>	
+            </objs>      
+			<asserts> 	        	
+	        	<!-- <assert id="errormsg" type="java.lang.String" action="isEqual">Legacy WebService returns an error.</assert> -->
+	        </asserts>  
+        </test>
+      </group>
+      <group id="testGetFilteredLegacyOrders">
+        <test id="test_testGetFilteredLegacyOrders">
+			<objs>
+			<obj id="orderHistoryManager"
+						type="com.bbb.integration.order.TestGetOrderHistoryManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryManager">
+						<item type="string">/com/bbb/account/OrderHistoryManager</item>
+					</obj>
+			<obj id="siteContextManager"
+						type="com.bbb.integration.order.TestGetOrderHistoryManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryManager">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+                <obj id="siteFlag" type="String">1</obj>
+                <obj id="memberID" type="String">1086299027</obj>
+                <obj id="orderType" type="String">ONL</obj>
+                <obj id="profileId" type="String">DC159239029</obj>
+				<obj id="serviceName" type="String">getOrderHistory</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>	
+            </objs>      
+			<asserts> 	        	
+	        	<!-- <assert id="errormsg" type="java.lang.String" action="isEqual">Legacy WebService returns an error.</assert> -->
+	        </asserts>  
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

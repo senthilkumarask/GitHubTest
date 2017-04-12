@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestAddStoreItemsToRegistry.xml
+
+  DESCRIPTION: ddtunit data file for TestAddStoreItemsToRegistry.java test case
+
+  HISTORY:
+  Apr 24, 2012  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.stofu.TestAddStoreItemsToRegistry">
+       <group id="testAddStoreItemsToRegistry">
+        <test id="testAddStoreItemsToRegistry_test1">
+			<objs>
+				<obj id="addRegistryRequest" type="com.bbb.commerce.giftregistry.manager.GSGiftRegistryManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestAddStoreItemsToRegistry">
+					<item type="string">com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager</item>
+				</obj>
+				<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567","qty":"2"},{"skuId":"17052098","prodId":"1017052098","registryId":"198410567","qty":"2"}]}</obj>
+			</objs>  
+        </test>
+      </group>
+      <group id="testAddStoreItemsToRegistryError">
+        <test id="testAddStoreItemsToRegistryError_test1">
+			<objs>
+				<obj id="addRegistryRequest" type="com.bbb.commerce.giftregistry.manager.GSGiftRegistryManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestAddStoreItemsToRegistry">
+					<item type="string">com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager</item>
+				</obj>
+				<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567a","qty":"2"}]}</obj>
+			</objs>  
+        </test>
+      </group>
+      <group id="testAddStoreItemsToRegistrySkuError">
+        <test id="testAddStoreItemsToRegistrySkuError_test1">
+			<objs>
+				<obj id="addRegistryRequest" type="com.bbb.commerce.giftregistry.manager.GSGiftRegistryManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestAddStoreItemsToRegistry">
+					<item type="string">com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager</item>
+				</obj>
+				<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945a","prodId":"","registryId":"198410567","qty":"2"}]}</obj>
+			</objs>      
+        </test>
+      </group> 
+      <group id="testAddStoreItemsToRegistryQtyError">
+        <test id="testAddStoreItemsToRegistryQtyError_test1">
+			<objs>
+				<obj id="addRegistryRequest" type="com.bbb.commerce.giftregistry.manager.GSGiftRegistryManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestAddStoreItemsToRegistry">
+					<item type="string">com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager</item>
+				</obj>
+				<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567","qty":"-2"}]}</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

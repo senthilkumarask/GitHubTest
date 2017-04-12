@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-37">
+  <ReviewIssue id="HYSJXCJT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:35:10:601 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 14:29:09:649 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="37">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Please check that lenght is not less than 2 and handle it logically</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSJYNTY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:36:11:878 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:13:22:609 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="37">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There are PMD violations, please fix these.</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSKJGY0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:52:22:728 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:11:38:493 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="82">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This block can be placed inside if(item!=null) block</Summary>
+    <Description>			//exclude url expressions from format url and convert format url to lower case
+			if(BBBUtility.isNotEmpty(formatUrl)){
+				if (getListOfExcludedUrlsExpressions() != null
+						&amp;&amp; !getListOfExcludedUrlsExpressions().isEmpty()) {
+					for (String exclusionExpression : getListOfExcludedUrlsExpressions()) {
+						if (formatUrl.contains(exclusionExpression)) {
+							return null;
+						}
+					}
+				}
+				formatUrl = formatUrl.toLowerCase();
+			}</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSL7VCB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:11:21:131 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 15:46:34:783 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="45">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Do not use parentCateogry for this logic. Refractor the code to use bbb</Summary>
+    <Description>	    while (true) {
+			      if (isLoggingDebug()) logDebug("finding the ancestors.  parent = " + parent.getRepositoryId());
+			      parent = (RepositoryItem)parent.getPropertyValue(getCatalogTools().getParentCategoryPropertyName());
+			      if (parent == null)
+			        break;
+			      ancestors.addFirst(parent);
+			    }</Description>
+    <Annotation>Parent category check is needed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSLWVZD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:30:48:361 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 14:08:24:707 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="54">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Logic is not correct, we do not need to iterate over all ancestores, Just take category id and use its display name and id to create seoURL</Summary>
+    <Description>		if (ancestors != null &amp;&amp; ancestors.size() &gt; 1) {
+					
+					logDebug("BBBMobileCategoryUrlTemplate.formatUrl() ancestors size ::  " + ancestors.size());
+					
+					// For ancestors size = 2 i.e L2 categary returing null for mobile sitemap url format
+					formatUrl = getType();
+					formatUrl = formatUrl + BBBCoreConstants.SLASH 
+							+ formatUrlParam((String) item.getPropertyValue(BBBCatalogConstants.DISPLAY_NAME_CATEGORY_PROPERTY_NAME))
+							+ BBBCoreConstants.SLASH 
+							+ categoryId
+							+ BBBCoreConstants.SLASH;
+				} else {
+				
+					if (pUrlParams != null) {
+						int length = pUrlParams.length;
+						for (int count = 0; count &lt; length; count++) {
+							if (count == 0) {
+								String decodedUrl = URLDecoder.decode(pUrlParams[count].toString());
+								decodedUrl = escapeHtmlString(decodedUrl);
+								pUrlParams[count].setValue(formattedDisplayName(decodedUrl));
+							}
+						}
+					}</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSLYG3L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:32:01:089 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:35:48:288 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="60">src/com/bbb/seo/BBBMobileCategoryUrlTemplate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use boolean to check if logging id on before printing debug and error</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resolved.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSLZTRI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:33:05:454 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 13:35:13:004 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="26">src/com/bbb/seo/BrandSitemapUrlTemplate.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>These look irrelevant</Summary>
+    <Description>	private String[] entities;
+	
+	private CatalogTools catalogTools;</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSM2EAZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:35:05:387 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:06:24:567 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why we need for loop if we need to set values at index=0</Summary>
+    <Description>		for (int count = 0; count &lt; length; count++) {
+				if (count == 0) {
+					String decodedUrl = URLDecoder.decode(pUrlParams[count].toString());
+					decodedUrl = escapeHtmlString(decodedUrl);
+					pUrlParams[count].setValue(formattedDisplayName(decodedUrl));
+				}
+			}</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSM3HYD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:35:56:773 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:40:17:751 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File></File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add more log debugs</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resolved.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSM4G0P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:36:40:921 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:01:35:602 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="52">src/com/bbb/seo/BrandSitemapUrlTemplate.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>There are PMD violations, please fix these</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSM7HLB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 17:39:02:927 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 09:46:20:621 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Missing MobileWrite and Generator Scheduler components. Create and add schedule as daily as per the requirement in enviornment folder.</Summary>
+    <Description></Description>
+    <Annotation>Schedulars property files already exist.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,32 @@
+<gsa-template xml-combine="append">
+<header>
+	<name>BBB Custom Gift List</name>
+	<author></author>
+	<version></version>
+</header>
+<item-descriptor name="gift-list" xml-combine="append"
+	item-cache-timeout="300000" item-expire-timeout="300000"
+	query-expire-timeout="300000">
+</item-descriptor>
+<item-descriptor name="gift-item" display-property="displayName" xml-combine="append" 
+	item-cache-timeout="300000" item-expire-timeout="300000" query-expire-timeout="300000">
+	<table name="bbb_gift_item_ext_data" type="auxiliary" id-column-names="id">
+		<property name="previousPrice" column-names="prev_price" data-type="double"/>
+		<property name="registryId" column-names="registry_id" data-type="string"/>
+        <property name="msgShownOOS" data-type="boolean" column-names="msg_shown_oos" default="false"/>
+        <property name="ltlShipMethod" column-names="ltl_ship_method" data-type="string"/>
+        <property name="referenceNumber" data-type="string" column-name="reference_number" required="false"/>
+        <property name="fullImagePath" data-type="string" column-name="full_image_path" required="false"/>
+        <property name="thumbnailImagePath" data-type="string" column-name="thumbnail_image_path" required="false"/>
+        <property name="mobileFullImagePath" data-type="string" column-name="mobile_full_image_path" required="false"/>
+        <property name="mobileThumbnailImagePath" data-type="string" column-name="mobile_thumbnail_image_path" required="false"/>
+        <property name="personalizePrice" data-type="double" column-name="personalize_price" required="false"/>
+        <property name="personalizationOptions" data-type="string" column-name="personalization_options" required="false"/>
+        <property name="personalizationDetails" data-type="string" column-name="personalization_details" required="false"/>
+        <property name="personalizationStatus" data-type="string" column-name="personalization_status" required="false"/>
+	</table>
+	<property name="msgShownFlagOff" data-type="boolean" default="false"/>
+	<property name="isBts" data-type="boolean" default="false"/>
+	<property name="msgShipMethodUnsupported" data-type="boolean" default="false"/>
+</item-descriptor>
+</gsa-template>

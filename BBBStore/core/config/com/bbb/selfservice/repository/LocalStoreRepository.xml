@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Local Store Repository</name>
+        <author></author>
+    </header>
+   
+    <item-descriptor name="storeLocalInventory" display-name-resource="localStoreRepository" cache-mode="disabled">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<table name="BBB_STORE_LOCAL_INVENTORY" type="primary" id-column-names="STORE_ID,SKU_ID">
+			<property name="id" column-names="STORE_ID,SKU_ID" data-types="string,string"/>
+			<property name="storeId" column-name="STORE_ID" display-name-resource="storeId" category-resource="BasicInfo" writable="true">
+	     		<attribute name="propertySortPriority" value="0" />
+	          	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources" />
+			</property>
+			<property name="skuId" column-name="SKU_ID" display-name-resource="skuId" data-type="string" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+				<attribute name="propertySortPriority" value="1"/>
+			</property>
+			<property name="stockLevel" column-name="STOCK_LEVEL" display-name-resource="stockLevel" data-type="int" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+				<attribute name="propertySortPriority" value="3"/>
+			</property>
+			<property name="stockListPrice" column-name="STORE_LIST_PRICE" display-name-resource="stockListPrice" data-type="double" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+				<attribute name="propertySortPriority" value="4"/>
+			</property>
+			<property name="lastModDate" column-name="LAST_MODIFIED_DATE" data-type="timestamp" display-name-resource="lastModDate" category-resource="BasicInfo">
+				<attribute name="propertySortPriority" value="5" />
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+			</property>
+         </table>
+    </item-descriptor>
+    
+   </gsa-template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="StoreLocator">
+  <ReviewIssue id="HW0ENMRF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 14:30:41:595 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 14:31:04:923 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Archit Goel</ReviewerId>
+    <AssignedTo>Archit Goel</AssignedTo>
+    <File line="1">review/StoreLocator-Archit Goel.review</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Reviewed with no comments.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+       <item-descriptor name="tipsPersonalization" xml-combine="append" cache-mode="simple" item-cache-size="1000" query-cache-size="20000" query-expire-timeout="172800000">
+         </item-descriptor>
+  
+    
+</gsa-template>

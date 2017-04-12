@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+       <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0"> 
+               
+               <xs:element name="main"> 
+                       <xs:complexType> 
+                               <xs:sequence> 
+                                       <xs:element name="DATA_RECORD" type="DATARECORD" minOccurs="1" maxOccurs="1" /> 
+                                 </xs:sequence> 
+                         </xs:complexType> 
+                 </xs:element> 
+               
+                <xs:complexType name="DATARECORD"> 
+                        <xs:sequence> 
+                               <xs:element name="SKU_ID" type="xs:string" minOccurs="0"/> 
+                               <xs:element name="PRODUCT_ID" type="xs:string" minOccurs="0"/> 
+                               <xs:element name="PRODUCT_NAME" type="xs:string" minOccurs="0"/> 
+                               <xs:element name="EMAIL_ADDR" type="xs:string" minOccurs="0"/> 
+                               <xs:element name="CUST_NAME" type="xs:string"  minOccurs="0"/> 
+                               <xs:element name="USER_IP" type="xs:string"  minOccurs="0"/> 
+                               <xs:element name="REQUESTED_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="IN_STOCK_NOTIFY_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="NOTICE_1_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="NOTICE_2_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="UNSUBSCRIBE_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="FINAL_NOTICE_DT" type="xs:dateTime"  minOccurs="0"/> 
+                               <xs:element name="SITE_FLAG" type="xs:string"  minOccurs="0"/> 
+                       </xs:sequence> 
+               </xs:complexType> 
+  </xs:schema>

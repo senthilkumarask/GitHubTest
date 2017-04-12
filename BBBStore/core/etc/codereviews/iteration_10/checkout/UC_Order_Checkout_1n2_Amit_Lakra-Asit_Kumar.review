@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Order_Checkout_1n2_Amit_Lakra">
+  <ReviewIssue id="GX2B3HCY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:16:53:218 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:39:59:142 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="143">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why are we not setting IpAddress &amp; memeberId.  MemberId will come from Profile.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2B7AWS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:19:51:484 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 19:27:55:031 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="347">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Only add the adjustment whose pricing model is not null.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BM7HM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:31:26:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 19:40:18:383 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="268">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We can get the previousBalance from giftCard. will suggest to create two private method to populate each type of payment group.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BO6S1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:32:59:281 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:39:40:001 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="226">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>The ShippingGroup total will come from OrderPriceInfo</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BPAJG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:33:50:812 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 22:52:58:109 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="226">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Get surcharge from BBBShippingPriceInfo &amp; for adjustment take care of same logic that add adjustment if its from promotion</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed recharge &amp; adjustment</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BTF4U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:37:03:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:27:15:750 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="249">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>TODO after tax use case.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BTV1C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:37:24:000 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:01:00:700 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="247">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Gift Messaging should come from Shipping Group and GiftWrapCommerceItem</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BUJQ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:37:56:000 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:27:09:264 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="253">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is the tax amount for shipping fee, which will come from ShipPriceInfo once we do tax use case</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BVBZ5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:38:32:609 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:27:05:198 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="252">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is the rollup of tax for all items in that shipping group.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BWD1S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:39:20:656 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 23:06:57:650 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="338">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We need to set registryId only when its available and it should be there in BBBCommerceItem</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2BXP23">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:40:22:875 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:26:57:016 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="350">src/com/bbb/commerce/order/tibco/api/SubmitOrderMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to discuss the pricing structure, we are sending all the quantities and price, but we have to send only the quantity that is part of shipping group.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2C008F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:42:10:671 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:39:44:728 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="1">src/com/bbb/commerce/order/tibco/SubmitOrderVO.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Also pass Profile Object, we might need it for memberId or something or else we have to set memberId &amp; IPAddress in Order.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2C30EJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:44:30:859 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:39:33:761 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="1">src/com/bbb/ecommerce/order/BBBOrderTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>What is the substatus property &amp; I also like the batch approach that u did in FB can we do the same here</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Added batch processing to unsubmitted orders</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX2C4MCH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 03:45:45:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:38:50:101 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="55">src/com/bbb/ecommerce/order/BBBOrderTools.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Where are we using this method updateOrderSubstatus?</Summary>
+    <Description></Description>
+    <Annotation>Order substatus is used to track</Annotation>
+    <Revision>Substatus is used to track which orders failed TIBCO send and gets used by OrderSubmitScheduler. As per comment, I have made the  'substatus' property configurable</Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

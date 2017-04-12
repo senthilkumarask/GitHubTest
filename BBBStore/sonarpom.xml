@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.GEMINI-Dev-Sonar</groupId>
+<artifactId>GEMINI-Dev-Sonar</artifactId>
+<name>GEMINI-Dev-Sonar</name>
+<version>1.0</version>
+<build>
+	<plugins>
+	<plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-compiler-plugin</artifactId>
+	<configuration>
+	<source>1.6</source>
+	<target>1.6</target>
+	<excludes>
+	<exclude>**/*.*</exclude>
+	</excludes>
+	</configuration>
+	</plugin>
+	</plugins>
+	</build>
+<properties>
+<!--<sonar.dynamicAnalysis>false</sonar.dynamicAnalysis>
+<sonar.phase>generate-sources</sonar.phase>-->
+
+<sonar.sources>
+EStore/src/,REST/src,TBSSrc/src,TestMobileUnit/src,TestRest/src,TestStoreFront/src,TestStoreFrontUnit/src,TestVersioned/src,webservices/src
+</sonar.sources>
+<sonar.binaries>
+$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.webservices_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.TBSSrc_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.StoreRest_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.StoreRest.common_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.StoreFront_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.REST_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.EStore_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_atghome_slocallib,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.StoreRest.repositories_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.webservices_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.valuelink_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.oms_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.giftregistry_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.endeca_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.cybersource_slib_s,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.cybersource_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.CASIndex_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.core_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.tbsqas_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.qas_slib_sweblogic,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.qas_sclasses,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/_BBBStore.integration.idm_sclasses
+</sonar.binaries>
+<sonar.libraries>
+/local1/atg/atgapp/ATG11.1/DAS/lib/*.jar,/local1/atg/atgapp/ATG11.1/DAS-UI/lib/*.jar,/local1/atg/atgapp/ATG11.1/DPS/lib/*.jar,/local1/atg/atgapp/ATG11.1/DSS/lib/*.jar,/local1/atg/atgapp/ATG11.1/DCS/lib/*.jar,core/lib/*.jar,../Endeca/java_src/FCM/lib/*.jar,EStore/lib/*.jar,REST/lib/*.jar,TBSSrc/lib/*.jar,TestMobileUnit/lib/*.jar,TestRest/lib/*.jar,TestStoreFront/lib/*.jar,TestStoreFrontUnit/lib/*.jar,TestVersioned/lib/*.jar,webservices/lib/*.jar,$DEPLOYMENT_LOC/bbb_prod/${timestamp}/BBBStore.ear/atglib/*.jar
+</sonar.libraries>
+<sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+</properties>
+</project>

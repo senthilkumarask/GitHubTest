@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template
+PUBLIC "-//Art Technology Group, Inc.//DTD BCC Application Configuration //EN"
+"http://www.atg.com/dtds/application-configuration/application-configuration_1.0.dtd">
+<applications>
+<application id="editInventory">
+<resource-bundle>com.webui.WebAppResources</resource-bundle>
+<display-name-resource>editInventory.displayName</display-name-resource>
+<destination-page>
+<url>/AssetManager/assetManager.jsp</url>
+<query-parameter key="project" value="-1" />
+<query-parameter key="activity" value="editInventory" />
+</destination-page>
+<acl>Profile$role$epubAdmin:read;Profile$role$epubSuperAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read</acl>
+<initializer>
+</initializer>
+<sort-priority>30</sort-priority>
+<category>yourProjectExtras</category>
+</application>
+</applications>

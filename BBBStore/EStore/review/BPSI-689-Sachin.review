@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-689">
+  <ReviewIssue id="I7NBQ5TV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:44:08:515 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:44:11:901 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NBSPUI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:46:07:770 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:46:37:972 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="56">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused imports</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NBUX7X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:47:50:637 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:48:05:199 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="6092">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Update java doccomment</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NC1KVD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:53:01:225 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:54:04:312 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="6128">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use constant string in palce of string value.</Summary>
+    <Description>"isFromPendingTab" should be saved as constant string.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NCAVUU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:00:15:366 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:01:05:382 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="6273">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check for PMD and Findbug and fix high priority issue.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NCG3WX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:04:19:089 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:04:43:668 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="403">src/com/bbb/commerce/giftregistry/manager/GiftRegistryRecommendationManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use String Constants</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NCIY84">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:06:31:684 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 19:06:49:915 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="408">src/com/bbb/commerce/giftregistry/manager/GiftRegistryRecommendationManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add one liner comment</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

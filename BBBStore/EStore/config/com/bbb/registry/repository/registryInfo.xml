@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Get Registry Info Repository</name>
+		<author>Dhanashree Waghmare</author>
+		<version>1.0</version>
+	</header>                   
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--    Get Registry Info          -->
+  <!--        					     -->
+  <!--///////////////////////////////-->                                                  
+	 <item-descriptor name="registryInfo" display-name-resource="registryInfo" cache-mode="simple" display-property="registryNum">
+		<table name="REG_HEADERS" id-column-name="REGISTRY_NUM" type="primary">
+		<attribute name="tablePrefix" value="ECOMADMIN."/>  
+			<property name="registryNum" data-type="int" column-name="REGISTRY_NUM" />
+    		<property name="isPublic" column-name="IS_PUBLIC"  data-type="string"/>
+		</table>
+        </item-descriptor>
+        
+        
+       <!-- <item-descriptor name="regAddress" display-name-resource="regAddress" cache-mode="disabled" display-property="registryNum">    
+		<table name="REG_NAMES" type="primary" id-column-names="REGISTRY_NUM,NM_ADDR_NUM,NM_ADDR_TYPE">
+		<attribute name="tablePrefix" value="ECOMADMIN."/>
+    	<attribute name="metaDataSchemaPattern" value="ECOMADMIN"/>
+   		<attribute name="metaDataCatalogName" value="ECOMADMIN"/>
+	    <property name="registryNum" column-names="REGISTRY_NUM" data-type="int" />
+	    <property name="nameAddrNum" column-names="NM_ADDR_NUM" data-type="int" />
+	    <property name="nameAddrType" column-names="NM_ADDR_TYPE" data-type="string" />
+	    <property name="lastName" column-names="LAST_NM" data-type="string" />
+	    <property name="firstName" column-names="FIRST_NM" data-type="string" />
+	    <property name="address1" column-names="ADDR1" data-type="string" />
+	    <property name="address2" column-names="ADDR2" data-type="string" />
+	    <property name="city" column-names="CITY" data-type="string" />
+	    <property name="state" column-names="STATE_CD" data-type="string" />
+	    <property name="zipCode" column-names="ZIP_CD" data-type="string" />
+	    <property name="dayPhone" column-names="DAY_PHONE" data-type="string" />
+	    <property name="dayPhoneExt" column-names="DAY_PHONE_EXT" data-type="string" />
+	    <property name="evePhone" column-names="EVE_PHONE" data-type="string" />
+	    <property name="evePhoneExt" column-names="EVE_PHONE_EXT" data-type="string" />
+	    <property name="company" column-names="COMPANY" data-type="string" />
+	    <property name="asOfDate" column-names="AS_OF_DT" data-type="int" />
+	    <property name="emailId" column-names="EMAIL_ADDR" data-type="string" />
+	    <property name="actionCD" column-names="ACTION_CD" data-type="string"  />
+	    <property name="MI" column-names="MI" data-type="string"  />
+	    <property name="suffix" column-names="SUFFIX" data-type="string"  />
+	    <property name="maiden" column-names="MAIDEN" data-type="string" />
+	    <property name="atgProfileId" column-names="ATG_PROFILE_ID" data-type="string" />
+	    <property name="lastName2" column-names="LAST_NM2" data-type="string" />
+   		</table>
+   		</item-descriptor> -->
+   		
+   		<item-descriptor name="regDetail" display-name-resource="regDetail" cache-mode="distributedExternal" display-property="registryNum" item-cache-size="100000" item-expire-timeout="600000" query-expire-timeout="600000">
+   		<table name="REG_DETAILS" type="primary" id-column-names="REGISTRY_NUM,SKU">
+   		<attribute name="tablePrefix" value="ECOMADMIN."/>
+   		
+   		<property name="registryNum" column-names="REGISTRY_NUM" data-type="int" />
+   		<property name="skuId" column-names="SKU" data-type="int" />
+   		<property name="qtyRequested" column-names="QTY_REQUESTED" data-type="int" />
+   		<property name="qtyFulfilled" column-names="QTY_FULFILLED" data-type="int" />
+   		<property name="qtyWebPurchased" column-names="QTY_PURCH_RESRV" data-type="int" />
+   		<property name="actionCD" column-names="ACTION_CD" data-type="string"  />
+   		<property name="lastMaintained" column-names="LAST_MAINT_DT_TM" data-type="long"  />
+   		<property name="createTimestamp" column-names="CREATE_DT_TM" data-type="long"  />   
+   		<property name="rowId" column-names="ROWID" data-type="string"  />		
+   		</table>		
+   		
+		</item-descriptor>
+		
+		<item-descriptor name="regDetail2" display-name-resource="regDetail2" cache-mode="distributedExternal" display-property="registryNum" item-cache-size="100000"  item-expire-timeout="600000" query-expire-timeout="600000">
+   		<table name="REG_DETAILS2" type="primary" id-column-names="REGISTRY_NUM,SKU,REFERENCE_ID">
+		<attribute name="tablePrefix" value="ECOMADMIN."/>
+   		
+   		<property name="registryNum" column-names="REGISTRY_NUM" data-type="int" />
+   		<property name="skuId" column-names="SKU" data-type="int" />
+   		<property name="qtyRequested" column-names="QTY_REQUESTED" data-type="int" />
+   		<property name="qtyFulfilled" column-names="QTY_FULFILLED" data-type="int" />
+   		<property name="qtyWebPurchased" column-names="QTY_PURCH_RESRV" data-type="int" />
+   		<property name="actionCD" column-names="ACTION_CD" data-type="string"  />
+   		<property name="lastMaintained" column-names="LAST_MAINT_DT_TM" data-type="long"  />
+   		<property name="createTimestamp" column-names="CREATE_DT_TM" data-type="long"  />   		
+   		<property name="refId" column-names="REFERENCE_ID" data-type="string"  /> 	  		  		
+   		<property name="ltlDeliveryServices" column-names="LTL_DELIVERY_SERVICE" data-type="string"  />
+   		<property name="assemblySelected" column-names="ASSEMBLY_SELECTED" data-type="string"  />
+		<property name="personalizationCode" column-names="PERSONALIZATION_CODE" data-type="string"  />
+   		<property name="personalizationPrice" column-names="PERSONALIZATION_PRICE" data-type="double"  />
+   		<property name="personalizationDescription" column-names="PERSONALIZATION_DESCRIP" data-type="string"  />
+   		<property name="customizationPrice" column-names="CUSTOMIZATION_PRICE" data-type="double"  />
+   		<property name="imageUrl" column-names="IMAGE_URL" data-type="string"  />
+   		<property name="imageUrlThumb" column-names="IMAGE_URL_THUMB" data-type="string"  />
+   		<property name="mobImageUrl" column-names="MOB_IMAGE_URL" data-type="string"  />
+   		<property name="mobImageUrlThumb" column-names="MOB_IMAGE_URL_THUMB" data-type="string"  />
+   		<property name="itemType" column-names="ITEM_TYPE" data-type="string"  />
+   		<property name="rowId" column-names="ROWID" data-type="string"  />	
+   		</table>	
+   	
+		</item-descriptor>
+				
+
+	
+		<!-- latest changes -->
+		
+		 <item-descriptor name="regDetailOwner" display-name-resource="regDetail" cache-mode="distributedExternal" display-property="registryNum" item-cache-size="100000" item-expire-timeout="600000" query-expire-timeout="600000">
+   		<table name="REG_DETAILS" type="primary" id-column-names="REGISTRY_NUM,SKU">
+   		<attribute name="tablePrefix" value="ECOMADMIN."/>
+   		
+   		<property name="registryNum" column-names="REGISTRY_NUM" data-type="int" />
+   		<property name="skuId" column-names="SKU" data-type="int" />
+   		<property name="qtyRequested" column-names="QTY_REQUESTED" data-type="int" />
+   		<property name="qtyFulfilled" column-names="QTY_FULFILLED" data-type="int" />
+   		<property name="qtyWebPurchased" column-names="QTY_PURCH_RESRV" data-type="int" />
+   		<property name="actionCD" column-names="ACTION_CD" data-type="string"  />
+   		<property name="lastMaintained" column-names="LAST_MAINT_DT_TM" data-type="long"  />
+   		<property name="createTimestamp" column-names="CREATE_DT_TM" data-type="long"  />   
+   		<property name="rowId" column-names="ROWID" data-type="string"  />		
+   		</table>		
+   		
+		</item-descriptor>
+		
+		<item-descriptor name="regDetail2Owner" display-name-resource="regDetail2" cache-mode="distributedExternal" display-property="registryNum" item-cache-size="100000" item-expire-timeout="600000" query-expire-timeout="600000">
+   		<table name="REG_DETAILS2" type="primary" id-column-names="REGISTRY_NUM,SKU,REFERENCE_ID">
+		<attribute name="tablePrefix" value="ECOMADMIN."/>
+   		
+   		<property name="registryNum" column-names="REGISTRY_NUM" data-type="int" />
+   		<property name="skuId" column-names="SKU" data-type="int" />
+   		<property name="qtyRequested" column-names="QTY_REQUESTED" data-type="int" />
+   		<property name="qtyFulfilled" column-names="QTY_FULFILLED" data-type="int" />
+   		<property name="qtyWebPurchased" column-names="QTY_PURCH_RESRV" data-type="int" />
+   		<property name="actionCD" column-names="ACTION_CD" data-type="string"  />
+   		<property name="lastMaintained" column-names="LAST_MAINT_DT_TM" data-type="long"  />
+   		<property name="createTimestamp" column-names="CREATE_DT_TM" data-type="long"  />   		
+   		<property name="refId" column-names="REFERENCE_ID" data-type="string"  /> 	  		  		
+   		<property name="ltlDeliveryServices" column-names="LTL_DELIVERY_SERVICE" data-type="string"  />
+   		<property name="assemblySelected" column-names="ASSEMBLY_SELECTED" data-type="string"  />
+		<property name="personalizationCode" column-names="PERSONALIZATION_CODE" data-type="string"  />
+   		<property name="personalizationPrice" column-names="PERSONALIZATION_PRICE" data-type="double"  />
+   		<property name="personalizationDescription" column-names="PERSONALIZATION_DESCRIP" data-type="string"  />
+   		<property name="customizationPrice" column-names="CUSTOMIZATION_PRICE" data-type="double"  />
+   		<property name="imageUrl" column-names="IMAGE_URL" data-type="string"  />
+   		<property name="imageUrlThumb" column-names="IMAGE_URL_THUMB" data-type="string"  />
+   		<property name="mobImageUrl" column-names="MOB_IMAGE_URL" data-type="string"  />
+   		<property name="mobImageUrlThumb" column-names="MOB_IMAGE_URL_THUMB" data-type="string"  />
+   		<property name="itemType" column-names="ITEM_TYPE" data-type="string"  />
+   		<property name="rowId" column-names="ROWID" data-type="string"  />	
+   		</table>	
+   	
+		</item-descriptor>
+		
+		<!-- latest changes -->
+		
+</gsa-template>

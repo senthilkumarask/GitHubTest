@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestGetRegistryListForProfile">
+		<group id="testGetRegistryListForProfile">
+			<test id="testRegByProfileID">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="login" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					
+					</objs>
+
+	        			 
+			</test>
+		</group>
+		<group id="testGetRegistryListForProfileError">
+			<test id="testRegByNonLoggedIn">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

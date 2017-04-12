@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="COUNTRYCURRENCY_220514">
+  <ReviewIssue id="HVHYOS6J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 16:43:50:251 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 17:18:00:271 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>njain3</ReviewerId>
+    <AssignedTo>skumari</AssignedTo>
+    <File line="24">src/com/bbb/internationalShipping/droplet/InternationalShippingCheckoutDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>remove unused imports</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVHYPXMI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 16:44:43:962 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 17:15:00:541 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>njain3</ReviewerId>
+    <AssignedTo>skumari</AssignedTo>
+    <File line="76">src/com/bbb/internationalShipping/droplet/InternationalShippingCheckoutDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>add java docs for the serice method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVHYST42">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 16:46:58:082 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 17:13:33:639 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>njain3</ReviewerId>
+    <AssignedTo>skumari</AssignedTo>
+    <File line="281">src/com/bbb/internationalShipping/utils/InternationaShippingCheckoutHelper.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>no  hard coding</Summary>
+    <Description>use default country code variable instaed of hard coding the country code</Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

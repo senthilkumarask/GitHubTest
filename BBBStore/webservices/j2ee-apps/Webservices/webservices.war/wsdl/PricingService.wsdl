@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:ns="http://bedbathandbeyond.com/atg" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://atg.bedbathandbeyond.com/interfaces/PricingService/v1/PricingService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://atg.bedbathandbeyond.com/interfaces/PricingService/v1/PricingService.wsdl">
+	<wsdl:types>
+		<xsd:schema elementFormDefault="qualified" targetNamespace="http://atg.bedbathandbeyond.com/interfaces/PricingService/v1/PricingService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://bedbathandbeyond.com/atg" schemaLocation="schema/bbb-pricing.xsd"/>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="PerformPricingRequest">
+		<wsdl:part name="request" element="ns:pricingRequest"/>
+	</wsdl:message>
+	<wsdl:message name="PerformPricingResponse">
+		<wsdl:part name="response" element="ns:pricingResponse"/>
+	</wsdl:message>
+	<wsdl:message name="SoapFault">
+		<wsdl:part name="error" element="ns:pricingError"/>
+	</wsdl:message>
+	<wsdl:portType name="PricingServicePortType">
+		<wsdl:operation name="performPricing">
+			<wsdl:input message="tns:PerformPricingRequest"/>
+			<wsdl:output message="tns:PerformPricingResponse"/>
+			<wsdl:fault name="fault" message="tns:SoapFault"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="PricingServiceBinding" type="tns:PricingServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="performPricing">
+			<soap:operation soapAction="performPricingOperation"/>
+			<wsdl:input>
+				<soap:body parts="request" use="literal" message="tns:PerformPricingRequest"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="response" use="literal" message="tns:PerformPricingResponse"/>
+			</wsdl:output>
+			<wsdl:fault name="fault">
+				<soap:fault name="fault" use="literal"/>
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="PricingService">
+		<wsdl:port name="PricingServicePort" binding="tns:PricingServiceBinding">
+			<soap:address location="http://localhost/webservices/services/PricingService"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="shipping_charges_29Nov11">
+  <ReviewIssue id="GVLXUBII">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:11:49:578 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:40:47:960 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="75">src/com/bbb/commerce/pricing/calculator/SubTotalRangeCalculator.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add Performance Logger</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>I don't see PerformanceLogger in this class, where are we adding it.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLYOHDN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:35:16:859 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 15:21:25:093 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="1">config/atg/commerce/pricing/ShippingPricingEngine.properties</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Since these are custom calculators, these should be in /bbb/... config path not in /atg/...</Summary>
+    <Description>Sunil: Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLYRKZ0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:37:41:484 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:35:33:328 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="12">config/atg/commerce/order/purchase/PurchaseProcessHelper.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>modifyOrderPricingOp &amp; deleteItemsFromOrderPricingOp is part of CartModifierFormHandler</Summary>
+    <Description>Sunil: modifyOrderPricingOp &amp; deleteItemsFromOrderPricingOp are also part of PurchaseProcessHelper component, so we need to update it here also like we did for addItemToOrderPricingOp.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLYT826">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:38:58:062 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 15:20:37:906 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="3">config/atg/commerce/order/processor/SavePriceInfoObjects.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>it should be savedProperties+= to add to initial list</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLYTZK7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:39:33:703 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 15:20:32:375 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="5">config/atg/commerce/order/processor/LoadPriceInfoObjects.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>it should be loadProperties+= to add to initial list</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVLZ08IQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 01:44:25:250 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:40:39:353 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="44">src/com/bbb/commerce/pricing/calculator/PostAdjustmentCalculator.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add isLoggingDebug before logDebug</Summary>
+    <Description>We should add more debug statements</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM4UXB8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:28:15:140 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:31:33:062 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="48">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The amount should be based on CISG relationship, not the entire item price.</Summary>
+    <Description>Suppose we have Item A with Qty 3 into 2 SG. SG1 with qty 1 and SG2 with qty 2, then we have to get the price only for qty 1in SG1 and for qty 2 in SG2, with the current logic, it will be for qty3 for both SG. ShippingGroupManager has a method to get the price based on CommerceItemShippingGroup relationship.</Description>
+    <Annotation></Annotation>
+    <Revision>The getAmount method in SGCIRelationShip class always returns 0, we can't use this method. We have to use getShipItemRelPriceTotal(rel, "amount") method.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM4Y5NL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:30:45:921 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 09:26:18:067 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="48">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We have to exlude GiftWrapCommerceItem</Summary>
+    <Description>Sunil: we do not have GiftWrapCommerceItem in order repository, so it needs discussion before we close it.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM4YSF1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:31:15:421 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 15:18:00:593 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="66">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The quantity should be from CI relationship not from Item.</Summary>
+    <Description>Sunil: Done, please validate it.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM4ZCAB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:31:41:171 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:38:57:808 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="178">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We shouldn't catch the exception, let it throw to calculator and let it catch there and throw PricingException</Summary>
+    <Description>Sunil: these exceptions are thrown by the CatalogTools class, so we are catching these exceptions. Theare are not the OOTB pricing exceptions.</Description>
+    <Annotation></Annotation>
+    <Revision>Need to do the throw the pricing exception or let it throw BBBExceptions at line # 118 &amp; 122 catch block</Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM59NY3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:39:42:843 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:27:47:859 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="34">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to check the scope of SiteContext, I think its session scope component. We should get the siteId from Order object, not from SiteContext</Summary>
+    <Description>Sunil: Need to discuss this before we close this item.</Description>
+    <Annotation></Annotation>
+    <Revision>Removed the getter setter also</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVM5BJMA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-30 :: 04:41:10:546 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 15:35:03:354 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>asit</AssignedTo>
+    <File line="27">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>You should check if SH.shippingAddress is null or not before calling getState.</Summary>
+    <Description>Sunil: Done
+Asit: The check is removed now.
+The line 75, should go before for loop. and it should be like this.
+
+String state = null;
+if(hardgoodShippingGroup.getShippingAddress() != null) {
+     state = hardgoodShippingGroup.getShippingAddress().getState();
+}
+
+Same needs to be done for line# 160 - 162, which should be moved above for loop line #155 and changed as above</Description>
+    <Annotation></Annotation>
+    <Revision>If the shipping Address is null, which will happen from cart page, then we have to pass null for state, we should still call the API to get teh shippingAmount.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPY73AZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 20:32:50:171 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:26:11:593 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="1">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We should pass ShippingMethod to catalog API to decide if the surcharge is applicable to that method or not.</Summary>
+    <Description>If the item is free shipped for the given method, surcharge will not be calculated for the
+given methods.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVWPYO61">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:16:43:609 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:17:22:562 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="146">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Not null check of hardgoodShippingGroup</Summary>
+    <Description>If hardgoodShippingGroup is nul,l throw a pricingException</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVWQ5H1K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:22:00:968 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:37:40:270 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="151">src/com/bbb/commerce/pricing/BBBPricingTools.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Exception message should be clear. and no need to throw exception for shippingPriceInfo null</Summary>
+    <Description>This method is not responsible for setting the surcharge in shippingPriceInfo. So even if shipping price info is null, you should return the surcharge amount.</Description>
+    <Annotation></Annotation>
+    <Revision>code was removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVWRK7GV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 15:01:28:015 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 15:02:56:437 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="105">src/com/bbb/commerce/pricing/calculator/SubTotalRangeCalculator.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>No need to catch the pricingexception</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVZLSAVX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:43:06:525 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:44:29:374 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="87">src/com/bbb/commerce/pricing/calculator/SubTotalRangeCalculator.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Be consistent in reading the SiteId, either from Order or SiteContextManager, Lets we all use Order.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

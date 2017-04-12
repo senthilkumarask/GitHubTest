@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSubscriptionFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestSubscriptionFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.formhandler.TestSubscriptionFormHandler">
+		<group id="testHandleSubscribe">
+			<test id="testHandleSubscribe_test">
+				<objs>
+					<obj id="subscriptionFormHandler" type="com.bbb.selfservice.formhandler.SubscriptionFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestSubscriptionFormHandler">
+						<item type="string">/com/bbb/selfservice/SubscriptionFormHandler</item>
+					</obj>
+					
+					<obj id="emailAddr" type="String">test@sapient.com</obj>
+					<obj id="confirmEmailAddr" type="String">test@sapient.com</obj>
+					<obj id="firstName" type="String">Jon</obj>
+					<obj id="lastName" type="String">Steve</obj>
+					<obj id="addressLine1" type="String">address 1</obj>
+					<obj id="addressLine2" type="String">address 2</obj>
+					<obj id="city" type="String">oakland</obj>
+					<obj id="mobileNumber" type="String">9865231478</obj>
+					<obj id="zipcode" type="String">01435</obj>
+					<obj id="phoneNumber" type="String">9865231478</obj>
+					<obj id="emailOffer" type="Boolean">true</obj>
+					<obj id="mobileOffer" type="Boolean">true</obj>
+					<obj id="directMailOffer" type="Boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testHandleUnSubscribeEmail">
+			<test id="testHandleUnSubscribeEmail_test">
+				<objs>
+					<obj id="subscriptionFormHandler" type="com.bbb.selfservice.formhandler.SubscriptionFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestSubscriptionFormHandler">
+						<item type="string">/com/bbb/selfservice/SubscriptionFormHandler</item>
+					</obj>
+					<obj id="emailAddr" type="String">test@sapient.com</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testHandleUnSubscribeDirectMail">
+			<test id="testHandleUnSubscribeDirectMail_test">
+				<objs>
+					<obj id="subscriptionFormHandler" type="com.bbb.selfservice.formhandler.SubscriptionFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestSubscriptionFormHandler">
+						<item type="string">/com/bbb/selfservice/SubscriptionFormHandler</item>
+					</obj>
+					<obj id="emailAddr" type="String">test@sapient.com</obj>
+					<obj id="firstName" type="String">Jon</obj>
+					<obj id="lastName" type="String">Steve</obj>
+					<obj id="addressLine1" type="String">address 1</obj>
+					<obj id="addressLine2" type="String">address 2</obj>
+					<obj id="city" type="String">oakland</obj>
+					<obj id="mobileNumber" type="String">9865231478</obj>
+					<obj id="zipcode" type="String">01435</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testHandleRequestInfo">
+			<test id="testHandleRequestInfo_test">
+				<objs>
+					<obj id="subscriptionFormHandler" type="com.bbb.selfservice.formhandler.SubscriptionFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestSubscriptionFormHandler">
+						<item type="string">/com/bbb/selfservice/SubscriptionFormHandler</item>
+					</obj>
+					<obj id="emailAddr" type="String">test@sapient.com</obj>
+					<obj id="confirmEmailAddr" type="String">test@sapient.com</obj>
+					<obj id="firstName" type="String">Jon</obj>
+					<obj id="lastName" type="String">Steve</obj>
+					<obj id="addressLine1" type="String">address 1</obj>
+					<obj id="addressLine2" type="String">address 2</obj>
+					<obj id="city" type="String">oakland</obj>
+					<obj id="mobileNumber" type="String">9865231478</obj>
+					<obj id="zipcode" type="String">01435</obj>
+					<obj id="phoneNumber" type="String">9865231478</obj>
+					<obj id="emailOffer" type="Boolean">true</obj>
+					<obj id="mobileOffer" type="Boolean">true</obj>
+					<obj id="directMailOffer" type="Boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

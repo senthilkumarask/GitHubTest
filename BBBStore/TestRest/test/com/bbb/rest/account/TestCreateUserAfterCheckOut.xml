@@ -1,0 +1,418 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddShippingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddShippingAddress.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.account.TestCreateUserAfterCheckOut">
+
+			
+		<group id="testCreateUserWhenEmailIsAlreadyRegistered">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="confirmPassword" type="string">Test@123</obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testCreateUserInvalidPassword">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string">password</obj>
+					<obj id="confirmPassword" type="string">password</obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+			
+			
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string"></obj>
+					<obj id="confirmPassword" type="string"></obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+			
+			
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="confirmPassword" type="string"></obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+			
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="confirmPassword" type="string">test123</obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testCreateUserAfterCheckOut">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">test_rest3@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveprofileflag" type="boolean">true</obj>
+					<obj id="isOrderAmtCoveredByGC" type="string">false</obj>
+					<obj id="selectedcreditcardid" type="string">NEW</obj>
+					<obj id="cardverificationnumber" type="string">123</obj>
+					<obj id="cardtype" type="string">Visa</obj>
+					<obj id="expirationmonth" type="string">06</obj>
+					<obj id="expirationyear" type="string">2024</obj>
+					<obj id="nameoncard" type="string">HDFC CR</obj>
+					<obj id="cardnumber" type="String">4111111111111111</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="sfirstName" type="string">tester</obj>
+					<obj id="slastName" type="string">tester</obj>
+					<obj id="scompanyName" type="string">company</obj>
+					<obj id="saddress1" type="string">add1</obj>
+					<obj id="saddress2" type="string">add2</obj>
+					<obj id="scity" type="string">col</obj>
+					<obj id="sstate" type="string">AL</obj>
+					<obj id="scountry" type="string">US</obj>
+					<obj id="spostalCode" type="string">89354</obj>
+					<obj id="nickname" type="String">Address##0</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="commitOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/commitOrderAPI</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="paymentGroupFormHandler" type="string">/rest/bean//atg/commerce/order/purchase/PaymentGroupFormHandler/addCreditCardToOrder</obj>
+					<obj id="removeAddressInProfileRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/removeAddressAPI</obj>
+					
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="confirmPassword" type="string">Test@123</obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		
+		
+		<group id="testCreateUserInvalidOrderCheckout">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+
+					<obj id="email" type="string">test_rest3@bbb.com</obj>
+				
+					
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="confirmPassword" type="string">Test@123</obj>
+							<obj id="emailOptIn" type="boolean">true</obj>
+						<obj id="sharedCheckBoxEnabled" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!-- 
+	Copyright 2011, BBB All Rights Reserved.
+	Reproduction or use of this	file without express written consent is prohibited. 
+	FILE: TestBazaarVoiceSchedulerJob.xml 
+	DESCRIPTION: ddtunit data file for TestBazaarVoiceSchedulerJob.java test case HISTORY: 
+	Jan 25, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.integration.BazaarVoice.TestBazaarVoiceSchedulerJob">
+		<group id="testBazaarVoiceSchedulerJob">
+		   <test id="testBazaarVoiceSchedulerJob">
+				<objs>
+					<obj id="bazaarVoiceSchedulerJob" type="com.bbb.commerce.catalog.BazaarVoiceSchedulerJob"
+						hint="call" method="resolveName" calltype="com.bbb.integration.BazaarVoice.TestBazaarVoiceSchedulerJob">
+						<item type="string">/com/bbb/commerce/catalog/BazaarVoiceSchedulerJob</item>
+					</obj>
+					<obj id="manager" type="com.bbb.commerce.catalog.BazaarVoiceManager"
+						hint="call" method="resolveName" calltype="com.bbb.integration.BazaarVoice.TestBazaarVoiceSchedulerJob">
+						<item type="string">/com/bbb/commerce/catalog/BazaarVoiceManager</item>
+					</obj>
+					<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogTools"
+						hint="call" method="resolveName" calltype="com.bbb.integration.BazaarVoice.TestBazaarVoiceSchedulerJob">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+			       <obj id="id" type="String">BBB11079100</obj>
+			        <obj id="averageOverallRating" type="Float">3.5</obj>
+					<obj id="totalReviewCount" type="Integer">10</obj>
+					<obj id="externalId" type="String">BBB11079100</obj>
+					<obj id="siteId" type="String">BedBathCanada</obj>
+				</objs>
+				<asserts>
+					<assert id="averageOverallRatingTest" type="java.lang.Float" action="isEqual">3.5</assert>
+					<assert id="totalReviewCountTest" type="java.lang.Integer" action="isEqual">10</assert> 
+					<assert id="externalIdTest" type="java.lang.String" action="isEqual">BBB11079100</assert>
+					<assert id="siteIdTest" type="java.lang.String" action="isEqual">BedBathCanada</assert>
+				</asserts>
+			</test>
+		</group>
+  </cluster>
+</ddtunit>

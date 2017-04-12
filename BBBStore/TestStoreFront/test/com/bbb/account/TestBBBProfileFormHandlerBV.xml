@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBProfileFormHandlerBV">
+        <group id="testCheckUserTokenBVRR">
+        <test id="testBazaarVoice_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandlerBV">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="siteContextManager"
+						type="com.bbb.account.TestBBBProfileFormHandlerBV"
+						hint="call" method="resolveName"
+						calltype="com.bbb.account.TestBBBProfileFormHandlerBV">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>
+	    </test>
+      </group>
+      
+    </cluster>
+</ddtunit>

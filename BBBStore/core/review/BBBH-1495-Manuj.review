@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1495">
+  <ReviewIssue id="ILXHATXH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-18 :: 14:33:45:413 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-21 :: 16:24:00:079 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File></File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Cdore review comments</Summary>
+    <Description>Add the repository in initial.properties file
+Add the layering for the same in BBBStore.CacheExternal module.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="CentralizedConfiguration">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="1" ref="config" />
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="defaultCategories" />
+			</xs:sequence>
+			 <xs:attribute name="type" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="config">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="key" type="xs:string"></xs:element>
+				<xs:element name="value" type="xs:string"></xs:element>
+				<xs:element name="theme" type="xs:string" minOccurs="0"
+					maxOccurs="1"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="defaultCategories">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="category" minOccurs="1" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="category">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="theme" type="xs:string"></xs:element>
+				<xs:element name="name" type="xs:string"></xs:element>
+				<xs:element name="id" type="xs:string"></xs:element>
+				<xs:element name="defaultCategory" type="xs:string"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

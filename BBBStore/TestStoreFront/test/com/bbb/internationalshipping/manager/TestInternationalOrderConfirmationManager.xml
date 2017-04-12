@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestInternationalOrderXmlRepoTools.xml 
+	DESCRIPTION: ddtunit data file for TestInternationalOrderXmlRepoTools.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.manager.TestInternationalOrderConfirmationManager">
+	
+	<!-- testCreateDSOrderId -->
+	
+	<group id="testOrderConfirmation">
+        <test id="test1">
+			<objs>
+				<obj id="internationalOrderConfirmationManager" type="com.bbb.internationalshipping.manager.InternationalOrderConfirmationManager" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.manager.TestInternationalOrderConfirmationManager">
+					<item type="string">/com/bbb/internationalshipping/manager/InternationalOrderConfirmationManager</item>
+				</obj>
+				<obj id="merchantOrderId" type="string">
+					BBB3000273036
+				</obj>
+				<obj id="orderId" type="string">
+					E4X001000260942
+				</obj>
+			</objs>      
+        </test>
+      </group>
+	</cluster>
+</ddtunit>
+ 

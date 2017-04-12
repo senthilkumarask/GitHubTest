@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestInternationalOrderXmlRepoTools.xml 
+	DESCRIPTION: ddtunit data file for TestInternationalOrderXmlRepoTools.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.utils.TestInternationalOrderXmlRepoTools">
+	
+	<!-- testAddOrderXml -->
+	
+	<group id="testAddOrderXml">
+        <test id="test1">
+			<objs>
+				<obj id="internationalOrderXmlRepoTools" type="com.bbb.internationalshipping.utils.InternationalOrderXmlRepoTools" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.utils.TestInternationalOrderXmlRepoTools">
+					<item type="string">/com/bbb/internationalshipping/utils/InternationalOrderXmlRepoTools</item>
+				</obj>
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName"
+				 calltype="com.bbb.internationalshipping.order.TestBBBInternationalOrder">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+				<obj id="orderId2" type="string">1234567890</obj>
+				<obj id="E4XOrderId" type="string">4321621234</obj>
+				<obj id="orderXML" type="string">Order Xml</obj>
+				<obj id="countryCode" type="string">IN</obj>
+				<obj id="currencyCode" type="string">INR</obj>
+			</objs>      
+        </test>
+      </group>
+      
+
+	</cluster>
+</ddtunit>
+ 

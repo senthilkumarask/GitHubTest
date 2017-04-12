@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_reclaim_legacy1_dec22_2011">
+  <ReviewIssue id="GWHQN0CW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 17:48:48:848 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 17:49:03:127 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>V_Nalini</AssignedTo>
+    <File line="1">src/com/bbb/account/VerifyAccountMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

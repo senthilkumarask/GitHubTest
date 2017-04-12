@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_checkout_billing_manohar">
+  <ReviewIssue id="GWECIBF2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:49:56:750 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:50:27:485 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="17">j2ee-apps/BBBStore/store.war/checkout/billing/billing.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Duplicate dsp page tags, remove commented out lines</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWECK5CC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:51:22:188 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:52:05:817 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="23">j2ee-apps/BBBStore/store.war/checkout/billing/billingForm.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Use a label here.</Summary>
+    <Description>"Your billing address must match the address on your credit
+                        	card statement or your credit card may be declined." This text should be label coming from cms</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWECN0AQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:53:35:618 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:54:06:580 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="6">j2ee-apps/BBBStore/store.war/checkout/billing/addNewBillingAddress.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>use label tag</Summary>
+    <Description>Select an address to ship order to: This should be label coming from cms</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWECTZ0M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:59:00:550 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 08:59:34:534 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="172">j2ee-apps/BBBStore/store.war/checkout/billing/addNewBillingAddress.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>the states should come from catalogutils</Summary>
+    <Description>&lt;dsp:select id="stateName", options should be populated from states returned by catalogutils</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEH6KP5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 11:00:46:985 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 11:02:25:747 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="60">j2ee-apps/BBBStore/store.war/checkout/billing/couponInfoForBilling.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>name fields are removed from the dsp:input tags.</Summary>
+    <Description>The name fields help the javascript to do the front end validations. Please add the name fields as in html to evey dsp:input tags. This will apply the front javascript validations</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEH9Q6V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 11:03:14:071 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 11:06:50:560 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/checkout/billing/couponInfoForBilling.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>all static content is hard code.</Summary>
+    <Description>please add labels for all static code. the labels should be added to the xcel file placed here https://mia.sapient.resultspace.com/scm/Discovery/trunk/Development/Dependencies/CMS_LABELS_LIST.xlsx the list of key and values are already checked in content lineation document in the ADD folder</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

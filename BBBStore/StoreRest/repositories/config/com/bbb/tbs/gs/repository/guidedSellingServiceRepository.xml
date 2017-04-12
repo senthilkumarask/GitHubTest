@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>BBB Guided Selling Service Repository </name>
+        <author></author>
+    </header>
+
+    <item-descriptor name="gsOrderInfo" item-cache-size="500">
+        <table name="tbs_gs_order_info" type="primary" id-column-name="gsorder_id">
+            <property name="gsorderId"      column-name="gsorder_id"        data-type="string"      display-name-resource="gsorderId"   required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="userToken"      column-name="user_token"        data-type="string"      display-name-resource="userToken">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="storeID"        column-name="store_id"          data-type="int"         display-name-resource="storeID">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="terminalId"     column-name="terminal_id"       data-type="int"         display-name-resource="terminalId">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="reLastNm"       column-name="re_last_nm"        data-type="string"      display-name-resource="reLastNm">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="reFirstNm"      column-name="re_first_nm"       data-type="string"      display-name-resource="reFirstNm">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="reEmail"        column-name="re_email"          data-type="string"      display-name-resource="reEmail">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="rePhone"        column-name="re_phone"          data-type="string"      display-name-resource="rePhone">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="skus"           column-name="skus"              data-type="string"      display-name-resource="skus"        required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="quantities"     column-name="quantities"        data-type="string"      display-name-resource="quantities"  required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="registryID"     column-name="registry_id"       data-type="string"      display-name-resource="registryID">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+            <property name="atgOrderId"     column-name="atg_order_id"       data-type="string"      display-name-resource="atgOrderId">
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+        </table>
+    </item-descriptor>
+</gsa-template>

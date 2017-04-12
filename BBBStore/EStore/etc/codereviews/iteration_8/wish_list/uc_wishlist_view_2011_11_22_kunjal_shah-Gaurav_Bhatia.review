@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_wishlist_view_2011_11_22_kunjal_shah">
+  <ReviewIssue id="GVDSH88J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 18:49:31:315 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 18:50:23:111 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="1">src/com/bbb/wishlist/BBBWishlistSiteFilterDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>wishlist.giftlistItems OOB code should filter based on site. </Summary>
+    <Description>wishlist.giftlistItems should filter based on site. PLease sync with me for this comment</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

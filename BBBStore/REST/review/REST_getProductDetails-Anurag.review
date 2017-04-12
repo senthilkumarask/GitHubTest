@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="REST_getProductDetails">
+  <ReviewIssue id="H9F8TI6S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:30:36:820 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:31:10:375 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Anurag</ReviewerId>
+    <AssignedTo>Anurag</AssignedTo>
+    <File line="52">src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>In case of Exception call super method with input VO only</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="H9F8ZL1R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:35:20:463 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:37:48:398 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Anurag</ReviewerId>
+    <AssignedTo>Anurag</AssignedTo>
+    <File line="44">src/com/bbb/rest/framework/BBBJSONOutputCustomizer.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>ServiceClassMap needs to be resolved based on client id and input type passes</Summary>
+    <Description>Change map definition such that key includes combination of following
+service name
+client id
+input type passed.
+
+Client id can be defaulted to Mobile 
+input type can be defaulted to 0 (get all data back) (in case nothing is passed from client. Change service input definition to pass this type as well)
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

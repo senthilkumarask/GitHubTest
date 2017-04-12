@@ -1,0 +1,83 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2013, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestStaticContent.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Jan 10, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.stofu.TestContentTemplateManager">
+	
+		<group id="testContentTemplateDataSuccess">
+			 <test id="test_template_data">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="templateName" type="string">ideaBookStyle</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getContent</obj>
+				</objs>
+			</test>			
+		</group>	
+		<group id="testContentTemplateNotExistErr">
+			 <test id="test_template_notexist">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="templateName" type="string">landing</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getContent</obj>
+				</objs>
+			</test>			
+		</group>
+	<!-- 	<group id="testContentTemplateMissingErr">
+			 <test id="test_template_arg_missing">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getContent</obj>
+				</objs>
+			</test>			
+		</group>	 -->
+		<group id="testRegistryContentTemplateDataSuccess">
+			 <test id="test_registry_template_data">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="templateName" type="string">RegistrantTemplate</obj>
+					<obj id="requestJSON" type="string">{"registryType":"Baby","registryURL":"</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getRegistrantContent</obj>
+				</objs>
+			</test>			
+		</group>	
+		<group id="testRecommenderContentTemplateDataSuccess">
+			 <test id="test_recommender_template_data">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="templateName" type="string">RecommenderTemplate</obj>
+					<obj id="requestJSON" type="string">{"registryType":"Baby","recommenderURL":"/store/account/login.jsp","logInURL":"/store/account/login.jsp","visibilityFlag":"visible","tokenError":" ","tokenErrorLogin":" "}</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getRegistrantContent</obj>
+				</objs>
+			</test>			
+		</group>
+		<group id="testRegistryContentTemplateNotExistErr">
+			 <test id="test_template_notexist">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="templateName" type="string">landing</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/cms/manager/ContentTemplateManager/getRegistrantContent</obj>
+				</objs>
+			</test>			
+		</group>
+		</cluster>
+</ddtunit>

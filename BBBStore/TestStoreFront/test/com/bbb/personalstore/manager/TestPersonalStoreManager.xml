@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.personalstore.manager.TestPersonalStoreManager">
+		<group id="testLastBoughtCookie">
+			<test id="test1">
+				<objs>
+					<obj id="TestPersonalStoreManager"
+						type="com.bbb.personalstore.manager.TestPersonalStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.manager.TestPersonalStoreManager">
+						<item type="string">/com/bbb/personalstore/manager/PersonalStoreManager</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="productId" type="string">
+						prod60011
+					</obj>
+					<obj id="invalidSkuId" type="string">
+						sku1122
+					</obj>
+					<obj id="skuId" type="string">
+						sku40041
+					</obj>
+					<obj id="invalidStoreId" type="string">
+						1111
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

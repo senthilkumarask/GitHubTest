@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddShippingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddRemoveGiftMessage.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestAddRemoveGiftMessage">
+	
+	
+		<group id="testRemoveGiftMessagesLoggedInFlow">
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="addRemoveGiftMessage" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/saveGiftInfoToOrder</obj>
+					<obj id="login" type="string">testaddGift@mob.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapFlag1" type="string">false</obj>
+					<obj id="giftMessage1" type="string"></obj>
+					<obj id="giftWrapFlag2" type="string">false</obj>
+					<obj id="giftWrapPackFlag1" type="string">false</obj>
+					<obj id="giftWrapPackFlag2" type="string">false</obj>
+					<obj id="giftMessage2" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testAddGiftMessagesLoggedInFlow">
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="addRemoveGiftMessage" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/saveGiftInfoToOrder</obj>
+					<obj id="login" type="string">testaddGift@mob.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapFlag1" type="string">true</obj>
+					<obj id="giftMessage1" type="string">Helloo</obj>
+					
+					<obj id="giftWrapFlag2" type="string">true</obj>
+					<obj id="giftWrapPackFlag1" type="string">true</obj>
+					<obj id="giftWrapPackFlag2" type="string">true</obj>
+					<obj id="giftMessage2" type="string">Hiii</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testAddGiftMessageTransientUser">
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="addRemoveGiftMessage" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/saveGiftInfoToOrder</obj>
+					<obj id="login" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapFlag1" type="string">true</obj>
+					<obj id="giftMessage1" type="string">Helloo</obj>
+					<obj id="giftWrapFlag2" type="string">true</obj>
+					<obj id="giftWrapPackFlag1" type="string">true</obj>
+					<obj id="giftMessage2" type="string">Hiii</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGiftWrapSKUTransientUser">
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="addRemoveGiftMessage" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/saveGiftInfoToOrder</obj>
+					<obj id="login" type="string">testaddGift@mob.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapFlag1" type="string">true</obj>
+					<obj id="giftMessage1" type="string">Helloo</obj>
+					<obj id="giftWrapFlag2" type="string">true</obj>
+					<obj id="giftWrapPackFlag1" type="string">false</obj>
+					<obj id="giftWrapPackFlag2" type="string">false</obj>
+					<obj id="giftMessage2" type="string">Hiii</obj>
+					<obj id="getWrapSkuDetails" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getGiftWrapSKUDetails</obj>
+				</objs>
+			</test>
+		</group>
+		
+		
+		
+		<group id="testAddRemoveGiftMessagesFailure">
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="addRemoveGiftMessage" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/saveGiftInfoToOrder</obj>
+					<obj id="login" type="string">testaddGift@mob.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapFlag1" type="string">true</obj>
+					<obj id="giftMessage1" type="string">Helloo</obj>
+					<obj id="giftWrapPackFlag1" type="string">false</obj>
+					<obj id="giftWrapPackFlag2" type="string">false</obj>
+					<obj id="giftWrapFlag2" type="string">true</obj>
+					<obj id="giftMessage2" type="string">Hiii</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

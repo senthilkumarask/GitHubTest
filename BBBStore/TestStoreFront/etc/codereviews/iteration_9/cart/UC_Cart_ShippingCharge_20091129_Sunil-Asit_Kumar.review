@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_ShippingCharge_20091129_Sunil">
+  <ReviewIssue id="GVPH7HEG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:37:14:968 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 12:38:02:937 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="115">test/com/bbb/commerce/pricing/droplet/TestBBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need more scenarios</Summary>
+    <Description>1.	Shipping charge when only Gift Card is purchased.
+2.	Shipping charge when both Gift card and other items are purchased.
+3.	Scenario for Surcharge, with Items having Free Shipping Methods
+4.	Shipping Charge when there is a global FREE Shipping promotion</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

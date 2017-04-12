@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_796_Last bought cookie implementation_2014_11_03">
+  <ReviewIssue id="I245SMHG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-05 :: 09:31:56:692 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-05 :: 09:32:34:213 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Rachit Jain</AssignedTo>
+    <File line="1145">src/com/bbb/commerce/checkout/formhandler/BBBCommitOrderFormHandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add logDebug for method start and end.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

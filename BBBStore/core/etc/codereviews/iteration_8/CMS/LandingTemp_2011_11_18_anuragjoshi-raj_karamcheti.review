@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="LandingTemp_2011_11_18_anuragjoshi">
+  <ReviewIssue id="GVBSSKXI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:22:48:630 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:24:25:365 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="11">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add cache-mode settings</Summary>
+    <Description>Add cache-mode="simple" and add values for item-cache-time and other attributes. Refer to Bridal Template for those values. Also add display-name-resource. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBSVZU3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:25:27:915 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:26:32:379 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="49">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Category Picker SortProperty</Summary>
+    <Description>Making Category-Id selection's sort priority as "4" right after page name selection. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBSXP8C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:26:47:484 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 09:28:32:548 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="63">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need Categorization</Summary>
+    <Description>In Repositories we can categorize the properties in to groups(which appear as sub-headings in BCC). So we need categorization like "Basic Information", "Carousels", "Promo Layers" etc.,. This can be done by entering "category-name-resource" for each property. Can you categorize accordingly?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVC3XMYH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 14:34:40:313 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 14:35:05:006 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="77">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Rename promoBoxTemp to promoBoxContainers</Summary>
+    <Description>let's rename it to containers instead of promoBoxTemp. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCQIJG5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:06:47:093 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:07:19:171 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="91">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Rename topRegistry to topRegistyProducts</Summary>
+    <Description>Because it is a list, we should have plural</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCQK7WT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:08:05:453 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:08:19:578 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="127">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>rename this as promoContainer1, promoContainer2 etc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCQL438">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:08:47:156 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:09:29:609 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="126">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>each of the containers should NOT be a list</Summary>
+    <Description>It is only one container per layout. We have list at the main item descriptor level. We don't need list here. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCQM5B2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:09:35:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:09:40:968 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="133">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This should not be a list</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCQMC6G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:09:44:296 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 01:10:01:875 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="140">config/com/bbb/cms/repository/landingTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Same as previous container. This should not be a list</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

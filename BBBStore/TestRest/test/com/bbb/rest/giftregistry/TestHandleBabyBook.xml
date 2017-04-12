@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestHandleBabyBook">
+		<group id="testhandleBabyBook">			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="type" type="string">TYPE_BABY_BOOK_REGISTRATION</obj>
+					<obj id="firstName" type="string">Sandeep</obj>
+					<obj id="lastName" type="string">Nayak</obj>
+					<obj id="addressLine1" type="string">Sapient Office</obj>
+					<obj id="addressLine2" type="string">Gurgaon</obj>
+					<obj id="city" type="string">Delhi</obj>
+					<obj id="state" type="string">Haryana</obj>
+					<obj id="zipcode" type="string">12323</obj>
+					<obj id="phoneNumber" type="string">9999966666</obj>
+					<obj id="emailAddr" type="string">test@bbb.com</obj>
+					<obj id="dateAsString" type="string">2013/12/20</obj>
+					<obj id="emailOffer" type="boolean">true</obj>
+					<obj id="babyBookRequest" type="string">/rest/bean/com/bbb/selfservice/BabyBookFormHandler/requestBabyBook</obj>
+				</objs>				 
+			</test>
+		</group>
+		<group id="testhandleBabyBookError">			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="type" type="string">TYPE_BABY_BOOK_REGISTRATION</obj>
+					<obj id="firstName" type="string">Sandeep345</obj>
+					<obj id="lastName" type="string">Nayak345</obj>
+					<obj id="addressLine1" type="string">Sapientsdfsdffgffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</obj>
+					<obj id="addressLine2" type="string">Gurgasddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</obj>
+					<obj id="city" type="string">Delhi@#$</obj>
+					<obj id="state" type="string">Haryana@#</obj>
+					<obj id="zipcode" type="string">12323te</obj>
+					<obj id="phoneNumber" type="string">99999666623456</obj>
+					<obj id="emailAddr" type="string">test@bbb12.com12</obj>
+					<obj id="dateAsString" type="string">2013/12/20</obj>
+					<obj id="emailOffer" type="boolean">true</obj>
+					<obj id="babyBookRequest" type="string">/rest/bean/com/bbb/selfservice/BabyBookFormHandler/requestBabyBook</obj>
+				</objs>				 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

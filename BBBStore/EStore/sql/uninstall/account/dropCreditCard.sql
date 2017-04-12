@@ -1,0 +1,1 @@
+-- drop table BBB_DPS_CREDIT_CARD;

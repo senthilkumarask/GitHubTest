@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2012, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBBillingAddressDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBBillingAddressDroplet.java test case
+
+  HISTORY:
+  Sep 05, 2011  Initial version
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.checkout.droplet.TestIsProductSKUShippingDroplet">
+       
+       <group id="testIsProductSKUShippingDroplet">
+        <test id="testIsProductSKUShippingDroplet">
+			<objs>
+				<obj id="productSKUShippingDroplet" type="com.bbb.commerce.checkout.droplet.IsProductSKUShippingDroplet" hint="call" method="resolveName" 
+				calltype="com.bbb.commerce.checkout.droplet.TestIsProductSKUShippingDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/IsProductSKUShippingDroplet</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+                <obj id="skuId" type="String">sku40069</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>			 
+        </test>
+      </group>      
+      
+    </cluster>
+</ddtunit>
+

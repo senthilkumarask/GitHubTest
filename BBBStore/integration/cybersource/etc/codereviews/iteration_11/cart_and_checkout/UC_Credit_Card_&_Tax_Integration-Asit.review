@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Credit_Card_&amp;_Tax_Integration">
+  <ReviewIssue id="GYBLXQGG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:39:58:768 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:40:36:933 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="129">src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Do we need to override verifyShippingAddress? What is the tcustomization?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYBMB3TW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:50:22:628 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:50:39:534 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="1">src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>What is reason code 100?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYBMBT72">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:50:55:502 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:51:22:548 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="75">src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Setting the Id with 0 for all, will it not create problem?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYBMKZPP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:58:03:853 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-06 :: 09:58:46:916 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="37">src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Instead of overriding this class can we make the preCalculatedTax property transient in order repository.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

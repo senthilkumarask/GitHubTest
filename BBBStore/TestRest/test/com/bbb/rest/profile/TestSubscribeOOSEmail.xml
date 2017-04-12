@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.profile.TestSubscribeOOSEmail">
+		<group id="testSubscribeOOSEmail">			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="catalogRefId" type="string">13562300</obj>
+					<obj id="productId" type="string">prod56256</obj>
+					<obj id="customerName" type="string">Akhilesh</obj>
+					<obj id="productName" type="string">product name</obj>
+					<obj id="emailAddress" type="string">akki@gmail.com</obj>
+					<obj id="confirmEmailAddress" type="string">akki@gmail.com</obj>
+					<obj id="subscribeOOSEmailRequest" type="string">/rest/bean/com/bbb/browse/BBBBackInStockFormHandler/sendOOSEmail</obj>
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>				 
+			</test>
+			
+		</group>
+		<group id="testSubscribeOOSEmailError">			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="catalogRefId" type="string">13562300</obj>
+					<obj id="productId" type="string">prod56256</obj>
+					<obj id="customerName" type="string">Akhilesh</obj>
+					<obj id="productName" type="string">product name</obj>
+					<obj id="emailAddress" type="string"></obj>
+					<obj id="confirmEmailAddress" type="string"></obj>
+					<obj id="subscribeOOSEmailRequest" type="string">/rest/bean/com/bbb/browse/BBBBackInStockFormHandler/sendOOSEmail</obj>
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>				 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

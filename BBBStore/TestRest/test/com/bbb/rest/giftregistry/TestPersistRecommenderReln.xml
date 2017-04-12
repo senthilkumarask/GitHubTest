@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2013, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestStaticContent.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Jan 10, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestPersistRecommenderReln">
+	
+		<group id="testPersistRecommenderReln">
+			 <test id="test_persist_recommender_reln">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="formSubmitted" type="string">true</obj>					
+					<obj id="login" type="string">test12345678@sapient.com</obj>
+					<obj id="password" type="string">Rejoice2$</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="registryId" type="string">203524596</obj>
+					<obj id="token" type="string">-973669512</obj>
+					<obj id="isFromFb" type="string">false</obj>
+					<obj id="restGetContentAPI" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager/GiftRegistryManager/persistRecommenderReln</obj>
+				</objs>
+			</test>			
+		</group>			
+	</cluster>
+</ddtunit>

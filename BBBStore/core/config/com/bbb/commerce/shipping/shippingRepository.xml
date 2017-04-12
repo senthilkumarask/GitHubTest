@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Shipping Repository</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     shipping repository       -->
+    <!--///////////////////////////////-->
+    
+<item-descriptor name="shippingMethods" display-name-resource="ShippingMethods" display-property="shipMethodName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+	<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	
+	<table name="BBB_SHIPPING_METHODS_MASTER" type="primary" id-column-name="ship_method_cd">
+		<property name="id" column-name="ship_method_cd" display-name-resource="shipMethodId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="shipMethodName" column-name="ship_method_name" display-name-resource="shipMethodName" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="shipMethodDescription" column-name="ship_method_description" display-name-resource="shipMethodDescription" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+	 	<property name="minDaysToShip" column-name="min_days_to_ship" display-name-resource="minDaysToShip" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="maxDaysToShip" column-name="max_days_to_ship" display-name-resource="maxDaysToShip" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="cutOffTime" column-name="cut_off_time" display-name-resource="cutOffTime" data-type="timestamp" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="isLTLShippingMethod" column-name="ltl_ship_method_flag" display-name-resource="LTLShippingMethod" data-type="boolean" category-resource="MasterInfo">
+        	<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        	<attribute name="propertySortPriority" value="6"/>
+		</property>
+		 <!--Added for BPSI 1925 VDC specific min max days-->
+		<property name="minDaysToShipVDC" column-name="min_days_to_ship_vdc" display-name-resource="minDaysToShipVDC" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		<property name="maxDaysToShipVDC" column-name="max_days_to_ship_vdc" display-name-resource="maxDaysToShipVDC" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+		</property>
+		 <!--END Added for BPSI 1925 VDC specific min max days-->
+	</table>
+</item-descriptor>
+
+<item-descriptor name="shippingMethodPrices" display-name-resource="ShippingMethodPrices" display-property="id" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000" >   
+	<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	<table name="BBB_SHIPPING_METHOD_PRICES" type="primary" id-column-name="ship_method_price_id"> 
+		<property name="id" column-name="ship_method_price_id" display-name-resource="shipMethodPriceId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>		
+		</property>
+		<property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration" category-resource="ShpngMethodPrice" repository="/atg/multisite/SiteRepository">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="shipMethodCode" column-name="ship_method_cd" display-name-resource="shipMethodCode" item-type="shippingMethods" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="state" column-name="state_id" display-name-resource="state" item-type="state" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="lowerLimit" column-name="lower_limit" display-name-resource="lowerLimit" data-type="double" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="upperLimit" column-name="upper_limit" display-name-resource="upperLimit" data-type="double" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="price" column-name="price" display-name-resource="price" data-type="double" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+		<property name="freeShipThreshold" column-name="free_ship_threshold" display-name-resource="freeShipThreshold" data-type="double" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		<property name="giftCard" column-name="is_gift_card" display-name-resource="giftCard" data-type="boolean" category-resource="ShpngMethodPrice">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+		</property>
+	</table>
+	
+	<table name="BBB_SHIPPING_METHOD_REGIONS" type="multi" id-column-names="SHIP_METHOD_PRICE_ID" >
+		
+		<property expert="false" readable="true" category-resource="ShpngMethodPrice" component-item-type="regions" data-type="set" display-name-resource="regions" hidden="false" writable="true" name="regions" column-names="regions">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="9"/>
+		</property>
+		
+	</table>
+	
+	
+	
+</item-descriptor>
+
+  <item-descriptor name="state" display-name-resource="States" display-property="descrip" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000">
+  	<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+  	<table name="BBB_STATES" type="primary" id-column-name="state_id">
+		<property name="id" column-name="state_id" display-name-resource="stateCode" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>		
+		</property>
+  		<property name="descrip" column-name="descrip" display-name-resource="descrip" data-type="string" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+  		<property name="countryCd" column-name="country_cd" display-name-resource="countryCd" data-type="string" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+  		<property name="bopus" column-name="bopus_flag" display-name-resource="bopus" data-type="boolean" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="showOnRegistry" column-name="registry_flag" display-name-resource="registry" data-type="boolean" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="showOnShipping" column-name="shipping_flag" display-name-resource="shipping" data-type="boolean" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="showOnBilling" column-name="billing_flag" display-name-resource="billing" data-type="boolean" category-resource="BBBStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+  		<property name="isMilitaryState" column-name="IS_MILITARY_STATE" data-type="boolean" default="false" display-name-resource="isMilitaryState">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources" />
+			<attribute name="propertySortPriority" value="7" />
+		</property>
+  		<property name="territory" column-name="IS_TERRITORY" data-type="boolean" default="false" display-name-resource="isTerritory">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources" />
+			<attribute name="propertySortPriority" value="8" />
+		</property>
+		<!-- Start BBBSL-3318 -->
+		<property name="stateTaxValue" column-names="STATE_TAX_VALUE" display-name-resource="stateTaxValue"  data-type="double" category-resource="BBBStates" >
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        	<attribute name="propertySortPriority" value="9"/>
+		</property>
+		<!-- End BBBSL-3318 -->
+  	</table>
+  	
+  	<table name="BBB_APLCBLE_SHIP_METHOD_STATES" type="multi" id-column-names="state_id">
+  	 	<property name="shipMethods" column-names="ship_method_cd" display-name-resource="shipMethods" data-type="set" component-item-type="shippingMethods" category-resource="ShipMethodStates">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+  	 </table>
+  	
+  </item-descriptor>
+  
+<item-descriptor name="shippingDurations" display-name-resource="ShippingDurations" display-property="id" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000" >   
+      <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+      <table name="BBB_SHIPPING_METHOD_DURATIONS" type="primary" id-column-name="ship_method_duration_id"> 
+            <property name="id" column-name="ship_method_duration_id" display-name-resource="shipMethodDurationId" writable="true">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="0"/>          
+            </property>
+            <property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration" category-resource="ShippingDurationInfo" repository="/atg/multisite/SiteRepository">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="1"/>
+            </property>
+            <property name="shipMethodCode" column-name="ship_method_cd" display-name-resource="shipMethodCode" item-type="shippingMethods" category-resource="ShippingDurationInfo">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="2"/>
+            </property>
+            <property name="minDaysToShip" column-name="min_days_to_ship" display-name-resource="minDaysToShip" data-type="int" category-resource="ShippingDurationInfo">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="3"/>
+            </property>
+            <property name="maxDaysToShip" column-name="max_days_to_ship" display-name-resource="maxDaysToShip" data-type="int" category-resource="ShippingDurationInfo">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="4"/>
+            </property>
+            <property name="cutOffTime" column-name="cut_off_time" display-name-resource="cutOffTime" data-type="timestamp" category-resource="ShippingDurationInfo">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="5"/>
+            </property> 
+             <!--Added for BPSI 1925 VDC specific min max days-->
+            <property name="minDaysToShipVDC" column-name="min_days_to_ship_vdc" display-name-resource="minDaysToShipVDC" data-type="int" category-resource="ShippingDurationInfo">
+				<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	        		<attribute name="propertySortPriority" value="6"/>
+			</property>
+			<property name="maxDaysToShipVDC" column-name="max_days_to_ship_vdc" display-name-resource="maxDaysToShipVDC" data-type="int" category-resource="ShippingDurationInfo">
+				<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	        		<attribute name="propertySortPriority" value="7"/>
+			</property>
+			<!--END Added for BPSI 1925 VDC specific min max days-->
+	  </table> 
+</item-descriptor>
+
+<!--  LTL Specific Changes Start -->
+<item-descriptor name="deliverySurcharge" display-name-resource="DeliverySurcharge" display-property="lowerWeightLimit" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000" >
+      <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+      <table name="BBB_DELIVERY_SURCHARGE" type="primary" id-column-name="surcharge_id">
+            <property name="id" column-name="surcharge_id" display-name-resource="deliverySurchargeId" writable="true">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="0"/>
+            </property>
+            <property name="shipMethodCode" column-name="ship_method_cd" display-name-resource="shipMethodCode" item-type="shippingMethods" category-resource="DeliverySurcharge">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="1"/>
+            </property>
+            <property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration" category-resource="DeliverySurcharge" repository="/atg/multisite/SiteRepository">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="2"/>
+            </property>
+            <property name="lowerWeightLimit" column-name="lower_weight_limit" display-name-resource="lowerWeight" data-type="double" category-resource="DeliverySurcharge">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="3"/>
+            </property>
+            <property name="upperWeightLimit" column-name="upper_weight_limit" display-name-resource="upperWeight" data-type="double" category-resource="DeliverySurcharge">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="4"/>
+            </property>
+            <property name="price" column-name="price" display-name-resource="price" data-type="double" category-resource="DeliverySurcharge">
+                  <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                  <attribute name="propertySortPriority" value="5"/>
+            </property>
+	  </table>
+</item-descriptor>
+<!--  LTL Specific Changes End -->
+
+<item-descriptor name="holidayMessaging" display-name-resource="HolidayMessaging" display-property="id" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000" >   
+	<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	<table name="TBS_HOLIDAY_MESSAGING" type="primary" id-column-name="holiday_message_id"> 
+			<property name="id" column-name="holiday_message_id" display-name-resource="holidayMessageId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	      		<attribute name="propertySortPriority" value="0"/>		
+			</property>
+			 <property name="startTime" column-name="start_time" display-name-resource="startTime" data-type="timestamp" category-resource="HolidayMessaging">
+	             <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	             <attribute name="propertySortPriority" value="1"/>
+       		 </property> 
+	       	 <property name="endTime" column-name="end_time" display-name-resource="endTime" data-type="timestamp" category-resource="HolidayMessaging">
+                <attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+                <attribute name="propertySortPriority" value="2"/>
+          	</property>
+          	<property name="itemAvailability" column-name="item_availability" display-name-resource="itemAvailability" data-type="string" category-resource="HolidayMessaging">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+			</property> 
+			<property name="standardLabel" column-name="standard_label" display-name-resource="standardLabel" item-type="labelTextArea" category-resource="HolidayMessaging" repository="/com/bbb/cms/repository/LabelTemplate">
+				<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	      		<attribute name="propertySortPriority" value="4"/>
+			</property>
+			<property name="expeditedLabel" column-name="expedited_label" display-name-resource="expeditedLabel" item-type="labelTextArea" category-resource="HolidayMessaging" repository="/com/bbb/cms/repository/LabelTemplate">
+				<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+	      		<attribute name="propertySortPriority" value="5"/>
+			</property>
+			<property name="name" column-name="name" display-name-resource="name" data-type="string" category-resource="HolidayMessaging">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+			</property> 
+	</table>
+</item-descriptor>
+
+<item-descriptor name="regions" display-name-resource="Regions" display-property="regionName" cache-mode="simple" item-cache-size="1000"  query-cache-size="1000" >
+<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+
+	<table name="BBB_SHIPPING_REGIONS" id-column-name="region_id" type="primary">
+	
+
+		<property name="regionId" column-name="region_id" display-name-resource="regionId" data-type="string"  writable="true" category-resource="RegionInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="1"/>
+		</property>
+
+		<property name="regionName" column-name="regionName" display-name-resource="regionName" data-type="string" writable="true" category-resource="RegionInfo" >
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property readable="true" category-resource="RegionInfo" column-name="cut_off_time" data-type="timestamp" display-name-resource="cutOffTimeRegion" hidden="false" writable="true" name="cutOffTimeRegion" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="6"/>
+		</property>
+		
+		<property readable="true" category-resource="RegionInfo" column-name="display_cut_off_time" data-type="string" display-name-resource="displayCutOffTime" hidden="false" writable="true" name="displayCutOffTime" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="8"/>
+		</property>
+		
+		<property readable="true" category-resource="RegionInfo" column-name="get_by_time" data-type="string" display-name-resource="getByTime" hidden="false" writable="true" name="getByTime" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="5"/>
+		</property>
+		
+				
+		<property name="sddFlag" column-name="sdd_flag" display-name-resource="sddFlag" data-type="boolean" default="false" writable="true" category-resource="RegionInfo">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="3"/>
+		</property>
+				
+		<property name="promoAttributeId" column-name="promo_att_id" display-name-resource="promoAttributeId" item-type="attributeInfo" writable="true" category-resource="RegionInfo" repository="/atg/commerce/catalog/ProductCatalog" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="propertySortPriority" value="9"/>
+		</property>
+		
+		<property name="minShipFee" column-name="min_ship_fee" display-name-resource="minShipFee" data-type="double" category-resource="RegionInfo" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		
+		
+		<property readable="true" category-resource="RegionInfo" column-name="region_timeZone" data-type="enumerated" display-name-resource="regionTimeZone" hidden="false" writable="true" name="regionTimeZone" required="true">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+			<attribute name="useCodeForValue" value="false"/>
+			<option value="America/New_York" code="0"/>
+			<option value="America/Chicago" code="1"/>
+			<option value="America/Denver" code="2"/>
+			<option value="America/Los_Angeles" code="3"/>
+			<option value="America/Phoenix" code="4"/>
+			<option value="America/Indiana/Indianapolis" code="5"/>
+			<option value="America/Indiana/Marengo" code="6"/>
+			<option value="America/Indiana/Vincennes" code="7"/>
+			<option value="America/Indiana/Tell_City" code="8"/>
+			<option value="America/Indiana/Petersburg" code="9"/>
+			<option value="America/Indiana/Knox" code="10"/>
+			<option value="America/Indiana/Winamac" code="11"/>
+			<option value="America/Indiana/Vevay" code="12"/>
+			<option value="America/Kentucky/Louisville" code="13"/>
+			<option value="America/Kentucky/Monticello" code="14"/>
+			<option value="America/Detroit" code="15"/>
+			<option value="America/Menominee" code="16"/>
+			<option value="America/Metlakatla" code="17"/>
+			<option value="America/Juneau" code="18"/>
+			<option value="America/Yakutat" code="19"/>
+			<option value="America/Anchorage" code="20"/>
+			<option value="America/Sitka" code="21"/>
+			<option value="America/Nome" code="22"/>
+			<option value="America/Adak" code="23"/>
+			<option value="Pacific/Honolulu" code="24"/>
+
+			<attribute name="propertySortPriority" value="7"/>
+		</property>
+
+	</table>
+	
+	<table id-column-names="region_id" name="BBB_REGION_ZIPCODES" type="multi">
+  	 	<property readable="true" category-resource="RegionInfo"  component-data-type="string" data-type="set" display-name-resource="zipCodes" hidden="false" writable="true" name="zipCodes" required="true" queryable="true" column-names="zip_codes">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="10"/>
+		</property>
+  	 </table>
+	 
+  	 <table id-column-names="region_id" name="BBB_REGION_STORES" type="multi">
+  	 	<property readable="true" category-resource="RegionInfo" component-data-type="string" data-type="set" display-name-resource="stores" hidden="false" writable="true" name="stores" required="true" queryable="true" column-names="stores">
+			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        		<attribute name="propertySortPriority" value="11"/>
+		</property>
+  	 </table>
+  	 
+  	 
+  	 <table name="BBB_REGION_SITES" type="multi" id-column-names="region_id">
+  		<property name="sites" column-names="site_id" display-name-resource="regionSite" data-type="set" component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="RegionInfo" required="true">
+  			<attribute name="resourceBundle" value="com.bbb.commerce.shipping.BBBShippingTemplateResources"/>
+        	<attribute name="propertySortPriority" value="12"/>
+        </property>
+  	 </table>
+  	 
+  	 		
+</item-descriptor>
+
+</gsa-template>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_776_PSP_SEO_INDEX_FOLLOW">
+  <ReviewIssue id="I1T0QUSA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-28 :: 14:25:08:122 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 12:28:38:501 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="120">j2ee-apps/BBBStore/store.war/personalstore/personalStore.jsp</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>put jsp comment on compress:html tag and noindex tag</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1VRAZRI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 12:24:10:062 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 12:26:17:937 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Check &lt;compress:html&gt; tag is requied to put noindex tag.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1VRDX4Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 12:26:26:626 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 12:27:47:176 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Confirm if there any impact of putting noindex tag after body tag.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

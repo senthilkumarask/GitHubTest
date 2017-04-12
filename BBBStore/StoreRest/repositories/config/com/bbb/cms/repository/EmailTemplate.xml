@@ -1,0 +1,21 @@
+<gsa-template xml-combine="append">
+    
+  <item-descriptor name="emailRepository" xml-combine="append">
+  	
+	     <table name="BBB_Email_Template" type="primary" id-column-names="email_template_id">
+        	
+	        <property name="emailType" column-name="email_type" xml-combine="append">
+						<option value="GSEmailFeedback" code="301"/>
+						<option value="GSEmailRegistry" code="302"/>
+						<option value="GSEmailTable" code="303"/>
+						<option value="GSEmailCompareProduct" code="304"/>
+						<option value="GSEmailTableChecklist" code="305"/>
+						<option value="GSEmailPDP" code="306"/>
+						<option value="GSEmailCart" code="307"/>
+		    </property>
+
+	     </table>
+
+ </item-descriptor>
+ 
+</gsa-template>

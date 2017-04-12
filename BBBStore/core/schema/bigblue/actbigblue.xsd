@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    Copyright Bed Bath & Beyond, Inc. All Rights Reserved.
+    This software is the proprietary information of Bed Bath & Beyond, Inc.
+    Use is subject to license terms.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+      <xs:element name="ActiveBigBlue">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="userToken" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="siteFlag" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sOfferCd" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="emailAddr" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="mobilePhone" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sEmailOptIn" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="sMobileOptIn" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ActiveBigBlueResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="ActiveBigBlueResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="ActivateBigBlueReturn">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Status"/>
+          <xs:element minOccurs="0" maxOccurs="1" name="CouponStatus" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="Status">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ErrorExists" type="xs:boolean" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DisplayMessage" type="xs:string" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ArrayOfValError">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ValError" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ValError">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Key" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Value" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ActivateBigBlueReturn" nillable="true"/>
+    </xs:schema>

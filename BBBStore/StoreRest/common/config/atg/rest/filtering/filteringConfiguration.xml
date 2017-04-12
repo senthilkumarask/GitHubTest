@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE rest-filtering
+        PUBLIC "-//Art Technology Group, Inc.//DTD REST Filtering Configuration//EN"
+        "http://www.atg.com/dtds/rest/restFiltering_1.0.dtd">
+
+<rest-filtering>
+	
+	<!--  Added as part of STOFU  -->
+ 	<component name="/atg/commerce/catalog/ProductCatalog" default-include="false">
+		<item-descriptor name="category">
+			<property name="id" hidden="false" />
+			<property name="displayName" hidden="false" />
+			<property name="smallImage" hidden="false" />
+		</item-descriptor>
+		<item-descriptor name="product">
+			<property name="id" hidden="false" />
+		</item-descriptor>
+	</component>
+	
+	<!--  Added as part of STOFU  IdeaBook-->
+	<component name="/com/bbb/stofu/CommonRepository" default-include="true">
+		<item-descriptor name="productHotSpot">
+			<property hidden="false" writable="true" property-customizer="com.bbb.cms.framework.ProductPropertyCustomizer" name="productId" target="productId" />
+			<property hidden="false" writable="true" property-customizer="com.bbb.cms.framework.SKUPropertyCustomizer" name="skuId" target="skuId" />
+		</item-descriptor>
+		<item-descriptor name="Style">
+			<property hidden="false" writable="true" property-customizer="com.bbb.cms.framework.StylePropertyCustomizer" name="id" target="id" />
+		</item-descriptor>
+	</component>
+	<component name="/com/bbb/ipad/SolutionLandingRepository" default-include="true">
+		<item-descriptor name="solutionLandingTemplate">
+			<property hidden="false" writable="true" property-customizer="com.bbb.cms.framework.SolutionFacetPropertyCustomizer" name="solutionFacets" target="solutionFacets" />
+		</item-descriptor>
+	</component>
+		
+</rest-filtering>
+<!-- @version $Id: //product/REST/version/10.0.3/atg-rest/config/src/main/config/atg/rest/filtering/filteringConfiguration.xml#2 $$Change: 651448 $-->

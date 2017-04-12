@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_cms_dorm_room_collection_2012_01_05">
+  <ReviewIssue id="GX3KEDXB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:25:04:703 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:26:37:031 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/bbcollege/dorm_room_collection.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Don't Pass CategoryID from JSP</Summary>
+    <Description>Let's not pass Category ID from JSP. Have it in Droplet.properties . I am trying to write a Catalog API which returns what is the college category ID. So you will call that method first and then use that to call other methods. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3KGG56">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:26:40:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:26:50:546 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="40">j2ee-apps/BBBStore/store.war/bbcollege/dorm_room_collection.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>SEO URL</Summary>
+    <Description>We need to have SEO URL for this</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3KH2H0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:27:09:828 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:27:32:343 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="40">j2ee-apps/BBBStore/store.war/bbcollege/dorm_room_collection.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Change the Alt Text</Summary>
+    <Description>Use the alt text same as the Product Id</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3KIFY9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:28:13:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-07 :: 00:28:32:750 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="8">j2ee-apps/BBBStore/store.war/bbcollege/next_college_collection.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Same here. Don't pass college category id from JSP</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

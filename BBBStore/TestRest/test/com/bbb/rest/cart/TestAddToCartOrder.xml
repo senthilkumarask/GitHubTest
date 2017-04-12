@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cart.TestAddToCartOrder">
+		<group id="testAddSingleItemToCart">
+			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		<group id="testAddLtlSingleItemToCart">
+			 
+			<test id="test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"ltlShipMethod":"LW","skuId":"17826220","prodId":"1017826220","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+			
+				<test id="test6">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"ltlShipMethod":"LR","skuId":"17826220","prodId":"1017826220","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		<group id="testAddSingleItemToCartInvalidSKU">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637","prodId":"1013637911","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testAddMultipleItemToCart">
+			 
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"18709139","prodId":"1018709139","qty":"1","price":"$169.99","bts":"false","storeId":""}
+					,{"skuId":"16476552","prodId":"1016476552","qty":"1","price":"$99.99","bts":"false","storeId":""}]}</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testMergeItemToCart">
+			 
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">testorder@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="jsonResultString1" type="string">{"addItemResults":[{"skuId":"18709139","prodId":"1018709139","qty":"1","price":"$169.99","bts":"false","storeId":""}]}</obj>
+					<obj id="jsonResultString2" type="string">{"addItemResults":[{"skuId":"16476552","prodId":"1016476552","qty":"1","price":"$99.99","bts":"false","storeId":""}]}</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addItemToOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="addItemToOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+			<group id="testGetCurrentOrderDetailsTransientUser">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

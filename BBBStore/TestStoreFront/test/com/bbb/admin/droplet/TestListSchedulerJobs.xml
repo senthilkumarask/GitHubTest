@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestListSchedulerJobs.xml
+
+  DESCRIPTION: ddtunit data file for TestListSchedulerJobs.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.admin.droplet.TestListSchedulerJobs">
+  
+      <group id="testListSchedulerJobs">
+        <test id="testListSchedulerJobs">
+			<objs>
+				<obj id="schedulerJobs" type="com.bbb.admin.droplet.ListSchedulerJobs" hint="call" method="resolveName" calltype="com.bbb.admin.droplet.TestListSchedulerJobs">
+					<item type="string">/com/bbb/admin/droplet/ListSchedulerJobs</item>
+				</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: GetRegistryVODroplet.xml 
+	DESCRIPTION: ddtunit data file for GetRegistryVODroplet.java test case HISTORY: 
+	Nov 09, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.giftregistry.droplet.TestMyRegistriesDisplayDroplet">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+					<obj id="myRegistriesDisplayDroplet"
+						type="com.bbb.commerce.giftregistry.droplet.MyRegistriesDisplayDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.droplet.TestMyRegistriesDisplayDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/MyRegistriesDisplayDroplet</item>
+					</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="username1" type="string">skumar134@sapient.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

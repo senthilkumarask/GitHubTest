@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE rest-filtering
+        PUBLIC "-//Art Technology Group, Inc.//DTD REST Filtering Configuration//EN"
+        "http://www.atg.com/dtds/rest/restFiltering_1.0.dtd">
+
+<rest-filtering>
+	
+	<component name="/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler" default-include="false">
+		<property name="registryVO.registryId" hidden="false"/>
+		<property name="moveAllWishListItemsFailureResult" hidden="false"/>
+		<!--  Change for calculating total price-->
+		<property name="totalPrice" hidden="false"/>
+		<property name="itemDetailsVO" hidden="false"/>
+		<property name="updatedItemInfoMap" hidden="false"/>
+		<property name="poBoxAddress" hidden="false"/>
+		<property name="totalGiftRegistered" hidden="false"/>
+	</component>
+	
+	<component name="/atg/userprofiling/ProfileAdapterRepository" default-include="false">
+		<item-descriptor name="user">
+			<property name="firstName" hidden="false" />
+			<property name="lastName" hidden="false" />
+			<property name="email" hidden="false" />
+			<property name="mobileNumber" hidden="false" />
+			<property name="phoneNumber" hidden="false" />
+			<property name="gender" hidden="false" />
+			<property name="shippingAddress" hidden="false" />
+			<property name="billingAddress" hidden="false" />
+			<property name="mailingAddress" hidden="false" />
+			<property name="defaultCreditCard" hidden="false" />
+			<property name="creditCards" hidden="false" />	
+			<property name="secondaryAddresses" hidden="false" />
+			<property name="POBoxAddresses" hidden="false" writable="true" property-customizer="com.bbb.rest.framework.AddressCustomizer"/>	
+			<property name="userSiteItems" hidden="false" writable="true" property-customizer="com.bbb.rest.framework.UserSiteItemsCustomizer" target="userSiteItems" />					
+		</item-descriptor>
+		<item-descriptor name="credit-card">
+			<property name="billingAddress" hidden="false" />
+			<property name="creditCardType" hidden="false" />
+			<property name="expirationDayOfMonth" hidden="false" />
+			<property name="expirationMonth" hidden="false" />
+			<property name="expirationYear" hidden="false" />
+			<property name="nameOnCard" hidden="false" />
+			<property name="id" hidden="false" />
+			<property name="lastModifiedDate" hidden="false" />
+			<property name="creditCardNumber" hidden="false" writable="true" property-customizer="com.bbb.rest.framework.CreditCardCustomizer" target="creditCardNumber"/>
+		</item-descriptor>
+	</component>		 
+			
+		<component name="/atg/multisite/SiteRepository" default-include="false">
+		<item-descriptor name="siteConfiguration">
+			<property name="id" hidden="false" />
+		</item-descriptor>	
+	</component>
+	
+	<component name="/com/bbb/cms/repository/WSNavigationLinksTemplate" default-include="false">
+			<item-descriptor name="navigationLinksWS">
+			<property name="id" hidden="false" />
+			<property name="links" hidden="false" />
+			<property name="sites" hidden="false" />			
+		</item-descriptor>
+	</component>
+	
+	<component name="/com/bbb/account/BBBOrderTrackingFormHandler" default-include="false">
+		<property name="BBBTrackOrderVO" hidden="false"/>
+		<property name="errorMap" hidden="false"/>
+	</component>
+	
+	
+	<component name="/atg/commerce/order/purchase/CartModifierFormHandler" default-include="false">
+	           <property name="moveAllItemFailureResult" hidden="false"/> 
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+               <property name="countNo" hidden="false"/>
+               <property name="quantity" hidden="false"/>
+               <property name="commerceItemId" hidden="false"/>
+               <property name="couponErrorList" hidden="false"/>
+               <property name="paypalToken" hidden="false"/>
+               <property name="payPalTokenNotExpired" hidden="false"/>
+               <property name="errorMap" hidden="false"/>  
+               <property name="listOfMultipleItemInResponseVO" hidden="false"/>
+               <property name="changeClosenessQualifierMsg" hidden="false"/>
+               <property name="closenessQualifierName" hidden="false"/>
+    </component>
+	
+	
+	<component name="/com/bbb/integration/interactive/InteractiveChecklistFormHandler" default-include="false">
+	           <property name="selectedGuideType" hidden="false"/> 
+               <property name="activateGuideInRegistryRibbon" hidden="false"/>
+               <property name="nextActivatedGuideType" hidden="false"/>
+               <property name="addGuideRedirectURL" hidden="false"/>
+               <property name="nonRegistryGuideVOs" hidden="false"/>
+    </component>
+    
+	<component name="/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler" default-include="false">
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+              <!-- R2.2 Start Story 83AI- Modified Validation mobile -->
+               <property hidden="false" writable="true" name="redirectState"/>
+               <property hidden="false" writable="true" name="shippingGroupChanged"/>
+               <property hidden="false" writable="true" name="shippingGroupErrorMsg"/>
+               <!-- R2.2 END -->
+    </component>
+    
+    <component name="/com/bbb/internationalshipping/formhandler/InternationalShipFormHandler" default-include="false">
+               <property hidden="false" writable="true" name="loggedIn"/>
+               <property hidden="false" writable="true" name="checkoutResponseVO"/>
+               <property hidden="false" writable="true" name="bopusSku"/>
+               <property hidden="false" writable="true" name="restrictedSku"/>
+               <property hidden="false" writable="true" name="intContextVO"/>
+               <property hidden="false" writable="true" name="currencySymbol"/>
+               <property hidden="false" writable="true" name="currencyRoundingMethod"/>
+               <property hidden="false" writable="true" name="exceptionString"/>
+    </component> 
+    
+    <component name="/com/bbb/payment/giftcard/BBBGiftCardFormHandler" default-include="false">
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+               <property hidden="false" writable="true" name="balanceBean"/>
+               <property hidden="false" writable="true" name="invalidateSession"/>
+    </component>
+   
+    <component name="/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler" default-include="false">
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+    </component>
+    
+     <component name="/atg/commerce/order/purchase/PaymentGroupFormHandler" default-include="false">
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+               <property hidden="false" writable="true" name="invalidateSession"/>
+    </component>
+    
+    <component name="/atg/commerce/order/purchase/CommitOrderFormHandler" default-include="false">
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.BBBVerifiedByVisaVOCustomizer" name="vbvSessionBean" target="vbvSessionBean" />
+               <property hidden="false" writable="true" name="payPalErrorPage"/>
+               <property hidden="false" writable="true" name="paypalTokenExpired"/>
+               <property hidden="false" writable="true" name="payPalFailure"/>
+			     <property hidden="false" writable="true" name="cybersourceFailure"  />
+    </component>
+    
+     <component name="/atg/commerce/gifts/GiftlistFormHandler" default-include="false">
+               <property name="removeAllWishListItemsFailureResult" hidden="false"/>
+               <property name="wishListItems" hidden="false"/> 
+               <property hidden="false" writable="true" property-customizer="com.bbb.rest.framework.OrderPropertyCustomizer" name="order" target="order" />
+               <property name="quantity" hidden="false"/>
+               <property name="itemMoveFromCartID" hidden="false"/>
+               <property name="countNo" hidden="false"/>
+               <property name="storeId" hidden="false"/>
+               <property name="outOfStockFlag" hidden="false"/>
+    </component>
+    
+  <component name="/com/bbb/selfservice/SearchStoreFormHandler" default-include="false">
+               <property hidden="false" writable="true" name="profile" target="profile" />
+   </component>
+      
+  <component name="/atg/userprofiling/ProfileFormHandler" default-include="false">
+               <property hidden="false" writable="true" name="profile" target="profile" />
+   </component>
+   
+   <component name="/atg/userprofiling/ForgotPasswordHandler" default-include="false">
+           <property name="challengeQuestions" hidden="false"/>
+            <property name="resetPasswordToken" hidden="false"/>
+   </component>
+    <component name="java.sql.Date" default-include="false">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.DatePropertyCustomizer" name="time" target="time" />
+    </component>
+    <component name="java.sql.Timestamp" default-include="false">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.DatePropertyCustomizer" name="time" target="time" />
+    </component>
+    <component name="java.util.Date" default-include="false">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.DatePropertyCustomizer" name="time" target="time" />
+    </component>
+    
+    <component name="com.bbb.commerce.common.BBBRepositoryContactInfo" default-include="true">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="email" target="email" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="firstName" target="firstName" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="city" target="city" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="address2" target="address2" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="address1" target="address1" />  
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="lastName" target="lastName" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.ContactInforPropertyCustomizer" name="repositoryItem" target="repositoryItem" />                           
+    </component>
+    <component name="com.bbb.commerce.giftregistry.vo.RegistrySummaryVO" default-include="true">
+               <property hidden="false"  name="shippingAddress" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="shippingAddress"/>
+               <property hidden="false"  name="futureShippingAddress" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="futureShippingAddress"/>
+               <property hidden="false"  name="futureShippingDate" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="futureShippingDate"/>
+               <property hidden="false"  name="registrantEmail" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="registrantEmail"/>
+               <property hidden="false"  name="primaryRegistrantEmail" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="primaryRegistrantEmail"/>
+               <property hidden="false"  name="primaryRegistrantPrimaryPhoneNum" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="primaryRegistrantPrimaryPhoneNum"/>
+               <property hidden="false"  name="coRegistrantEmail" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="coRegistrantEmail"/>
+               <property hidden="false"  name="ownerProfileID" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="ownerProfileID"/>
+               <property hidden="false"  name="bridalToolkitToken" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="bridalToolkitToken"/>
+               <property hidden="false"  name="pwsurl" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="pwsurl"/>
+               <property hidden="false"  name="regToken" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="regToken"/>
+               <property hidden="false"  name="coRegistrantMaidenName" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="coRegistrantMaidenName"/>
+               <property hidden="false"  name="coRegistrantFullName" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="coRegistrantFullName"/>
+               <property hidden="false"  name="registryInfo" property-customizer="com.bbb.rest.framework.RegistrySummaryVOPropertyCustomizer" target="registryInfo"/>
+    </component>
+    <component name="com.bbb.commerce.giftregistry.vo.RegistrantVO" default-include="true">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="email" target="email" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="cellPhone" target="cellPhone" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="contactAddress" target="contactAddress" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="primaryPhone" target="primaryPhone" />                          
+    </component>
+    <component name="com.bbb.commerce.giftregistry.vo.RegistryVO" default-include="true">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="userAddressList" target="userAddressList" />
+    </component>
+    <component name="com.bbb.commerce.giftregistry.vo.ShippingVO" default-include="true">
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="shippingAddress" target="shippingAddress" />
+               <property hidden="false"  property-customizer="com.bbb.rest.framework.RegistryVOPropertyCustomizer" name="futureshippingAddress" target="futureshippingAddress" />
+    </component>
+    <component name="com.bbb.selfservice.common.StoreDetails" default-include="true">
+	           <property name="logs" hidden="true"/> 
+    </component>
+    
+	
+	 <component name="com.bbb.selfservice.common.StoreDetailsWrapper" default-include="true">
+	           <property name="logs" hidden="true"/> 
+    </component>
+    
+     <component name="com.bbb.commerce.common.BasicBBBCreditCardInfo" default-include="true">
+               <property hidden="false"  name="cardVerificationNumber" property-customizer="com.bbb.rest.framework.CreditCardCustomizer" target="cardVerificationNumber"/>
+    </component>
+    
+    <component name="com.bbb.commerce.common.PriceInfoDisplayVO" default-include="true">  
+		<property hidden="false"  name="rawAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="rawAmount"  writable="true"/>
+		<property hidden="false"  name="totalAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalAmount"  writable="true"/>
+		<property hidden="false"  name="storeAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="storeAmount"  writable="true"/>
+		<property hidden="false"  name="totalSavedAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalSavedAmount"  writable="true"/>
+		<property hidden="false"  name="totalTax" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalTax"  writable="true"/>
+		<property hidden="false"  name="totalShippingAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalShippingAmount"  writable="true"/>
+		<property hidden="false"  name="unitListPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="unitListPrice"  writable="true"/>
+		<property hidden="false"  name="unitSalePrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="unitSalePrice"  writable="true"/>
+		<property hidden="false"  name="deliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurcharge"  writable="true"/>
+		<property hidden="false"  name="deliverySurchargeProrated" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurchargeProrated"  writable="true"/>
+		<property hidden="false"  name="assemblyFee" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="assemblyFee"  writable="true"/>
+		<property hidden="false"  name="totalDeliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalDeliverySurcharge"  writable="true"/>
+		<property hidden="false"  name="totalAssemblyFee" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalAssemblyFee"  writable="true"/>
+		<property hidden="false"  name="deliverySurchargeSaving" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurchargeSaving"  writable="true"/>
+		<property hidden="false"  name="maxDeliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="maxDeliverySurcharge"  writable="true"/>
+		<property hidden="false"  name="finalShippingCharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="finalShippingCharge"  writable="true"/>
+		<property hidden="false"  name="onlineTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="onlineTotal"  writable="true"/>
+		<property hidden="false"  name="totalPreTaxAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalPreTaxAmount"  writable="true"/>
+		<property hidden="false"  name="rawShippingTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="rawShippingTotal"  writable="true"/>
+		<property hidden="false"  name="orderPreTaxAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="orderPreTaxAmount"  writable="true"/>
+		<property hidden="false"  name="shippingGroupItemsTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingGroupItemsTotal"  writable="true"/>
+		<property hidden="false"  name="shippingGroupItemTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingGroupItemTotal"  writable="true"/>
+		<property hidden="false"  name="onlinePurchaseTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="onlinePurchaseTotal"  writable="true"/>		
+		<property hidden="false"  name="totalDiscountShare" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalDiscountShare"  writable="true"/>
+		<property hidden="false"  name="unitSavedAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="unitSavedAmount"  writable="true"/>
+		<property hidden="false"  name="totalSurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalSurcharge"  writable="true"/>
+		<property hidden="false"  name="surchargeSavings" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="surchargeSavings"  writable="true"/>
+		<property hidden="false"  name="shippingSavings" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingSavings"  writable="true"/>
+		<property hidden="false"  name="giftWrapPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="giftWrapPrice"  writable="true"/>
+		<property hidden="false"  name="ecoFeeTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="ecoFeeTotal"  writable="true"/>
+		<property hidden="false"  name="giftWrapTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="giftWrapTotal"  writable="true"/>
+		<property hidden="false"  name="shippingLevelTax" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingLevelTax"  writable="true"/>
+		<property hidden="false"  name="onlineEcoFeeTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="onlineEcoFeeTotal"  writable="true"/>
+		<property hidden="false"  name="storeEcoFeeTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="storeEcoFeeTotal"  writable="true"/>
+		<property hidden="false"  name="shippingCountyLevelTax" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingCountyLevelTax"  writable="true"/>
+		<property hidden="false"  name="shippingStateLevelTax" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingStateLevelTax"  writable="true"/>
+		<property hidden="false"  name="amountWithoutGiftCard" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="amountWithoutGiftCard"  writable="true"/>
+		<property hidden="false"  name="prevPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="prevPrice"  writable="true"/>
+		<property hidden="false"  name="onlineRawTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="onlineRawTotal"  writable="true"/>
+		<property hidden="false"  name="promoDiscountAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="promoDiscountAmount"  writable="true"/>
+		<property hidden="false"  name="formattedRawAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedStoreAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalSavedAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalTax" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalShippingAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedUnitListPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedUnitSalePrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedDeliverySurchargeProrated" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedAssemblyFee" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalAssemblyFee" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedDeliverySurchargeSaving" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedMaxDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedFinalShippingCharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedOnlineTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalPreTaxAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedRawShippingTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedOrderPreTaxAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingGroupItemsTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingGroupItemTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedOnlinePurchaseTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>		
+		<property hidden="false"  name="formattedTotalDiscountShare" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedUnitSavedAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedTotalSurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedSurchargeSavings" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingSavings" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedGiftWrapPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedEcoFeeTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedGiftWrapTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingLevelTax" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedOnlineEcoFeeTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedStoreEcoFeeTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingCountyLevelTax" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedShippingStateLevelTax" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedAmountWithoutGiftCard" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedPrevPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedOnlineRawTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedPromoDiscountAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdRawAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdStoreAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalSavedAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalTax" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalShippingAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdUnitListPrice" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdUnitSalePrice" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdDeliverySurcharge" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdDeliverySurchargeProrated" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdAssemblyFee" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalDeliverySurcharge" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalAssemblyFee" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdDeliverySurchargeSaving" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdMaxDeliverySurcharge" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdFinalShippingCharge" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdOnlineTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalPreTaxAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdRawShippingTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdOrderPreTaxAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingGroupItemsTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingGroupItemTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdOnlinePurchaseTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>		
+		<property hidden="false"  name="usdTotalDiscountShare" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdUnitSavedAmount" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdTotalSurcharge" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdSurchargeSavings" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingSavings" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdGiftWrapPrice" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdEcoFeeTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdGiftWrapTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingLevelTax" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdOnlineEcoFeeTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdStoreEcoFeeTotal" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingCountyLevelTax" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdShippingStateLevelTax" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdAmountWithoutGiftCard" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="usdPrevPrice" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+	</component>
+	
+	<component name="com.bbb.commerce.cart.bean.CommerceItemDisplayVO" default-include="true">
+        <property hidden="false"  name="shippingSurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingSurcharge"/>
+      	<property hidden="false"  name="personalizePrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="personalizePrice"/> 
+        <property hidden="false"  name="formattedShippingSurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.catalog.vo.SKUVO" default-include="true">
+        <property hidden="false"  name="shippingSurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingSurcharge"/>
+        <property hidden="false"  name="formattedShippingSurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.catalog.vo.SKUDetailVO" default-include="true">
+        <property hidden="true"  name="dynamicPriceSKU" writable="false"/>
+         <property hidden="true"  name="skuRepositoryItem" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.order.bean.BBBCommerceItem" default-include="true">
+        <property hidden="false"  name="skuSurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="skuSurcharge"/>
+        <property hidden="false"  name="prevPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="prevPrice" writable="true"/>
+        <property hidden="false"  name="formattedSkuSurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedPrevPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.catalog.vo.ShipMethodVO" default-include="true">
+        <property hidden="false"  name="shippingCharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingCharge" writable="true"/>
+        <property hidden="false"  name="assemblyFees" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="assemblyFees" writable="true"/>
+        <property hidden="false"  name="deliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurcharge" writable="true"/>
+        <property hidden="false"  name="formattedShippingCharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedAssemblyFees" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.cart.PricingMessageVO" default-include="true">
+        <property hidden="false"  name="prevPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="prevPrice" writable="true"/>
+        <property hidden="false"  name="currentPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="currentPrice" writable="true"/>
+        <property hidden="false"  name="formattedPrevPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedCurrentPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.common.ShippingGrpCIRelationshipVO" default-include="true">
+        <property hidden="false"  name="shippingGroupItemTotal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="shippingGroupItemTotal" writable="true"/>
+        <property hidden="false"  name="formattedShippingGroupItemTotal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+	<component name="com.bbb.commerce.common.PriceBeanDisplayVO" default-include="true">
+        <property hidden="false"  name="unitPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="unitPrice" writable="true"/>
+        <property hidden="false"  name="ommnitureDiscountAmount" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="ommnitureDiscountAmount" writable="true"/>
+        <property hidden="false"  name="formattedUnitPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedOmmnitureDiscountAmount" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+         <property hidden="false"  name="usdUnitPrice" property-customizer="com.bbb.rest.framework.USDPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.pricing.bean.ItemPriceVO" default-include="true">
+        <property hidden="false"  name="listPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="listPrice" writable="true"/>
+        <property hidden="false"  name="salePrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="salePrice" writable="true"/>
+        <property hidden="false"  name="totalPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalPrice" writable="true"/>
+        <property hidden="false"  name="formattedListPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedSalePrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedTotalPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.rest.catalog.vo.SkuRestVO" default-include="true">
+    	<property hidden="false"  name="listPriceTBD" property-customizer="com.bbb.rest.framework.LocalePriceTBDCustomizer" target="listPriceTBD"/>
+    	<property hidden="false"  name="salePriceTBD" property-customizer="com.bbb.rest.framework.LocalePriceTBDCustomizer" target="salePriceTBD"/>
+        <property hidden="false"  name="listPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="listPrice"/>
+        <property hidden="false"  name="salePrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="salePrice"/>
+        <property hidden="false"  name="formattedListPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+		<property hidden="false"  name="formattedSalePrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.wishlist.GiftListVO" default-include="true">
+        <property hidden="false"  name="prevPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="prevPrice"/>
+        <property hidden="false"  name="price" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="price"/>
+        <property hidden="false"  name="totalPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="totalPrice"/>
+         <property hidden="false"  name="formattedPrevPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedTotalPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedAssemblyFees" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.giftregistry.vo.RegistryItemVO" default-include="true">
+        <property hidden="false"  name="price" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="price"/>
+        <property hidden="false"  name="priceVal" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="priceVal"/>
+        <property hidden="false"  name="formattedPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedPriceVal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedInCartPriceVal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="formattedPersonalizedPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="formattedCustomizedPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="deliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurcharge"/>
+    	<property hidden="false"  name="assemblyFees" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="assemblyFees"/>
+    	<property hidden="false"  name="formattedTotalDeliveryCharges" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="formattedDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="formattedAssemblyFees" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    	<property hidden="false"  name="formattedTotalPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.kickstarters.TopSkuVO" default-include="true">
+        <property hidden="false"  name="formattedSalePrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedListPrice" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedInCartPriceVal" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.commerce.giftregistry.tool.RecommendationRegistryProductVO" default-include="true">
+        <property hidden="false"  name="skuListPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" writable="false"/>
+        <property hidden="false"  name="skuSalePrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" writable="false"/>
+        <property hidden="false"  name="deliverySurcharge" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="deliverySurcharge"/>
+    	<property hidden="false"  name="assemblyFees" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="assemblyFees"/>
+        <property hidden="false"  name="formattedDeliverySurcharge" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+        <property hidden="false"  name="formattedAssemblyFees" property-customizer="com.bbb.rest.framework.FormattedPriceCustomizer" writable="false"/>
+         <property hidden="false"  name="skuIncartPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" writable="false"/>
+    </component>
+    
+    <component name="com.bbb.rest.catalog.vo.ProductMobileVO" default-include="true">
+        <property hidden="false"  name="currentPrice" property-customizer="com.bbb.rest.framework.LocalePriceCustomizer" target="currentPrice"  writable="true" />
+    </component>
+    
+	   <component name="com.bbb.search.bean.result.SearchResults" default-include="true">
+	      <property hidden="true"  name="checkListSeoUrlHierarchy" writable="false"/>
+	  </component>
+    
+</rest-filtering>
+<!-- @version $Id: //product/REST/version/10.0.3/atg-rest/config/src/main/config/atg/rest/filtering/filteringConfiguration.xml#2 $$Change: 651448 $-->

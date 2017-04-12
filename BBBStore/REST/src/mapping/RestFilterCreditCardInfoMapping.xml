@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+	
+		<class-a>com.bbb.commerce.common.BasicBBBCreditCardInfo</class-a>
+		<class-b>com.bbb.rest.catalog.vo.CreditCardRestInfo</class-b>
+		<field>
+			<a>nameOnCard</a>
+			<b>nameOnCard</b>
+		</field>
+		<field>
+			<a>creditCardId</a>
+			<b>creditCardId</b>
+		</field>
+		 <field>
+			<a>source</a>
+			<b>source</b>
+		</field>
+		<field>
+			<a>default</a>
+			<b>default</b>
+		</field>
+		<field>
+			<a>expired</a>
+			<b>expired</b>
+		</field>
+		 <field>
+			<a>lastFourDigits</a>
+			<b>lastFourDigits</b>
+		</field>
+		<field>
+			<a>creditCardNumber</a>
+			<b>creditCardNumber</b>
+		</field>
+		
+		<field>
+			<a>expirationMonth</a>
+			<b>expirationMonth</b>
+		</field>
+		<field>
+			<a>expirationDayOfMonth</a>
+			<b>expirationDayOfMonth</b>
+		</field>
+		 <field>
+			<a>expirationYear</a>
+			<b>expirationYear</b>
+		</field>
+		<field>
+			<a>creditCardType</a>
+			<b>creditCardType</b>
+		</field>
+		<field>
+			<a>amount</a>
+			<b>amount</b>
+		</field>
+		 <field>
+			<a>paymentId</a>
+			<b>paymentId</b>
+		</field>
+		<field>
+			<a>currencyCode</a>
+			<b>currencyCode</b>
+		</field>
+		
+		<field>
+			<a>cardVerificationNumber</a>
+			<b>cardVerificationNumber</b>
+		</field>
+	</mapping>	
+</mappings>

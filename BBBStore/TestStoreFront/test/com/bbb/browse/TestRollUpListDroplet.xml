@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestRollUpListDroplet.xml
+
+  DESCRIPTION: ddtunit data file for RollUpListDroplet.java test case
+
+  HISTORY:
+  Nov 30, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.browse.TestRollUpListDroplet">
+       <group id="testRollUpList">
+        <test id="testRollUpList_test">
+			<objs>
+				<obj id="rollUpListDroplet" type="com.bbb.commerce.browse.droplet.RollUpListDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestRollUpListDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/RollUpListDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

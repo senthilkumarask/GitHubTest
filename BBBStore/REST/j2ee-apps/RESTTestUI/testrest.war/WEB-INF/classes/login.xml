@@ -1,0 +1,14 @@
+<form id="loginUser" name="User Login">
+	<description>Use this service for signin a user</description>
+	<action>/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</action>
+	<params>
+		<param type="text" name="atg-rest-depth" id="atg-rest-depth" required="true" class="reqBody">6</param>
+		<param type="text" name="atg-rest-input" id="atg-rest-input" required="true" class="reqBody">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param type="text" name="Login:" id="value.login" required="true" class="reqBody">archit_goel@infosys.com</param>
+		<param type="text" name="Password:" id="value.password" required="true" class="reqBody">Test@123</param>
+		<param type="text" name="ClientId" id="clientID" required="true" class="reqHead">client123</param>
+		<param type="text" name="Token" id="token" class="reqHead">client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>

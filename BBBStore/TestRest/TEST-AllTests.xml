@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="delhbandl94637" name="AllTests" tests="1" time="0.0" timestamp="2012-11-05T08:37:47">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/Eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 7" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre6\lib\resources.jar;C:\Program Files\Java\jre6\lib\rt.jar;C:\Program Files\Java\jre6\lib\sunrsasign.jar;C:\Program Files\Java\jre6\lib\jsse.jar;C:\Program Files\Java\jre6\lib\jce.jar;C:\Program Files\Java\jre6\lib\charsets.jar;C:\Program Files\Java\jre6\lib\modules\jdk.boot.jar;C:\Program Files\Java\jre6\classes" />
+    <property name="core" value="BBBStore.core" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.type.TestRest" value="file" />
+    <property name="ant.home" value="D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300" />
+    <property name="java.runtime.version" value="1.6.0_27-b07" />
+    <property name="user.name" value="hbandl" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre6\bin" />
+    <property name="ant.project.default-target" value="RunJuntTest" />
+    <property name="javac.dest" value="classes" />
+    <property name="ant.project.name" value="TestRest" />
+    <property name="junitreports" value="reports" />
+    <property name="java.version" value="1.6.0_27" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre6\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="weblogic.home" value="D:\Oracle\Middleware" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files\Java\jre6" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\Codebase\BBBStore\TestRest\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="20.2-b06" />
+    <property name="ant.file.TestRest" value="D:\Codebase\BBBStore\TestRest\build.xml" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.6.0_27" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="dynamo.home" value="D:\ATG\ATG10.0.3\home" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/Eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="user.home" value="C:\Users\hbandl" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.library.path" value="C:\Program Files\Java\jre6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.6.0_27\bin;C:\Program Files\TortoiseSVN\bin;C:\apache-ant-1.8.2\bin;D:\ATG\ATG10.0.3\MySQL\win32\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;." />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner AllTests filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\Codebase\BBBStore\TestRest\TEST-AllTests.xml crashfile=D:\Codebase\BBBStore\TestRest\junitvmwatcher3239624306359019768.properties propsfile=D:\Codebase\BBBStore\TestRest\junit3725785962773956287.properties" />
+    <property name="java.class.path" value="D:\Oracle\Middleware\wlserver_10.3\server\lib\wlclient.jar;D:\Oracle\Middleware\wlserver_10.3\server\lib\wljmsclient.jar;D:\ATG\ATG10.0.3\DAS\lib\atg-jaxb-invoker.jar;D:\ATG\ATG10.0.3\DAS\lib\atg-services.jar;D:\ATG\ATG10.0.3\DAS\lib\axis-1.4.jar;D:\ATG\ATG10.0.3\DAS\lib\bundle-support-standard-1.1.2.jar;D:\ATG\ATG10.0.3\DAS\lib\cglib-nodep-2.1_3.jar;D:\ATG\ATG10.0.3\DAS\lib\classes.jar;D:\ATG\ATG10.0.3\DAS\lib\commons-codec-1.3.jar;D:\ATG\ATG10.0.3\DAS\lib\commons-discovery-0.2.jar;D:\ATG\ATG10.0.3\DAS\lib\commons-httpclient-3.1.jar;D:\ATG\ATG10.0.3\DAS\lib\commons-logging-1.1.1.jar;D:\ATG\ATG10.0.3\DAS\lib\ehcache-1.5.0.jar;D:\ATG\ATG10.0.3\DAS\lib\filedist.jar;D:\ATG\ATG10.0.3\DAS\lib\groovy-all-1.7.2.jar;D:\ATG\ATG10.0.3\DAS\lib\ice.jar;D:\ATG\ATG10.0.3\DAS\lib\jaxb-api101.jar;D:\ATG\ATG10.0.3\DAS\lib\jaxb-impl104.jar;D:\ATG\ATG10.0.3\DAS\lib\jaxb-libs104.jar;D:\ATG\ATG10.0.3\DAS\lib\jmdns-20.jar;D:\ATG\ATG10.0.3\DAS\lib\jsp-api.jar;D:\ATG\ATG10.0.3\DAS\lib\jxl-2.6.6.jar;D:\ATG\ATG10.0.3\DAS\lib\min-ejb3-api.jar;D:\ATG\ATG10.0.3\DAS\lib\mysql-connector-java-5.1.15-bin.jar;D:\ATG\ATG10.0.3\DAS\lib\protocol.jar;D:\ATG\ATG10.0.3\DAS\lib\resources.jar;D:\ATG\ATG10.0.3\DAS\lib\servlet.jar;D:\ATG\ATG10.0.3\DAS\lib\spring-aop-1.2-rc1.jar;D:\ATG\ATG10.0.3\DAS\lib\subclassloader.jar;D:\ATG\ATG10.0.3\DAS-UI\lib\client-stubs.jar;D:\ATG\ATG10.0.3\DAS-UI\lib\jhall.jar;D:\ATG\ATG10.0.3\DAS-UI\lib\uiclasses.jar;D:\ATG\ATG10.0.3\DAS-UI\lib\uiresources.jar;D:\ATG\ATG10.0.3\DPS\lib\classes.jar;D:\ATG\ATG10.0.3\DPS\lib\resources.jar;D:\ATG\ATG10.0.3\DSS\lib\classes.jar;D:\ATG\ATG10.0.3\DSS\lib\resources.jar;D:\ATG\ATG10.0.3\DCS\lib\classes.jar;D:\ATG\ATG10.0.3\DCS\lib\resources.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\axis.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\classes.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\commons-discovery-0.2.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\cybersource_client.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\wsdl4j-1.5.1.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\wss4j-1.5.7.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\lib\xmlsec-1.4.0.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\BaseServices\lib\classes.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\FraudManagement\lib\classes.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\FraudManagement\lib\commons-httpclient-2.0-final.jar;D:\ATG\ATG10.0.3\CyberSourceIntegration\PaymentTokenization\lib\classes.jar;D:\ATG\ATG10.0.3\PublishingAgent\base\lib\agent.jar;D:\ATG\ATG10.0.3\PublishingAgent\base\lib\classes.jar;D:\Codebase\BBBStore\webservices\lib\PricingService.jar;D:\Codebase\BBBStore\webservices\lib\ProfileService.jar;D:\Codebase\BBBStore\webservices\lib\axiom-api-1.2.12.jar;D:\Codebase\BBBStore\webservices\lib\axiom-impl-1.2.12.jar;D:\Codebase\BBBStore\webservices\lib\axis2-kernel-1.6.1.jar;D:\Codebase\BBBStore\webservices\lib\axis2-xmlbeans-1.6.1.jar;D:\Codebase\BBBStore\webservices\lib\dozer-5.3.2.jar;D:\Codebase\BBBStore\webservices\lib\webservices.jar;D:\Codebase\BBBStore\webservices\lib\xmlbeans-2.3.0.jar;D:\Codebase\BBBStore\EStore\lib\EStore.jar;D:\Codebase\BBBStore\EStore\lib\commons-beanutils-1.7.jar;D:\Codebase\BBBStore\EStore\lib\commons-codec-1.4.jar;D:\Codebase\BBBStore\EStore\lib\commons-collections.jar;D:\Codebase\BBBStore\EStore\lib\commons-lang-2.4.jar;D:\Codebase\BBBStore\EStore\lib\dozer-5.3.2.jar;D:\Codebase\BBBStore\EStore\lib\ezmorph.jar;D:\Codebase\BBBStore\EStore\lib\httpclient-4.1.2.jar;D:\Codebase\BBBStore\EStore\lib\httpclient-cache-4.1.2.jar;D:\Codebase\BBBStore\EStore\lib\httpcore-4.1.2.jar;D:\Codebase\BBBStore\EStore\lib\httpmime-4.1.2.jar;D:\Codebase\BBBStore\EStore\lib\json-lib-2.2.2-jdk15.jar;D:\Codebase\BBBStore\EStore\lib\jsoup-1.6.1.jar;D:\Codebase\BBBStore\EStore\lib\simplecaptcha-latest.jar;D:\Codebase\BBBStore\core\lib\XmlSchema-1.4.7.jar;D:\Codebase\BBBStore\core\lib\activation-1.1.jar;D:\Codebase\BBBStore\core\lib\axiom-api-1.2.12.jar;D:\Codebase\BBBStore\core\lib\axiom-impl-1.2.12.jar;D:\Codebase\BBBStore\core\lib\axis2-adb-1.6.1.jar;D:\Codebase\BBBStore\core\lib\axis2-codegen-1.6.1.jar;D:\Codebase\BBBStore\core\lib\axis2-kernel-1.6.1.jar;D:\Codebase\BBBStore\core\lib\axis2-transport-http-1.6.1.jar;D:\Codebase\BBBStore\core\lib\axis2-transport-local-1.6.1.jar;D:\Codebase\BBBStore\core\lib\axis2-xmlbeans-1.6.1.jar;D:\Codebase\BBBStore\core\lib\bbb-jaxb-stubs.jar;D:\Codebase\BBBStore\core\lib\cobertura.jar;D:\Codebase\BBBStore\core\lib\coherence.jar;D:\Codebase\BBBStore\core\lib\commons-codec-1.4.jar;D:\Codebase\BBBStore\core\lib\commons-fileupload-1.2.jar;D:\Codebase\BBBStore\core\lib\commons-httpclient-3.1.jar;D:\Codebase\BBBStore\core\lib\commons-lang-2.4.jar;D:\Codebase\BBBStore\core\lib\core.jar;D:\Codebase\BBBStore\core\lib\dozer-5.3.2.jar;D:\Codebase\BBBStore\core\lib\geronimo-jta_1.1_spec-1.1.jar;D:\Codebase\BBBStore\core\lib\geronimo-stax-api_1.0_spec-1.0.1.jar;D:\Codebase\BBBStore\core\lib\geronimo-ws-metadata_2.0_spec-1.1.2.jar;D:\Codebase\BBBStore\core\lib\gson-1.7.1.jar;D:\Codebase\BBBStore\core\lib\httpclient-4.1.2.jar;D:\Codebase\BBBStore\core\lib\httpcore-4.1.2.jar;D:\Codebase\BBBStore\core\lib\jaxb-api.jar;D:\Codebase\BBBStore\core\lib\jaxb1-impl.jar;D:\Codebase\BBBStore\core\lib\jsr311-api-1.0.jar;D:\Codebase\BBBStore\core\lib\mail-1.4.jar;D:\Codebase\BBBStore\core\lib\neethi-3.0.1.jar;D:\Codebase\BBBStore\core\lib\tibjms.jar;D:\Codebase\BBBStore\core\lib\woden-api-1.0M9.jar;D:\Codebase\BBBStore\core\lib\woden-impl-commons-1.0M9.jar;D:\Codebase\BBBStore\core\lib\woden-impl-dom-1.0M9.jar;D:\Codebase\BBBStore\core\lib\wsdl4j-1.6.2.jar;D:\Codebase\BBBStore\core\lib\xmlbeans-2.3.0.jar;D:\Codebase\BBBStore\integration\endeca\lib\commons-beanutils-1.7.jar;D:\Codebase\BBBStore\integration\endeca\lib\commons-lang-2.4.jar;D:\Codebase\BBBStore\integration\endeca\lib\commons-logging-1.1.1.jar;D:\Codebase\BBBStore\integration\endeca\lib\endeca-content-2.1.0-samples.jar;D:\Codebase\BBBStore\integration\endeca\lib\endeca-content-2.1.1.jar;D:\Codebase\BBBStore\integration\endeca\lib\endeca.jar;D:\Codebase\BBBStore\integration\endeca\lib\endeca_logging.jar;D:\Codebase\BBBStore\integration\endeca\lib\endeca_navigation.jar;D:\Codebase\BBBStore\integration\endeca\lib\json-lib-2.2.2-jdk15.jar;D:\Codebase\BBBStore\integration\endeca\lib\jstl.jar;D:\Codebase\BBBStore\integration\endeca\lib\soleng-uicl.jar;D:\Codebase\BBBStore\integration\endeca\lib\standard.jar;D:\Codebase\BBBStore\integration\endeca\lib\uiclCore.jar;D:\Codebase\BBBStore\integration\endeca\lib\uiclUrlFormatter.jar;D:\Codebase\BBBStore\integration\endeca\lib\urlFormatterCore.jar;D:\Codebase\BBBStore\integration\endeca\lib\xtags-0.5.jar;D:\Codebase\BBBStore\integration\webservices\lib\DOMWebServicesService-test-client.jar;D:\Codebase\BBBStore\integration\webservices\lib\dozer-5.3.2.jar;D:\Codebase\BBBStore\integration\webservices\lib\eservices-test-client.jar;D:\Codebase\BBBStore\integration\webservices\lib\webservices.jar;D:\Codebase\BBBStore\integration\valuelink\lib\dwxml4.4.jar;D:\Codebase\BBBStore\integration\valuelink\lib\valuelink.jar;D:\Codebase\BBBStore\integration\cybersource\lib\cybersource.jar;D:\Codebase\BBBStore\TestRest\classes;D:\Codebase\BBBStore\TestRest\lib\ant-junit.jar;D:\Codebase\BBBStore\TestRest\lib\commons-lang-2.4.jar;D:\Codebase\BBBStore\TestRest\lib\junit.jar;D:\Codebase\BBBStore\TestRest\lib\log4j-1.2.14.jar;D:\Codebase\BBBStore\TestRest\lib\ojdbc6.jar;D:\Codebase\BBBStore\TestRest;D:\Oracle\Middleware\wlserver_10.3\server\lib\ojdbc6.jar;C:\axis2-1.6.2\bin;D:\Endeca\lib\java;D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar;D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar;D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar;D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="EStore" value="BBBStore.EStore" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="eclipse.pdebuild.home" value="/D:/Eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="java.io.tmpdir" value="C:\Users\hbandl\AppData\Local\Temp\" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre6\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\Codebase\BBBStore\TestRest" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="D:\Codebase\BBBStore\TestRest" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="D:\Eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar" />
+    <property name="dynamo.root.dir" value="D:\ATG\ATG10.0.3\home/.." />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="JunitReport" />
+  </properties>
+  <error message="AllTests" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: AllTests
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

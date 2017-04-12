@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSchoolPromotion.xml
+
+  DESCRIPTION: ddtunit data file for TestSchoolPromotion.java test case
+
+  HISTORY:
+  March 19, 2012  Initial version
+
+-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.checkout.util.TestSchoolPromotion">
+      <group id="testSchoolPromotion">
+        <test id="testService_test1">
+			<objs>
+				<obj id="BBBCouponUtil" type="com.bbb.commerce.checkout.util.BBBCouponUtil" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.util.TestSchoolPromotion">
+					<item type="string">/com/bbb/commerce/checkout/util/BBBCouponUtil</item>
+				</obj>
+				<!--promoCode is the coupon code and schoolPromotionID is the promotionID which belongs to the coupon-->
+				<obj id="promoCode" type="string">Coupon1234</obj>	
+				<obj id="schoolId" type="string">11185</obj>
+				<obj id="schoolPromotionID" type="string">DC1promo170001</obj>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.BBBCartFormHandler" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.checkout.util.TestSchoolPromotion">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

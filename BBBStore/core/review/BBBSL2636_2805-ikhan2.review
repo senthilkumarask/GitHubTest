@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBSL2636_2805">
+  <ReviewIssue id="HW0BUYP5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 13:12:24:809 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-04 :: 13:12:54:623 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="659">src/com/bbb/ecommerce/order/BBBOrderImpl.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move constants to BBBCoreConstants</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

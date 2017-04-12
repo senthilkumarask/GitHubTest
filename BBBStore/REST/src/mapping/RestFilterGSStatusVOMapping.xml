@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+    <mapping>
+        <class-a>com.bbb.tbs.gs.service.vo.StatusVO</class-a>
+        <class-b>com.bbb.tbs.gs.service.rest.vo.StatusVO</class-b>
+        <field>
+            <a>errorId</a>
+            <b>errorId</b>
+        </field>
+        <field>
+            <a>errorMessage</a>
+            <b>errorMessage</b>
+        </field>
+        <field>
+            <a>displayMessage</a>
+            <b>displayMessage</b>
+        </field>
+        <field>
+            <a>errorExists</a>
+            <b>errorExists</b>
+        </field>
+        <field>
+            <a>orderNum</a>
+            <b>orderNum</b>
+        </field>
+    </mapping>
+</mappings>

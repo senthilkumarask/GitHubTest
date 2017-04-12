@@ -1,0 +1,1577 @@
+src/com/bbb/search/endeca/EndecaClient.java:1:	Possible God class (WMC=65, ATFD=48, TCC=0.09686609686609686)
+src/com/bbb/search/endeca/EndecaClient.java:23:	Avoid unused imports such as 'com.bbb.utils.BBBUtility'
+src/com/bbb/search/endeca/EndecaClient.java:47:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaClient.java:48:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaClient.java:62:	Avoid unused private fields such as 'MIN_PRICE'.
+src/com/bbb/search/endeca/EndecaClient.java:63:	Avoid unused private fields such as 'MAX_PRICE'.
+src/com/bbb/search/endeca/EndecaClient.java:64:	Avoid excessively long variable names like DEFAULT_MIN_PRICE_RANGE
+src/com/bbb/search/endeca/EndecaClient.java:64:	Avoid unused private fields such as 'DEFAULT_MIN_PRICE_RANGE'.
+src/com/bbb/search/endeca/EndecaClient.java:65:	Avoid excessively long variable names like DEFAULT_MAX_PRICE_RANGE
+src/com/bbb/search/endeca/EndecaClient.java:65:	Avoid unused private fields such as 'DEFAULT_MAX_PRICE_RANGE'.
+src/com/bbb/search/endeca/EndecaClient.java:74:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:87:	Local variable 'methodName' could be declared final
+src/com/bbb/search/endeca/EndecaClient.java:99:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:99:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:121:	Found 'DD'-anomaly for variable 'urlGen' (lines '121'-'123').
+src/com/bbb/search/endeca/EndecaClient.java:122:	Found 'DD'-anomaly for variable 'hyperlink' (lines '122'-'160').
+src/com/bbb/search/endeca/EndecaClient.java:124:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:135:	The String literal "true" appears 22 times in this file; the first occurrence is on line 135
+src/com/bbb/search/endeca/EndecaClient.java:140:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:147:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:147:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:152:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:153:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:154:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:160:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:178:	Found 'DD'-anomaly for variable 'urlGen' (lines '178'-'180').
+src/com/bbb/search/endeca/EndecaClient.java:179:	Found 'DD'-anomaly for variable 'hyperlink' (lines '179'-'214').
+src/com/bbb/search/endeca/EndecaClient.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:183:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:184:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:187:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:188:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:191:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:202:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:202:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:207:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:208:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:209:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:232:	Found 'DD'-anomaly for variable 'urlGen' (lines '232'-'234').
+src/com/bbb/search/endeca/EndecaClient.java:233:	Found 'DD'-anomaly for variable 'hyperlink' (lines '233'-'268').
+src/com/bbb/search/endeca/EndecaClient.java:235:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:236:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:237:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:238:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:239:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:240:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:241:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:243:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:246:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:250:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:253:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:257:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:257:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:262:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:263:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:264:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:268:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:286:	Found 'DD'-anomaly for variable 'urlGen' (lines '286'-'288').
+src/com/bbb/search/endeca/EndecaClient.java:287:	Found 'DD'-anomaly for variable 'hyperlink' (lines '287'-'321').
+src/com/bbb/search/endeca/EndecaClient.java:289:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:290:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:291:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:292:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:293:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:294:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:295:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:296:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:299:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:303:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:306:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:310:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:310:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:315:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:316:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:317:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:321:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:339:	Found 'DD'-anomaly for variable 'urlGen' (lines '339'-'341').
+src/com/bbb/search/endeca/EndecaClient.java:340:	Found 'DD'-anomaly for variable 'hyperlink' (lines '340'-'374').
+src/com/bbb/search/endeca/EndecaClient.java:342:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:343:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:344:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:345:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:346:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:347:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:348:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:349:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:352:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:356:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:359:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:363:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:363:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:368:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:369:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:370:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:374:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:391:	Found 'DD'-anomaly for variable 'urlGen' (lines '391'-'393').
+src/com/bbb/search/endeca/EndecaClient.java:392:	Found 'DD'-anomaly for variable 'hyperlink' (lines '392'-'425').
+src/com/bbb/search/endeca/EndecaClient.java:394:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:395:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:396:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:397:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:398:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:399:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:400:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:403:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:407:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:410:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:414:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:414:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:419:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:420:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:421:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:425:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:470:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:480:	The method getResultObject() has an NPath complexity of 256
+src/com/bbb/search/endeca/EndecaClient.java:483:	Parameter 'redirUrl' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaClient.java:527:	Found 'DD'-anomaly for variable 'currentOffset' (lines '527'-'529').
+src/com/bbb/search/endeca/EndecaClient.java:528:	Found 'DD'-anomaly for variable 'currentPage' (lines '528'-'530').
+src/com/bbb/search/endeca/EndecaClient.java:530:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaClient.java:530:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaClient.java:554:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:554:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaClient.java:559:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:560:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:561:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaClient.java:574:	Found 'DD'-anomaly for variable 'urlList' (lines '574'-'576').
+src/com/bbb/search/endeca/EndecaClient.java:576:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaClient.java:582:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:583:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:600:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaClient.java:601:	Found 'DD'-anomaly for variable 'portList' (lines '601'-'603').
+src/com/bbb/search/endeca/EndecaClient.java:603:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaClient.java:609:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:610:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaClient.java:696:	Parameter 'pEndecaUrl' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaClient.java:710:	Parameter 'pEndecaPort' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:1:	Possible God class (WMC=97, ATFD=60, TCC=0.02418207681365576)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:38:	Avoid duplicate imports such as 'java.util.List'
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:40:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:44:	The class 'EndecaQueryGenerator' has a Cyclomatic Complexity of 3 (Highest = 36).
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:44:	Too many fields
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:59:	Avoid unused private fields such as 'queryURL'.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:60:	Avoid unused private fields such as 'sortString'.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:65:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:80:	Avoid excessively long variable names like NAV_SEARCH_PHRASES_NTPC
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:81:	Avoid excessively long variable names like NAV_SEARCH_PHRASES_NTPR
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:82:	Avoid excessively long variable names like NAV_SEARCH_PHRASES_NRC
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:83:	Avoid unused private fields such as 'NAV_FILTER'.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:101:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:102:	Avoid excessively long variable names like dimNonDisplayMapConfig
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:103:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:103:	Private field 'defaultKey' could be made final; it is only initialized in the declaration or constructor.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:106:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:121:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:121:	The method 'generateEndecaQuery' has a Cyclomatic Complexity of 36.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:121:	The method generateEndecaQuery() has an NCSS line count of 113
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:121:	The method generateEndecaQuery() has an NPath complexity of 105840
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:125:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:125:	Found 'DD'-anomaly for variable 'contentQuery' (lines '125'-'316').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:125:	Found 'DU'-anomaly for variable 'contentQuery' (lines '125'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:126:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:126:	Found 'DU'-anomaly for variable 'endecaQueryVO' (lines '126'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:126:	Local variable 'endecaQueryVO' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:127:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:127:	Found 'DU'-anomaly for variable 'cacheableQueryKey' (lines '127'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:127:	Local variable 'cacheableQueryKey' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Local variable 'siteDimId' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:132:	Found 'DD'-anomaly for variable 'queryString' (lines '132'-'137').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:133:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:133:	Found 'DD'-anomaly for variable 'pageSize' (lines '133'-'216').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:133:	Found 'DU'-anomaly for variable 'pageSize' (lines '133'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:135:	The String literal "catalogId" appears 6 times in this file; the first occurrence is on line 135
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:137:	Found 'DD'-anomaly for variable 'queryString' (lines '137'-'140').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:137:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:138:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:138:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:140:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:144:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:144:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:144:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:149:	Local variable 'brandDimId' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:149:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:150:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:151:	Prefer StringBuffer over += for concatenating strings
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:155:	Prefer StringBuffer over += for concatenating strings
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:159:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:161:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:170:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:170:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:172:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:172:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:172:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:174:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:174:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:174:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:176:	Found 'DD'-anomaly for variable 'keyword' (lines '176'-'191').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:176:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:180:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:181:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:184:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:184:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:184:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:185:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:190:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:191:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:195:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:199:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:203:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:203:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:204:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:221:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:221:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:222:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:222:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:225:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:226:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:227:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:231:	Found 'DD'-anomaly for variable 'queryObject' (lines '231'-'233').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:235:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:236:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:238:	Found 'DD'-anomaly for variable 'sortKeyList' (lines '238'-'255').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:238:	Found 'DD'-anomaly for variable 'sortKeyList' (lines '238'-'280').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:239:	Found 'DD'-anomaly for variable 'key' (lines '239'-'254').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:239:	Found 'DD'-anomaly for variable 'key' (lines '239'-'282').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:240:	Found 'DD'-anomaly for variable 'sortKey' (lines '240'-'260').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:240:	Found 'DD'-anomaly for variable 'sortKey' (lines '240'-'264').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:240:	Found 'DD'-anomaly for variable 'sortKey' (lines '240'-'286').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:240:	Found 'DD'-anomaly for variable 'sortKey' (lines '240'-'289').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:240:	Found 'DU'-anomaly for variable 'sortKey' (lines '240'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:242:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:242:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:242:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:243:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:244:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Found 'DU'-anomaly for variable 'endecaSortKey' (lines '246'-'331').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Local variable 'endecaSortKey' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:250:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:253:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:253:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:253:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:253:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:258:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:258:	These nested if statements could be combined
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:259:	Local variable 'rankKey' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:261:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:264:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:265:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:265:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:266:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:266:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:269:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:269:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:271:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:284:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:285:	Local variable 'rankKey' could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:287:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:292:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:300:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:301:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:304:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:305:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:308:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:309:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:317:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:318:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:320:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:321:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:321:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:388:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:393:	The method 'getContentList' has a Cyclomatic Complexity of 16.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:393:	The method getContentList() has an NPath complexity of 1729
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:396:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:397:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:398:	Found 'DD'-anomaly for variable 'pPromoVO' (lines '398'-'410').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:399:	Found 'DD'-anomaly for variable 'promoImageLink' (lines '399'-'444').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:400:	Found 'DD'-anomaly for variable 'promoImage' (lines '400'-'428').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:401:	Found 'DD'-anomaly for variable 'promoImageWidth' (lines '401'-'430').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:402:	Found 'DD'-anomaly for variable 'promoImageHeight' (lines '402'-'429').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:403:	Found 'DD'-anomaly for variable 'seoTxt' (lines '403'-'455').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:404:	Found 'DD'-anomaly for variable 'promoImageAlt' (lines '404'-'461').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:405:	Found 'DD'-anomaly for variable 'blurbTxt' (lines '405'-'458').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:410:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:412:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:412:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:412:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:412:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:412:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:413:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:413:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:413:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:413:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:413:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:414:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:414:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:414:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:414:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:414:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:415:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:415:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:415:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:415:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:415:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:416:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:416:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:416:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:416:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:416:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:417:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:417:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:417:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:417:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:417:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:418:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:418:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:418:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:418:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:418:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:419:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:419:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:419:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:419:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:419:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:421:	Found 'DD'-anomaly for variable 'image' (lines '421'-'427').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:421:	Found 'DU'-anomaly for variable 'image' (lines '421'-'478').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:422:	Found 'DD'-anomaly for variable 'caption' (lines '422'-'434').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:423:	Found 'DD'-anomaly for variable 'link' (lines '423'-'438').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:423:	Found 'DU'-anomaly for variable 'link' (lines '423'-'478').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:424:	Found 'DD'-anomaly for variable 'target' (lines '424'-'442').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:426:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:426:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:426:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:426:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:426:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:427:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:428:	Found 'DD'-anomaly for variable 'promoImage' (lines '428'-'452').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:428:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:429:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:430:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:433:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:433:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:433:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:433:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:433:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:434:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:437:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:437:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:437:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:437:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:437:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:438:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:439:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:441:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:442:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:444:	Found 'DD'-anomaly for variable 'promoImageLink' (lines '444'-'449').
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:444:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:449:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:452:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:455:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:458:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:461:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:465:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:466:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:467:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:468:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:469:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:470:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:471:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:472:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:473:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:475:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:534:	Parameter 'pQueryParamNtpc' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:542:	Parameter 'pQueryParamNtpr' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:630:	Parameter 'siteRepository' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:638:	Parameter 'priceFilterField' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:652:	Avoid excessively long variable names like dimNonDisplayMapConfig
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:652:	Parameter 'dimNonDisplayMapConfig' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:661:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:661:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:665:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:668:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:676:	Parameter 'boostBurrySort' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:690:	Parameter 'pCatalogTools' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaQueryGenerator.java:704:	Parameter 'pqueryParamNrc' is not assigned and could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1:	A high number of imports can indicate a high degree of coupling within an object.
+src/com/bbb/search/endeca/EndecaSearch.java:1:	Possible God class (WMC=369, ATFD=466, TCC=0.01009009009009009)
+src/com/bbb/search/endeca/EndecaSearch.java:1:	This class has a bunch of public methods and attributes
+src/com/bbb/search/endeca/EndecaSearch.java:107:	Avoid really long classes.
+src/com/bbb/search/endeca/EndecaSearch.java:107:	The class 'EndecaSearch' has a Cyclomatic Complexity of 5 (Highest = 43).
+src/com/bbb/search/endeca/EndecaSearch.java:107:	The type has an NCSS line count of 1528
+src/com/bbb/search/endeca/EndecaSearch.java:107:	Too many fields
+src/com/bbb/search/endeca/EndecaSearch.java:121:	The String literal "Site_ID" appears 5 times in this file; the first occurrence is on line 121
+src/com/bbb/search/endeca/EndecaSearch.java:135:	Avoid excessively long variable names like CONFIG_TYPE_CONTENT_KEYS
+src/com/bbb/search/endeca/EndecaSearch.java:135:	Avoid unused private fields such as 'CONFIG_TYPE_CONTENT_KEYS'.
+src/com/bbb/search/endeca/EndecaSearch.java:135:	The String literal "ContentCatalogKeys" appears 4 times in this file; the first occurrence is on line 135
+src/com/bbb/search/endeca/EndecaSearch.java:164:	Avoid excessively long variable names like catridgePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:181:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:183:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaSearch.java:184:	Avoid excessively long variable names like dimDisplayMapConfig
+src/com/bbb/search/endeca/EndecaSearch.java:185:	Avoid excessively long variable names like dimNonDisplayMapConfig
+src/com/bbb/search/endeca/EndecaSearch.java:187:	Avoid excessively long variable names like GETTING_CACHE_TIMEOUT_FOR
+src/com/bbb/search/endeca/EndecaSearch.java:188:	Avoid excessively long variable names like productCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:189:	Avoid excessively long variable names like keywordCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:190:	Avoid excessively long variable names like searchCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:191:	Avoid excessively long variable names like headerCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:203:	Avoid excessively long variable names like headerCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:218:	Avoid excessively long variable names like searchCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:232:	Avoid excessively long variable names like keywordCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:246:	Avoid excessively long variable names like productCacheTimeout
+src/com/bbb/search/endeca/EndecaSearch.java:260:	Avoid excessively long variable names like dimDisplayMapConfig
+src/com/bbb/search/endeca/EndecaSearch.java:274:	Avoid excessively long variable names like dimNonDisplayMapConfig
+src/com/bbb/search/endeca/EndecaSearch.java:295:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/search/endeca/EndecaSearch.java:295:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/search/endeca/EndecaSearch.java:312:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:315:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:315:	The method 'performSearch' has a Cyclomatic Complexity of 18.
+src/com/bbb/search/endeca/EndecaSearch.java:322:	Found 'DD'-anomaly for variable 'bsVO' (lines '322'-'384').
+src/com/bbb/search/endeca/EndecaSearch.java:322:	Found 'DD'-anomaly for variable 'bsVO' (lines '322'-'386').
+src/com/bbb/search/endeca/EndecaSearch.java:322:	Found 'DU'-anomaly for variable 'bsVO' (lines '322'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:323:	Found 'DD'-anomaly for variable 'results' (lines '323'-'396').
+src/com/bbb/search/endeca/EndecaSearch.java:323:	Found 'DU'-anomaly for variable 'results' (lines '323'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:324:	Found 'DD'-anomaly for variable 'contenQuery' (lines '324'-'394').
+src/com/bbb/search/endeca/EndecaSearch.java:324:	Found 'DU'-anomaly for variable 'contenQuery' (lines '324'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:325:	Found 'DD'-anomaly for variable 'contentResults' (lines '325'-'395').
+src/com/bbb/search/endeca/EndecaSearch.java:325:	Found 'DU'-anomaly for variable 'contentResults' (lines '325'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:326:	Found 'DD'-anomaly for variable 'cacheName' (lines '326'-'337').
+src/com/bbb/search/endeca/EndecaSearch.java:326:	Found 'DD'-anomaly for variable 'cacheName' (lines '326'-'352').
+src/com/bbb/search/endeca/EndecaSearch.java:326:	Found 'DD'-anomaly for variable 'cacheName' (lines '326'-'366').
+src/com/bbb/search/endeca/EndecaSearch.java:326:	Found 'DU'-anomaly for variable 'cacheName' (lines '326'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:327:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '327'-'339').
+src/com/bbb/search/endeca/EndecaSearch.java:327:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '327'-'354').
+src/com/bbb/search/endeca/EndecaSearch.java:327:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '327'-'368').
+src/com/bbb/search/endeca/EndecaSearch.java:327:	Found 'DU'-anomaly for variable 'cacheTimeout' (lines '327'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:335:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:335:	The String literal "cache key:" appears 4 times in this file; the first occurrence is on line 335
+src/com/bbb/search/endeca/EndecaSearch.java:336:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:339:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '339'-'343').
+src/com/bbb/search/endeca/EndecaSearch.java:343:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '343'-'347').
+src/com/bbb/search/endeca/EndecaSearch.java:344:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:344:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:347:	Found 'DU'-anomaly for variable 'cacheTimeout' (lines '347'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:349:	The String literal "cacheName:" appears 6 times in this file; the first occurrence is on line 349
+src/com/bbb/search/endeca/EndecaSearch.java:354:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '354'-'358').
+src/com/bbb/search/endeca/EndecaSearch.java:358:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '358'-'362').
+src/com/bbb/search/endeca/EndecaSearch.java:359:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:359:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:362:	Found 'DU'-anomaly for variable 'cacheTimeout' (lines '362'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:368:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '368'-'372').
+src/com/bbb/search/endeca/EndecaSearch.java:372:	Found 'DD'-anomaly for variable 'cacheTimeout' (lines '372'-'376').
+src/com/bbb/search/endeca/EndecaSearch.java:373:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:373:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:376:	Found 'DU'-anomaly for variable 'cacheTimeout' (lines '376'-'438').
+src/com/bbb/search/endeca/EndecaSearch.java:384:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:384:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:386:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:386:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:392:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:394:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:395:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:396:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:398:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:402:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:406:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:406:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:408:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:408:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:420:	The String literal "ENEQueryException in calling Endeca performSearch" appears 6 times in this file; the first occurrence is on line 420
+src/com/bbb/search/endeca/EndecaSearch.java:424:	The String literal "InvalidQueryException in calling Endeca performSearch" appears 4 times in this file; the first occurrence is on line 424
+src/com/bbb/search/endeca/EndecaSearch.java:428:	The String literal "ContentException in calling Endeca performSearch" appears 4 times in this file; the first occurrence is on line 428
+src/com/bbb/search/endeca/EndecaSearch.java:452:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:455:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:466:	Found 'UR'-anomaly for variable 'pVo' (lines '466'-'508').
+src/com/bbb/search/endeca/EndecaSearch.java:466:	The method 'processResponse' has a Cyclomatic Complexity of 12.
+src/com/bbb/search/endeca/EndecaSearch.java:471:	Found 'DD'-anomaly for variable 'pSearchResults' (lines '471'-'540').
+src/com/bbb/search/endeca/EndecaSearch.java:472:	Found 'DD'-anomaly for variable 'nav' (lines '472'-'491').
+src/com/bbb/search/endeca/EndecaSearch.java:473:	Found 'DD'-anomaly for variable 'bbbProducts' (lines '473'-'516').
+src/com/bbb/search/endeca/EndecaSearch.java:473:	Found 'DD'-anomaly for variable 'bbbProducts' (lines '473'-'520').
+src/com/bbb/search/endeca/EndecaSearch.java:473:	Found 'DD'-anomaly for variable 'bbbProducts' (lines '473'-'525').
+src/com/bbb/search/endeca/EndecaSearch.java:474:	Found 'DD'-anomaly for variable 'pagingLinks' (lines '474'-'501').
+src/com/bbb/search/endeca/EndecaSearch.java:475:	Found 'DD'-anomaly for variable 'catList' (lines '475'-'536').
+src/com/bbb/search/endeca/EndecaSearch.java:476:	Found 'DD'-anomaly for variable 'pageSize' (lines '476'-'484').
+src/com/bbb/search/endeca/EndecaSearch.java:476:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:476:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:477:	Found 'DD'-anomaly for variable 'facetList' (lines '477'-'496').
+src/com/bbb/search/endeca/EndecaSearch.java:477:	Found 'DD'-anomaly for variable 'facetList' (lines '477'-'502').
+src/com/bbb/search/endeca/EndecaSearch.java:478:	Found 'DD'-anomaly for variable 'descriptorList' (lines '478'-'500').
+src/com/bbb/search/endeca/EndecaSearch.java:479:	Found 'DD'-anomaly for variable 'assetMap' (lines '479'-'529').
+src/com/bbb/search/endeca/EndecaSearch.java:480:	Found 'DD'-anomaly for variable 'pList' (lines '480'-'530').
+src/com/bbb/search/endeca/EndecaSearch.java:481:	Found 'DD'-anomaly for variable 'redirUrl' (lines '481'-'531').
+src/com/bbb/search/endeca/EndecaSearch.java:492:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:504:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:505:	Found 'DD'-anomaly for variable 'count' (lines '505'-'509').
+src/com/bbb/search/endeca/EndecaSearch.java:506:	Found 'DD'-anomaly for variable 'color' (lines '506'-'510').
+src/com/bbb/search/endeca/EndecaSearch.java:506:	Found 'DU'-anomaly for variable 'color' (lines '506'-'555').
+src/com/bbb/search/endeca/EndecaSearch.java:507:	Local variable 'pVo' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:508:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:510:	Found 'DD'-anomaly for variable 'color' (lines '510'-'510').
+src/com/bbb/search/endeca/EndecaSearch.java:510:	Found 'DU'-anomaly for variable 'color' (lines '510'-'555').
+src/com/bbb/search/endeca/EndecaSearch.java:510:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:514:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:534:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:537:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:537:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:540:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:542:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:542:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:542:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:545:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:561:	The String literal "rawtypes" appears 11 times in this file; the first occurrence is on line 561
+src/com/bbb/search/endeca/EndecaSearch.java:564:	Found 'DD'-anomaly for variable 'dimensions' (lines '564'-'574').
+src/com/bbb/search/endeca/EndecaSearch.java:565:	Found 'DD'-anomaly for variable 'dimension' (lines '565'-'577').
+src/com/bbb/search/endeca/EndecaSearch.java:565:	Found 'DU'-anomaly for variable 'dimension' (lines '565'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:566:	Found 'DD'-anomaly for variable 'iterDimensions' (lines '566'-'575').
+src/com/bbb/search/endeca/EndecaSearch.java:567:	Found 'DD'-anomaly for variable 'ancestors' (lines '567'-'579').
+src/com/bbb/search/endeca/EndecaSearch.java:567:	Found 'DU'-anomaly for variable 'ancestors' (lines '567'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:568:	Found 'DD'-anomaly for variable 'ancestor' (lines '568'-'583').
+src/com/bbb/search/endeca/EndecaSearch.java:568:	Found 'DU'-anomaly for variable 'ancestor' (lines '568'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:569:	Found 'DD'-anomaly for variable 'descriptor' (lines '569'-'580').
+src/com/bbb/search/endeca/EndecaSearch.java:569:	Found 'DU'-anomaly for variable 'descriptor' (lines '569'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:570:	Found 'DD'-anomaly for variable 'iterAncestors' (lines '570'-'581').
+src/com/bbb/search/endeca/EndecaSearch.java:570:	Found 'DU'-anomaly for variable 'iterAncestors' (lines '570'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:572:	Found 'DD'-anomaly for variable 'name' (lines '572'-'578').
+src/com/bbb/search/endeca/EndecaSearch.java:572:	Found 'DU'-anomaly for variable 'name' (lines '572'-'591').
+src/com/bbb/search/endeca/EndecaSearch.java:575:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:578:	Found 'DD'-anomaly for variable 'name' (lines '578'-'584').
+src/com/bbb/search/endeca/EndecaSearch.java:578:	Found 'DD'-anomaly for variable 'name' (lines '578'-'587').
+src/com/bbb/search/endeca/EndecaSearch.java:578:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:579:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:580:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:581:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:584:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:585:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:587:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:588:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:599:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:599:	Found 'UR'-anomaly for variable 'skuVO' (lines '599'-'843').
+src/com/bbb/search/endeca/EndecaSearch.java:599:	The method 'getProductList' has a Cyclomatic Complexity of 43.
+src/com/bbb/search/endeca/EndecaSearch.java:599:	The method getProductList() has an NCSS line count of 160
+src/com/bbb/search/endeca/EndecaSearch.java:599:	The method getProductList() has an NPath complexity of 15355505
+src/com/bbb/search/endeca/EndecaSearch.java:603:	Found 'DD'-anomaly for variable 'records' (lines '603'-'636').
+src/com/bbb/search/endeca/EndecaSearch.java:604:	Found 'DD'-anomaly for variable 'record' (lines '604'-'679').
+src/com/bbb/search/endeca/EndecaSearch.java:605:	Found 'DD'-anomaly for variable 'iterRecords' (lines '605'-'672').
+src/com/bbb/search/endeca/EndecaSearch.java:606:	Found 'DD'-anomaly for variable 'properties' (lines '606'-'680').
+src/com/bbb/search/endeca/EndecaSearch.java:607:	Found 'DD'-anomaly for variable 'productID' (lines '607'-'681').
+src/com/bbb/search/endeca/EndecaSearch.java:609:	Found 'DD'-anomaly for variable 'bbbOthResult' (lines '609'-'734').
+src/com/bbb/search/endeca/EndecaSearch.java:610:	Found 'DD'-anomaly for variable 'bbbProduct' (lines '610'-'682').
+src/com/bbb/search/endeca/EndecaSearch.java:611:	Found 'DD'-anomaly for variable 'productCount' (lines '611'-'615').
+src/com/bbb/search/endeca/EndecaSearch.java:612:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:621:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:622:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:622:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:623:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:623:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:623:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:625:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:625:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:625:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:626:	Found 'DD'-anomaly for variable 'cartridge' (lines '626'-'632').
+src/com/bbb/search/endeca/EndecaSearch.java:628:	Found 'DD'-anomaly for variable 'flag' (lines '628'-'631').
+src/com/bbb/search/endeca/EndecaSearch.java:631:	Found 'DD'-anomaly for variable 'flag' (lines '631'-'631').
+src/com/bbb/search/endeca/EndecaSearch.java:636:	Found 'DD'-anomaly for variable 'records' (lines '636'-'636').
+src/com/bbb/search/endeca/EndecaSearch.java:636:	Found 'DD'-anomaly for variable 'records' (lines '636'-'661').
+src/com/bbb/search/endeca/EndecaSearch.java:639:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:639:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:639:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:640:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:640:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:640:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:642:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:642:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:642:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:673:	Found 'DD'-anomaly for variable 'attr' (lines '673'-'752').
+src/com/bbb/search/endeca/EndecaSearch.java:674:	Found 'DD'-anomaly for variable 'pSkuSet' (lines '674'-'753').
+src/com/bbb/search/endeca/EndecaSearch.java:675:	Found 'DD'-anomaly for variable 'skuVOList' (lines '675'-'755').
+src/com/bbb/search/endeca/EndecaSearch.java:681:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:681:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:682:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:685:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:685:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:685:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:686:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:688:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:690:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:690:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:690:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:693:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:693:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:693:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:694:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:694:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:694:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:696:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:697:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:697:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:697:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:697:	The String literal "PRODUCT_IMAGE" appears 5 times in this file; the first occurrence is on line 697
+src/com/bbb/search/endeca/EndecaSearch.java:699:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:699:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:699:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:699:	The String literal "PRODUCT_VERTICAL_IMAGE" appears 5 times in this file; the first occurrence is on line 699
+src/com/bbb/search/endeca/EndecaSearch.java:702:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:702:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:702:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:703:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:703:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:703:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:704:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:704:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:704:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:705:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:705:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:705:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:706:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:706:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:706:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:707:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:707:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:707:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:708:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:708:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:708:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:709:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:709:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:709:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:710:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:710:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:710:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:711:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:711:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:711:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:712:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:712:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:712:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:714:	Avoid empty if statements
+src/com/bbb/search/endeca/EndecaSearch.java:714:	Avoid empty if statements
+src/com/bbb/search/endeca/EndecaSearch.java:714:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:714:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:714:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:715:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:721:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:721:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:721:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:724:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:724:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:724:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:724:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:725:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:725:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:725:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:725:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:729:	Local variable 'otherCat' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:729:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:729:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:730:	Local variable 'otherTitle' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:730:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:730:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:731:	Local variable 'otherLink' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:731:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:731:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:734:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:738:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:741:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:742:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:742:	Local variable 'othResList' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:751:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:752:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:753:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:754:	Found 'DD'-anomaly for variable 'pSkuVO' (lines '754'-'793').
+src/com/bbb/search/endeca/EndecaSearch.java:755:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:762:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:762:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:762:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:762:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:763:	Local variable 'jsonObject' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:763:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:763:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:765:	Local variable 'dynaClass' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:766:	Local variable 'dynaProp' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:767:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:767:	Local variable 'propertyNames' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:769:	Local variable 'name' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:769:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:769:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:772:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:773:	Local variable 'placeholder' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:773:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:773:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:774:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:774:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:775:	Local variable 'priority' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:775:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:775:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:775:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:776:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:776:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:776:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:782:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:782:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:782:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:782:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:783:	Local variable 'jsonObject' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:783:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:783:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:785:	Local variable 'dynaClass' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:786:	Local variable 'dynaProp' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:787:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:787:	Local variable 'propertyNames' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:789:	Local variable 'name' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:789:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:789:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:792:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:792:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:793:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:794:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:794:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:794:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:795:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:795:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:796:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:796:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:796:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:798:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:798:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:799:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:799:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:799:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:801:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:801:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:802:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:802:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:802:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:806:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:806:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:807:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:807:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:807:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:820:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:820:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:820:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:820:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:820:	The String literal "GROUP" appears 4 times in this file; the first occurrence is on line 820
+src/com/bbb/search/endeca/EndecaSearch.java:821:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:821:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:821:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:821:	These nested if statements could be combined
+src/com/bbb/search/endeca/EndecaSearch.java:823:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:823:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:823:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:826:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:826:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:826:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:826:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:827:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:827:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:827:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:827:	These nested if statements could be combined
+src/com/bbb/search/endeca/EndecaSearch.java:829:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:829:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:829:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:840:	Local variable 'skuVO' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:842:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:854:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:874:	Found 'DD'-anomaly for variable 'dimensions' (lines '874'-'885').
+src/com/bbb/search/endeca/EndecaSearch.java:875:	Found 'DD'-anomaly for variable 'dimension' (lines '875'-'890').
+src/com/bbb/search/endeca/EndecaSearch.java:875:	Found 'DU'-anomaly for variable 'dimension' (lines '875'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:876:	Found 'DD'-anomaly for variable 'iterDimensions' (lines '876'-'888').
+src/com/bbb/search/endeca/EndecaSearch.java:877:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:878:	Found 'DD'-anomaly for variable 'asset' (lines '878'-'899').
+src/com/bbb/search/endeca/EndecaSearch.java:878:	Found 'DU'-anomaly for variable 'asset' (lines '878'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:879:	Found 'DD'-anomaly for variable 'dimVals' (lines '879'-'895').
+src/com/bbb/search/endeca/EndecaSearch.java:879:	Found 'DU'-anomaly for variable 'dimVals' (lines '879'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:880:	Found 'DD'-anomaly for variable 'dimVal' (lines '880'-'900').
+src/com/bbb/search/endeca/EndecaSearch.java:880:	Found 'DU'-anomaly for variable 'dimVal' (lines '880'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:881:	Found 'DD'-anomaly for variable 'iterDimVals' (lines '881'-'896').
+src/com/bbb/search/endeca/EndecaSearch.java:881:	Found 'DU'-anomaly for variable 'iterDimVals' (lines '881'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:882:	Found 'DD'-anomaly for variable 'parentRecTypeName' (lines '882'-'893').
+src/com/bbb/search/endeca/EndecaSearch.java:882:	Found 'DU'-anomaly for variable 'parentRecTypeName' (lines '882'-'912').
+src/com/bbb/search/endeca/EndecaSearch.java:888:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:893:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:894:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:894:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:894:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:895:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:896:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:899:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:901:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:901:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:901:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:901:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:902:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:903:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:903:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:903:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:903:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:903:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:905:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:905:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:905:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:905:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:914:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaSearch.java:923:	The String literal "unchecked" appears 6 times in this file; the first occurrence is on line 923
+src/com/bbb/search/endeca/EndecaSearch.java:924:	The method 'getCategories' has a Cyclomatic Complexity of 11.
+src/com/bbb/search/endeca/EndecaSearch.java:929:	Found 'DD'-anomaly for variable 'categoryRefines' (lines '929'-'948').
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:935:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:937:	Found 'DD'-anomaly for variable 'loopSize' (lines '937'-'947').
+src/com/bbb/search/endeca/EndecaSearch.java:937:	Found 'DD'-anomaly for variable 'loopSize' (lines '937'-'953').
+src/com/bbb/search/endeca/EndecaSearch.java:937:	Found 'DU'-anomaly for variable 'loopSize' (lines '937'-'986').
+src/com/bbb/search/endeca/EndecaSearch.java:944:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:945:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:946:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:948:	Found 'DD'-anomaly for variable 'categoryRefines' (lines '948'-'948').
+src/com/bbb/search/endeca/EndecaSearch.java:948:	Found 'DU'-anomaly for variable 'categoryRefines' (lines '948'-'986').
+src/com/bbb/search/endeca/EndecaSearch.java:960:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:962:	Avoid excessively long variable names like dimValuePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:962:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:963:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:965:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:966:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:967:	The String literal "NODE_TYPE" appears 4 times in this file; the first occurrence is on line 967
+src/com/bbb/search/endeca/EndecaSearch.java:968:	The String literal "true" appears 6 times in this file; the first occurrence is on line 968
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:972:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:973:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:974:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:989:	The method 'getSiblings' has a Cyclomatic Complexity of 16.
+src/com/bbb/search/endeca/EndecaSearch.java:996:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:997:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:998:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:999:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:999:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1000:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1000:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1001:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1006:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1007:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1008:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1012:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1012:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1012:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1013:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1014:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1016:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1017:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1018:	Avoid excessively long variable names like dimValuePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:1018:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1019:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1019:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1019:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1019:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1019:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1020:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1022:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1026:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1029:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1030:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1031:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1034:	Avoid excessively long variable names like dimValuePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:1034:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1035:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1036:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1036:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1037:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1038:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1038:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1039:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1039:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1039:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1039:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1039:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1040:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1045:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1046:	Local variable 'cVo' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1047:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1047:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1064:	The String literal "Endeca Exception" appears 19 times in this file; the first occurrence is on line 1,064
+src/com/bbb/search/endeca/EndecaSearch.java:1087:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1093:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1093:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1093:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1093:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1094:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1094:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1094:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1094:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1095:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1095:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1095:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1095:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1095:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1096:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1096:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1096:	The String literal "BRAND" appears 5 times in this file; the first occurrence is on line 1,096
+src/com/bbb/search/endeca/EndecaSearch.java:1096:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1096:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1099:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1100:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1101:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1103:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1103:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1104:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1104:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1105:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1105:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1105:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1105:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1106:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1106:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1106:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1107:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1116:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaSearch.java:1126:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:1126:	The method 'getFacets' has a Cyclomatic Complexity of 39.
+src/com/bbb/search/endeca/EndecaSearch.java:1126:	The method getFacets() has an NPath complexity of 826098
+src/com/bbb/search/endeca/EndecaSearch.java:1143:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:1144:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1144:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1145:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1145:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1145:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1146:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1152:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:1152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	The String literal "CUSTOM_DIMENSION_ID" appears 4 times in this file; the first occurrence is on line 1,159
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1159:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1160:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1160:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1160:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1161:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1162:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1162:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1162:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1162:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1184:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1187:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1187:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1189:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1193:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1193:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1193:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1194:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1194:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1194:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1194:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1194:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1195:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1195:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1195:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1197:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1198:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1203:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1203:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1206:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1206:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1220:	The String literal "DGRAPH_STRATA" appears 5 times in this file; the first occurrence is on line 1,220
+src/com/bbb/search/endeca/EndecaSearch.java:1220:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1220:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1221:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1221:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1221:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1221:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1221:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1234:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1236:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1236:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1238:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1242:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1242:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1246:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/EndecaSearch.java:1248:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1257:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1261:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1261:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1261:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1261:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1264:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1265:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1265:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1265:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1267:	Local variable 'pAttrVal' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1268:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1269:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1271:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1272:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1272:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1274:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1274:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1283:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1285:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1286:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1286:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1288:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1288:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1299:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1299:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1303:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1304:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1336:	Avoid using final local variables, turn them into fields
+src/com/bbb/search/endeca/EndecaSearch.java:1348:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1348:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1353:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:1356:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1359:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1360:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1363:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:1364:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1365:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1368:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:1369:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1370:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1373:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1373:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1373:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1373:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1373:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1374:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1374:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1374:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1374:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1374:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1375:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1375:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1375:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1376:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1377:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1382:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1383:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1384:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1385:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1387:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1388:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1396:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1400:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:1400:	The method 'performFacetSearch' has a Cyclomatic Complexity of 34.
+src/com/bbb/search/endeca/EndecaSearch.java:1400:	The method performFacetSearch() has an NCSS line count of 150
+src/com/bbb/search/endeca/EndecaSearch.java:1400:	The method performFacetSearch() has an NPath complexity of 92934
+src/com/bbb/search/endeca/EndecaSearch.java:1413:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1416:	Avoid excessively long variable names like pFacetQueryResult1
+src/com/bbb/search/endeca/EndecaSearch.java:1417:	Avoid excessively long variable names like pFacetQueryResults
+src/com/bbb/search/endeca/EndecaSearch.java:1419:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1427:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1428:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1428:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1428:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1429:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1429:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1429:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1435:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1435:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1438:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1438:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1438:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1438:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1441:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1441:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1441:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1441:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1443:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1444:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1444:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1444:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1445:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1450:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1451:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1451:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1454:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1454:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1454:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1454:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1459:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:1459:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:1464:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1464:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1467:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1467:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1467:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1473:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1473:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1477:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1478:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1479:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1482:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1483:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1485:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1510:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1512:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1513:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1515:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:1516:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:1521:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1522:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1525:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1528:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1529:	Avoid excessively long variable names like iterDimLocationLists
+src/com/bbb/search/endeca/EndecaSearch.java:1529:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1532:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1536:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1538:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1543:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1544:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:1544:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1546:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1550:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1553:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1554:	Avoid variables with short names like ID
+src/com/bbb/search/endeca/EndecaSearch.java:1554:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1555:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1556:	Avoid if (x != y) ..; else ..;
+src/com/bbb/search/endeca/EndecaSearch.java:1556:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1558:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1561:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1562:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1566:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1569:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1570:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1571:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1572:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1572:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1574:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1576:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1578:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1579:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1580:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1580:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1582:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1591:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1593:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1594:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1598:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1600:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1601:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1605:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1606:	Avoid excessively long variable names like pFacetQueryResult2
+src/com/bbb/search/endeca/EndecaSearch.java:1607:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:1608:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1609:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1611:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1612:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1612:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1612:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1613:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1615:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1616:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1621:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1623:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1623:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1623:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1624:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1624:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1635:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1641:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:1641:	The method 'getCategoryTree' has a Cyclomatic Complexity of 15.
+src/com/bbb/search/endeca/EndecaSearch.java:1641:	The method getCategoryTree() has an NPath complexity of 1164
+src/com/bbb/search/endeca/EndecaSearch.java:1649:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaSearch.java:1650:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaSearch.java:1652:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaSearch.java:1653:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaSearch.java:1654:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/search/endeca/EndecaSearch.java:1654:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1655:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1656:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1658:	Avoid excessively long variable names like isFromCategoryLanding
+src/com/bbb/search/endeca/EndecaSearch.java:1679:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:1679:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:1688:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1691:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1695:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1696:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/search/endeca/EndecaSearch.java:1706:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1708:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1709:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1710:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1712:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1714:	Avoid using final local variables, turn them into fields
+src/com/bbb/search/endeca/EndecaSearch.java:1716:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1716:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1719:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1719:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:1720:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1720:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1721:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1723:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1726:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1745:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1745:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1745:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1752:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1760:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:1760:	The method 'getBrands' has a Cyclomatic Complexity of 14.
+src/com/bbb/search/endeca/EndecaSearch.java:1785:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1785:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1786:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1798:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:1798:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:1806:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1813:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1824:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1842:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1848:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1855:	Local variable 'key' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1856:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1856:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:1858:	Local variable 'featuredBrand' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1859:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:1870:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1895:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:1901:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/search/endeca/EndecaSearch.java:1904:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1907:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1907:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1908:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1908:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1909:	Local variable 'key' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:1909:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1911:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1911:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1911:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1912:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1912:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1912:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1932:	The method 'getCatalogId' has a Cyclomatic Complexity of 13.
+src/com/bbb/search/endeca/EndecaSearch.java:1951:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1951:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1952:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1955:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1959:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1969:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:1969:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:1976:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1980:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1980:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1981:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1982:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:1982:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1983:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1986:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1987:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1988:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1991:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1992:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:1993:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2021:	Avoid unused method parameters such as 'argQueryString'.
+src/com/bbb/search/endeca/EndecaSearch.java:2030:	Avoid excessively long variable names like iterAutoSuggestions
+src/com/bbb/search/endeca/EndecaSearch.java:2033:	Avoid excessively long variable names like iterDYMSuggestions
+src/com/bbb/search/endeca/EndecaSearch.java:2048:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2049:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2054:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2055:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2056:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2060:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2062:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2063:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2064:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2065:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2070:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2071:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2074:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2075:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2076:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2077:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2081:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2082:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2085:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2086:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2087:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2088:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2094:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2113:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2116:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2118:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2119:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2120:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2120:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2123:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2123:	This call to String.startsWith can be rewritten using String.charAt(0)
+src/com/bbb/search/endeca/EndecaSearch.java:2166:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2167:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2243:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2274:	Avoid excessively long variable names like catridgePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:2332:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2380:	Use block level rather than method level synchronization
+src/com/bbb/search/endeca/EndecaSearch.java:2385:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2387:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2387:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2387:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2388:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2394:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2395:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2395:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2395:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2395:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2397:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2398:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2399:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2402:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:2403:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2406:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2415:	Local variable 'param' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:2417:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2418:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2423:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2427:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2427:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2428:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2428:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2429:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:2429:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2430:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2430:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2441:	Avoid long parameter lists.
+src/com/bbb/search/endeca/EndecaSearch.java:2441:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/search/endeca/EndecaSearch.java:2441:	The method 'getChildDimensions' has a Cyclomatic Complexity of 12.
+src/com/bbb/search/endeca/EndecaSearch.java:2444:	Avoid excessively long variable names like categoryRefinementView
+src/com/bbb/search/endeca/EndecaSearch.java:2452:	Avoid excessively long variable names like tmpCategoryRefinementVO
+src/com/bbb/search/endeca/EndecaSearch.java:2459:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/com/bbb/search/endeca/EndecaSearch.java:2473:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:2477:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:2480:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2482:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:2483:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2488:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2490:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:2491:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2495:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2498:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:2499:	Avoid using Literals in Conditional Statements
+src/com/bbb/search/endeca/EndecaSearch.java:2507:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/search/endeca/EndecaSearch.java:2509:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:2521:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:2521:	The method 'getStates' has a Cyclomatic Complexity of 15.
+src/com/bbb/search/endeca/EndecaSearch.java:2539:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2539:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2539:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2540:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2541:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2544:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2545:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2546:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2546:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2549:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2549:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2549:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2549:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2554:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:2554:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:2560:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2562:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2565:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2566:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2567:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2567:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2567:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2570:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2571:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2572:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2573:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2574:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2575:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2576:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2577:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2581:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2582:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2582:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2583:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2584:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2587:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2588:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2589:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2591:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2598:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/search/endeca/EndecaSearch.java:2600:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2632:	Avoid really long methods.
+src/com/bbb/search/endeca/EndecaSearch.java:2632:	The method 'getColleges' has a Cyclomatic Complexity of 20.
+src/com/bbb/search/endeca/EndecaSearch.java:2632:	The method getColleges() has an NCSS line count of 106
+src/com/bbb/search/endeca/EndecaSearch.java:2632:	The method getColleges() has an NPath complexity of 281
+src/com/bbb/search/endeca/EndecaSearch.java:2652:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2652:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2652:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2653:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2661:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2661:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2664:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2664:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2664:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2664:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2669:	Avoid catching NullPointerException; consider removing the cause of the NPE.
+src/com/bbb/search/endeca/EndecaSearch.java:2669:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/search/endeca/EndecaSearch.java:2674:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2678:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2680:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2680:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2688:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2706:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2706:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2707:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2713:	Avoid instantiating new objects inside loops
+src/com/bbb/search/endeca/EndecaSearch.java:2716:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2716:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2716:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:2716:	Useless parentheses.
+src/com/bbb/search/endeca/EndecaSearch.java:2717:	Avoid excessively long variable names like dimValuePropertyMap
+src/com/bbb/search/endeca/EndecaSearch.java:2718:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2718:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2719:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2719:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2719:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2739:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2739:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2739:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2740:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2740:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2740:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2748:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2771:	Comment is too large: Line too long
+src/com/bbb/search/endeca/EndecaSearch.java:2784:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/search/endeca/EndecaSearch.java:2787:	Local variable 'pAttribute' could be declared final
+src/com/bbb/search/endeca/EndecaSearch.java:2788:	String.indexOf(char) is faster than String.indexOf(String).
+src/com/bbb/search/endeca/EndecaSearch.java:2792:	String.indexOf(char) is faster than String.indexOf(String).
+src/com/bbb/search/endeca/EndecaSearch.java:2799:	Comment is too large: Line too long
+src/com/bbb/search/endeca/exception/EndecaException.java:22:	It is a good practice to call super() in a constructor
+src/com/bbb/search/endeca/vo/EndecaQueryVO.java:1:	Comment is too large: Too many lines
+src/com/bbb/search/endeca/vo/EndecaQueryVO.java:25:	Avoid excessively long variable names like endicaContentQuery
+src/com/bbb/search/endeca/vo/EndecaQueryVO.java:37:	Parameter 'queryString' is not assigned and could be declared final
+src/com/bbb/search/endeca/vo/EndecaQueryVO.java:51:	Avoid excessively long variable names like endicaContentQuery
+src/com/bbb/search/endeca/vo/EndecaQueryVO.java:51:	Parameter 'endicaContentQuery' is not assigned and could be declared final

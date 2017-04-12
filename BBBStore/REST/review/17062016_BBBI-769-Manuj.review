@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="17062016_BBBI-769">
+  <ReviewIssue id="IPJTWK7Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 19:56:37:535 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 20:12:00:445 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description>Below Review Comments shared on desk
+Remove Unused Import.
+Make a channelList to be filtered.
+Add Method Comment
+Add null check if the mapping for the URI is not present
+
+
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

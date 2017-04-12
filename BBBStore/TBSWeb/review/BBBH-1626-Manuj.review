@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1626">
+  <ReviewIssue id="IM6YOYW4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:20:34:084 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:21:16:453 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="132">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_guest_category.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Optimize the code</Summary>
+    <Description>We can optimize code by nesting the conditions properly. Take a look at it</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6Z2341">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:30:46:081 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:32:00:694 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="705">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_guest_category.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Optimize the code by nesting the if blocks</Summary>
+    <Description>Optimize the code by nesting the if block conditions properly, we do not need repeat the same logic, we can move &lt;c:when test="${not empty refNum}"&gt; inside the if so that we can save some lines of code.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6Z65SB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:33:56:171 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:34:16:740 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="1288">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_guest_category.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Same comment as above, optimize the while loop</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6Z83UU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:35:26:982 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:36:28:070 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="149">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_guest_price.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Optimize the while loop</Summary>
+    <Description>Same for line #729: Optimize the while block. we do not need to the logic of empty imageUrl and SCENE7 URL code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6ZG64T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:41:43:181 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:41:57:082 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="623">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_owner_category.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary> Optimize the while block. </Summary>
+    <Description>Same for line #729: Optimize the while block. we do not need to the logic of empty imageUrl and SCENE7 URL code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6ZWT9J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:54:39:655 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:55:19:145 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="6">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_owner_category_frag.jsp</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Lot of changes done in this page and wanted to undetstand from the context of persoanlization</Summary>
+    <Description>Can you please provide more details</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM6ZZ30W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:56:25:616 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 20:56:43:431 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="1">j2ee-apps/tbs/tbs.war/giftregistry/frags/registry_items_owner_price.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary> Optimize the while block. </Summary>
+    <Description> Optimize the while block. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSchoolLookupDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSchoolLookupDroplet.java test case
+
+  HISTORY:
+  16 March 2012 Initial version
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.catalog.droplet.TestPromotionLookupDroplet">
+       
+       <group id="testServiceForPromotionLookupDroplet">
+	        <test id="testServiceForPromotionLookupDroplet">
+				<objs>
+					<obj id="bbbPromotionLookupDroplet" type="com.bbb.commerce.catalog.droplet.PromotionLookupDroplet" 
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.droplet.TestPromotionLookupDroplet">
+						<item type="string">/com/bbb/commerce/catalog/droplet/PromotionLookupDroplet</item>
+					</obj>	
+					<obj id="promotionId" type="string">promo90030</obj>		
+					<obj id="siteId" type="string">BedBathUS</obj>		
+				</objs>
+							 
+	        </test>	       
+      </group>     
+    </cluster>
+</ddtunit>
+

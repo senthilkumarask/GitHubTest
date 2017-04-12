@@ -1,0 +1,136 @@
+
+
+<div id="dialog-form" title="Encuesta">
+	<div id="surveyFormContainer" style="line-height:20px;">
+    
+		<h5>Ayúdanos a mejorar nuestra página</h5>
+
+		<p>Agradeceríamos que te tomaras un momento para responder las siguientes preguntas y 
+        	ayudarnos a construir un mejor sitio de internet ¡No olvides registrarte en nuestra 
+            lista de distribución de correo electrónico! </p>
+
+		<p>Si tienes alguna duda o comentario comunícate al 01 800 223 2284.</p>
+ 
+        <!-- <p class="validateTips">All form fields are required.</p>  -->
+        
+        <form id="surveyForm">
+            <fieldset>
+            
+			<div class="field ">
+                <label for="name">Nombre</label>
+                <input type="text" style="width:200px;" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+    		</div>
+
+			<div class="field">
+                <label for="gender">Sexo</label>
+                <select style="width:150px; -webkit-appearance:menulist !important;" name="gender" id="gender" >
+                    <option value="">Selecciona </option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+			
+            
+			<div class="field inrow">
+                <label for="age">Edad</label>    
+                <select name="age" id="age" title="Select age" style="-webkit-appearance:menulist !important;width:150px; ">
+                    <option value="">Selecciona</option>
+                    <option value="Menor de 18">Menor de 18</option>
+                    <option value="18-24">	18-24	</option>
+                    <option value="25-34">	25-34	</option>
+                    <option value="35-44">	35-44	</option>
+                    <option value="45-54">	45-54	</option>
+                    <option value="55+">	55+	</option>
+				</select>
+    		</div>
+    
+			<div class="field last">
+                <label for="location">Ubicación</label>
+                <input type="text" name="location" id="location" value="" class="text ui-widget-content ui-corner-all" />
+		    </div>
+            
+            <hr />
+            
+			<div class="field threeColumn">
+                <label>¿Deseas recibir información de Bed Bath & Beyond  en México por correo electrónico?</label>
+                <input type="radio" id="emailListYes" name="emailList" value="Si"  /> Si  &nbsp;&nbsp;                             
+                <input type="radio" id="emailListNo" name="emailList" value="No"  /> No &nbsp;&nbsp;
+                <br />
+                <input type="text" name="emailListEmail" id="emailListEmail" placeholder="Correo electrónico" style="display:none;width: 200px;" class="text ui-widget-content ui-corner-all"  />
+                
+            </div>
+            
+            
+			<div class="field threeColumn">
+                <label>¿Cómo te enteraste de Bed Bath & Beyond en México?</label>
+                <input type="radio" name="howHeard" value="radio" />  Por el radio    <br />
+                <input type="radio" name="howHeard" value="catálogo" /> Por el catálogo <br />
+                <input type="radio" name="howHeard" value="amigo" /> Por un amigo <br />
+                Otro, especifica: 
+                <br />
+                <input type="text" name="howHeardOther" class="text ui-widget-content ui-corner-all" />
+			</div>
+
+			<div class="field threeColumn last">
+                <label for="webFrequency">¿Qué tan seguido usas la web para encontrar información sobre algún producto?</label>
+                <input name="webFrequency" type="radio" value="Diario" /> Diario<br />
+                <input name="webFrequency" type="radio" value="Una vez a la semana" /> Una vez a la semana<br />
+                <input name="webFrequency" type="radio" value="Varias veces a la semana" /> Varias veces a la semana<br />                
+                <input name="webFrequency" type="radio" value="Varias veces al mes" /> Varias veces al mes<br />
+			</div>
+    
+
+			
+            <hr />
+            
+            <!--
+            <div class="field threeColumn">
+                <label>¿Qué te gustaría ver en nuestro sitio web? </label>
+                <textarea name="newFeatures" style=""></textarea>
+            </div>
+            -->
+            
+			<div class="field threeColumn">
+                <label>¿Cuáles son otros sitios que utilizas para buscar artículos para el hogar?</label>
+                <textarea name="favoriteStores" ></textarea>
+            </div>
+            
+            
+            <div class="field twoColumn last">
+                <label for="didYouFind">¿Encontraste en nuestra página lo que estabas buscando?</label>
+                <input name="didYouFind" type="radio" value="Sí, encontré justo lo que estaba buscando" /> Sí, encontré justo lo que estaba buscando<br />
+                <input name="didYouFind" type="radio" value="Sí, pero no encontré la marca/tamaño/color/etc." /> Sí, pero no encontré la marca/tamaño/color/etc.<br />
+                <input name="didYouFind" type="radio" value="Encontré un producto parecido, pero no el que estaba buscando" /> Encontré un producto parecido, pero no el que estaba buscando<br />
+                <input name="didYouFind" type="radio" value="No, no encontré lo que estaba buscando" /> No, no encontré lo que estaba buscando<br />
+                Otro (Especifica por favor): 
+                <input name="didYouFindOther" type="text"  />
+            </div>
+            
+            <!-- 
+            <div class="field threeColumn">
+                <label for="visitFrequency">¿Qué tan seguido visitas nuestra página?</label>
+                <input name="visitFrequency" type="radio" value="Todos los días" /> Todos los días<br />            
+                <input name="visitFrequency" type="radio" value="Varias veces a la semana" /> Varias veces a la semana<br />
+                <input name="visitFrequency" type="radio" value="Varias veces al mes" /> Varias veces al mes<br />
+                <input name="visitFrequency" type="radio" value="Una vez al mes" /> Una vez al mes<br />
+                <input name="visitFrequency" type="radio" value="Menos de una vez al mes" /> Menos de una vez al mes<br />
+                <input name="visitFrequency" type="radio" value="Es mi primera visita" /> Es mi primera visita<br />
+            </div>
+			-->
+            
+			<hr />
+            
+   		
+		
+            <!--
+			<div class="field twoColumn last">
+                <label for="lookingForWhat">Por favor detalla lo que estabas buscando, si no lo encontraste.</label>
+                <textarea name="lookingForWhat" style="width:200px; height:100px;"></textarea>
+    		</div>
+    		-->
+            
+            
+            </fieldset>
+        </form>
+    </div>
+</div>

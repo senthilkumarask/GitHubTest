@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="International Shipping Cart Promotions">
+  <ReviewIssue id="HX619Q9U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-03 :: 17:42:17:346 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-04 :: 11:28:16:612 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add transaction block for code where order object is updated</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HX61AUCF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-03 :: 17:43:09:279 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-04 :: 11:26:52:438 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description>wwe</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPS_445_Mexico_Localization">
+  <ReviewIssue id="I4L2943V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:44:17:227 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:44:18:009 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bisht</ReviewerId>
+    <AssignedTo>Gaurav Bisht</AssignedTo>
+    <File line="19">src/com/bbb/search/bean/result/BBBProduct.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I4L29EFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:44:30:601 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:44:32:351 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bisht</ReviewerId>
+    <AssignedTo>Gaurav Bisht</AssignedTo>
+    <File line="26">src/com/bbb/search/bean/result/BBBProduct.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I4L2B9XW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:45:58:100 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-01-06 :: 14:45:59:387 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bisht</ReviewerId>
+    <AssignedTo>Gaurav Bisht</AssignedTo>
+    <File line="468">src/com/bbb/search/bean/result/BBBProduct.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

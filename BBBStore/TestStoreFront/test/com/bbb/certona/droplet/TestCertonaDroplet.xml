@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: GetRegistryVODroplet.xml 
+	DESCRIPTION: ddtunit data file for GetRegistryVODroplet.java test case HISTORY: 
+	Nov 09, 2011 Initial version 
+					
+	-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.certona.droplet.TestCertonaDroplet">
+		<group id="testProductRecomms_noError">
+			<test id="test1">
+				<objs>
+					<obj id="TestCertonaDroplet"
+						type="com.bbb.certona.droplet.TestCertonaDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.certona.droplet.TestCertonaDroplet">
+						<item type="string">/com/bbb/certona/droplet/CertonaDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testProductRecomms_Error">
+	        <test id="test2">
+				<objs>
+					<obj id="TestCertonaDroplet"
+						type="com.bbb.certona.droplet.TestCertonaDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.certona.droplet.TestCertonaDroplet">
+						<item type="string">/com/bbb/certona/droplet/CertonaDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>    
+
+		<group id="testSKURecomms_noError_noBackupBehav">
+	       <test id="test3">
+				<objs>
+					<obj id="TestCertonaDroplet"
+						type="com.bbb.certona.droplet.TestCertonaDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.certona.droplet.TestCertonaDroplet">
+						<item type="string">/com/bbb/certona/droplet/CertonaDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSKURecomms_noError_backupBehav">
+	       <test id="test4">
+				<objs>
+					<obj id="TestCertonaDroplet"
+						type="com.bbb.certona.droplet.TestCertonaDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.certona.droplet.TestCertonaDroplet">
+						<item type="string">/com/bbb/certona/droplet/CertonaDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+			</test>
+		</group>
+				  
+		<group id="testProdRecomms_EmptyOparam">
+	       <test id="test5">
+				<objs>
+					<obj id="TestCertonaDroplet"
+						type="com.bbb.certona.droplet.TestCertonaDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.certona.droplet.TestCertonaDroplet">
+						<item type="string">/com/bbb/certona/droplet/CertonaDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>					
+				</objs>
+			</test>
+		</group>				  
+	</cluster>
+</ddtunit>

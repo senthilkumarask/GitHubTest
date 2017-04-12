@@ -1,0 +1,23 @@
+<gsa-template xml-combine="append">
+
+   <header>
+    <name>BBB Site Repository</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+
+  <item-descriptor name="siteConfiguration" xml-combine="append" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+   </item-descriptor>
+  
+  <item-descriptor name="paymentCard" cache-mode="simple" display-property="cardName" item-cache-size="100" query-cache-size="100" >
+  </item-descriptor>
+  
+  <item-descriptor name="registrytype" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+</item-descriptor>
+
+<item-descriptor name="timezone" cache-mode="simple" item-cache-size="50" query-cache-size="50">
+
+  </item-descriptor>
+  
+</gsa-template>
+

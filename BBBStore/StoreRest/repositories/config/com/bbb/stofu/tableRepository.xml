@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Table Repository</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--              Table repository -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="table" display-name-resource="table" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_TABLE" type="primary" id-column-name="id">
+		<property name="id" column-name="id" display-name-resource="table_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="name" column-name="name" display-name-resource="name" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="subHeader" column-name="sub_header" display-name-resource="subHeader" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="type" column-name="classification" display-name-resource="type" data-type="enumerated" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+        		<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="Everyday" code="0"/>
+            	<option value="SpecialOccasion" code="1"/>
+				<option value="CreateANewTable" code="2"/>
+		</property>
+		<property name="image" column-name="image" display-name-resource="image" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="chkList" column-name="chkList" display-name-resource="chkList" item-type="tableChkList" category-resource="MasterInfo" repository="/com/bbb/stofu/TableCheckList">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="displaySequence" column-name="display_sequence" display-name-resource="displaySequence" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="6"/>
+		</property>
+		<!-- <property name="searchFilter" column-name="search_filter" display-name-resource="searchFilter" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property> -->
+		
+	</table>
+	
+	<table name="BBB_GS_TABLE_LAYOUTS" type="multi" id-column-names="id" multi-column-name="sequence_num">
+  	 	<property name="layouts" column-names="layout" display-name-resource="layouts" data-type="list" component-item-type="Layout" category-resource="layouts">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table>
+	
+	<!-- <table name="BBB_GS_GUIDED_STYLES" type="multi" id-column-names="id" multi-column-name="sequence_num">
+  	 	<property name="styles" column-names="Style" display-name-resource="styles" data-type="list" component-item-type="Style" category-resource="Styles" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table> -->
+  	 
+  	 <table name="BBB_GS_GUIDED_CATEGORY" type="multi" id-column-names="id" multi-column-name="sequence_num">
+  	 	<property name="categoryPanels" column-names="Panel" display-name-resource="categoryPanels" data-type="list" component-item-type="CategoryPanel" category-resource="categoryPanels" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table>
+		
+</item-descriptor>
+
+
+<item-descriptor name="Layout" display-name-resource="Layout" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" sub-type-property="layout" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_LAYOUT" type="primary" id-column-name="layout_id">
+		<property name="id" column-name="layout_id" display-name-resource="layout_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="layout" column-name="layout" display-name-resource="layout" data-type="enumerated" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+        		<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="UpperOrange" code="0"/>
+            	<option value="BottomOrange" code="1"/>
+				<option value="Red" code="2"/>
+				<option value="Yellow" code="3"/>
+				<option value="Green" code="4"/>
+				<option value="FAKEDISPLAYNAME%" code="999"/>
+		</property>
+		<property name="name" column-name="name" display-name-resource="name" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="3"/>
+		</property>  
+
+	</table>
+	
+	
+</item-descriptor>
+
+<item-descriptor name="UpperOrange" display-name-resource="UpperOrange" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="Layout" sub-type-value="UpperOrange">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	
+	<table name="BBB_GS_LAYOUT_PANEL" type="auxiliary" id-column-name="layout_id">
+		
+		<property name="masterCatPanel" column-name="catPanel1" display-name-resource="masterCatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="slave1CatPanel" column-name="catPanel2" display-name-resource="slave1CatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="slave2CatPanel" column-name="catPanel3" display-name-resource="slave2CatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="masterCatPanelSize" column-name="catPanel1Size" display-name-resource="masterCatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="slave1CatPanelSize" column-name="catPanel2Size" display-name-resource="slave1CatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="slave2CatPanelSize" column-name="catPanel3Size" display-name-resource="slave2CatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+	</table>
+</item-descriptor>
+
+<item-descriptor name="BottomOrange" display-name-resource="BottomOrange" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="Layout" sub-type-value="BottomOrange">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	
+	<table name="BBB_GS_LAYOUT_PANEL" type="auxiliary" id-column-name="layout_id">
+		
+		<property name="masterCatPanel" column-name="catPanel1" display-name-resource="masterCatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="slave1CatPanel" column-name="catPanel2" display-name-resource="slave1CatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="slave2CatPanel" column-name="catPanel3" display-name-resource="slave2CatPanel" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="masterCatPanelSize" column-name="catPanel1Size" display-name-resource="masterCatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+		<property name="slave1CatPanelSize" column-name="catPanel2Size" display-name-resource="slave1CatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		<property name="slave2CatPanelSize" column-name="catPanel3Size" display-name-resource="slave2CatPanelSize" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+		</property>
+	</table>
+</item-descriptor>
+
+<item-descriptor name="Red" display-name-resource="Red" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="Layout" sub-type-value="Red">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	
+	<table name="BBB_GS_LAYOUT_PANEL" type="auxiliary" id-column-name="layout_id">
+		
+		<property name="catPanel1" column-name="catPanel1" display-name-resource="catPanel1" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="catPanel2" column-name="catPanel2" display-name-resource="catPanel2" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="catPanel3" column-name="catPanel3" display-name-resource="catPanel3" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="catPanel1Size" column-name="catPanel1Size" display-name-resource="catPanel1Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+		<property name="catPanel2Size" column-name="catPanel2Size" display-name-resource="catPanel2Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		<property name="catPanel3Size" column-name="catPanel3Size" display-name-resource="catPanel3Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+		</property>
+	</table>
+</item-descriptor>
+
+<item-descriptor name="Yellow" display-name-resource="Yellow" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="Layout" sub-type-value="Yellow">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	
+	<table name="BBB_GS_LAYOUT_PANEL" type="auxiliary" id-column-name="layout_id">
+		
+		<property name="catPanel1" column-name="catPanel1" display-name-resource="catPanel1" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="catPanel1Size" column-name="catPanel1Size" display-name-resource="catPanel1Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+	</table>
+</item-descriptor>
+
+<item-descriptor name="Green" display-name-resource="Green" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="Layout" sub-type-value="Green">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	
+	<table name="BBB_GS_LAYOUT_PANEL" type="auxiliary" id-column-name="layout_id">
+		
+		<property name="catPanel1" column-name="catPanel1" display-name-resource="catPanel1" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="catPanel2" column-name="catPanel2" display-name-resource="catPanel2" item-type="CategoryPanel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="catPanel1Size" column-name="catPanel1Size" display-name-resource="catPanel1Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="catPanel2Size" column-name="catPanel2Size" display-name-resource="catPanel2Size" data-type="string" category-resource="MasterInfo" writable="false" default="?$TBD$">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+	</table>
+</item-descriptor>
+
+
+ 
+</gsa-template>

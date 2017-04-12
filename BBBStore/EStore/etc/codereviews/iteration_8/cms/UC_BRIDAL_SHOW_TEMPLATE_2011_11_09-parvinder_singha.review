@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_BRIDAL_SHOW_TEMPLATE_2011_11_09">
+  <ReviewIssue id="GUV7AA9V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:36:24:259 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:42:06:075 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="135">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>stateId method should be Generic</Summary>
+    <Description>Method should be genric and moved to the manager. So all the other components can reuse the code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV7HX7R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:42:20:583 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:42:41:737 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="151">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Method should be genric </Summary>
+    <Description>Method should be genric and moved to the manager. So all the other components can reuse the code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV7JKG8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:43:37:352 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:44:55:400 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="115">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No Use of EmptyStateName  parameter</Summary>
+    <Description>Remove set parameter EmptyStateName</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV7ME47">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:45:49:111 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:47:11:792 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="97">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Query should not be executedfor empty stateId , siteId</Summary>
+    <Description>Query should not be called for empty stateId , siteId</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV7P6RS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:47:59:560 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:48:56:953 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="81">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>showTemplate should be constant</Summary>
+    <Description>showTemplate used twice so should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV7QP56">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:49:10:026 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:49:51:882 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="89">src/com/bbb/cms/droplet/BridalShowDetailDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Expression date should be constant</Summary>
+    <Description>Expression date should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV80OZQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:56:56:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:57:47:060 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="95">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>siteId parameter should be constant</Summary>
+    <Description>siteId parameter should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV82247">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:58:00:055 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:58:27:558 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="104">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>showTemplate should be constant</Summary>
+    <Description>showTemplate should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV82T15">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:58:34:937 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:59:05:544 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="115">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>date expression should be constant</Summary>
+    <Description>date expression should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV83VL4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 18:59:24:904 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 19:00:04:045 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="137">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>stateId property id should be constant</Summary>
+    <Description>stateId property id should be constant</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUV850JS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 19:00:17:992 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 19:01:01:859 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="124">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Query Should not be executed if site id is null or empty</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

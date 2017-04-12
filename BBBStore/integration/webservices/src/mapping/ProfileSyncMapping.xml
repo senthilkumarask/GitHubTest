@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.account.vo.ProfileSyncRequestVO</class-a>
+		<class-b>com.bedbathandbeyond.www.UpdateRegistryWithAtgInfoDocument$UpdateRegistryWithAtgInfo</class-b>		
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>	
+		<field>
+			<a>profileId</a>
+			<b>profileID</b>
+		</field>
+		<field>
+			<a>emailAddress</a>
+			<b>email</b>
+		</field>
+		<field>
+			<a>firstName</a>
+			<b>firstNm</b>
+		</field>
+		<field>
+			<a>lastName</a>
+			<b>lastNm</b>
+		</field>
+		<field>
+			<a>phoneNumber</a>
+			<b>phone1</b>
+		</field>
+		<field>
+			<a>mobileNumber</a>
+			<b>phone2</b>
+		</field>
+	</mapping>	
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.UpdateRegistryWithAtgInfoReturn</class-a>
+		<class-b>com.bbb.account.vo.ProfileSyncResponseVO</class-b>
+		<field>
+			<a>status</a>
+			<b>errorStatus</b>
+		</field>
+	</mapping>
+</mappings>

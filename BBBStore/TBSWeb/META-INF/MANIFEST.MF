@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+ATG-Required: BBBStore.TBSSrc BBBStore.integration.tbsqas
+ATG-J2EE: j2ee-apps/tbs
+ATG-EAR-Module: j2ee-apps/tbs
+ATG-Class-Path: bin

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="17062016_BBBI-769">
+  <ReviewIssue id="IPK10QXV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:45:50:179 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:46:03:304 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="4">config/atg/dynamo/servlet/dafpipeline/BBBRestResponsePropertiesConfigurationServlet.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove white space if it's not required</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK119J1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:46:14:269 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:46:25:647 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="7">config/atg/dynamo/servlet/dafpipeline/BBBRestResponsePropertiesConfigurationServlet.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove white space if it's not required</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK11S3K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:46:38:336 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:47:01:373 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="6">config/atg/dynamo/servlet/dafpipeline/BBBRestResponsePropertiesConfigurationServlet.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is for testing purpose only, we should make sure to empty it once we done with unit testing.</Summary>
+    <Description>/rest/bean/com/bbb/rest/catalog/BBBRestCatalogToolImpl/getProductDetails=public,,max-age=86400</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK14DKG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:48:39:472 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:49:11:383 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="17">src/com/bbb/pipeline/BBBRestResponsePropertiesConfigurationServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add some comments about purpose of the servlet, I see some comments at method level, add some at class level too</Summary>
+    <Description>/**
+ *  Description :- A Pipeline Component that handles REST Related Service 
+ *  for Cache-Control .   
+ */</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK15ZT9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:49:54:957 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:50:26:845 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="62">src/com/bbb/pipeline/BBBRestResponsePropertiesConfigurationServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>That explanation is wrong, MOB native app requests does not come from web browser</Summary>
+    <Description>Web Browser</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK17742">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:50:51:074 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:51:04:088 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="65">src/com/bbb/pipeline/BBBRestResponsePropertiesConfigurationServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Can we add performance logging</Summary>
+    <Description>serviceRESTRequest</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK18S2X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:52:04:905 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:52:24:645 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="74">src/com/bbb/pipeline/BBBRestResponsePropertiesConfigurationServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>See if we should do equalignorecase</Summary>
+    <Description>getFilteredChannelList().contains(pRequest.getHeader(BBBCoreConstants.CHANNEL))</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPK1AAJQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:53:15:494 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 13:53:18:706 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="76">src/com/bbb/pipeline/BBBRestResponsePropertiesConfigurationServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>See if we should do equalignorecase</Summary>
+    <Description>null != getRequestUriCacheConfigMap().get(uri)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

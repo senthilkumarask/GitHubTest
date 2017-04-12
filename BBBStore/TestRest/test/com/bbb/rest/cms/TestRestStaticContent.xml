@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2013, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestStaticContent.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Jan 10, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.TestRestStaticContent">
+		<group id="testRestStaticContent">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">CorporateResponsibilityReport</obj>
+					<obj id="arg2" type="string">1</obj>
+					<obj id="restStaticContentAPI" type="string">/rest/bean/com/bbb/rest/cms/manager/MobileTemplateManager/getStaticContent</obj>
+				</objs>
+			</test>
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">easyReturns</obj>
+					<obj id="arg2" type="string">3</obj>
+					<obj id="restStaticContentAPI" type="string">/rest/bean/com/bbb/rest/cms/manager/MobileTemplateManager/getStaticContent</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRestStaticContentError">
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">errorPage</obj>
+					<obj id="arg2" type="string">2</obj>
+					<obj id="restStaticContentAPI" type="string">/rest/bean/com/bbb/rest/cms/manager/MobileTemplateManager/getStaticContent</obj>
+				</objs>
+			</test>
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string"></obj>
+					<obj id="arg2" type="string">2</obj>
+					<obj id="restStaticContentAPI" type="string">/rest/bean/com/bbb/rest/cms/manager/MobileTemplateManager/getStaticContent</obj>
+				</objs>
+			</test>
+		</group>	
+	</cluster>
+</ddtunit>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.TestSimpleRegFieldsDroplet">
+      <group id="testSimpleRegFieldsDropletService">
+        <test id="testService_test1">
+			<objs>
+				<obj id="testSimpleRegFieldsDroplet" type="com.bbb.simplifyRegistry.droplet.SimpleRegFieldsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestSimpleRegFieldsDroplet">
+					<item type="string">/com/bbb/simplifyRegistry/droplet/SimpleRegFieldsDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="eventType" type="string">Wedding</obj>
+			</objs>      
+			<asserts>
+	        	<assert id="registryType" type="java.lang.String" action="isEqual">Wedding</assert>	        	
+	        </asserts>  
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

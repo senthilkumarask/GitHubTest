@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item is-document="true" item-descriptor-name="product" repository-item-group="/atg/commerce/search/IndexedItemsGroup">
+  <properties>  
+	    <property name="id" output-name="P_Product_ID" text-searchable="true" type="string"/>
+	    <property name="displayName" is-dimension="false" output-name="P_Product_Title" text-searchable="true" type="string" property-accessor="productSiteTranslationPropertyAccessor"/>
+	    <property name="description" is-dimension="false" output-name="P_Description" text-searchable="true" type="string" property-accessor="productSiteTranslationPropertyAccessor"/>
+	    <property name="longDescription" is-dimension="false" output-name="P_Long_Description" text-searchable="true" type="string" property-accessor="productSiteTranslationPropertyAccessor"/>
+	    <!--<property name="webOffered" output-name="P_Web_Offered" type="string" property-accessor="productSiteTranslationPropertyAccessor"/>
+	    <property name="prodDisable" output-name="P_Prod_Disable" type="string" property-accessor="productSiteTranslationPropertyAccessor"/>-->
+		<property name="priceRangeDescrip" output-name="P_Price_Range_String_Token" type="string"  property-accessor="productSiteTranslationPropertyAccessor" text-searchable="false"/>
+		
+		<property name="skuLowPrice" output-name="P_Low_Price" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuLowPricePropertyAccessor" text-searchable="false"/>
+		<property name="skuHighPrice" output-name="P_High_Price" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuHighPricePropertyAccessor" text-searchable="false"/>
+		<property name="priceRangeDescrip" output-name="P_Price_Range_String" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/IsPriceRangeAccessor" text-searchable="false"/>
+		
+		<property name="skuLowPrice" output-name="P_Low_Price_MX" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuLowPriceMxPropertyAccessor" text-searchable="false"/>
+		<property name="skuHighPrice" output-name="P_High_Price_MX" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuHighPriceMxPropertyAccessor" text-searchable="false"/>
+		<property name="priceRangeDescrip" output-name="P_Price_Range_String_MX" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/MXIsPriceRangeAccessor" text-searchable="false"/>
+						
+		<property name="skuLowPrice" output-name="P_Was_Low_Price" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuWasLowPricePropertyAccessor" text-searchable="false"/>																									
+		<property name="skuHighPrice" output-name="P_Was_High_Price" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuWasHighPricePropertyAccessor" text-searchable="false"/>
+		<property name="priceRangeDescrip" output-name="P_Was_Price_Range_String" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/WasPriceRangeAccessor" text-searchable="false"/>
+		
+		<property name="skuLowPrice" output-name="P_Was_Low_Price_MX" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuWasLowPriceMxPropertyAccessor" text-searchable="false"/>
+		<property name="skuHighPrice" output-name="P_Was_High_Price_MX" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuWasHighPriceMxPropertyAccessor" text-searchable="false"/>
+		<property name="priceRangeDescrip" output-name="P_Was_Price_Range_String_MX" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/MXWasPriceRangeAccessor" text-searchable="false"/>
+				
+		<property name="skuLowPrice" output-name="P_Sort_Price" type="float"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SortSkuLowPricePropertyAccessor" text-searchable="false"/>		
+		<property name="skuLowPrice" output-name="P_Sort_Price_MX" type="float" property-accessor="/com/bbb/search/endeca/indexing/accessor/SortSkuLowPriceMxPropertyAccessor" text-searchable="false"/>
+		
+		<property is-non-repository-property="true" name="numRatings" type="integer" output-name="P_Num_Ratings" property-accessor="/com/bbb/search/endeca/indexing/accessor/NumRatingsPropertyAccessor"/>
+		<property is-non-repository-property="true" name="ratings" type="float" output-name="P_Ratings" property-accessor="/com/bbb/search/endeca/indexing/accessor/RatingsPropertyAccessor"/>
+		<!--<property is-non-repository-property="true" name="productSiteID" type="string" output-name="P_Product_Site_ID" property-accessor="/com/bbb/search/endeca/indexing/accessor/ProductSiteIDAccessor"/>-->
+		<property name="$siteId" output-name="P_Site_ID" type="string" formatter="/com/bbb/search/endeca/indexing/formatter/SiteIDFormatter" is-dimension="false"/>
+		<property filter="unique" name="enableDate" output-name="P_Date" type="date"/>
+		<property name="enableDate" output-name="P_Enabled_Age" formatter="/com/bbb/search/endeca/indexing/formatter/EnabledAgePropertyFormatter" type="string"/>
+		<property is-non-repository-property="true" name="childProduct" output-name="P_Child_Product" property-accessor="/com/bbb/search/endeca/indexing/accessor/ChildProductAccessor" type="string"/>
+		<property is-non-repository-property="true" name="childProductDesc" output-name="P_Child_Product_Desc" property-accessor="/com/bbb/search/endeca/indexing/accessor/ChildProductDescPropertyAccessor" type="string"/>
+		<property is-non-repository-property="true" name="tabContent" output-name="P_Harmon_Description" property-accessor="/com/bbb/search/endeca/indexing/accessor/HarmonTabContentPropertyAccessor" type="string"/>
+		<property name="college" output-name="SCHOOL_NAME" property-accessor="/com/bbb/search/endeca/indexing/accessor/CollegeNamePropertyAccessor" type="string" is-dimension="true" multiselect-type="multi-or"/>
+		<property is-non-repository-property="true" name="college" output-name="School_State" property-accessor="/com/bbb/search/endeca/indexing/accessor/CollegeStatePropertyAccessor" type="string" is-dimension="true"/>
+		<property is-non-repository-property="true" name="collegeLogo" output-name="P_College_Logo" property-accessor="/com/bbb/search/endeca/indexing/accessor/CollegeLogoPropertyAccessor" type="string"/>
+		<property is-non-repository-property="true" name="margin" output-name="P_Margin" property-accessor="/com/bbb/search/endeca/indexing/accessor/MarginPropertyAccessor" type="string"/>
+		<property is-non-repository-property="true" name="inventory" output-name="P_Inventory_Status" property-accessor="/com/bbb/search/endeca/indexing/accessor/InventoryPropertyAccessor" type="integer"/>
+		<property is-non-repository-property="true" name="inventoryDimension" output-name="Inventory_Status" is-dimension="true" property-accessor="/com/bbb/search/endeca/indexing/accessor/InventoryDimensionAccessor" multiselect-type="multi-or"/>
+		<property is-non-repository-property="true" name="orderSales" output-name="Order_Sales" property-accessor="/com/bbb/search/endeca/indexing/accessor/OrderSalesPropertyAccessor" is-dimension="true" multiselect-type="multi-or"/>
+		<property is-non-repository-property="true" name="totalSales" output-name="Total_Sales_Amount" property-accessor="/com/bbb/search/endeca/indexing/accessor/OrderSalesPropertyAccessor" is-dimension="true" multiselect-type="multi-or"/>
+		<property is-non-repository-property="true" name="unitSales" output-name="Unit_Sales" property-accessor="/com/bbb/search/endeca/indexing/accessor/UnitSalesPropertyAccessor" is-dimension="true" multiselect-type="multi-or"/>
+		<property is-non-repository-property="true" name="pOrderSales" output-name="P_Order_Sales" property-accessor="/com/bbb/search/endeca/indexing/accessor/OrderSalesPropertyAccessor"/>
+			
+		<property name="mediumImage" output-name="P_Medium_Image_ID" type="string"/>
+	    <property name="smallImage" output-name="P_Small_Image_ID" type="string"/>
+	    <property name="prdKeywords" output-name="P_Meta_Keywords" type="string"/>
+	    <property name="collection" output-name="isCollection" type="boolean" is-dimension="true"/>
+	    <property name="largeImage" output-name="P_Large_Image_ID" type="string"/>
+	    <property name="prodRollupType" output-name="RollupType" formatter="/com/bbb/search/endeca/indexing/formatter/RollUpFormatter" type="string" is-dimension="true" multiselect-type="multi-or"/>
+	    <property name="leadPrd" output-name="P_LeadSku" type="boolean"/>
+	    <property name="swatch" output-name="P_Swatch" type="boolean"/>
+	    <property name="swatchImage" output-name="P_Swatch_Image_ID" type="string"/>
+	    <property name="ltlFlag" output-name="LTL_Flag" type="boolean" is-dimension="true"/>
+	    <property name="seoUrl" output-name="P_SEO_URL" type="string"/>
+	    <property name="verticalImage" output-name="P_Vert_Image_ID" type="string" text-searchable="false"/>
+	    <property name="$siteId" type="string" output-name="product.siteId" is-dimension="true" multiselect-type="multi-or"/>
+	    <!--<property name="Record Type" default-value="Product" output-name="Record Type" type="string" is-dimension="true" autogen-dimension-values="true"/>-->
+		<property name="RecordType" is-non-repository-property="true" output-name="Record Type" is-dimension="true" default-value="Product" property-accessor="null" autogen-dimension-values="true" multiselect-type="multi-or"/>
+		<property name="SearchMerchandisingPages" is-non-repository-property="true" output-name="MerchandisingPages_Search" default-value="Search" property-accessor="null"/>
+		<property name="BrandpageMerchandisingPages" is-non-repository-property="true" output-name="MerchandisingPages_BrandPage" default-value="BrandPage" property-accessor="null"/>
+		<property name="$url"    type="string"   suppress="true"/>
+		<property name="$baseUrl"    type="string"   suppress="true"/>
+		<property name="$repositoryId" suppress="true"/>
+		<property name="$repository.repositoryName" suppress="true"/>
+		<!--<property name="$itemDescriptor.itemDescriptorName" suppress="true"/>-->
+  </properties>
+
+    <item is-multi="true" parent-property="childProducts" property-name="parentCategories">
+    <properties>
+      <property name="$repositoryId" output-name="parentCategory.$repositoryId" type="string" suppress="true"/>
+      <property filter="unique" name="id" output-name="Sequence_Number" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/SeqNumPropertyAccessor" is-dimension="true"/>
+      <property name="nodeId" is-non-repository-property="true" output-name="Node_ID" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/NodeIdPropertyAccessor" is-dimension="true"/>
+       <property name="boostedNodeId" is-non-repository-property="true" output-name="Boosted_In_Node" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/BoostedNodePropertyAccessor" is-dimension="true"/>
+	  <property name="dimval.spec" type="string" output-name="product.parentCategory.baby.id" 
+            property-accessor="/com/bbb/search/endeca/indexing/accessor/CategoryBabySiteSpecificSpecPropertyAccessor" is-non-repository-property="true"
+            is-dimension="true" autogen-dimension-values="false" text-searchable="true" wildcard-searchable="false" />
+      <property name="dimval.spec" type="string" output-name="product.parentCategory.bedbath.id" 
+            property-accessor="/com/bbb/search/endeca/indexing/accessor/CategoryBedBathSiteSpecificSpecPropertyAccessor" is-non-repository-property="true"
+            is-dimension="true" autogen-dimension-values="false" text-searchable="true" wildcard-searchable="false" />
+	  <property name="dimval.spec" type="string" output-name="product.parentCategory.bedbathca.id" 
+            property-accessor="/com/bbb/search/endeca/indexing/accessor/CategoryBedBathCASiteSpecificSpecPropertyAccessor" is-non-repository-property="true"
+            is-dimension="true" autogen-dimension-values="false" text-searchable="true" wildcard-searchable="false" />
+      
+	  <property name="category_typehead" output-name="P_BBB_TypeAhead" is-non-repository-property="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/BBBL2CategoryTypeAHeadAccessor" />
+	  <property name="category_typehead" output-name="P_BBCA_TypeAhead" is-non-repository-property="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/BBBCAL2CategoryTypeAHeadAccessor" />
+      <property name="category_typehead" output-name="P_BABY_TypeAhead" is-non-repository-property="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/BABYL2CategoryTypeAHeadAccessor" />
+   	  
+	    </properties>
+  </item>
+
+   <item is-multi="true" property-name="bbbBrand">
+    <properties>
+      <property name="brandName" output-name="Brand" is-dimension="true" text-searchable="true" type="string" multiselect-type="multi-or"/>
+      <property name="brandDescrip" output-name="P_Brand" type="string" text-searchable="true"/>
+	  <property name="$repositoryId" suppress="true"/>
+	  <property name="$repository.repositoryName" suppress="true"/>
+    </properties>
+   </item>
+      
+   <item is-multi="true" item-descriptor-name="sku" property-name="childSKUs">
+	<properties>
+	  <property filter="unique" name="id" output-name="P_SKU" text-searchable="true" type="string"/>
+	  <property filter="unique" name="size" output-name="SKU_Size" is-dimension="true" type="string" multiselect-type="multi-or"/>	  
+	  <property filter="unique" name="color" output-name="Color" type="string" is-dimension="true" multiselect-type="multi-or"/>	 
+	  <property filter="unique" name="colorGroup" output-name="ColorGroup" is-dimension="true" type="string" multiselect-type="multi-or"/>
+	  
+	  <property name="$repositoryId" suppress="true"/>
+	  <property filter="unique" name="isAssemblyOffered" output-name="isAssemblyOffered" type="boolean" text-searchable="false" is-dimension="true"/>
+	  <property filter="unique" name="storeSKU" output-name="MIE_Is_Store_Sku" type="boolean" text-searchable="false" is-dimension="true" multiselect-type="multi-or"/>
+	  <property filter="unique" name="jdaClass" output-name="JDA_Class" type="string"  text-searchable="false" is-dimension="true" multiselect-type="multi-or" />
+	  <property filter="unique" name="jdaDept" output-name="JDA_Department" type="string" formatter="/com/bbb/search/endeca/indexing/formatter/JDAFormatter" text-searchable="false" is-dimension="true" multiselect-type="multi-or"/>
+	  <property filter="unique" name="jdaSubDept" output-name="JDA_Sub_Department" type="string" formatter="/com/bbb/search/endeca/indexing/formatter/JDAFormatter"  text-searchable="false" is-dimension="true" multiselect-type="multi-or"/>
+	  <property name="customizationOfferedFlag" output-name="Customization_Offered" type="boolean" text-searchable="false" is-dimension="true">
+			<translate input="0" output="No"/>
+			<translate input="1" output="Yes"/>
+	  </property>
+	  <!--<property filter="unique" name="customizationOfferedFlag" output-name="P_Customization_Offered" type="boolean" text-searchable="false" is-dimension="true"/>-->
+	  <property filter="unique" name="eligibleShipMethods" output-name="P_ShipMethod_CD" property-accessor="/com/bbb/search/endeca/indexing/accessor/ShipMethodCDPropertyAccessor" type="string" text-searchable="false"/>
+	  
+	  <property filter="unique" name="giftWrapEligible" output-name="Gift_Wrap_Eligible" type="boolean" text-searchable="false" is-dimension="true" />
+	  <property filter="unique" name="assemblyTime" output-name="P_Assembly_Time" type="string" text-searchable="false"/>
+  	  <property filter="unique" name="caseWeight" output-name="P_Case_Weight" type="string" text-searchable="false"/>
+	  <property filter="unique" name="intlRestricted" output-name="International_Restricted" type="string" is-dimension="true" text-searchable="false"/>
+      <property filter="unique" name="orderToShipSla" output-name="P_Order_To_Ship_SLA" type="string" text-searchable="false"/>
+	  <property filter="unique" name="upc" output-name="P_UPC" type="string" text-searchable="false"/>
+	  <property filter="unique" name="thumbnailImage" output-name="P_Thumbnail_Image_ID" type="string" text-searchable="false"/>  
+	  <property filter="unique" name="vdcSkuMessage" output-name="P_Vdc_Sku_Message" type="string" text-searchable="false"/>
+	  <property filter="unique" name="vdcSkuType" output-name="P_Vdc_Sku_Type" type="string" text-searchable="false"/>
+	  <property filter="unique" name="zoomImage" output-name="P_Zoom_Image_ID" type="string" text-searchable="false"/>
+	  
+	  <property is-non-repository-property="true" filter="html" name="attributeProperty" output-name="Attributes" property-accessor="/com/bbb/search/endeca/indexing/accessor/AttributePropertyAccessor" type="string" is-dimension="true" multiselect-type="multi-or"/>
+	  <property is-non-repository-property="true" filter="html" name="attributeNameProperty" output-name="P_Attribute_Name" property-accessor="/com/bbb/search/endeca/indexing/accessor/AttributePropertyAccessor" type="string"/>
+	  <property is-non-repository-property="true" filter="html" name="attributeNameProperty" output-name="P_Attribute" property-accessor="/com/bbb/search/endeca/indexing/accessor/AttributePropertyAccessor" type="string"/>
+	  <property is-non-repository-property="true" filter="html" name="attributeJsonProperty" output-name="P_Attributes_JSON" property-accessor="/com/bbb/search/endeca/indexing/accessor/AttributesJsonAccessor" type="string"/>
+	  
+	  
+  	  <property filter="unique" name="onSale" output-name="P_OnSale" type="boolean" text-searchable="false"/>
+	  <property filter="unique" name="description" output-name="P_SKU_Description" text-searchable="true" property-accessor="skuSiteTranslationPropertyAccessor"/>
+	  <!--<property filter="concat,unique" name="displayName" output-name="P_SKU_Title" text-searchable="true" property-accessor="skuSiteTranslationPropertyAccessor"/>-->
+	</properties>
+	
+	 <item is-multi="true" property-name="skuFacet">
+    <properties>
+     <property name="$repositoryId" output-name="skuFacet.$repositoryId" type="string" suppress="true"/>
+   	  <!-- <property  name="itemId" output-name="P_SKU_FACET_ITEM_ID" type="string" text-searchable="true" property-accessor="/com/bbb/search/endeca/indexing/accessor/helper/FacetPropertyAccessor"/> -->
+   	  <property  name="facetType" output-name="P_FEATURE" type="string" text-searchable="true" property-accessor="/com/bbb/search/endeca/indexing/accessor/helper/FacetPropertyAccessor"/>
+   	 </properties>
+   	 </item>
+   </item>    	
+</item>

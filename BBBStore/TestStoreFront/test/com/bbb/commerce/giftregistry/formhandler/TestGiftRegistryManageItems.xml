@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryManageItems.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryManageItems.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+      
+      <!--  Test Cases for handleUpdateRegistryItem -->
+      <group id="testHandleUpdateRegItem1">
+        <test id="test1">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					
+				</obj>
+				<obj id="username0" type="string">test1@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testHandleUpdateRegItem2">
+        <test id="test2">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					
+				</obj>
+				<obj id="username0" type="string">test1@example.com</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+      <!--  Test Cases for handleRemoveItemFromGiftRegistry -->
+      <group id="testHandleRemoveRegItem1">
+        <test id="test3">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					
+				</obj>
+				<obj id="username0" type="string">test1@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+       <group id="testHandleRemoveRegItem2">
+        <test id="test4">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					
+				</obj>
+				<obj id="username0" type="string">test1@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>    
+      
+      <!--  Test Cases for handleEmailRegistry -->
+      <group id="testHandleEmailRegistry">
+        <test id="test5">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryManageItems">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					
+				</obj>
+				<obj id="username0" type="string">test1@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group> 
+     </cluster>
+</ddtunit>

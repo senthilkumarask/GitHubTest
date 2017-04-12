@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGSProductDetails.xml
+
+  DESCRIPTION: ddtunit data file for TestGSProductDetails.java test case
+
+  HISTORY:
+  Apr 24, 2012  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.stofu.TestContentTemplateManager">
+       <group id="testContentTemplateDataSuccess">
+        <test id="testContentTemplateData_success">
+			<objs>
+				<obj id="contentTemplate" type="com.bbb.cms.manager.ContentTemplateManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestContentTemplateManager">
+					<item type="string">/com/bbb/cms/manager/ContentTemplateManager</item>
+				</obj>
+					<obj id="templateName" type="string">ideaBookStyle</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+		   	</objs>  
+        </test>
+      </group>
+      <group id="testContentTemplateNotExistErr">
+        <test id="testProductDetailsError_test1">
+			<objs>
+				<obj id="contentTemplate" type="com.bbb.cms.manager.ContentTemplateManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestContentTemplateManager">
+					<item type="string">/com/bbb/cms/manager/ContentTemplateManager</item>
+				</obj>
+					<obj id="templateName" type="string">idea</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+			</objs>      
+        </test>
+      </group> 
+      <group id="testContentTemplateRegistryDataSuccess">
+        <test id="testContentTemplateRegistryDataSuccess_test1">
+			<objs>
+				<obj id="contentTemplate" type="com.bbb.cms.manager.ContentTemplateManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestContentTemplateManager">
+					<item type="string">/com/bbb/cms/manager/ContentTemplateManager</item>
+				</obj>
+					<obj id="templateName" type="string">RegistrantTemplate</obj>
+					<obj id="requestJSON" type="string">{"registryType":"Baby","registryURL":"</obj>
+			</objs>      
+        </test>
+      </group> 
+      <group id="testContentTemplateRegistryNotExistErr">
+        <test id="testContentTemplateRegistryNotExistErr_test1">
+			<objs>
+				<obj id="contentTemplate" type="com.bbb.cms.manager.ContentTemplateManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestContentTemplateManager">
+					<item type="string">/com/bbb/cms/manager/ContentTemplateManager</item>
+				</obj>
+					<obj id="templateName" type="string">Recommender</obj>
+					<obj id="requestJSON" type="string">{}</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testContentTemplateRecommenderDataSuccess">
+        <test id="testContentTemplateRecommenderDataSuccess_test1">
+			<objs>
+				<obj id="contentTemplate" type="com.bbb.cms.manager.ContentTemplateManager" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestContentTemplateManager">
+					<item type="string">/com/bbb/cms/manager/ContentTemplateManager</item>
+				</obj>
+					<obj id="templateName" type="string">RecommenderTemplate</obj>
+					<obj id="requestJSON" type="string">{"registryType":"Wedding","recommenderURL":"/store/account/login.jsp","logInURL":"/store/account/login.jsp","visibilityFlag":"visible","tokenError":" ","tokenErrorLogin":" "}</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

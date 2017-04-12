@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-4673">
+  <ReviewIssue id="INZWLF16">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-09 :: 16:36:50:586 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-09 :: 16:36:51:618 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="114">src/atg/commerce/pricing/BBBOrderDiscountCalculator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INZWLV32">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-09 :: 16:37:11:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-09 :: 16:37:12:387 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="116">src/com/bbb/commerce/pricing/calculator/BBBOrderSubtotalCalculator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBEncryptionDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestChangeAncorTagURLDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.droplet.TestChangeAncorTagURLDroplet">
+       <group id="testChangeAncorTagURLDroplet">
+        <test id="testChangeAncorTagURLDroplet">
+			<objs>
+				<obj id="cookieDroplet"  type="com.bbb.account.droplet.BBBSetCookieDroplet" hint="call" method="resolveName" calltype="com.bbb.account.droplet.TestChangeAncorTagURLDroplet">
+					<item type="String">/com/bbb/account/droplet/BBBSetCookieDroplet</item>
+				</obj>
+				<obj id="changedUrl" type="String">/krish.jsp</obj>		
+				<obj id="requestParamName" type="String">redirectURL</obj>		
+			</objs>	 
+        </test>
+      </group>
+    </cluster>
+</ddtunit>
+

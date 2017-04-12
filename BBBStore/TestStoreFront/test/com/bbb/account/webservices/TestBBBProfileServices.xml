@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileServices.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileServices.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.webservices.TestBBBProfileServices">
+      <group id="testValidLogin">
+        <test id="testValidLogin_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test3@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testLoginProfileId">
+        <test id="testLoginProfileId_test2">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test3@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="testLoginInvalidPassword">
+        <test id="testLoginInvalidPassword_test3">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">raj@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="testLoginEmptyReq">
+        <test id="testLoginEmptyReq_test4">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+			</objs>       
+        </test>
+      </group>
+      
+      
+      <group id="testForgotPassword">
+        <test id="testForgotPassword_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBForgotPasswordFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="profileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="email" type="string">test2@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+      
+      <group id="testEmailEmptyReq">
+        <test id="testEmailEmptyReq_test2">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string"></obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="testSiteEmptyReq">
+        <test id="testSiteEmptyReq_test3">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test2@example.com</obj>
+				<obj id="siteId" type="string"></obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="testForgotPasswordInvalidEmail">
+        <test id="testForgotPasswordInvalidEmail_test4">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test123@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+      
+       <group id="testForgotPasswordInvalidSiteId">
+        <test id="testForgotPasswordInvalidSiteId_test5">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test2@example.com</obj>
+				<obj id="siteId" type="string">BuyBaby</obj>
+			</objs>      
+        </test>
+      </group>
+      
+      
+      <group id="testCreateAccountValidation">
+        <test id="testCreateAccountValidation_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+	 			<obj id="email" type="string">vnalini@sapient.com</obj>
+				<obj id="firstName" type="string">Firsname</obj>
+				<obj id="lastName" type="string">Lasname</obj>
+				<obj id="password" type="string">bbbBbb!b12</obj>
+				<obj id="confirmPassword" type="string">bbbBbb!b12</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="phone" type="string">0123456789</obj>
+				<obj id="mobile" type="string">0123456789</obj>
+				<obj id="optIn" type="boolean">true</obj>	
+			</objs>      
+        </test>
+      </group>
+      
+       <group id="testCreateAccount">
+        <test id="testCreateAccount_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+	 			<obj id="email" type="string">ssenapati@sapient.com</obj>
+				<obj id="firstName" type="string">Firsname</obj>
+				<obj id="lastName" type="string">Lasname</obj>
+				<obj id="password" type="string">bbbBbb!b12</obj>
+				<obj id="confirmPassword" type="string">bbbBbb!b12</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="phone" type="string">0123456789</obj>
+				<obj id="mobile" type="string">0123456789</obj>
+				<obj id="optIn" type="boolean">true</obj>	
+			</objs>      
+        </test>
+      </group>    
+      
+      <group id="testGetProfileInfo">
+        <test id="testGetProfileInfo_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBForgotPasswordFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="profileId" type="string">130000</obj>
+				<obj id="autoExtendProfile" type="boolean">true</obj>	
+			</objs>      
+        </test>
+      </group>
+      
+      <group id="testGetBillingAddress">
+        <test id="testGetBillingAddress_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test3@example.com</obj>
+				<obj id="profileId" type="string">130002</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="securityToken" type="string">12345</obj>
+			</objs>      
+        </test>
+      </group>
+      
+      <group id="testlinkProfileAndRegistry">
+        <test id="testlinkProfileAndRegistry_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test3@example.com</obj>
+				<obj id="profileId" type="string">130002</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="securityToken" type="string">12345</obj>
+			</objs>      
+        </test>
+      </group>
+      
+       <group id="testCoRegistrant">
+        <test id="testCoRegistrant_test1">
+			<objs>
+				<obj id="profileServices" type="com.bbb.account.webservices.BBBProfileServices" hint="call" method="resolveName" calltype="com.bbb.account.webservices.TestBBBProfileServices">
+					<item type="string">/com/bbb/account/webservices/BBBProfileServices</item>
+				</obj>
+				<obj id="email" type="string">test3@example.com</obj>
+				<obj id="profileId" type="string">130002</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="securityToken" type="string">12345</obj>
+			</objs>      
+        </test>
+      </group>
+      
+       
+    </cluster>
+</ddtunit>

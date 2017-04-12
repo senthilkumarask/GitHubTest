@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>Shipping Repository</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     shipping repository       -->
+    <!--///////////////////////////////-->
+    
+<item-descriptor name="shippingMethods" xml-combine="append" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+
+</item-descriptor>
+
+<item-descriptor name="shippingMethodPrices" xml-combine="append" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">   
+
+</item-descriptor>
+
+  <item-descriptor name="state" xml-combine="append" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+   	
+  </item-descriptor>
+
+</gsa-template>

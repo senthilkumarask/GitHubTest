@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.common.manager.TestShippingMethodManager">
+		<group id="testShippingMethodsService">
+			 
+			<test id="testShippingService_Method">
+				<objs>
+					<obj id="manager" type="com.bbb.common.manager.ShippingMethodManager"
+						hint="call" method="resolveName" calltype="com.bbb.common.manager.TestShippingMethodManager">
+						<item type="string">/com/bbb/common/manager/ShippingMethodManager</item>
+					</obj>
+				</objs>
+				<asserts>
+					<assert id="shippingMethodResults" type="java.lang.String" action="isNotEqual">false</assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testShippingPriceTableService">
+			 
+			<test id="testShippingService_Price">
+				<objs>
+					<obj id="manager" type="com.bbb.common.manager.ShippingMethodManager"
+						hint="call" method="resolveName" calltype="com.bbb.common.manager.TestShippingMethodManager">
+						<item type="string">/com/bbb/common/manager/ShippingMethodManager</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+				<asserts>
+					<assert id="shippingPriceTableNull" type="java.util.HashMap" action="isNotNull"></assert>
+				</asserts>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

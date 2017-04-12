@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Manage Templates </name>
+	    <author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Manage template -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="BBBGSManagedRepository"
+		display-name-resource="BBBGSManagedTemplate" display-property="category"
+		cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+		<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+		<attribute name="updateLastModified" value="true"/>
+		
+		<table name="BBB_GS_CATEGORY" type="primary" id-column-name="manage_id">
+
+			<property name="id" column-name="manage_id"
+				display-name-resource="manageTemplateId" writable="true">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			</property>
+			<property name="channel" column-name="channel"
+				display-name-resource="channel" item-type="channelInfo"
+				category-resource="MasterInfo" required="true" repository="/com/bbb/channel/ChannelRepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+			<property name="category" column-name="category"
+				display-name-resource="category" item-type="category"
+				category-resource="MasterInfo" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+
+			<property name="attractScreenTemplate" column-name="attract_screen"
+				display-name-resource="attractScreenTemplate" item-type="AttractScreenTemplate"
+				category-resource="AttractScreen" repository="/com/bbb/stofu/AttractScreenRepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+				<attribute name="propertySortPriority" value="4"/>
+			</property>  
+			
+		</table>
+		<table name="BBB_GS_CAT_GOOD_TO_KNOW_REL" type="multi" id-column-name="manage_id" multi-column-name="sequence_num">
+			<property name="catGoodToKnows" column-name="cat_good_to_knows"
+				display-name-resource="goodToKnow" component-item-type="goodToKnow"
+				data-type="list" category-resource="goodToKnow">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+		</table>
+		<table name="BBB_GS_CAT_INTRO_REL" type="multi" id-column-name="manage_id" multi-column-name="sequence_num">
+			<property name="introScreenTabs" column-name="introscreen_tab"
+				display-name-resource="introScreenTabs" component-item-type="tab"
+				data-type="list" category-resource="ScreenTabs" repository="/com/bbb/stofu/CommonRepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+		<table name="BBB_GS_CAT_HELP_REL" type="multi" id-column-name="manage_id">
+			<property name="diduKnowTemplate" column-name="didu_know"
+				display-name-resource="diduKnowTemplate" component-item-type="didYouKnowTemplate"
+				data-type="set" category-resource="DiduKnow"
+				repository="/com/bbb/ipad/DidYouKnowRepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+			</property>
+		</table>
+
+
+
+		<table name="BBB_GS_SITE" type="multi" id-column-name="manage_id">
+			<property name="sites" column-name="site_id"
+				display-name-resource="sites" component-item-type="siteConfiguration"
+				data-type="set" category-resource="appSites" repository="/atg/multisite/SiteRepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+			</property>
+		</table>
+		
+			<table name="BBB_GS_QA_QS" type="multi" id-column-names="manage_id"
+			multi-column-name="sequence_num">
+			<property name="questions" column-names="question"
+				display-name-resource="questions" data-type="list"
+				component-item-type="question" category-resource="Questions"
+				repository="/com/bbb/ipad/GuidedSellingQARepository">
+				<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+				<attribute name="propertySortPriority" value="8" />
+			</property>
+		</table>
+	  </item-descriptor>
+  <item-descriptor  name="goodToKnow" display-name-resource="goodToKnow" display-property="goodToKnowName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	 <attribute name="updateLastModified" value="true"/>
+	 <table name="BBB_GS_GOOD_KNOW"    type="primary" id-column-names="good_to_know_id">
+	 	<property name="id" column-name="good_to_know_id"
+			display-name-resource="goodToKnowId" writable="true">
+			<attribute name="propertySortPriority" value="0" />
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+		</property>
+		<property name="goodToKnowName"  display-name-resource="goodToKnowName"  column-name="good_to_know_name"   data-type="String" >
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			<attribute name="propertySortPriority" value="1" />
+		</property>
+		<property name="goodToKnowFacetName"  display-name-resource="goodToKnowFacetName"  column-name="good_to_know_facet_name"   data-type="String" >
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			<attribute name="propertySortPriority" value="2" />
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+		</property>  
+		
+	</table>
+	<table name="BBB_GS_GOOD_TO_KNOW_VALUES" type="multi" id-column-names="good_to_know_id"   multi-column-name="sequence_num">
+			 <property name="goodToKnowFacetValues" column-names="good_to_know_facet_values" display-name-resource="goodToKnowFacetValues" data-type="list" component-data-type="String" category-resource="BBBCategoryCustom">
+			 <attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			 <attribute name="propertySortPriority" value="2" />
+			 </property>
+	</table>
+  </item-descriptor>
+</gsa-template>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cart.TestGetAllAppliedCoupons">
+		<group id="testGetApplyCoupon">
+			<test id="test">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="applyCouponRequest" type="string">/rest/bean/atg/commerce/promotion/PromotionTools/getAppliedCoupons</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="login" type="string">testapicoupon3@rediffmail.com</obj>
+					<obj id="password" type="string">Test@1234</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetApplyCouponError">
+			<test id="test">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="applyCouponRequest" type="string">/rest/bean/atg/commerce/promotion/PromotionTools/getAppliedCoupons</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

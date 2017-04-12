@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="createCategory" xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+ 
+  <actor-chain id="createCategory" transaction="TX_SUPPORTS">
+    <form id="category-create" handle="createCategory" var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="parentCategory" value="${param.primary_parent_cat_id}"/>
+      <input name="displayName" value="${param.display_name}"/>
+      <input name="categoryName" value="${param.name}"/>
+      <input name="categoryUrlUS" value="${param.category_url}"/>
+      <input name="categoryImageUrlUS" value="${param.image_url}"/>
+      <input name="categoryUrlTBS" value="${param.tbs_category_url}"/>
+      <input name="categoryImageUrlTBS" value="${param.tbs_image_url}"/>
+      <input name="categoryUrlBABY" value="${param.baby_category_url}"/>
+      <input name="categoryImageUrlBABY" value="${param.baby_image_url}"/>
+      <input name="categoryUrlCA" value="${param.ca_category_url}"/>
+      <input name="categoryImageUrlCA" value="${param.ca_image_url}"/>
+      
+      <input name="mobCategoryUrlUS" value="${param.mob_category_url}"/>
+      <input name="mobImageUrlUS" value="${param.mob_image_url}"/>
+      <input name="mobCategoryUrlBaby" value="${param.mob_baby_category_url}"/>
+      <input name="mobImageUrlBaby" value="${param.mob_baby_image_url}"/>
+      <input name="mobCategoryUrlCA" value="${param.mob_ca_category_url}"/>
+      <input name="mobImageUrlCA" value="${param.mob_ca_image_url}"/>
+      <input name="tbsCategoryUrlBaby" value="${param.tbs_baby_category_url}"/>
+      <input name="tbsImageUrlBaby" value="${param.tbs_baby_image_url}"/>
+      <input name="tbsCategoryUrlCA" value="${param.tbs_ca_category_url}"/>
+      <input name="tbsImageUrlCA" value="${param.tbs_ca_image_url}"/>
+      
+      <input name="suggestedQty" value="${param.suggested_qty}"/>
+      <input name="thresholdQty" value="${param.threshold_qty}"/>
+      <input name="thresholdAmt" value="${param.threshold_amt}"/>
+      <input name="serviceType" value="${param.service_type_cd}"/>
+      <input name="disabled" value="${param.is_disabled}"/>
+      <input name="lastModifiedUser" value="${param.last_mod_user}"/>
+      <input name="createdUser" value="${param.create_user}"/>
+      <input name="visibleOnChecklist" value="${param.is_visible_on_checklist}"/>
+      <input name="visibleOnRegList" value="${param.is_visible_on_reg_list}"/>
+      <input name="childPrdNeededToDisp" value="${param.is_child_prd_needed_to_disp}"/>
+      <input name="configComplete" value="${param.is_config_complete}"/>
+      <input name="listId" value="${param.list_id}"/>
+      <input name="parentListCatId" value="${param.parent_list_cat_id}"/>
+      
+      <input name="urlOverride" value="${param.url_override}"/>
+      <input name="babyUrlOverride" value="${param.baby_url_override}"/>
+      <input name="caUrlOverride" value="${param.ca_url_override}"/>
+      <input name="mobUrlOverride" value="${param.mob_url_override}"/>
+      <input name="mobBabyUrlOverride" value="${param.mob_baby_url_override}"/>
+      <input name="mobCAUrlOverride" value="${param.mob_ca_url_override}"/>
+      <input name="tbsUrlOverride" value="${param.tbs_url_override}"/>
+      <input name="tbsBabyUrlOverride" value="${param.tbs_baby_url_override}"/>
+      <input name="tbsCAUrlOverride" value="${param.tbs_ca_url_override}"/>
+      <input name="facetIdPkgCount" value="${param.facet_id_pkg_cnt}"/>
+      </form>
+  </actor-chain>
+  <actor-chain id="editCategory" transaction="TX_SUPPORTS">
+    <form id="category-edit" handle="editCategory" var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="categoryId" value="${param.list_cat_id}"/>
+      <input name="parentCategory" value="${param.primary_parent_cat_id}"/>
+      <input name="displayName" value="${param.display_name}"/>
+      <input name="categoryName" value="${param.name}"/>
+      <input name="categoryUrlUS" value="${param.category_url}"/>
+      <input name="categoryImageUrlUS" value="${param.image_url}"/>
+      <input name="categoryUrlTBS" value="${param.tbs_category_url}"/>
+      <input name="categoryImageUrlTBS" value="${param.tbs_image_url}"/>
+      <input name="categoryUrlBABY" value="${param.baby_category_url}"/>
+      <input name="categoryImageUrlBABY" value="${param.baby_image_url}"/>
+      <input name="categoryUrlCA" value="${param.ca_category_url}"/>
+      <input name="categoryImageUrlCA" value="${param.ca_image_url}"/>
+      
+      <input name="mobCategoryUrlUS" value="${param.mob_category_url}"/>
+      <input name="mobImageUrlUS" value="${param.mob_image_url}"/>
+      <input name="mobCategoryUrlBaby" value="${param.mob_baby_category_url}"/>
+      <input name="mobImageUrlBaby" value="${param.mob_baby_image_url}"/>
+      <input name="mobCategoryUrlCA" value="${param.mob_ca_category_url}"/>
+      <input name="mobImageUrlCA" value="${param.mob_ca_image_url}"/>
+      <input name="tbsCategoryUrlBaby" value="${param.tbs_baby_category_url}"/>
+      <input name="tbsImageUrlBaby" value="${param.tbs_baby_image_url}"/>
+      <input name="tbsCategoryUrlCA" value="${param.tbs_ca_category_url}"/>
+      <input name="tbsImageUrlCA" value="${param.tbs_ca_image_url}"/>
+      
+      <input name="suggestedQty" value="${param.suggested_qty}"/>
+      <input name="thresholdQty" value="${param.threshold_qty}"/>
+      <input name="thresholdAmt" value="${param.threshold_amt}"/>
+      <input name="serviceType" value="${param.service_type_cd}"/>
+      <input name="disabled" value="${param.is_disabled}"/>
+      <input name="lastModifiedUser" value="${param.last_mod_user}"/>
+      <input name="createdUser" value="${param.create_user}"/>
+      <input name="visibleOnChecklist" value="${param.is_visible_on_checklist}"/>
+      <input name="visibleOnRegList" value="${param.is_visible_on_reg_list}"/>
+      <input name="childPrdNeededToDisp" value="${param.is_child_prd_needed_to_disp}"/>
+      <input name="configComplete" value="${param.is_config_complete}"/>
+      
+      <input name="urlOverride" value="${param.url_override}"/>
+      <input name="babyUrlOverride" value="${param.baby_url_override}"/>
+      <input name="caUrlOverride" value="${param.ca_url_override}"/>
+      <input name="mobUrlOverride" value="${param.mob_url_override}"/>
+      <input name="mobBabyUrlOverride" value="${param.mob_baby_url_override}"/>
+      <input name="mobCAUrlOverride" value="${param.mob_ca_url_override}"/>
+      <input name="tbsUrlOverride" value="${param.tbs_url_override}"/>
+      <input name="tbsBabyUrlOverride" value="${param.tbs_baby_url_override}"/>
+      <input name="tbsCAUrlOverride" value="${param.tbs_ca_url_override}"/>
+      <input name="facetIdPkgCount" value="${param.facet_id_pkg_cnt}"/>
+       </form>
+  </actor-chain>
+  <actor-chain id="removeCategory" transaction="TX_SUPPORTS">
+    <form id="category-remove" handle="removeCategory" var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="categoryId" value="${param.list_cat_id}"/>
+      </form>
+  </actor-chain>
+  <actor-chain id="addChildCategory" transaction="TX_SUPPORTS">
+    <form id="addChildCategory" handle="addChildCategories" var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="categoryId" value="${param.list_cat_id}"/>
+       <input name="childCategoryId" value="${param.child_list_cat_id}"/>
+      </form>
+  </actor-chain>
+  <actor-chain id="removeChildCategory" transaction="TX_SUPPORTS">
+    <form id="list-remove" handle="removeChildCategories" var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="categoryId" value="${param.list_cat_id}"/>
+       <input name="childCategoryId" value="${param.child_list_cat_id}"/>
+      </form>
+  </actor-chain>
+  <actor-chain id="reOrder" transaction="TX_SUPPORTS">
+    <form id="reOrderChildCategories" handle="ReOrderChildCategories" var="reOrderChildCategories" name="/com/admin/formhandler/BBBCategoryFormHandler" use-forwards="true" requires-session-confirmation="true">
+      <input name="categoryId" value="${param.list_cat_id}"/>
+       <input name="childCategoryId" value="${param.child_list_cat_id}"/>
+       <input name="newSequenceNo" value="${param.sequence_num}"/>
+      </form>
+  </actor-chain>
+  <actor-chain id="getCategory" transaction="TX_SUPPORTS">
+		<droplet var="getCategory" name="/com/admin/droplet/BBBCategoryDroplet"
+			id="getCategory">
+			<input name="category_id" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="searchByName" transaction="TX_SUPPORTS">
+		<droplet var="getCategory" name="/com/admin/droplet/BBBCategoryDroplet"
+			id="getCategory">
+			<input name="search_term" value="${param.display_name}" />
+			<input name="category_id" value="${param.list_cat_id}" />
+			<input name="search" value="true" />
+			
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getCategories" transaction="TX_SUPPORTS">
+		<droplet var="getCategories" name="/com/admin/droplet/BBBChildCategoryDroplet"
+			id="getCategories">
+			<input name="category_id" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+  <actor-chain id="getSkus" transaction="TX_SUPPORTS">
+		<droplet var="getSkus" name="/com/admin/droplet/BBBSkuDroplet"
+			id="getSkus">
+			<input name="category_id" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+		<actor-chain id="reOrderCatSkus" transaction="TX_SUPPORTS">
+		<form id="category-reorder" handle="reOrderSku"
+			var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="newSequenceNo" value="${param.sequence_num}" />
+		</form>
+	</actor-chain> 
+	<actor-chain id="reOrderCatEph" transaction="TX_SUPPORTS">
+		<form id="category-eph-reorder" handle="reOrderEph"
+			var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="newSequenceNo" value="${param.sequence_num}" />
+		</form>
+	</actor-chain>
+	 <actor-chain id="getFacetRules" transaction="TX_SUPPORTS">
+		<droplet var="getFacetRules" name="/com/admin/droplet/BBBFacetRulesDroplet"
+			id="getFacetRules">
+			<input name="category_id" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="reOrderFacetRules" transaction="TX_SUPPORTS">
+		<form id="category-facetRules-reorder" handle="reOrderFacetRules"
+			var="categoryFormHandler" name="/com/admin/formhandler/BBBCategoryFormHandler"
+			use-forwards="true" requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="newSequenceNo" value="${param.sequence_num}" />
+		</form>
+	</actor-chain>
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 $$Change: 875535 $ -->
+
+<!-- result of combining: 
+     C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml
+-->

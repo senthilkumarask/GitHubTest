@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.integration.BazaarVoice.TestBazaarVoiceUnmarshal">
+		<group id="testUnMarshalarBV">
+		   <test id="testUnMarshalarBV_test2">
+				<objs>
+					<obj id="manager" type="com.bbb.commerce.catalog.BazaarVoiceUnMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.integration.BazaarVoice.TestBazaarVoiceUnmarshal">
+						<item type="string">/com/bbb/commerce/catalog/BazaarVoiceUnMarshaller</item>
+					</obj>
+			    </objs>
+		<!--		<asserts>
+					<assert id="averageOverallRating" type="java.lang.Float" action="isGT">0</assert>
+					<assert id="overallRatingRange" type="java.lang.Integer" action="isGT">0</assert> 
+					<assert id="totalReviewCount" type="java.lang.Integer" action="isGT">0</assert>
+				</asserts>   -->
+			</test>
+		</group>
+  </cluster>
+</ddtunit>

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestValueLinkGiftCardProcessor.xml
+
+  DESCRIPTION: ddtunit data file for TestValueLinkGiftCardProcessor.java test case
+
+  HISTORY:
+  Feb 02, 2012  Initial version
+
+
+giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  
+
+-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.payment.giftcard.TestBBBGiftCardFormHandler">
+      <group id="testBBBGiftCardFormHandler">
+        <test id="testBBBGiftCardFormHandler">
+			<objs>
+				<obj id="giftCardFormHandler" type="com.bbb.payment.giftcard.BBBGiftCardFormHandler" hint="call" method="resolveName" 
+				calltype="com.bbb.payment.giftcard.TestBBBGiftCardFormHandler">
+					<item type="string">/com/bbb/payment/giftcard/BBBGiftCardFormHandler</item>
+				</obj>
+                <obj id="pricingTools" type="atg.commerce.pricing.PricingTools" hint="call" method="resolveName" 
+                calltype="com.bbb.payment.giftcard.TestBBBGiftCardFormHandler">
+                    <item type="string">/atg/commerce/pricing/PricingTools</item>
+                </obj>
+				<obj id="siteWrapper" type="atg.multisite.SiteWrapper" hint="call" method="resolveName" 
+				calltype="com.bbb.payment.giftcard.TestBBBGiftCardFormHandler">
+					<item type="string">/atg/multisite/Site</item>
+				</obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777060829062488</obj>	
+				<obj id="pinNo" type="string">24003025</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

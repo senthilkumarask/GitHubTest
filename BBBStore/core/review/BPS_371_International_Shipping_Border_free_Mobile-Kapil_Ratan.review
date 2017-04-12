@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPS_371_International_Shipping_Border_free_Mobile">
+  <ReviewIssue id="I49QYYDI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 16:42:59:526 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 16:43:01:420 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="18">src/com/bbb/internationalshipping/vo/BBBCommerceItemVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: GetRegistryVODroplet.xml 
+	DESCRIPTION: ddtunit data file for GetRegistryVODroplet.java test case HISTORY: 
+	Nov 09, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster
+		id="com.bbb.commerce.giftregistry.TestAddItemToGiftRegistryDroplet">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>
+					<obj id="addItemToGiftRegistry"
+						type="com.bbb.commerce.giftregistry.TestAddItemToGiftRegistryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestAddItemToGiftRegistryDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/AddItemToGiftRegistryDroplet</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestAddItemToGiftRegistryDroplet">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestAddItemToGiftRegistryDroplet">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="username0" type="string">s53126fg34@sapient.com</obj>
+					<obj id="email" type="string">test3@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+				</objs>
+				<asserts>
+					<assert id="size0" type="java.lang.Integer" action="isEqual">0
+					</assert>
+
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

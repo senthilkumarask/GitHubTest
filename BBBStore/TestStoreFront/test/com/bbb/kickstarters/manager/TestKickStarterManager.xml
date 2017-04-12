@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.kickstarter.manager.TestKickStarterManager">
+		<group id="testTopConsultantsService">
+			 
+			<test id="testTopConsultantsService_Method">
+				<objs>
+					<obj id="manager" type="com.bbb.kickstarter.manager.KickStarterManager"
+						hint="call" method="resolveName" calltype="com.bbb.kickstarter.manager.KickStarterManager">
+						<item type="string">/com/bbb/kickstarter/manager/KickStarterManager</item>
+					</obj>
+				</objs>
+				<asserts>
+					<assert id="kickStarterItemsVO" type="java.lang.String" action="isNotEqual">false</assert>
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

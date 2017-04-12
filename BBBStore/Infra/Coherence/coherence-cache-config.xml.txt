@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE cache-config SYSTEM "cache-config.dtd">
+<cache-config>
+    <caching-scheme-mapping>
+        <cache-mapping>
+            <cache-name>near-*</cache-name>
+            <scheme-name>custom-near</scheme-name>
+        </cache-mapping>
+		  <!--mobile specific cache mapping -->
+		  <cache-mapping>
+            <cache-name>mobile-*</cache-name>
+            <scheme-name>custom-near-mobile</scheme-name>
+        </cache-mapping>
+		<!-- Added for GS CHG0309217 -->
+		<cache-mapping> 
+            <cache-name>gs_us_near-search-result-cache</cache-name> 
+            <scheme-name>custom-near</scheme-name> 
+           </cache-mapping> 
+        <cache-mapping> 
+            <cache-name>gs_us_near-keyword-search-cache</cache-name> 
+            <scheme-name>custom-near</scheme-name> 
+        </cache-mapping>
+		<!-- End -->
+    </caching-scheme-mapping>
+
+    <caching-schemes>
+        <near-scheme>
+            <scheme-name>custom-near</scheme-name>
+                <front-scheme>
+                  <local-scheme>
+                      <expiry-delay>3600s</expiry-delay>
+                      <high-unit>100m</high-unit>
+                      <unit-calculator>FIXED</unit-calculator>
+                  </local-scheme>
+                </front-scheme>
+            <back-scheme>
+                <distributed-scheme>
+                    <scheme-ref>custom-distributed</scheme-ref>
+                </distributed-scheme>
+            </back-scheme>
+            <invalidation-strategy>none</invalidation-strategy>
+        </near-scheme>
+		  <!--mobile specific near cache -->
+		  <near-scheme>
+            <scheme-name>custom-near-mobile</scheme-name>
+                <front-scheme>
+                  <local-scheme>
+                      <expiry-delay>3600s</expiry-delay>
+                      <high-unit>100m</high-unit>
+                      <unit-calculator>FIXED</unit-calculator>
+                  </local-scheme>
+                </front-scheme>
+            <back-scheme>
+                <distributed-scheme>
+                    <scheme-ref>custom-mobile-distributed</scheme-ref>
+                </distributed-scheme>
+            </back-scheme>
+            <invalidation-strategy>none</invalidation-strategy>
+        </near-scheme>
+
+        <distributed-scheme>
+            <scheme-name>custom-distributed</scheme-name>
+            <service-name>CustomDistributedCacheService</service-name>
+            <backing-map-scheme>
+                <local-scheme>
+                    <scheme-ref>custom-local</scheme-ref>
+                </local-scheme>
+            </backing-map-scheme>
+            <local-storage system-property="tangosol.coherence.distributed.localstorage">false</local-storage>
+            <autostart>true</autostart>
+        </distributed-scheme>
+		  <!--mobile specific distributed cache -->
+		  <distributed-scheme>
+            <scheme-name>custom-mobile-distributed</scheme-name>
+            <service-name>CustomDistributedCacheService</service-name>
+            <backing-map-scheme>
+                <local-scheme>
+                    <scheme-ref>custom-mobile-local</scheme-ref>
+                </local-scheme>
+            </backing-map-scheme>
+            <local-storage system-property="tangosol.coherence.distributed.localstorage">false</local-storage>
+            <autostart>true</autostart>
+        </distributed-scheme>
+
+        <local-scheme>
+            <scheme-name>custom-local</scheme-name>
+            <expiry-delay>3600s</expiry-delay>
+            <high-unit>200m</high-unit>
+            <unit-calculator>FIXED</unit-calculator>
+            <service-name>CustomLocalCacheService</service-name>
+		</local-scheme>
+		<!--mobile specific back cache with no expiry time -->
+		<local-scheme>
+            <scheme-name>custom-mobile-local</scheme-name>
+            <high-unit>100m</high-unit>
+            <unit-calculator>FIXED</unit-calculator>
+            <service-name>CustomLocalCacheService</service-name>
+		</local-scheme>
+
+        <proxy-scheme>
+            <scheme-name>extend-tcp-proxy-scheme</scheme-name>
+            <service-name>ExtendTcpProxyService</service-name>
+            <thread-count>2</thread-count>
+            <acceptor-config>
+                <tcp-acceptor>
+                    <local-address>
+                        <address>localhost</address>
+                        <port system-property="tangosol.coherence.extend.port">7080</port>
+                    </local-address>
+                </tcp-acceptor>
+            </acceptor-config>
+            <autostart system-property="tangosol.coherence.proxy.start">false</autostart>
+        </proxy-scheme>
+	</caching-schemes>
+</cache-config>                          
+						  

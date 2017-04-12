@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP_1856_Offshore_Review">
+  <ReviewIssue id="IFRQ4CAJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:55:48:091 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:55:50:824 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="1772">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRQ4TQ5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:10:685 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:12:651 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="184">src/com/bbb/commerce/order/manager/PromotionLookupManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRQ51P5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:21:017 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:22:733 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="189">src/com/bbb/commerce/order/manager/PromotionLookupManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRQ5D72">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:35:918 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:37:525 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="276">src/com/bbb/commerce/catalog/droplet/BBBPromotionTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRQ5M9Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:47:686 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:56:49:294 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="286">src/com/bbb/commerce/catalog/droplet/BBBPromotionTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

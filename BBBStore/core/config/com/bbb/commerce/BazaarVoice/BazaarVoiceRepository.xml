@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<item-descriptor name="bazaarVoice" cache-mode="simple" item-cache-size="60000" query-cache-size="120000" last-modified-property="lastModifiedDate">
+      <table name="BBB_BAZAAR_VOICE" type="primary" id-column-names="product_id,site_id">
+	     	<property name="productId" column-name="product_id" data-type="string"/>
+	     	<property name="AverageOverallRating" column-name="Average_Overall_Rating" data-type="float"/>
+	     	<property name="TotalReviewCount" column-name="Total_Review_Count" data-type="int"/>
+	     	<property name="ExternalId" column-name="External_Id" data-type="String"/>
+	     	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp"/>
+	     	<property name="siteId" column-name="site_id" data-type="String"/>
+  				
+	     </table>
+  </item-descriptor>
+  
+  <!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component
+  	<query-items item-descriptor="bazaarVoice" quiet="true">ALL</query-items>
+  	-->
+  
+</gsa-template>

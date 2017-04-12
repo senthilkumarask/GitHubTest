@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_BRIDAL_SHOW_TEMPLATE_2011_11_09">
+  <ReviewIssue id="GUZDE18A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 16:38:21:562 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 16:38:51:061 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Raj_Karamcheti</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="109">src/com/bbb/cms/droplet/BridalShowStateDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do not hard code the templateName. </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

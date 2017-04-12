@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_779_Sending Context in the Certona calls_2014_11_04">
+  <ReviewIssue id="I23GTK07">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 21:52:49:735 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 21:59:14:317 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add JSP label comments.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23GU0MT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 21:53:11:285 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 21:54:00:275 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use labels create in BCC for Hardcoded String</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23H5OAY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:02:15:178 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:07:58:129 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do we call JS methods on onclick events directly? Pls confirm with UE team.</Summary>
+    <Description>javascript:pdpOmnitureProxy('pfm','Fun New Products(home page)')</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23HESQW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:09:20:840 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:11:38:042 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use labels from BCC on all JSPs for harcoded Strings.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23HIDFQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:12:07:622 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:12:39:042 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Put JSP label comments for Droplets used in jsp files.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23HPZWB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:18:03:323 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:18:57:583 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Remove unwanted html comments</Summary>
+    <Description>&lt;/li&gt;&#xD;
+										&lt;!-- 			                            &lt;li class="prodAttribute"&gt; --&gt;&#xD;
+										&lt;!-- 			                                &lt;span class="prod-attrib prod-attrib-clearance"&gt; --&gt;&#xD;
+										&lt;!-- 			                                    Clearance!-- Need to chk the value --&gt;&#xD;
+										&lt;!-- 			                                &lt;/span&gt; --&gt;&#xD;
+										&lt;!-- 			                                Need to see from where to get the Clearance Data --&gt;&#xD;
+										&lt;!-- 			                            &lt;/li&gt; --&gt;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23HSUEN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:20:16:175 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:29:25:372 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove usused dsp:import from all JSPs</Summary>
+    <Description>&lt;dsp:importbean bean="/com/bbb/cms/droplet/HomePageTemplateDroplet" /&gt;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I23HY9FA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:24:28:918 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-04 :: 22:24:53:698 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>BazaarVoiceOn is harcoded to true</Summary>
+    <Description>&lt;c:set var="BazaarVoiceOn" value="true" /&gt;</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

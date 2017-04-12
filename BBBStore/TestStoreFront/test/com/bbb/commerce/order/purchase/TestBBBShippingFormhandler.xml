@@ -1,0 +1,324 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+      
+		<group id="testMultiShppingFormhandler">
+        <test id="testMultiShppingFormhandler">
+			<objs>						
+                <obj id="bbbOrderOmnitureDroplet" type="com.bbb.commerce.order.droplet.BBBOrderOmnitureDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestBBBOrderOmnitureDroplet">
+                    <item type="string">/atg/commerce/order/droplet/BBBOrderOmnitureDroplet</item>
+                </obj>      
+				<obj id="bbbShippingGroupFormHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+				</obj>
+				<obj id="bbbSGCS" type="string">/atg/commerce/order/purchase/ShippingGroupContainerService</obj>
+				<obj id="bbbAddrAPI" type="com.bbb.account.api.BBBAddressAPI" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/account/BBBAddressAPI</item>
+				</obj>
+				<obj id="bbbAddContainer" type="com.bbb.commerce.common.BBBAddressContainer" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/checkout/MultiShippingAddContainer</item>
+				</obj>
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+                <obj id="giftCatalogRefId" type="string">
+					sku30004
+				</obj>	
+				<obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+			         <header>
+			            <orderId>O1234SHGRP</orderId>
+			            <siteId>BedBathUS</siteId>
+			            <orderDate>2012-02-16T09:00:00.0</orderDate>
+			            <!--Optional:-->
+			            <currencyCode>USD</currencyCode>
+			            <callingAppCode>bbb</callingAppCode>
+			            <!--Optional:-->
+			            <timestamp>2012-02-02T09:00:00.0</timestamp>
+			            <!--Optional:-->
+			            <coupons>
+			               <!--1 or more repetitions:-->
+			               <coupon>
+			                  <identifier>ONLBBB110215</identifier>
+			                  <type>BBB_COUPON</type>
+			               </coupon>
+			            </coupons>
+			         </header>
+			         <request>
+			            <shippingGroups>
+			               <!--1 or more repetitions:-->
+			               <shippingGroup>
+			                  <shippingGroupId>sg1234</shippingGroupId>
+			                  <shippingMethod>1a</shippingMethod>
+			                  <giftWrapRequired>false</giftWrapRequired>
+			                  <!--Optional:-->
+			                  
+			                  <shippingAddress>
+			                  	 <firstName>123</firstName>
+			                  	 <lastName>123</lastName>
+			                     <addressLine1>123</addressLine1>
+			                     <!--Optional:-->
+			                     <addressLine2>Main St.</addressLine2>
+			                     <city>New York</city>
+			                     <state>NY</state>
+			                    <zipCode>10019-1234</zipCode>
+			                     <country>US</country>
+			                  </shippingAddress>
+			                  <itemList>
+			                  	 <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="1" originalLineNumber="2">
+			                        <sku>sku40041</sku>
+			                        <quantity>3</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>		
+			                  	 <!--giftCatalogRefId-->
+			                     <item lineNumber="2" originalLineNumber="1">
+			                        <sku>sku30004</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                        
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="3" originalLineNumber="2">
+			                        <sku>sku10013</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId2-->
+			                     <item lineNumber="4" originalLineNumber="2">
+			                        <sku>sku10014</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>			                     		                    
+			                  </itemList>
+			               </shippingGroup>
+			            </shippingGroups>
+			         </request>
+			      </pricingRequest>]]></obj>
+			      <obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>											
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+                </obj>  
+                <obj id="listPriceId" type="string">
+                    plist100005
+                </obj>
+                <obj id="salePriceId" type="string">
+                    plist100004
+                </obj>	
+				<obj id="storeId1" type="string">
+					1190
+				</obj>				
+			</objs>			 
+        </test>
+      </group> 
+      
+       
+      <group id="testLTLMultiShppingFormhandler">
+        <test id="testLTLMultiShppingFormhandler">
+			<objs>						
+<!--                 <obj id="bbbOrderOmnitureDroplet" type="com.bbb.commerce.order.droplet.BBBOrderOmnitureDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.order.droplet.TestBBBOrderOmnitureDroplet"> -->
+<!--                     <item type="string">/atg/commerce/order/droplet/BBBOrderOmnitureDroplet</item> -->
+<!--                 </obj>       -->
+				<obj id="bbbShippingGroupFormHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+				</obj>
+				<obj id="bbbSGCS" type="string">/atg/commerce/order/purchase/ShippingGroupContainerService</obj>
+				<obj id="bbbAddrAPI" type="com.bbb.account.api.BBBAddressAPI" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/account/BBBAddressAPI</item>
+				</obj>
+				<obj id="bbbAddContainer" type="com.bbb.commerce.common.BBBAddressContainer" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/checkout/MultiShippingAddContainer</item>
+				</obj>
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+                <obj id="giftCatalogRefId" type="string">
+					sku30004
+				</obj>	
+				<obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+			         <header>
+			            <orderId>O1234</orderId>
+			            <siteId>BedBathUS</siteId>
+			            <orderDate>2012-02-16T09:00:00.0</orderDate>
+			            <callingAppCode>1</callingAppCode>
+			            <currencyCode>USD</currencyCode>
+			            <callingAppCode>bbb</callingAppCode>
+			         </header>
+			         <request>
+			            <shippingGroups>
+			               <!--1 or more repetitions:-->
+			               <shippingGroup>
+			                  
+			                  <shippingGroupId>sg1234</shippingGroupId>
+			                  <shippingMethod>LC</shippingMethod>
+			                  <giftWrapRequired>false</giftWrapRequired>
+			                  
+			                  <shippingAddress>
+			                     <addressLine1>1206</addressLine1>
+			                     <city>Delhi</city>
+			                     <state>TX</state>
+			                    <zipCode>12345</zipCode>
+			                     <country>US</country>
+			                  </shippingAddress>
+			                  <itemList>
+			                     <!--1 or more repetitions:-->
+			                     <item lineNumber="1" originalLineNumber="1">
+			                        <sku>17463668</sku>
+			                        <quantity>2</quantity>
+			                        <price>15.00</price>      
+			                        <status>SHIPPED</status>
+									<isLTLSku>true</isLTLSku>
+			                     </item>
+			                  </itemList>
+			                  
+			               </shippingGroup>
+							<shippingGroup>
+				                  <shippingGroupId>sg1254</shippingGroupId>
+				                  <shippingMethod>LR</shippingMethod>
+				                  <giftWrapRequired>false</giftWrapRequired>
+				                  
+				                  <shippingAddress>
+				                     <addressLine1>1206</addressLine1>
+				                     <city>Hyderabad</city>
+				                     <state>TX</state>
+				                    <zipCode>54321</zipCode>
+				                     <country>US</country>
+			                 	 </shippingAddress>
+				                  <itemList>
+				                     <!--1 or more repetitions:-->
+				                     <item lineNumber="1" originalLineNumber="1">
+				                        <sku>17463668</sku>
+				                        <quantity>2</quantity>
+				                        <price>15.00</price>      
+				                        <status>SHIPPED</status>
+										<isLTLSku>true</isLTLSku>
+				                     </item>
+				                  </itemList>
+				                  
+				               </shippingGroup>
+			            </shippingGroups>
+			         </request>
+			      </pricingRequest>]]></obj>
+			      <obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>											
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+                </obj>  
+                <obj id="listPriceId" type="string">
+                    plist100005
+                </obj>
+                <obj id="salePriceId" type="string">
+                    plist100004
+                </obj>	
+				<obj id="storeId1" type="string">
+					1190
+				</obj>				
+			</objs>			 
+        </test>
+      </group> 
+      
+      <group id="testValidAddressPreAddNewAddress">
+        <test id="testValidAddressPreAddNewAddress">
+			<objs>						
+                  
+				<obj id="bbbShippingGroupFormHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+				</obj>
+				
+				<obj id="bbbAddrAPI" type="com.bbb.account.api.BBBAddressAPI" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/account/BBBAddressAPI</item>
+				</obj>
+				<obj id="bbbAddContainer" type="com.bbb.commerce.common.BBBAddressContainer" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/checkout/MultiShippingAddContainer</item>
+				</obj>
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+                
+					
+			</objs>			 
+        </test>
+      </group> 
+      
+           
+      <group id="testInvalidAddressPreAddNewAddress">
+        <test id="testInvalidAddressPreAddNewAddress">
+			<objs>						
+                  
+				<obj id="bbbShippingGroupFormHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+				</obj>
+				
+				<obj id="bbbAddrAPI" type="com.bbb.account.api.BBBAddressAPI" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/account/BBBAddressAPI</item>
+				</obj>
+				<obj id="bbbAddContainer" type="com.bbb.commerce.common.BBBAddressContainer" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBShippingFormhandler">
+					<item type="string">/com/bbb/commerce/checkout/MultiShippingAddContainer</item>
+				</obj>
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+                
+					
+			</objs>			 
+        </test>
+      </group> 
+      
+       
+    </cluster>
+</ddtunit>
+

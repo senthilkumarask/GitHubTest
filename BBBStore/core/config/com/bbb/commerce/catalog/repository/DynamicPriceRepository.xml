@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Dynamic Price Repository</name>
+		<author></author>
+	</header>
+
+	<item-descriptor name="productPrice" display-name="productPrice"
+		cache-mode="simple" query-cache-size="20000" item-cache-size="100000" last-modified-property="lastModifiedDate" item-cache-timeout="3600000" query-expire-timeout="3600000">
+		
+		 <table name="BBB_PROD_PRICE_STRINGS" type="primary" id-column-name="product_Id">
+		 <property name="productId" column-names="product_Id" display-name="productId"  data-type="String"/>
+		 <property name="bbbListPriceString" column-names="bbb_List_Price_String" display-name="bbbListPriceString"  data-type="String"/>
+		 <property name="bbbSalePriceString" column-names="bbb_Sale_Price_String" display-name="bbbSalePriceString"  data-type="String"/>
+		 <property name="bbbIncartFlag" column-names="bbb_Incart_Flag" display-name="bbbIncartFlag"  data-type="boolean" />
+		 <property name="bbbPricingLabelCode" column-names="bbb_Pricing_Label_Code" display-name="bbbPricingLabelCode"  data-type="String"/>
+		 <property name="babyListPriceString" column-names="bab_List_Price_String" display-name="babyListPriceString"  data-type="String"/>
+		 <property name="babySalePriceString" column-names="bab_Sale_Price_String" display-name="babySalePriceString"  data-type="String"/>
+		 <property name="babyIncartFlag" column-names="bab_Incart_Flag" display-name="babyIncartFlag"  data-type="boolean"/>
+		 <property name="babyPricingLabelCode" column-names="bab_Pricing_Label_Code" display-name="babyPricingLabelCode"  data-type="String"/>
+		 <property name="caListPriceString" column-names="ca_List_Price_String" display-name="caListPriceString"  data-type="String"/>
+		 <property name="caSalePriceString" column-names="ca_Sale_Price_String" display-name="caSalePriceString"  data-type="String"/>
+		 <property name="caIncartFlag" column-names="ca_Incart_Flag" display-name="caIncartFlag"  data-type="boolean"/>
+		 <property name="caPricingLabelCode" column-names="ca_Pricing_Label_Code" display-name="caPricingLabelCode"  data-type="String"/>
+		 <property name="mxListPriceString" column-names="mx_List_Price_String" display-name="mxListPriceString"  data-type="String"/>
+		 <property name="mxSalePriceString" column-names="mx_Sale_Price_String" display-name="mxSalePriceString"  data-type="String"/>
+		 <property name="mxIncartFlag" column-names="mx_Incart_Flag" display-name="mxIncartFlag"  data-type="boolean"/>
+		 <property name="mxPricingLabelCode" column-names="mx_Pricing_Label_Code" display-name="mxPricingLabelCode"  data-type="String"/>
+		 <property name="lastModifiedDate" column-names="last_Modified_Date" display-name="lastModifiedDate"  data-type="timestamp"/>
+		 </table>
+	
+		</item-descriptor>
+		
+		<item-descriptor name="skuPrice" display-name="skuPrice"
+		cache-mode="simple" query-cache-size="20000" item-cache-size="100000" last-modified-property="lastModifiedDate" item-cache-timeout="3600000" query-expire-timeout="3600000">
+		 <table name="BBB_SKU_PRICE_FLAGS" type="primary" id-column-name="sku_Id">
+		 <property name="skuId" column-names="sku_Id" display-name="skuId"  data-type="String"/>
+		 <property name="bbbIncartFlag" column-names="bbb_Incart_Flag" display-name="bbbIncartFlag"  data-type="boolean"/>
+		 <property name="babyIncartFlag" column-names="bab_Incart_Flag" display-name="babyIncartFlag"  data-type="boolean"/>
+		 <property name="caIncartFlag" column-names="ca_Incart_Flag" display-name="caIncartFlag"  data-type="boolean"/>
+		 <property name="mxIncartFlag" column-names="mx_Incart_Flag" display-name="mxIncartFlag"  data-type="boolean"/>
+		 <property name="bbbPricingLabelCode" column-names="bbb_Pricing_Label_Code" display-name="bbbPricingLabelCode"  data-type="String"/>
+		 <property name="babyPricingLabelCode" column-names="bab_Pricing_Label_Code" display-name="babyPricingLabelCode"  data-type="String"/>
+		 <property name="caPricingLabelCode" column-names="ca_Pricing_Label_Code" display-name="caPricingLabelCode"  data-type="String"/>
+		 <property name="mxPricingLabelCode" column-names="mx_Pricing_Label_Code" display-name="mxPricingLabelCode"  data-type="String"/>
+		 <property name="lastModifiedDate" column-names="last_Modified_Date" display-name="lastModifiedDate"  data-type="timestamp"/>
+		 
+		 
+		 </table>
+	
+	</item-descriptor>
+
+
+</gsa-template>

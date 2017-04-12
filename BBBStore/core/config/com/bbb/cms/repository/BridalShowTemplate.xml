@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+       <item-descriptor name="BridalShowTemplate" display-name-resource="itemDescriptorShowTemplate" display-property="name" cache-mode="simple" item-cache-size="300" item-cache-timeout="86400000">
+	   <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+       
+        <table name="bbb_bridalshow_template" type="primary" id-column-names="bridalshow_template_id">
+        	<property name="id" column-name="bridalshow_template_id" display-name-resource="bridalShowTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        	</property>
+            <property name="name" column-name="show_name" data-type="string" display-name-resource="name" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="1" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+       
+             <property name="fromDate" column-name="from_date" data-type="date" display-name-resource="fromDate" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="2" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+            
+            <property name="toDate" column-name="to_date" data-type="date" display-name-resource="toDate" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="2" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+            
+            <property name="time" column-name="show_time" data-type="string" display-name-resource="time" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="3" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+
+            <property name="address" column-name="show_address" data-type="string" display-name-resource="address" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="4" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+            
+            <property name="phone" column-name="show_phone" data-type="string" display-name-resource="phone" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="5" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+            
+                    	
+        </table>
+  
+     <table name="BBB_BridalShow_State" type="multi" id-column-names="bridalshow_template_id" >
+            <property name="stateId" column-names="state_id" data-type="set" component-item-type="state" repository="/com/bbb/commerce/shipping/ShippingRepository" 
+            display-name-resource="stateId" category-resource="States">
+             <attribute name="propertySortPriority" value="1" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+     </table>
+        
+     <table name="BBB_BridalShow_Site" type="multi" id-column-names="bridalshow_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="Sites">
+             <attribute name="propertySortPriority" value="0" />
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+            </property>
+     </table>
+  </item-descriptor>
+  
+</gsa-template>

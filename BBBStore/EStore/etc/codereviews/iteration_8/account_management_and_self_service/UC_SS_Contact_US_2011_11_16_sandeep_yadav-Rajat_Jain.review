@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_SS_Contact_US_2011_11_16_sandeep_yadav">
+  <ReviewIssue id="GVB6X79R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 23:10:32:655 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 14:00:17:368 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="74">src/com/bbb/selfservice/droplet/ContactUSCategoryDroplet.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>For Subject Drop Down Have Different Display Value And ID</Summary>
+    <Description>Looks likes "subject" is used as both - display on front end and id value at backend for the Subject Category Dropdown.
+These should be separated - there should be a Display Text and a different ID for Option Tag Value.
+
+This is important so that we can keep front end and backed independent.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB70X7H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 23:13:26:237 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:35:339 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="102">src/com/bbb/selfservice/droplet/ContactUSCategoryDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Ending Logging Trace Is Missing</Summary>
+    <Description>There should be an ending logging trace also like the one at the begining of the method.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB8X87Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:06:33:118 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:27:090 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="480">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Site ID should be picked up from Site Context Consistently</Summary>
+    <Description>I see that the siteID is pulled from the from the request parameter -
+final String siteId = pRequest.getParameter("siteId");
+
+However everywhere we are picking it from the SiteContext - this code should be updated for the same.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB9139Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:09:33:326 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:20:866 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="399">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Use of Contants rather than Hard Coded Values for Consistency</Summary>
+    <Description>I am seeing that for string length check contants are passed in all the validations on this method - BBBUtility.isStringLengthValid(mEmailMessage,1,1500).
+Note for consistently we should use the same approach everywhere where the team is picking these up from the Contants class. The same should be followed here also.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB98S96">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:15:32:298 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 14:54:52:997 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="487">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use of Different Option Tag Value and Display Value</Summary>
+    <Description>Same comment I provided in the ContactUSCategoryDroplet - we should have separate front end display value and what we post in Tibco and email for this dropdown field.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB9DFTB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:19:09:455 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:15:114 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="514">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Break Tibco Message And Email In Two Transactions</Summary>
+    <Description>The way the code is written, if for some reason Tibco message fails, even the customer service email will also not go out. I would recommend doing this sequential -
+1. First send the customer service email - catch and handle exception separately.
+2. Then send the Tibco message - catch and handle exception separately.
+
+This will ensure that the failure points are independent. And the two dont interfere with each other.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB9J3PH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:23:33:701 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:09:233 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="116">src/com/bbb/selfservice/manager/ContactUsManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Missing Closing Debug Log Traces</Summary>
+    <Description>The ending debug log traces are missing. This should be added.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB9NE2O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:26:53:760 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:58:02:586 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="556">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The Email Address for customer service needs to be configurable</Summary>
+    <Description>I am not seeing it being set fetched from the environment properties/repository or property file. This needs to be site specific.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVB9SKS6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:30:55:734 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:47:081 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="562">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Generic Comment | Debug Logging</Summary>
+    <Description>I am seeing that most of the methods have the ending logging trace for debug missing. I have already given this comment in a few methods specifically - but giving this as a generic comment to be fixed overall in the Contact US and Customer Survey Pages. I am not repeating this again to keep the comments focussed on other aspects.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBA3RJ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:39:37:694 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:40:208 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="5">config/com/bbb/selfservice/ContactUsFormHandler.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update Values For TimeZone | Site Specific</Summary>
+    <Description>The timezone values should be matched with the current site - these are -
+EST, CST, MST, PST, Other - for baby and bedbathandbeyond us site.
+AST, CST, EST, MST, PST, NST, Other - for bedbathandbeyond us site.
+
+Note these are site specific. I know BRD is not listing all these details - but we have to go with the current site on this.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBA881L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 00:43:05:721 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:34:135 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="6">config/com/bbb/selfservice/ContactUsFormHandler.properties</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update Values For Time To Call</Summary>
+    <Description>The time to call should be updated to contain every hour -
+from 1 through 12.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBBBL7W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:13:42:380 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:26:024 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="493">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Check Extension is Numeric</Summary>
+    <Description>This is missing in the BRD also (probably was added later in the wireframes). Can you add a simple check in the validateRequestInfo to make sure Extension is all numbers and upto 7 digit long when provided? Keep this as a pattern only.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBCDS7F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:43:24:363 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 13:24:11:402 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="71">src/com/bbb/selfservice/droplet/SurveyLocationDroplet.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Survey Locations Droplet | Site ID should be picked up from Site Context Consistently</Summary>
+    <Description>Same comment as was provided on the Contact Us too - I see that the siteID is pulled from the from the request parameter -
+final String siteId = pRequest.getParameter("siteId");
+
+However everywhere we are picking it from the SiteContext - this code should be updated for the same.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBCNPNS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 01:51:07:624 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 13:05:54:766 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="344">src/com/bbb/selfservice/formhandler/SurveyFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Survey | Use of constants rather than hard coded values</Summary>
+    <Description>Same comment as on the Contact Us Validation method - use constants rather than hard coded values for consistency.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBDI0Q3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 02:14:41:643 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:17:479 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="448">src/com/bbb/selfservice/formhandler/SurveyFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Length Validation For Feature Message</Summary>
+    <Description>Per SS BRD Section 13 Annotation G - this should be a maximum of 1000 characters. That check is missing.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBDJ7DY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 02:15:36:934 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:11:575 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="449">src/com/bbb/selfservice/formhandler/SurveyFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Length Validation For Web Site Message</Summary>
+    <Description>Per SS BRD Section 13 Annotation H - this should be a maximum of 1000 characters. That check is missing.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBDJYBB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 02:16:11:831 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:57:06:031 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="450">src/com/bbb/selfservice/formhandler/SurveyFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Length Validation For Other Message</Summary>
+    <Description>Per SS BRD Section 13 Annotation I - this should be a maximum of 1500 characters. That check is missing.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBEVXFT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 02:53:30:185 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:56:57:271 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="61">src/com/bbb/selfservice/tools/SurveyTools.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This Method Does Not Seem To Be Used</Summary>
+    <Description>I can see the implementation for the locations in the SurveyLocationDroplet which is using the SurveyManager. This method looks to be not used anywhere and it does not have the site id too. Therefore it should be deleted if that is the case and this is not needed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBIKK9H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 04:36:38:357 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 10:56:47:910 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="473">src/com/bbb/selfservice/formhandler/ContactUsFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>ContactUS &amp; Survey | No Performance Logging</Summary>
+    <Description>I am not seeing any performance logging in either the Contact US classes or the Survey Classes. There should be performance related logging done per the Framework that has been defined for the project.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

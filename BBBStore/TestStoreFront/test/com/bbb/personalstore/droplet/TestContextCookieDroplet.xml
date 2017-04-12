@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.personalstore.droplet.TestContextCookieDroplet">
+		<group id="testLastViewedCookie">
+			<test id="test1">
+				<objs>
+					<obj id="TestContextCookieDroplet"
+						type="com.bbb.personalstore.droplet.TestContextCookieDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.droplet.TestContextCookieDroplet">
+						<item type="string">/com/bbb/personalstore/droplet/ContextCookieDroplet</item>
+					</obj>
+					<obj id="productId" type="string">201918</obj>
+
+				</objs>
+			</test>
+		</group>
+		<group id="testLastViewedCookie_Error">
+			<test id="test1">
+				<objs>
+					<obj id="TestContextCookieDroplet"
+						type="com.bbb.personalstore.droplet.TestContextCookieDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.droplet.TestContextCookieDroplet">
+						<item type="string">/com/bbb/personalstore/droplet/ContextCookieDroplet</item>
+					</obj>
+
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

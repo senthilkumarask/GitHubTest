@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.account.vo.reclaim.ReclaimAccountReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.ReclaimAccountDocument$ReclaimAccount</class-b>
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>memberToken</a>
+			<b>MbrNum</b>
+		</field>
+		<field>
+			<a>profileId</a>
+			<b>profileID</b>
+		</field>
+	</mapping>
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.ReclaimAccountReturn</class-a>
+		<class-b>com.bbb.account.vo.reclaim.ReclaimAccountResponseVO</class-b>
+		<field>
+			<a>status</a>
+			<b>errorStatus</b>
+		</field>
+	</mapping>
+</mappings>

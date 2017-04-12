@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<item is-document="true" item-descriptor-name="sku">
+<title property-name="displayName"/>
+	<properties>
+		  <property name="$repositoryId" suppress="true" type="string"/>
+		  <property name="$repository.repositoryName" suppress="true" type="string"/>
+		  <property name="$itemDescriptor.itemDescriptorName" output-name="record.type" type="string"/>
+		  <property filter="unique" name="id" output-name="P_MIE_SKU_ID" text-searchable="true" type="string"/>
+		  <property name="$siteId" type="string" suppress="true"/>
+		  <property filter="concat,unique" name="description" output-name="P_MIE_SKU_Description" text-searchable="true"/>
+		  <property filter="concat,unique" name="displayName" output-name="P_MIE_SKU_Title" text-searchable="true"/>
+		  <property filter="unique" name="caseWeight" output-name="P_Case_Weight" type="string" text-searchable="false"/>
+	  	  <property filter="unique" name="disableDefault" output-name="P_MIE_Bab_Disabled_Flag" type="boolean" text-searchable="false" />
+    	  <property filter="unique" name="webOfferedDefault" output-name="P_MIE_Bab_Web_Offered_Flag" type="boolean" text-searchable="false" />
+		  <property filter="unique" name="color" output-name="P_MIE_Color" type="string" is-dimension="false"/>
+		  <property filter="unique" name="colorGroup" output-name="P_MIE_Color_Group" is-dimension="false" type="string"/>
+	  	  <property filter="unique" name="storeSKU" output-name="P_MIE_Is_Store_Sku" type="boolean" text-searchable="false" />
+		  <property filter="unique" name="jdaClass" output-name="P_MIE_Jda_Class" type="string" is-dimension="false"/>
+		  <property filter="unique" name="jdaDept" output-name="P_MIE_Jda_Dept_Id" type="string" is-dimension="false"/>
+		  <property filter="unique" name="jdaSubDept" output-name="P_MIE_Jda_Sub_Dept_Id" type="string" is-dimension="false"/>
+		  <property filter="unique" name="upc" output-name="P_MIE_Upc" type="string" text-searchable="false"/>
+		  <property filter="unique" name="size" output-name="P_MIE_Sku_Size" type="string" text-searchable="false"/>		  
+	  	</properties>
+</item>

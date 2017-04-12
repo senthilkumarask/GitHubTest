@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-927">
+  <ReviewIssue id="IPPPCZQ4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:06:03:100 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:07:47:569 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="110">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedL2L3BrandProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we using this method any where? We are no more calculating number of batches based on config key, is n't it? Did we copy paste this from some where else and forgot to remove?</Summary>
+    <Description>	/**
+	 * Calculates number of reports in report batch based on batch size and total no of search keywords
+	 * @return numOfReports
+	 */
+	public int calculateNumberOfReports() {
+		
+		logDebug( CLS_NAME + " [ calculateNumberOfReports ] method starts");
+		int numOfReports = 1;
+		int noOfSearchedTerms = getBbbCatalogTools().getValueForConfigKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.L2_BOOSTING_TOTAL_SEARCHED_TERMS, BBBCoreConstants.TEN_THOUSANDS);
+		int batchSize = getBbbCatalogTools().getValueForConfigKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.L2_BOOSTING_BATCH_SIZE, BBBCoreConstants.FIFTY_THOUSANDS);
+						
+		logDebug("Total no of search terms are "+noOfSearchedTerms+" and batch size is "+batchSize);
+		
+		if(noOfSearchedTerms%batchSize == 0) {
+			
+			numOfReports = noOfSearchedTerms/batchSize;
+			
+		} else {
+			
+			numOfReports = noOfSearchedTerms/batchSize + 1;
+			
+		}
+		
+		logDebug( CLS_NAME + " [ calculateNumberOfReports ] method ends :: No of report is "+numOfReports);
+		return numOfReports;
+		
+	}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPQPBB1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:43:37:597 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:44:06:682 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="281">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedL2L3BrandProductTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Explore if using regEx can reduce the lines of code and improve the performance.</Summary>
+    <Description>/**
+	 * This methods updates the report type whether its l2,l3 or brand type
+	 */
+	private String updateReportType(String categoryName) {
+		String typeOfReport = null;
+		List&lt;String&gt; categoryList = new ArrayList&lt;String&gt;();
+		categoryList = Arrays.asList(categoryName.split("&gt;"));
+		if (categoryList != null) {
+			if (categoryList.get(0).equals(BBBCoreConstants.BRAND) &amp;&amp; categoryList.size() == 2) {
+				typeOfReport = BBBCoreConstants.OBB;
+			} else if ((categoryList.size() == 3 &amp;&amp; categoryList.get(2).equals(BBBCoreConstants.ALL))
+					|| (!categoryList.get(0).equals(BBBCoreConstants.BRAND) &amp;&amp; categoryList.size() == 2 )) {
+				typeOfReport = BBBCoreConstants.OBL2;
+			} else if (categoryList.size() == 3) {
+				typeOfReport = BBBCoreConstants.OBL3;
+			}
+		}
+		return typeOfReport;
+	}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPQRTGV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:45:34:447 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:45:58:683 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="192">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedL2L3BrandProductTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>What is this scenarion where we get only one item after splitting it by :?</Summary>
+    <Description>else{
+					categoryId =  splitCategoryName[0];
+				}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPQWMWB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:49:19:211 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:50:47:681 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="209">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedL2L3BrandProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Any reason for setting reportID twice?</Summary>
+    <Description>			preparedStatement.setString(6, reportID);
+				preparedStatement.setString(7, reportID);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPR39E7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:54:28:303 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:57:08:789 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2294">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Where are we using this param? is it for other reports?</Summary>
+    <Description>removeExistingRecords</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPR3VTW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:54:57:380 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 13:55:14:994 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2293">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add logDebug and performance logging</Summary>
+    <Description>protected int commitConnectionOrRollback(OmnitureGetResponseVO omnitureGetResponseVO, Connection connection,
+				boolean success, int record, String reportID, boolean removeExistingRecords) {</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPRU0HB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 14:15:16:463 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 14:58:34:035 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1266">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why to have protected access specifier if no other sub class accessing this method?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPTDTZY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 14:58:40:798 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 14:58:46:561 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1313">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why to have protected access specifier if no other sub class accessing this method?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

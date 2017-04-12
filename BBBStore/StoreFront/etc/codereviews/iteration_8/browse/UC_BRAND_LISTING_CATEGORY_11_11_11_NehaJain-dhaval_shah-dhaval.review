@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_BRAND_LISTING_CATEGORY_11_11_11_NehaJain-dhaval_shah">
+  <ReviewIssue id="GV4H5P5C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 06:22:42:000 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 22:46:43:826 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhaval</ReviewerId>
+    <AssignedTo>neha jain</AssignedTo>
+    <File line="3">j2ee-apps/BBBStore/store.war/browse/category_landing.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Droplet include strategy</Summary>
+    <Description>Droplet include should be done in the main page, and not again and again in the include components, unless the droplet is designed specifically for the include JSP. Once the data structure is output by the droplet, the includes should be passed on the parameters. In this case either split the droplet per component or return a common object in the main page nad pass on the child objects as parameters.
+
+NEHA&gt;&gt;&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

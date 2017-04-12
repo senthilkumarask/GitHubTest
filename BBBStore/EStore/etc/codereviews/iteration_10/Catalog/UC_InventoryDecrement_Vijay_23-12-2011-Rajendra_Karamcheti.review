@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_InventoryDecrement_Vijay_23-12-2011">
+  <ReviewIssue id="GWT6RWD8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:05:58:748 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:08:18:111 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>VIjay_bhaskar</AssignedTo>
+    <File line="170">src/com/bbb/commerce/inventory/InventoryMessageServiceListener.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Move unmarshall code to Unmarshaller class</Summary>
+    <Description>Move the unmarshaller code to a class called InventoryMsgUnmarshaller. That way there is clear separation between listener and unmarshaller. So for example tomorrow let's say there are multiple types of messages placed on the same queue, looking at the type of the message we might have to call different unmarshallers. So in that case it will be useful</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWT6XQTH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:10:31:493 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:11:08:641 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>VIjay_bhaskar</AssignedTo>
+    <File line="587">src/com/bbb/commerce/inventory/OnlineInventoryManagerImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Check for isLoggingError</Summary>
+    <Description>Always check for if(isLoggingError()) and if(isLoggingDebug()) before using logDebug and logError. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWT6ZSBB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:12:06:743 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 18:12:39:940 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>VIjay_bhaskar</AssignedTo>
+    <File line="579">src/com/bbb/commerce/inventory/OnlineInventoryManagerImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Have Loggers</Summary>
+    <Description>Have some loggers here to indicate how much is the stock level after decrementing. Log it in one line rather than multiple lines</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

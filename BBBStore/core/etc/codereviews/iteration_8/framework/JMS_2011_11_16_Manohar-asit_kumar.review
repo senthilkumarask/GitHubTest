@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="JMS_2011_11_16_Manohar">
+  <ReviewIssue id="GV2WXMS3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-16 :: 17:38:47:187 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:20:36:765 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="2">src/com/bbb/framework/messaging/DestinationFactory.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add getDestination(String name) method to this class and use it in MessageHandler</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV2X6WU5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-16 :: 17:46:00:125 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:20:30:468 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="81">src/com/bbb/framework/messaging/handlers/MessageServiceHandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add a method in DestinationFactory to create/get destination and use that.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV2X7TAJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-16 :: 17:46:42:187 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-26 :: 23:21:35:906 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="78">src/com/bbb/framework/messaging/handlers/MessageServiceHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>NOT NULL check for objects before using it</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Verified, Null check added at all places</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV2XKPHW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-16 :: 17:56:43:796 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:20:19:859 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="383">src/com/bbb/framework/messaging/MessageServiceProvider.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Cache the destination in localHashMap and return from there.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

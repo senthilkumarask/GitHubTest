@@ -1,0 +1,931 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="creditCard" type="CreditCard"/>
+
+  <xs:element name="errorResponse" type="multilayerErrorResponse"/>
+
+  <xs:element name="ewallet" type="ewallet"/>
+
+  <xs:element name="getCheckoutSessionRequest" type="getCheckoutSessionRequest"/>
+
+  <xs:element name="getCheckoutSessionResponse" type="getCheckoutSessionResponse"/>
+
+  <xs:element name="getMerchantProfileRequest" type="getMerchantProfileRequest"/>
+
+  <xs:element name="getMerchantProfileResponse" type="getMerchantProfileResponse"/>
+
+  <xs:element name="getQuoteRequest" type="getQuoteRequest"/>
+
+  <xs:element name="getQuoteResponse" type="getQuoteResponse"/>
+
+  <xs:element name="message" type="Message"/>
+
+  <xs:element name="messagePayload" type="messagePayload"/>
+
+  <xs:element name="multiLayerErrorMessage" type="multiLayerErrorMessage"/>
+
+  <xs:element name="offlineSettlement" type="OfflineSettlement"/>
+
+  <xs:element name="order" type="order"/>
+
+  <xs:element name="payWithAltPayMethodRequest" type="payWithAltPayMethodRequest"/>
+
+  <xs:element name="payWithAltPayMethodResponse" type="payWithAltPayMethodResponse"/>
+
+  <xs:element name="paymentToken" type="paymentTokenV2"/>
+
+  <xs:element name="placeOrderRequest" type="placeOrderRequest"/>
+
+  <xs:element name="placeOrderResponse" type="placeOrderResponse"/>
+
+  <xs:element name="setCheckoutSessionRequest" type="setCheckoutSessionRequest"/>
+
+  <xs:element name="setCheckoutSessionResponse" type="setCheckoutSessionResponse"/>
+
+  <xs:element name="getAltPayBuyerDetailsRequest" type="getAltPayBuyerDetailsRequest"/>
+
+  <xs:element name="getAltPayBuyerDetailsResponse" type="getAltPayBuyerDetailsResponse"/>
+
+  <xs:complexType name="Message">
+    <xs:sequence>
+      <xs:element name="header" type="messageHeader" minOccurs="0"/>
+      <xs:element name="payload" type="payload"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="messageHeader">
+    <xs:sequence>
+      <xs:element name="userName" type="xs:string" minOccurs="0"/>
+      <xs:element name="merchantId" type="xs:string" minOccurs="0"/>
+      <xs:element name="password" type="xs:string" minOccurs="0"/>
+      <xs:element name="storeFrontId" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="payload">
+    <xs:sequence>
+      <xs:element name="warnings" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="warning" type="multiLayerErrorMessage" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:choice>
+        <xs:element ref="getCheckoutSessionRequest"/>
+        <xs:element ref="getCheckoutSessionResponse"/>
+        <xs:element ref="setCheckoutSessionRequest"/>
+        <xs:element ref="errorResponse"/>
+        <xs:element ref="setCheckoutSessionResponse"/>
+        <xs:element ref="getQuoteRequest"/>
+        <xs:element ref="payWithAltPayMethodRequest"/>
+        <xs:element ref="getQuoteResponse"/>
+        <xs:element ref="placeOrderRequest"/>
+        <xs:element ref="placeOrderResponse"/>
+        <xs:element ref="getMerchantProfileRequest"/>
+        <xs:element ref="getMerchantProfileResponse"/>
+        <xs:element ref="payWithAltPayMethodResponse"/>
+        <xs:element ref="getAltPayBuyerDetailsRequest"/>
+        <xs:element ref="getAltPayBuyerDetailsResponse"/>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multiLayerErrorMessage">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="field" type="xs:string" minOccurs="0"/>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+      <xs:element name="details" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="getCheckoutSessionRequest">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="checkoutPayload">
+    <xs:complexContent>
+      <xs:extension base="messagePayload">
+        <xs:all/>
+        <xs:attribute name="id" type="xs:string"/>
+        <xs:attribute name="requestId" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="messagePayload" abstract="true">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getCheckoutSessionResponse">
+    <xs:complexContent>
+      <xs:extension base="setCheckoutSessionRequest">
+        <xs:sequence/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="setCheckoutSessionRequest">
+    <xs:complexContent>
+      <xs:extension base="suppliedSessionRequest">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="suppliedSessionRequest" abstract="true">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element name="domesticSession" type="domesticSession" minOccurs="0"/>
+          <xs:element name="buyerSession" type="buyerSession"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+    <xs:complexType name="getAltPayBuyerDetailsRequest">
+        <xs:complexContent>
+            <xs:extension base="checkoutPayload">
+                <xs:sequence>
+                   <xs:element ref="paymentToken"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="getAltPayBuyerDetailsResponse">
+        <xs:complexContent>
+            <xs:extension base="checkoutPayload">
+                <xs:sequence>
+                    <xs:element name="buyerSession" type="buyerSession"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+  <xs:complexType name="domesticSession">
+    <xs:sequence>
+      <xs:element name="domesticBasket" type="basket"/>
+      <xs:element name="domesticShippingMethod" type="domesticShippingOptionV2" minOccurs="0"/>
+      <xs:element name="tplShippingMethods" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="tplShippingMethod" type="tplShippingMethod" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="sessionDetails" type="buyerSessionDetails"/>
+      <xs:element name="orderProperties" type="orderProperties" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="merchantId" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="basket">
+    <xs:sequence>
+      <xs:element name="basketItems">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="basketItem" type="basketItem" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="basketTotal" type="basketTotal" minOccurs="0"/>
+      <xs:element name="purchaseOrderTotal" type="basketTotal" minOccurs="0"/>
+      <xs:element name="customData" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="currency" type="xs:string"/>
+    <xs:attribute name="purchaseOrderCurrency" type="xs:string"/>
+    <xs:attribute name="includes" type="priceBookType"/>
+  </xs:complexType>
+
+  <xs:complexType name="basketItem">
+    <xs:sequence>
+      <xs:element name="quantity" type="xs:int"/>
+      <xs:element name="pricing" type="itemPricing" minOccurs="0"/>
+      <xs:element name="purchaseOrderPricing" type="itemPricing" minOccurs="0"/>
+      <xs:element name="display" type="productAttributes" minOccurs="0"/>
+      <xs:element name="customData" type="xs:string" minOccurs="0"/>
+      <xs:element name="countryOfFulfillment" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="sku" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="itemPricing">
+    <xs:sequence>
+      <xs:element name="listPrice" type="xs:decimal"/>
+      <xs:element name="itemDiscount" type="xs:decimal"/>
+      <xs:element name="salePrice" type="xs:decimal"/>
+      <xs:element name="duties" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="taxes" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="productExtraShipping" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="productExtraHandling" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="productAttributes">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="productUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="imageUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="color" type="xs:string" minOccurs="0"/>
+      <xs:element name="size" type="xs:string" minOccurs="0"/>
+      <xs:element name="attributes" type="xs:string" minOccurs="0"/>
+      <xs:element name="inventory" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="basketTotal">
+    <xs:sequence>
+      <xs:element name="totalSalePrice" type="xs:decimal"/>
+      <xs:element name="orderDiscount" type="xs:decimal"/>
+      <xs:element name="totalProductExtraShipping" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalProductExtraHandling" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalDuties" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalTaxes" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalPrice" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="domesticShippingOptionV2">
+    <xs:sequence>
+      <xs:element name="domesticShippingPrice" type="xs:decimal"/>
+      <xs:element name="domesticHandlingPrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="extraInsurancePrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="deliveryPromiseMinimum" type="xs:int"/>
+      <xs:element name="deliveryPromiseMaximum" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tplShippingMethod">
+    <xs:sequence>
+      <xs:element name="displayName" type="xs:string"/>
+      <xs:element name="deliveryType" type="tplShippingType"/>
+      <xs:element name="shippingPrice" type="xs:decimal"/>
+      <xs:element name="handlingPrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="extraInsurancePrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="deliveryPromiseMinimum" type="xs:int"/>
+      <xs:element name="deliveryPromiseMaximum" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="buyerSessionDetails">
+    <xs:sequence>
+      <xs:element name="buyerSessionId" type="xs:string" minOccurs="0"/>
+      <xs:element name="buyerIpAddress" type="xs:string" minOccurs="0"/>
+      <xs:element name="affiliateNetwork" type="affiliateNetwork" minOccurs="0"/>
+      <xs:element name="checkoutUrls" type="checkoutUrls" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="affiliateNetwork">
+    <xs:sequence>
+      <xs:element name="merchantId" type="xs:string" minOccurs="0"/>
+      <xs:element name="siteId" type="xs:string" minOccurs="0"/>
+      <xs:element name="timestamp" type="xs:dateTime" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="checkoutUrls">
+    <xs:sequence>
+      <xs:element name="successUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="pendingUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="failureUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="callbackUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="basketUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="contextChooserPageUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="usCartStartPageUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="paymentUrls" type="paymentUrls"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="paymentUrls">
+    <xs:sequence>
+      <xs:element name="payPalUrls" type="payPalPaymentUrl" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="payPalPaymentUrl">
+    <xs:complexContent>
+      <xs:extension base="paymentUrl">
+        <xs:sequence>
+          <xs:element name="returnUrl" type="xs:string"/>
+          <xs:element name="cancelUrl" type="xs:string"/>
+          <xs:element name="headerLogoUrl" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="paymentUrl">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="orderProperties">
+    <xs:sequence>
+      <xs:element name="currencyQuoteId" type="xs:int"/>
+      <xs:element name="lcpRuleId" type="xs:int" minOccurs="0"/>
+      <xs:element name="merchantOrderId" type="xs:string" minOccurs="0"/>
+      <xs:element name="merchantOrderRef" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="buyerSession">
+    <xs:sequence>
+      <xs:element name="shipToAddress" type="Address"/>
+      <xs:element name="billToAddress" type="Address" minOccurs="0"/>
+      <xs:element name="buyerPreferences" type="buyerPreferences"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+      <xs:element name="middleInitials" type="xs:string" minOccurs="0"/>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+      <xs:element name="addressLine1" type="xs:string" minOccurs="0"/>
+      <xs:element name="addressLine2" type="xs:string" minOccurs="0"/>
+      <xs:element name="addressLine3" type="xs:string" minOccurs="0"/>
+      <xs:element name="city" type="xs:string" minOccurs="0"/>
+      <xs:element name="region" type="xs:string" minOccurs="0"/>
+      <xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+      <xs:element name="countryCode" type="xs:string"/>
+      <xs:element name="email" type="xs:string" minOccurs="0"/>
+      <xs:element name="primaryPhone" type="xs:string" minOccurs="0"/>
+      <xs:element name="secondaryPhone" type="xs:string" minOccurs="0"/>
+      <xs:element name="cpf" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="isReadOnly" type="xs:boolean"/>
+    <xs:attribute name="isPoBox" type="xs:boolean"/>
+    <xs:attribute name="merchantProfileId" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="buyerPreferences">
+    <xs:sequence>
+      <xs:element name="language" type="xs:string" default="EN"/>
+      <xs:element name="buyerCurrency" type="xs:string"/>
+      <xs:element name="shippingMethodId" type="xs:string" minOccurs="0"/>
+      <xs:element name="deliveredDutyMethod" type="deliveredDutyMethod" minOccurs="0"/>
+      <xs:element name="couponCode" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multilayerErrorResponse">
+    <xs:complexContent>
+      <xs:extension base="messagePayload">
+        <xs:sequence>
+          <xs:element name="errors" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="error" type="multiLayerErrorMessage" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="warnings" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="warning" type="multiLayerErrorMessage" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string"/>
+        <xs:attribute name="requestId" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="setCheckoutSessionResponse">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element name="envoyInitialParams" type="envoyInitialParamsV2" minOccurs="0"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="envoyInitialParamsV2">
+    <xs:sequence>
+      <xs:element name="envoyUrl" type="xs:string" minOccurs="0"/>
+      <xs:element name="fiftyOneCheckoutSessionId" type="xs:string" minOccurs="0"/>
+      <xs:element name="fullEnvoyUrl" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getQuoteRequest">
+    <xs:complexContent>
+      <xs:extension base="suppliedSessionRequest">
+        <xs:all/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="getQuoteResponse">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element name="domesticBasket" type="basketQuote"/>
+          <xs:element name="availableShippingMethods">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="shippingMethod" type="shippingMethod" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="availablePaymentMethods">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="paymentMethod" type="paymentMethod" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="pricingCustomizationMessages" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="pricingCustomization" type="pricingCustomization" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="basketQuote">
+    <xs:sequence>
+      <xs:element name="restrictions" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="restriction" type="multiLayerErrorMessage" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="basketTotal" type="basketQuoteTotal"/>
+      <xs:element name="basketItems">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="basketItem" type="basketItemQuote" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="currency" type="xs:string" use="required"/>
+    <xs:attribute name="includes" type="priceBookType"/>
+  </xs:complexType>
+
+  <xs:complexType name="basketQuoteTotal">
+    <xs:sequence>
+      <xs:element name="totalListPrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalItemDiscount" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="totalSalePrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="orderDiscount" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="duties" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="taxes" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="shipping" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="handling" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="fees" type="fees"/>
+      <xs:element name="totalPrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="display" type="basketTotalDisplay" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bigDecimalWithAttrDisplay">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="display" type="displayStrings"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="fees">
+    <xs:sequence>
+      <xs:element name="fee" type="fee" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fee">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="type" type="feeType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="basketTotalDisplay">
+    <xs:sequence>
+      <xs:element name="preDiscountPrices" type="preDiscountPrices" minOccurs="0"/>
+      <xs:element name="prepaidDutiesAndTaxes" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="preDiscountPrices">
+    <xs:sequence>
+      <xs:element name="duties" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="taxes" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="shipping" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="handling" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="basketItemQuote">
+    <xs:sequence>
+      <xs:element name="quantity" type="xs:int"/>
+      <xs:element name="isTplShipped" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="restrictions" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="restriction" type="multiLayerErrorMessage" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="quote" type="itemQuote"/>
+    </xs:sequence>
+    <xs:attribute name="sku" type="xs:string" use="required"/>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="itemQuote">
+    <xs:sequence>
+      <xs:element name="listPrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="itemDiscount" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="salePrice" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="orderDiscount" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="duties" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="taxes" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="shipping" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="handling" type="bigDecimalWithAttrDisplay" minOccurs="0"/>
+      <xs:element name="fees" type="fees"/>
+      <xs:element name="totalPrice" type="xs:decimal" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="shippingMethod">
+    <xs:sequence>
+      <xs:element name="displayName" type="xs:string"/>
+      <xs:element name="deliveryPromiseMinimum" type="xs:int"/>
+      <xs:element name="deliveryPromiseMaximum" type="xs:int"/>
+      <xs:element name="deliveredDutyMethodSupport" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="deliveredDutyMethod" type="deliveredDutyMethodData" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="message">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="translation" type="translatedMessage" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="isCurrentQuote" type="xs:boolean" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="deliveredDutyMethodData">
+    <xs:simpleContent>
+      <xs:extension base="deliveredDutyMethod">
+        <xs:attribute name="isCurrentQuote" type="xs:boolean"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="translatedMessage">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="language" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="paymentMethod">
+    <xs:sequence>
+      <xs:element name="displayName" type="xs:string"/>
+      <xs:element name="logoUrl" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="xs:string"/>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="pricingCustomization">
+    <xs:sequence>
+      <xs:element name="messages" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="message" minOccurs="0" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="translation" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                      <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                          <xs:attribute name="language" type="xs:string"/>
+                        </xs:extension>
+                      </xs:simpleContent>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:attribute name="type" type="customizationMessageType"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="placeOrderRequest">
+    <xs:complexContent>
+      <xs:extension base="suppliedSessionRequest">
+        <xs:sequence>
+          <xs:element name="paymentMethod" type="meansOfPayment"/>
+          <xs:element name="agreements" type="agreements" minOccurs="0"/>
+          <xs:element name="landedQuoteTotal" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="meansOfPayment">
+    <xs:choice>
+      <xs:element ref="creditCard"/>
+      <xs:element ref="paymentToken"/>
+      <xs:element ref="offlineSettlement"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="CreditCard">
+    <xs:sequence>
+      <xs:element name="cardNumber" type="xs:string"/>
+      <xs:element name="expireMonth" type="xs:int"/>
+      <xs:element name="expireYear" type="xs:int"/>
+      <xs:element name="cvn" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="paymentTokenV2">
+    <xs:sequence>
+      <xs:element name="token" type="token"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="token">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" type="paymentTokenType" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="OfflineSettlement">
+    <xs:sequence>
+      <xs:element name="offlinePaymentMethod" type="xs:string"/>
+      <xs:element name="transactionId" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="agreements">
+    <xs:sequence>
+      <xs:element name="optInFiftyOne" type="xs:boolean" default="false" minOccurs="0"/>
+      <xs:element name="optInMerchant" type="xs:boolean" default="false" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="placeOrderResponse">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element ref="order"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="order">
+    <xs:sequence>
+      <xs:element name="fraudDisposition" type="orderState"/>
+    </xs:sequence>
+    <xs:attribute name="fiftyOneOrderId" type="xs:string" use="required"/>
+    <xs:attribute name="merchantOrderId" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="getMerchantProfileRequest">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element name="dataTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dataType" type="merchantProfileDataType" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="merchantProfileDataType">
+    <xs:simpleContent>
+      <xs:extension base="profileDataType">
+        <xs:attribute name="merchantId" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="getMerchantProfileResponse">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:sequence>
+          <xs:element name="profiles" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="profile" type="profile" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="checkoutParams" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="checkoutParam" type="checkoutParam" minOccurs="0" maxOccurs="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="profile">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="url" type="xs:string"/>
+      <xs:element name="logoUrl" type="xs:string"/>
+      <xs:element name="customerSupport" type="customerSupport"/>
+    </xs:sequence>
+    <xs:attribute name="merchantId" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="customerSupport">
+    <xs:sequence>
+      <xs:element name="phone" type="xs:string"/>
+      <xs:element name="email" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="checkoutParam">
+    <xs:sequence>
+      <xs:element name="isAdditionalLanguagesEnabled" type="xs:boolean"/>
+      <xs:element name="hasActiveLcpRule" type="xs:boolean"/>
+      <xs:element name="hasActiveCouponCode" type="xs:boolean"/>
+      <xs:element name="isCouponCodeEnabled" type="xs:boolean"/>
+      <xs:element name="displaySkuImage" type="xs:boolean"/>
+      <xs:element name="displaySkuAvailibility" type="xs:boolean"/>
+      <xs:element name="shipToUsInstructions" type="xs:string"/>
+      <xs:element name="shipToUsUrl" type="xs:string"/>
+      <xs:element name="displayHolidayDeliveryPromise" type="xs:boolean"/>
+      <xs:element name="displayAbandonCartSurvey" type="xs:boolean"/>
+      <xs:element name="displayOptIns" type="displayOptIns"/>
+      <xs:element name="includeFraudDispositionInUrl" type="xs:boolean"/>
+      <xs:element name="defaultDeliveredDutyMethod" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="merchantId" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="displayOptIns">
+    <xs:sequence>
+      <xs:element name="fiftyOne" type="xs:boolean"/>
+      <xs:element name="merchant" type="merchant"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="merchant">
+    <xs:sequence>
+      <xs:element name="uncheckedCountries" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="country" type="country" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="country">
+    <xs:sequence/>
+    <xs:attribute name="code" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="payWithAltPayMethodRequest">
+    <xs:complexContent>
+      <xs:extension base="getQuoteRequest">
+        <xs:sequence>
+          <xs:element name="paymentMethod" type="altPaymentMethod"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="altPaymentMethod">
+    <xs:sequence>
+      <xs:element ref="ewallet"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ewallet">
+    <xs:all/>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="payWithAltPayMethodResponse">
+    <xs:complexContent>
+      <xs:extension base="checkoutPayload">
+        <xs:all>
+          <xs:element name="altPayMethodUrl" type="xs:string"/>
+          <xs:element ref="paymentToken"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:simpleType name="priceBookType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DUTIES"/>
+      <xs:enumeration value="TAXES"/>
+      <xs:enumeration value="DUTIES_AND_TAXES"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tplShippingType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="STANDARD"/>
+      <xs:enumeration value="EXPRESS"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="deliveredDutyMethod">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PREPAID"/>
+      <xs:enumeration value="UNPAID"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="displayStrings">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="INCLUDED"/>
+      <xs:enumeration value="FREE"/>
+      <xs:enumeration value="UNPAID"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="feeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FWS_PERMIT"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="customizationMessageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CONFIRM"/>
+      <xs:enumeration value="UPSELL"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="paymentTokenType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FIFTYONE"/>
+      <xs:enumeration value="PAYPAL_CHECKOUT"/>
+      <xs:enumeration value="PAYPAL_PAYMENT"/>
+      <xs:enumeration value="CREDIT_CARD"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="orderState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GREEN"/>
+      <xs:enumeration value="YELLOW"/>
+      <xs:enumeration value="RED"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="profileDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PROFILE"/>
+      <xs:enumeration value="CHECKOUT_PARAMS"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

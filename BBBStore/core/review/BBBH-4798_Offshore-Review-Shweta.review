@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-4798_Offshore-Review">
+  <ReviewIssue id="INU1Y8M4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:20:09:820 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:20:48:649 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Shweta</ReviewerId>
+    <AssignedTo>Shweta</AssignedTo>
+    <File line="1">config/atg/commerce/order/processor/AddOrderToRepository.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INU2090G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:21:43:648 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:21:45:610 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Shweta</ReviewerId>
+    <AssignedTo>Shweta</AssignedTo>
+    <File line="49">src/atg/commerce/order/processor/BBBProcAddOrderToRepository.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INU20UUR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:22:11:955 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:22:16:556 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Shweta</ReviewerId>
+    <AssignedTo>Shweta</AssignedTo>
+    <File line="193">src/com/bbb/ecommerce/order/BBBOrder.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INU22DF7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:23:22:675 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:23:38:983 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Shweta</ReviewerId>
+    <AssignedTo>Shweta</AssignedTo>
+    <File line="1351">src/com/bbb/ecommerce/order/BBBOrderImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

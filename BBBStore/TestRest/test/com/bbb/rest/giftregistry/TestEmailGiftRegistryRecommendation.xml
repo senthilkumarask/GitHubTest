@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY:
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestEmailGiftRegistryRecommendation">
+			<group id="testEmailGiftRegistryRecommendation">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="formSubmitted" type="string">true</obj>
+					<obj id="loggingFlag" type="string">true</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="emailRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/emailGiftRegistryRecommendation</obj>
+					<obj id="registryURL" type="string">www.buybuybaby/store/giftregistry/view_registry_recommender.jsp?reg=1010</obj>
+					<obj id="eventType" type="string">BRD</obj>
+					<obj id="regFirstName" type="string">test</obj>
+					<obj id="regLastName" type="string">test</obj>
+					<obj id="registryName" type="string">wedding</obj>
+					<obj id="recipientEmail" type="String">test@sapient.com</obj>
+					<obj id="senderEmail" type="String">test1@example.com</obj>
+					<obj id="message" type="String">Dear, This is a dummy message</obj>
+					<obj id="registryId" type="String">183412779</obj>
+					<obj id="registryName" type="String">Wedding</obj>
+				</objs>
+			</test>
+		</group>
+
+	<group id="testEmailGiftRegistryRecommendationException">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="formSubmitted" type="string">true</obj>
+					<obj id="loggingFlag" type="string">true</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="emailRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/emailGiftRegistryRecommendation</obj>
+					<obj id="registryURL" type="string">www.buybuybaby/store/giftregistry/view_registry_recommender.jsp?reg=1010</obj>
+					<obj id="eventType" type="string">BRD</obj>
+					<obj id="regFirstName" type="string">test</obj>
+					<obj id="regLastName" type="string">test</obj>
+					<obj id="registryName" type="string">wedding</obj>
+					<obj id="recipientEmail" type="String">test</obj>
+					<obj id="senderEmail" type="String">test1@example.com</obj>
+					<obj id="message" type="String">Dear, This is a dummy message</obj>
+					<obj id="registryId" type="String">183412779</obj>
+					<obj id="registryName" type="String">Wedding</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

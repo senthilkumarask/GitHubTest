@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2014, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestProductStatusDroplet.xml
+
+  DESCRIPTION: ddtunit data file for ProductStatusDroplet.java test case
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.browse.droplet.TestProductStatusDroplet">
+       <group id="testProductStatusDropletActiveProduct">
+        <test id="testProductStatusDroplet_test">
+			<objs>
+				<obj id="productStatusDroplet" type="com.bbb.commerce.browse.droplet.ProductStatusDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestProductStatusDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/ProductStatusDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testProductStatusDropletInActiveProduct">
+        <test id="testProductStatusDropletInActiveProduct_test">
+			<objs>
+				<obj id="productStatusDroplet" type="com.bbb.commerce.browse.droplet.ProductStatusDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestProductStatusDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/ProductStatusDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+    </cluster>
+</ddtunit>

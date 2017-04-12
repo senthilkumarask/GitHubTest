@@ -1,0 +1,29 @@
+Put in new graphics from Jing to legend
+19. Redo Results message function
+12 Handle all erros on route page - Check to see what they do on real page
+Move Everything to an external css page
+finish Commenting all code for documentation purposes - document all naming conventions for icons, graphics etc. 
+Prepare exmaple of instertign code into page
+
+
+
+
+
+
+Show distances in km vs miles if concept id = 50 = result listings and on route steps and total distance - need label graphics for postal code and province for html page for driving directions
+2. Onlu Display Hours if > 60 minutes onm Total Driving Time
+9. Remove Scrollbars on Results and make whole page scroll
+18. Bed Bath Ca Bed Bath US only one on front - search both 10 & 50 if selected 
+4. Change Summary message to RED and Bold
+6. Add "Within X Miles we found ...normal rest of message"
+7. They are sending new button skin for "New Search Button to make stand out
+5. Add Map Type Control to the Main Map
+8. Regular close button on Search popup
+11. add in Store Concept Names to xml and do lookup for each one to get name - fill in to object
+17. Remove Store Hours line from Infowindow and Results and just add * to after days or befoe *Monday or Monday-Friday:*
+16. Display name on first line for mouseover infobubble - first line of results and infowindow
+15. When mouseover icons  - tooltips showing full name of attribute in results listing
+10. Change buy buy Baby to be all lower case for "buy buy"
+rename all graphcs to 50 for canada
+3. For Concept id = 50 show km instea dof miles and load in Prinvce array for Canada except Quebec  - alwat Change Label for ZipCode to Postal Code
+1. Check on issue with Zipcode validator to see why bad zipcode gets passed through to geocoder - might need tyo valdate address

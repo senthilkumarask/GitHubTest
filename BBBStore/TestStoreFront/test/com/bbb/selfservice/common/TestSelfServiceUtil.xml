@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSelfServiceUtil.xml
+
+  DESCRIPTION: ddtunit data file for TestSelfServiceUtil.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.common.TestSelfServiceUtil">
+      <group id="testIsChatWindowOpen">
+        <test id="testService_test1">
+			<objs>
+				<obj id="weekDayStartTime" type="string">00:01</obj>	
+				<obj id="weekDayEndTime" type="string">23:59</obj>
+				<obj id="weekEndStartTime" type="string">00:01</obj>
+				<obj id="weekEndEndTime" type="string">23:59</obj>
+
+				<obj id="inValidweekDayStartTime" type="string">00:01</obj>	
+				<obj id="inValidweekDayEndTime" type="string">00:002</obj>
+				<obj id="inValidweekEndStartTime" type="string">00:01</obj>
+				<obj id="inValidweekEndEndTime" type="string">00:02</obj>
+			</objs>      
+			
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

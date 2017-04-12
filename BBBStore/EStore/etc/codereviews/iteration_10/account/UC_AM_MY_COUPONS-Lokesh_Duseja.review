@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_AM_MY_COUPONS">
+  <ReviewIssue id="GX0HKX9R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:42:52:335 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:39:51:442 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="158">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>All the error conditions should be handled appropriately and shown on screeen</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0HMPFH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:44:15:485 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:39:43:858 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="184">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Appropriate error messages should be returned to the front end</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0HX0LB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:52:16:511 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:39:31:577 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="244">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add null check here for mediaMap</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I08H3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:54:46:695 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:39:13:809 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="248">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>null check required for property value also</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I0OZI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:55:08:094 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:39:01:376 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="265">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>null check required for property value also</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I10EL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:55:22:893 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:38:50:327 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="266">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>null check required for property value also</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I1SD7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:55:59:131 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 15:23:53:339 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="188">src/com/bbb/account/GetCouponsDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Appropriate error messages should be returned to the front end</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

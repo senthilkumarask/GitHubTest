@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2014, BBB  All Rights Reserved.
+	 Reproduction or use of this file without express written consent is prohibited. 
+	 FILE: TestInternationalShipFormHandler.xml 
+	 DESCRIPTION: ddtunit data file for TestInternationalShipFormHandler.java test case 
+	 HISTORY: Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+		
+		<!-- testEnvoyIntlRestricteditem -->
+		<group id="testEnvoyIntlRestricteditem">
+			<test id="testEnvoyIntlRestricteditem_test">
+				<objs>
+					<obj id="internationalShipFormHandler"	type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+						<item type="string">/com/bbb/internationalshipping/formhandler/InternationalShipFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>
+					<obj id="siteContextManager" type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+					 hint="call" method="resolveName"	calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>	
+				
+									
+					<obj id="countryCode" type="string">IN</obj>
+					<obj id="currencyCode" type="string">INR</obj>
+					
+					<obj id="siteId" type="string">
+                   		 BedBathUS
+                	</obj>
+                	
+               
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="rest_catalogRefId" type="string">sku30005</obj>
+					<obj id="rest_productId" type="string">prod10053</obj>
+					<obj id="state" type="string">US</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<!-- testEnvoyIntlNon_Restricteditem -->
+		<group id="testEnvoyIntlNon_Restricteditem">
+			<test id="testEnvoyIntlNon_Restricteditem_test">
+				<objs>
+					<obj id="internationalShipFormHandler"	type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+						<item type="string">/com/bbb/internationalshipping/formhandler/InternationalShipFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>
+					<obj id="siteContextManager" type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+					 hint="call" method="resolveName"	calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>	
+				
+									
+					<obj id="countryCode" type="string">IN</obj>
+					<obj id="currencyCode" type="string">INR</obj>
+					
+					<obj id="siteId" type="string">
+                   		 BedBathUS
+                	 </obj>
+                	
+               
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="non_restcatalogRefId" type="string">sku10004</obj>
+					<obj id="non_rest_productId" type="string">prod10050</obj>
+					<obj id="state" type="string">US</obj>
+					<obj id="clientIp" type="string">27.255.128.0</obj>
+				</objs>
+			</test>
+		</group>
+		
+		
+		<!-- testEnvoyIntlCanadaErrorScenario -->
+		<group id="testEnvoyIntlCanadaErrorScenario">
+			<test id="testEnvoyIntlCanadaErrorScenario_test">
+				<objs>
+					<obj id="internationalShipFormHandler"	type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+						<item type="string">/com/bbb/internationalshipping/formhandler/InternationalShipFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>
+					<obj id="siteContextManager" type="com.bbb.internationalshipping.formhandler.InternationalShipFormHandler"
+					 hint="call" method="resolveName"	calltype="com.bbb.internationalshipping.formHandler.TestInternationalShipFormHandler">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>	
+				
+					<obj id="countryCode" type="string">CA</obj>
+					<obj id="currencyCode" type="string">CAD</obj>
+					
+					<obj id="siteId" type="string">
+                   		 BedBathUS
+                	 </obj>
+                	
+               
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="non_restcatalogRefId" type="string">sku10004</obj>
+					<obj id="non_rest_productId" type="string">prod10050</obj>
+					<obj id="state" type="string">US</obj>
+					<obj id="clientIp" type="string">27.255.128.0</obj>
+				</objs>
+			</test>
+		</group>
+						
+	</cluster>
+</ddtunit>
+ 

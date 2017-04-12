@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_anonymous_order_query_2011_12_07_lokesh_duseja">
+  <ReviewIssue id="GVXDIWS0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:46:19:056 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:46:47:446 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="4">config/com/bbb/account/BBBOrderTrackingManager.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>userToken should be taken from configuration file</Summary>
+    <Description>userToken should be taken from configuration file</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXDTNZU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:54:40:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:55:47:904 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="5">config/com/bbb/account/BBBOrderTrackingManager.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>siteFlag should come from site repository as additional </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXE4SKK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:03:20:036 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:12:06:927 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="108">src/com/bbb/account/BBBOrderTrackingFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add perflogger in this method</Summary>
+    <Description>Add perf logger for handleTrackOrder
+- add separate logger for ATG order and legacy order</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXG9XR4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:03:19:264 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:48:14:191 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="80">src/com/bbb/account/BBBOrderTrackingManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove unnecessay comments - //Add code here</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXGIKWA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:10:02:506 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:48:06:911 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="288">src/com/bbb/account/BBBOrderTrackingManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do logdebug in conditions where you throw - throw new BBBBusinessException("err_no_such_order");</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXGJVQG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:11:03:208 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:47:55:008 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="91">src/com/bbb/account/BBBOrderTrackingManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>add log debug when submitted date is null</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXH0SMM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:24:12:334 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:47:49:816 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="193">src/com/bbb/account/BBBOrderTrackingManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Log the entire OrderTrackingRequestVO that is sent to webservice framework code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

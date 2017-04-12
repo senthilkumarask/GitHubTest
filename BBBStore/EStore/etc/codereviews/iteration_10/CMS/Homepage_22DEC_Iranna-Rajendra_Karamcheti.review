@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Homepage_22DEC_Iranna">
+  <ReviewIssue id="GWZ80HL7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:27:16:171 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 12:37:55:696 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Iranna_Teggi</AssignedTo>
+    <File line="256">src/com/bbb/cms/manager/HomePageTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Throw BBBBusinessException</Summary>
+    <Description>This should be business exception and not system exception. SystemException is thrown only when anything fata occurs. In this case when a repository exception is thrown we will throw system exception
+
+Changed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ8240I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:28:31:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:29:10:625 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Iranna_Teggi</AssignedTo>
+    <File line="211">src/com/bbb/cms/manager/HomePageTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need some debuggers</Summary>
+    <Description>Need some more loggingDebug statements to make sure some critical data is retrieved. Don't have too many but just one or two in between in the method logic. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ83ZCK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:29:59:156 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 13:01:02:696 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Iranna_Teggi</AssignedTo>
+    <File line="112">src/com/bbb/cms/manager/HomePageTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Run PMD</Summary>
+    <Description>Run PMD. I saw two P2 issues. One of them is unused local variable
+
+removed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

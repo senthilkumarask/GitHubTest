@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.checkout.TestOrderCheckout">
+       <group id="testHandleOrderCheckout">
+        <test id="testHandleOrderCheckout_test1">
+			<objs>
+                <obj id="profileId" type="string">130003</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+                <obj id="currency" type="string">USD</obj>
+                <obj id="sku" type="string">sku60010</obj>
+				<obj id="creditCardNickname" type="string">tcCardNickname1</obj>	
+				<obj id="shippingAddrNickname" type="string">tcShippingAddrNickname01</obj>
+				<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBAddressAPI</item>
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+                <obj id="infoDroplet" type="com.bbb.commerce.order.droplet.BBBOrderInfoDroplet" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+                    <item type="string">/atg/commerce/order/droplet/BBBOrderInfoDroplet</item>
+                </obj>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>
+				<obj id="pricingTools" type="com.bbb.commerce.pricing.BBBPricingTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/commerce/pricing/PricingTools</item>
+				</obj>
+				<obj id="bbbCommitOrderFormHandler" type="com.bbb.commerce.checkout.formhandler.BBBCommitOrderFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+				</obj>
+                <obj id="shippingGroupManager" type="com.bbb.commerce.order.BBBShippingGroupManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/atg/commerce/order/ShippingGroupManager</item>
+                </obj>
+				<obj id="bbbCheckoutManger" type="com.bbb.commerce.checkout.manager.BBBCheckoutManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/shipping/manager/CheckoutManager</item>
+                </obj>
+                <obj id="bbbOrderManager" type="com.bbb.commerce.order.TestBBBOrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>
+                <obj id="submitOrderMarshaller" type="com.bbb.commerce.checkout.tibco.SubmitOrderMarshaller" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/com/bbb/commerce/checkout/tibco/SubmitOrderMarshaller</item>
+                </obj>
+                <obj id="bbbShippingAddressDroplet" type="com.bbb.commerce.order.purchase.BBBShippingAddressDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/shipping/droplet/DisplayShippingAddress</item>
+                </obj>
+                <obj id="bbbBillingAddressDroplet" type="com.bbb.commerce.checkout.droplet.BBBBillingAddressDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/checkout/droplet/BBBBillingAddressDroplet</item>
+                </obj>
+			</objs>      
+				
+			<!-- <asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>-->  
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

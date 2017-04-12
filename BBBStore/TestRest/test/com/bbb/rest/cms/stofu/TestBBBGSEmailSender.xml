@@ -1,0 +1,551 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestBBBGSEmailSender.xml 
+	DESCRIPTION: ddtunit data file for TestBBBGSEmailSender.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.stofu.TestBBBGSEmailSender">
+		<group id="testSendFeedbackEmail">
+			<test id="TestSendFeedbackMail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="sendFeedbackEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendFeedbackEmail
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="message" type="string">dummy message</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendFeedbackEmailRecipientErr">
+			<test id="TestSendFeedbackMail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="sendFeedbackEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendFeedbackEmail
+					</obj>
+					<obj id="recipientList" type="String">testsapientcom</obj>
+					<obj id="message" type="string">dummy message</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendFeedbackEmailMessageErr">
+			<test id="TestSendFeedbackMail_test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="sendFeedbackEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendFeedbackEmail
+					</obj>
+					<obj id="recipientList" type="String">test@sapient.com</obj>
+					<obj id="message" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendPDPEmail">
+			<test id="TestSendPDPEmail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendPDPEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendPDPEmail
+					</obj>
+					<obj id="productId" type="String">118081</obj>
+					<obj id="productAvailabilityFlag" type="string">true</obj>
+					<obj id="skuId" type="string">16346608</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="reviewRating" type="string">2</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendPDPEmailRecipientErr">
+			<test id="TestSendPDPEmail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendPDPEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendPDPEmail
+					</obj>
+					<obj id="productId" type="String">118081</obj>
+					<obj id="productAvailabilityFlag" type="string">true</obj>
+					<obj id="skuId" type="string">16346608</obj>
+					<obj id="recipientList" type="string">testsapientcom</obj>
+					<obj id="reviewRating" type="string">2</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendPDPEmailProductIdErr">
+			<test id="TestSendPDPEmail_test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendPDPEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendPDPEmail
+					</obj>
+					<obj id="productId" type="String"></obj>
+					<obj id="productAvailabilityFlag" type="string">true</obj>
+					<obj id="skuId" type="string">16346608</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="reviewRating" type="string">2</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailForTable">
+			<test id="TestSendTableRegistryCartEmail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailTable</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailForRegistry">
+			<test id="TestSendTableRegistryCartEmail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailRegistry</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailForCartFF1">
+			<test id="TestSendTableRegistryCartEmail_test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailCart</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailForCartFF2">
+			<test id="TestSendTableRegistryCartEmail_test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF2</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailCart</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailRecipientErr">
+			<test id="TestSendTableRegistryCartEmail_test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">testsapientcom</obj>
+					<obj id="emailType" type="string">GSEmailCart</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailEmailTypeErr">
+			<test id="TestSendTableRegistryCartEmail_test6">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableRegistryCart":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailJsonStringErr">
+			<test id="TestSendTableRegistryCartEmail_test7">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailCart</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableRegistryCartEmailJsonStringKeyErr">
+			<test id="TestSendTableRegistryCartEmail_test8">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableRegistryCartEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableRegistryCartEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tabletabletable":
+						[{"productId":"1855438","skuId":"18363135","quantity":"1","reviewRating":"1","registryID":"1111","tableName":"mytable1","productAvailabilityFlag":"true","categoryId":""},
+						{"productId":"1016174971","skuId":"16174971","quantity":"2","reviewRating":"2","registryID":"2222","tableName":"mytable2","productAvailabilityFlag":"true","categoryId":"12506"},
+						{"productId":"1016174890","skuId":"16174890","quantity":"3","reviewRating":"3","registryID":"3333","tableName":"mytable1","productAvailabilityFlag":"false","categoryId":"10532"},
+						{"productId":"118081","skuId":"16346608","quantity":"4","reviewRating":"4","registryID":"4444","tableName":"mytable2","productAvailabilityFlag":"false","categoryId":"10532"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="emailType" type="string">GSEmailCart</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableCheckListEmail">
+			<test id="TestSendTableCheckListEmail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF2</obj>
+					<obj id="sendTableCheckListEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableCheckListEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableChecklist":[
+						{"primaryCategoryName":"L1category ID1 name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz",
+						"isPresent":"true"},
+						{"featuredCategoryName":"abc",
+						"isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP","isPresent":"true"},
+						{"plusCategoryName":"abcP","isPresent":"false"}]
+						},
+						{"primaryCategoryName":"L1category ID name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz2","isPresent":"true"},
+						{"featuredCategoryName":"abc22","isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP2","isPresent":"true"},
+						{"plusCategoryName":"abcP2","isPresent":"false"}]
+						}
+						]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableCheckListEmailRecipientErr">
+			<test id="TestSendTableCheckListEmail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableCheckListEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableCheckListEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableChecklist":[
+						{"primaryCategoryName":"L1category ID1 name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz",
+						"isPresent":"true"},
+						{"featuredCategoryName":"abc",
+						"isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP","isPresent":"true"},
+						{"plusCategoryName":"abcP","isPresent":"false"}]
+						},
+						{"primaryCategoryName":"L1category ID name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz2","isPresent":"true"},
+						{"featuredCategoryName":"abc22","isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP2","isPresent":"true"},
+						{"plusCategoryName":"abcP2","isPresent":"false"}]
+						}
+						]}
+					</obj>
+					<obj id="recipientList" type="string">testsapientcom</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableCheckListEmailJsonStringErr">
+			<test id="TestSendTableCheckListEmail_test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableCheckListEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableCheckListEmail
+					</obj>
+					<obj id="jsonResultString" type="String">
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableCheckListEmailTableNameErr">
+			<test id="TestSendTableCheckListEmail_test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableCheckListEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableCheckListEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"tableChecklist":[
+						{"primaryCategoryName":"L1category ID1 name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz",
+						"isPresent":"true"},
+						{"featuredCategoryName":"abc",
+						"isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP","isPresent":"true"},
+						{"plusCategoryName":"abcP","isPresent":"false"}]
+						},
+						{"primaryCategoryName":"L1category ID name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz2","isPresent":"true"},
+						{"featuredCategoryName":"abc22","isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP2","isPresent":"true"},
+						{"plusCategoryName":"abcP2","isPresent":"false"}]
+						}
+						]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendTableCheckListEmailJsonStringKeyErr">
+			<test id="TestSendTableCheckListEmail_test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendTableCheckListEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendTableCheckListEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"checklistChecklist":[
+						{"primaryCategoryName":"L1category ID1 name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz",
+						"isPresent":"true"},
+						{"featuredCategoryName":"abc",
+						"isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP","isPresent":"true"},
+						{"plusCategoryName":"abcP","isPresent":"false"}]
+						},
+						{"primaryCategoryName":"L1category ID name","count":"12",
+						"featuredCategories":
+						[{"featuredCategoryName":"xyz2","isPresent":"true"},
+						{"featuredCategoryName":"abc22","isPresent":"false"}],
+						"plusCategories":
+						[{"plusCategoryName":"xyzP2","isPresent":"true"},
+						{"plusCategoryName":"abcP2","isPresent":"false"}]
+						}
+						]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendCompareEmailForFF1">
+			<test id="TestSendCompareEmail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendCompareEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendCompareEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"compare":
+						[{"productId":"118081","skuId":"16346608","reviewRating":"1","productAvailabilityFlag":"true"},
+						{"productId":"1016174890","skuId":"16174890","reviewRating":"2","productAvailabilityFlag":"false"},
+						{"productId":"1016174971","skuId":"16174971","reviewRating":"3","productAvailabilityFlag":"false"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendCompareEmailForFF2">
+			<test id="TestSendCompareEmail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF2</obj>
+					<obj id="sendCompareEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendCompareEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"compare":
+						[{"productId":"118081","skuId":"16346608","reviewRating":"1","productAvailabilityFlag":"true"},
+						{"productId":"1016174890","skuId":"16174890","reviewRating":"2","productAvailabilityFlag":"false"},
+						{"productId":"1016174971","skuId":"16174971","reviewRating":"3","productAvailabilityFlag":"false"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendCompareEmailRecipientErr">
+			<test id="TestSendCompareEmail_test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendCompareEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendCompareEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"compare":
+						[{"productId":"118081","skuId":"16346608","reviewRating":"1","productAvailabilityFlag":"true"},
+						{"productId":"1016174890","skuId":"16174890","reviewRating":"2","productAvailabilityFlag":"false"},
+						{"productId":"1016174971","skuId":"16174971","reviewRating":"3","productAvailabilityFlag":"false"}]}
+					</obj>
+					<obj id="recipientList" type="string">testsapientcom</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendCompareEmailJsonStringErr">
+			<test id="TestSendCompareEmail_test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendCompareEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendCompareEmail
+					</obj>
+					<obj id="jsonResultString" type="String">
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSendCompareEmailJsonStringKeyErr">
+			<test id="TestSendCompareEmail_test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="site-id" type="string">GS_BedBathUS</obj>
+					<obj id="store-id" type="string">1184</obj>
+					<obj id="channel" type="string">FF1</obj>
+					<obj id="sendCompareEmail" type="string">/rest/bean/com/bbb/email/manager/BBBGSEmailSender/sendCompareEmail
+					</obj>
+					<obj id="jsonResultString" type="String">{"comparecompare":
+						[{"productId":"118081","skuId":"16346608","reviewRating":"1","productAvailabilityFlag":"true"},
+						{"productId":"1016174890","skuId":"16174890","reviewRating":"2","productAvailabilityFlag":"false"},
+						{"productId":"1016174971","skuId":"16174971","reviewRating":"3","productAvailabilityFlag":"false"}]}
+					</obj>
+					<obj id="recipientList" type="string">test@sapient.com</obj>
+					<obj id="tableName" type="string">myTable1</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

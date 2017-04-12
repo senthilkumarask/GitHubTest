@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BBBStore" default="deploy-ear-to-jboss" basedir=".">
+	<property environment="env" />
+
+	<property file="${user.name}.properties" />
+	<property file="build.properties" />
+	
+	<!-- Define an if and else task for use in this definition -->
+	<taskdef name="if" classname="ise.antelope.tasks.IfTask" classpath="../build_lib/atg/atg-ant.jar" />
+	<taskdef name="else" classname="ise.antelope.tasks.ElseTask" classpath="../build_lib/atg/atg-ant.jar" />
+	
+	
+	<if name="servername" value="prod" >
+		<property file="bbb_prod.properties" />
+		<echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+		<echo message="Modules list used for build..... ${include.modules}" level="info" />
+		<echo message="Jboss server name is ${jboss.server}" level="info" />
+	</if>
+	
+	<if name="servername" value="pub" >
+		<property file="bbb_pub.properties" />
+		<echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+		<echo message="Jboss server name is ${jboss.server}" level="info" />
+	</if>
+	
+	<if name="servername" value="prod_dev" >
+		<property file="bbb_prod_dev.properties" />
+		<echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+		<echo message="Jboss server name is ${jboss.server}" level="info" />
+	</if>
+	
+	<if name="servername" value="pub_dev" >
+		<property file="bbb_pub_dev.properties" />
+		<echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+		<echo message="Jboss server name is ${jboss.server}" level="info" />
+	</if>
+
+
+	<if name="servername" value="prod_dev_sandbox" >
+		<property file="bbb_prod_dev_sandbox.properties" />
+		<echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+		<echo message="Jboss server name is ${jboss.server}" level="info" />
+	</if>
+
+	
+	<!-- The dynamo class path -->
+	<path id="dynamo.classpath">
+		<fileset dir="${dynamo.home}/../DAS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS-UI/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DPS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DSS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DCS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<!--<fileset dir="${dynamo.home}/../CommerceReferenceStore/Store/EStore/International/lib">
+			<include name="**/*.jar" />
+		</fileset>-->
+	</path>
+
+	<!-- This target builds the module, assembles the ear, and deploys it to JBoss. -->
+	<target name="deploy-ear-to-jboss" depends="-init, build-module, clean, copy-to-atg, -execute-assembler-cmd" description="builds the module" />
+
+	<!-- Deletes the build and install directories. -->
+	<target name="clean" depends="-init" description="Deletes the contents of the install and build directories.">
+		<echo message="Deleting:" />
+		<echo message="  ${jboss.home}/server/${jboss.server}/deploy/${module.name}.ear" />
+		<echo message="  ${install.dir}" />
+		<delete file="${jboss.home}/server/${jboss.server}/deploy/${module.name}.ear" failonerror="false" includeEmptyDirs="true"/>
+		<delete dir="${install.dir}" failonerror="false" includeEmptyDirs="true"/>
+	</target>
+
+	<!-- This target builds the ATG module. -->
+	<target name="build-module" depends="-init" description="">
+		<ant antfile="../core/build.xml" dir="../core" target="build"/>
+		<echo message="Module core built." />
+
+		<ant antfile="../integration/build.xml" dir="../integration" target="build"/>
+		<echo message="Module Integration built." />
+		
+		<ant antfile="../EStore/build.xml" dir="../EStore" target="build"/>
+		<echo message="Module EStore built." /> 
+		
+		<ant antfile="../versioned/build.xml" dir="../EStore/versioned" target="build"/>
+        <echo message="Module EStore versioned built." />
+		
+		<ant antfile="../catalog/build.xml" dir="../EStore/versioned/catalog" target="build"/>
+        <echo message="Module EStore versioned catalog built." />
+		
+		<ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="build"/>
+		<echo message="Module TestStoreFront built." />
+		
+		<ant antfile="../TestVersioned/test.build.xml" dir="../TestVersioned" target="build"/>
+		<echo message="Module TestVersioned  built"/>
+		
+		<echo message="All Modules built." />
+	</target>
+	
+	<target name="copy-to-atg" depends="clean-atg">
+		<mkdir dir="${dynamo.root.dir}/${ant.project.name}" />
+		<copy todir="${dynamo.root.dir}/${ant.project.name}">
+			<fileset dir="../." >
+				
+				<exclude name="**/*.svn" />
+				<exclude name="**/build.xml" />
+				<exclude name="**/*.bat" />
+				<!--<exclude name="**/build_lib/" />-->
+				<exclude name="**/build_scripts/" />
+			</fileset>
+		</copy>
+	</target>
+
+<!-- This target execute sapeunit/junit module. -->
+	<target name="test-junits" description="execute junit/sapeunit">
+		
+		<ant antfile="${dynamo.home}/../BBBStore/TestStoreFront/test.build.xml" dir="${dynamo.home}/../BBBStore/TestStoreFront" target="test1"/>
+		<echo message="Module Test Store tests executed." />
+		<sleep seconds="20"/>
+			
+	</target>
+	
+	<!-- This target instrument the classes which will be tested through junit. -->
+	<target name="run-cobertura" description="execute cobertura/junit">
+	
+		<ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="run-cobertura-instrumentation" />
+		
+		<antcall target="copy-to-atg" />
+		
+    </target>
+		
+	<target name="run-cobertura-reports" depends="copy-report" description="Copy test reports from atg to workspace and then create coverage report">		
+		<sleep seconds="20" />
+		<ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="cobertura-reports"/>
+			
+	</target>
+
+
+	<target name="copy-report">		
+		
+		<delete file="cobertura.ser" verbose="true" failonerror="true" />
+		<delete dir="../TestStoreFront/reports" />
+		<mkdir dir="../TestStoreFront/reports" />
+		<copy todir="../TestStoreFront/reports">
+			<fileset dir="${dynamo.home}/../BBBStore/TestStoreFront/reports" >
+				
+				<include name="**/*.xml" />
+				<exclude name="test.xml" />
+				
+			</fileset>
+		</copy>	
+	 	
+		<copy file="${dynamo.home}/../BBBStore/TestStoreFront/cobertura.ser" todir="../build_scripts"/>
+
+	</target>
+
+
+	<!-- This target uses the runAssembler command to build the assembled ear and deploy it to JBoss. -->
+	<target name="-execute-assembler-cmd" description="Executes ATG's runAssembler by command line call">
+		<!-- Configure various arguments to pass to runAssembler depending upon ANT properties set by the user. -->
+		<if name="liveconfig" value="true">
+			<property name="assemble.cmd.liveconfig" value="-liveconfig" />
+			<else>
+				<property name="assemble.cmd.liveconfig" value="" />
+			</else>
+		</if>
+		<if name="standalone" value="true">
+			<property name="assemble.cmd.standalone" value="-standalone" />
+			<else>
+				<property name="assemble.cmd.standalone" value="" />
+			</else>
+		</if>
+		<if name="omitlicenses" value="true">
+			<property name="assemble.cmd.omitlicenses" value="-omit-licenses" />
+			<else>
+				<property name="assemble.cmd.omitlicenses" value="" />
+			</else>
+		</if>
+		<if name="pack" value="true">
+			<property name="assemble.cmd.pack" value="-pack" />
+			<else>
+				<property name="assemble.cmd.pack" value="" />
+			</else>
+		</if>
+		<if name="dynamo.server.name" value="">
+			<property name="assemble.cmd.servername" value="" />
+			<else>
+				<property name="assemble.cmd.servername" value="-server ${dynamo.server.name}" />
+			</else>
+		</if>
+		<if name="include.admin" value="true">
+			<property name="assemble.cmd.modules" value="${include.modules} DafEar.Admin" />
+			<else>
+				<property name="assemble.cmd.modules" value="${include.modules}" />
+			</else>
+		</if>
+
+		<echo message="Invoking RunAssembler Command" />
+		<echo message="assemble.cmd.liveconfig=${assemble.cmd.liveconfig}" />
+		<echo message="assemble.cmd.omitlicenses=${assemble.cmd.omitlicenses}" />
+		<echo message="assemble.cmd.standalone=${assemble.cmd.standalone}" />
+		<echo message="assemble.cmd.pack=${assemble.cmd.pack}" />
+		<echo message="assemble.cmd.servername=${assemble.cmd.servername}" />
+		<echo message="assemble.cmd.modules=${assemble.cmd.modules}" />
+		<echo message=" " />
+
+		<!-- The syntax of the run assembler command is:runAssembler [options] output-file-name -m module-list -->
+		<exec dir="${dynamo.home}/bin/" vmlauncher="false" executable="${dynamo.home}/bin/runAssembler" failonerror="yes">
+			<arg value="-overwrite" />
+			<arg value="${assemble.cmd.omitlicenses}" />
+			<arg value="${assemble.cmd.liveconfig}" />
+			<arg value="${assemble.cmd.standalone}" />
+			<arg value="${assemble.cmd.pack}" />
+			<arg line="${assemble.cmd.servername}" />
+			<arg value="${jboss.home}/server/${jboss.server}/deploy/${module.name}.ear" />
+			<arg line="-m ${assemble.cmd.modules}" />
+		</exec>
+	</target>
+	
+	<target name="clean-atg" >
+		<delete dir="${dynamo.root.dir}/${ant.project.name}" />
+	</target>
+
+	<!-- Initializes the build.  This target is not public, but should be called by all the others.	-->
+	<target name="-init">
+		<!-- Create the timestamp -->
+		<tstamp />
+		<echo message="" />
+		<echo message="" />
+		<echo message="#############################################################################" />
+		<echo message="#############################################################################" />
+		<echo message="${module.name}: start date = ${DSTAMP}  start time = ${TSTAMP}" />
+		<echo message="JAVA_HOME       = ${env.JAVA_HOME}" />
+		<echo message="dynamo.home     = ${dynamo.home}" />
+		<echo message="dynamo.root.dir = ${dynamo.root.dir}" />
+		<echo message="jboss.home      = ${jboss.home}" />
+		<echo message="#############################################################################" />
+		<echo message="#############################################################################" />
+		<echo message="" />
+		<echo message="" />
+	</target>
+</project>

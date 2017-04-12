@@ -1,0 +1,17 @@
+<!--///////////////////////////////-->
+<!--    USER PROFFILING            -->
+<!--///////////////////////////////-->
+<gsa-template xml-combine="append">
+
+	<header>
+		<name>BBB Related Profile Additions</name>
+		<author></author>
+		<version>1</version>
+	</header>
+	 
+	<item-descriptor name="user" xml-combine="append"  item-cache-timeout="550000" query-expire-timeout="550000" last-modified-property="lastModifiedDate">
+		<table name="TBS_DPS_USER" type="auxiliary" id-column-name="user_id">
+			<property name="isTermsConditions" column-name="is_terms_condition" data-type="boolean" default="false"/>
+		</table>
+	</item-descriptor>
+</gsa-template>

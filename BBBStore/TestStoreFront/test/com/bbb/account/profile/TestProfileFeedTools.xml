@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileServices.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileServices.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.profile.TestProfileFeedTools">
+      <group id="testSaveProfilesForProfileUser">
+        <test id="testSaveProfilesForProfileUser_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">profilefeed@bbb.com</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="memberId" type="string">1234567890</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+   <group id="testSaveProfilesForRegistryUser">
+        <test id="testSaveProfilesForRegistryUser_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">profilefeed@bbb.com</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="memberId" type="string">1234567890</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testSaveProfilesInvalidUser">
+        <test id="testSaveProfilesInvalidUser_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">inavlidemailaddress@</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="memberId" type="string">1234567890</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testSaveRegistry">
+        <test id="testSaveRegistry_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">profilefeed@bbb.com</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+				<obj id="registryId" type="string">123456789</obj>
+				<obj id="eventType" type="string">Baby</obj>
+				<obj id="eventDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testSaveRegistryInvalid">
+        <test id="testSaveRegistryInvalid_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">profilefeed@bbb.com</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+				<obj id="registryId" type="string"></obj>
+				<obj id="eventType" type="string">Baby</obj>
+				<obj id="eventDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testCoRegistrantLinking">
+        <test id="testCoRegistrantLinking_test1">
+			<objs>
+				<obj id="profileFeedTools" type="com.bbb.account.profile.ProfileFeedTools" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestProfileFeedTools">
+					<item type="string">/com/bbb/account/profile/ProfileFeedTools</item>
+				</obj>
+				<obj id="email" type="string">profilefeed@bbb.com</obj>
+				<obj id="firstName" type="string">Fname</obj>
+				<obj id="lastName" type="string">Lname</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="lastAccessedDate" type="string">7/11/2013 12:07</obj>
+				<obj id="registryId" type="string">9811531398</obj>
+				<obj id="eventType" type="string">Baby</obj>
+				<obj id="eventDate" type="string">7/11/2013 12:07</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

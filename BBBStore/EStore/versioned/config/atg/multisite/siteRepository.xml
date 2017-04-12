@@ -1,0 +1,22 @@
+<gsa-template xml-combine="append">
+
+	<header>
+		<name>BBB Site Repository</name>
+		<author></author>
+		<version>$Revision: #1 $</version>
+	</header>
+
+	<item-descriptor name="siteConfiguration" xml-combine="append" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+		<table name="BBB_SITE_ATTRIBUTES" xml-combine="append" type="auxiliary" id-column-name="id">
+			<property name="giftWrapSku" column-name="giftWrap_Sku"  xml-combine="replace" display-name-resource="giftWrapSku" data-type="string"  category-resource="BBBCustom">
+      			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      			<attribute name="propertySortPriority" value="14"/>
+      		</property>
+        	<property name="giftWrapProduct" column-name="giftWrap_Product" xml-combine="replace" display-name-resource="giftWrapProduct" data-type="string"  category-resource="BBBCustom">
+      			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBSiteTemplateResources"/>
+      			<attribute name="propertySortPriority" value="15"/>
+      		</property>
+    	</table>
+	</item-descriptor>
+
+</gsa-template>

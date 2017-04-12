@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  <item-descriptor name="siteRegistryPage" display-name-resource="itemDescriptorSiteRegistryPage"  display-property="pageTitle" cache-mode="simple" item-cache-size="1000">
+  	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	     <table name="BBB_Registry_Template" type="primary" id-column-names="registry_template_id">
+	     	<property name="id" column-name="registry_template_id" display-name-resource="registryTemplateId" category-resource="BasicInfo" hidden="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        	</property>
+	        <property name="pageName" column-name="page_name" data-type="enumerated" display-name-resource="pageName" required="true" category-resource="BasicInfo">
+	             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="1" />
+	             	<attribute name="uiwritable" value="true"/>
+					<attribute name="useCodeForValue" value="false"/>
+						<option value="RegistryFeatures" code="201"/>
+						<option value="RegistryFAQs" code="202"/>
+						<option value="RegistryIncentives" code="203"/>
+						<option value="RegistryChecklist" code="204"/>
+						<option value="GuidesAndAdviceLandingPage" code="205"/>
+						<option value="PersonalizedInvitations" code="206"/>
+						<option value="BridalToolkit" code="207"/>
+						<option value="CollegeChecklistPage" code="208"/>
+						<option value="CollegeGuidePage" code="209"/>
+						<option value="FreeGoodyBag" code="210"/>
+						<option value="BirthAnnouncements" code="211"/>
+						<option value="PrenatalWorkout" code="212"/>
+						<option value="Others" code="213"/>
+						<option value="PaintingTips" code="214"/>
+						<option value="RockYourRegistry" code="215"/>
+						<option value="BabyRegistryChecklist" code="216"/>
+						<option value="BabyGuidesAndAdviceLandingPage" code="217"/>
+            </property>
+             <property name="pageType" column-name="PAGE_TYPE" data-type="enumerated" display-name-resource="pageType" category-resource="BasicInfo">
+	             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="8" />
+	             	<attribute name="uiwritable" value="true"/>
+					<attribute name="useCodeForValue" value="false"/>
+						<option value="Registry" code="100"/>
+						<option value="College" code="200"/>
+            </property>
+            <property name="pageTitle" column-name="page_title" data-type="String" display-name-resource="pageTitle" required="true" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="2" />
+            </property>
+       
+        	<property name="pageHeaderFeaturedContent" column-name="page_header_featured_content" data-type="big string" display-name-resource="pageHeaderFeaturedContent" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="3" />
+            </property>
+            
+            <property name="pageHeaderCopy" column-name="page_header_copy" data-type="big string" display-name-resource="pageHeaderCopy" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="4" />
+            </property>
+            
+            <property name="promoImageURL" column-name="promo_image_url" data-type="string" display-name-resource="promoImageURL" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="5" />
+            </property>
+            
+            <property name="promoImageAltText" column-name="promo_image_alt_text" data-type="string" display-name-resource="promoImageAltText" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="6" />
+            </property>
+            
+            <property name="pageCopy" column-name="page_copy" data-type="big string" display-name-resource="pageCopy" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="7" />
+            </property>
+            
+              <property name="bbbPageName" column-name="bbb_page_name" data-type="String" display-name-resource="bbbPageName" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="8" />
+	            </property>
+	            
+	        <property name="imageBox" column-name="carousel_CONTAINER" display-name-resource="promoImage" item-type="imageBox" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="PromoInfo">
+	        	<attribute name="propertySortPriority" value="9"/>
+	        </property>
+	            
+			<property name="headTagContent" column-name="HEAD_TAG_CONTENT" display-name-resource="headTagContent" data-type="big string" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="10"/>
+			</property>
+			
+			<property name="bodyEndTagContent" column-name="BODY_END_TAG_CONTENT" display-name-resource="bodyEndTagContent" data-type="big string" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="11"/>
+			</property>
+
+	     </table>
+    	<table name="BBB_REGISTRY_BRANDS" multi-column-name="sequence_num" type="multi" id-column-names="registry_template_id"> 
+          <property name="brands" column-name="brand_id" data-type="List" display-name-resource="brands" component-item-type="bbbBrand" repository="/atg/commerce/catalog/ProductCatalog"
+          category-resource="RegistryTemplateBrands">
+            <attribute name="propertySortPriority" value="-1"/>
+           </property>
+      	</table>
+      	<table name="BBB_Registry_Site" type="multi" id-column-names="registry_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="RegistryTemplateSites">
+             <attribute name="propertySortPriority" value="1" />
+            </property>
+    	</table>
+    	<table name="BBB_OMINITURE_REGISTRY_DATA" type="multi" id-column-names="registry_template_id"
+           multi-column-name="omniture_key">
+        <property name="OmnitureData" column-names="omniture_value" data-type="map" component-data-type="string">
+    	<attribute name="propertySortPriority" value="9"/>
+    	</property>
+    	</table>
+    	   
+   </item-descriptor>
+</gsa-template>

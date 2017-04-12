@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     26 Oct 2011 12:44:35                                                        
+
+     project    
+                   
+     ====================================================================== -->
+<project name="TestRest" default="RunJuntTest" basedir=".">
+	<description>
+            Sample
+    </description>
+	<property file="test.build.properties" />
+	<property name="javac.dest" value="classes" />
+	<property name="EStore" value="BBBStore.EStore"/>
+	<property name="core" value="BBBStore.core"/>
+	<property name="junitreports" value="reports"/>
+	
+	<taskdef name="if" classname="ise.antelope.tasks.IfTask" classpath="../build_lib/atg/atg-ant.jar" />
+	<taskdef name="else" classname="ise.antelope.tasks.ElseTask" classpath="../build_lib/atg/atg-ant.jar" />
+	
+	<path id="classpath">
+	    <pathelement location="classes"/> 
+    	<fileset dir="lib" includes="*.jar"/>
+  	</path>
+	  
+	<path id="dynamo.classpath.svn">
+        <fileset dir="${weblogic.home}/wlserver_10.3/server/lib">
+            <include name="**/wlclient.jar" />
+            <include name="**/wljmsclient.jar" />
+        </fileset>
+		<fileset dir="${dynamo.home}/../REST/client-lib/java">
+	        <include name="**/atg-rest-client-1.0.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../REST/lib">
+			<include name="**/org.json.jar" />
+		</fileset>
+	    <fileset dir="${dynamo.home}/../DAS/j2ee-lib">
+	        <include name="**/jboss-javaee.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DAS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DAS-UI/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DPS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DSS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+	    <fileset dir="${dynamo.home}/../DCS/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<!--<fileset dir="${dynamo.home}/../CyberSourceIntegration/BaseServices/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/FraudManagement/lib">
+	        <include name="**/*.jar" />
+	    </fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/PaymentTokenization/lib">
+	        <include name="**/*.jar" />
+	    </fileset>	
+			-->
+		<fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+		  <include name="**/*.jar" />
+		</fileset>
+	</path>
+	    
+    <path id="bbb.core">
+        <fileset dir="../core/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+	    
+    <path id="bbb.estore">
+        <fileset dir="../EStore/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+	<path id="bbb.webservices">
+        <fileset dir="../webservices/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.endeca">
+        <fileset dir="../integration/endeca/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.webservices">
+        <fileset dir="../integration/webservices/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.valuelink">
+        <fileset dir="../integration/valuelink/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+    <path id="bbb.integration.cybersource">
+        <fileset dir="../integration/cybersource/lib">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+	  
+
+	<target name="compile" depends="cleanTestRest, convert">
+	  	<javac srcdir="test" destdir="classes" fork="yes" encoding="iso-8859-1">         
+          <classpath refid="dynamo.classpath.svn" />
+          <classpath refid="bbb.estore" />
+          <classpath refid="bbb.core" />
+          <classpath refid="classpath" />
+	  	  <classpath refid="bbb.webservices" />
+		  <classpath refid="bbb.integration.webservices" />
+		  <classpath refid="bbb.integration.valuelink" />
+	  	  <classpath>
+    	  	  <pathelement location="../core/${javac.dest}" />
+    	  	  <pathelement location="../EStore/${javac.dest}"/>
+			  <pathelement location="../integration/valuelink/${javac.dest}"/>
+    	  	  <pathelement location="${javac.dest}"/>
+	  	  </classpath>
+        </javac>
+	  	<copy todir="classes">
+            <fileset dir="test" excludes="**/*.java"/>
+        </copy>
+	</target>
+
+	<target name="usage">
+		<echo>
+	    These are the targets supported by this ANT build scpript:
+		update - update the working copy from the repository
+		move - moves files from ${test} to ${live}	
+		clean   - clean the folder for a fresh build.
+	    compile   - Will compile the source to the classes dir
+	    archive - creates the EAR
+	    </echo>
+	</target>
+
+	
+	<target name="cleanTestRest"  description="delete all class files in test">
+            <delete includeemptydirs="true">
+				<fileset dir="${javac.dest}" includes="**/*" />			
+			</delete>		
+	</target>
+	
+	<target name="RunJuntTest" depends="cleanTestRest,compile">    	
+    	
+    	<echo message="Test-Suites started"/>
+		<echo message="All Account Test-Suite started"/>
+		<taskdef name="junit1" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask" classpathref="classpath"/>
+    	<junit1 printsummary="yes" fork="yes" maxmemory="2048m" haltonfailure="no" showoutput="yes" forkmode="perBatch"> 
+			
+    		<classpath refid="dynamo.classpath.svn" />
+		    <classpath refid="bbb.webservices" />
+		    <classpath refid="bbb.estore" />
+	    	<classpath refid="bbb.core" />
+	    	<classpath refid="bbb.integration.endeca" />
+	    	<classpath refid="bbb.integration.webservices" />
+			<classpath refid="bbb.integration.valuelink"/>
+	        <classpath refid="bbb.integration.cybersource"/>
+			<classpath refid="classpath" />
+	    	<jvmarg value="-XX:NewSize=256m"/>
+			<jvmarg value="-XX:MaxNewSize=256m"/>
+			<jvmarg value="-XX:PermSize=256m"/>
+			<jvmarg value="-XX:MaxPermSize=256m"/>
+	  		<jvmarg value="-Xms512m"/>
+	  	    <jvmarg value="-Xmx1536m"/>
+    		<batchtest fork="yes" todir="reports">
+	        	<fileset dir="test">
+	            	<include name="com/bbb/rest/AllTests.java"/>
+				</fileset>
+			</batchtest>    
+    	 </junit1>
+	</target>
+	
+	<target name="JunitReport" depends="RunJuntTest" >
+	   <mkdir dir="${junitreports}/HTML" />
+	    <junitreport todir="${junitreports}">
+	      <fileset dir="${junitreports}">
+	        <include name="*.xml"/>
+	      </fileset>
+	   
+	      <report format="frames" todir="${junitreports}/HTML"/>
+	    </junitreport>
+	 </target>
+	
+	<target name="convert" description="converts localhost to env.HOSTNAME" >
+		<echo>CPATH=${hostname}</echo>	
+		<replace dir="test" value="${hostname}">
+			<include name="**/BaseTestCase.java"/>
+			<replacetoken>@localhost@</replacetoken>
+		</replace>		
+		<replace dir="test" value="${port}">
+			<include name="**/BaseTestCase.java"/>
+			<replacetoken>@port@</replacetoken>
+		</replace>
+		<replace dir="test" value="${clientId}">
+			<include name="**/BBBRestSession.java"/>
+			<replacetoken>@clientId@</replacetoken>
+		</replace>
+		<replace dir="test" value="${token}">
+			<include name="**/BBBRestSession.java"/>
+			<replacetoken>@token@</replacetoken>
+		</replace>
+		
+		<replace dir="test" value="${BedBathUSHostName}">
+			<include name="**/BaseTestCase.java"/>
+			<replacetoken>@BedBathUSHostName@</replacetoken>
+		</replace>
+		
+		<replace dir="test" value="${BedBathCanadaHostName}">
+			<include name="**/BaseTestCase.java"/>
+			<replacetoken>@BedBathCanadaHostName@</replacetoken>
+		</replace>
+		
+		<replace dir="test" value="${BuyBuyBabyHostName}">
+			<include name="**/BaseTestCase.java"/>
+			<replacetoken>@BuyBuyBabyHostName@</replacetoken>
+		</replace>
+	</target>
+</project>

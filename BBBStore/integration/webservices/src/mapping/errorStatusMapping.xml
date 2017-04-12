@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+ <mapping>
+<class-a>com.bedbathandbeyond.www.Status</class-a>
+<class-b>com.bbb.framework.webservices.vo.ErrorStatus</class-b>
+<field>
+<a>errorExists</a>
+<b>errorExists</b>
+</field>
+
+<field>
+<a>errorMessage</a>
+<b>errorMessage</b>
+</field>
+
+<field>
+<a>displayMessage</a>
+<b>displayMessage</b>
+</field>
+
+<field>
+<a>ID</a>
+<b>errorId</b>
+</field>
+
+<field>
+<a>validationErrors.valErrorArray</a>
+<b>validationErrors</b>
+</field>
+
+</mapping>
+
+<mapping>
+<class-a>com.bedbathandbeyond.www.ValError</class-a>
+<class-b>com.bbb.framework.webservices.vo.ValidationError</class-b>
+<field>
+<a>key</a>
+<b>key</b>
+</field>
+<field>
+<a>value</a>
+<b>value</b>
+</field>
+</mapping>
+
+</mappings>

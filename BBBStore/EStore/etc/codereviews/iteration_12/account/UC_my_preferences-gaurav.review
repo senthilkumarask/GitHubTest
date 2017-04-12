@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_my_preferences">
+  <ReviewIssue id="GYE2A1P4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:22:59:416 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:31:53:420 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav</ReviewerId>
+    <AssignedTo>lokesh</AssignedTo>
+    <File line="103">src/com/bbb/account/BBBStoreSessionDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Rename item to profileSiteItem</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GYE2PY0R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:35:21:147 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:35:41:411 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav</ReviewerId>
+    <AssignedTo>lokesh</AssignedTo>
+    <File line="117">src/com/bbb/account/BBBStoreSessionDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add loggingDebug for final URL generated.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

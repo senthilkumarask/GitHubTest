@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-5441">
+  <ReviewIssue id="IBDGM1UN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-06-26 :: 15:42:02:399 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-06-26 :: 15:42:24:733 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="1854">j2ee-apps/BBBStore/store.war/browse/product_details.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Variable name should be expressive</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

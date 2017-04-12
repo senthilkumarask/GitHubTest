@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="RM defect -28791">
+  <ReviewIssue id="I2HHBHWS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 17:15:33:292 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 17:16:23:697 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use BCC for static data on JSP pages</Summary>
+    <Description>use lables to render test "in All Departments"</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I2HHG53X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 17:19:09:981 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 17:19:42:930 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>check staticUrl should be SEO URL</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

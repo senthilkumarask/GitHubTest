@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBSL-6884">
+  <ReviewIssue id="IFT8CNY5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-16 :: 11:13:55:709 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-16 :: 11:14:08:164 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Antariksh</ReviewerId>
+    <AssignedTo>Antariksh</AssignedTo>
+    <File line="1091">src/com/bbb/feeds/utils/BBBFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use isNotEmpty() in place of isEmpty() method to check test condition null or empty.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFT8EHRG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-16 :: 11:15:21:004 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-16 :: 11:15:39:813 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Antariksh</ReviewerId>
+    <AssignedTo>Antariksh</AssignedTo>
+    <File line="1091">src/com/bbb/feeds/utils/BBBFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use BBB CONSTANT in place of comma ,space ,hypen .</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFT8FRDI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-16 :: 11:16:20:118 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-19 :: 11:14:41:511 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Antariksh</ReviewerId>
+    <AssignedTo>Antariksh</AssignedTo>
+    <File line="238">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>There is no need to initialize catItemPropSkuColor , catItemPropSkuColor , brand ,name variable with empty.</Summary>
+    <Description>There is no need to initialize catItemPropSkuColor , catItemPropSkuColor , brand ,name variable with empty.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

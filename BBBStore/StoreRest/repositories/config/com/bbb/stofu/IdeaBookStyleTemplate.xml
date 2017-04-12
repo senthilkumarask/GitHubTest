@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>IdeaBook Landing template </name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- IdeaBook Landing template -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="IdeaBookStyleTemplate"
+		display-name-resource="IdeaBookStyleTemplate" display-property="ideaTitle"
+		cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+		<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+		<attribute name="updateLastModified" value="true"/>
+
+		<table name="BBB_GS_IDEABOOK" type="primary" id-column-name="IDEA_BOOK_STYLE_ID">
+
+			<property name="id" column-name="IDEA_BOOK_STYLE_ID"
+				display-name-resource="ideaBookStyleTemplateId" writable="true">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+			</property>
+			<property name="ideaImage" column-name="Idea_Image"
+				display-name-resource="ideaImage" data-type="string" category-resource="MasterInfo" >
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+			<property name="ideaTitle" column-name="Idea_Title"
+				display-name-resource="ideaTitle" data-type="string" category-resource="MasterInfo">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+				<attribute name="propertySortPriority" value="3"/>
+			</property>  
+  		
+		</table>
+		<table name="BBB_GS_IDEABOOK_ITEM" type="multi" id-column-name="IDEA_BOOK_STYLE_ID" multi-column-name="sequence_num">
+			<property name="itemDisplay" column-name="ITEM_CORD_ID"  display-name-resource="itemDisplay" component-item-type="productHotSpot" data-type="list" category-resource="MasterInfo"
+				repository="/com/bbb/stofu/CommonRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+      	</property>
+      	</table>
+      	<table name="BBB_GS_IDEABOOK_SITE" type="multi" id-column-name="IDEA_BOOK_STYLE_ID">
+			<property name="sites" column-name="site_id"  display-name-resource="sites" component-item-type="siteConfiguration" data-type="set" category-resource="appSites" repository="/atg/multisite/SiteRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+      	</property>
+      	</table>
+
+	</item-descriptor>
+
+</gsa-template>

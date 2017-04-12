@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>MobileSitemapRepository</name>
+        <author></author>
+    </header>
+  <!--  Sitemap item descriptor -->
+<item-descriptor expert="false" folder="false" content="false" default="false" id-separator=":" hidden="false" writable="true" name="sitemap" use-id-for-path="false" cache-mode="simple">
+		<table name="bbb_mobile_sitemap" id-column-name="sitemap_id" type="primary" shared-table-sequence="1">
+			<property expert="false" readable="true" column-name="lastmod" data-type="timestamp" hidden="false" writable="true" name="lastmod" required="false" cache-mode="inherit" queryable="true"/>
+			<property expert="false" readable="true" column-name="filename" data-type="string" hidden="false" writable="true" name="filename" required="false" cache-mode="inherit" queryable="true"/>
+			<property expert="false" readable="true" column-name="xml" data-type="string" hidden="false" writable="true" name="xml" required="false" cache-mode="inherit" queryable="true"/>
+		</table>
+	</item-descriptor>
+
+	
+  <!--  Siteindex item descriptor -->
+<item-descriptor expert="false" folder="false" content="false" default="false" id-separator=":" hidden="false" writable="true" name="siteindex" use-id-for-path="false" cache-mode="simple">
+		<table name="bbb_mobile_siteindex" id-column-name="siteindex_id" type="primary" shared-table-sequence="1">
+			<property expert="false" readable="true" column-name="lastmod" data-type="timestamp" hidden="false" writable="true" name="lastmod" required="false" cache-mode="inherit" queryable="true"/>
+			<property expert="false" readable="true" column-name="filename" data-type="string" hidden="false" writable="true" name="filename" required="false" cache-mode="inherit" queryable="true"/>
+      		<property expert="false" readable="true" column-name="xml" data-type="string" hidden="false" writable="true" name="xml" required="false" cache-mode="inherit" queryable="true"/>
+		</table>
+	</item-descriptor>
+</gsa-template>
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,56 @@
+<?xml version="1.0" ?> 
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+		
+		<xs:simpleType name="TypeEnum">
+			<xs:restriction base="xs:string">
+		    	<xs:enumeration value="TYPE_SUBSCRIBE_EMAIL_DIRECTMAIL" />
+		     	<xs:enumeration value="TYPE_UNSUBSCRIBE_DIRECTMAIL" />
+		     	<xs:enumeration value="TYPE_UNSUBSCRIBE_EMAIL" />
+		    </xs:restriction>
+		</xs:simpleType>
+		
+		<xs:simpleType name="FrequencyEnum">
+			<xs:restriction base="xs:string">
+		    	<xs:enumeration value="FREQUENCY_TWICE_A_MONTH" />
+		     	<xs:enumeration value="FREQUENCY_ONCE_A_MONTH" />
+		     	<xs:enumeration value="FREQUENCY_ONLINE_GIFTCERTIFICATE_COUPONS" />
+		     	<xs:enumeration value="UNSUBSCRIBE_ALL_EMAILS" />
+		    </xs:restriction>
+		</xs:simpleType>
+		
+		<xs:element name="main">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="DATA_RECORD" type="SUBSCRIPTION" minOccurs="1" maxOccurs="unbounded" /> 
+  				</xs:sequence>
+  			</xs:complexType>
+ 		 </xs:element>
+		
+		 <xs:complexType name="SUBSCRIPTION">
+ 			<xs:sequence>
+ 			    <xs:element name="TYPE" type="TypeEnum" />
+				<xs:element name="FREQUENCY" type="FrequencyEnum" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="EMAIL_ADDR" type="xs:string" />
+				<xs:element name="EMAIL_ADDR_CONFIRM" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="SALUTATION" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="FIRST_NM" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="LAST_NM" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="ADDRESS_LINE1" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="ADDRESS_LINE2" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="CITY" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="STATE" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="ZIPCODE" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="PHONE_NUM" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="MOBILE_NUM" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="EMAIL_OFFER" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="DIRECTMAIL_OFFER" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="MOBILE_OFFER" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="DATE_TIME" type="xs:dateTime" />
+				<xs:element name="SITE_ID" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+   </xs:schema>
+
+
+
+

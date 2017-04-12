@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_CHECKOUT_GUEST_AUTHENTICATED_16_12_2011_HARSH">
+  <ReviewIssue id="GWDFLIEC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-19 :: 17:28:38:436 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:13:55:568 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Harsh Kapoor</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/checkout.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Rename this jsp to more appropriate name i.e. guest_checkout.jsp</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWDHTFU8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-19 :: 18:30:47:600 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:13:51:966 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Harsh Kapoor</AssignedTo>
+    <File line="24">j2ee-apps/BBBStore/store.war/checkout/checkout.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Checkout as Guest should come from label</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWDI5DQB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-19 :: 18:40:04:739 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:13:45:248 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Harsh Kapoor</AssignedTo>
+    <File line="354">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Name of checkout button should come from label.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEWIYP0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:10:19:236 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 12:12:16:895 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Harsh Kapoor</AssignedTo>
+    <File line="55">j2ee-apps/BBBStore/store.war/account/frags/login_frag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>merge order not correct</Summary>
+    <Description>in current code merging is prevented using 					&lt;dsp:input bean="ProfileFormHandler.profileTools.mergeOrders" type="hidden" value="false"/&gt;&#xD;
+&#xD;
+This is incorrect because we still need to merge but based on parameter &#xD;
+String requestParam = pRequest.getParameter("userCheckingOut");&#xD;
+&#xD;
+we do partial merge. This still needs to happen.&#xD;
+Refer BBBprofileTools.java -&gt;postLoginUser method</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>
+

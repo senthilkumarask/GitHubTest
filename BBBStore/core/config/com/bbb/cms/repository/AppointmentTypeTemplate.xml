@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>AppointmentType Template</name>
+        <author></author>
+    </header>
+     
+  <!--///////////////////////////////-->
+  <!--          appointmentType             -->
+  <!--///////////////////////////////-->
+  
+<item-descriptor name="appointmentType" display-name-resource="appointmentType" display-property="appointmentCode" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>	
+	<table name="BBB_APPOINTMENT_TEMPLATE" type="primary" id-column-name="appointment_template_id">
+		<property name="id" column-name="appointment_template_id" display-name-resource="appointmentTemplateId" category-resource="AppointmentInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        </property>      
+       <property name="appointmentCode" column-name="appointment_code" display-name-resource="appointmentCode" data-type="string" required="true" category-resource="AppointmentInfo">
+       		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       		<attribute name="propertySortPriority" value="2"/>
+       </property>	
+       <property name="appointmentName" column-name="appointment_name" display-name-resource="appointmentName" data-type="string" category-resource="AppointmentInfo">
+       		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       		<attribute name="propertySortPriority" value="3"/>
+       </property>	 
+       <property name="enabled" column-name="enabled" display-name-resource="enabled" data-type="boolean" category-resource="AppointmentInfo">
+       		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       		<attribute name="propertySortPriority" value="4"/>
+       </property>	
+        <property name="preselectedServiceRef" column-name="preselectedService_Ref" display-name-resource="preselectedServiceRef" data-type="int" category-resource="AppointmentInfo">
+       		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       		<attribute name="propertySortPriority" value="5"/>
+       </property>	      
+	</table>
+     
+    <table name="BBB_SITES_APPOINTMENT" type="multi" multi-column-name="sequence_num" id-column-name="appointment_template_id" >
+     <property name="sites" column-name="site_id" display-name-resource="siteId" category-resource="AppointmentInfo" component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" data-type="list">
+       <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+       <attribute name="propertySortPriority" value="5"/>
+      </property>
+    </table>     
+</item-descriptor>
+</gsa-template>

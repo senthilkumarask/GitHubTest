@@ -1,0 +1,15 @@
+drop table bbb_gift_card_status;
+drop table bbb_credit_card;
+drop table bbb_gift_card_pay_grp;
+drop table bbb_cc_status;
+drop table bbb_order_price;
+drop table bbb_item_sg_tax;
+drop table bbb_levolor_item;
+drop table bbb_item;
+drop table bbb_ship_price;
+drop table bbb_hrd_ship_group;
+drop table bbb_store_ship_grp;
+drop table bbb_order;
+drop table bbb_address;
+drop table bbb_hrd_ship_tracking;
+drop table bbb_tracking_info;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BSL-2469">
+  <ReviewIssue id="HVJDBE2G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:21:05:848 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:22:31:837 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File></File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add cardPattern property name in Add BBBSiteTemplateResources</Summary>
+    <Description>Add property name in resource file - BBBSiteTemplateResources</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVJDIAEA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:26:27:682 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:27:19:818 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File></File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Where are DBCRs for this change? please add the dbcrs for review</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVJDNJLN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:30:32:891 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-23 :: 16:30:53:515 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Where are JUnits for this change? Please add the same too.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

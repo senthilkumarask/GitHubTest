@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-3355">
+  <ReviewIssue id="IA6AGBE7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:35:31:567 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:35:33:114 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="2074">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IA6AGI09">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:35:40:137 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:35:41:803 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="2095">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IA6AGWC3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:35:58:707 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-27 :: 10:36:00:132 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="660">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-372">
+  <ReviewIssue id="IEP5WE59">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-09-18 :: 10:14:30:237 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-09-18 :: 10:16:04:351 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil Kumar</ReviewerId>
+    <AssignedTo>Sunil Kumar</AssignedTo>
+    <File line="1975">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Create a map for values in properties file</Summary>
+    <Description>rating</Description>
+    <Annotation></Annotation>
+    <Revision>124435</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

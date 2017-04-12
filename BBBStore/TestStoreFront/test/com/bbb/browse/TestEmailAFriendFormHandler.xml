@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestEmailAFriendFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestEmailAFriendFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.browse.TestEmailAFriendFormHandler">
+       <group id="testHandleSendMailError">
+        <test id="testHandleSendMailError_test1">
+			<objs>
+				<obj id="emailAFriendFormHandler" type="com.bbb.browse.EmailAFriendFormHandler" hint="call" method="resolveName" calltype="com.bbb.browse.TestEmailAFriendFormHandler">
+					<item type="string">/com/bbb/browse/EmailAFriendFormHandler</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      <group id="testHandleSendMailSuccess">
+        <test id="testHandleSendMailSuccess_test1">
+			<objs>
+				<obj id="emailAFriendFormHandler" type="com.bbb.browse.EmailAFriendFormHandler" hint="call" method="resolveName" calltype="com.bbb.browse.TestEmailAFriendFormHandler">
+					<item type="string">/com/bbb/browse/EmailAFriendFormHandler</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+    </cluster>
+</ddtunit>

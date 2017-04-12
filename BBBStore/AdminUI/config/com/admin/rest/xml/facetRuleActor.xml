@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="createFacetRule"
+	xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<actor-chain id="createFacetRule" transaction="TX_SUPPORTS">
+		<form id="facet-rule-create" handle="createFacetRule" var="BBBFacetRuleFormHandler"
+			name="/com/admin/formhandler/BBBFacetRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+			<input name="userCreated" value="${param.create_user}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			
+		</form>
+	</actor-chain>
+	
+		<actor-chain id="updateFacetRule" transaction="TX_SUPPORTS">
+		<form id="facet-rule-update" handle="updateFacetRule" var="BBBFacetRuleFormHandler"
+			name="/com/admin/formhandler/BBBFacetRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+			<input name="userCreated" value="${param.create_user}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			
+		</form>
+			</actor-chain>
+			
+		<actor-chain id="removeFacetRule" transaction="TX_SUPPORTS">
+		<form id="facet-remove" handle="removeFacetRule" var="BBBFacetRuleFormHandler"
+			name="/com/admin/formhandler/BBBFacetRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+		</form>
+
+	</actor-chain>	
+	
+	<actor-chain id="searchFacetRules" transaction="TX_SUPPORTS">
+		<droplet var="getFacetRules" name="/com/admin/droplet/BBBFacetRulesDroplet"
+			id="getFacetRules">
+			<input name="rule_id" value="${param.rule_id}" />
+			<input name="facet_rule_name" value="${param.facet_rule_name}" />
+		</droplet>
+	</actor-chain>
+	
+ <actor-chain id="getFacet" transaction="TX_SUPPORTS">
+		<droplet var="getFacet" name="/com/admin/droplet/BBBFacetDroplet"
+			id="getFacet">
+			<input name="facet_id" value="${param.facet_id}" />
+			<input name="facet_name" value="${param.description}" />
+		</droplet>
+	</actor-chain>
+ 
+ 
+  <actor-chain id="getFacetValue" transaction="TX_SUPPORTS">
+		<droplet var="getFacetValey" name="/com/admin/droplet/BBBFacetValueDroplet"
+			id="getFacetValue">
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 
+	$$Change: 875535 $ -->
+
+<!-- result of combining: C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml -->

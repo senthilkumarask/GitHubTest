@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<item-descriptor name="countries" query-cache-size="1000">
+		<table name="BBB_CREDIT_CARD_COUNTRY" id-column-name="id" type="primary">
+			<property name="countryName" column-name="COUNTRY_NAME" display-name="countryName" data-type="string">
+			</property>
+			<property name="countryCode" column-name="COUNTRY_CODE" display-name="countryCode" data-type="string">
+			</property>
+		</table>
+	</item-descriptor>
+</gsa-template>
+

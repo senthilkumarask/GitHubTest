@@ -1,0 +1,145 @@
+<project name="EStore" default="build" basedir=".">
+
+   <property file="../build_scripts/build.properties" />
+
+	<path id="dynamo.classpath">
+	<fileset dir="${dynamo.home}/../DAS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DAS-UI/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DPS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	
+	<fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+		<include name="**/*.jar" />
+	</fileset>
+
+	<fileset dir="${dynamo.home}/../DSS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DCS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DCS/PublishingAgent/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration/lib">
+	    <include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration/TaxAddressVerification/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration/FraudManagementBase/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/lib">
+		<include name="**/*.jar" />
+	</fileset>			
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/PaymentTokenization/lib">
+		<include name="**/*.jar" />
+	</fileset>	
+	</path>
+	
+	<path id="java.classpath">
+		<fileset dir="${JAVA_HOME}/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${JAVA_HOME}/jre/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="bbb.core">
+		<fileset dir="../core/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="bbb.estore">
+		<fileset dir="../EStore/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="bbb.integration">
+		<fileset dir="../integration/cybersource/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/endeca/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/giftregistry/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/oms/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/valuelink/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/webservices/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../integration/vendorsearch/lib">
+					<include name="*.jar" />
+		</fileset>
+	</path>
+
+  <target name="build" depends="clean,compile,copy,jar"/>
+
+  <!-- Clean the build environment -->
+  <target name="clean">
+    <delete dir="${basedir}/classes/com" />
+	<delete dir="lib\EStore.jar" />
+  </target>
+
+  <!--<target name="compile" >
+    <javac srcdir="src"	destdir="classes" fork="yes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+	  <classpath refid="java.classpath" />
+      <classpath refid="dynamo.classpath" />
+	  <classpath refid="bbb.core" />
+	  <classpath refid="bbb.estore" />
+	  <classpath refid="bbb.integration" />
+    </javac>
+  </target>-->
+  
+  <taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+			<classpath>
+				<pathelement location="lib/aspectjweaver-1.7.3.jar" />
+				<pathelement location="lib/aspectjrt-1.7.3.jar" />
+				<pathelement location="lib/aspectjtools-1.7.3.jar" />
+			</classpath>
+	</taskdef>
+
+  <target name="compile" >
+  	<echo>Compile the source files</echo>
+
+  				<iajc destdir="classes" srcdir="src" source="1.7" target="1.7" fork="yes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+  					 <classpath refid="java.classpath" />
+  					 <classpath refid="dynamo.classpath" />
+  					 <classpath refid="bbb.core" />
+  					 <classpath refid="bbb.estore" />
+  					 <classpath refid="bbb.integration" />
+  					 <classpath>
+  						<pathelement location="lib/aspectjweaver-1.7.3.jar" />
+						<pathelement location="lib/aspectjrt-1.7.3.jar" />
+  					 </classpath>
+  					
+  				</iajc>
+  </target>
+  
+
+	<target name="copy"  description="copy all files from src">
+		<copy todir="classes">
+		      <fileset dir="src" excludes="**/*.java"/>
+		</copy>      
+	</target>
+  
+  <target name="jar" >
+	<jar jarfile="lib\EStore.jar" basedir="classes"/>
+  </target>
+
+</project>

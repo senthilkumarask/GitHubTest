@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-4611_BBBP-4612">
+  <ReviewIssue id="IJ0HWBD2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:44:39:302 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:45:32:953 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="21">config/com/bbb/thirdparty/omniture/repository/OmnitureReportRepository.properties</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Update the comment with proper repository name from GiftRegistry</Summary>
+    <Description>Update the comment with proper repository name from GiftRegistry</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IJ0HZOU4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:47:16:732 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:47:38:662 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="8">config/com/bbb/thirdparty/omniture/scheduler/OmnitureReportScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Any reason for scheduling twice?</Summary>
+    <Description>Will this run second time only when first time the report fail?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IJ0I877B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:53:53:783 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:54:08:511 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="146">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedProductTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>log the params value too</Summary>
+    <Description>logDebug</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IJ0ICPIZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:57:24:155 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:57:50:223 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="750">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedProductTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>logDebug the input parameters</Summary>
+    <Description>startTime</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IJ0IE8H0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:58:35:364 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-04 :: 16:58:56:977 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="414">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedProductTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Are we logdebugging the response VO anywhere?</Summary>
+    <Description>logDebug</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

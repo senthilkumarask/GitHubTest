@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>EDW Profile Data Repository</name>
+	</header>
+	
+	<item-descriptor name="EDWSiteSpectData" display-name-resource="edwInputs" display-property="edwKey">
+	  <attribute name="resourceBundle" value="com.bbb.edwData.BBBEDWProfileDataResources"/>
+		<table name="BBB_EDW_ATTRIBUTES" id-column-name="EDW_ID" type="primary">	
+		 <property name="edwId" data-type="string" column-name="EDW_ID" />
+		 <property name="edwKey" data-type="string" column-name="EDW_KEY" display-name-resource="edwProfileAttributeKey" category-resource="EDW SiteSPect Data Input">
+		  <attribute name="resourceBundle" value="com.bbb.edwData.BBBEDWProfileDataResources"/>
+        		<attribute name="propertySortPriority" value="-1"/>
+		 </property>
+		 
+		<property name="sendToSiteSpect" column-name="SEND_TO_SITESPECT" display-name-resource="requiredInputSiteSpect" data-type="boolean" category-resource="EDW SiteSPect Data Input">
+			<attribute name="resourceBundle" value="com.bbb.edwData.BBBEDWProfileDataResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="sendToTIBCO" column-name="SEND_TO_TIBCO" display-name-resource="requiredInputTIBCO" data-type="boolean" category-resource="EDW SiteSPect Data Input">
+			<attribute name="resourceBundle" value="com.bbb.edwData.BBBEDWProfileDataResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		</table>
+		
+	</item-descriptor>
+</gsa-template>

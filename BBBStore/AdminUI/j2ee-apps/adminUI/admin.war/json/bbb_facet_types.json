@@ -1,0 +1,29 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"facet_id":1009,
+			"description":"Made in..."
+		},
+		{
+			"facet_id":1022,
+			"description":"Bulb type"
+		},
+		{
+			"facet_id":1372,
+			"description":"BPA Free?"
+		},
+		{
+			"facet_id":1710,
+			"description":"Does this item have wheels?"
+		},
+		{
+			"facet_id":8000,
+			"description":"Size"
+		},
+		{
+			"facet_id":9000,
+			"description":"Color"
+		}
+	]
+}

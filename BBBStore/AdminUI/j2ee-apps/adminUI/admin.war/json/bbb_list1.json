@@ -1,0 +1,65 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_id":1,
+			"type_name":"REGISTRY",
+			"sub_type_code":"ANN",
+			"sub_type_name":"Type 1",
+			"display_name":"BBBY List 1",
+			"sequence_num":0,
+			"is_disabled":0,
+			"allow_duplicates":0,
+			"site_flag":"1",
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_id":2,
+			"type_name":"PROMOTIONS",
+			"sub_type_code":"BB",
+			"sub_type_name":"Type 1",
+			"display_name":"BBBY List 2",
+			"sequence_num":1,
+			"is_disabled":0,
+			"allow_duplicates":0,
+			"site_flag":"2",
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_id":3,
+			"type_name":"SERVICES",
+			"sub_type_code":"AAA",
+			"sub_type_name":"Type 1",
+			"display_name":"BBBY List 3",
+			"sequence_num":2,
+			"is_disabled":1,
+			"allow_duplicates":0,
+			"site_flag":"3",
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_id":10,
+			"type_name":"REGISTRY",
+			"sub_type_code":"HSW",
+			"sub_type_name":"Type 1",
+			"display_name":"BBBY List 10",
+			"sequence_num":3,
+			"is_disabled":0,
+			"allow_duplicates":0,
+			"site_flag":"2,3",
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		}
+	]
+}

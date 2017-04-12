@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Navigation Links</name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Navigation Links for Web service -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="navigationLinksWS" cache-mode="simple"
+		display-property="channel" display-name-resource="navigationLinksWS"
+		item-cache-size="50" query-cache-size="50">
+		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+
+		<table name="BBB_WS_NAVIGATION_LINKS" type="primary"
+			id-column-name="nav_link_id">
+
+			<property name="id" column-name="nav_link_id"
+				display-name-resource="nav_link_id" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+			</property>
+			<!-- <property name="sites" column-name="site_id" display-name-resource="siteId" 
+				item-type="siteConfiguration" repository="/atg/multisite/SiteRepository"> 
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/> 
+				<attribute name="propertySortPriority" value="1"/> </property> -->
+			<property name="channel" column-name="channel_id"
+				display-name-resource="channelId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+
+		<table name="BBB_LINKS" type="multi" multi-column-name="sequence_num"
+			id-column-names="nav_link_id">
+			<property name="links" column-name="link_id" data-type="list"
+				display-name-resource="links" component-item-type="links"
+				repository="/com/bbb/cms/repository/WSHomePageTemplate">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+		</table>
+
+		<table name="BBB_SITES" type="multi" id-column-names="nav_link_id">
+			<property name="sites" column-name="site_id"
+				display-name-resource="appSites" component-item-type="siteConfiguration"
+				repository="/atg/multisite/SiteRepository" required="true"
+				data-type="set">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+		</table>		
+
+	</item-descriptor>
+
+</gsa-template>

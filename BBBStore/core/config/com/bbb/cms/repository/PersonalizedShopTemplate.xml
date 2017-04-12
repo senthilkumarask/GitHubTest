@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  <item-descriptor name="personalizedShopPage" display-name-resource="itemDescPersonalizedShopStaticPage"  display-property="pageTitle" cache-mode="simple" item-cache-size="1000" last-modified-property="lastModifiedDate">
+  	<attribute name="updateLastModified" value="true"/>
+  	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+	     <table name="BBB_PERSONALIZED_SHOP_TEMPLATE" type="primary" id-column-names="personalized_shop_id">
+	     	<property name="id" column-name="personalized_shop_id" display-name-resource="personalizedShoptemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        	</property>
+	        <property name="categoryId" column-name="category_id" data-type="String" display-name-resource="categoryId" required="true" category-resource="BasicInfo">
+	             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="1" />
+	            </property>
+	            <property name="pageTitle" column-name="page_title" data-type="String" display-name-resource="pageTitle" required="true" category-resource="BasicInfo">
+	             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+	             <attribute name="propertySortPriority" value="2" />
+	            </property>
+	       
+	            <property name="pageHeaderCopy" column-name="page_header_copy" data-type="big string" display-name-resource="pageHeaderCopy" category-resource="BasicInfo">
+	             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+	             <attribute name="propertySortPriority" value="3" />
+	            </property>
+	            
+	            <property name="pageCopy" column-name="page_copy" data-type="big string" display-name-resource="pageCopy" category-resource="BasicInfo">
+	             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+	             <attribute name="propertySortPriority" value="4" />
+	            </property>
+	            
+	            <property name="bbbPageName" column-name="bbb_page_name" data-type="String" display-name-resource="bbbPageName" category-resource="BasicInfo">
+	             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+	             <attribute name="propertySortPriority" value="5" />
+	            </property>
+	           
+  			<property name="jsFilePath" column-name="js_file_path" display-name-resource="jsFilePath" data-type="string" category-resource="BasicInfo">
+  				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+  			</property>
+  			
+  			<property name="cssFilePath" column-name="css_file_path"  display-name-resource="cssFilePath" data-type="string" category-resource="BasicInfo">
+                   <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+                    <attribute name="propertySortPriority" value="8" />
+            </property>
+             <property name="seoUrl" column-name="seo_url" display-name-resource="seoUrl" data-type="string" category-resource="BasicInfo" >
+  					<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        			<attribute name="propertySortPriority" value="6"/>
+  			</property> 
+  			<property name="seoStaticText" data-type="big string" column-name="seo_static_text" category-resource="BasicInfo" display-name-resource="seoStaticText">
+		        <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+		        <attribute name="propertySortPriority" value="6"/>
+	      	</property>
+			
+  			<property name="channel" column-name="channel" display-name-resource="channel"  default="DesktopWeb" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" /> 
+				<attribute name="propertySortPriority" value="9"/>
+			</property>
+					<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="10"/>
+  			</property>
+	     </table>
+	     <table name="BBB_PERSONALIZED_SHOP_SITE" type="multi" id-column-names="personalized_shop_id">
+            <property name="sites" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="StaticTemplateSites">
+             <attribute name="propertySortPriority" value="11" />
+            </property>
+    	</table>
+    	
+    	<table name="BBB_OMNR_PERSONALIZEDSHOP_DATA" type="multi" id-column-names="personalized_shop_id"
+           multi-column-name="omniture_key">
+        <property name="OmnitureData" column-names="omniture_value" data-type="map" component-data-type="string">
+    	<attribute name="propertySortPriority" value="12"/>
+    	</property>
+    	</table>
+   </item-descriptor>
+</gsa-template>

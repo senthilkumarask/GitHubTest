@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE browse-hierarchy
+  PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Browse Hierarchy//EN"
+  'http://www.atg.com/dtds/toolbar/toolbar_1.0.dtd'>
+
+<toolbar
+    resource-formatter="/atg/remote/multisite/ResourceFormatter">
+
+  
+  <!--      OPERATION MENUS     -->
+  <!-- Operation menus are defined per toolbar scope.  
+       As long as you're "in" one of the scopes
+       you'll see all items in the menu.  
+       Menu items may be disabled by asset type.
+    -->         
+ <operation-menu id="siteOperationMenu">
+    <toolbar-scope asset-area="siteadmin"
+                   pane-id="browse"/>
+    <operation-menu-item id="export" />
+  </operation-menu>
+
+  <!--      OPERATIONS          -->
+  
+  <operation id="export"        label-resource="toolbar.action.label.export"
+                                event="AssetManager.export"
+                                active-for-selected-item-count="ONE-OR-MORE"
+                                shortcut-resource-bundle="ATGResources"
+                                shortcut-resource-key="operation.export.shortcut"
+                                shortcut-modifiers="CTRL"/>
+  
+
+</toolbar>
+<!-- @version $Id: //product/SiteAdmin/version/10.0.3/src/config/atg/remote/multisite/toolbar/SiteAdminToolbar.xml#2 $$Change: 651448 $-->

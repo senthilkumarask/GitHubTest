@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 sp1 (x64) (http://www.altova.com) by Neha (sap) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="product" type="productType">
+		<xs:annotation>
+			<xs:documentation>Main root node</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="productType">
+		<xs:sequence>
+			<xs:element name="productAttributes" type="productDetail" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for product details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="productDetail">
+		<xs:sequence>
+			<xs:element name="ltlFlag" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Is product LTL flag</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>product id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="creationDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>creation date of the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productEnableDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Enable date of the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isGiftCertProduct" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the product a gift certificate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="collection" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the product a collection or a lead sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mediumImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>medium image associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="swatchImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>swatchimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="thumbNailImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="smallImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="largeImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="anywhereZoom" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zoomImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zoomIndex" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="childProductsForCollection" type="childProductType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>product ids of all child products when product is a collection </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="swatchFlag" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>swatch available or not</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productRollupType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>roll up type attributes for the  product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="brand" type="brandsType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>brands for the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productKeywords" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>product keywords</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="productUrl" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>product Url</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="childSkuIds" type="childSkuType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>child sku ids for the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="siteSpecificDetails" type="siteSpecificType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>product attributes that are specific to the site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="siteSpecificType">
+		<xs:sequence>
+			<xs:element name="displayName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>display name of the product </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isActiveProduct" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the product active.enabled for display</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the product </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="longDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>long description associated with the product </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>site id for which the product attributes are valid</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalReviewCount" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>total review count associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="averageOverallRating" type="xs:float" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>average rating associated with the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="priceRangeDescrip" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>price range for the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuLowPrice" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>lowest price for any child sku of the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuHighPrice" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>highest price for any child sku of the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="collegeId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>college id associated with product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="enableDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Stores the Web Enable date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="tier" type="xs:string" minOccurs="1" maxOccurs="1">
+        		<xs:annotation>
+          			<xs:documentation>tier or slot for the margin value</xs:documentation>
+        		</xs:annotation>
+      		</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childProductType">
+		<xs:sequence>
+			<xs:element name="childProductId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>child Product Id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="childRollUpType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for profile details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="likeUnlike" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Like unlike</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childSkuType">
+		<xs:sequence>
+			<xs:element name="childskuId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SkuId for the child sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="brandsType">
+		<xs:sequence>
+			<xs:element name="brandId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>id of the brand</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="brandName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the brand</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="brandDescrip" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the brand</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="brandImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for profile details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="brandDisplay" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>to display the brand or not</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

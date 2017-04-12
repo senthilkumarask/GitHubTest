@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1083">
+  <ReviewIssue id="IQI9ABDW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 12:41:23:492 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 13:39:31:001 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused Import</Summary>
+    <Description>CheckListProgressVO, CheckListTools
+
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQI9CH0P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 12:43:04:105 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 13:33:17:820 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove to do commented code from VO classes</Summary>
+    <Description>CheckListProgressVO
+CheckListVO
+
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQID40F5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 14:28:27:809 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 14:29:57:053 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused code</Summary>
+    <Description>CheckListProgressVO.setCheckListProgressVO()
+
+String siteId = SiteContextManager.getCurrentSiteId();</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIF7KC9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:27:12:825 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:35:51:180 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="160">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add null check for the object fetched from Cache.</Summary>
+    <Description>If in case data is corrupted in cache, we would get a null pointer exception. Add a null check before comparing. We faced the same issue on Brand page when corrupt data was being added to cache in one flow.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIFL7HL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:37:49:353 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:43:01:425 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="164">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fetchRlpFlagFromCache() : change the logic a bit to remove redunded perfromance logging.</Summary>
+    <Description>fetchRlpFlagFromCache() : change the logic a bit to remove redunded perfromance logging.
+
+we can have a variable with the default value HIDE , and set this variable accordingly in all the if blocks. Remove perfromance logging code from  if blocks and move it to the end of the method
+
+BBBPerformanceMonitor.end("CheckListManager", "fetchRlpFlagFromCache()");</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIFXIRX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:47:23:853 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:55:56:015 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>fetchRlpFlagFromRepository</Summary>
+    <Description>change the logic a bit to remove redunded perfromance logging.
+
+we can have a variable with the default value HIDE , and set this variable accordingly in all the if blocks. Remove perfromance logging code from  if blocks and move it to the end of the method</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIGDJIY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:59:51:322 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:08:15:455 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="274">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Variables name should be logical </Summary>
+    <Description>fetchC1ShowFlagForCategoryFromCache () : 
+for (Iterator&lt;String&gt; it = c2CategoryMap.keySet().iterator(); it.hasNext();) 
+
+for (Iterator&lt;String&gt; iterator1 = c3CategoryMap.keySet().iterator(); iterator1.hasNext();) {</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIGLMBN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:06:08:195 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:07:36:706 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="312">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Format the method</Summary>
+    <Description>method defination is in single line , format if block content - in the same line as if block</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIGPUO7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:09:25:639 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:13:45:893 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add loggers at the end of the all the new methods</Summary>
+    <Description>Add loggers at the end of the all the new methods</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIGS1W6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:11:08:310 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:13:39:480 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>add code level comments for the logic in all the methods.</Summary>
+    <Description>Do it for complex logic, don't overdo .</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

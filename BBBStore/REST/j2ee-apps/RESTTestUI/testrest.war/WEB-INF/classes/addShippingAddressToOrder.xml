@@ -1,0 +1,30 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will add shipping address to order</description>
+	<action>/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</action>
+	<params>
+		<param id="atg-rest-depth" required="true" name="atg-rest-depth" class="reqBody" type="text">3</param>
+		<param id="atg-rest-input" required="true" name="atg-rest-input" class="reqBody" type="text">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param id="singleShippingGroupCheckout"  required="true" name="singleShippingGroupCheckout"  class="reqBody" type="text">true</param>
+		<param id="saveShippingAddress" name="saveShippingAddress"  class="reqBody" type="text">true</param>
+		<param id="shipToAddressName" required="true"  name="shipToAddressName" class="reqBody" type="text">true</param>
+		<param id="shippingOption" required="true" name="shippingOption" class="reqBody" type="text">3g</param>
+		<param id="sendShippingConfEmail" name="sendShippingConfEmail" class="reqBody" type="text">true</param>
+		<param id="address.firstName" name="firstName" class="reqBody" type="text">tester</param>
+		<param id="address.lastName" name="lastName" class="reqBody" type="text">tester</param>
+		<param id="address.companyName" name="companyName" class="reqBody" type="text">company</param>
+		<param id="address.address1" name="address1" class="reqBody" type="text">add1</param>
+		<param id="address.address2" name="address2" class="reqBody" type="text">add2</param>
+		<param id="address.city" name="city" class="reqBody" type="text">col</param>
+		<param id="address.state" name="state" class="reqBody" type="text">AL</param>
+		<param id="address.country" name="country" class="reqBody" type="text">US</param>
+		<param id="address.postalCode" name="postalCode" class="reqBody" type="text">89354</param>
+		<param type="text" name="clientID" id="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>
+					
+					
+					
+					

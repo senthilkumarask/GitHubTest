@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>BBB Custom Catalog</name>
+     <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+
+ <item-descriptor name="bccManagedPromotionCategory" >
+		
+		<table name="BBB_PROMO_PROD_ATTRIBUTES" type="multi" id-column-names="category_id"	multi-column-name="seq_number"  shared-table-sequence="1" xml-combine="append">
+		<property name="productAttributes"  xml-combine="remove" >
+    	        
+        	</property>
+			<property name="productAttributes" column-name="PROD_ATTRIBUTE_ID" display-name-resource="productAttributes" data-type="list" component-data-type="string" category-resource="PromotionalBanner" >
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="2"/>
+        	</property>
+		</table>
+				
+    </item-descriptor>
+  </gsa-template>

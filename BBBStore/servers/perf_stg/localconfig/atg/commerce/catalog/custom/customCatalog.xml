@@ -1,0 +1,79 @@
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>BBB Custom Catalog</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+ 
+
+ 
+ <item-descriptor xml-combine="append" name="bbbPrdTranslation" cache-mode="simple" display-property="id" display-name-resource="BBBProductTranslation" last-modified-property="lastModifiedDate">
+ 	<table name="BBB_PROD_SITE_TRANSLATIONS" type="auxiliary" id-column-names="translation_id" xml-combine="remove">
+  		<property name="product" column-names="product_id" item-type="product"  writable="false" queryable="true" hidden="true">
+        </property>
+  	</table>
+ </item-descriptor>
+  
+  
+  
+   
+   <item-descriptor xml-combine="append" name="bbbOtherMedia" cache-mode="simple" display-property="id" display-name-resource="ProdMedia" last-modified-property="lastModifiedDate">
+   
+  		<table name="BBB_PRD_OTHER_MEDIA" type="auxiliary" id-column-names="media_id" xml-combine="remove">
+	  		<property name="product" column-names="product_id" item-type="product" writable="false" queryable="true" hidden="true">
+	        </property>
+	  	</table>	
+   </item-descriptor>
+  
+  
+  
+  <item-descriptor xml-combine="append" name="bbbSKUTranslation" cache-mode="simple" display-property="id"  display-name-resource="SkuTranslation" last-modified-property="lastModifiedDate">
+  	<table name="BBB_SKU_SITE_TRANSLATIONS" type="auxiliary" id-column-names="translation_id" xml-combine="remove">
+  		<property name="sku" column-names="sku_id" item-type="sku"   writable="false" queryable="true" hidden="true">
+        </property>
+  	</table>
+ </item-descriptor>
+  
+  <item-descriptor xml-combine="append" name="bbbskuAttrReln" cache-mode="simple" display-property="id" display-name-resource="SkuAttrReln" last-modified-property="lastModifiedDate">
+  	
+  	<table name="BBB_SKU_ATTR_RELN" type="auxiliary" id-column-names="sku_attr_reln_id" xml-combine="remove">
+  	 	<property name="sku" column-names="sku_id" item-type="sku" writable="false" hidden="true" queryable="true">
+        </property>
+  	</table>
+  	<table name="BBB_PRD_ATTR_RELN" type="auxiliary" id-column-names="prd_attr_reln_id" xml-combine="remove">
+  	 	<property name="product" column-names="product_id" item-type="product" writable="false" hidden="true" queryable="true">
+        </property>
+  	 </table>  	
+  
+  </item-descriptor>
+  
+   
+  
+  
+  
+  <item-descriptor name="attrTransaltion" xml-combine="append" cache-mode="simple" display-property="id" display-name-resource="SKUAttrTranslation" last-modified-property="lastModifiedDate">
+  	
+  	<table name="BBB_SKU_ATR_SITE_TRNSLN" type="auxiliary" id-column-names="translation_id" xml-combine="remove">
+  	 	<property name="sku" column-names="sku_attribute_id" item-type="sku"  writable="false" hidden="true" queryable="true">
+        </property>
+  	</table>
+  </item-descriptor>
+  
+  
+  <item-descriptor name="bbbEcoFeeSKU" cache-mode="simple">
+  	
+  <table name="BBB_SKU_ECO_FEE" type="primary" id-column-name="eco_Fee_reln_id">
+  		<property name="ecoFeeSKU" column-name="eco_fee_sku_id" writable="false" display-name-resource="ecoFeeSKU" item-type="sku" xml-combine="replace" category-resource="BBBEcoFeeSku">
+    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        	<attribute name="propertySortPriority" value="2"/>
+    	</property>
+		<property name="ecoFeeSKUString" column-name="eco_fee_sku_id" display-name-resource="ecoFeeSKUString" data-type="string" xml-combine="append" category-resource="BBBEcoFeeSku">
+    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        	<attribute name="propertySortPriority" value="2"/>
+    	</property>  
+  
+  </table>
+  </item-descriptor>
+ 
+</gsa-template>

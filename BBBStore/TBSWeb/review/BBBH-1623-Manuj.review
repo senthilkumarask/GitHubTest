@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1623">
+  <ReviewIssue id="IM70FYC0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:09:32:688 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:10:48:189 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="12">j2ee-apps/tbs/tbs.war/cart/cartBody.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Optimize line #469 to 489</Summary>
+    <Description>You can optimize the logic by checking for personalizarion first otherwise scene7 otherwise no image found.. you do not need if else for both persoanlization and regular cases</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM70JSV6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:12:32:226 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:14:27:410 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="583">j2ee-apps/tbs/tbs.war/cart/cartBody.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Will this logic work fine when katori turned off?</Summary>
+    <Description>As per my understanding we just disable Edit persoanlization link when Katori is disabled but as per you logic it wont even show persoanlization details, price, edit and remove links also, is n't it? We may need to fix this logic</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM70OE3Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:16:06:374 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:16:20:630 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="82">j2ee-apps/tbs/tbs.war/cart/minicart_order_items.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Optimize the logic</Summary>
+    <Description>You can optimize the logic by checking for personalizarion first otherwise scene7 otherwise no image found.. you do not need if else for both persoanlization and regular cases</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM70R700">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:18:17:136 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:18:43:309 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="540">j2ee-apps/tbs/tbs.war/cart/ajax_handler_cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Optimize the logic</Summary>
+    <Description>You can optimize the logic by checking for personalizarion first otherwise scene7 otherwise no image found.. you do not need if else for both persoanlization and regular cases</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM70WVVN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:22:42:659 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-24 :: 21:23:26:149 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="608">j2ee-apps/tbs/tbs.war/cart/ajax_handler_cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Check the logic whether it works fine when Katori is turned off</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

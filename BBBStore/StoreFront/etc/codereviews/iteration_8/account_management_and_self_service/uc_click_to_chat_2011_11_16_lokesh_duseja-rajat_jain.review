@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_click_to_chat_2011_11_16_lokesh_duseja">
+  <ReviewIssue id="GVBJTRLJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 05:11:47:383 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 21:27:46:127 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="85">j2ee-apps/BBBStore/store.war/selfservice/click_to_chat.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>All Error Messages Should Come From CMS</Summary>
+    <Description>Even for front end validations the idea is to have all the error message come from CMS. Can you check on this with Praveen once to see what should be the consisten approach across the project for this?</Description>
+    <Annotation></Annotation>
+    <Revision>Made the required changes</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBJVD3P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 05:13:01:909 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 21:27:29:462 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="90">j2ee-apps/BBBStore/store.war/selfservice/click_to_chat.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Chat Target Url Should Not Be HardCoded And Should Be Per Site</Summary>
+    <Description>The Chat Url should not be hard coded. It can come from Repository or the Environment Variables Framework.
+Currently chat is just on bedbathandbeyond.com but in future the requirement is to have this on all the sites, it can be turned on/off though.
+Therefore we should implement the link to be configurable and also per site.</Description>
+    <Annotation></Annotation>
+    <Revision>Resolved - now getting this from site repository extension table BBB_CHAT_ATTRIBUTES</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBL45RT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 05:47:51:929 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 21:26:41:461 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="83">j2ee-apps/BBBStore/store.war/selfservice/click_to_chat.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Missing Validations For FirstName/LastName/Email Fields</Summary>
+    <Description>I am not seeing any validations on these per the SS BRD Section 15 Annotations B,C &amp; D (it refers to AM BRD for rules).
+Those validations should be performed on these fields, just checking for blank is not sufficient.
+
+I like the idea of keeping this all at client side and not posting back to server, but still validations should be done on client side then.</Description>
+    <Annotation></Annotation>
+    <Revision>These validation are to be done on client side, sitedev will include these validations when they deliver final JSP</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVBLA5AH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 05:52:31:241 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 21:25:52:570 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/click_to_chat.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>W3C Validation Failed 2 Errors, 13 warning(s) </Summary>
+    <Description>On trying to validate the page source of the modal for W3C Validation Errors I got - 2 Errors, 13 warning(s).
+Please go to http://validator.w3.org/check and verify this. These errors should be fixed.</Description>
+    <Annotation></Annotation>
+    <Revision>Not received the final JSP from sitedev</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

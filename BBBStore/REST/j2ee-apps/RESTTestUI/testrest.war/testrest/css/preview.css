@@ -1,0 +1,299 @@
+
+@font-face {
+    font-family: 'FuturaStdHeavy';
+    src: url('../fonts/futura_std/futurastd_heavy_bbb.eot');
+    src: url('../fonts/futura_std/futurastd_heavy_bbb.eot?#iefix') format('embedded-opentype'), url('../fonts/futura_std/futurastd_heavy_bbb.woff') format('woff'), url('../fonts/futura_std/futurastd_heavy_bbb.ttf') format('truetype'), url('../fonts/futura_std/futurastd_heavy_bbb.otf') format('opentype'), url('../fonts/futura_std/futurastd_heavy_bbb.svg#FuturaStdHeavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuturaStdHeavy';
+    src: url('../fonts/futura_std/futurastd_heavyoblique_bbb.eot');
+    src: url('../fonts/futura_std/futurastd_heavyoblique_bbb.eot?#iefix') format('embedded-opentype'), url('../fonts/futura_std/futurastd_heavyoblique_bbb.woff') format('woff'), url('../fonts/futura_std/futurastd_heavyoblique_bbb.ttf') format('truetype'), url('../fonts/futura_std/futurastd_heavyoblique_bbb.otf') format('opentype'), url('../fonts/futura_std/futurastd_heavyoblique_bbb.svg#FuturaStdHeavy') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+.button,.button input, .button a {
+    display:block;
+    height:31px;
+    cursor: pointer;
+    overflow: hidden;
+    background: url('../images/button-primary-31px.png') top right no-repeat;
+}
+.button {
+    position: relative;
+    float:left;
+    display: inline;
+    padding-left: 6px;
+    background-position: -494px -173px;
+}
+.button input, .button a, .button a:visited {
+    border: none;
+    padding-left: 4px;
+    padding-right:12px;
+    margin-bottom: 4px;
+    background-position:right -3px;
+    color:#273691;
+    font-size: 14px;
+    font-family: "FuturaStdHeavy", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow:visible;
+    width:auto;
+}
+.button a {
+    padding-top:6px;
+}
+.button_active,
+.button:hover {
+    background-position: -494px -207px;
+}
+.button_active input, .button_active a, .button_active a:visited,
+.button:hover input, .button:hover a,
+.button:active input, .button:active a {
+    background-position:right -37px;
+    color: #FFF !important;
+    text-decoration: none !important;
+}
+.button_active input, .button_active a, .button_active a:visited {
+    font-weight: bold !important;
+}
+.button:active {
+    background-position: -494px -241px;
+}
+.button:active input, .button:active a {
+    background-position: right -71px;
+}
+.button_disabled{
+    background-position:-494px -309px !important; 
+}
+.button_disabled input, .button_disabled a,
+.button_disabled:hover input, .button_disabled:hover a,
+.button_disabled:active input, .button_disabled:active a{
+    background-position: right -139px !important;
+    color: #BBB !important;
+}
+
+#header {
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #00AEF0;
+}
+#header a {
+    margin-left: 20px;
+}
+#content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.boxWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eeeeee;
+}
+.boxShadow {
+    -ms-box-shadow: 5px -5px 15px rgba(204, 204, 204, 0.3),
+                    -5px 5px 15px rgba(204, 204, 204, 0.3),
+                    -5px -5px 15px rgba(204, 204, 204, 0.3),
+                    5px 5px 15px rgba(204, 204, 204, 0.3);
+    -moz-box-shadow: 5px -5px 15px rgba(204, 204, 204, 0.3),
+                    -5px 5px 15px rgba(204, 204, 204, 0.3),
+                    -5px -5px 15px rgba(204, 204, 204, 0.3),
+                    5px 5px 15px rgba(204, 204, 204, 0.3);
+    -webkit-box-shadow: 05px -5px 15px rgba(204, 204, 204, 0.3),
+                    -5px 5px 15px rgba(204, 204, 204, 0.3),
+                    -5px -5px 15px rgba(204, 204, 204, 0.3),
+                    5px 5px 15px rgba(204, 204, 204, 0.3);
+    box-shadow: 5px -5px 15px rgba(204, 204, 204, 0.3),
+                -5px 5px 15px rgba(204, 204, 204, 0.3),
+                -5px -5px 15px rgba(204, 204, 204, 0.3),
+                5px 5px 15px rgba(204, 204, 204, 0.3);
+}
+#footer {
+    background-color: #273691;
+    color:#fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'FuturaStdHeavy';
+    font-size: 30px;
+    color:#273691;
+    padding: 0 0 0 0;
+    letter-spacing:-0.8px
+}
+h2 {
+    font-family: 'FuturaStdBook';
+    font-size: 25px;
+    color:#273691;
+    padding: 0 0 0 0;
+}
+h3 {
+    margin:0;
+    font-family: 'FuturaStdHeavy';
+    font-size:21px;
+    color:#444444;
+    font-weight:normal
+}
+h5 {
+    margin:0;
+    font-family: 'FuturaStdHeavy';
+    font-size:17px;
+    color:#444444;
+    font-weight:normal
+}
+h6 {
+    margin:0;
+    font-family: 'FuturaStdHeavy';
+    font-size:16px;
+    color:#444444;
+    font-weight:normal
+}
+body {
+    color:#666666;
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+label {
+    font-family: Arial;
+    color:#666666;
+    font-size:12px;
+}
+input[type=text], input[type=password] {
+    border: none;
+    height:20px;
+    color: #594D43;
+    font-family: Arial;
+    font-size: 14px;
+    border: 2px solid #CFCFCF;
+    float: left;
+}
+.input .label .required {
+    color: #00aeef;
+}
+input.error {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+.radioItem{ border: 0 none;
+    float: left;
+    padding-bottom: 0;}
+label.error {
+    color: #ff0000;
+}
+.btnSubmit {
+    margin-top: 40px;
+}
+a.timer, a.calendar {
+    background: url("../images/calendar.png") left top no-repeat;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    width: 24px;
+    height: 24px;
+}
+a.timer { 
+    background:url("../images/clock.png") left top no-repeat;
+}
+
+/*** helper classes and style rules start ***/
+/*** #### most usable on cms pages and popup/modal window content) #### ***/
+.bold { font-weight: bold !important; }
+.normal { font-weight: normal !important;}
+.italic, .italics { font-style: italic !important; }
+.underline { text-decoration: underline !important; }
+.overline { text-decoration: overline !important; }
+.strike { text-decoration: line-through !important; }
+.textLeft { text-align: left !important; }
+.textRight { text-align: right !important; }
+.textCenter { text-align: center !important; }
+.upperCase, .allCaps { text-transform: uppercase !important; }
+.capitalize, .wordCaps { text-transform: capitalize !important; }
+.lowerCase, .noCaps { text-transform: lowercase !important; }
+.marAuto { display: block !important; margin: 0 auto !important; }
+.noMar { margin: 0 !important; }
+.noMarLeft { margin-left: 0 !important; }
+.noMarRight { margin-right: 0 !important; }
+.noMarBot { margin-bottom: 0 !important; }
+.noMarTop { margin-top: 0 !important; }
+.marLeft_5 { margin-left: 5px !important; }
+.marLeft_10 { margin-left: 10px !important; }
+.marLeft_20 { margin-left: 20px !important; }
+.marLeft_25 { margin-left: 25px !important; }
+.marTop_5 { margin-top: 5px !important; }
+.marTop_10 { margin-top: 10px !important; }
+.marTop_20 { margin-top: 20px !important; }
+.marTop_25 { margin-top: 25px !important; }
+.marRight_5 { margin-right: 5px !important; }
+.marRight_10 { margin-right: 10px !important; }
+.marRight_20 { margin-right: 20px !important; }
+.marRight_25 { margin-right: 25px !important; }
+.marBottom_5 { margin-bottom: 5px !important; }
+.marBottom_10 { margin-bottom: 10px !important; }
+.marBottom_20 { margin-bottom: 20px !important; }
+.marBottom_25 { margin-bottom: 25px !important; }
+.marLef_10 { margin-left: 10px !important; } /* needs correction ... part of already delivered jsps will change later */
+.noPad { padding: 0 !important; }
+.noPadLeft { padding-left: 0 !important; }
+.noPadRight { padding-right: 0 !important; }
+.noPadBot { padding-bottom: 0 !important; }
+.noPadTop { padding-top: 0 !important; }
+.padLeft_5 { padding-left: 5px !important; }
+.padLeft_10 { padding-left: 10px !important; }
+.padLeft_20 { padding-left: 20px !important; }
+.padLeft_25 { padding-left: 25px !important; }
+.padTop_5 { padding-top: 5px !important; }
+.padTop_10 { padding-top: 10px !important; }
+.padTop_20 { padding-top: 20px !important; }
+.padTop_25 { padding-top: 25px !important; }
+.padRight_5 { padding-right: 5px !important; }
+.padRight_10 { padding-right: 10px !important; }
+.padRight_20 { padding-right: 20px !important; }
+.padRight_25 { padding-right: 25px !important; }
+.padBottom_5 { padding-bottom: 5px !important; }
+.padBottom_10 { padding-bottom: 10px !important; }
+.padBottom_20 { padding-bottom: 20px !important; }
+.padBottom_25 { padding-bottom: 25px !important; }
+.noBorder { border: 0 !important; border-collapse: collapse !important; }
+.noBorderLeft { border-left: 0 !important; }
+.noBorderRight { border-right: 0 !important; }
+.noBorderBot { border-bottom: 0 !important; }
+.noBorderTop { border-top: 0 !important; }
+.noBG { background: transparent !important; }
+.noOverflow { overflow: hidden !important; }
+.topMost { z-index: 2147483647 !important; }
+.botMost { z-index: 0 !important; }
+.posRel { position: relative !important; }
+.posFix { position: fixed !important; }
+.posAbs { position: absolute !important; }
+.posLeft { left: 0 !important; }
+.posRight { right: 0 !important; }
+.posBot { bottom: 0 !important; }
+.posTop { top: 0 !important; }
+.posBotLeft { bottom: 0 !important; left: 0 !important; }
+.posBotRight { bottom: 0 !important; right: 0 !important; }
+.posTopLeft { top: 0 !important; left: 0 !important; }
+.posTopRight { top: 0 !important; right: 0 !important; }
+.fl { float: left !important; }
+.fr { float: right !important; }
+.cl { clear: left !important; }
+.cr { clear: right !important; }
+.cb { clear: both !important; }
+.cf { float: none !important; }
+.block { display: block !important; }
+.inline { display: inline !important; }
+.hidden { display: none !important; }
+.invisible, #themeWrapper .invisible, body .invisible, .invisible *, #themeWrapper .invisible *, body .invisible * { visibility: hidden !important; }
+.smallText { font-size: 10px !important; color: #666; }
+.customeError { display: inline !important; }
+.marTopNeg_24 { margin-top: -24px !important}
+.red { color:#ff0000; }
+.offScreen { position: absolute !important; top: -10000000px !important; left: -10000000px !important; visibility: hidden !important; }
+.widAuto { width: auto !important; }
+.capitalize { text-transform: capitalize; }
+/*** helper classes and style rules end ***/

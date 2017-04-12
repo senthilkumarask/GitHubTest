@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Envoy_Rquest_5thJune">
+  <ReviewIssue id="HW3GW668">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 17:56:37:760 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 17:57:30:552 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Use Http Connection Pool to get HTTP Connection for submitting Request</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3H2UB8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:01:48:980 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:02:36:009 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Use HTTP Connection Pool to get connection object.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3HG9QE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:12:15:494 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:13:16:127 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Check if PO Box Flag can be set as hard coded FALSE</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3I1N8L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:28:52:773 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:29:58:637 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>calculateIPRange | Change variable name "i" should be more meaningfull</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3I350G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:30:02:464 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:30:40:907 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Do Not change base "Exception" </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3I44HW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:30:48:452 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:31:06:247 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>calculateIPRange | Do Not catch base "Exception". </Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3I5V7D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:32:09:721 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:32:22:857 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Remove | // TODO: Auto-generated Javadoc</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3IAV8I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:36:03:042 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:39:40:712 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Remove Hard Coding in createJSONObject</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

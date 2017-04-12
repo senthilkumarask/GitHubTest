@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-3934">
+  <ReviewIssue id="IR2H5PPQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 16:17:09:230 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 16:17:30:843 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smelam</ReviewerId>
+    <AssignedTo>smelam</AssignedTo>
+    <File line="64">src/com/bbb/pipeline/SetVendorSearchParamServlet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>I already gave review on this code to use proper variable name etc, please refer that .review file</Summary>
+    <Description>lParameter</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

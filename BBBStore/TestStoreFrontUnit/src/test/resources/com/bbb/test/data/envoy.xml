@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<message>
+    <header/>
+    <payload>
+        <setCheckoutSessionRequest>
+            <domesticSession merchantId="4883">
+                <domesticBasket>
+                    <basketItems>
+                        <basketItem sku="16387096">
+                            <quantity>1</quantity>
+                            <pricing>
+                                <listPrice>59.99</listPrice>
+                                <itemDiscount>0.0</itemDiscount>
+                                <salePrice>59.99</salePrice>
+                                <productExtraShipping>0.0</productExtraShipping>
+                                <productExtraHandling>0.0</productExtraHandling>
+                            </pricing>
+                            <display>
+                                <name>Noritake&#174; Colorwave Rim Platter in Mustard</name>
+                                <description>A splash of color can create a wave of excitement at the dinner table. Ultra-modern stoneware sports a matte mustard glaze on the rim of the dinner and salad plates and exteriors of the bowl and mug.</description>
+                                <productUrl>http://bedbathandbeyond.com:7003/store/product/noritake-reg-colorwave-rim-platter-in-mustard/1016387096?skuId=16387096</productUrl>
+                                <imageUrl>https://s7d9.scene7.com/is/image/BedBathandBeyond/45673116387096p?$75$</imageUrl>
+                                <color>MUSTARD</color>
+                                <size>12.5&quot;</size>
+                            </display>
+                        </basketItem>
+                    </basketItems>
+                    <basketTotal>
+                        <totalSalePrice>59.99</totalSalePrice>
+                        <orderDiscount>0.0</orderDiscount>
+                        <totalProductExtraShipping>0.0</totalProductExtraShipping>
+                        <totalProductExtraHandling>0.0</totalProductExtraHandling>
+                        <totalPrice>59.99</totalPrice>
+                    </basketTotal>
+                    <customData>Channel:D_BFREE,TaxExemptID:100982885,DataCenter:DC1-bbb_prod</customData>
+                </domesticBasket>
+                <domesticShippingMethod>
+                    <domesticShippingPrice>9.99</domesticShippingPrice>
+                    <domesticHandlingPrice>0.0</domesticHandlingPrice>
+                    <extraInsurancePrice>0.0</extraInsurancePrice>
+                    <deliveryPromiseMinimum>3</deliveryPromiseMinimum>
+                    <deliveryPromiseMaximum>7</deliveryPromiseMaximum>
+                </domesticShippingMethod>
+                <sessionDetails>
+                    <buyerSessionId>ZQ8pVSPJ28BBjNYh8TD24vkzQpJv5zpKlnCJFZZycj61DYQSWtDc!1142003329!1431441204708</buyerSessionId>
+                    <buyerIpAddress>127.0.0.1</buyerIpAddress>
+                    <checkoutUrls>
+                        <successUrl>https://bedbathandbeyond.com/store/checkoutSuccess?fraudState=success&amp;orderId=5056830011&amp;merchantOrderId=BBB3000623004&amp;countryCode=AU&amp;currencyCode=AUD&amp;orderTotal=82.80</successUrl>
+                        <pendingUrl>https://bedbathandbeyond.com/store/checkoutPending?fraudState=pending&amp;orderId=5056830011&amp;merchantOrderId=BBB3000623004&amp;countryCode=AU&amp;currencyCode=AUD&amp;orderTotal=82.80</pendingUrl>
+                        <failureUrl>https://bedbathandbeyond.com/store/checkoutFailure?fraudState=failure&amp;orderId=5056830011&amp;merchantOrderId=BBB3000623004&amp;countryCode=AU&amp;currencyCode=AUD&amp;orderTotal=82.80</failureUrl>
+                        <basketUrl>http://bedbathandbeyond.com:7003/store/cart</basketUrl>
+                        <usCartStartPageUrl>http://bedbathandbeyond.com:7003/store/cart</usCartStartPageUrl>
+                        <paymentUrls>
+                            <payPalUrls>
+                                <returnUrl>https://bedbathandbeyond.com/store/paypalReturn</returnUrl>
+                                <cancelUrl>https://bedbathandbeyond.com/store/paypalCancel</cancelUrl>
+                                <headerLogoUrl>https://bedbathandbeyond.com/_assets/global/images/logo/logo_bbb.png</headerLogoUrl>
+                            </payPalUrls>
+                        </paymentUrls>
+                    </checkoutUrls>
+                </sessionDetails>
+                <orderProperties>
+                    <currencyQuoteId>40743582</currencyQuoteId>
+                    <merchantOrderId>BBB3000623004</merchantOrderId>
+                    <merchantOrderRef>5056830011</merchantOrderRef>
+                </orderProperties>
+            </domesticSession>
+            <buyerSession>
+                <shipToAddress isReadOnly="false" isPoBox="false">
+                    <countryCode>AU</countryCode>
+                </shipToAddress>
+                <buyerPreferences>
+                    <language></language>
+                    <buyerCurrency>AUD</buyerCurrency>
+                </buyerPreferences>
+            </buyerSession>
+        </setCheckoutSessionRequest>
+    </payload>
+</message>

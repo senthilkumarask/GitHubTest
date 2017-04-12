@@ -1,0 +1,1098 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestBBBCatalogImportManager.java test 
+	case HISTORY: Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+		<!-- <group id="testImportData"> <test id="testImportData_test1"> <objs> 
+			<obj id="manager" type="import com.bbb.importprocess.manager.BBBCatalogImportManager" 
+			hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager"> 
+			<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item> 
+			</obj> </objs> <asserts> <assert id="status" type="java.lang.String" action="isEqual">CLOSED</assert> 
+			</asserts> </test> </group> -->
+		<group id="testCategoryImportData">
+
+			<test id="testCategoryImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12316</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">12316</assert>
+
+				</asserts>
+			</test>
+			<test id="testCategoryImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12316</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isNotEqual">12317</assert>
+
+				</asserts>
+			</test>
+				<test id="testCategoryImportData_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12317</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">12317</assert>
+
+				</asserts>
+			</test>	
+		</group>
+		<group id="testCatSubCatAssociationImportData">
+
+			<test id="testCatSubCatAssociationImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">10559</obj>
+					<obj id="childCategoryId" type="string">12223</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatSubCatAssociationImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">10560</obj>
+					<obj id="childCategoryId" type="string">12226</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testCatSubCatAssociationImportData_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">10559</obj>
+					<obj id="childCategoryId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatSubCatAssociationImportData_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">22</obj>
+					<obj id="childCategoryId" type="string">12223</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatSubCatAssociationImportData_test5">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">10559</obj>
+					<obj id="childCategoryId" type="string">33</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			
+		</group>
+		<group id="testCatRootCatAssociationImportData">
+
+			<test id="testCatRootCatAssociationImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="childCategoryId" type="string">20001</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatRootCatAssociationImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="childCategoryId" type="string">20001</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+				<test id="testCatRootCatAssociationImportData_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="childCategoryId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatRootCatAssociationImportData_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="childCategoryId" type="string">11</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+				
+		</group>
+		<group id="testCatProdAssociationImportData">
+
+			<test id="testCatProdAssociationImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12140</obj>
+					<obj id="childProductId" type="string">1018024934</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatProdAssociationImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12355</obj>
+					<obj id="childProductId" type="string">1018883341</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testCatProdAssociationImportData_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">12140</obj>
+					<obj id="childProductId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testCatProdAssociationImportData_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="categoryId" type="string">22</obj>
+					<obj id="childProductId" type="string">1018024934</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean"
+						action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+		</group>
+		<group id="testItemImportData">
+
+			<test id="testItemImportData_sku_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1001</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="itemId" type="string">17866214</obj>
+					<obj id="isProduct" type="boolean">false</obj>
+					<obj id="isFrequent" type="boolean">true</obj>
+					<obj id="isRare" type="boolean">true</obj>
+
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">17866214</assert>
+
+				</asserts>
+			</test>
+			<test id="testItemImportData_sku_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1001</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="itemId" type="string">11</obj>
+					<obj id="isProduct" type="boolean">false</obj>
+					<obj id="isFrequent" type="boolean">true</obj>
+					<obj id="isRare" type="boolean">true</obj>
+
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isNotEqual">110563</assert>
+
+				</asserts>
+			</test>
+			<test id="testItemImportData_product_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1001</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="itemId" type="string">1018101432</obj>
+					<obj id="isProduct" type="boolean">true</obj>
+					<obj id="isFrequent" type="boolean">true</obj>
+					<obj id="isRare" type="boolean">true</obj>
+
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">1018101432</assert>
+
+				</asserts>
+			</test>
+				<test id="testItemImportData_product_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1001</obj>
+					<obj id="siteId" type="string">1</obj>
+					<obj id="itemId" type="string">123</obj>
+					<obj id="isProduct" type="boolean">true</obj>
+					<obj id="isFrequent" type="boolean">false</obj>
+					<obj id="isRare" type="boolean">true</obj>
+
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isNotEqual">17866214</assert>
+
+				</asserts>
+			</test>
+			
+				
+		</group>
+		<group id="testPricingImportData">
+
+			<test id="testPricingImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="skuId" type="string">13771022</obj>
+					<obj id="priceListId" type="string">plist100002</obj>
+				</objs>
+				<asserts>
+					<assert id="testResultPrice" type="java.lang.Double" action="isEqual">4.00</assert>
+
+				</asserts>
+			</test>
+			
+			</group>
+		<group id="testRebateImportData">
+	<test id="testRebateImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="rebateId" type="string">457</obj>
+				</objs>
+				<asserts>
+
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">457</assert>
+				</asserts>
+			</test>
+			<test id="testRebateImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="rebateId" type="string">457</obj>
+				</objs>
+				<asserts>
+
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isNotEqual">121</assert>
+				</asserts>
+			</test>
+		
+		</group>
+		<group id="testAttributesImportData">
+
+			<test id="testAttributesImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="attributeId" type="string">1</obj>
+					<obj id="valueId" type="string">125</obj>
+				</objs>
+				<asserts>
+
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">1_125</assert>
+				</asserts>
+			</test>
+			
+			
+		</group>
+		<group id="testMediaImportData">
+
+			<test id="testMediaImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="mediaId" type="string">1165</obj>
+				</objs>
+				<asserts>
+
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isEqual">1165</assert>
+				</asserts>
+			</test>
+			<test id="testMediaImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="mediaId" type="string">1165</obj>
+				</objs>
+				<asserts>
+
+					<assert id="resultRepositoryId" type="java.lang.String"
+						action="isNotEqual">121</assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testRebateRelnSku">
+
+			<test id="testRebateRelnSku_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="skuId" type="string">12370997</obj>
+					<obj id="childRebateId" type="string">491</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+
+			<test id="testRebateRelnSku_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="skuId" type="string">12370997</obj>
+					<obj id="childRebateId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testRebateRelnSku_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="skuId" type="string">null</obj>
+					<obj id="childRebateId" type="string">491</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+		
+		<test id="testRebateRelnSku_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="skuId" type="string">12370997</obj>
+					<obj id="childRebateId" type="string">470</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			
+		</group>
+		<group id="testAttributesRelnWithSku">
+
+			<test id="testAttributesRelnWithSku_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="skuId" type="string">18111497</obj>
+					<obj id="attributeId" type="string">1</obj>
+					<obj id="valueId" type="string">4</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testAttributesRelnWithSku_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="skuId" type="string">null</obj>
+					<obj id="attributeId" type="string">1</obj>
+					<obj id="valueId" type="string">4</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testAttributesRelnWithSku_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="skuId" type="string">18111497</obj>
+					<obj id="attributeId" type="string">null</obj>
+					<obj id="valueId" type="string">4</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			<test id="testAttributesRelnWithSku_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="skuId" type="string">11</obj>
+					<obj id="attributeId" type="string">1</obj>
+					<obj id="valueId" type="string">4</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testAttributesRelnWithSku_test5">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="skuId" type="string">18111497</obj>
+					<obj id="attributeId" type="string">300003</obj>
+					<obj id="valueId" type="string">4</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+		</group>
+			<group id="testProductTabRelnProduct">
+
+			<test id="testProductTabRelnProduct_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">112837</obj>
+					<obj id="childProductTabId" type="string">112837_1</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+		
+			<test id="testProductTabRelnProduct_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">112837</obj>
+					<obj id="childProductTabId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testProductTabRelnProduct_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">11</obj>
+					<obj id="childProductTabId" type="string">112837_1</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+		</group>
+			<group id="testMediaRelnWithProduct">
+
+			<test id="testMediaRelnWithProduct_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">1018605252</obj>
+					<obj id="childMediaId" type="string">1241</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isTrue">true</assert>
+
+				</asserts>
+			</test>
+		
+			<test id="testMediaRelnWithProduct_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">null</obj>
+					<obj id="childMediaId" type="string">1241</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+				<test id="testMediaRelnWithProduct_test3">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">1018605252</obj>
+					<obj id="childMediaId" type="string">null</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+				<test id="testMediaRelnWithProduct_test4">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">11</obj>
+					<obj id="childMediaId" type="string">1241</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+				<test id="testMediaRelnWithProduct_test5">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+
+					<obj id="productId" type="string">1018605252</obj>
+					<obj id="childMediaId" type="string">11</obj>
+				</objs>
+				<asserts>
+					<assert id="containsAssociation" type="java.lang.Boolean" action="isFalse">false</assert>
+
+				</asserts>
+			</test>
+		
+		</group> 
+	<group id="testDeptImportData">
+
+			<test id="testDeptImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="id" type="string">380</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">380</assert>
+
+				</asserts>
+			</test>
+			<test id="testDeptImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1</obj>
+					<obj id="id" type="string">50</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isNotEqual">50</assert>
+
+				</asserts>
+			</test>
+		</group>
+		
+		<group id="testSkuThresholdImportData">
+
+			<test id="testSkuThresholdImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="jdaDeptId" type="string">380</obj>
+					<obj id="jdaSubDeptId" type="string">330</obj>
+					<obj id="skuId" type="string">3333</obj>
+					<obj id="classId" type="string">10</obj>
+					   
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">380_330_10_3333</assert>
+
+				</asserts>
+			</test>
+			<test id="testSkuThresholdImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="jdaDeptId" type="string">380</obj>
+					<obj id="jdaSubDeptId" type="string">330</obj>
+					<obj id="skuId" type="string">3333</obj>
+					<obj id="classId" type="string">10</obj>
+					   
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isNotEqual">380_10_10_50</assert>
+
+				</asserts>
+			</test>
+		</group>
+		<group id="testBrandImportData">
+
+			<test id="testBrandImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="brandId" type="string">592</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">592</assert>
+
+				</asserts>
+			</test>
+			<test id="testBrandImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="brandId" type="string">592</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isNotEqual">10</assert>
+
+				</asserts>
+			</test>
+		</group>
+		
+			<group id="testSubDeptImportData">
+
+			<test id="testSubDeptImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="deptId" type="string">705</obj>
+					<obj id="subDeptId" type="string">330</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">705_330</assert>
+
+				</asserts>
+			</test>
+		</group>
+		
+		<group id="testClassImportData">
+
+			<test id="testClassImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="classId" type="string">605</obj>
+					<obj id="deptId" type="string">105</obj>
+					<obj id="subDeptId" type="string">100</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">105:100:605</assert>
+
+				</asserts>
+			</test>
+			<test id="testClassImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">10</obj>
+					<obj id="classId" type="string">500</obj>
+					<obj id="deptId" type="string">200</obj>
+					<obj id="subDeptId" type="string">60</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isNotEqual">100:50:200</assert>
+
+				</asserts>
+			</test>
+	
+		</group>
+		
+		<group id="testSEOImportData">
+
+			<test id="testSEOImportData_test1">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1</obj>
+					<obj id="seoTagId" type="string">32246</obj>
+					<obj id="displayName" type="string">Category Creation</obj>
+					<obj id="title" type="string">Category</obj>
+					<obj id="description" type="string">Category Creation</obj>
+					<obj id="keywords" type="string">CATA</obj>
+					<obj id="contentKey" type="string"></obj>
+					<obj id="isTranslation" type="boolean">false</obj>
+					<obj id="babTitle" type="string"></obj>
+					<obj id="caTitle" type="string"></obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">32246</assert>
+
+				</asserts>
+			</test>
+			
+			<test id="testSEOImportData_test2">
+				<objs>
+					<obj id="manager"
+						type="import com.bbb.importprocess.manager.BBBCatalogImportManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.catalog.TestBBBCatalogImportManager">
+						<item type="string">/com/bbb/importprocess/catalog/BBBCatalogImportManager</item>
+					</obj>
+					<obj id="feedId" type="string">1</obj>
+					<obj id="seoTagId" type="string">17463705</obj>
+					<obj id="displayName" type="string">Product Creation</obj>
+					<obj id="title" type="string">Product</obj>
+					<obj id="description" type="string">Product Creation</obj>
+					<obj id="keywords" type="string">BUYPRODC</obj>
+					<obj id="contentKey" type="string"></obj>
+					<obj id="isTranslation" type="boolean">true</obj>
+					<obj id="babTitle" type="string">babtitle</obj>
+					<obj id="caTitle" type="string">catitle</obj>
+				</objs>
+				<asserts>
+					<assert id="resultRepositoryId" type="java.lang.String"	action="isEqual">17463705</assert>
+
+				</asserts>
+			</test>
+		</group>
+
+	
+	</cluster>
+</ddtunit>

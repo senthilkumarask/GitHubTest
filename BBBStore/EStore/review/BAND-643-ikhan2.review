@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-643">
+  <ReviewIssue id="I2611ZRW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-06 :: 16:54:48:092 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-06 :: 16:57:17:201 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Vijay</AssignedTo>
+    <File line="7900">versioned/catalog/src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>It seems we are overwriting previously persisted flags</Summary>
+    <Description>You are setting flags for every site and making false for other than input pPIMSiteList</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

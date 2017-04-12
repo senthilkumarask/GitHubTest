@@ -1,0 +1,1592 @@
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:15:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:17:	Avoid variables with short names like FS
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:17:	The field name indicates a constant but its modifiers do not
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:17:	Variables should start with a lowercase character, 'FS' starts with uppercase character.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:18:	Avoid excessively long variable names like ASSIGN_MERCHANT_KEY_TRAN
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:19:	Variables that are final and static should be all capitals, 'stMID' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:20:	Variables that are final and static should be all capitals, 'stTID' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:21:	Variables that are final and static should be all capitals, 'stDID' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:22:	Variables that are final and static should be all capitals, 'svcid' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:23:	Variables that are final and static should be all capitals, 'AppID' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:26:	Variables that are final and static should be all capitals, 'sdList' is not all capitals.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:34:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:35:	Comment is too large: Line too long
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:37:	System.out.print is used
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:41:	Local variable 'mid' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:42:	Local variable 'workKeyID' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:43:	Avoid excessively long variable names like encryptedWorkingKey
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:43:	Local variable 'encryptedWorkingKey' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:46:	Local variable 'mid' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:47:	Local variable 'workKeyID' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:48:	Avoid excessively long variable names like encryptedWorkingKey
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:48:	Local variable 'encryptedWorkingKey' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:54:	Avoid excessively long variable names like encryptedWorkingKey
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:55:	Local variable 'version' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:58:	Local variable 'strPayload' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:62:	System.out.print is used
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:64:	Local variable 'payload' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:64:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:74:	Local variable 'vxn' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:76:	Local variable 'ttttttt' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:77:	Avoid variables with short names like tr
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:77:	Local variable 'tr' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:84:	Comment is too large: Line too long
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:86:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:91:	System.out.print is used
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:92:	System.out.print is used
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:94:	Local variable 'strT' could be declared final
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:97:	System.out.print is used
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:102:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/AssignWorkingKeyTransaction.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:3:	Avoid unused imports such as 'java.util.List'
+src/com/bbb/valuelink/BBBAppRegistration.java:4:	Avoid unused imports such as 'java.util.StringTokenizer'
+src/com/bbb/valuelink/BBBAppRegistration.java:10:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/valuelink/BBBAppRegistration.java:10:	The class 'BBBAppRegistration' has a Cyclomatic Complexity of 7 (Highest = 17).
+src/com/bbb/valuelink/BBBAppRegistration.java:12:	Found 'UR'-anomaly for variable 's' (lines '12'-'62').
+src/com/bbb/valuelink/BBBAppRegistration.java:12:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:12:	The method 'main' has a Cyclomatic Complexity of 17.
+src/com/bbb/valuelink/BBBAppRegistration.java:12:	The method main() has an NPath complexity of 2562
+src/com/bbb/valuelink/BBBAppRegistration.java:14:	Found 'DD'-anomaly for variable 'mid' (lines '14'-'24').
+src/com/bbb/valuelink/BBBAppRegistration.java:14:	Found 'DD'-anomaly for variable 'mid' (lines '14'-'43').
+src/com/bbb/valuelink/BBBAppRegistration.java:14:	Found 'DU'-anomaly for variable 'mid' (lines '14'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:15:	Found 'DD'-anomaly for variable 'tid' (lines '15'-'25').
+src/com/bbb/valuelink/BBBAppRegistration.java:15:	Found 'DD'-anomaly for variable 'tid' (lines '15'-'47').
+src/com/bbb/valuelink/BBBAppRegistration.java:15:	Found 'DU'-anomaly for variable 'tid' (lines '15'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:16:	Found 'DD'-anomaly for variable 'svcid' (lines '16'-'26').
+src/com/bbb/valuelink/BBBAppRegistration.java:16:	Found 'DD'-anomaly for variable 'svcid' (lines '16'-'51').
+src/com/bbb/valuelink/BBBAppRegistration.java:16:	Found 'DU'-anomaly for variable 'svcid' (lines '16'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:17:	Found 'DD'-anomaly for variable 'appID' (lines '17'-'27').
+src/com/bbb/valuelink/BBBAppRegistration.java:17:	Found 'DD'-anomaly for variable 'appID' (lines '17'-'55').
+src/com/bbb/valuelink/BBBAppRegistration.java:17:	Found 'DU'-anomaly for variable 'appID' (lines '17'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:19:	Found 'DU'-anomaly for variable 'sdUrls' (lines '19'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:19:	Local variable 'sdUrls' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:19:	Unnecessary use of fully qualified name 'java.util.List' due to existing import 'java.util.List'
+src/com/bbb/valuelink/BBBAppRegistration.java:20:	System.out.print is used
+src/com/bbb/valuelink/BBBAppRegistration.java:22:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/BBBAppRegistration.java:23:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:24:	Found 'DD'-anomaly for variable 'mid' (lines '24'-'43').
+src/com/bbb/valuelink/BBBAppRegistration.java:24:	Found 'DU'-anomaly for variable 'mid' (lines '24'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:25:	Found 'DD'-anomaly for variable 'tid' (lines '25'-'47').
+src/com/bbb/valuelink/BBBAppRegistration.java:25:	Found 'DU'-anomaly for variable 'tid' (lines '25'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:26:	Found 'DD'-anomaly for variable 'svcid' (lines '26'-'51').
+src/com/bbb/valuelink/BBBAppRegistration.java:26:	Found 'DU'-anomaly for variable 'svcid' (lines '26'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:27:	Found 'DD'-anomaly for variable 'appID' (lines '27'-'55').
+src/com/bbb/valuelink/BBBAppRegistration.java:27:	Found 'DU'-anomaly for variable 'appID' (lines '27'-'99').
+src/com/bbb/valuelink/BBBAppRegistration.java:29:	Local variable 'mode' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:38:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/BBBAppRegistration.java:42:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:46:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:50:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:54:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:58:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/BBBAppRegistration.java:59:	Local variable 'allUrls' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:61:	Avoid variables with short names like s
+src/com/bbb/valuelink/BBBAppRegistration.java:61:	Local variable 's' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:62:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:69:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/BBBAppRegistration.java:83:	Local variable 'srs' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:88:	Local variable 'did' could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:90:	System.out.print is used
+src/com/bbb/valuelink/BBBAppRegistration.java:97:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/BBBAppRegistration.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/BBBAppRegistration.java:101:	Parameter 'str' is not assigned and could be declared final
+src/com/bbb/valuelink/BBBAppRegistration.java:102:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/BBBAppRegistration.java:102:	String.trim().length()==0 is an inefficient way to validate an empty String.
+src/com/bbb/valuelink/BBBAppRegistration.java:103:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/BBBAppRegistration.java:109:	System.out.print is used
+src/com/bbb/valuelink/ValueLinkClient.java:14:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkClient.java:25:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkClientImpl.java:1:	Possible God class (WMC=70, ATFD=104, TCC=0.015151515151515152)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:25:	The class 'ValueLinkClientImpl' has a Cyclomatic Complexity of 6 (Highest = 23).
+src/com/bbb/valuelink/ValueLinkClientImpl.java:28:	Field INVOKE has the same name as a method
+src/com/bbb/valuelink/ValueLinkClientImpl.java:29:	Avoid excessively long variable names like VALUELINKCLIENTIMPL
+src/com/bbb/valuelink/ValueLinkClientImpl.java:29:	It is somewhat confusing to have a field name matching the declaring class name
+src/com/bbb/valuelink/ValueLinkClientImpl.java:30:	Avoid excessively long variable names like DOTIMEREVERSALCALL
+src/com/bbb/valuelink/ValueLinkClientImpl.java:30:	Field DOTIMEREVERSALCALL has the same name as a method
+src/com/bbb/valuelink/ValueLinkClientImpl.java:31:	Avoid using redundant field initializer for 'vxn'
+src/com/bbb/valuelink/ValueLinkClientImpl.java:31:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:41:	Avoid really long methods.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:41:	The method 'invoke' has a Cyclomatic Complexity of 17.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:41:	The method invoke() has an NPath complexity of 1732
+src/com/bbb/valuelink/ValueLinkClientImpl.java:49:	Found 'DD'-anomaly for variable 'uniqueTransID' (lines '49'-'78').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:51:	Found 'DU'-anomaly for variable 'response' (lines '51'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:52:	Found 'DD'-anomaly for variable 'errorFlag' (lines '52'-'153').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:56:	Found 'DD'-anomaly for variable 'vxnDID' (lines '56'-'67').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:56:	Found 'DU'-anomaly for variable 'vxnDID' (lines '56'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:57:	Found 'DD'-anomaly for variable 'vxnMID' (lines '57'-'68').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:57:	Found 'DU'-anomaly for variable 'vxnMID' (lines '57'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:58:	Found 'DD'-anomaly for variable 'vxnTID' (lines '58'-'69').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:58:	Found 'DU'-anomaly for variable 'vxnTID' (lines '58'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:59:	Found 'DD'-anomaly for variable 'svcID' (lines '59'-'70').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:59:	Found 'DU'-anomaly for variable 'svcID' (lines '59'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:60:	Found 'DD'-anomaly for variable 'appID' (lines '60'-'71').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:60:	Found 'DU'-anomaly for variable 'appID' (lines '60'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:61:	Found 'DD'-anomaly for variable 'primaryURL' (lines '61'-'72').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:62:	Found 'DD'-anomaly for variable 'secondryURL' (lines '62'-'74').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:63:	Found 'DD'-anomaly for variable 'requestPayload' (lines '63'-'76').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:64:	Found 'DD'-anomaly for variable 'callType' (lines '64'-'80').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:64:	Found 'DU'-anomaly for variable 'callType' (lines '64'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:66:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/valuelink/ValueLinkClientImpl.java:66:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:66:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:66:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:66:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:67:	Found 'DU'-anomaly for variable 'vxnDID' (lines '67'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:68:	Found 'DU'-anomaly for variable 'vxnMID' (lines '68'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:69:	Found 'DU'-anomaly for variable 'vxnTID' (lines '69'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:70:	Found 'DU'-anomaly for variable 'svcID' (lines '70'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:71:	Found 'DU'-anomaly for variable 'appID' (lines '71'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:80:	Found 'DU'-anomaly for variable 'callType' (lines '80'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:86:	Found 'DD'-anomaly for variable 'respPayload' (lines '86'-'139').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:86:	Found 'DU'-anomaly for variable 'respPayload' (lines '86'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:92:	Found 'DD'-anomaly for variable 'payload' (lines '92'-'94').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:106:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkClientImpl.java:119:	Avoid variables with short names like tr
+src/com/bbb/valuelink/ValueLinkClientImpl.java:135:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:135:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:136:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:139:	Found 'DU'-anomaly for variable 'respPayload' (lines '139'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:153:	Found 'DU'-anomaly for variable 'errorFlag' (lines '153'-'180').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:156:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/valuelink/ValueLinkClientImpl.java:182:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkClientImpl.java:191:	The method 'doTimeReversalCall' has a Cyclomatic Complexity of 23.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:191:	The method doTimeReversalCall() has an NPath complexity of 36492
+src/com/bbb/valuelink/ValueLinkClientImpl.java:199:	Found 'DD'-anomaly for variable 'responsePayLoad' (lines '199'-'241').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:199:	Found 'DU'-anomaly for variable 'responsePayLoad' (lines '199'-'288').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:200:	Found 'DD'-anomaly for variable 'isCanceled' (lines '200'-'274').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:200:	Found 'DU'-anomaly for variable 'isCanceled' (lines '200'-'288').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:211:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/ValueLinkClientImpl.java:214:	Avoid excessively long variable names like timeReversalCallCode
+src/com/bbb/valuelink/ValueLinkClientImpl.java:217:	Avoid excessively long variable names like originalTransCodeSeparator
+src/com/bbb/valuelink/ValueLinkClientImpl.java:220:	Avoid excessively long variable names like timeReversalPayload
+src/com/bbb/valuelink/ValueLinkClientImpl.java:233:	Found 'DD'-anomaly for variable 'retry' (lines '233'-'252').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:236:	Found 'DD'-anomaly for variable 'trSuccess' (lines '236'-'244').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:236:	Found 'DD'-anomaly for variable 'trSuccess' (lines '236'-'247').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:242:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:242:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:244:	Found 'DD'-anomaly for variable 'trSuccess' (lines '244'-'247').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:250:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:250:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:250:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:250:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:252:	Found 'DD'-anomaly for variable 'retry' (lines '252'-'256').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:254:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:254:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:254:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:254:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:263:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:264:	These nested if statements could be combined
+src/com/bbb/valuelink/ValueLinkClientImpl.java:270:	Prefer StringBuffer over += for concatenating strings
+src/com/bbb/valuelink/ValueLinkClientImpl.java:274:	Found 'DU'-anomaly for variable 'isCanceled' (lines '274'-'288').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:302:	Found 'DD'-anomaly for variable 'valid' (lines '302'-'315').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:302:	Found 'DU'-anomaly for variable 'valid' (lines '302'-'332').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:312:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:313:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:313:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:314:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:314:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientImpl.java:314:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:314:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:340:	The method 'preInvoke' has a Cyclomatic Complexity of 14.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:340:	The method preInvoke() has an NPath complexity of 6144
+src/com/bbb/valuelink/ValueLinkClientImpl.java:343:	Found 'DD'-anomaly for variable 'vxndid' (lines '343'-'356').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:344:	Found 'DD'-anomaly for variable 'vxnmid' (lines '344'-'357').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:344:	Found 'DU'-anomaly for variable 'vxnmid' (lines '344'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:345:	Found 'DD'-anomaly for variable 'vxntid' (lines '345'-'358').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:345:	Found 'DU'-anomaly for variable 'vxntid' (lines '345'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:346:	Found 'DD'-anomaly for variable 'svcID' (lines '346'-'359').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:346:	Found 'DU'-anomaly for variable 'svcID' (lines '346'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:347:	Found 'DD'-anomaly for variable 'appID' (lines '347'-'360').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:347:	Found 'DU'-anomaly for variable 'appID' (lines '347'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:348:	Found 'DD'-anomaly for variable 'primaryURL' (lines '348'-'361').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:348:	Found 'DU'-anomaly for variable 'primaryURL' (lines '348'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:349:	Found 'DD'-anomaly for variable 'secondryURL' (lines '349'-'363').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:349:	Found 'DU'-anomaly for variable 'secondryURL' (lines '349'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:350:	Found 'DD'-anomaly for variable 'balanceAPIPayload' (lines '350'-'365').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:350:	Found 'DU'-anomaly for variable 'balanceAPIPayload' (lines '350'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:351:	Found 'DD'-anomaly for variable 'uniqueTransID' (lines '351'-'367').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:351:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '351'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:352:	Found 'DD'-anomaly for variable 'requestPayload' (lines '352'-'369').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:352:	Found 'DU'-anomaly for variable 'requestPayload' (lines '352'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:353:	Found 'DD'-anomaly for variable 'callType' (lines '353'-'371').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:353:	Found 'DU'-anomaly for variable 'callType' (lines '353'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:355:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/valuelink/ValueLinkClientImpl.java:355:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:355:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:355:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:355:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:357:	Found 'DU'-anomaly for variable 'vxnmid' (lines '357'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:358:	Found 'DU'-anomaly for variable 'vxntid' (lines '358'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:359:	Found 'DU'-anomaly for variable 'svcID' (lines '359'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:360:	Found 'DU'-anomaly for variable 'appID' (lines '360'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:361:	Found 'DU'-anomaly for variable 'primaryURL' (lines '361'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:363:	Found 'DU'-anomaly for variable 'secondryURL' (lines '363'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:365:	Found 'DU'-anomaly for variable 'balanceAPIPayload' (lines '365'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:367:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '367'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:369:	Found 'DU'-anomaly for variable 'requestPayload' (lines '369'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:371:	Found 'DU'-anomaly for variable 'callType' (lines '371'-'419').
+src/com/bbb/valuelink/ValueLinkClientImpl.java:425:	Avoid excessively long variable names like pValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkClientImpl.java:437:	Avoid excessively long variable names like mTimeRevSuccessCodes
+src/com/bbb/valuelink/ValueLinkClientImpl.java:443:	Avoid excessively long variable names like pTimeReversalRetry
+src/com/bbb/valuelink/ValueLinkClientImpl.java:448:	Avoid excessively long variable names like mTimeRevSuccessCodes
+src/com/bbb/valuelink/ValueLinkClientImpl.java:448:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:448:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:448:	Use explicit scoping instead of the default package private level
+src/com/bbb/valuelink/ValueLinkClientImpl.java:449:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:450:	Avoid excessively long variable names like mTimeReversalRetry
+src/com/bbb/valuelink/ValueLinkClientImpl.java:450:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:450:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:451:	Avoid excessively long variable names like mValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkClientImpl.java:451:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkClientImpl.java:451:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:17:	The class 'ValueLinkClientMockImpl' has a Cyclomatic Complexity of 6 (Highest = 18).
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:20:	Avoid excessively long variable names like mValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:20:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:32:	Avoid really long methods.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:32:	Found 'UR'-anomaly for variable 'string' (lines '32'-'97').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:32:	The method 'invoke' has a Cyclomatic Complexity of 18.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:32:	The method invoke() has an NPath complexity of 1008
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:40:	Found 'DD'-anomaly for variable 'errorFlag' (lines '40'-'141').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:40:	Found 'DU'-anomaly for variable 'errorFlag' (lines '40'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:43:	Avoid unused local variables such as 'vxnDID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:43:	Found 'DD'-anomaly for variable 'vxnDID' (lines '43'-'55').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:43:	Found 'DU'-anomaly for variable 'vxnDID' (lines '43'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:44:	Avoid unused local variables such as 'vxnMID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:44:	Found 'DD'-anomaly for variable 'vxnMID' (lines '44'-'56').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:44:	Found 'DU'-anomaly for variable 'vxnMID' (lines '44'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:45:	Avoid unused local variables such as 'vxnTID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:45:	Found 'DD'-anomaly for variable 'vxnTID' (lines '45'-'57').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:45:	Found 'DU'-anomaly for variable 'vxnTID' (lines '45'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:46:	Avoid unused local variables such as 'svcID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:46:	Found 'DD'-anomaly for variable 'svcID' (lines '46'-'58').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:46:	Found 'DU'-anomaly for variable 'svcID' (lines '46'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:47:	Avoid unused local variables such as 'appID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:47:	Found 'DD'-anomaly for variable 'appID' (lines '47'-'59').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:47:	Found 'DU'-anomaly for variable 'appID' (lines '47'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:48:	Avoid unused local variables such as 'primaryURL'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:48:	Found 'DD'-anomaly for variable 'primaryURL' (lines '48'-'60').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:48:	Found 'DU'-anomaly for variable 'primaryURL' (lines '48'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:49:	Avoid unused local variables such as 'secondryURL'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:49:	Found 'DD'-anomaly for variable 'secondryURL' (lines '49'-'62').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:49:	Found 'DU'-anomaly for variable 'secondryURL' (lines '49'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:50:	Found 'DD'-anomaly for variable 'requestPayload' (lines '50'-'64').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:51:	Avoid unused local variables such as 'uniqueTransID'.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:51:	Found 'DD'-anomaly for variable 'uniqueTransID' (lines '51'-'66').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:51:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '51'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:52:	Found 'DD'-anomaly for variable 'callType' (lines '52'-'68').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:54:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:54:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:54:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:54:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:54:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:55:	Found 'DU'-anomaly for variable 'vxnDID' (lines '55'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:56:	Found 'DU'-anomaly for variable 'vxnMID' (lines '56'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:57:	Found 'DU'-anomaly for variable 'vxnTID' (lines '57'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:58:	Found 'DU'-anomaly for variable 'svcID' (lines '58'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:59:	Found 'DU'-anomaly for variable 'appID' (lines '59'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:60:	Found 'DU'-anomaly for variable 'primaryURL' (lines '60'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:62:	Found 'DU'-anomaly for variable 'secondryURL' (lines '62'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:66:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '66'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:75:	Found 'DD'-anomaly for variable 'respPayload' (lines '75'-'121').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:75:	Found 'DD'-anomaly for variable 'respPayload' (lines '75'-'135').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:75:	Found 'DU'-anomaly for variable 'respPayload' (lines '75'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:93:	Avoid variables with short names like FS
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:94:	Do not add empty strings
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:94:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:95:	Found 'DD'-anomaly for variable 'giftCardNo' (lines '95'-'98').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:95:	Found 'DU'-anomaly for variable 'giftCardNo' (lines '95'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:98:	Found 'DD'-anomaly for variable 'giftCardNo' (lines '98'-'98').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:98:	Found 'DU'-anomaly for variable 'giftCardNo' (lines '98'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:102:	Avoid using final local variables, turn them into fields
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:102:	Found 'DU'-anomaly for variable 'success_status' (lines '102'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:103:	Avoid using final local variables, turn them into fields
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:103:	Found 'DU'-anomaly for variable 'error_status' (lines '103'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:104:	Found 'DD'-anomaly for variable 'status' (lines '104'-'112').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:104:	Found 'DD'-anomaly for variable 'status' (lines '104'-'114').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:104:	Found 'DU'-anomaly for variable 'status' (lines '104'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:106:	Avoid using final local variables, turn them into fields
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:106:	Found 'DU'-anomaly for variable 'mid' (lines '106'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:107:	Avoid using final local variables, turn them into fields
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:107:	Found 'DU'-anomaly for variable 'tid' (lines '107'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:111:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:111:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:114:	Found 'DU'-anomaly for variable 'status' (lines '114'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:118:	Avoid excessively long variable names like mockGetBalanceResponse
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:121:	Found 'DD'-anomaly for variable 'respPayload' (lines '121'-'135').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:121:	Found 'DU'-anomaly for variable 'respPayload' (lines '121'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:126:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:126:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:129:	Comment is too large: Line too long
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:130:	Comment is too large: Line too long
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:132:	Avoid excessively long variable names like mockRedeemResponse
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:135:	Found 'DU'-anomaly for variable 'respPayload' (lines '135'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:141:	Found 'DU'-anomaly for variable 'errorFlag' (lines '141'-'165').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:145:	New exception is thrown in catch block, original stack trace may be lost
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:146:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:147:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:150:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:152:	New exception is thrown in catch block, original stack trace may be lost
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:167:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:183:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:186:	Avoid excessively long variable names like timeReversalCallCode
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:189:	Avoid excessively long variable names like originalTransCodeSeparator
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:189:	Found 'DU'-anomaly for variable 'originalTransCodeSeparator' (lines '189'-'220').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:200:	Avoid excessively long variable names like timeReversalPayload
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:228:	The method 'preInvoke' has a Cyclomatic Complexity of 14.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:228:	The method preInvoke() has an NPath complexity of 6144
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:231:	Found 'DD'-anomaly for variable 'vxndid' (lines '231'-'244').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:232:	Found 'DD'-anomaly for variable 'vxnmid' (lines '232'-'245').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:232:	Found 'DU'-anomaly for variable 'vxnmid' (lines '232'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:233:	Found 'DD'-anomaly for variable 'vxntid' (lines '233'-'246').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:233:	Found 'DU'-anomaly for variable 'vxntid' (lines '233'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:234:	Found 'DD'-anomaly for variable 'svcID' (lines '234'-'247').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:234:	Found 'DU'-anomaly for variable 'svcID' (lines '234'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:235:	Found 'DD'-anomaly for variable 'appID' (lines '235'-'248').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:235:	Found 'DU'-anomaly for variable 'appID' (lines '235'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:236:	Found 'DD'-anomaly for variable 'primaryURL' (lines '236'-'249').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:236:	Found 'DU'-anomaly for variable 'primaryURL' (lines '236'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:237:	Found 'DD'-anomaly for variable 'secondryURL' (lines '237'-'251').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:237:	Found 'DU'-anomaly for variable 'secondryURL' (lines '237'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:238:	Found 'DD'-anomaly for variable 'balanceAPIPayload' (lines '238'-'253').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:238:	Found 'DU'-anomaly for variable 'balanceAPIPayload' (lines '238'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:239:	Found 'DD'-anomaly for variable 'uniqueTransID' (lines '239'-'255').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:239:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '239'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:240:	Found 'DD'-anomaly for variable 'requestPayload' (lines '240'-'257').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:240:	Found 'DU'-anomaly for variable 'requestPayload' (lines '240'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:241:	Found 'DD'-anomaly for variable 'callType' (lines '241'-'259').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:241:	Found 'DU'-anomaly for variable 'callType' (lines '241'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:243:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:243:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:243:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:243:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:243:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:245:	Found 'DU'-anomaly for variable 'vxnmid' (lines '245'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:246:	Found 'DU'-anomaly for variable 'vxntid' (lines '246'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:247:	Found 'DU'-anomaly for variable 'svcID' (lines '247'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:248:	Found 'DU'-anomaly for variable 'appID' (lines '248'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:249:	Found 'DU'-anomaly for variable 'primaryURL' (lines '249'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:251:	Found 'DU'-anomaly for variable 'secondryURL' (lines '251'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:253:	Found 'DU'-anomaly for variable 'balanceAPIPayload' (lines '253'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:255:	Found 'DU'-anomaly for variable 'uniqueTransID' (lines '255'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:257:	Found 'DU'-anomaly for variable 'requestPayload' (lines '257'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:259:	Found 'DU'-anomaly for variable 'callType' (lines '259'-'307').
+src/com/bbb/valuelink/ValueLinkClientMockImpl.java:321:	Avoid excessively long variable names like pValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:16:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:30:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:30:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:35:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:47:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:47:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:52:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:62:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:62:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:67:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:77:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:77:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:82:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:92:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:92:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:97:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessor.java:101:	Avoid modifiers which are implied by the context
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1:	Possible God class (WMC=136, ATFD=245, TCC=0.028225806451612902)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:17:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:27:	Avoid really long classes.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:27:	The class 'ValueLinkGiftCardProcessorImpl' has a Cyclomatic Complexity of 4 (Highest = 33).
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:28:	This class has too many methods, consider refactoring it.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:33:	Field PROCESSRESPONSE has the same name as a method
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:38:	Avoid excessively long variable names like CREATEREQSUGGESTEDFLD
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:39:	Avoid excessively long variable names like CRREQPAYLOADREQUIREDFLD
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:40:	Avoid excessively long variable names like CRREQPAYLOADHEADER
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:46:	Avoid variables with short names like FS
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:50:	Avoid excessively long variable names like mValueLinkEncryptor
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:50:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:52:	Avoid excessively long variable names like mValueLinkGiftCardValidation
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:52:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:54:	Avoid excessively long variable names like mValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:54:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:58:	Avoid excessively long variable names like mValueLinkBlankValue
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:58:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:62:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:66:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:71:	Avoid excessively long variable names like mReqBodySUGGESTEDFields
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:71:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:76:	Avoid excessively long variable names like mReqBodyOPTIONALFields
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:76:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:79:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:91:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:91:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:91:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:92:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:92:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:92:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:96:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:97:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '97'-'108').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:98:	Found 'DD'-anomaly for variable 'isCanceled' (lines '98'-'113').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:104:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:113:	Found 'DU'-anomaly for variable 'isCanceled' (lines '113'-'134').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:136:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:154:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:154:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:154:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:155:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:155:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:155:	Parameter 'pRedemptionAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:156:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:160:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:161:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '161'-'172').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:162:	Found 'DD'-anomaly for variable 'isCanceled' (lines '162'-'176').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:167:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:167:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:168:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:176:	Found 'DU'-anomaly for variable 'isCanceled' (lines '176'-'199').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:201:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:212:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:212:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:212:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:213:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:213:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:213:	Parameter 'pRedemptionAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:214:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:218:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:219:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '219'-'231').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:220:	Found 'DD'-anomaly for variable 'isCanceled' (lines '220'-'235').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:225:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:226:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:235:	Found 'DU'-anomaly for variable 'isCanceled' (lines '235'-'257').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:259:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:270:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:270:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:270:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:271:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:271:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:271:	Parameter 'pRedemptionAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:272:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:276:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '276'-'282').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:278:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:289:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:300:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:300:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:301:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:301:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:301:	Parameter 'pRedemptionAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:302:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:302:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:307:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '307'-'313').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:309:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:322:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:334:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:334:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:335:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:335:	Parameter 'pVLInputs' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:340:	Found 'DD'-anomaly for variable 'balanceResPayload' (lines '340'-'347').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:347:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:349:	Local variable 'giftCardBeanInfo' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:357:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:414:	Avoid excessively long variable names like pBalanceResPayload
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:414:	Avoid really long methods.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:414:	Found 'UR'-anomaly for variable 'field' (lines '414'-'459').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:414:	The method 'processResponse' has a Cyclomatic Complexity of 27.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:414:	The method processResponse() has an NPath complexity of 11615
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:420:	Found 'DD'-anomaly for variable 'giftCardBeanInfo' (lines '420'-'457').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:421:	Found 'DD'-anomaly for variable 'isCanceled' (lines '421'-'562').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:422:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:429:	Found 'DD'-anomaly for variable 'timeReversal' (lines '429'-'434').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:430:	Local variable 'response' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:430:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:438:	Local variable 'balanaceResHeader' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:438:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:442:	Local variable 'balanaceResBody' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:442:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:451:	Found 'DD'-anomaly for variable 'responseFields' (lines '451'-'453').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:452:	Deeply nested if..then statements are hard to read
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:453:	Do not add empty strings
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:453:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:458:	Local variable 'field' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:459:	Deeply nested if..then statements are hard to read
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:460:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:461:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:466:	Local variable 'resCodeArr' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:470:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:470:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:472:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:476:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:483:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:484:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:487:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:490:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:491:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:493:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:493:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:493:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:494:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:494:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:496:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:496:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:496:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:500:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:501:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:503:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:503:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:503:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:504:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:504:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:506:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:511:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:515:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:516:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:518:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:518:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:519:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:523:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:524:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:526:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:526:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:527:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:531:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:532:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:534:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:534:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:535:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:539:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:540:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:542:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:542:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:543:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:554:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:562:	Found 'DU'-anomaly for variable 'isCanceled' (lines '562'-'582').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:584:	Parameter 'balanceResPayload' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:589:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:602:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:602:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:603:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:603:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:603:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:604:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:604:	Parameter 'pRedeemAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:604:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:607:	Found 'DD'-anomaly for variable 'isCanceled' (lines '607'-'629').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:608:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:609:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:609:	Local variable 'mVLInputs' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:615:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:615:	Local variable 'reqPayLoad' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:617:	Local variable 'requestPayLoad' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:621:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:625:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:629:	Found 'DU'-anomaly for variable 'isCanceled' (lines '629'-'649').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:659:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:663:	Avoid excessively long variable names like siteSpecificConfigType
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:663:	Local variable 'siteSpecificConfigType' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:675:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:685:	Parameter 'pVLInputs' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:686:	Parameter 'pPaymentGroupId' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:686:	Parameter 'pSite' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:695:	Found 'DD'-anomaly for variable 'isCanceled' (lines '695'-'723').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:696:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:700:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:702:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:702:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:707:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:709:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:709:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:714:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:716:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:723:	Found 'DU'-anomaly for variable 'isCanceled' (lines '723'-'742').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:744:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:792:	Avoid really long methods.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:792:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:792:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:793:	Avoid excessively long variable names like pValueLinkSiteKeys
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:793:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:793:	Parameter 'pPinNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:793:	Parameter 'pValueLinkSiteKeys' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:794:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:794:	Parameter 'pRedeemAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:799:	Found 'DD'-anomaly for variable 'isCanceled' (lines '799'-'873').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:800:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:801:	Found 'DD'-anomaly for variable 'requestPayLoad' (lines '801'-'868').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:812:	Local variable 'siteSpecific' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:812:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:815:	Found 'DD'-anomaly for variable 'mid' (lines '815'-'825').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:815:	Found 'DU'-anomaly for variable 'mid' (lines '815'-'893').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:817:	Local variable 'requestBuffer' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:819:	Avoid excessively long variable names like commonValueLinkKeys
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:819:	Found 'DU'-anomaly for variable 'commonValueLinkKeys' (lines '819'-'893').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:819:	Local variable 'commonValueLinkKeys' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:819:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:825:	Found 'DU'-anomaly for variable 'mid' (lines '825'-'893').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:825:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:827:	Local variable 'requestHeader' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:827:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:831:	Local variable 'requestBody' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:831:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:835:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:844:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:849:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:855:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:861:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:868:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:873:	Found 'DU'-anomaly for variable 'isCanceled' (lines '873'-'893').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:895:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:904:	Avoid really long methods.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:904:	The method 'createRequestPayloadBodyOptionalFields' has a Cyclomatic Complexity of 33.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:904:	The method createRequestPayloadBodyOptionalFields() has an NPath complexity of 1102253
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:905:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:905:	Parameter 'siteSpecific' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:906:	Parameter 'pinNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:906:	Parameter 'requestBody' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:909:	Local variable 'requestBuffer' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:910:	Local variable 'isCanceled' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:911:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:915:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:915:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:922:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:925:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:938:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:941:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:954:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:957:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:970:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:977:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:982:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:987:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1000:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1003:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1016:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1021:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1034:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1037:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1050:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1051:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1051:	These nested if statements could be combined
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1056:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1070:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1073:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1086:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1089:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1102:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1103:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1105:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1106:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1108:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1108:	These nested if statements could be combined
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1111:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1139:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1149:	The method 'createRequestPayloadBodySuggestedFields' has a Cyclomatic Complexity of 13.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1150:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1150:	Parameter 'pSiteSpecific' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1151:	Parameter 'pOrderID' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1151:	Parameter 'pRequestBody' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1153:	Local variable 'requestBuffer' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1154:	Local variable 'isCanceled' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1155:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1159:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1159:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1165:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1175:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1178:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1191:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1192:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1194:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1195:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1197:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1197:	These nested if statements could be combined
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1202:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1230:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1243:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1244:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1244:	Parameter 'pGiftCardNo' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1244:	Parameter 'pRedeemAmount' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1245:	Parameter 'mid' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1245:	Parameter 'requestBody' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1246:	Avoid excessively long variable names like commonValueLinkKeys
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1246:	Parameter 'commonValueLinkKeys' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1252:	Local variable 'requestBuffer' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1253:	Local variable 'isCanceled' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1254:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1281:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1289:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1290:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1292:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1293:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1321:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1332:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1332:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1332:	Parameter 'pRequestHeader' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1333:	Avoid excessively long variable names like pCommonValueLinkKeys
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1333:	Parameter 'pCommonValueLinkKeys' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1339:	Local variable 'requestBuffer' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1341:	Local variable 'isCanceled' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1342:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1348:	Local variable 'transReqCodeVal' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1384:	Avoid excessively long variable names like commonValueLinkKeys
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1384:	Parameter 'commonValueLinkKeys' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1384:	Parameter 'pCallType' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1389:	Found 'DD'-anomaly for variable 'value' (lines '1,389'-'1,398').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1389:	Found 'DD'-anomaly for variable 'value' (lines '1,389'-'1,402').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1389:	Found 'DD'-anomaly for variable 'value' (lines '1,389'-'1,406').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1389:	Found 'DD'-anomaly for variable 'value' (lines '1,389'-'1,410').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1389:	Found 'DD'-anomaly for variable 'value' (lines '1,389'-'1,414').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1390:	Local variable 'isCanceled' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1391:	Local variable 'methodName' could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1397:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1398:	Found 'DD'-anomaly for variable 'value' (lines '1,398'-'1,402').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1398:	Found 'DD'-anomaly for variable 'value' (lines '1,398'-'1,406').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1398:	Found 'DD'-anomaly for variable 'value' (lines '1,398'-'1,410').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1398:	Found 'DD'-anomaly for variable 'value' (lines '1,398'-'1,414').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1401:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1402:	Found 'DD'-anomaly for variable 'value' (lines '1,402'-'1,406').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1402:	Found 'DD'-anomaly for variable 'value' (lines '1,402'-'1,410').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1402:	Found 'DD'-anomaly for variable 'value' (lines '1,402'-'1,414').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1405:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1406:	Found 'DD'-anomaly for variable 'value' (lines '1,406'-'1,410').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1406:	Found 'DD'-anomaly for variable 'value' (lines '1,406'-'1,414').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1409:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1410:	Found 'DD'-anomaly for variable 'value' (lines '1,410'-'1,414').
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1413:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1442:	Parameter 'pValueLinkClient' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1457:	Parameter 'pBBBCatalogTools' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1472:	Avoid excessively long variable names like pReqBodySUGGESTEDFields
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1472:	Parameter 'pReqBodySUGGESTEDFields' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1488:	Avoid excessively long variable names like pReqBodyOPTIONALFields
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1488:	Parameter 'pReqBodyOPTIONALFields' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1503:	Avoid excessively long variable names like pValueLinkBlankValue
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1503:	Parameter 'pValueLinkBlankValue' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1519:	Avoid excessively long variable names like pValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1519:	Parameter 'pValueLinkGiftCardUtil' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1534:	Avoid excessively long variable names like pValueLinkEncryptor
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1534:	Parameter 'pValueLinkEncryptor' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1549:	Avoid excessively long variable names like pValueLinkGiftCardValidation
+src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java:1549:	Parameter 'pValueLinkGiftCardValidation' is not assigned and could be declared final
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:27:	Found 'DD'-anomaly for variable 'flag' (lines '27'-'30').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:29:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:29:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:49:	Found 'DD'-anomaly for variable 'response' (lines '49'-'66').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:50:	Found 'DD'-anomaly for variable 'strOne' (lines '50'-'52').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:81:	Found 'DD'-anomaly for variable 'indexJ' (lines '81'-'83').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:83:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:94:	Comment is too large: Line too long
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:102:	Found 'DD'-anomaly for variable 'dollorCentAmount' (lines '102'-'107').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:105:	Found 'DD'-anomaly for variable 'amount' (lines '105'-'106').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:107:	Found 'DD'-anomaly for variable 'dollorCentAmount' (lines '107'-'110').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:124:	Found 'DD'-anomaly for variable 'bigDec' (lines '124'-'125').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:137:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:137:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:139:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:139:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:139:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:139:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:154:	Found 'UR'-anomaly for variable 'c' (lines '154'-'164').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:163:	Avoid variables with short names like c
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:172:	Comment is too large: Line too long
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:180:	Found 'DD'-anomaly for variable 'array' (lines '180'-'183').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:182:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:182:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:182:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:182:	Useless parentheses.
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:183:	Found 'DD'-anomaly for variable 'array' (lines '183'-'184').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:184:	Found 'DD'-anomaly for variable 'array' (lines '184'-'185').
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:190:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/ValueLinkGiftCardUtil.java:193:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:1:	Possible God class (WMC=56, ATFD=124, TCC=0.08333333333333333)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:15:	The class 'ValueLinkGiftCardValidation' has a Cyclomatic Complexity of 6 (Highest = 10).
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:17:	Comment is too large: Too many lines
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:79:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:79:	Found 'DU'-anomaly for variable 'localCurrencyVAL' (lines '79'-'97').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:104:	The method 'reqBodyValidation' has a Cyclomatic Complexity of 10.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:104:	The method reqBodyValidation() has an NPath complexity of 512
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:113:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:113:	Found 'DU'-anomaly for variable 'midTidIDN' (lines '113'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:114:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:114:	Found 'DU'-anomaly for variable 'sourceCodeIDN' (lines '114'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:116:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:116:	Found 'DU'-anomaly for variable 'sourceCodeVAL' (lines '116'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:118:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:118:	Found 'DU'-anomaly for variable 'giftCardNumberIDN' (lines '118'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:120:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:120:	Found 'DU'-anomaly for variable 'embCardNumberIDN' (lines '120'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:122:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:122:	Found 'DU'-anomaly for variable 'transAmtIDN' (lines '122'-'170').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:127:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:137:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:142:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:158:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:177:	The method reqBodyValidationPart() has an NPath complexity of 256
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:186:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:186:	Found 'DU'-anomaly for variable 'altMerNoIDN' (lines '186'-'234').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:188:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:188:	Found 'DU'-anomaly for variable 'merchantKeyIdIDN' (lines '188'-'234').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:190:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:190:	Found 'DU'-anomaly for variable 'merchantKeyIdVal' (lines '190'-'234').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:192:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:192:	Found 'DU'-anomaly for variable 'localCurrencyIDN' (lines '192'-'234').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:194:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:194:	Found 'DU'-anomaly for variable 'termTransNoIDN' (lines '194'-'234').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:197:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:203:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:209:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:214:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:219:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:225:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:250:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:250:	Found 'DU'-anomaly for variable 'msgVAL' (lines '250'-'287').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:252:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:252:	Found 'DU'-anomaly for variable 'versionNumberVal' (lines '252'-'287').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:255:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:255:	Found 'DU'-anomaly for variable 'formatNumberVal' (lines '255'-'287').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:258:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:264:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:270:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:276:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:303:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:303:	Found 'DU'-anomaly for variable 'transCoValRedem' (lines '303'-'349').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:305:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:305:	Found 'DU'-anomaly for variable 'transRCValUnred' (lines '305'-'349').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:307:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:307:	Found 'DU'-anomaly for variable 'transReqCdValErr' (lines '307'-'349').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:309:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:309:	Found 'DU'-anomaly for variable 'transReqCdValRWK' (lines '309'-'349').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:313:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:319:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:325:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:331:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:337:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:356:	The method 'commonKeyValidationPart' has a Cyclomatic Complexity of 10.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:356:	The method commonKeyValidationPart() has an NPath complexity of 512
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:365:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:365:	Found 'DU'-anomaly for variable 'svcID' (lines '365'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:366:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:366:	Found 'DU'-anomaly for variable 'primaryURL' (lines '366'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:368:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:368:	Found 'DU'-anomaly for variable 'secondaryURL' (lines '368'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:370:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:370:	Found 'DU'-anomaly for variable 'vxnTid' (lines '370'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:371:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:371:	Found 'DU'-anomaly for variable 'vxnDid' (lines '371'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:372:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:372:	Found 'DU'-anomaly for variable 'terminalID' (lines '372'-'410').
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:375:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:379:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:383:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:388:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:393:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:397:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:401:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:412:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:413:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:414:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:417:	Avoid excessively long variable names like mValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:417:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:417:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:430:	Avoid excessively long variable names like pValueLinkGiftCardUtil
+src/com/bbb/valuelink/ValueLinkGiftCardValidation.java:430:	Parameter 'pValueLinkGiftCardUtil' is not assigned and could be declared final
+src/com/bbb/valuelink/constants/BBBValueLinkConstants.java:3:	Each class should declare at least one constructor
+src/com/bbb/valuelink/constants/BBBValueLinkConstants.java:20:	Avoid variables with short names like OK
+src/com/bbb/valuelink/constants/BBBValueLinkConstants.java:31:	Avoid excessively long variable names like TRANS_REQ_CODE_VAL_ERROR
+src/com/bbb/valuelink/constants/BBBValueLinkConstants.java:32:	Avoid excessively long variable names like ORIGINAL_TRANS_CODE_SEPARATOR
+src/com/bbb/valuelink/constants/BBBValueLinkConstants.java:33:	Avoid excessively long variable names like CLIENT_REF_VERSION
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:1:	Possible God class (WMC=62, ATFD=16, TCC=0.010526315789473684)
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:23:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:23:	This class has too many methods, consider refactoring it.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:25:	Variables that are final and static should be all capitals, 'module' is not all capitals.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:26:	Variables that are final and static should be all capitals, 'logger' is not all capitals.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:28:	Parameter 'bytes' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:29:	Local variable 'buf' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:37:	Avoid variables with short names like c
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:37:	Parameter 'c' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:38:	Avoid variables with short names like i
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:38:	Found 'DD'-anomaly for variable 'i' (lines '38'-'40').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:38:	Found 'DD'-anomaly for variable 'i' (lines '38'-'42').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:38:	Found 'DD'-anomaly for variable 'i' (lines '38'-'44').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:38:	Found 'DU'-anomaly for variable 'i' (lines '38'-'49').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:52:	Parameter 'str' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:54:	Local variable 'buf' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:65:	Avoid reassigning parameters such as 'str'
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:68:	Local variable 'stringLength' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:69:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:72:	Avoid variables with short names like b
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:72:	Found 'DD'-anomaly for variable 'b' (lines '72'-'77').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:74:	Found 'DD'-anomaly for variable 'j' (lines '74'-'74').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:74:	Found 'DU'-anomaly for variable 'j' (lines '74'-'81').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:74:	Use one line for each declaration, it enhances code readability.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:75:	Local variable 'high' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:76:	Local variable 'low' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:77:	Found 'DD'-anomaly for variable 'b' (lines '77'-'77').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:87:	Parameter 'length' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:88:	Local variable 'rand' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:89:	Local variable 'randomBytes' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:105:	Parameter 'key' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:105:	Parameter 'mode' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:106:	Local variable 'zeros' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:107:	Avoid variables with short names like iv
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:107:	Found 'DU'-anomaly for variable 'iv' (lines '107'-'128').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:107:	Local variable 'iv' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:110:	Found 'DD'-anomaly for variable 'mwkCipher' (lines '110'-'112').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:114:	The String literal "Error in getCipher" appears 4 times in this file; the first occurrence is on line 114
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:134:	Parameter 'pinBytes' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:135:	Found 'DD'-anomaly for variable 'checkSum' (lines '135'-'136').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:144:	Avoid variables with short names like b
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:144:	Found 'UR'-anomaly for variable 'b1' (lines '144'-'147').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:144:	Parameter 'b' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:144:	Parameter 'method' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:145:	System.out.print is used
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:146:	Avoid variables with short names like b1
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:146:	Local variable 'b1' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:147:	System.out.print is used
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:149:	System.out.print is used
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:154:	Comment is too large: Line too long
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:160:	Parameter 'bytes' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:160:	Parameter 'length' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:160:	Parameter 'offset' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:161:	Found 'DD'-anomaly for variable 'newBytes' (lines '161'-'163').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:163:	Found 'DD'-anomaly for variable 'newBytes' (lines '163'-'163').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:175:	Local variable 'sdf' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:175:	When instantiating a SimpleDateFormat object, specify a Locale
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:176:	Avoid variables with short names like s
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:176:	Local variable 's' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:177:	Consider simply returning the value vs storing it in local variable 's'
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:187:	Parameter 'position' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:187:	Parameter 'source' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:187:	Parameter 'target' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:188:	Comment is too large: Line too long
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:190:	Found 'DU'-anomaly for variable 'n' (lines '190'-'205').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:190:	Found 'DU'-anomaly for variable 'x' (lines '190'-'205').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:190:	Use one line for each declaration, it enhances code readability.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:193:	Found 'DU'-anomaly for variable 'n' (lines '193'-'205').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:195:	Avoid modifying an outer loop incrementer in an inner loop for update expression
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:195:	Found 'DU'-anomaly for variable 'x' (lines '195'-'205').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:195:	System.arraycopy is more efficient
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:198:	Found 'DD'-anomaly for variable 'i' (lines '198'-'190').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:211:	Parameter 'rawKey' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:213:	Found 'DD'-anomaly for variable 'skf' (lines '213'-'215').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:215:	Found 'DU'-anomaly for variable 'skf' (lines '215'-'242').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:219:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:223:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:229:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:234:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:240:	Avoid throwing raw exception types.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:252:	Local variable 'primeByte' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:253:	Local variable 'prime' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:254:	Local variable 'generator' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:257:	Local variable 'dhParamSpec' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:268:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:270:	Method names should not contain underscores
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:270:	Parameter 'size' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:272:	Avoid using for statements without curly braces
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:272:	Avoid using for statements without curly braces
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:276:	Method names should not contain underscores
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:276:	Parameter 'key' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:279:	Avoid using if statements without curly braces
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:279:	Avoid using if statements without curly braces
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:280:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:280:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:280:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:282:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:282:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:285:	Method names should not contain underscores
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:285:	Parameter 'key' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:286:	Found 'DD'-anomaly for variable 'weak' (lines '286'-'288').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:288:	Found 'DD'-anomaly for variable 'weak' (lines '288'-'292').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:292:	Found 'DD'-anomaly for variable 'weak' (lines '292'-'292').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:301:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:301:	Useless parentheses.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:304:	Avoid variables with short names like s
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:304:	Parameter 'size' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:305:	Avoid variables with short names like s1
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:305:	Local variable 's1' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:315:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:317:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:317:	Variables that are final and static should be all capitals, 'odd_parity' is not all capitals.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:335:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:335:	Variables that are final and static should be all capitals, 'weak_keys' is not all capitals.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:357:	Avoid variables with short names like s1
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:357:	Found 'DD'-anomaly for variable 's1' (lines '357'-'359').
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:360:	Avoid variables with short names like fs
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:360:	Local variable 'fs' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:361:	Local variable 'originalTransCode' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:365:	Assigning an Object to null is a code smell.  Consider refactoring.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:368:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:369:	Avoid variables with short names like FS
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:369:	Local variable 'FS' could be declared final
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:369:	Variables should start with a lowercase character, 'FS' starts with uppercase character.
+src/com/bbb/valuelink/encryption/EncryptionUtil.java:371:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:12:	Variables that are final and static should be all capitals, 'module' is not all capitals.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:13:	Avoid using redundant field initializer for 'mwk'
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:13:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:14:	Avoid using redundant field initializer for 'kek'
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:24:	Parameter 'pin' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:26:	Local variable 'mwkCipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:26:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:29:	Local variable 'pinBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:32:	Local variable 'random' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:35:	Local variable 'checkSum' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:38:	Found 'DD'-anomaly for variable 'eanBlock' (lines '38'-'41').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:38:	Found 'DD'-anomaly for variable 'eanBlock' (lines '38'-'43').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:39:	Avoid variables with short names like i
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:41:	Found 'DD'-anomaly for variable 'eanBlock' (lines '41'-'41').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:41:	Found 'DD'-anomaly for variable 'eanBlock' (lines '41'-'43').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:43:	Found 'DD'-anomaly for variable 'eanBlock' (lines '43'-'45').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:45:	Found 'DD'-anomaly for variable 'eanBlock' (lines '45'-'45').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:51:	Found 'DD'-anomaly for variable 'encryptedEanHex' (lines '51'-'54').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:53:	Local variable 'encryptedEan' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:70:	Avoid unused method parameters such as 'module2'.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:70:	Parameter 'module2' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:70:	Parameter 'string' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:79:	Avoid variables with short names like e
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:79:	Parameter 'e' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:79:	Parameter 'module2' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:80:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:81:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:101:	Parameter 'pin' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:103:	Local variable 'mwkCipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:103:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:106:	Avoid excessively long variable names like decryptedPinString
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:106:	Found 'DD'-anomaly for variable 'decryptedPinString' (lines '106'-'110').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:108:	Local variable 'decryptedEan' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:109:	Local variable 'decryptedPin' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:127:	Avoid variables with short names like b
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:127:	Local variable 'b' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:128:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:133:	Avoid using if statements without curly braces
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:133:	Avoid using if statements without curly braces
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:135:	Comment is too large: Line too long
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:136:	Comment is too large: Line too long
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:142:	Avoid variables with short names like s
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:142:	Parameter 's' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:146:	Parameter 'content' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:146:	Parameter 'mode' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:148:	Local variable 'cipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:149:	Found 'DD'-anomaly for variable 'dec' (lines '149'-'151').
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:181:	Parameter 'content' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:190:	Parameter 'content' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:195:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:207:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:208:	Local variable 'pin' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:209:	Avoid variables with short names like e
+src/com/bbb/valuelink/encryption/ValueLinkEncryptor.java:209:	Local variable 'e' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:1:	Possible God class (WMC=83, ATFD=50, TCC=0.08307692307692308)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:33:	The class 'ValueLinkKeyGenerator' has a Cyclomatic Complexity of 3 (Highest = 17).
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:33:	This class has too many methods, consider refactoring it.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:35:	Variables that are final and static should be all capitals, 'module' is not all capitals.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:36:	Avoid using redundant field initializer for 'mwk'
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:37:	Avoid using redundant field initializer for 'kek'
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:37:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:38:	Avoid using redundant field initializer for 'mwkIndex'
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:39:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:40:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:43:	Avoid unused method parameters such as 'module2'.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:43:	Parameter 'module2' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:43:	Parameter 'string' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:44:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:51:	Avoid unused method parameters such as 'module2'.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:51:	Avoid variables with short names like e
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:51:	Parameter 'e' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:51:	Parameter 'module2' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:52:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:53:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:69:	Avoid excessively long variable names like mMerchantPrivateKey
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:69:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:69:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:69:	Use explicit scoping instead of the default package private level
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:80:	Avoid excessively long variable names like pMerchantPrivateKey
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:80:	Parameter 'pMerchantPrivateKey' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:85:	Comment is too large: Line too long
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:87:	Parameter 'kekOnly' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:87:	Parameter 'kekTest' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:89:	Avoid throwing raw exception types.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	Avoid really long methods.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	Avoid reassigning parameters such as 'loop'
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	Parameter 'kekOnly' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	Parameter 'kekTest' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	The method 'outputKeyCreation' has a Cyclomatic Complexity of 17.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:94:	The method outputKeyCreation() has an NPath complexity of 2304
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:95:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:95:	Found 'DU'-anomaly for variable 'buf' (lines '95'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:95:	Local variable 'buf' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:95:	StringBuffer constructor is initialized with size 16, but has at least 71 characters appended.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:98:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:104:	Found 'DD'-anomaly for variable 'privateKey' (lines '104'-'121').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:104:	Found 'DD'-anomaly for variable 'privateKey' (lines '104'-'134').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:104:	Found 'DU'-anomaly for variable 'privateKey' (lines '104'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:105:	Found 'DD'-anomaly for variable 'publicKey' (lines '105'-'120').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:105:	Found 'DU'-anomaly for variable 'publicKey' (lines '105'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:107:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:108:	Found 'DD'-anomaly for variable 'keyPair' (lines '108'-'110').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:119:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:120:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:121:	Found 'DU'-anomaly for variable 'privateKey' (lines '121'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:121:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:123:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:123:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:123:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:125:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:129:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:135:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:141:	Found 'DD'-anomaly for variable 'kekBytes' (lines '141'-'143').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:153:	Local variable 'loadedKek' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:154:	Found 'DU'-anomaly for variable 'loadKekBytes' (lines '154'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:154:	Local variable 'loadKekBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:157:	Local variable 'cipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:158:	Found 'DD'-anomaly for variable 'kekTestB' (lines '158'-'161').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:159:	Found 'DD'-anomaly for variable 'kekTestC' (lines '159'-'166').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:166:	Found 'DU'-anomaly for variable 'kekTestC' (lines '166'-'214').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:167:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:173:	Avoid variables with short names like y
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:173:	Local variable 'y' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:173:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:174:	Local variable 'yBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:175:	Local variable 'yHex' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:176:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:176:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:176:	The String literal " / " appears 10 times in this file; the first occurrence is on line 176
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:176:	The String literal ") ========\n" appears 6 times in this file; the first occurrence is on line 176
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:177:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:177:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:177:	StringBuffer (or StringBuilder).append is called 3 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:178:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:181:	Avoid variables with short names like x
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:181:	Local variable 'x' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:182:	Local variable 'xBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:183:	Local variable 'xHex' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:186:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:186:	StringBuffer (or StringBuilder).append is called 3 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:187:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:190:	Local variable 'privateBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:191:	Local variable 'privateHex' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:193:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:193:	StringBuffer (or StringBuilder).append is called 2 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:194:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:197:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:199:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:199:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:199:	StringBuffer (or StringBuilder).append is called 3 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:202:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:203:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:203:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:203:	StringBuffer (or StringBuilder).append is called 3 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:204:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:207:	Avoid concatenating nonliterals in a StringBuffer/StringBuilder constructor or append().
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:207:	StringBuffer (or StringBuilder).append is called 2 consecutive times with literal Strings. Use a single append with a single combined String.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:223:	Local variable 'dhParamSpec' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:224:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:227:	Local variable 'keyGen' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:228:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:229:	Local variable 'keyPair' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:229:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:242:	Parameter 'privateKey' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:244:	Local variable 'vlPublic' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:247:	Avoid variables with short names like ka
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:247:	Local variable 'ka' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:248:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:249:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:250:	Local variable 'secretKey' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:250:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:259:	Avoid variables with short names like md
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:259:	Local variable 'md' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:260:	Local variable 'digest' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:260:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:261:	Local variable 'des2' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:262:	Local variable 'first8' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:263:	Local variable 'kek' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:287:	Local variable 'publicValue' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:288:	Local variable 'publicKeyBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:291:	Local variable 'dhParamSpec' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:294:	Local variable 'keyFactory' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:295:	Local variable 'publicKeyInt' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:296:	Local variable 'dhPublicSpec' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:296:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:296:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:297:	Local variable 'vlPublic' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:297:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:332:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:332:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:341:	Parameter 'pVLPubKey' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:350:	Local variable 'privateKeyBytes' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:353:	Local variable 'dhParamSpec' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:356:	Local variable 'keyFactory' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:357:	Local variable 'privateKeyInt' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:358:	Local variable 'dhPrivateSpec' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:358:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:358:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:359:	Local variable 'privateKey' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:359:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:368:	Return an empty array rather than null.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:369:	Found 'DD'-anomaly for variable 'keyGen' (lines '369'-'371').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:377:	Local variable 'des1' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:377:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:378:	Local variable 'des2' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:378:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:380:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:381:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:381:	Found 'DU'-anomaly for variable 'desByte1' (lines '381'-'401').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:381:	Local variable 'desByte1' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:381:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:382:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:382:	Found 'DU'-anomaly for variable 'desByte2' (lines '382'-'401').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:382:	Local variable 'desByte2' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:382:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:383:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:383:	Found 'DU'-anomaly for variable 'desByte3' (lines '383'-'401').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:383:	Local variable 'desByte3' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:383:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:387:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:387:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:388:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:390:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:394:	Local variable 'des3' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:395:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:408:	Parameter 'desBytes' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:412:	Found 'DD'-anomaly for variable 'skf1' (lines '412'-'415').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:413:	Found 'DD'-anomaly for variable 'mwk' (lines '413'-'427').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:419:	Found 'DD'-anomaly for variable 'desedeSpec2' (lines '419'-'421').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:427:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:432:	Avoid if (x != y) ..; else ..;
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:433:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:444:	Parameter 'mwkdes3' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:446:	Local variable 'zeros' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:449:	Local variable 'random' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:450:	Local variable 'ran' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:451:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:457:	Local variable 'cipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:460:	Found 'DD'-anomaly for variable 'encryptedZeros' (lines '460'-'462').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:462:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:472:	Found 'DD'-anomaly for variable 'newMwk' (lines '472'-'473').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:478:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:478:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:498:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:500:	Avoid variables with short names like o
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:500:	Found 'DD'-anomaly for variable 'o' (lines '500'-'504').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:502:	Avoid variables with short names like op
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:502:	Local variable 'op' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:503:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:507:	Local variable 'vlg' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:514:	Avoid variables with short names like o
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:514:	Parameter 'o' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:516:	A switch with less than three branches is inefficient, use a if statement instead.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:516:	Switch statements should have a default label
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:519:	Local variable 'buf' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:520:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:524:	Local variable 'buf1' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:525:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:533:	Avoid throwing raw exception types.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:536:	Local variable 'keyBlockC3' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:540:	Local variable 'mwkCipher' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:541:	Found 'DD'-anomaly for variable 'encryptedEanHex' (lines '541'-'544').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:543:	Local variable 'encryptedEan' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:543:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:552:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:556:	Found 'DD'-anomaly for variable 'decryptedMWk' (lines '556'-'566').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:557:	Found 'DD'-anomaly for variable 'randBytes' (lines '557'-'562').
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:558:	Local variable 'mwkKeyGen' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:559:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:560:	Local variable 'randBytes1' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:560:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:560:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:561:	Local variable 'randBytes2' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:561:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:561:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:563:	Local variable 'des2' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:564:	Local variable 'first8' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:565:	Local variable 'dMWK' could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:567:	System.out.print is used
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:571:	Avoid variables with short names like o
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:571:	Parameter 'o' is not assigned and could be declared final
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:572:	A switch statement does not contain a break
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:572:	A switch with less than three branches is inefficient, use a if statement instead.
+src/com/bbb/valuelink/encryption/ValueLinkKeyGenerator.java:572:	Switch statements should have a default label
+src/com/bbb/valuelink/test/CheckBalanceSample.java:4:	Avoid unused imports such as 'java.util.Date'
+src/com/bbb/valuelink/test/CheckBalanceSample.java:20:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:22:	Avoid variables with short names like FS
+src/com/bbb/valuelink/test/CheckBalanceSample.java:22:	The field name indicates a constant but its modifiers do not
+src/com/bbb/valuelink/test/CheckBalanceSample.java:22:	Variables should start with a lowercase character, 'FS' starts with uppercase character.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:26:	Variables that are final and static should be all capitals, 'stMID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:27:	Variables that are final and static should be all capitals, 'stTID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:28:	Variables that are final and static should be all capitals, 'stDID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:29:	Variables that are final and static should be all capitals, 'svcid' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:30:	Variables that are final and static should be all capitals, 'AppID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:31:	Variables that are final and static should be all capitals, 'version' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:34:	Variables that are final and static should be all capitals, 'sdList' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:42:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:43:	Local variable 'mid' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:44:	Local variable 'gcNumber' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:45:	Local variable 'pin' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:46:	Local variable 'workingKeyId' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:48:	Local variable 'vle' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:49:	Local variable 'encryptedPin' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:59:	Local variable 'cal' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:60:	Avoid variables with short names like i
+src/com/bbb/valuelink/test/CheckBalanceSample.java:60:	Local variable 'i' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:61:	Avoid variables with short names like j
+src/com/bbb/valuelink/test/CheckBalanceSample.java:61:	Found 'DD'-anomaly for variable 'j' (lines '61'-'62').
+src/com/bbb/valuelink/test/CheckBalanceSample.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:62:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:62:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:62:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:62:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:63:	Avoid variables with short names like s
+src/com/bbb/valuelink/test/CheckBalanceSample.java:63:	Do not add empty strings
+src/com/bbb/valuelink/test/CheckBalanceSample.java:63:	Local variable 's' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:63:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:64:	Consider simply returning the value vs storing it in local variable 's'
+src/com/bbb/valuelink/test/CheckBalanceSample.java:67:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:67:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:67:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:67:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:67:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:69:	Local variable 'balanceAPIPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:84:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Parameter 'amount' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:88:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:90:	Local variable 'redeemPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:97:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:98:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:99:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:104:	Parameter 'origPayload' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:106:	Avoid excessively long variable names like timeReversalPayload
+src/com/bbb/valuelink/test/CheckBalanceSample.java:106:	Local variable 'timeReversalPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:109:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Parameter 'amount' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:113:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:115:	Local variable 'redeemPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:122:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:123:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSample.java:124:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:129:	Parameter 'payloadStr' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:130:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:132:	Local variable 'payload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:140:	Local variable 'vxn' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:142:	Local variable 'ttttttt' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:143:	Avoid variables with short names like tr
+src/com/bbb/valuelink/test/CheckBalanceSample.java:143:	Local variable 'tr' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:146:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:149:	Comment is too large: Line too long
+src/com/bbb/valuelink/test/CheckBalanceSample.java:151:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/test/CheckBalanceSample.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSample.java:157:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSample.java:159:	Local variable 'strT' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSample.java:162:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:22:	All methods are static.  Consider using Singleton instead.  Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:24:	Avoid using redundant field initializer for 'vxn'
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:25:	Avoid variables with short names like FS
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:25:	The field name indicates a constant but its modifiers do not
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:25:	Variables should start with a lowercase character, 'FS' starts with uppercase character.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:29:	Variables that are final and static should be all capitals, 'stMID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:30:	Variables that are final and static should be all capitals, 'stTID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:31:	Variables that are final and static should be all capitals, 'stDID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:32:	Variables that are final and static should be all capitals, 'svcid' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:33:	Variables that are final and static should be all capitals, 'AppID' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:34:	Variables that are final and static should be all capitals, 'version' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:37:	Variables that are final and static should be all capitals, 'sdList' is not all capitals.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:45:	Parameter 'args' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:46:	Found 'DU'-anomaly for variable 'mid' (lines '46'-'100').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:46:	Local variable 'mid' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:47:	Found 'DU'-anomaly for variable 'gcNumber' (lines '47'-'100').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:47:	Local variable 'gcNumber' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:48:	Local variable 'pin' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:49:	Found 'DU'-anomaly for variable 'workingKeyId' (lines '49'-'100').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:49:	Local variable 'workingKeyId' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:51:	Local variable 'vle' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:52:	Found 'DU'-anomaly for variable 'encryptedPin' (lines '52'-'100').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:52:	Local variable 'encryptedPin' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:54:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:56:	Avoid variables with short names like th
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:56:	Found 'DU'-anomaly for variable 'th' (lines '56'-'100').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:56:	Local variable 'th' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:56:	To be compliant to J2EE, a webapp should not use any thread.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:56:	To be compliant to J2EE, a webapp should not use any thread.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:58:	Local variable 'usTimeZone' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:60:	Local variable 'calendar' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:64:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:69:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:71:	Found 'DD'-anomaly for variable 'AM_PM' (lines '71'-'73').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:71:	Found 'DD'-anomaly for variable 'AM_PM' (lines '71'-'75').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:71:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'AM_PM' is not final.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:71:	Variables should start with a lowercase character, 'AM_PM' starts with uppercase character.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:72:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:74:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:77:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:82:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:85:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:90:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:92:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:103:	Local variable 'cal' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:104:	Avoid variables with short names like i
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:104:	Local variable 'i' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:105:	Avoid variables with short names like j
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:105:	Found 'DD'-anomaly for variable 'j' (lines '105'-'106').
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:106:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:106:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:106:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:106:	Useless parentheses.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:107:	Avoid variables with short names like s
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:107:	Do not add empty strings
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:107:	Local variable 's' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:112:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:112:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:112:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:112:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:113:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:115:	Local variable 'balanceAPIPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:124:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:128:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:128:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:128:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:128:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:129:	Parameter 'amount' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:129:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:131:	Local variable 'redeemPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:142:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:144:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:145:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:151:	Parameter 'origPayload' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:153:	Avoid excessively long variable names like timeReversalPayload
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:153:	Local variable 'timeReversalPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:157:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:161:	Parameter 'pGCNumber' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:161:	Parameter 'pMid' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:161:	Parameter 'pPin' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:161:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:162:	Parameter 'amount' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:162:	Parameter 'workingKeyId' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:164:	Local variable 'redeemPayload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:174:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:176:	Avoid printStackTrace(); use a logger call instead.
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:177:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:183:	Parameter 'payloadStr' is not assigned and could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:184:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:186:	Local variable 'payload' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:194:	Singleton is not thread safe
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:204:	Local variable 'ttttttt' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:205:	Avoid variables with short names like tr
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:205:	Local variable 'tr' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:215:	Avoid using Literals in Conditional Statements
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:215:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:217:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:221:	System.out.print is used
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:223:	Local variable 'strT' could be declared final
+src/com/bbb/valuelink/test/CheckBalanceSampleThread.java:227:	System.out.print is used

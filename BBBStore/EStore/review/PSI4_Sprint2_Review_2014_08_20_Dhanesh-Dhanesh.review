@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="PSI4_Sprint2_Review_2014_08_20_Dhanesh">
+  <ReviewIssue id="HZ2TYUG4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 21:13:58:372 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:13:47:259 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>By default logError is set to true.</Summary>
+    <Description>Don't required if(isLoggingError()) check.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HZ2URKO6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 21:36:18:726 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-21 :: 09:15:00:367 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>/BBBStore.EStore/config/atg/sitemap/BrandSitemapGenerator.properties</Summary>
+    <Description>The following variables are pointing to same component.
+We can use one of the following.
+I would recommend  use catalogRepository property.
+
+sourceRepository=/atg/commerce/catalog/ProductCatalog
+# catalog related properties
+catalogRepository=/atg/commerce/catalog/ProductCatalog</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HZ2UUBMN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 21:38:26:975 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 23:06:32:385 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>/BBBStore.EStore/config/atg/sitemap/MobileBrandSitemapGenerator.properties</Summary>
+    <Description>The following variables are pointing to same component.
+We can use one of the following.
+I would recommend  use catalogRepository property.
+
+sourceRepository=/atg/commerce/catalog/ProductCatalog
+# catalog related properties
+catalogRepository=/atg/commerce/catalog/ProductCatalog</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HZ2XYQIS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 23:05:51:748 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 07:07:58:894 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1">config/atg/sitemap/MobileProductSitemapGenerator.properties</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>/atg/sitemap/MobileProductSitemapGenerator.properties</Summary>
+    <Description>The following variables are pointing to same component.
+We can use one of the following.
+I would recommend  use catalogRepository property.
+
+sourceRepository=/atg/commerce/catalog/ProductCatalog
+# catalog related properties
+catalogRepository=/atg/commerce/catalog/ProductCatalog</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HZWYH5ZO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-10 :: 23:13:16:884 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:14:40:658 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="127">src/com/bbb/cms/droplet/CustomLandingTemplateDroplet.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove  if (isLoggingDebug())  check  since it is already added in the super class.</Summary>
+    <Description> 		if (isLoggingDebug()) {</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HZX03SMK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-10 :: 23:58:52:268 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:38:18:564 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="345">src/com/bbb/cms/droplet/CustomLandingTemplateDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This can be simplified</Summary>
+    <Description>Modify the logic  to avoid null pointers.
+final RqlStatement statement = RqlStatement.parseRqlStatement(rqlQuery);
+final RepositoryView view = repository.getView(viewName);
+
+if(statement != null &amp;&amp; view !=null  &amp;&amp;  params !=null) {
+   queryResult = statement.executeQuery(view, params);
+   if(null == queryResult ){
+   logDebug("No results returned for query [" + rqlQuery + "]");
+ } else{
+queryResult = statement.executeQuery(view, params);
+}
+} else {
+ if(view == null)
+this.logError(BBBCoreErrorConstants.CLP_ERROR_10132 + viewName+
+								" view is null from executeRQLQuery of CustomLandingTemplate");
+}
+
+intead of 
+
+if (view == null) {
+						this.logError(BBBCoreErrorConstants.CLP_ERROR_10132 + viewName+
+								" view is null from executeRQLQuery of CustomLandingTemplate");
+					}
+					queryResult = statement.executeQuery(view, params);
+
+					if(null == queryResult &amp;&amp; isLoggingDebug()){
+						logDebug("No results returned for query [" + rqlQuery + "]");
+					}</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I06ZVAD6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:49:57:114 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:12:23:518 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="46">src/com/bbb/cms/droplet/CustomLandingTemplateDroplet.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Move DB, Business logic to service/manager/validator class .</Summary>
+    <Description>BBB  Arch team started reviewing the code  and providing  constant comments  to move the buiness logic, repository calls to service ,manager class.  We also discussed all request handling  should be lighter hence refactor the code.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0704E9V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:57:02:083 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:11:34:471 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="43">src/com/bbb/cms/manager/ContentTemplateManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove the if (isLoggingDebug()) </Summary>
+    <Description>Parent class BBBGenericService  has all the methods and the checks are defined in overridden method.  We don't need to do additional check for the logDebug statements.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0707PFF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:59:36:507 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:11:15:923 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="63">src/com/bbb/cms/manager/ContentTemplateManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove if (isLoggingError()) check</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0709IPN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-18 :: 00:01:01:115 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 06:49:30:717 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="72">src/com/bbb/cms/manager/ContentTemplateManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There is no Null check  getTemplateItemDescriporMap</Summary>
+    <Description>getTemplateItemDescriporMap()</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

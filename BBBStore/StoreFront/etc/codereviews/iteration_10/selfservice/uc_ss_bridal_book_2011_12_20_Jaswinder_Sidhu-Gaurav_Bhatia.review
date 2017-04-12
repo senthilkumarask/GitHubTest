@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_ss_bridal_book_2011_12_20_Jaswinder_Sidhu">
+  <ReviewIssue id="GWFXPUZ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 11:31:26:798 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:38:38:955 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="24">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>We are defining 2 enums but to my knowledge both will always have one type.</Summary>
+    <Description>. we should define one enum with 2 types, one for bridal and one for tell a friend
+. </Description>
+    <Annotation></Annotation>
+    <Revision>both are for different purpose</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWFXTZP9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 11:34:39:549 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:38:20:652 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="31">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add comment for left_nav that it needs to be replaced. </Summary>
+    <Description>LAter when we need to replace left nav it would be easier to find impact if we put comment now</Description>
+    <Annotation></Annotation>
+    <Revision>comments added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWFY7A5H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 11:44:59:621 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 11:45:34:285 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="55">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Does HTML has error div or box to show server side error</Summary>
+    <Description>is this integrated with HTML</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWFZO2Z2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:26:03:086 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:32:44:898 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="109">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Need confirmation - if profile is transient then can i still use profile to get last name</Summary>
+    <Description>bean="BridalBookFormHandler.bridalBookVO.lastName"
+												beanvalue="Profile.lastName" /&gt;
+For transient would this give blank or null</Description>
+    <Annotation></Annotation>
+    <Revision>it will return</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG01Z2C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:36:51:204 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:31:35:147 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="125">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do we prefill address line 1, address line 2, city, state , zip from profile default address?</Summary>
+    <Description>Do we prefill address line 1, address line 2, city, state , zip from profile default address?</Description>
+    <Annotation></Annotation>
+    <Revision>As discussed with Rajat, Only first/last name and email address will be prefilled incase of logged in user.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG0F4RO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:47:05:124 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:48:23:474 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="197">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>I dont see code that is populating ${country}</Summary>
+    <Description>I dont see code that is populating ${country}. Can you confirm where this is getting populated - please discuss with me.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG0LFQB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:51:59:267 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:53:40:568 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="308">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG0ZKDN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:02:58:475 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:29:38:178 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="303">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>image path issues</Summary>
+    <Description>. image page is hardcoded
+. image target is hardocoded
+
+Both needs to come from CMS as per the requirement</Description>
+    <Annotation></Annotation>
+    <Revision>Now its driven from CMS</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG11VCD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:04:45:997 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:30:50:574 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="309">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>browse bridal book target is hardcoded</Summary>
+    <Description>browse bridal book target is hardcoded</Description>
+    <Annotation></Annotation>
+    <Revision>resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG159NA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:07:24:502 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:02:04:877 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="324">j2ee-apps/BBBStore/store.war/bbregistry/bridal_book.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>thankyou dialog title and tell a friend dialog should come from CMS. This comment is applicable for all titles on main page and modals</Summary>
+    <Description>thankyou dialog title and tell a friend dialog should come from CMS.
+This comment is applicable for all titles on main page and modals.</Description>
+    <Annotation></Annotation>
+    <Revision>Now its CMS driven</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: InventoryTestCase.xml 
+	DESCRIPTION: ddtunit data file for InventoryTextCase test case HISTORY: Oct 
+	14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+
+		
+	
+			<group id="testFullCategory">
+			<test id="testFullCategory_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testFullProductFeed">
+			<test id="testFullProductFeed_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testFullSKUFeed">
+			<test id="testFullSKUFeed_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIncrementalCategory">
+			<test id="testIncrementalCategory_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">false</obj>
+				</objs>
+			</test>
+			<test id="testIncrementalCategory_test2">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+			
+			<group id="testIncrementalProduct">
+			<test id="testIncrementalProduct_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">false</obj>
+				</objs>
+			</test>
+			<test id="testIncrementalProduct_test2">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testIncrementalSKU">
+			<test id="testIncrementalSKU_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">false</obj>
+				</objs>
+			</test>
+			<test id="testIncrementalSKU_test2">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="isFullDataFeed" type="boolean">false</obj>
+					<obj id="modDate" type="boolean">true</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetLastModifiedDate">
+			<test id="testGetLastModifiedDate_test1">
+				<objs>
+					<obj id="certonaCatalogMarshaller" type="com.bbb.certona.marshaller.CertonaCatalogFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaCatalogFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaCatalogFeedMarshaller</item>
+					</obj>
+					<obj id="categoryView" type="string">category</obj>
+					<obj id="productView" type="string">product</obj>
+					<obj id="skuView" type="string">sku</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

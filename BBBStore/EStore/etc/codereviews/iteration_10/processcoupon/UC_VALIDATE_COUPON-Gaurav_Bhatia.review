@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_VALIDATE_COUPON">
+  <ReviewIssue id="GWG6MQXT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:40:58:145 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:47:51:707 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="185">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Rename variable as suggested in front end comment of renaming status and corresponding value</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resloved </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG6SW9T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:45:44:993 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:47:43:349 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="191">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>In case exception is thrown handle in front end</Summary>
+    <Description>If validateCoupon throws exception then we should show message in front end that there was some unknown error</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG6WXHM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:48:53:194 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:47:26:780 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="179">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do not start perf logger with Web_Service_Call in droplet. </Summary>
+    <Description>Do not start perf logger with Web_Service_Call in droplet. Web_Service_Call  should only be used where in webservice call is getting done.</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG71OUZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:52:35:291 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:47:06:211 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="381">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Rename method getVO to more appropriate name like getCouponRequestVO</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resloved removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG7FOGS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 16:03:27:964 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:46:59:819 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="397">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why is isDuplicateEmaillAddress method called from getVO method</Summary>
+    <Description>The job of getVO is to get VO and not do anything else</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG8TUYC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 16:42:29:172 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:46:51:171 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="397">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to confirm from Rajat if this duplicateEmail address check has to be done for coupon</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resloved removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG9IPGA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:01:48:442 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:46:29:298 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="427">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>method name in loggingdebug is incorrect - method getVO</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resloved changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG9JEM9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:02:21:057 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:46:13:155 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="388">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>getVO method should not do performance monitoring as this is simple </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resloved </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG9XVLU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:13:36:258 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:46:01:625 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="408">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>rename item to profile</Summary>
+    <Description>rename item to profile</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved renamed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGB45JW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:46:28:700 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:45:51:868 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="247">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add logging of input and output here or in immediate method calls</Summary>
+    <Description>We need to ensure that we have both webservice input and output clearly logged.</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGBC2VS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:52:38:488 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:45:35:393 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="275">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>rename EMAIL_ERROR_KEY value from  EmailError CouponEmailError</Summary>
+    <Description>ActivateError to CouponActivateError
+error to CouponUnknownError</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved renamed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWGCACPH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 18:19:17:525 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-22 :: 15:45:23:528 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Gaurav_Bhatia</AssignedTo>
+    <File line="261">src/com/bbb/selfservice/droplet/ProcessCouponDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Variable/method needs to change</Summary>
+    <Description>Method name
+old:setRequest	new: getCouponDetailsFromCatalog
+old:getCMS new: getPromotionCouponKey
+
+Method 	setRequest
+variable 
+old:cms new:cmsContent (same must be set in jsp) //add comment that it gets either label or expiry details
+
+Method 	getCMS
+variable
+old:view new:promotionView
+old:item new:promotionItem
+old:check new:isValidSite
+old:pGetDate new:isExpiryDateRequired
+</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved renamed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

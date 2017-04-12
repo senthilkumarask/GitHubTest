@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Attract Screen Repository</name>
+    <author></author> 
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     Attract Screen repository -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="AttractScreenTemplate" display-name-resource="AttractScreenTemplate" display-property="channel" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_ATTR_SCR" type="primary" id-column-name="attr_id">
+		<property name="id" column-name="attr_id" display-name-resource="attr_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="channel" column-name="channel" display-name-resource="channel" item-type="channelInfo" category-resource="MasterInfo" required="true" repository="/com/bbb/channel/ChannelRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		
+		<property name="headerText" column-name="headerText" display-name-resource="headerText" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="bodyText" column-name="bodyText" display-name-resource="bodyText" data-type="big string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="stylingText" column-name="stylingText" display-name-resource="stylingText" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		
+		<property name="imageCarousel" column-name="imageCarousel" display-name-resource="imageCarousel" item-type="ImageCarousel" category-resource="MasterInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="6"/>
+		</property>  
+		
+	</table>
+	<table name="BBB_GS_ATTR_SITE" type="multi" id-column-name="attr_id">
+			<property name="sites" column-name="site_id"  display-name-resource="sites" component-item-type="siteConfiguration" data-type="set" category-resource="appSites" repository="/atg/multisite/SiteRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+      	</property>
+     </table>    
+   
+     <table name="BBB_GS_ATTR_CH_THEME" type="multi" id-column-name="attr_id">
+			<property name="channelTheme" column-name="channel_theme_id" display-name-resource="channelTheme" component-item-type="channelThemeInfo" data-type="set" category-resource="appTheme" repository="/com/bbb/channelTheme/ChannelThemeRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+      		</property>
+     </table>
+     
+	
+	
+</item-descriptor>
+ 
+</gsa-template>

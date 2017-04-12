@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item item-descriptor-name="guides" is-document="true">
+
+  <title property-name="id"/>
+  <properties>
+    <property name="id" output-name="P_Guide_ID" text-searchable="true" type="string"/>
+    <property name="title" is-dimension="false" output-name="P_Guide_Title" text-searchable="true" type="string"/>
+    <property name="imageAltText" is-dimension="false" output-name="P_Guide_Alt_Text" text-searchable="true" type="string"/>
+    <property name="imageUrl" is-dimension="false" output-name="P_Guide_Image" text-searchable="true" type="string"/>
+    <property name="longDescription" output-name="P_Guide_Long_Desc" text-searchable="true" type="string"/>
+    <property name="shortDescription" output-name="P_Guide_Short_Desc" text-searchable="true" type="string"/>
+    <property name="site" output-name="Site_ID" is-dimension="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/SiteIdAccessor"/>
+	<property name="RecordType" is-non-repository-property="true" output-name="Record Type" type="string" is-dimension="true" default-value="Guide" property-accessor="null" autogen-dimension-values="true"/>
+	<property name="SearchMerchandisingPages" is-non-repository-property="true" output-name="MerchandisingPages_Search" default-value="Search" property-accessor="null"/>
+	<property name="$url" type="string"   suppress="true"/>
+	<property name="$baseUrl" type="string"   suppress="true"/> 
+    <property name="$repositoryId" suppress="true"/> 
+	<property name="$repository.repositoryName" suppress="true"/>
+	<property name="$itemDescriptor.itemDescriptorName" output-name="record.type" suppress="true"/>
+  </properties>
+
+</item>

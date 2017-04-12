@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_478_BILLING_UNUSED DROPLET">
+  <ReviewIssue id="I10LVVVV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-08 :: 17:11:35:659 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-08 :: 17:11:37:328 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin Sharma</ReviewerId>
+    <AssignedTo>Sachin Sharma</AssignedTo>
+    <File line="1">src/com/bbb/constants/BBBCheckoutConstants.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

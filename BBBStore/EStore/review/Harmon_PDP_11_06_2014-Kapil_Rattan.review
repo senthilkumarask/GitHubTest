@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Harmon_PDP_11_06_2014">
+  <ReviewIssue id="HWC1NEUT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-12 :: 17:59:50:453 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-12 :: 18:00:55:779 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Rattan</ReviewerId>
+    <AssignedTo>Archit_Goel</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>updateProductTabs | This method returns NULL is repository item is null, instead you can return the same pProductVO that us passed as parameter to this method. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HWC1QRJ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-12 :: 18:02:26:850 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-12 :: 18:04:15:745 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Rattan</ReviewerId>
+    <AssignedTo>Archit_Goel</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>getProductVO | There is NO Null Check for productVO returned from updateProductTabs.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

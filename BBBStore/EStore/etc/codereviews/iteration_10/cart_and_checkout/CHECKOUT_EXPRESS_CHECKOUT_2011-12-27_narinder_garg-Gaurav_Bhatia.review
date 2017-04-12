@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="CHECKOUT_EXPRESS_CHECKOUT_2011-12-27_narinder_garg">
+  <ReviewIssue id="GWRFPGQP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:40:29:377 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:32:03:455 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="610">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Rename cc to more readable name like basicCreditCardInfo</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRFUH46">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:44:23:142 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:30:04:985 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="813">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Why are we starting perfomance monitor only using RepeatingRequestMonitor. I should be logging for each thread entring the method. </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>this is a request scope instance so only one thread would accessing it at any time</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRFXU2G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:46:59:896 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:21:37:166 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="919">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Why are we catching Exception , we should only catch BBBSystem and business exception</Summary>
+    <Description>This is applicable to other exceptions thrown </Description>
+    <Annotation></Annotation>
+    <Revision>we are not doing different for different exceptions so onlt one catch clause.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRG8LTE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:55:22:418 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:20:40:200 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="250">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>skuDetails.getNonShippableStates() == null should not return false as this should be valid case where no state restrication is there</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>it is initialized list so should not be null, can be zero size. it might be null in unforeseen circumstances</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRGC412">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:58:05:990 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:19:15:099 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="269">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do not catch exception but specific exceptions only.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>we do handle the errors differently so added on common catch clause.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRGCYSJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 12:58:45:859 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:18:24:628 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="259">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Can we do trim and case insenstive state code search.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added ignorecase</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRGLPQU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:05:34:038 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:16:01:610 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="307">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This again does not look correct. Null case can be that no restriction is there.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>it is list type, which is getting initialized so should not be null it can be empty</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRGNDZW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:06:52:124 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:12:42:735 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="316">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Why are we creating stringBuffer and comparing rather than (trim+equalignorecase of shipMethodId)</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>All the available multiple shipping methods are concated and then the current shipping method is present in that string. </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRGWSEI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:14:10:698 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:10:50:284 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="848">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>i think ensureTransaction and commitTransaction together can cause issues</Summary>
+    <Description>If you need to commit transaction then you should start a new transaction here and not depend on already started transaction. I have seen error where already started transaction is committed and then later OOB again commits same transaction and results in error.</Description>
+    <Annotation></Annotation>
+    <Revision>This is one request handled by the form handler and we have followed it in the same way as ootb handle methods in the class. This should not be a problem</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRH3DJB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:19:18:023 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:08:56:644 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="646">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Not sure if this was written as part of this story but catch repositoryexception and introspectionexception and throw as BBBSystemexception</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>these are thrown by ProfileAPI when fetching default address and billing address. Introspection is thrown by copyaddress/copycredit card methods. Which means data was not copied to order.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRHP6Y9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:36:15:921 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:07:00:253 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="651">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Wouldnt we need to add commerceItemRelationships here? how would this group get assiciated to commerce items</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>In general we will always have a sg in the order. Tested with order confirmation story. </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRHUSCR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:40:36:939 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:05:29:533 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="684">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Wouldnt we need to create payment group relationships - how will commerece item get associated with this payment group</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Not fixing as we have verified that commit order is working in order confirmation story.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRHVS5C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:41:23:328 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:00:56:024 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="678">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>rename cc to creditCard</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRID4NB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:54:52:679 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:00:14:060 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="836">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Shouldnt update order be inside syncronous block</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>it is.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWRIDPEB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-29 :: 13:55:19:571 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 18:59:28:267 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Narinder Garg</AssignedTo>
+    <File line="836">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>usage getOrder().updateVersion()</Summary>
+    <Description>I have seen this getting done on lot of code. do we need to increase version here to have any version mismatch error</Description>
+    <Annotation></Annotation>
+    <Revision>This is not required, as I have changed the reprice call, which will be doing the update order as well. The default behaviour of reprice pipeline</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

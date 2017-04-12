@@ -1,0 +1,52 @@
+<!--startSQLRepository -m BBBStore.core -repository /atg/commerce/catalog/ProductCatalog -outputSQLFile D:\Nov29_1.sql-->
+
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>BBB Publishing</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+ 
+
+ 
+  
+
+
+  <item-descriptor  query-cache-size="0" name="project" xml-combine="append">
+  </item-descriptor>  
+
+  <item-descriptor  query-cache-size="0" name="process" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="readOnlyProject" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="processTaskInfo" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="history" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="pendingDeployment" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="deploymentLog" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="topologyDef" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="targetDef" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="agentDef" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="transportDef" xml-combine="append">
+  </item-descriptor>
+  <!--<item-descriptor  query-cache-size="0" name="individualWorkflow" xml-combine="append">
+  </item-descriptor>
+  <item-descriptor  query-cache-size="0" name="collectiveWorkflow" xml-combine="append">
+  </item-descriptor>-->
+
+
+
+
+
+
+
+
+ 
+ </gsa-template>

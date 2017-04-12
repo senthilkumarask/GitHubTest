@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Online_Inventory_2011_12_19_Jyoti-Gaurav">
+  <ReviewIssue id="GWDCHZ4P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-19 :: 16:01:54:649 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:25:14:605 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Requirement not implemented</Summary>
+    <Description>below requirement not met
+In case of System exceptions during Store Inventory Call, assume not available. (3.6.2 Inventory rules)
+
+Rule is for BOPUS items. The method is intended for product and registry page where there is no BOPUS checks. We will handle System exceptions in  getBOPUSProductAvailability() method</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEM5COZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:19:48:035 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:17:53:725 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="91">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Sku details that we get from catalog must be logged - all the parameters that are used atleast</Summary>
+    <Description>Logging should be done for
+1) all inputs that catalog API returns
+2) method input 
+3) method output</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEM7PPY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:21:38:230 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:14:25:462 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="103">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>All the exceptions in method getProductAvailability must be logged before throwing back again</Summary>
+    <Description>only handling the InventoryException.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEMMEFG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:33:03:436 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:12:19:554 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="80">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Not sure : do we need to catch exceptions here and just send back  'not available'</Summary>
+    <Description>Not sure : do we need to catch exception here and just say not available.
+method - getProductAvailability(String pSiteId, String pSkuId,
+			boolean includeIGR)
+
+
+Developer:
+
+handling inventoryException, but Exception coming from catalog calls are not handled, product page should show error message if it get BBBBusinessException,  BBBSystemException</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEMZEYP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:43:10:657 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:27:12:261 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="147">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>add logging debug for catalog calls to inventory manager</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEN72EA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:49:07:618 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:27:05:615 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="152">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>If-else condition is not required in method getVDCProductAvailability</Summary>
+    <Description>for product details and registry pages request quantity should be hardcoded to 1 , if condition code will then always work.
+
+The above makes more sense because you are not conditioning based on caller after change and that should happen as much as possible
+
+Developer Comments:
+
+Line 87
+availabilityStatus =  getVDCProductAvailability(pSiteId, pSkuId, 0);// we are passing qty 0 in case of product and registry page
+
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEPNFN5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 14:57:50:513 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:55:194 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="324">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are we catching Exception in preadditem to cart </Summary>
+    <Description>This is not good. If there is fatal exception then we cannot just catch and ignore. Remove this.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEPRVQE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 15:01:17:990 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:46:630 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="269">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Max quantitiy should be taken from config key</Summary>
+    <Description>I know this might not be part of your story but please make this change.
+
+--if (bbbItemInfo.getQuantity() &gt; 99) {
+
+Setting value of maxQtyLong = 99 just incase we dont get qty from CMS
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEPZZB0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 15:07:35:868 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:39:532 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="311">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>In case of error we are making stock unavailable - this is opposite of what rules say -- confirm once with Asit on requirement</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESKK0F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:19:35:055 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:15:492 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="340">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>All standard method logging must be done here - refer to my mail for details</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESMRFI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:21:17:982 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:08:659 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="342">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>All method standard logging needs to happen here</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWETVQG0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:56:16:224 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:26:00:422 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="234">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>why do we have separate method for checkInventoryForStoreToOnline. Can we have one method and pass additional flag for online case</Summary>
+    <Description>Can we rename method checkInventory to checkInventoryForCart and then it handles all the cases including store_to_online case
+
+
+checkInventoryForStoreToOnline() is excluding BOPUS check and for Non VDC it checks for AFS + Alt AFS &gt; 0 where as in case of checkInventory() BOPUS check is included and Non VDC check is excluded. If we need to merge two methods then we need to set 2 more flags as includeNonVDC and includeBOPUS.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEU7KDV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 17:05:28:243 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 14:04:42:103 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="293">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>dont pass null for count and and condition based on null in calling method getNonVDCProductAvailability</Summary>
+    <Description>I think i have given same/similar comment previously, so this might be duplicate</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEV7H8I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 17:33:23:778 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 13:25:31:313 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="154">src/com/bbb/commerce/inventory/BBBInventoryManagerImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>condition is reverse of requirement</Summary>
+    <Description>requirement is rolledQty&gt;=afs what is implemented is reverse 
+
+condition check in requirement is reverse.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEW9BEX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:02:49:161 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 12:02:41:094 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>jyoti</AssignedTo>
+    <File line="182">src/com/bbb/commerce/order/BBBOrderManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>for merge - like other cases, need to add available when exception case</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

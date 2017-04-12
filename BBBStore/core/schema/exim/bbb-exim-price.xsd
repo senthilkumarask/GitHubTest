@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--
+    Copyright Bed Bath & Beyond, Inc. All Rights Reserved.
+    This software is the proprietary information of Bed Bath & Beyond, Inc.
+    Use is subject to license terms.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xs:element name="EximResponse">
+        <xs:complexType>
+          <xs:sequence>
+          	<xs:element minOccurs="0" maxOccurs="1" name="errorExists" type="xs:boolean" >
+            	<xs:annotation>
+					<xs:documentation> error exist or not returned from Katori Light box </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" maxOccurs="1" name="errorCode" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> error code returned from Katori Light box </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" maxOccurs="1" name="errorDescription" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> error description returned from Katori Light box </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="refNum" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> reference Number returned from Katori Light box </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="personlizedPrice" type="xs:double" >
+            	<xs:annotation>
+					<xs:documentation> personlaized fee in Dollars for single SKU from Katori </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element minOccurs="0" maxOccurs="1" name="personlizedCost" type="xs:double" >
+            	<xs:annotation>
+					<xs:documentation> total personlaized cost in Dollars for single SKU from Katori after adding profit and list price </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="customizationType" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Customization Type code: E, M, S or any other coming in future </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="customizationDetails" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Actual Customization String like Engraved String etc. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="vendorSKU" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Service SKU ID which will be already setup in our catalog </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="priceValidityDate" type="xs:date" >
+            	<xs:annotation>
+					<xs:documentation> Validity Date for Customization price returned by webservices </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="thumbnailImage" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Thumbnail Image for Customized Product </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="mainImage" type="xs:string" >
+           		<xs:annotation>
+					<xs:documentation> Main Image for Customized Product </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="mobileThumbnailImage" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Thumbnail Image for Customized Product for Mobile </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element minOccurs="0" maxOccurs="1" name="mobileMainImage" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> Main Image for Customized Product for Mobile </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="EximRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="refNum" type="xs:string" >
+            	<xs:annotation>
+					<xs:documentation> reference Number returned from Katori Light box </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:schema>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="InventoryFeed" type="InventoryFeedType"/>
+	<xs:complexType name="InventoryFeedType">
+		<xs:sequence>
+			<xs:element name="Inventory_Attributes" type="InventoryDetail" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for inventory feedr</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InventoryDetail">
+		<xs:sequence>
+			<xs:element name="skuId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sku id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stock_BBB_US" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>stock level for Bed Bath and Beyond US</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stock_BBB_CA" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>stock level  for Bed Bath and Beyond CA</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stock_BuyBuyBaby" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>stock level  for Buy Buy Baby</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="registryStock_BBB_US" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>registry stock level for site Bed Bath and Beyond US</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="registryStock_BBB_CA" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>registry stock level for site Bed Bath and Beyond CA</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="registryStock_BuyBuyBaby" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>registry stock level for site Buy Buy Baby</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

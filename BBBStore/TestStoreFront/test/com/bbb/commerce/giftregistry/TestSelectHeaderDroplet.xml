@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestSelectHeaderDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestSelectHeaderDroplet.java test case HISTORY: 
+	Sep 27, 2012 Initial version 
+					
+	-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.giftregistry.TestSelectHeaderDroplet">
+		<group id="testSelectHeader1">
+			<test id="testSelectHeader1">
+				<objs>
+					<obj id="selectHeaderDroplet"
+						type="com.bbb.commerce.giftregistry.TestSelectHeaderDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestSelectHeaderDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/SelectHeaderDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>		
+				</objs>
+				<asserts>
+					<assert id="showGenericHeader" type="java.lang.String" action="isEqual">showGenericHeader</assert>
+				</asserts>
+			</test>
+		</group>
+		
+		<group id="testSelectHeader2">
+			<test id="testSelectHeader2">
+				<objs>
+					<obj id="selectHeaderDroplet"
+						type="com.bbb.commerce.giftregistry.TestSelectHeaderDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestSelectHeaderDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/SelectHeaderDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>		
+				</objs>
+				<asserts>
+					<assert id="showGenericHeader" type="java.lang.String" action="isEqual">showGenericHeader</assert>
+				</asserts>
+			</test>
+		</group>
+
+      			
+	</cluster>
+</ddtunit>

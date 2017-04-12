@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-34_28072014">
+  <ReviewIssue id="HYA4PRN3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:09:31:503 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:11:54:759 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="162">j2ee-apps/BBBStore/store.war/browse/category_landing.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>userId has been moved to certona_slot.jsp. </Summary>
+    <Description>This block is either need to be removed from category_landing.jsp. Please validate certona JS events, it should be sending required attributes as currently implemented in production.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYA543BA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:20:39:814 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:21:39:763 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="218">j2ee-apps/BBBStore/store.war/common/certona_slots.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Not required now. </Summary>
+    <Description>These can be removed as of now and can be placed when we keep implementing story in next sprints. Don't use hard coded values.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYA5DIQT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:27:59:717 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 19:28:23:057 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="412">j2ee-apps/BBBStore/store.war/cms/homepage.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This block is either need to be removed from category_landing.jsp. Please validate certona JS events, it should be sending required attributes as currently implemented in production.</Summary>
+    <Description>This block is either need to be removed from category_landing.jsp. Please validate certona JS events, it should be sending required attributes as currently implemented in production.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

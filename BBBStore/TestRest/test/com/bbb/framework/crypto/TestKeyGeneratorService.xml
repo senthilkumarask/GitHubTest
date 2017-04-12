@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.framework.crypto.TestKeyGeneratorService">
+
+
+
+		<group id="testGetConnection">
+			<test id="test1">
+				<objs>					
+					<obj id="propertiesFileLocation" type="string">D:\\BBB Data\\BACKUP\\08-04-2013\\schemaDetails.properties</obj>
+				</objs>
+			</test>	
+			
+		</group>
+		
+		<group id="testupdateEncryprionKey">
+			<test id="test1">
+				<objs>					
+					<obj id="propertiesFileLocation" type="string">D:\\BBB Data\\BACKUP\\08-04-2013\\schemaDetails.properties</obj>
+					<obj id="oldEncryptionKey" type="string">w3z5eJlKIKHEWgUEgYFSMg==</obj>
+					<obj id="newEncryptionKey" type="string">testkey</obj>
+					<obj id="currentVersion" type="int">10</obj>
+				</objs>
+			</test>	
+			
+		</group>
+		
+		
+	</cluster>
+</ddtunit>
+ 

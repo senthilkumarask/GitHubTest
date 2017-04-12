@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+      <group id="testPaymentGroupDroplet">
+        <test id="testPaymentGroupDroplet">
+			<objs>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.BBBCartFormHandler" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="atg.commerce.pricing.priceLists.PriceListManager" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="catalogTools" type="atg.commerce.catalog.CatalogTools" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>	
+                <obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                <obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>  
+                <obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathUS</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>ONLBBB110215</identifier>
+                  <type>BBB_COUPON</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40078</sku>
+                        <quantity>10</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku40016</sku>
+                        <quantity>10</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                                
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        
+                     </item>
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      
+      			<obj id="excludedProductId" type="string">
+					prod10057
+				</obj>
+				<obj id="excludedCatalogRefId" type="string">
+					sku40078
+				</obj>
+				<obj id="productId" type="string">
+					prod10021
+				</obj>
+				<obj id="catalogRefId" type="string">
+					sku40016
+				</obj>
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>	
+				<obj id="bbbPromotionLookupManager" type="com.bbb.commerce.order.manager.PromotionLookupManager" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/com/bbb/commerce/checkout/manager/PromotionLookupManager</item>
+				</obj>
+				<obj id="bbbCIAttributesBasedFilter" type="com.bbb.commerce.pricing.BBBCIAttributesBasedFilter" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+                    <item type="string">/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter</item>
+                </obj>
+                <obj id="bbbPaymentGroupDroplet" type="com.bbb.payment.droplet.BBBPaymentGroupDroplet" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+                    <item type="string">/com/bbb/payment/droplet/BBBPaymentGroupDroplet</item>
+                </obj>
+                <obj id="bbbSGCS" type="com.bbb.commerce.order.purchase.BBBShippingGroupContainerService" hint="call" method="resolveName" 
+                	calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/atg/commerce/order/purchase/ShippingGroupContainerService</item>
+				</obj>
+				<obj id="bbbSGMgr" type="com.bbb.commerce.order.BBBShippingGroupManager" hint="call" method="resolveName" 
+					calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+					<item type="string">/atg/commerce/order/ShippingGroupManager</item>
+				</obj>
+                <obj id="userCouponDroplet" type="com.bbb.commerce.order.droplet.UserCouponWalletDroplet" hint="call" method="resolveName" 
+                    calltype="com.bbb.payment.droplet.TestBBBPaymentGroupDroplet">
+                    <item type="string">/com/bbb/commerce/order/droplet/UserCouponWalletDroplet</item>
+                </obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777060829199574</obj>	
+				<obj id="pinNo" type="string">55345834</obj>
+				<obj id="balanceAmt" type="string">99.0</obj>
+                
+			</objs>			 
+        </test>
+      </group>         
+    </cluster>
+</ddtunit>
+

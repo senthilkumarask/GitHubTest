@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-124">
+  <ReviewIssue id="IQCPZQVK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 15:42:26:768 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 15:51:00:252 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="5">config/com/bbb/commerce/checklist/droplet/CheckListDroplet.properties</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why Checklist Droplet is defined as  request component</Summary>
+    <Description>It is  defined becuase to reference session bean?
+sessionBean=/com/bbb/profile/session/SessionBean</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCQKUNA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 15:58:51:430 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:02:12:563 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="544">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>getSurroundingCategoriesOnClickingC3</Summary>
+    <Description>getSurroundingCategoriesOnClickingC3 is not referened anywhere in the code base .
+Do we need this?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCQQ75L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:03:00:921 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:04:01:637 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="602">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>setNextAndPreviousForLeafNode</Summary>
+    <Description>It is not used . Do we still need this ?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCQSG2Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:04:45:794 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:05:30:393 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="653">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>populatePrevNextVOQuantityAdded</Summary>
+    <Description>It is not referenced anywhere in the code base.
+Do you still need ?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCQUFR9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:06:18:693 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:06:45:805 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="840">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused varidables</Summary>
+    <Description>String siteId = SiteContextManager.getCurrentSiteId();</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCQW5GY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:07:38:674 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 16:08:20:430 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="134">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Logg all input and ouput params</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQCT3A3L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 17:09:10:497 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 17:10:56:485 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Mahesh</AssignedTo>
+    <File line="809">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add  a null Check</Summary>
+    <Description>checkListProgressVO.setC1ImageUrl(fetchImageUrlBasedOnPercentage(updatedC1Percentage, null, c1Item));		- Add null check before passing  item to set method</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFQDX6O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:16:46:656 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:22:19:400 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="1">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove unwanted imports</Summary>
+    <Description>import com.bbb.commerce.catalog.vo.SKUDetailVO;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFQESJA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:17:27:286 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:17:45:024 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="809">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>remove unused local variables</Summary>
+    <Description>siteId</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFQIJO8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:20:22:424 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:21:42:387 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="443">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>log all  all relevant details i.e isCheckListGlobalFlagEnabled,isCheckListDisabled</Summary>
+    <Description>isCheckListDisabled = (boolean) checkListItems[0]</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFQMPOA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:23:36:826 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:24:53:248 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="282">src/com/bbb/commerce/checklist/manager/CheckListManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>log the item id as well so that it will be easy to find out instead logging just text . It applies to all</Summary>
+    <Description>this.logDebug("c3 item category belongs to registry item"); </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFQW1M3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:30:52:203 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:33:05:924 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="13">config/com/bbb/commerce/checklist/tools/CheckListTools.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>registryCheckListRepository = /com/bbb/registry/repository/RegistryCheckListRepository</Summary>
+    <Description>Why we are referring same componnent twice in props file
+
+registryCheckListRepository = /com/bbb/registry/repository/RegistryCheckListRepository
+checkListRepository=/com/bbb/registry/repository/RegistryCheckListRepository
+
+Remove the set/get methods if any one of the component is removed from props files</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFR2A8L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:35:43:317 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:36:31:897 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="111">src/com/bbb/cache/BBBInteractiveCheckListCacheLoader.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>To print we don't need to add else block</Summary>
+    <Description>else{
+			this.logDebug("BBBInteractiveCheckListCacheLoader:There is no repository item to cache for registryType: " + registryType);
+		}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFR3QXJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:36:51:607 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 18:39:15:063 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Mahesh </ReviewerId>
+    <AssignedTo>Mahesh </AssignedTo>
+    <File line="107">src/com/bbb/cache/BBBInteractiveCheckListCacheLoader.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>checkListItems.length  &gt;0 check is standard practice  instead of !=0</Summary>
+    <Description>checkListItems</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

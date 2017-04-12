@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2524">
+  <ReviewIssue id="IQ9MIFR1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-05 :: 21:11:41:821 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 23:57:13:483 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="332">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use for each</Summary>
+    <Description>for (int opbProductCtr = 0; opbProductCtr &lt; opbLength; opbProductCtr++)</Description>
+    <Annotation>Done</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ9MIUOC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-05 :: 21:12:01:164 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 23:57:03:893 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="335">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use for each</Summary>
+    <Description>for (int sortProductCtr = 0; sortProductCtr &lt; sortLength; sortProductCtr++)</Description>
+    <Annotation>Done</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ9MJ32U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-05 :: 21:12:12:054 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 23:56:52:554 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="338">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use for each</Summary>
+    <Description>for (int facetProductCtr = 0; facetProductCtr &lt; facetLength; facetProductCtr++)</Description>
+    <Annotation>Done</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ9MJBQ0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-05 :: 21:12:23:256 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-07 :: 23:56:42:864 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="351">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use for each</Summary>
+    <Description>for (int shuffleProductCtr = 0; shuffleProductCtr &lt; shuffleProductList.size(); shuffleProductCtr++) {</Description>
+    <Annotation>Done</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

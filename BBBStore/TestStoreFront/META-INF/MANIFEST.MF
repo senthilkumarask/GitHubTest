@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/ sapeconfig.jar
+ATG-Required: BBBStore.StoreFront BBBStore.integration.cybersource BBBStore.integration.webservices BBBStore.webservices BBBStore.StoreRest BBBStore.StoreRest.common
+ATG-Class-Path: classes lib/ojdbc6.jar lib/resources.jar lib/classes.jar lib/wlfullclient.jar lib/junit-3.8.1.jar lib/junit-addons-1.4.jar lib/log4j-1.2.14.jar lib/ddtunit-0.8.7-jdk14.jar lib/retrotranslator-runtime-1.2.8.jar lib/sapeclasses.jar

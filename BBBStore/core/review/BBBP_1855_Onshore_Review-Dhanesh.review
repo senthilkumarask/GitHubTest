@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP_1855_Onshore_Review">
+  <ReviewIssue id="IFROPQQP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:16:27:361 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:16:29:233 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="518">src/com/bbb/ecommerce/order/BBBOrderImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

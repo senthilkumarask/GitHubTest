@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="CATALOG_API_02_12_2011_NEHA_JAIN">
+  <ReviewIssue id="GVPHLZ1Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 23:18:31:031 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:24:51:736 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="229">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Keep a logger to understand what is returned from the API.</Summary>
+    <Description>Every time a method is returning you should keep a logger to know the input and output of method
+NEHA-DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPHTG8I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 23:24:19:890 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:40:23:309 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1202">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Make the method private</Summary>
+    <Description>NEHA-&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPI1AFT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 23:30:25:625 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:40:03:500 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1208">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do not use toString()</Summary>
+    <Description>If by any chance the state description is null the code will throw null pointer exception. So don't use toString. First get the propery and check it is not null and then set it. You can always pass null but it should not throw nullpointerexception
+
+NEHA-&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPI443J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 23:32:37:375 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:39:51:940 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="256">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Use LogFormatter class to do logging especially incase of error</Summary>
+    <Description>There is a class called LogFormatter.formatMessage() method. 
+NEHA-&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPI5C14">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 23:33:34:312 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:21:07:837 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="208">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Can you include PerfomanceLogger for all methods</Summary>
+    <Description>There is a performance monitor which logs the time taken to execute a method. Can you include that? Sync up with me for any questions you have. 
+NEHA-DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJ4AJ4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-03 :: 00:00:45:328 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 11:39:33:171 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="486">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>You should not do recursive here</Summary>
+    <Description>In CategoryDetail once you iterate over sub-categories, you should not iterate over sub-sub-categories. If you do that all the children and grand children of category will be returned as subCategories. But the purpose is only to return the immediate children of a category. 
+
+NEHA-&gt;AS discussed I am leaving it as such for now</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJ79LA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-03 :: 00:03:04:078 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:21:29:255 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1197">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add following properties to Category</Summary>
+    <Description>a. isCollege category
+b. DISPLAY_TYPE_CATEGORY_PROPERTY_NAME is incorrect. It is given as "type". It should be "nodeType"
+c. THUMBNAIL_IMAGE_CATEGORY_PROPERTY_NAME is of type media. So you cannot type cast to string
+d. categoryKeywords
+e. guideId
+Instead of creating a big constructor read the values and set it to CategoryVO explicitly. 
+
+NEHA-&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJNU4J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-03 :: 00:15:57:187 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:24:24:574 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="855">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do equalsIgnoreCase</Summary>
+    <Description>NEHA-DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXAECG4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 10:18:47:236 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 10:19:13:698 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1262">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>check isEmpty</Summary>
+    <Description>instead of comparing with "" do isEmpty check. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXAHZBN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 10:21:36:851 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:51:21:511 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1283">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Don't printStackTrace()</Summary>
+    <Description>Use the method given by Praveen in email to log the stacktrace. 
+NEHA-DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXBMVRJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 10:53:25:135 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 10:54:14:630 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1840">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need to implement aboveBelowLine logic</Summary>
+    <Description>
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXE7PZV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:05:36:667 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:51:40:263 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="1634">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>May be split this in to two lines</Summary>
+    <Description>Split it as this a long line of code
+NEHA-&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

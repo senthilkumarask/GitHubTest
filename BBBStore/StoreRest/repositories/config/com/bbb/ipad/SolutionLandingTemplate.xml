@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Solution Repository</name>
+    <author></author> 
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--           Start Up repository -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="solutionLandingTemplate" display-name-resource="solutionLandingTemplate" display-property="solutionTitle" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_SOLUTION_LANDING" type="primary" id-column-name="solution_landing_id">
+		<property name="solutionLandingId" column-name="solution_landing_id" display-name-resource="solutionLandingId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="solutionTitle" column-name="solution_title" display-name-resource="solutionTitle" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="solutionTitleDescp" column-name="solution_title_descp" display-name-resource="solutionTitleDescp" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="solutionBtnCopy" column-name="solution_btn_copy" display-name-resource="solutionBtnCopy" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="solutionTxtCopy" column-name="solution_txt_copy" display-name-resource="solutionTxtCopy" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		
+			<property name="solutionHeader" column-name="solution_header" display-name-resource="solutionHeader" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		
+			<property name="solutionMarketingMessage" column-name="solution_marketingmsg" display-name-resource="solutionMarketingMessage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>
+		</property>
+		
+		<property name="solutionMarketingDescp" column-name="solution_Marketing_Descp" display-name-resource="solutionMarketingDescp" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		
+		<property name="solutionBackgroundImage" column-name="solution_bgimage" display-name-resource="solutionBackgroundImage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+		</property>
+		
+		<property name="solutionFaced" column-name="solution_faced" display-name-resource="solutionFaced" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="9"/>
+		</property>  
+					
+		
+	</table>
+	
+	<table name="BBB_GS_SOLUTION_FACETS" type="multi" id-column-name="solution_landing_id">
+      	<property name="solutionFacets" column-name="facet_id" display-name-resource="solutionFacets" data-type="set" component-item-type="skuFacetType" category-resource="FacetsInfo" repository="/com/bbb/ipad/SkuFacetRepository">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="9"/>
+		</property>
+   </table>
+	
+	<table name="BBB_GS_CAT_SOLUTION_REL" type="multi" id-column-name="solution_landing_id">
+      	<property name="categoryName" column-name="category_name" display-name-resource="categoryName" data-type="set" component-item-type="category" category-resource="MasterInfo" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="9"/>
+		</property>
+   </table>
+     <table name="BBB_GS_SOLUTION_SITE_REL" type="multi" id-column-name="solution_landing_id">
+			<property name="sites" column-name="site_id"  display-name-resource="sites" component-item-type="siteConfiguration" data-type="set" category-resource="appSites" repository="/atg/multisite/SiteRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+      	</property>
+     </table>
+	
+	<table name="BBB_GS_SOLUTION_OPTIONS_REL" type="multi" id-column-names="solution_landing_id" multi-column-name="sequence_num">
+  	 	<property name="solutionLandingOptionRel" column-names="solution_option_id" display-name-resource="solutionLandingOptionRel" data-type="list" component-item-type="solutionOption" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="10"/>
+		</property>
+  	 </table>
+    	 
+  	<table name="BBB_GS_SOLUTION_HOTSPOT_REL" type="multi" id-column-name="solution_landing_id">
+		<property name="solutionLandingHotSpotRel" column-names="solution_hotspot_id" display-name-resource="solutionLandingHotSpotRel" data-type="set" component-item-type="solutionHotSpot" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="11"/>
+		</property>
+	</table>
+</item-descriptor>
+
+
+
+
+<!--  solution option  -->
+
+<item-descriptor name="solutionOption" display-name-resource="solutionOption" display-property="optionHeader" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+ 	<attribute name="updateLastModified" value="true"/>
+ 	<table name="BBB_GS_SOLUTION_OPTION" type="primary" id-column-name="solution_options_id" >
+ 		<property name="solutionOptionsId" column-name="solution_options_id" display-name-resource="solutionOptionsId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="displayName" column-names="display_name" display-name-resource="displayName" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="optionHeader" column-names="option_header" display-name-resource="optionHeader" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="optionDescription" column-names="option_description" display-name-resource="optionDescription" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="categoryId" column-name="option_categoryId" display-name-resource="categoryId" item-type="category" category-resource="MasterInfo" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+		</property>  
+	</table>
+</item-descriptor>
+
+
+<item-descriptor name="solutionHotSpot" display-name-resource="solutionHotSpot" display-property="solutionHotSpotId" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" sub-type-property="hotSpotType" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_HOTSPOT_REL" type="primary" id-column-name="solution_hot_spot_id">
+		<property name="solutionHotSpotId" column-name="solution_hot_spot_id" display-name-resource="solutionHotSpotId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="hotSpotType" column-name="hot_spot_type" display-name-resource="hotSpotType" data-type="enumerated" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+        		<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="solutionDidUknow" code="1"/>
+            	<option value="hotspotVideo" code="0"/>
+		</property>
+			
+		<property name="xCordinate" column-name="x_cordinate" display-name-resource="xCordinate" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="yCordinate" column-name="y_cordinate" display-name-resource="yCordinate" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+		</property> 
+	</table>
+</item-descriptor>
+
+
+<item-descriptor name="hotSpotVideo" display-name-resource="hotSpotVideo" display-property="hotSpotVideoUrl" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="solutionHotSpot" sub-type-value="hotspotVideo">
+	 <table name="BBB_GS_SOLUTION_HOTSPOT" type="auxiliary" id-column-name="solution_hot_spot_id">
+		<property name="hotSpotVideoUrl" column-name="hotspot_video_url" display-name-resource="hotSpotVideoUrl"  data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+	</table>
+</item-descriptor>
+
+<item-descriptor name="solutionDidUknow" display-name-resource="solutionDidUknow" display-property="hotSpotDidYouKnowText" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" super-type="solutionHotSpot" sub-type-value="solutionDidUknow">
+	<table name="BBB_GS_SOLUTION_HOTSPOT" type="auxiliary" id-column-name="solution_hot_spot_id">
+		<property name="hotSpotDidYouKnowText" column-name="did_you_know_hotspot" display-name-resource="hotSpotDidYouKnowText" data-type="big string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+	</table>
+</item-descriptor>
+
+
+</gsa-template>

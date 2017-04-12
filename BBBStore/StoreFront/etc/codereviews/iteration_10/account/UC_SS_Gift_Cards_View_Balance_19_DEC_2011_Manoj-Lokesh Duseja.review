@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_SS_Gift_Cards_View_Balance_19_DEC_2011_Manoj">
+  <ReviewIssue id="GWEMWVQ4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:41:12:412 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:49:55:265 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="40">j2ee-apps/BBBStore/store.war/account/check_giftcard_balance.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Change the hardcoded text to get it from CMS and replace &amp;nbsp; with a space</Annotation>
+    <Revision>added label lbl_giftcard_checkbal_balance</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEMXMEP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:41:46:993 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 19:04:04:509 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="53">j2ee-apps/BBBStore/store.war/account/check_giftcard_balance.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Change the button text to get it from CMS</Annotation>
+    <Revision>added CMS functionality</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWEMY6XT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 13:42:13:601 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 19:03:59:541 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="64">j2ee-apps/BBBStore/store.war/account/check_giftcard_balance.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Change the button text to get it from CMS</Annotation>
+    <Revision>added CMS functionality</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

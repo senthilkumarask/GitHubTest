@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestStoreGiftlistFormHandler">
+  
+      <group id="testStoreGiftlistFormHandler">
+        <test id="testStoreGiftlistFormHandler">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="bbbStoreGiftlistFormHandler" type="com.bbb.wishlist.StoreGiftlistFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/atg/commerce/gifts/GiftlistFormHandler</item>
+				</obj>
+				<obj id="bbbWishlistSiteFilterDroplet" type="com.bbb.wishlist.BBBWishlistSiteFilterDroplet" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/com/bbb/wishlist/BBBWishlistSiteFilterDroplet</item>
+				</obj>
+				<obj id="bbbWishlistItemCountDroplet" type="com.bbb.wishlist.BBBWishlistItemCountDroplet" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/com/bbb/wishlist/BBBWishlistItemCountDroplet</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+               <obj id="price" type="string">100</obj>
+                 		
+				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.TestBBBCommerceItemManager" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>
+				<obj id="qty" type="string">
+					1
+				</obj>
+				<obj id="siteContextManager" type="com.bbb.selfservice.droplet.StateDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.survey.TestSurveyDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+			</objs>	
+        </test>
+      </group>
+      
+      <group id="testStoreGiftlistFormHandlerLTL">
+        <test id="testStoreGiftlistFormHandlerLTL">
+			<objs>
+				<obj id="bbbStoreGiftlistFormHandler" type="com.bbb.wishlist.StoreGiftlistFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/atg/commerce/gifts/GiftlistFormHandler</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+                <obj id="price" type="string">100</obj>
+                <obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.TestBBBCommerceItemManager" hint="call" method="resolveName" calltype="com.bbb.account.TestStoreGiftlistFormHandler">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				<obj id="siteContextManager" type="com.bbb.selfservice.droplet.StateDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.survey.TestSurveyDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>
+				<obj id="catalogRefId" type="string">
+					sku60016
+				</obj>
+				<obj id="productId" type="string">
+					prod60012
+				</obj>
+				<obj id="qty" type="string">
+					1
+				</obj>
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>
+			</objs>	
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

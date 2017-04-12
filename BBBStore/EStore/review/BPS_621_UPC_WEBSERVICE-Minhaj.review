@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPS_621_UPC_WEBSERVICE">
+  <ReviewIssue id="I49ZFFUS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 20:39:45:604 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 20:39:50:773 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="196">src/com/bbb/rest/catalog/BBBRestCatalogToolImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I49ZFV9V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 20:40:05:587 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-12-29 :: 20:40:07:677 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Minhaj</AssignedTo>
+    <File line="1">src/com/bbb/rest/catalog/vo/ProductMobileVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

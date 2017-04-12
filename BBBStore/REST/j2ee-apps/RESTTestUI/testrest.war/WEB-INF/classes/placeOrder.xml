@@ -1,0 +1,12 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will comit the order. Before doing that ensure you have added item, billing address, shipping address into order</description>
+	<action>/rest/bean/atg/commerce/order/purchase/CommitOrderFormHandler/placeCurrentOrder</action>
+	<params>
+		<param id="atg-rest-depth" name="atg-rest-depth" required="true" class="reqBody" type="text">3</param>
+		<param id="atg-rest-input" name="atg-rest-input" required="true" class="reqBody" type="text">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param type="text" name="clientID" id="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_INVENTORY_DECREMENT_JYOTI_NARINDER">
+  <ReviewIssue id="H137VAOR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-16 :: 13:13:07:995 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-16 :: 14:58:41:940 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Jyoti</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="135">src/com/bbb/commerce/checkout/processor/ProcSendSubmitOrderMessage.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove the condition from the else, this should happen by default.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="H13B0BMW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-16 :: 14:41:01:352 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-16 :: 14:58:49:909 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Jyoti</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>concat inventoryVO.getSiteId to key in the if loop</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

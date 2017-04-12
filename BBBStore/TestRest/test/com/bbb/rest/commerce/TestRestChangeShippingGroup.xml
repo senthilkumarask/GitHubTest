@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestChangeShippingGroup.xml 
+	DESCRIPTION: ddtunit data file for TestRestChangeShippingGroup.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestChangeShippingGroup">
+	
+		
+		
+		<group id="testOnlineToBopusAndBopusToOnlineSuccess">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"16332631","prodId":"111534","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="getOnlineToBopusRequestUrl" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/changeToStorePickup</obj>
+					<obj id="getBopustoOnlineRequestUrl" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/changeToShipOnline</obj>
+					<obj id="newQuantity" type="string">1</obj>
+					<obj id="storeId" type="string">3045</obj>
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="systemErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+		
+			<group id="testOnlineToBopusAndBopusToOnlineFailure">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="getOnlineToBopusRequestUrl" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/changeToStorePickup</obj>
+					<obj id="getBopustoOnlineRequestUrl" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/changeToShipOnline</obj>
+					<obj id="newQuantity" type="string">1</obj>
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="systemErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+	
+		
+	</cluster>
+</ddtunit>
+ 

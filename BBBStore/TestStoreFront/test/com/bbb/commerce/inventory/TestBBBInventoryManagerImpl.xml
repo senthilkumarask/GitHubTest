@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl">
+       <group id="testGetProductAvailability">
+        <test id="testGetProductAvailability">
+			<objs>
+				<obj id="bbbInventoryManager" type="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl" hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl">
+					<item type="string">/com/bbb/commerce/inventory/BBBInventoryManager</item>
+				</obj>
+				<obj id="onlineInventoryManager" type="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl" hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl">
+					<item type="string">/atg/commerce/inventory/InventoryManager</item>
+				</obj>
+				<obj id="storeInventoryManager" type="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl" hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.TestBBBInventoryManagerImpl">
+					<item type="string">/com/bbb/commerce/inventory/BBBStoreInventoryManager</item>
+				</obj>
+				<obj id="catalogRefId1" type="string">
+					sku10013
+				</obj>
+				<obj id="catalogRefId2" type="string">
+					sku10014
+				</obj>
+				<obj id="catalogRefId3" type="string">
+					sku40006
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="qty" type="string">
+					1
+				</obj>
+			</objs>			 
+        </test>
+      </group>    
+      </cluster>
+</ddtunit>
+      
+      
+      
+          
+    

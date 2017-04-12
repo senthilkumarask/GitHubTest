@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	 xmlns:ns="http://www.bedbath.com/ProfilePersonalization/SharedResources/Schemas/ATGProfileData_Input"
+	 targetNamespace="http://www.bedbath.com/ProfilePersonalization/SharedResources/Schemas/ATGProfileData_Input"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xsd:element name="ATGProfileData_Input">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Header">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="UserToken" type="xsd:string"/>
+							<xsd:element name="ApplicationName" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="Hostname" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="DataCenterName" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Body">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ATGProfileID" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="EmailAddress" type="xsd:string"/>
+							<xsd:element name="Attributes">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="AttributeName" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

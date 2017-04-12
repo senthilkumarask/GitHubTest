@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-5753">
+  <ReviewIssue id="IIPMI40Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-12-28 :: 12:38:06:754 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-12-28 :: 12:40:08:221 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Code reviw comment</Summary>
+    <Description>Create a new JSP for drop downs.
+Create test cases for Tool tip.
+Check out apportionment scheduler should present in the JSP. This button should come in Left Bottom as per recommended by Sreekanth.
+University content should come from BCC.
+Pack and hold functionality should work as it is.
+
+Create Label for "find your school" Submit , '/store' , nwp
+
+Alter jupiter for new JSP and code review comment.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

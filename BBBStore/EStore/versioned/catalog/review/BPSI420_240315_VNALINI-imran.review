@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI420_240315_VNALINI">
+  <ReviewIssue id="I7R8SW9V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:33:21:955 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:34:22:926 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Make method parameters as final in setter methods</Summary>
+    <Description>Run PMD on your changes</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7R8UO7B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:34:44:807 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:36:50:734 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="667">src/com/bbb/importprocess/vo/SkuVO.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Make it boolean, getter for boolean should following standard conventions</Summary>
+    <Description>convert getIsXX to isXX for boolean variables</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7R95984">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:42:58:612 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:43:22:843 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="3587">src/com/bbb/importprocess/tools/BBBPIMFeedTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move string literals to Constant java</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7R9HH9D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:52:28:897 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-27 :: 12:52:59:351 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="2312">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>These should be boolean instead of strings</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

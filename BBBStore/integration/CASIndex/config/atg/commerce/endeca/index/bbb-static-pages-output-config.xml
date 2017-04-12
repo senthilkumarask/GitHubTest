@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item item-descriptor-name="siteStaticPage" is-document="true">
+  <title property-name="id"/>
+  <properties>
+    <property name="id" output-name="P_StaticPage_ID" text-searchable="true" type="string"/>
+    <property name="pageTitle" is-dimension="false" output-name="P_Page_Title" text-searchable="true" type="string"/>
+	<property name="pageCopy" is-dimension="false" output-name="P_Page_Copy" text-searchable="true" type="string"/>
+	<property name="pageHeaderCopy" is-dimension="false" output-name="P_Page_Header" text-searchable="true" type="string"/>
+    <property name="bbbPageName" is-dimension="false" output-name="P_Page_Name" text-searchable="true" type="string"/>
+    <property name="pageType" is-dimension="false" output-name="P_Page_Type" text-searchable="true" type="string"/>
+    <property name="seoUrl" is-dimension="false" output-name="P_SEO_URL" text-searchable="true" type="string"/>
+	<property name="siteId" output-name="Site_ID" is-dimension="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/MediaSiteIdAccessor"/>
+	<property name="RecordType" is-non-repository-property="true" output-name="Record Type" type="string" is-dimension="true" default-value="StaticPage" property-accessor="null" autogen-dimension-values="true"/>
+	<property name="SearchMerchandisingPages" is-non-repository-property="true" output-name="MerchandisingPages_Search" default-value="Search" property-accessor="null"/>
+	<property name="$url"    type="string"   suppress="true"/>
+	<property name="$baseUrl"    type="string"   suppress="true"/> 
+    <property name="$repositoryId" suppress="true"/> 
+	<property name="$repository.repositoryName" suppress="true"/>
+	<property name="$itemDescriptor.itemDescriptorName" output-name="record.type" suppress="true"/>
+  </properties>
+
+</item>

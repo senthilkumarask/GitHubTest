@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_Manage_MoveToWishList_Harsh">
+  <ReviewIssue id="GVX4HTUM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:33:32:062 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 19:12:07:411 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="1084">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add FormException and setsystem  error page  for CommerceItemNotFound and InvalidParameterException</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6JPJR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 08:30:59:031 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:47:15:187 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="1076">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use checkFormRedirect instead of RequestDispatcher</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6U2UZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 08:39:02:843 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:46:03:265 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="1097">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Instead of using session use sessionBean to set the values</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6UPGD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 08:39:32:125 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:46:08:312 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="1115">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Instead of session use sessionBean</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVZVPFXW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 05:50:49:268 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:46:19:781 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="2236">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This needs to be called in PostCreateUser also</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW0SITFG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 21:09:27:484 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:46:13:687 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="2247">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Don't call handle method, since the handle method also redirects the request, the behavior will be incosistent, better call moveItemsFromCart method and then check for form errors and if any error addFormException.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW3T4U3K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 23:49:53:312 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-13 :: 00:07:29:750 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo />
+    <File line="1152">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to understand this line of code. We should first get the item to make sure commerceItemId is correct, then get the item.getQuantity.</Summary>
+    <Description>Method saveGiftListItemInSession
+
+CommerceItem item = getOrder().getCommerceItem(commerceItemId);</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

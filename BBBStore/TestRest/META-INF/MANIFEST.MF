@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/ 
+ATG-Required: BBBStore.StoreFront BBBStore.integration.cybersource BBBStore.integration.webservices BBBStore.webservices
+ATG-Class-Path: classes lib/ojdbc6.jar

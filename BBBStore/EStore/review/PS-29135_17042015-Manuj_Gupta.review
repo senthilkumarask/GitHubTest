@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="PS-29135_17042015">
+  <ReviewIssue id="I8PHYU28">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-20 :: 11:54:05:552 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-20 :: 12:36:22:075 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj_Gupta</ReviewerId>
+    <AssignedTo>Manuj_Gupta</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>FacebookFeedScheduler.properties update for Production Environment</Summary>
+    <Description>SchedulerEnabled property to be enabled to true and add the component in initial.properties of SLM02 Sever. Confirm it from Manoj where the same needs to bed enabled.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

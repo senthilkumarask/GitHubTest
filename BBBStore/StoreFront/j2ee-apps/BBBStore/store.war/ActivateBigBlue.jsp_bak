@@ -1,0 +1,187 @@
+<dsp:page>
+	<%@ page import="com.bbb.constants.BBBCoreConstants"%>
+	<dsp:importbean bean="/atg/dynamo/droplet/ForEach" />
+	<dsp:importbean bean="/atg/dynamo/droplet/IsEmpty"/>
+	<dsp:importbean bean="/atg/dynamo/droplet/Switch"/>	
+	<dsp:importbean bean="/com/bbb/selfservice/StateDroplet" />
+	<dsp:importbean var="Profile" bean="/atg/userprofiling/Profile" />
+	<dsp:importbean var="SessionBean" bean="/com/bbb/profile/session/SessionBean"/>
+	<dsp:importbean var="ActivateBigBlueFormHandler" bean="/com/bbb/browse/ActivateBigBlueFormHandler" />
+	<dsp:importbean var="ProfileFormHandler" bean="/atg/userprofiling/ProfileFormHandler"/>
+	<dsp:importbean bean="/atg/multisite/Site"/>
+	<dsp:getvalueof id="currentSiteId" bean="Site.id" />
+	<bbb:pageContainer>
+	<jsp:attribute name="section">browse</jsp:attribute>
+	<jsp:attribute name="homepage">bigblue</jsp:attribute>
+	<jsp:attribute name="pageWrapper"></jsp:attribute>
+	<dsp:getvalueof var="successMessage" bean="/com/bbb/browse/ActivateBigBlueFormHandler.successMessage" />
+	
+		<%--<div id="cmsPageHead" class="grid_12 clearfix">
+			<h1>Activate Your Online Offer</h1>
+		</div> --%>
+		<jsp:body>
+		<table width="100%" style="margin-top: 8px;">
+		<tbody>
+		<div style="margin-left:150px;">
+		<dsp:include page="/global/gadgets/errorMessage.jsp">
+     	 <dsp:param name="formhandler" bean="ActivateBigBlueFormHandler"/>
+    	</dsp:include>
+			<p class="atg_store_pageDescription" ><h1>Activate Your Online Offer</h1></p>
+			 <%-- 	ErrorMessageForEach  starts --%>
+    
+<%-- 	ErrorMessageForEach Ends --%>
+		<%--	<dsp:droplet name="Switch">
+				<dsp:param name="value" bean="/com/bbb/browse/ActivateBigBlueFormHandler.successMessage"/>
+				<dsp:oparam name="false">
+				<p>
+										<dsp:include page="/global/gadgets/errorMessage.jsp">
+										<dsp:param name="formhandler" bean="ActivateBigBlueFormHandler"/>
+										</dsp:include>
+								</p>
+				<%--<dsp:droplet name="IsEmpty">
+		 		<dsp:param name="value" bean="SessionBean.couponError"/>
+		 				<dsp:oparam name="false">
+		 				<dsp:getvalueof var="displayMessage" bean="SessionBean.couponError" />
+		 				<div>
+						<b><font color="red">${displayMessage}</font></b>
+						</div>
+		 		</dsp:oparam>
+		 		<dsp:oparam name="true"> --%> 
+		 		<%--</dsp:oparam> 
+		 		</dsp:droplet>	
+				</dsp:oparam>
+			</dsp:droplet> --%>
+		<tr>
+		<td>
+		<div class="cmsPageContent" style="width: 350px; font-size: 11px; margin-left: 150px; margin-right: 10px;" >
+			<dsp:form  id="frmActivateBigBlue" method="post" action="activateBigBlue.jsp">		
+				<div>
+					<b>To Activate an offer, enter the information from the offer into the form below.</b>
+				</div>
+				<div>
+			<div class="input clearfix formRow marTop_10">
+				<div class="label width_2 fl">
+					<label for="txtOfferCd">Offer Number<span class="required">*</span></label>
+				</div>
+				<div class="text width_2 fl marRight_20">
+					<dsp:input bean="ActivateBigBlueFormHandler.activateBigBlueVO.offerCd" name="offerCd" id="offerCd" type="text" size="20" >					
+						<dsp:tagAttribute name="aria-required" value="true"/>
+		                                <dsp:tagAttribute name="aria-describedby" value="offerCd errorofferCd"/>
+                            		</dsp:input>
+				</div>			
+			</div> 
+			
+			 <div class="input clearfix formRow">
+				<div class="label width_2 fl">
+					<label for="txtEmailAddr">Email<span class="required">*</span></label>
+				</div>
+				<div class="text width_2 fl" style="width:200px;">
+					<dsp:input bean="ActivateBigBlueFormHandler.activateBigBlueVO.emailAddr" id="newEmail" name="email" type="text" size="30">
+						<dsp:tagAttribute name="aria-required" value="true"/>
+                                		<dsp:tagAttribute name="aria-describedby" value="newEmail errornewEmail"/>
+                            		</dsp:input>
+				</div> 		
+			</div> 
+			<div class="grid_4 clearfix alpha omega">
+						<div class="inputField clearfix">
+							<dsp:input bean="/com/bbb/browse/ActivateBigBlueFormHandler.activateBigBlueVO.mobilePhone" name="MobilePhone" id="txtMobilePhone" type="text" size="20">
+                                <dsp:tagAttribute name="aria-required" value="false"/>
+                                <dsp:tagAttribute name="aria-describedby" value="txtMobilePhone errortxtMobilePhone"/>
+                            </dsp:input>
+							<label for="txtMobilePhone">Mobile Phone Number</label>
+							<!--<input type="text" name="mobile" size="20" value=""><br><br>-->
+						</div>
+					</div>	
+
+			<div id="captchaDiv" class="clearfix noMarTop">
+				<div class="input clearfix">
+					<div class="">
+						<label for="captchaAnswer">*Please type the words you see in the image below.<span class="required">*</span></label>
+					</div>
+					<div class="text width_3 fl">
+						<img width="300" height="100" src="<c:url value="/simpleCaptcha.png" />" />
+						<dsp:input type="text" name="captchaAnswer" id="captchaAnswer" value="" iclass="marTop_5" bean="ActivateBigBlueFormHandler.captchaAnswer" autocomplete="off">
+							<dsp:tagAttribute name="aria-required" value="true"/>
+                                    			<dsp:tagAttribute name="aria-describedby" value="captchaAnswer errorcaptchaAnswer"/>
+                                		</dsp:input>
+					</div>			
+				</div>
+			</div>
+			<div class="formRow">
+            <div class="optIn">		  	
+                   <dsp:input type="checkbox" id="chkPromoEmailFlag" bean="ActivateBigBlueFormHandler.activateBigBlueVO.promoEmailFlag" name="emailOptIn" checked="false" iclass="fl">
+		   	<dsp:tagAttribute name="aria-checked" value="false"/>
+                        <dsp:tagAttribute name="aria-describedby" value="chkPromoEmailFlag errorchkPromoEmailFlag"/>
+                    </dsp:input>
+                  <label for="optIn" class="textDgray11">Yes, send me offers straight to my inbox!</label>
+            </div>
+			<div class="clear"></div>
+          </div>
+          <div class="formRow">
+            <div class="optIn">		  	
+                   <dsp:input type="checkbox" id="chkPromoMobileFlag" bean="ActivateBigBlueFormHandler.activateBigBlueVO.promoMobileFlag" name="PromoMobileFlag" checked="false" iclass="fl">
+		   	<dsp:tagAttribute name="aria-checked" value="false"/>
+                        <dsp:tagAttribute name="aria-describedby" value="chkPromoMobileFlag errorchkPromoMobileFlag"/>
+                   </dsp:input>
+                  <label for="optIn" class="textDgray11">Yes, send me offers via text message<br>Messages &amp; Data rates may apply.</label>
+            </div>
+			<div class="clear"></div>
+          </div>
+         <div class="button btnApply button_active button_active_orange clearfix">
+					   <dsp:input id="btnSubmitActivateBigBlueRegRequest" type="submit" value="Submit" bean="/com/bbb/browse/ActivateBigBlueFormHandler.ActivateBigBlueRequest" />
+					<dsp:input bean="ActivateBigBlueFormHandler.successURL" type="hidden" value="/store/bigBlueSuccess.jsp"/>
+					<dsp:input bean="ActivateBigBlueFormHandler.errorURL" type="hidden"  value="/store/activateBigBlue.jsp"/>
+					</div><br></br>			
+		</div>
+					
+			</dsp:form>
+		</div>
+		</td>
+		<td>
+		<div style="width: 450px; font-size: 11px; margin-left: 10px; margin-right: 20px;">
+					<img src="/_assets/bbbeyond/images/bigblue.jpg" border="0"><br><br>
+					<u>Email Privacy</u><br>
+					For your protection please do not email credit card or other sensitive information.
+					<br><br>
+					<u>Email Unsubscribe</u><br>
+					If at any time you do not want to receive email, and/or circulars from us and our subsidiaries, you can always remove yourself from our email list by entering your information in our <a href="https://app.bedbathandbeyond.com/prefs/unsub.cfm">email unsubscribe page</a>.
+					<br><br>
+					<u>Direct Mail Unsubscribe</u><br>
+					If at any time you do not want to receive email, and/or circulars from us and our subsidiaries, you can always remove yourself from our email list by entering your information in our <a href="https://app.bedbathandbeyond.com/prefs/dmunsub.cfm">direct mail unsubscribe page</a>.			
+				<div>
+					<br><br>
+					<div class="smallText">
+                        <p><bbbl:label key="lbl_footer_privacypolicy" language="${pageContext.request.locale.language}" /></p>
+                    </div>
+					<br><br>
+					If you have any questions about this offer, please call us at 1-800-GO BEYOND® (1-800-462-3966), or email us at <a href="mailto:customer.service@bedbath.com">customer.service@bedbath.com</a>.
+					<br><br>
+		</div>
+		</div>
+		</td>
+		</div>
+		</tr>
+		</tbody>
+		</table>
+		</jsp:body>
+		 <jsp:attribute name="footerContent">
+		<script>
+if (typeof s !== 'undefined') {
+	s.pageName='My Account > Offer activation'; // pageName
+	s.channel='My Account';
+	s.prop1='My Account';
+	s.prop2='My Account';
+	s.prop3='My Account';
+	s.prop4='My Account';
+	s.prop6='${pageContext.request.serverName}'; 
+	s.eVar9='${pageContext.request.serverName}';	
+	s.server='${pageContext.request.serverName}';
+	var s_code = s.t();
+	if (s_code)
+		document.write(s_code);
+}
+</script>
+		 
+		 </jsp:attribute>
+	</bbb:pageContainer>
+</dsp:page>

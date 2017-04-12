@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="StaticShippingTemplate_2011_12_01_VishalAgrawal">
+  <ReviewIssue id="GVTEZT2A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-05 :: 17:16:22:306 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-05 :: 17:16:34:975 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra_Karamcheti</AssignedTo>
+    <File></File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

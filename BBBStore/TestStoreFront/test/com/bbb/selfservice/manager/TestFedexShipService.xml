@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBridalBookFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBridalBookFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.manager.TestFedexShipService">
+		<group id="testLabel">
+			<test id="testLabel">
+				<objs>
+					<obj id="testFedexShipService" type="com.bbb.selfservice.manager.FedexShipService"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestFedexShipService">
+						<item type="string">/com/bbb/selfservice/FedexShipService</item>
+					</obj>						
+					<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogTools"
+						hint="call" method="resolveName" calltype="com.bbb.selfservice.manager.TestFedexShipService">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testSendEmailLabel">
+			<test id="testSendEmailLabel">
+				<objs>
+					<obj id="testFedexShipService" type="com.bbb.selfservice.manager.FedexShipService"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestFedexShipService">
+						<item type="string">/com/bbb/selfservice/FedexShipService</item>
+					</obj>						
+					<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogTools"
+						hint="call" method="resolveName" calltype="com.bbb.selfservice.manager.TestFedexShipService">
+						<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

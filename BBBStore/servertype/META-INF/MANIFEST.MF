@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+ATG-Required: BBBStore.servertype.bbb_prod BBBStore.servertype.bbb_pub 
+ BBBStore.servertype.bbb_stg BBBStore.servertype.bbb_tbs_prod 
+ BBBStore.servertype.bbb_tbs_stg BBBStore.servertype.bbb_gs_prod

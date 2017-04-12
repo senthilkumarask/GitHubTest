@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestCartAndCheckout.xml 
+	DESCRIPTION: ddtunit data file for TestRestCartAndCheckout.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestCartAndCheckout">
+	
+	   <group id="testShippingMethodsSingleShippingSuccess">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">test@sapient.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="arg1" type="string">singleShipping</obj>
+				</objs>
+			</test>
+			
+		</group>
+		
+		<group id="testShippingMethodsMultiShippingSuccess">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-depth-shipMethod" type="string">9</obj>
+					<obj id="arg1" type="string">multiShipping</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">msiddi@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"5","price":"$38.99","bts":"false","storeId":""}
+					,{"skuId":"16830275","prodId":"1016830275","qty":"5","price":"$12.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		 <group id="testShippingMethodsFailure">
+			 
+			<test id="test3">
+				<objs>
+					<obj id="domainName" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-depth-shipMethod" type="string">5</obj>
+					<obj id="arg1" type="string">xyz</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15970243","prodId":"1015970243","qty":"5","price":"$11.99","bts":"false","storeId":""}
+					,{"skuId":"14282092","prodId":"1014282092","qty":"5","price":"$39.99","bts":"false","storeId":""}]}</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		
+		<group id="testGetStatesList">
+			 <test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="arg1" type="string">true</obj>
+				</objs>
+			</test>
+		</group>	
+		<group id="testGetCollegeStatesList">
+        	<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">test@sapient.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="arg1" type="string">singleShipping</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetCollegesByState">
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">test@sapient.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="arg1" type="string">AK</obj>
+				</objs>
+			</test>            
+		</group>
+		
+		<group id="testGetCollegeStatesList">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">test@sapient.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="arg1" type="string">singleShipping</obj>
+				</objs>
+			</test>
+			
+		</group>	
+		
+	</cluster>
+</ddtunit>
+ 

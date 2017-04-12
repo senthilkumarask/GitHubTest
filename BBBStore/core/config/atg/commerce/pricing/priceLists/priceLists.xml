@@ -1,0 +1,27 @@
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>Commerce Price Lists</name>
+    <author> Team</author>
+    <version>Revision: #1</version>      
+  </header>
+  
+  <item-descriptor name="price" xml-combine="append" last-modified-property="lastModifiedDate">
+     <attribute name="updateLastModified" value="true"/>
+	  <table name="BBB_PRICE" type="auxiliary" id-column-name="price_id">
+	       	<property name="lastModifiedDate" column-name="last_mod_date" display-name="lastModifiedDate" 
+	       										data-type="timestamp" category="priceListBasics" hidden="true">
+	 			</property> 
+	   </table>
+  </item-descriptor>
+  
+   <item-descriptor name="priceList" xml-combine="append" last-modified-property="lastModifiedDate">
+     <attribute name="updateLastModified" value="true"/>
+     <table name="dcs_price_list" id-column-name="price_list_id" type="primary">
+      <property expert="false" readable="true" category-resource="priceListBasics" display-name-resource="locale" writable="true" cache-mode="inherit" column-name="locale" default="en_US" data-type="enumerated" hidden="false" name="locale" required="true" queryable="true">
+          <option value="es_MX" code="3"/>
+      </property> 
+	 </table>
+  </item-descriptor>
+  
+</gsa-template>

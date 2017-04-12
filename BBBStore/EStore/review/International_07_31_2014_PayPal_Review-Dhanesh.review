@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="International_07_31_2014_PayPal_Review">
+  <ReviewIssue id="HYAGHKDD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:09:04:225 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:11:37:071 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="289">src/com/bbb/commerce/droplet/PayPalDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>paypalParamMap  null, empty check - PayPalDroplet</Summary>
+    <Description>Add null check , size check before retriving the value from map 
+Line  # 318</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYAGL0NX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:11:45:309 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:13:07:525 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="314">src/com/bbb/commerce/droplet/PayPalDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>else block is not required to log a reponse string</Summary>
+    <Description> If required to log a response string add  inside if, else if conditions.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYAGQD3Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:15:54:719 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:18:01:068 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="255">src/com/bbb/commerce/droplet/PayPalDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do the null check on the object before accessing the method</Summary>
+    <Description>ex:  voResp.getErrorStatus()  != null &amp;&amp; !voResp.getErrorStatus().isErrorExists() so that Null Pointer Exception can be avoided</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYAGVP0M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:20:03:430 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:23:11:655 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="221">src/com/bbb/commerce/droplet/PayPalDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do not use the  logDebug in the expcetion block</Summary>
+    <Description> catch (CommerceException e) {
+				logError("PayPalDroplet.service():: Commerce Exception while calling webservice GetExpressCheckoutDetails: " + e);
+				logDebug("PayPalDroplet.service():: Redirect user to " + redirectUrl);
+}
+
+add the logDebug statement in the try block  if required to print the redirectUrl</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYAGWY94">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:21:02:056 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 15:44:41:219 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="223">src/com/bbb/commerce/droplet/PayPalDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Combine the logDebug statements</Summary>
+    <Description>Two logDebug call's are not required.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYAIISOK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 16:06:00:884 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-07-31 :: 16:08:32:559 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="2">config/com/bbb/commerce/droplet/PaypalDroplet.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Don't required to mention loggingDebug=false </Summary>
+    <Description>By default loggingDebug  is false.  Also need to understand the  scope of the component why it is defined as request scope.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYBQARXO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 12:31:29:772 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 12:32:43:452 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="211">src/com/bbb/commerce/order/paypal/PayPalAddressVerification.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use LogInfo or LogDebug instead of LogError to print the message</Summary>
+    <Description>logError("Shipping Restriction Present in Paypal Address");   </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYBQDZMD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 12:33:59:701 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 12:35:38:690 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="203">src/com/bbb/commerce/order/paypal/PayPalAddressVerification.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Null check is not happening any object</Summary>
+    <Description>Do the null check  before accessing the method or variables from the object to avoid NullPointer exception.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYBUR99R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:36:17:199 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:36:35:299 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="45">src/com/bbb/commerce/order/paypal/BBBPayPalSessionBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove the unused imports</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYBUS2GR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:36:55:035 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:37:21:181 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="45">src/com/bbb/commerce/order/paypal/BBBPayPalSessionBean.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused imports</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYBUU7CM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:38:34:678 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-01 :: 14:39:03:789 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1">src/com/bbb/paypal/vo/PayPalAddressVerifyVO.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Implement Serializable interface</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

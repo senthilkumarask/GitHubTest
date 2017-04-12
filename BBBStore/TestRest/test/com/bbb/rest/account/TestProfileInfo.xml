@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.account.TestProfileInfo">
+		<group id="testProfileInforUser">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">4</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-properties" type="boolean">true</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="username" type="string">rest1@gmail.com</obj>
+					<obj id="password" type="String">Sapient123</obj>
+					<obj id="firstName" type="String">Rest</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="getProfileObject" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getProfileInfo</obj>
+				</objs>
+			</test>
+		</group>	
+		
+		<group id="testProfileInfoforUserError">
+			 <test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">4</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="atg-rest-return-form-handler-properties" type="boolean">true</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="profileusername" type="string">atesterror@test.com</obj>
+					<obj id="profilepassword" type="String">Test@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="getProfileObject" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getProfileInfo</obj>
+					<obj id="testResult" type="String">{}</obj>
+					<obj id="username" type="string">admin</obj>
+					<obj id="password" type="String">admin</obj>
+				</objs>
+			</test>
+		</group>	
+	</cluster>
+</ddtunit>
+ 

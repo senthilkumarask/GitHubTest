@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- BBB customizations for merchandising find configuration -->
+<find-configuration>
+ 
+  <!-- FF1 Find View -->
+  
+  <asset-family id="FF1" site-filtering="true">
+	<display-name>FF1</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+    <result-list page-size="100"/>
+    <default-asset-type>attractScreen</default-asset-type>
+    
+     		<asset-type id="ImageBox" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/CommonRepository</repository-path>
+		      <repository-item-type>ImageBox</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="ImageCarousel" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/CommonRepository</repository-path>
+		      <repository-item-type>ImageCarousel</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="Style" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/CommonRepository</repository-path>
+		      <repository-item-type>Style</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="CategoryPanel" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/CommonRepository</repository-path>
+		      <repository-item-type>CategoryPanel</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="attractScreen" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/AttractScreenRepository</repository-path>
+		      <repository-item-type>AttractScreenTemplate</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="introScreenTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/IntroScreenRepository</repository-path>
+		      <repository-item-type>IntroScreenTemplate</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="GuidedSellingTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/GuidedSellingRepository</repository-path>
+		      <repository-item-type>GuidedSellingTemplate</repository-item-type>
+		    </asset-type>
+		    <asset-type id="IdeaBookStyleTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/IdeaBookStyleRepository</repository-path>
+		      <repository-item-type>IdeaBookStyleTemplate</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="table" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/TableRepository</repository-path>
+		      <repository-item-type>table</repository-item-type>
+		    </asset-type>
+		    
+		     <asset-type id="Layout" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/TableRepository</repository-path>
+		      <repository-item-type>Layout</repository-item-type>
+		    </asset-type>
+		    
+		     <asset-type id="tableChkList" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/TableCheckList</repository-path>
+		      <repository-item-type>tableChkList</repository-item-type>
+		    </asset-type>
+		    		    
+	</asset-family>	    
+	
+	<!-- FF2 Find View -->
+  
+  <asset-family id="FF2" site-filtering="true">
+	<display-name>FF2</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+    <result-list page-size="100"/>
+    <default-asset-type>BBBGSManagedTemplate</default-asset-type>
+    
+     		<asset-type id="didYouKnowTemplates" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/DidYouKnowRepository</repository-path>
+		      <repository-item-type>didYouKnowTemplate</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="BBBGSManagedTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/BBBGSManagedRepository</repository-path>
+		      <repository-item-type>BBBGSManagedRepository</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="solutionLandingTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/SolutionLandingRepository</repository-path>
+		      <repository-item-type>solutionLandingTemplate</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="goodToKnowTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/BBBGSManagedRepository</repository-path>
+		      <repository-item-type>goodToKnow</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="ipadTabs" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/stofu/CommonRepository</repository-path>
+		      <repository-item-type>tab</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="questions" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/GuidedSellingQARepository</repository-path>
+		      <repository-item-type>question</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="answers" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/GuidedSellingQARepository</repository-path>
+		      <repository-item-type>answer</repository-item-type>
+		    </asset-type>
+		    <asset-type id="answerSet" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/ipad/GuidedSellingQARepository</repository-path>
+		      <repository-item-type>answerSet</repository-item-type>
+		    </asset-type>
+	</asset-family>	    
+	
+	<!-- ChannelTheme Find View -->
+	
+	<asset-family id="channelTheme" site-filtering="true">
+	<display-name>ChannelTheme</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+    <result-list page-size="100"/>
+    <default-asset-type>allChannelThemes</default-asset-type>
+    
+     		<asset-type id="allChannelThemes" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/channelTheme/ChannelThemeRepository</repository-path>
+		      <repository-item-type>channelThemeInfo</repository-item-type>
+		    </asset-type>
+	</asset-family>	
+  
+ 
+</find-configuration>
+<!-- @version $Id: //hosting-blueprint/B2CBlueprint/version/10.0.2/EStore/Versioned/config/atg/remote/commerce/find/MerchandisingFindConfiguration.xml#1 $$Change: 633540 $-->

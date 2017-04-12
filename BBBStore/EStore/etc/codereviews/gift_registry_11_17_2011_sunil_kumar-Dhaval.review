@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="gift_registry_11_17_2011_sunil_kumar">
+  <ReviewIssue id="GV93GR7T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:28:14:153 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:28:37:064 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="35">src/com/bbb/commerce/giftregistry/droplet/GetRegistryVODroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move all constants to a common constants file</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV93HGMK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:28:47:084 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:30:19:755 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="32">src/com/bbb/commerce/giftregistry/droplet/GetRegistryVODroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Extend from a BBBPresentationDroplet class</Summary>
+    <Description>Create a class called BBBPresentationDroplet and extend all droplet from it. It can be used to also hold commonly used contants like output, error and other logging helper methods across all droplets</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV93SCKR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:37:15:051 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 08:24:34:336 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="65">src/com/bbb/commerce/giftregistry/droplet/LoginRedirectDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>How is chainId used here?</Summary>
+    <Description>Now, we are using a common functionality through out the application for login redirect(By using access controller), so it will not be in use. I will remove it. Sunil</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV93W8P0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:40:16:644 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 08:25:29:909 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="27">src/com/bbb/commerce/giftregistry/droplet/LoginRedirectDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The scope of this droplet cannot be global</Summary>
+    <Description>You cannot inject a session scoped component into a global scoped component
+
+Now, we are using a common functionality through out the application for login redirect(By using access controller), so it will not be in use. I will remove it.... Sunil</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV94GI8H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:56:02:129 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:57:20:581 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="246">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Please use common methods from BBBUtility to validatePhoneNumbers</Summary>
+    <Description>Same applies to Email Address and other common items, do not replicate logic, and if a validation is not present add it in the common place and then use it</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV94L29Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 01:59:34:726 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:47:45:728 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="398">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Resuse/create methods to check isEmpty</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV94NIQK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 02:01:29:372 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 02:02:06:668 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File line="437">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Create a common method to validate Address VO</Summary>
+    <Description>This can be used for all types of addresses. Put it in BBBUtility.	</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

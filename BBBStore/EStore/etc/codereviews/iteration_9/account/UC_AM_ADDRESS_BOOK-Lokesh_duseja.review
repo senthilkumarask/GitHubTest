@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_AM_ADDRESS_BOOK">
+  <ReviewIssue id="GW65DEX3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:08:01:287 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:08:09:078 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3489">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>remove the hardcoded strings throught the method</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW65HI5N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:11:12:107 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:40:51:620 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3651">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>refactor code to move this method to manager</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW65JO1A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:12:53:038 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:33:04:798 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3438">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Refactor code to move all the transaction related code to manager</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW65WIN3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:22:52:575 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:43:45:061 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3480">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Return some meaningful errors response instead of throwing ServletException</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW660LMV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:26:03:079 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 21:12:33:547 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3772">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>code refactoring required. Move the transaction related code to a manager</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW66CA0Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:35:07:898 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 19:30:30:378 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3947">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>code refactoring required. Move the transaction related code to a manager</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW66F46Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:37:20:315 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 19:01:11:076 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3596">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>null check required here</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW66GCMS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 15:38:17:908 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 19:00:09:328 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_duseja</ReviewerId>
+    <AssignedTo>Sandeep Yadav</AssignedTo>
+    <File line="3546">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>null check required for newAddress</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<!-- ======================================================================
+     26 Oct 2011 12:44:35
+
+     project
+
+     ====================================================================== -->
+<project name="BBB" default="testunit" basedir=".">
+	<description>
+            Sample
+    </description>
+	<property file="test.build_weblogic.properties" />
+	<property name="java.source.dir" value="src/" />
+	<property name="packaging.dir" value="build" />
+	<property name="dist.dir" value="dist" />
+	<property name="javac.dest" value="classes" />
+	<property name="EStore" value="BBBStore.EStore"/>
+	<property name="StoreRest" value="BBBStore.StoreRest"/>
+	<property name="core" value="BBBStore.core"/>
+	<property name="instrumented.dir" value="cobertura-instrumented-classes" />
+	<property name="coveragereport.dir" value="cobertura-reports" />
+
+	<property name="cobertura.dir" value="../build_lib/cobertura" />
+
+	<taskdef name="if" classname="ise.antelope.tasks.IfTask" classpath="../build_lib/atg/atg-ant.jar" />
+	<taskdef name="else" classname="ise.antelope.tasks.ElseTask" classpath="../build_lib/atg/atg-ant.jar" />
+
+	<path id="cobertura.classpath">
+		<fileset dir="${cobertura.dir}">
+			<include name="cobertura.jar" />
+			<include name="lib/**/*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef classpathref="cobertura.classpath" resource="tasks.properties" />
+
+	<path id="classpath">
+		<pathelement location="classes"/>
+		<fileset dir="lib" includes="*.jar"/>
+	</path>
+
+	<path id="dynamo.classpath.svn">
+		<fileset dir="${weblogic.home}/wlserver_10.3/server/lib">
+			<include name="**/wlclient.jar" />
+			<include name="**/wljmsclient.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS/j2ee-lib">
+			<include name="**/jboss-javaee.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../WebUI/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../Publishing/base/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS-UI/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DPS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DSS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DCS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/TaxAddressVerification/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/FraudManagementBase/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/PaymentTokenization/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../REST/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		</path>
+
+	<path id="bbb.core">
+		<fileset dir="../core/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="bbb.estore">
+		<fileset dir="../EStore/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.webservices">
+		<fileset dir="../webservices/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.integration.endeca">
+		<fileset dir="../integration/endeca/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.integration.webservices">
+		<fileset dir="../integration/webservices/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.integration.valuelink">
+		<fileset dir="../integration/valuelink/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.integration.cybersource">
+		<fileset dir="../integration/cybersource/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="bbb.storerest">
+		<fileset dir="../StoreRest/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.storerest.common">
+		<fileset dir="../StoreRest/common/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.storerest.repositories">
+		<fileset dir="../StoreRest/repositories/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+		<target name="compile_test" depends="cleanStoreFrontTestunit">
+			<javac srcdir="../TestStoreFrontUnit/src/" destdir="../TestStoreFrontUnit/classes" fork="yes" encoding="iso-8859-1">
+		        	<classpath refid="dynamo.classpath.svn" />
+		                <classpath refid="bbb.estore" />
+		                <classpath refid="bbb.core" />
+
+        			<classpath refid="bbb.storerest" />
+                		<classpath refid="bbb.storerest.common" />
+                        	<classpath refid="bbb.storerest.repositories" />
+                                <!--classpath refid="classpath" /-->
+        			<classpath refid="bbb.integration.webservices" />
+
+        			<classpath refid="classpath" />
+                <!--classpath refid="../TestStoreFrontUnit/lib" /-->
+        			<classpath refid="bbb.webservices" />
+                		<classpath refid="bbb.integration.valuelink" />
+                        	<classpath>
+                                	<pathelement location="../core/${javac.dest}" />
+                                        <pathelement location="../EStore/${javac.dest}"/>
+                                        <pathelement location="../integration/valuelink/${javac.dest}"/>
+                                                        <!--pathelement location="../TestStoreFrontUnit/lib" /-->
+        <!--pathelement location="/u02/opt/ATG10.0.3/BBBStore/TestStoreFrontUnit/lib/*.jar"/-->
+        				<pathelement location="${javac.dest}"/>
+
+        			</classpath>
+                	</javac>
+                  </target>	
+
+		<target name="cleanStoreFrontTestunit" description="delete all class files in ">
+		            <delete includeemptydirs="true">
+		      <fileset dir="${javac.dest}" includes="**/*" />
+		            </delete>
+		</target>	
+
+	<target name="testunit" depends="compile_test" description="runs cobertura instrumentation and all the Test-Suites">
+		<echo message="Test Unit started"/>
+		<echo message="dynamo home=${dynamo.home} and dynamo root=${dynamo.root.dir} and weblogic home =${weblogic.home}"/>
+		 <delete dir="reports"/>
+		 <mkdir dir="reports" />
+		 <taskdef name="junit1" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask" classpathref="classpath"/>
+		<junit1 printsummary="withOutAndErr" fork="yes" maxmemory="512m" haltonfailure="no" showoutput="yes"  forkmode="perBatch" >
+
+			<sysproperty key="net.sourceforge.cobertura.datafile" file="cobertura.ser" />
+			<classpath>
+				 <pathelement location="../TestStoreFront/${instrumented.dir}" />
+				<pathelement location="../../WebUI/lib/classes.jar"/>
+				<pathelement location="../../BBBStore/core/${javac.dest}" />
+				<pathelement location="../../BBBStore/EStore/${javac.dest}"/>
+				<pathelement location="../../BBBStore/StoreRest/${javac.dest}"/>
+				<pathelement location="../../BBBStore/StoreRest/common/${javac.dest}"/>
+				<pathelement location="../../BBBStore/StoreRest/repositories/${javac.dest}"/>
+				<pathelement location="../../BBBStore/integration/endeca/${javac.dest}"/>
+				<pathelement location="../../BBBStore/integration/webservices/${javac.dest}"/>
+				<pathelement location="../../BBBStore/integration/valuelink/${javac.dest}"/>
+				<pathelement location="../../BBBStore/integration/cybersource/${javac.dest}"/>
+				<pathelement location="../../BBBStore/webservices/${javac.dest}"/>
+				<pathelement location="${javac.dest}"/>
+			</classpath>
+			<classpath refid="dynamo.classpath.svn" />
+			<classpath refid="bbb.webservices" />
+			<classpath refid="bbb.estore" />
+			<classpath refid="bbb.core" />
+			<classpath refid="bbb.storerest" />
+			<classpath refid="bbb.storerest.common" />
+			<classpath refid="bbb.storerest.repositories" />
+			<classpath refid="bbb.integration.endeca" />
+			<classpath refid="bbb.integration.webservices" />
+			<classpath refid="bbb.integration.valuelink"/>
+			<classpath refid="bbb.integration.cybersource"/>
+			<classpath refid="classpath" />
+
+			<jvmarg value="-XX:NewSize=256m"/>
+			<jvmarg value="-XX:MaxNewSize=256m"/>
+			<jvmarg value="-XX:PermSize=256m"/>
+			<jvmarg value="-XX:MaxPermSize=256m"/>
+			<jvmarg value="-Xms512m"/>
+			<jvmarg value="-Xmx1536m"/>
+			<sysproperty key="weblogic.Name" value="bbb_sape_prod"/>
+			<sysproperty key="java.protocol.handler.pkgs" value="atg.net.www.protocol"/>
+			<sysproperty key="java.naming.factory.initial" value="atg.j2ee.jndi.SerialInitContextFactory"/>
+			<sysproperty key="java.naming.factory.url.pkgs" value="atg.jndi.url"/>
+
+			<formatter type="brief" usefile="false"/>
+			<formatter type="xml"/>
+
+			<batchtest fork="yes" todir="reports" >
+				<fileset dir="src/test/java">
+					<include name="com/bbb/test/AllTests.java"/>
+				</fileset>
+			</batchtest>
+
+		</junit1>
+
+</target>
+</project>

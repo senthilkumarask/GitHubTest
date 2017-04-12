@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.droplet.TestScheduleAppointmentDroplet">
+		<group id="testScheduleAppointment">
+			<test id="testScheduleAppointment">
+				<objs>
+					<obj id="scheduleAppointment" type="com.bbb.selfservice.droplet.ScheduleAppointmentDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.droplet.TestScheduleAppointmentDroplet">
+						<item type="string">/com/bbb/selfservice/ScheduleAppointmentDroplet</item>
+					</obj>
+					<obj id="appointmentType" type="string">COL</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>				
+					<obj id="favouriteStoreId" type="string">101</obj>					
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

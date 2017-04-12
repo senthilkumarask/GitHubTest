@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+ATG-Required: BBBStore.StoreRest BBBStore.EStore BBBStore.integration.qas
+ATG-J2EE: j2ee-apps/BBBStore
+ATG-EAR-Module: j2ee-apps/BBBStore
+ATG-Class-Path: classes

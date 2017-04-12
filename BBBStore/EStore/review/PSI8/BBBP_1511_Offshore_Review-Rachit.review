@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP_1511_Offshore_Review">
+  <ReviewIssue id="IFQO5IN2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:12:57:566 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:00:068 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1165">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQO5ZB4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:19:168 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:20:433 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1175">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQO69MA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:32:530 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:33:706 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="249">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQO6KM1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:46:777 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:13:48:561 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1291">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQO71O0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:14:08:880 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:14:12:298 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1471">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQOKTM3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:24:51:627 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:24:54:493 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="222">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQOLWGC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:25:41:964 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 16:25:52:783 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="249">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFQQDP4N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 17:15:18:455 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-14 :: 17:15:20:749 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="71">src/com/bbb/commerce/cart/droplet/TopStatusChangeMessageDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

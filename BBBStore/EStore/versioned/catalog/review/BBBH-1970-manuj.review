@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1970">
+  <ReviewIssue id="IM248N7T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-21 :: 20:26:59:273 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-21 :: 20:27:39:805 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>manuj</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Code Review</Summary>
+    <Description>Change the logic of setting the InCart price.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

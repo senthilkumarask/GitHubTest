@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestGetCurrentOrderDetails.xml 
+	DESCRIPTION: ddtunit data file for TestRestGetCurrentOrderDetails.java test case HISTORY: 
+	Nov 16, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestEstimatedShippingDates">
+	
+	<group id="testGetExpectedShippingDate">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="getExpectedDate" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getExpectedDeliveryDate</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="shippingMethod" type="string">3g</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetExpectedShippingDateError">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="getExpectedDate" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getExpectedDeliveryDate</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="shippingMethod" type="string">wq</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

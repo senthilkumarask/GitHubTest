@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGetGenderKeyDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestGetGenderKeyDroplet.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.droplet.TestGetGenderKeyDroplet">
+      
+      <group id="testService">
+        <test id="testService_test1">
+			<objs>
+				<obj id="genderKeyDroplet" 
+					   type="com.bbb.commerce.giftregistry.droplet.GetGenderKeyDroplet" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.droplet.TestGetGenderKeyDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/GetGenderKeyDroplet</item>
+				</obj>
+				<obj id="genderKey" type="string">1_B</obj>
+				<obj id="inverseflag" type="string">true</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testServiceInvalid">
+        <test id="testService_test1">
+			<objs>
+				<obj id="genderKeyDroplet" 
+					   type="com.bbb.commerce.giftregistry.droplet.GetGenderKeyDroplet" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.droplet.TestGetGenderKeyDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/GetGenderKeyDroplet</item>
+				</obj>
+				<obj id="genderKey" type="string">1_B</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testServiceInvalid1">
+        <test id="testService_test1">
+			<objs>
+				<obj id="genderKeyDroplet" 
+					   type="com.bbb.commerce.giftregistry.droplet.GetGenderKeyDroplet" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.droplet.TestGetGenderKeyDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/GetGenderKeyDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>
+     </cluster>
+</ddtunit>

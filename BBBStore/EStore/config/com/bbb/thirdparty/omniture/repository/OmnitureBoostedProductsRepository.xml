@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>BBB Omniture Boosted Product Repository Template</name>
+        <author></author>
+    </header>
+     <item-descriptor name="reportData" display-name="reportData" cache-mode="disabled">
+    	<table name="BBB_OMNITURE_REPORT_DATA" type="primary" id-column-name="ID">
+    		<property name="id" column-name="ID" data-type="long"/>
+			<property name="reportId" column-name="REPORT_ID" data-type="string" display-name="report_id" />
+			<property name="reportSuite" column-name="REPORT_SUITE" data-type="string" display-name="reportSuite" />
+			<property name="reportType" column-name="REPORT_TYPE" data-type="string" display-name="reportType" />
+			<property name="period" column-name="PERIOD" data-type="string" display-name="period" />
+			<property name="concept" column-name="CONCEPT" data-type="string" display-name="concept" />
+			<property name="boostScore" column-name="BOOST_SCORE" data-type="double" />
+			<property name="productId" column-name="PRODUCT_ID" data-type="string" />
+			<property name="keyword" column-name="KEYWORD" data-type="string" />
+			<property name="rank" column-name="RANK" data-type="int" />
+			<property name="lastModifiedDate" column-name="LAST_MODIFIED_DATE" data-type="timestamp"/>
+		</table>
+	</item-descriptor>
+	
+	<item-descriptor name="archivedReportData" display-name="archivedReportData" cache-mode="disabled" >
+    	<table name="OMNITURE_ARCHIVED_DATA" type="primary" id-column-name="ID">
+    		<property name="id" column-name="ID" data-type="long"/>
+			<property name="reportId" column-name="REPORT_ID" data-type="string" display-name="report_id" />
+			<property name="reportSuite" column-name="REPORT_SUITE" data-type="string" display-name="reportSuite" />
+			<property name="reportType" column-name="REPORT_TYPE" data-type="string" display-name="reportType" />
+			<property name="period" column-name="PERIOD" data-type="string" display-name="period" />
+			<property name="concept" column-name="CONCEPT" data-type="string" display-name="concept" />
+			<property name="boostScore" column-name="BOOST_SCORE" data-type="double" />
+			<property name="productId" column-name="PRODUCT_ID" data-type="string" />
+			<property name="keyword" column-name="KEYWORD" data-type="string" />
+			<property name="archivedDate" column-name="ARCHIVED_DATE" data-type="date" />
+			<property name="rank" column-name="RANK" data-type="int" />			
+		</table>
+	</item-descriptor>
+    
+<!--     Item Descriptor for Report Status  -->
+    
+    <item-descriptor name="reportStatus" display-name="reportStatus" cache-mode="disabled" >
+    	<table name="OMNITURE_REPORT_STATUS" type="primary" id-column-name="ID">
+    		<property name="id" column-name="ID" />
+    		<property name="reportId" column-name="REPORT_ID" data-type="string" />
+			<property name="methodType" column-name="METHOD_TYPE" data-type="string" />
+			<property name="reportType" column-name="REPORT_TYPE" data-type="string" />
+			<property name="concept" column-name="CONCEPT" data-type="string" />
+			<property name="queuedDate" column-name="QUEUED_DATE" data-type="date" />
+			<property name="reportGetTime1" column-name="REPORT_GET_TIME_FIRST" data-type="timestamp" />
+			<property name="reportGetTime2" column-name="REPORT_GET_TIME_SECOND" data-type="timestamp" />
+			<property name="reportExecutionTime" column-name="REPORT_EXEC_TIME" data-type="float" />
+			<property name="reportProcessingFinishTime" column-name="REPORT_PROC_FINISH_TIME" data-type="float" />
+			<property name="reportOperationStatus" column-name="REPORT_OP_STATUS" data-type="string" />
+			<property name="errorCode" column-name="ERROR_CODE" data-type="string" />
+			<property name="errorDescription" column-name="ERROR_DESCRIPTION" data-type="string" />
+			<property name="getAttempts" column-name="GET_ATTEMPTS" data-type="int" />
+			<property name="batchId" column-name="BATCH_ID" data-type="string" />
+			<property name="batchSeq" column-name="BATCH_SEQ" data-type="int" />
+			<property name="count" column-name="COUNT" data-type="int" />
+			<property name="rangeFrom" column-name="RANGE_FROM" data-type="int" />
+			<property name="rangeTo" column-name="RANGE_TO" data-type="int" />
+    	</table>
+    </item-descriptor>
+    	<item-descriptor name="reportConfig" display-name="reportConfig"  display-property="reportConfigId" cache-mode="simple" >
+	    	<table name="BBB_OMNITURE_REPORT_CONFIG" type="primary" id-column-name="REPORT_CONFIG_ID" >
+	    		<property name="reportConfigId" column-name="REPORT_CONFIG_ID" data-type="string" required="true" />
+	    		<property name="methodType" column-name="METHOD_TYPE" data-type="string" required="true" />
+				<property name="reportType" column-name="REPORT_TYPE" data-type="string" required="true"  />
+				<property name="concept" column-name="CONCEPT" data-type="string" required="true" />
+				<property name="freq" column-name="FREQ" data-type="string" required="true" />
+				<property name="cancelAllowed" column-name="CANCEL_ALLOWED" data-type="string" default="N" />
+				<property name="priority" column-name="PRIORITY" data-type="int" required="true" />
+				<property name="count" column-name="COUNT" data-type="int" required="true"/>
+				<property name="batchCount" column-name="BATCH_COUNT" data-type="int" default="__NULL__" />
+				<property name="numOfThread" column-name="NUM_OF_THREAD" data-type="int" required="true"/>
+				<property name="thresholdDays" column-name="THRESHOLD_DAYS" data-type="int" default="__NULL__" />
+				<property name="reportTimeRange" column-name="REPORT_TIME_RANGE" data-type="int" required="true" />
+				<property name="reportTimeRangeAdjustment" column-name="REPORT_TIME_RANGE_ADJUSTMENT" data-type="int" default="__NULL__" />
+				<property name="productCount" column-name="PRODUCT_COUNT" data-type="int" />
+				<property name="lastSuccessRunDate" column-name="LAST_SUCCESS_RUN_DATE" data-type="timestamp" />
+				<property name="lastModifiedDate" column-name="LAST_MODIFIED_DATE" data-type="timestamp" />
+				<property name="startWith" column-name="START_WITH" data-type="int" />
+	    	</table>
+       </item-descriptor>
+       
+       <item-descriptor name="reportDataForL2L3Brand" display-name="reportData" cache-mode="simple" item-cache-size="10000">
+    	<table name="BBB_L2L3BRAND_OMNITURE_DATA" type="primary" id-column-name="ID">
+    		<property name="id" column-name="ID" data-type="long"/>
+			<property name="reportId" column-name="REPORT_ID" data-type="string" display-name="report_id" />
+			<property name="reportSuite" column-name="REPORT_SUITE" data-type="string" display-name="reportSuite" />
+			<property name="reportType" column-name="REPORT_TYPE" data-type="string" display-name="reportType" />
+			<property name="period" column-name="PERIOD" data-type="string" display-name="period" />
+			<property name="concept" column-name="CONCEPT" data-type="string" display-name="concept" />
+			<property name="productList" column-name="PRODUCT_LIST" data-type="string" />
+			<property name="identifier" column-name="IDENTIFIER" data-type="string" />
+			<property name="lastModifiedDate" column-name="LAST_MODIFIED_DATE" data-type="timestamp"/>
+		</table>
+	</item-descriptor>
+    
+</gsa-template>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1751">
+  <ReviewIssue id="IQ8RM72Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:16:49:114 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:25:24:645 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sreekanth</ReviewerId>
+    <AssignedTo>sreekanth</AssignedTo>
+    <File line="674">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can we explore the option of calling cancelling multiple report # in a single cancel call? That will save time and number of API calls, we may need to implement the same for enhance framework feature too.</Summary>
+    <Description>It might require good amount of changes to deal with status of each method, we can implement as a seaparate story if it's too much. At least explore the approach and let me know the update</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ8RVKDV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:24:06:259 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:24:26:864 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sreekanth</ReviewerId>
+    <AssignedTo>sreekanth</AssignedTo>
+    <File line="691">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Duplicate code, can move to a method?</Summary>
+    <Description>if(reportCanceled){
+								logDebug("Inside CLS_NAME: Method : cancelReports : Reports are succesfully canceled : Attempts : "+ attempts);
+								mutableRepository.setPropertyValue(BBBCoreConstants.REPORT_OP_STATUS, BBBCoreConstants.OMNITURE_REPORT_STATUS_CANCEL);
+								reportEmailContent.setExceptionDetails(REPORT_CANCEL_MSG);
+								reportEmailContent.setOpStatus(BBBCoreConstants.OMNITURE_REPORT_STATUS_CANCEL);	
+								break inner;
+							}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

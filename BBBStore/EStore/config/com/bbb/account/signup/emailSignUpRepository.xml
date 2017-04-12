@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<item-descriptor name="signUp" cache-mode="simple" item-cache-size="10000" query-cache-size="10000" >
+      <table name="SUBSCRIBE_EMAIL_LIST" type="primary" id-column-names="EMAIL_ADDRESS, SOURCE_CODE ">
+	     	<property name="email" column-name="EMAIL_ADDRESS" data-type="string"/>
+	     	<property name="sourceCode" column-name="SOURCE_CODE" data-type="string"/>
+	     	<property name="emailType" column-name="EMAIL_TYPE" data-type="string"/>
+	     	<property name="saluation" column-name="SALUATION" data-type="string"/>
+	     	<property name="firstName" column-name="FIRST_NM" data-type="string"/>
+	     	<property name="lastName" column-name="LAST_NM" data-type="string"/>
+	     	<property name="addr1" column-name="ADDR1" data-type="string"/>
+	     	<property name="addr2" column-name="ADDR2" data-type="string"/>
+	     	<property name="city" column-name="CITY" data-type="string"/>
+	     	<property name="stateCD" column-name="STATE_CD" data-type="string"/>
+	     	<property name="zipCode" column-name="ZIP" data-type="string"/>
+	     	<property name="phone" column-name="PHONE" data-type="string"/>
+	     	<property name="mobile" column-name="MOBILE" data-type="string"/>
+	     	<property name="optInBBBY" column-name="OPT_IN_BBBY" data-type="string"/>
+	     	<property name="optInBABY" column-name="OPT_IN_BABY" data-type="string"/>
+	     	<property name="optInCA" column-name="OPT_IN_CA" data-type="string"/>
+	     	<property name="promoEmailFlag" column-name="PROMO_EMAIL_FLAG" data-type="string"/>
+	     	<property name="notes" column-name="NOTES" data-type="string"/>
+	     	<property name="rowXngDate" column-name="ROW_XNG_DT" data-type="date"/>
+	     	<property name="rowXngUSA" column-name="ROW_XNG_USR" data-type="string"/>
+	     	<property name="rowStatus" column-name="ROW_STATUS" data-type="string"/>
+	  </table>
+  </item-descriptor>
+</gsa-template>

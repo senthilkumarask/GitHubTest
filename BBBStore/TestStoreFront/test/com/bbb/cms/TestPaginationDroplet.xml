@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBridalShow.xml
+
+  DESCRIPTION: ddtunit data file for TestBridalShow.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+ 
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.TestPaginationDroplet">
+      <group id="testPaginationDroplet">
+        <test id="testService_test1">
+			<objs>
+				<obj id="paginationDroplet" type="com.bbb.cms.droplet.PaginationDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.TestPaginationDroplet">
+					<item type="string">/com/bbb/cms/droplet/PaginationDroplet</item>
+				</obj>
+				<obj id="pageNo" type="string">2</obj>	
+				<obj id="perPage" type="string">4</obj>
+			</objs>      
+			<asserts>
+					<assert id="forStart" type="java.lang.Integer" action="isEqual">4</assert>
+					<assert id="forEnd" type="java.lang.Integer" action="isEqual">7</assert>
+		 	</asserts>
+        </test>
+      </group>
+       
+    </cluster>
+</ddtunit>

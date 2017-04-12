@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>DidYouKnow Repository</name>
+    <author></author> 
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--         DidYouKnow repository -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="didYouKnowTemplate" display-name-resource="didYouKnowTemplate" display-property="promtMessage" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+		
+	<table name="BBB_GS_DID_UKNOW" type="primary" id-column-name="didUknow_id">
+		<property name="id" column-name="didUknow_id" display-name-resource="didUknow_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="promtMessage" column-name="promt_message" display-name-resource="promtMessage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        	<attribute name="propertySortPriority" value="2"/>
+        </property>
+		<property name="message" column-name="message" display-name-resource="message" data-type="big string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="buttonText" column-name="button_text" display-name-resource="buttonText" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="buttonActnLink" column-name="button_actn_link" display-name-resource="buttonActnLink" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="solLanding" column-name="sol_landing" display-name-resource="solLanding" item-type="solutionLandingTemplate" category-resource="MasterInfo" repository="/com/bbb/ipad/SolutionLandingRepository">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="6"/>
+		</property>  
+		
+	</table>
+</item-descriptor>
+ 
+</gsa-template>

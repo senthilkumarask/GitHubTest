@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.droplet.TestGiftWrapCheckDroplet">
+      <group id="testGiftWrapCheckDroplet">
+        <test id="testGiftWrapCheckDroplet">
+			<objs>
+				<obj id="giftWrapCheckDroplet" type="com.bbb.commerce.order.droplet.GiftWrapCheckDroplet" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.droplet.TestGiftWrapCheckDroplet">
+					<item type="string">/com/bbb/commerce/order/droplet/GiftWrapCheckDroplet</item>
+				</obj>	
+				<obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.droplet.TestGiftWrapCheckDroplet">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>  
+				
+                <obj id="siteId" type="string">BedBathUS</obj>
+                <obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathUS</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku10004</sku>
+                        <quantity>2</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku40065</sku>
+                        <quantity>3</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                                
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        
+                     </item>
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+			</objs>			 
+        </test>
+      </group>         
+    </cluster>
+</ddtunit>
+

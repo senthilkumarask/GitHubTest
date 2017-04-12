@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  <header>
+    <name>BBB Contact Us Subject</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+  <item-descriptor name="contactus" cache-mode="simple">
+	<table name="bbb_contact_us_subject" type="primary" id-column-name="subject_id">
+		<property name="subject" column-name="subject" data-type="string"/>	
+		<property name="siteName" column-name="sitename" data-type="string"/>	
+	</table>		
+	</item-descriptor>
+</gsa-template>

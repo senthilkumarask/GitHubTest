@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestBBBInternationalOrder.xml 
+	DESCRIPTION: ddtunit data file for TestBBBInternationalOrder.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.order.TestBBBInternationalOrder">
+	
+	<!-- testAddOrderXml -->
+	
+	<group id="testAddInternationalOrder">
+        <test id="test1">
+			<objs>
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName"
+				 calltype="com.bbb.internationalshipping.order.TestBBBInternationalOrder">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+                
+				<obj id="orderId" type="string">5014860005</obj>
+				<obj id="internationalOrderId" type="string">1234567890</obj>
+				<obj id="internationalState" type="string">submitted</obj>
+				<obj id="currencyCode" type="string">INR</obj>
+				<obj id="countryCode" type="string">IN</obj>
+				
+			</objs>      
+        </test>
+      </group>
+      
+	</cluster>
+</ddtunit>
+ 

@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestDateCalculationDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestDateCalculationDroplet.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.droplet.TestDateCalculationDroplet">
+      
+      <group id="testServicePastDate">
+        <test id="testService_test1">
+			<objs>
+				<obj id="TestDateCalculationDroplet" 
+					   type="com.bbb.commerce.giftregistry.droplet.DateCalculationDroplet" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.droplet.TestDateCalculationDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/DateCalculationDroplet</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="testValue1" type="java.lang.String" action="isEqual">true</assert>
+	        </asserts>  
+        </test>
+      </group>
+      <group id="testServiceFutureDate">
+        <test id="testService_test1">
+			<objs>
+				<obj id="TestDateCalculationDroplet" 
+					   type="com.bbb.commerce.giftregistry.droplet.DateCalculationDroplet" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.droplet.TestDateCalculationDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/DateCalculationDroplet</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="testValue1" type="java.lang.String" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+      
+     </cluster>
+</ddtunit>

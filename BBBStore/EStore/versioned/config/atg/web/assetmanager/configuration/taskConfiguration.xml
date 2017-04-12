@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE task-configuration
+PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Task Configuration//EN"
+'http://www.atg.com/dtds/web/assetmanager/taskConfiguration_1.0.dtd'>
+<task-configuration>
+<!-- Define an activity for editing the inventory repository -->
+<activity id="editInventory" inherit-from="assetManager.defaultEdit">
+<activity-name>editInventory</activity-name>
+<!-- Configure the buttons on the toolbar -->
+<operations>
+<operation>create</operation>
+<operation>delete</operation>
+</operations>
+<!-- Define tabs for the left pane -->
+<tabs>
+<tab-order>
+<tab-id>browse</tab-id>
+<tab-id>search</tab-id>
+</tab-order>
+<initial-tab>browse</initial-tab>
+<!-- Configure the Browse tab with a list view of inventory items -->
+<tab id="browse">
+<display-name-resource>assetManager.tab.browse</display-name-resource>
+<page>/browse/browseTab.jsp</page>
+<views>
+<view-order>
+<view-id>editInventory.inventory</view-id>
+</view-order>
+<initial-view>editInventory.inventory</initial-view>
+<view id="editInventory.inventory">
+<resource-bundle>com.webui.WebAppResources</resource-bundle>
+<display-name-resource>editInventory.browseTab.view.inventory</display-name-resource>
+<configuration>/com/web/assetmanager/InventoryViewConfiguration</configuration>
+<page>/browse/list.jsp</page>
+</view>
+</views>
+</tab>
+<!-- Configure the Search tab to allow searching for inventory items -->
+<tab id="search">
+<display-name-resource>assetManager.tab.search</display-name-resource>
+<page>/search/searchTab.jsp</page>
+<views>
+<initial-view>form</initial-view>
+<view id="form">
+<page>/search/searchForm.jsp</page>
+<item-types>
+<item-type>/atg/commerce/inventory/InventoryRepository:inventory</item-type>
+</item-types>
+</view>
+<view id="results">
+<page>/search/searchResults.jsp</page>
+</view>
+</views>
+</tab>
+</tabs>
+</activity>
+</task-configuration>

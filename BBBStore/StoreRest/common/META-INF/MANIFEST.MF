@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Required: BBBStore.REST BBBStore.StoreRest.repositories
+ATG-Class-Path: classes 

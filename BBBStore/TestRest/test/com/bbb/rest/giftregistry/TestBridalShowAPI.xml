@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestBridalShowAPI">
+			<group id="testBridalShow">
+			<test id="test51">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+						<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Add item to order -->
+					<obj id="stateId" type="string">ALL</obj>
+					<obj id="getBridalShowRequest" type="string">/rest/bean/com/bbb/cms/droplet/BridalShowDetailDroplet/getBridalShowsAPI</obj>
+				</objs> 
+			</test>
+		</group>
+		<group id="testBridalShowError">
+			<test id="test51">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+						<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Add item to order -->
+					<obj id="invalidstateId" type="string">asasasa</obj>
+					<obj id="getBridalShowRequest" type="string">/rest/bean/com/bbb/cms/droplet/BridalShowDetailDroplet/getBridalShowsAPI</obj>
+				</objs> 
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

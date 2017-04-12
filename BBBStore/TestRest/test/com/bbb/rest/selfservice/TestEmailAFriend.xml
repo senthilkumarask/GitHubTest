@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.selfservice.TestEmailAFriend">
+			<group id="testEmailAFriend">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="emailAFriend" type="string">/rest/bean/com/bbb/browse/EmailAFriendFormHandler/emailAFriendRequest</obj>
+					<obj id="validateCaptcha" type="boolean">false</obj>
+					<obj id="captchaAnswer" type="string">text5</obj>	
+					<obj id="recipientName" type="String">Neha</obj>
+					<obj id="recipientEmail" type="String">test@sapient.com</obj>
+					<obj id="successURL" type="String"></obj>
+					<obj id="errorURL" type="String"></obj>
+					<obj id="senderEmail" type="String">amit_1@example.com</obj>
+					<obj id="message" type="String">dummy message</obj>
+					<obj id="currentSite" type="String">http://bedbathandbeyond.com</obj>
+					<obj id="currentPageURL" type="String">http://bedbathandbeyond.com:7003/store/product/K-Cup-reg-Gloria-Jean-39-s-Hazelnut-Coffee-for-Keurig-reg-Brewers-Set-of-18/1013562300</obj>
+				</objs> 
+			</test>
+		</group>
+		
+	<group id="testEmailAFriendException">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="emailAFriend" type="string">/rest/bean/com/bbb/browse/EmailAFriendFormHandler/emailAFriendRequest</obj>
+					<obj id="validateCaptcha" type="boolean">true</obj>
+					<obj id="captchaAnswer" type="string">text5</obj>	
+					<obj id="recipientName" type="String">Neha</obj>
+					<obj id="recipientEmail" type="String">test@sapient.com</obj>
+					<obj id="successURL" type="String"></obj>
+					<obj id="errorURL" type="String"></obj>
+					<obj id="senderEmail" type="String">amit_1@example.com</obj>
+				</objs> 
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

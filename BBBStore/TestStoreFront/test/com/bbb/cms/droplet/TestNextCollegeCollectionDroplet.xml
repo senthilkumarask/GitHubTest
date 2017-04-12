@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestCategoryLandingDroplet.xml 
+	DESCRIPTION: ddtunit data file for CategoryLandingDroplet.java test case 
+	HISTORY: Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.droplet.TestNextCollegeCollectionDroplet">
+		<group id="testServiceNextCollegeCollection">
+			<test id="testServiceNextCollegeCollection_test1">
+				<objs>
+					<obj id="nextCollegeCollectionDroplet"
+						type="com.bbb.cms.droplet.NextCollegeCollectionDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestNextCollegeCollectionDroplet">
+						<item type="string">/com/bbb/cms/droplet/NextCollegeCollectionDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="categoryId" type="string">cat50001</obj>
+					<obj id="prdId" type="string">prod60063</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

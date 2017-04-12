@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestGetRegistryDetailAPI">
+		<group id="testGetRegistryDetail">
+			 
+			<test id="testRegDetail">
+				<objs>
+		            <obj id="sortseq" type="string">1</obj>
+					<obj id="view" type="string">1</obj>
+					<obj id="displayView" type="string">guest</obj>
+					 <obj id="startindex" type="string">0</obj>
+					<obj id="bulkSize" type="string">24</obj>
+					<obj id="isgiftgiver" type="string">true</obj>
+					<obj id="isavailforwebpurchaseflag" type="string"></obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="registryId" type="string">179953720</obj>
+			      	<obj id="noerror" type="string">NO_ERROR</obj>
+					<obj id="registryDetailURL" type="string">/rest/bean/com/bbb/rest/giftregistry/RestAPIManager/getRegistryDetailAPI</obj>
+					</objs>
+			</test>
+		</group>
+		
+		<group id="testGetRegistryDetailError">
+			 
+			<test id="testRegDetailError">
+				<objs>
+				 <obj id="sortseq" type="string">1</obj>
+					<obj id="view" type="string">1</obj>
+					 <obj id="startindex" type="string">0</obj>
+					 <obj id="displayView" type="string">guest</obj>
+					<obj id="bulkSize" type="string">24</obj>
+					<obj id="isgiftgiver" type="string">true</obj>
+					<obj id="isavailforwebpurchaseflag" type="string">false</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="registryId" type="string">879953720</obj>
+			      	<obj id="noerror" type="string">NO_ERROR</obj>
+					<obj id="registryDetailURL" type="string">/rest/bean/com/bbb/rest/giftregistry/RestAPIManager/getRegistryDetailAPI</obj>
+					<obj id="errorId" type="string">8105</obj>
+					</objs>
+			</test>
+		</group>
+		<group id="testGetRegistryDetailOwner">
+			 
+			<test id="testRegDetailOwner">
+			<objs>
+		            <obj id="sortseq" type="string">1</obj>
+					<obj id="view" type="string">1</obj>
+					 <obj id="startindex" type="string">0</obj>
+					<obj id="bulkSize" type="string">24</obj>
+					<obj id="isgiftgiver" type="string">true</obj>
+					<obj id="displayView" type="string">owner</obj>
+					<obj id="isavailforwebpurchaseflag" type="string">false</obj>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="registryId" type="string">164854642</obj>
+			      	<obj id="noerror" type="string">NO_ERROR</obj>
+			      	<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="registryDetailURL" type="string">/rest/bean/com/bbb/rest/giftregistry/RestAPIManager/getRegistryDetailAPI</obj>
+					</objs>
+			</test>
+		</group>
+		<group id="testGetRegistryDetailForMobileApp">
+			 
+			<test id="testGetRegistryDetailForMobileApp">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">user11@test.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="registryId" type="string">187807587</obj>
+			      	<obj id="noerror" type="string">NO_ERROR</obj>
+			      	<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="registryDetailURL" type="string">/rest/bean/com/bbb/rest/giftregistry/RestAPIManager/getRegistryDetailForApp</obj>
+					</objs>
+			</test>
+		</group>
+		
+		
+	</cluster>
+</ddtunit>
+ 

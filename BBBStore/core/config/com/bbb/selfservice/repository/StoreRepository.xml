@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Store Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="store" display-name-resource="storeRepository" display-property="storeName"   item-cache-size="2000" query-cache-size="2000" item-expire-timeout="86400000" query-expire-timeout="86400000">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<table name="BBB_STORE" type="primary" id-column-name="STORE_ID">
+			<property name="id" column-name="STORE_ID" display-name-resource="storeId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources" />
+        	</property>
+        	<property name="storeName" column-name="COMMON_NAME" display-name-resource="storeName" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>
+           	<property name="address" column-name="ADDRESS" display-name-resource="address" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>
+           	<property name="city" column-name="CITY" display-name-resource="city" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="state" column-name="STATE" display-name-resource="state" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="4"/>
+           	</property>
+           	<property name="postalCode" column-name="POSTAL_CD" display-name-resource="postalCode" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="5"/>
+           	</property>
+           	<property name="province" column-name="PROVINCE" display-name-resource="province" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="6"/>
+           	</property>
+           	<property name="countryCode" column-name="COUNTRY_CD" display-name-resource="countryCode" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="7"/>
+           	</property>
+           	<property name="phone" column-name="PHONE" display-name-resource="phone" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="8"/>
+           	</property>
+           	<property name="longitude" column-name="LONGITUDE" display-name-resource="longitude" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="9"/>
+           	</property>
+           	<property name="latitude" column-name="LATITUDE" display-name-resource="latitude" data-type="string" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="10"/>
+           	</property>
+           	 <property name="storeType" column-name="STORE_TYPE" display-name-resource="storeType" data-type="enumerated"  category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="11"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="BedBathUS" code="10"/>
+				<option value="BuyBuyBaby" code="40"/>
+				<option value="BedBathCanada" code="50"/>
+           	</property>
+           	<property name="hours" column-name="HOURS" display-name-resource="hours" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="12"/>
+           	</property>
+           	<property name="latLongSrc" column-name="LATLONG_SRC" display-name-resource="latLongSrc" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="37"/>
+           	</property>
+           	<property name="rowXngDt" column-name="ROW_XNG_DT" display-name-resource="rowXngDt" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="29"/>
+           	</property>
+           	<property name="rowXngUser" column-name="ROW_XNG_USR" display-name-resource="rowXngUser" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="30"/>
+           	</property>
+           	<property name="hiringInd" column-name="HIRING_IND" display-name-resource="hiringInd" data-type="boolean" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="31"/>
+           	</property>
+           	 	<property name="facadeStoreType" column-name="FACADE_STORE_TYPE" display-name-resource="facadeStoreType" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="32"/>
+           	</property>
+           	<property name="commonNamePhonetic" column-name="COMMON_NAME_PHONETIC" display-name-resource="commonNamePhonetic" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="33"/>
+           	</property>
+           	<property name="addressPhonetic" column-name="ADDRESS_PHONETIC" display-name-resource="addressPhonetic" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="34"/>
+           	</property>
+           	<property name="cityPhonetic" column-name="CITY_PHONETIC" display-name-resource="cityPhonetic" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="35"/>
+           	</property>
+           	<property name="mqTransCode" column-name="MQ_TRANS_CD" display-name-resource="mqTransCode" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="36"/>
+           	</property>
+           	
+           	<property name="displayOnline" column-name="DISPLAY_ONLINE" display-name-resource="displayOnline" data-type="boolean" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="13"/>
+           	</property>
+           	<property name="monOpen" column-name="MON_OPEN" display-name-resource="monOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="14"/>
+  			</property>
+  			<property name="monClose" column-name="MON_CLOSE" display-name-resource="monClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="15"/>
+  			</property>
+  			<property name="tuesOpen" column-name="TUES_OPEN" display-name-resource="tuesOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="16"/>
+  			</property>
+  			<property name="tuesClose" column-name="TUES_CLOSE" display-name-resource="tuesClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="17"/>
+  			</property>
+  			<property name="wedOpen" column-name="WED_OPEN" display-name-resource="wedOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="18"/>
+  			</property>
+  			<property name="wedClose" column-name="WED_CLOSE" display-name-resource="wedClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="19"/>
+  			</property>
+  			<property name="thursOpen" column-name="THURS_OPEN" display-name-resource="thursOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="20"/>
+  			</property>
+  			<property name="thursClose" column-name="THURS_CLOSE" display-name-resource="thursClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="21"/>
+  			</property>
+  			<property name="friOpen" column-name="FRI_OPEN" display-name-resource="friOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="22"/>
+  			</property>
+  			<property name="friClose" column-name="FRI_CLOSE" display-name-resource="friClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="23"/>
+  			</property>
+  			<property name="satOpen" column-name="SAT_OPEN" display-name-resource="satOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="24"/>
+  			</property>
+  			<property name="satClose" column-name="SAT_CLOSE" display-name-resource="satClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="25"/>
+  			</property>   
+     		<property name="sunOpen" column-name="SUN_OPEN" display-name-resource="sunOpen" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="26"/>
+  			</property>
+  			<property name="sunClose" column-name="SUN_CLOSE" display-name-resource="sunClose" data-type="int" category-resource="BasicInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="27"/>
+  			</property>  
+  			<property name="specialMsg" column-name="SPECIAL_MSG" display-name-resource="specialMsg" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="28"/>
+           	</property>    
+           	
+           	<property name="contactFlag" column-name="CONTACT_OPTIONS_FLAG" display-name="contactFlag" data-type="boolean" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="29"/>
+           	</property>
+		</table>
+		
+		<!-- Extended for Allowing Customers to schedule an appoint at their preferred shopping location -->
+		
+		 <table name="BBB_STORE_EXTENDED_INFO" type="auxiliary" id-column-name="STORE_ID">
+			<property name="acceptingAppointments" column-name="ACCEPTING_APPOINTMENTS" data-type="boolean" display-name-resource="acceptingAppointments" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="30" />
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources" />
+        	</property>
+        	<property name="regAppointmentTypes" column-name="REG_APPOINTMENT_TYPES" display-name-resource="regAppointmentTypes" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="31"/>
+           	</property>
+        	<property name="appointmentTypes" column-name="OTHER_APPOINTMENT_TYPES" display-name-resource="appointmentTypes" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="31"/>
+           	</property>
+        	<property name="lastModifiedDate" column-name="LAST_MOD_DATE" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="32"/>
+  			</property>
+        </table>
+                
+        <!-- End of the Extended Modification -->
+		
+				
+		<table name="BBB_STORES_SPECIALITY" type="multi" id-column-names="STORE_ID">
+  	 	<property name="specialityCodeId" column-names="SPECIALITY_CODE_ID" display-name-resource="specialityCodeId" data-type="set" component-item-type="specialityCode" category-resource="specialityCodes">
+			<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+  	 	</table>
+  	 	<table name="BBB_STORE_BOPUS" type="multi" id-column-name="STORE_ID" multi-column-name="SITE_ID">
+			<property name="bopus" column-name="BOPUS_FLAG" data-type="map" component-data-type="boolean" display-name-resource="bopus" >
+			<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+        		</property>
+        	<property name="bopusFlagLastModifiedDate" column-name="LAST_MOD_DATE" display-name-resource="bopusFlagLastModifiedDate" data-type="map" component-data-type="timestamp" cache-mode="disabled" >
+  				<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+  			</property>
+        		
+		</table>
+    </item-descriptor>
+    
+    <item-descriptor name="specialityCode" display-name-resource="specialityCode" display-property="specialityCodeName" cache-mode="simple" item-cache-size="2000" query-cache-size="2000" item-expire-timeout="86400000" query-expire-timeout="86400000">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<table name="BBB_SPECIALITY_CODES" type="primary" id-column-name="SPECIALITY_CODE_ID">
+		<property name="id" column-name="SPECIALITY_CODE_ID" data-type="string"></property>
+		<property name="specialityCodeName" column-name="SPECIALITY_CODE" display-name-resource="specialityCodeName" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+        </property> 
+        <property name="codeImage" column-name="CODE_IMAGE" display-name-resource="codeImage" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+        </property> 
+        <property name="priority" column-name="PRIORITY" display-name-resource="priority" data-type="int" category-resource="specialityCodeInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>
+  		</property>  
+  		<property name="storeListAltText" column-name="store_list_alt_txt" display-name-resource="storeListAltText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="4"/>
+        </property> 
+        <property name="storeListTitleText" column-name="store_list_title_txt" display-name-resource="storeListTitleText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="5"/>
+        </property> 
+        <property name="img2ImgLoc" column-name="img2_img_loc" display-name-resource="img2ImgLoc" data-type="string" category-resource="specialityCodeInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="6"/>
+  		</property>  
+  		<property name="img2AltText" column-name="img2_alt_txt" display-name-resource="img2AltText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="7"/>
+        </property> 
+        <property name="img2TitleText" column-name="img2_title_txt" display-name-resource="img2TitleText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="8"/>
+        </property> 
+        <property name="legendFileLoc" column-name="legend_file_loc" display-name-resource="legendFileLoc" data-type="string" category-resource="specialityCodeInfo" >
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="9"/>
+  		</property>  
+  		<property name="legendAltText" column-name="legend_alt_txt" display-name-resource="legendAltText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="10"/>
+        </property> 
+        <property name="legendTitleText" column-name="legend_title_txt" display-name-resource="legendTitleText" data-type="string" category-resource="specialityCodeInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="11"/>
+        </property> 
+		</table>
+	</item-descriptor>
+	<item-descriptor name="specialityCodeMap" cache-mode="simple" expert="false" query-cache-size="1000" item-expire-timeout="86400000" query-expire-timeout="86400000">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<table name="BBB_SPECIALITY_CODES_MAP" type="primary" id-column-name="SPECIALITY_CODE_MAP_ID">
+			<property name="specialityShopCd" column-name="SPECIALITY_SHOP_CD" display-name-resource="specialityShopCd" data-type="int">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+			</property>
+			<property name="specialityCdName" column-name="SPECIALITY_CD_NAME" display-name-resource="specialityCdName" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+            </property>
+		</table>
+		<table name="BBB_SPECIALITY_CODES_MAP_LIST" multi-column-name="sequence_num" type="multi" id-column-name="SPECIALITY_CODE_MAP_ID">
+			<property name="specialityCd" column-name="SPECIALITY_CODE_ID" display-name-resource="specialityCd" component-item-type="specialityCode" data-type="list">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+            </property>
+		</table>
+	</item-descriptor>
+	
+	<!--///////////////////   Added for TBS war, StoreIp Range  ///////////////////////////-->
+	<item-descriptor name="ipRangeData" cache-mode="simple" query-cache-size="1000" last-modified-property="lastUpdatedDate" item-expire-timeout="86400000" query-expire-timeout="86400000">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<attribute name="updateLastModified" value="true"/>
+		<table name="TBS_STORE_IP_RANGE" type="primary" id-column-name="STORE_ID">
+			<property name="ipRange" column-name="IP_RANGE" display-name-resource="ipRange" data-type="string"/>
+			<property name="creationDate" column-name="CREATE_DATE" display-name-resource="creationDate" data-type="timestamp"/>
+			<property name="lastUpdatedDate" column-name="LAST_UPDATED_DATE" display-name-resource="lastUpdatedDate" data-type="timestamp"/>
+		</table>
+	</item-descriptor>
+	
+		<!--///////////////////   Added for Dummy Stores for Buy Buy Baby  ///////////////////////////-->
+	<item-descriptor name="dummyStores" item-cache-size="2000" query-cache-size="2000" item-expire-timeout="86400000" query-expire-timeout="86400000">
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.StoreTemplateResources"/>
+		<table name="BBB_DUMMY_STORES" type="primary" id-column-name="ID">
+			<property name="siteId" column-name="SITE_ID" display-name-resource="siteId" data-type="string"/>
+			<property name="dummyStoreId" column-name="DUMMY_STORE_ID" display-name-resource="dummyStoreId" data-type="string"/>
+			<property name="orignalStoreId" column-name="ORIG_STORE_ID" display-name-resource="orignalStoreId" data-type="string"/>
+		</table>
+	</item-descriptor>
+</gsa-template>

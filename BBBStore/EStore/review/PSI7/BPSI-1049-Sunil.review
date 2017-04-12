@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-1049">
+  <ReviewIssue id="I7YVMZZ9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:47:01:221 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:48:42:601 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="583">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Correct the variable name ltlBelowLineFlagValue</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7YVPAOH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:48:48:401 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:49:11:362 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="583">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Java doc changes</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7YVQSMR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:49:58:323 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-01 :: 20:50:40:035 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="586">src/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Disable add to cart in case of owner view</Summary>
+    <Description>Disable add to cart in case of owner view</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: InventoryTestCase.xml 
+	DESCRIPTION: ddtunit data file for InventoryTextCase test case HISTORY: Oct 
+	14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+
+		<group id="testGetRepoForIncrementalFeed">
+			<test id="testGetRepoForIncrementalFeed_test1">
+				<objs>
+					<obj id="certonaCatalogTools" type="com.bbb.certona.utils.CertonaCatalogFeedTools"
+						hint="call" method="resolveName" calltype="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+						<item type="string">/com/bbb/certona/utils/CertonaCatalogFeedTools</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetCategoryDetails">
+			<test id="testGetCategoryDetails_test1">
+				<objs>
+					<obj id="certonaCatalogTools" type="com.bbb.certona.utils.CertonaCatalogFeedTools"
+						hint="call" method="resolveName" calltype="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+						<item type="string">/com/bbb/certona/utils/CertonaCatalogFeedTools</item>
+					</obj>
+					<obj id="full" type="boolean">true</obj>
+					<obj id="incremental" type="boolean">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetQueryForSku">
+			<test id="testGetQueryForSku_test1">
+				<objs>
+					<obj id="certonaCatalogTools" type="com.bbb.certona.utils.CertonaCatalogFeedTools"
+						hint="call" method="resolveName" calltype="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+						<item type="string">/com/bbb/certona/utils/CertonaCatalogFeedTools</item>
+					</obj>
+					
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetProductDetails">
+			<test id="testGetProductDetails_test1">
+				<objs>
+					<obj id="certonaCatalogTools" type="com.bbb.certona.utils.CertonaCatalogFeedTools"
+						hint="call" method="resolveName" calltype="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+						<item type="string">/com/bbb/certona/utils/CertonaCatalogFeedTools</item>
+					</obj>
+					<obj id="full" type="boolean">true</obj>
+					<obj id="incremental" type="boolean">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetSkuDetails">
+			<test id="testGetSkuDetails_test1">
+				<objs>
+					<obj id="certonaCatalogTools" type="com.bbb.certona.utils.CertonaCatalogFeedTools"
+						hint="call" method="resolveName" calltype="com.bbb.certona.utils.TestCertonaCatalogFeedTools">
+						<item type="string">/com/bbb/certona/utils/CertonaCatalogFeedTools</item>
+					</obj>
+					<obj id="full" type="boolean">true</obj>
+					<obj id="incremental" type="boolean">false</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

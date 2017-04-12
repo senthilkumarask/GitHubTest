@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddShippingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddRemoveGiftMessage.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestGiftWrapSKUDetails">
+	
+	
+		<group id="testGiftWrapSKUTransientUser">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+				    <obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku40069","prodId":"prod10013","qty":"1","price":"$120.00","bts":"false","storeId":""}
+					,{"skuId":"sku60010","prodId":"prod60011","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="login" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapOption" type="string"></obj>
+					<obj id="getWrapSkuDetails" type="string">/rest/bean//com/bbb/commerce/order/droplet/GiftWrapCheckDroplet/giftWrapSKUDetails</obj>
+				</objs>
+			</test>
+		</group>
+		
+		
+		<group id="testGiftWrapSKUMultiShippingGroup">
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+				    <obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"1013637911","qty":"2","price":"$11.99","bts":"false","storeId":""}
+					,{"skuId":"14282092","prodId":"1014282092","qty":"5","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="login" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapOption" type="string">multi</obj>
+					<obj id="getWrapSkuDetails" type="string">/rest/bean//com/bbb/commerce/order/droplet/GiftWrapCheckDroplet/giftWrapSKUDetails</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					
+				</objs>
+			</test>
+		</group>
+		
+		
+		
+		<group id="testGiftWrapSKULoggedInFlow">
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">3g</obj>
+				    <obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"1013637911","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="login" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="giftWrapOption" type="string">Hiii</obj>
+					<obj id="getWrapSkuDetails" type="string">/rest/bean//com/bbb/commerce/order/droplet/GiftWrapCheckDroplet/giftWrapSKUDetails</obj>
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddressToOrder</obj>
+					
+				</objs>
+			</test>
+		</group>
+		
+		
+	</cluster>
+</ddtunit>
+ 

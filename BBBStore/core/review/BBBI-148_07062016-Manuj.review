@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-148_07062016">
+  <ReviewIssue id="IP5PNVIZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:49:07:355 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:50:25:612 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manuj</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Code Review Comments</Summary>
+    <Description>Add the Layering in BBBStore.cache module
+Add the item-cache-size and query-cache-size
+Add the alyering in staging environment entries</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="bridal_show_2011_11_09_atul_kumar">
+  <ReviewIssue id="GUZ87PID">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:13:28:357 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:14:03:630 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="7">config/com/bbb/cms/repository/BridalShowTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Change the showTemplate to a better name. Also all names should come from resources file</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUZ88MPN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:14:11:387 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:14:23:639 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="11">config/com/bbb/cms/repository/BridalShowTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Date and time are repetetive. Keep only one field</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUZ8922F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:14:31:287 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:14:49:454 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="14">config/com/bbb/cms/repository/BridalShowTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Rename to directionURL. This field holds the URL of the directions link</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUZ8CHGX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:17:11:217 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 14:17:44:039 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>parvinder_singh</AssignedTo>
+    <File line="7">config/com/bbb/cms/repository/BridalShowTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Template should contain the cache settings.Use cache-mode as simple and use the item-cache and query-cache. </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

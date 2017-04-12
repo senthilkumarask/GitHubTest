@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestCategoryLandingDroplet.xml
+
+  DESCRIPTION: ddtunit data file for CategoryLandingDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.browse.droplet.TestExitemIdDroplet">
+       <group id="testService">
+        <test id="testService_test1">
+			<objs>
+				<obj id="exitemIdDroplet" type="com.bbb.commerce.browse.droplet.ExitemIdDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestExitemIdDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/ExitemIdDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

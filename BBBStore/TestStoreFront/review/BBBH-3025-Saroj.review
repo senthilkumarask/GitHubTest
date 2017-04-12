@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-3025">
+  <ReviewIssue id="IN0DE6NS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:47:24:280 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:47:26:244 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="58">test/com/bbb/commerce/order/droplet/TestPromotionExclusionMsgDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IN0DED1W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:47:32:564 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:47:33:844 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="50">test/com/bbb/payment/droplet/TestBBBPaymentGroupDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

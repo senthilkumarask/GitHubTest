@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE rest-security
+        PUBLIC "-//Art Technology Group, Inc.//DTD REST Filtering Configuration//EN"
+        "http://www.atg.com/dtds/rest/restSecurity_1.0.dtd">
+
+<rest-security>
+		<resource component="/atg/*">
+			<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		</resource>	
+		<resource component="/com/bbb/*">
+			<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		</resource>	
+		
+		<!-- Mobile App changes START -->
+		<resource component="/com/bbb/commerce/catalog/BBBCatalogTools" secure="true">
+			<!-- <default-acl value="Profile$role$restuser:read,write,execute;"/> -->	
+		 	<method name="getFullCategoryVO" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getUSAStoreDetails" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getStoreDetails" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getStateList" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRestStoreDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getAllConfigKeys" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getCollegeStateList" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getCollegesByState" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getCreditCardTypes" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getGiftWrapSKUDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getCanadaStoreLocatorInfo" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 	<method name="getIntlCountriesVOList" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getVendorConfigurationForCartAndWishlist" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getLTLEligibleShippingMethods" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="getRegionDataFromZip" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getZipCodesFromRegion" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getStoreIdsFromRegion" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getAllRegionDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	 	<method name="getSortOptionsForSite" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		</resource>
+		
+		
+		<resource component="/com/bbb/commerce/checkout/manager/BBBSameDayDeliveryManager" secure="true">
+			<!-- <default-acl value="Profile$role$restuser:read,write,execute;"/> -->	
+		 	
+		 	<method name="checkAndpopulateRegionDataInVO" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		</resource>
+		
+		<resource component="/com/bbb/commerce/browse/droplet/BBBDisplaySDDEligibilityOnPDPDroplet" secure="true">
+			<!-- <default-acl value="Profile$role$restuser:read,write,execute;"/> -->	
+		 	
+		 	<method name="getSDDEligibilityForREST" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		</resource>
+		
+		
+		 
+		<resource component="/com/bbb/cms/droplet/ChallengeQuestionDroplet" secure="true">
+			<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="fetchchallengeQuestion" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 
+		  <resource component="/atg/userprofiling/ProfileTools" secure="true">
+		  	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="checkForRegistration" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;Profile$role$xouser:read,write,execute;"/>
+		 	</method>
+		 </resource> 
+		 
+		 <resource component="/com/bbb/rest/selfservice/SearchStoreService" secure="true">
+		 	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="searchStores" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="searchSKUInStore" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="searchStoreForPLP" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method> 		 	
+		 </resource>
+
+		 <resource component="/com/bbb/selfservice/SearchStoreManager" secure="true">
+		 	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="modifyLatLngCookie" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	 	
+		 </resource>
+		 
+		 <resource component="/com/bbb/rest/search/RestSearchManager" secure="true">
+		 	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="performSearch" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRootCategoryNavigation" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="performTypeAheadSearch" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>			 	
+		 	<method name="getAllCategories" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="storeInventoryCount" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 </resource>
+		 
+		 <resource component="/com/bbb/commerce/giftregistry/manager/GiftRegistryManager" secure="true">
+		 	<method name="searchRegistryByCriteria" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryTypes" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	<method name="persistRecommenderReln" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="copyRegistry" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="recommendRegistryList" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryInfo" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getNotifyInfo" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	 		 	
+			<method name="isCoOwerByProfile" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 </resource>
+		 
+		 <resource component="/com/bbb/simplifyRegistry/manager/SimplifyRegistryManager" secure="true">
+		 	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="getRegInputsByRegType" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>	 		 	
+		 </resource>
+		 
+		 <resource component="/com/bbb/rest/catalog/BBBRestCatalogToolImpl" secure="true">
+		 	<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="isFirstLevelCategory" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getProductListDetails" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getProductDetails" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getProductDetailsByUPC" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getBulkProductDetailsbyMultipleUPC" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getVDCMessage" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getSkuDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getSkuDetailsForPDP" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getPDPAttributes" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 	<method name="getProductColorDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 	<method name="getCollegeDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getTimeZones" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getEverLivingSKUDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 	<method name="removePersonalizedListFromSession" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		
+		 	<method name="getProductsAndRecommendedCategories" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 
+		 <resource component="/com/bbb/cms/manager/LblTxtTemplateManager" secure="true">
+			<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="getAllLabel" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getAllLabelForMobile" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getAllLabels" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 				 	
+		 </resource>
+		 
+		 <resource component="/com/bbb/account/BBBGetCouponsManager" secure="true">
+			<default-acl value="Profile$role$restuser:read,write,execute;"/>
+		 	<method name="getWalletId" secure="true">
+		 		<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getUserCoupons" secure="true">
+				<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="createWalletMobile" secure="true">
+				<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="assignOffers" secure="true">
+				<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getProfileStatus" secure="true">
+				<acl value="Profile$role$appuser:read,write,execute;Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 				 	
+		 </resource>
+		
+		<!-- Mobile App changes END -->
+		
+		
+		
+		 <resource component="/atg/userprofiling/ProfileFormHandler" secure="true">
+		   <default-acl value="Profile$role$restuser:read,write,execute;"/>
+		   <method name="handleLogout" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleChangePassword" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+   			</method>
+   			<method name="handleResetPasswordWithToken" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+   			</method>
+		 	<method name="handleLoginUser" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleConfirmPassword" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleLogout" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+   			</method>
+		   	<method name="handleCreate" secure="true">
+		   		<acl value="Profile$role$restuser:read,write,execute;"/>
+		   	</method>
+		   	<method name="handleCreateUser" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		   	<method name="handleUpdate" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   	</method>
+		   <method name="handleMakeDefaultCreditCardAPI" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleMakeDefaultBillingAddress" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleMakeDefaultShippingAddress" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleMakeDefaultMailingAddress" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleAddNewProfileAddress" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleStoreChallengeQuestion" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleUpdateAddress" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleRemoveAddressAPI" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		    <method name="handleCheckoutDefaultsAPI" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleCreateCreditCard" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleUpdateCard" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		    <method name="handleRemoveCard" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleAddCreditCardToProfile" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleUpdateCreditCardToProfile" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   <method name="handleUpdateProfile" secure="true">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		   
+		   <method name="handleRegistration" secure="false">
+		   		<acl value="Profile$role$secure:read,write,execute;"/>
+		   </method>
+		  </resource>
+		
+		 <resource component="/com/bbb/search/endeca/EndecaSearch" secure="true">
+		 	<method name="performSearch" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 
+		 <resource component="/com/bbb/account/OrderDetailsManager" secure="true">
+		 	<method name="getATGOrderDetails" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 
+		<resource component="/atg/commerce/gifts/GiftlistFormHandler" secure="true">
+		 	<method name="handleAddItemListToGiftlist" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	<method name="handleUpdateAllGiftListItems" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	<method name="handleUpdateWishlistItems" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	<method name="handleRemoveWishlistItems" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleMoveItemsToWishListFromCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	 
+		 	 
+		 	<method name="handleRemoveAllItemsFromWishlist" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	<method name="handleRemoveItemsFromGiftlist" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleMoveItemsFromCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleMoveItemsToCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleEditPersonalisedGiftItem" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleToggleWishListSwitch" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		</resource>
+		
+<!-- 		<resource component="/com/bbb/wishlist/BBBWishlistManager" secure="true"> -->
+<!-- 		 	<method name="getWishListItems" secure="true"> -->
+<!-- 		 		<acl value="Profile$role$secure:read,write,execute;"/> -->
+<!-- 		 	</method> -->
+<!-- 		</resource> -->
+		<resource component="/com/bbb/commerce/giftregistry/formhandler/GiftRegistryformhandler" secure="true">
+		 	<method name="handleAdditemtogiftregistry" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleCreateRegistry" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleMoveAllWishListItemsToRegistry" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleAnnouncementCardRequest" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	<method name="handleUpdateRegistryItems" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		</resource>	
+		<resource component="/com/bbb/rest/giftregistry/RestAPIManager" secure="true">
+		     <method name="loadChecklistItems" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryInfoForProfileID" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="fetchPOBoxAddress" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="getActiveRegistryForRest" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="checkUserStatus" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryDashboard" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 		<method name="getRegistryDetailAPI" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 		<method name="showRecommendationForRegistry" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryListForProfile" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="getRegistryDetailForApp" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="createUser2" secure="true" >
+		 		<acl value="Profile$role$xouser:read,write,execute;"/>
+		 	</method>
+		 	<method name="createRegistry2" secure="true">
+		 		<acl value="Profile$role$xouser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getOwnAndRecommendedRegistriesForProfile" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="getOwnRegistriesForProfileCount" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		</resource>
+		<resource component="/atg/userprofiling/ProfileAdapterRepository" secure="true">
+			<default-acl value="Profile$role$secure:read,write,execute;"/>
+ 		</resource>
+ 		<resource component="/com/bbb/commerce/inventory/BBBInventoryManager" secure="true">
+			<method name="getWebProductInventoryStatus" secure="true">
+		 		<acl value="Profile$role$exim_inv_id:read,write,execute;Profile$role$smart_inv_id:read,write,execute;"/>
+		 	</method>		
+		 	<method name="uncachedInventoryCheck" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+ 		</resource>
+		<resource component="/com/bbb/selfservice/formhandler/SearchStoreFormHandler" secure="true">
+		 	<method name="handleMakeFavStoreAPI" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 
+		<!--  <resource component="com/bbb/commerce/order/droplet/UserCouponWalletDroplet" secure="true">
+		 	<method name="getAppliedCoupons" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 		 	
+		 </resource> -->
+		 
+		 <resource component="/com/bbb/rest/generic/BBBSessionManagerFacade" secure="true">
+		 
+		 	<method name="getProfileInfo" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	<method name="getAllAddresses" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="checkShippingEligibilityForOrder" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="getCurrentOrderDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="checkExpressCheckoutStatusForOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="setDeviceLocation" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="getAllCreditCard" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="getCurrentOrderDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="getLastPlacedOrderDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>	
+		 	
+		 	<method name="checkOrderPackAndHoldEligibility" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="logoutUser" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="getInventoryStatus" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+			
+			<method name="isOrderAmountCoveredByGCAPI" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="isMaxGiftCardReachedAPI" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="getSEOTagDetails" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="displayProfileBillingAddress" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	
+		 	<method name="removeItemsFromOrderAndLogOut" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 </resource>
+		 
+		  <resource component="/atg/commerce/order/purchase/CartModifierFormHandler" secure="true">
+		  	<method name="handleMoveAllWishListItemsToOrder" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleAddItemToOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+			<method name="handleAssociateContext" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleEditPersonalisedItem" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleAddRegistryItemToOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleCheckout" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleCheckoutCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleExpressCheckoutForOrder" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleMoveWishListItemToOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleApplyCouponsToOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleRemoveItemFromCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleUpdateCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="handleRepriceOrder" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 
+		 	<method name="handleCheckoutWithPaypalRest" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+			<method name="handleAddServiceToCommerceItem" secure="true">
+ 		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+ 		 	</method>
+ 		 	<method name="handleRemoveServiceFromCommerceItem" secure="true">
+ 		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+ 		 	</method>
+		  </resource>
+		  <resource component="/com/bbb/account/BBBStoreSessionDroplet" secure="true">
+		 	<method name="getPreferencesAPI" secure="true">
+		 		<acl value="Profile$role$secure:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		 <resource component="/com/bbb/commerce/order/paypal/BBBPayPalServiceManager" secure="true">
+		 	<method name="compareOldAndNewCart" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="saveCartInPaypalBean" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 </resource>
+		 <resource component="/com/bbb/selfservice/ScheduleAppointmentManager" secure="true">
+		 	<method name="fetchEnabledAppointmentTypes" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>
+		 	<method name="getScheduleAppointment" secure="true">
+		 		<acl value="Profile$role$restuser:read,write,execute;"/>
+		 	</method>		 	
+		 </resource>
+		  
+		  
+</rest-security>
+<!-- @version $Id: //product/REST/version/10.0.3/atg-rest/config/src/main/config/atg/rest/security/restSecurityConfiguration.xml#2 $$Change: 651448 $-->

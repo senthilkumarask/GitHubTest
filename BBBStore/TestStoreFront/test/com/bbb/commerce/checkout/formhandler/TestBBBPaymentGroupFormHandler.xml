@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+		<group id="testHandlePayment">
+			<test id="testHandlePayment">
+				<objs>
+					<obj id="GetCreditCardsForPayment" type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/com/bbb/commerce/checkout/droplet/GetCreditCardsForPayment</item>
+					</obj>
+					<obj id="paymentGroupFormHandler" type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+						<item type="string">/atg/commerce/order/CommerceItemManager</item>
+					</obj>
+					<obj id="cardType" type="String">Visa</obj>
+					<obj id="cardNumber" type="String">4111111111111111</obj>
+					<obj id="verificationNumber" type="String">123</obj>
+					<obj id="expirationMonth" type="String">02</obj>
+					<obj id="expirationYear" type="String">2019</obj>
+					<obj id="nameOnCard" type="String">testUser</obj>
+					<obj id="catalogRefId" type="string">
+						sku40041
+					</obj>	
+					<obj id="productId" type="string">
+						prod10037
+					</obj>	
+				</objs>
+				
+			</test>
+		</group>
+		
+		<group id="testHandlePaymentFailScenarios">
+			<test id="testHandlePaymentFailScenarios">
+				<objs>
+					<obj id="GetCreditCardsForPayment" type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/com/bbb/commerce/checkout/droplet/GetCreditCardsForPayment</item>
+					</obj>
+					<obj id="paymentGroupFormHandler" type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="cardType" type="String">Visa</obj>
+					<obj id="cardNumber" type="String">4111111111111111</obj>
+					<obj id="verificationNumber" type="String">123</obj>
+					<obj id="verificationNumberInvalid" type="String">123aa</obj>
+					<obj id="expirationMonth" type="String">02</obj>
+					<obj id="expirationYear" type="String">2019</obj>
+					<obj id="nameOnCard" type="String">testUser</obj>
+				</objs>
+				
+			</test>
+		</group>
+		
+		<group id="testHandleRemovePaymentGroupErrorScenario">
+			<test id="testHandleRemovePaymentGroupErrorScenario">
+				<objs>
+					<obj id="paymentGroupFormHandler" type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="paymentGroupId" type="String">xyz</obj>
+				</objs>
+				
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

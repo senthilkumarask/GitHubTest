@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-3250">
+  <ReviewIssue id="IRCV0OBL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:42:50:529 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:43:10:154 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="1">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRCV18L0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:43:16:788 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:44:02:727 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="22">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we not skipping phantom categories? Let's discuss befor you update the query</Summary>
+    <Description>categoryQuery</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRCV2C04">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:44:07:876 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:44:38:375 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="19">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can we make sure we are caching the brands which we are displaying in the website only?</Summary>
+    <Description>brandIdQuery</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRCV3KNT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:45:05:753 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:45:34:256 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="34">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can we read this from config key?</Summary>
+    <Description>pageSize</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRCVLCHB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:58:54:959 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:59:45:654 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="14">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>I see them empty, are we going to assign value in layering file of JOBs server?</Summary>
+    <Description>dataCenter</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRCVMIZA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:59:50:038 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-01 :: 22:59:57:255 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="15">config/com/bbb/scheduler/SearchCacheRefreshScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>I see them empty, are we going to assign value in layering file of JOBs server?</Summary>
+    <Description>deploymentId</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRE6DCXY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 20:48:24:262 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 20:49:14:265 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="841">src/com/bbb/scheduler/SearchCacheRefreshScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Most of the code between below three methods is same, why do not we move the logic to common method?</Summary>
+    <Description>populatePopularKeywordsCache
+populateBrandCache
+populteCategoriesCache</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRE6PACA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 20:57:40:762 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 20:58:26:983 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgup39</ReviewerId>
+    <AssignedTo>mgup39</AssignedTo>
+    <File line="422">src/com/bbb/scheduler/SearchCacheRefreshScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Logic b/w all three methods is almost same, can we  move the common logic to a different method?</Summary>
+    <Description>buildPopularKeywordQuery
+buildBrandQuery
+buildCategoryQuery</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

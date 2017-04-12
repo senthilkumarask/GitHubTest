@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+  <header>
+    <name>Manage CheckList Items Registry</name>
+    <author></author>
+  </header>
+
+<item-descriptor name="ManageCheckListLink" cache-mode="simple"
+		display-property="id" display-name-resource="manageCheckListLink"
+		item-cache-size="50" query-cache-size="50">
+	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+	<table name="BBB_MANAGE_CHECKLIST_LINKS" type="primary" id-column-names="checkList_link_id">
+		<property name="id" column-name="checkList_link_id" data-type="string" display-name-resource="checkListLinkId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="0" />
+		</property>
+		
+		<property name="channel" column-name="channel_id" data-type="string" display-name-resource="channelId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="1" />
+		</property>
+		<property name="registryType" data-type="string" display-name-resource="registryType" column-name="registry_type">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="4" />
+			<option value="Baking" code="BKG"/>
+       	</property>
+       	<property name="regTypeCode" data-type="string" display-name-resource="regTypeCode" column-name="reg_type_code">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="5" />
+       	</property>
+	</table>
+	
+	<table name="BBB_CHECKLIST_LINKS" type="multi" multi-column-name="sequence_num"
+		id-column-names="checkList_link_id">
+		<property name="links" column-name="link_id" data-type="list"
+			display-name-resource="links" component-item-type="links"
+			repository="/com/bbb/cms/repository/WSHomePageTemplate">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="3" />
+		</property>
+	</table>
+
+	<table name="BBB_CHECKLIST_SITES" type="multi" id-column-names="checkList_link_id">
+		<property name="sites" column-name="site_id"
+			display-name-resource="appSites" component-item-type="siteConfiguration"
+			repository="/atg/multisite/SiteRepository" required="true"
+			data-type="set">
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+			<attribute name="propertySortPriority" value="2" />
+		</property>
+	</table>
+	
+</item-descriptor>
+</gsa-template>

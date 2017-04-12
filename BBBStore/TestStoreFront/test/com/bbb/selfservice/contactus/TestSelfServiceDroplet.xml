@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestContactUSCategoryDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestContactUSCategoryDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.contactus.TestSelfServiceDroplet">
+       <group id="testService">
+        <test id="testService_test">
+			<objs>
+				<obj id="contactUSCategoryDroplet" type="com.bbb.selfservice.droplet.ContactUSCategoryDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.contactus.TestSelfServiceDroplet">
+					<item type="string">/com/bbb/selfservice/ContactUSCategoryDroplet</item>
+				</obj>
+				<obj id="contactUSTimeZoneDroplet" type="com.bbb.selfservice.droplet.ContactUSTimeZoneDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.contactus.TestSelfServiceDroplet">
+					<item type="string">/com/bbb/selfservice/ContactUSTimeZoneDroplet</item>
+				</obj>
+				<obj id="siteContextManager" type="com.bbb.selfservice.droplet.ContactUSCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.contactus.TestSelfServiceDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="subject" type="string">Site Design</obj>
+				<obj id="subjectInvalid" type="string">site</obj>
+			</objs>
+	    </test>
+      </group> 
+     
+    </cluster>
+</ddtunit>

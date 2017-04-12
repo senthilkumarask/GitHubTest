@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Semantic Data Repository</name>
+	</header>
+	
+	<!-- item descriptor for search keyword MAP -->
+	<item-descriptor name="semanticData" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" display-name-resource="itemDescSemDataRepository" display-property="keywordType">
+	  <attribute name="resourceBundle" value="com.bbb.SemanticData.BBBSemanticDataResource"/>	
+		<table name="BBB_SEMANTIC_DATA_TYPES" id-column-name="TYPE_ID" type="primary">			
+			<property name="typeId" data-type="string" column-name="TYPE_ID" />
+			<property name="keywordType" data-type="enumerated" column-name="KEYWORD_TYPE" display-name-resource="keywordType">
+				<attribute name="resourceBundle" value="com.bbb.SemanticData.BBBSemanticDataResource"/>
+				<attribute name="useCodeForValue" value="false"/>
+			    <attribute name="unique" value="true"/>
+			    <option value="CategoryType" code="0"/>
+			    <option value="Color" code="1"/>
+				<option value="Other" code="2"/>
+			</property>							
+		</table>
+		
+		<table name="BBB_SEMANTIC_KEYWORDS" type="multi" multi-column-name="SEQUENCE_NUM" id-column-name="TYPE_ID">
+		    <property name="keywordList" column-name="KEYWORDS" data-type="list" component-data-type="string" display-name-resource="keywords">
+		      <attribute name="resourceBundle" value="com.bbb.SemanticData.BBBSemanticDataResource"/>
+		      <attribute name="propertySortPriority" value="3"/>
+		    </property>
+		  </table>
+		
+	</item-descriptor>
+		
+</gsa-template>

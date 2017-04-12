@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestValueLinkGiftCardProcessor.xml
+
+  DESCRIPTION: ddtunit data file for TestValueLinkGiftCardProcessor.java test case
+
+  HISTORY:
+  Feb 02, 2012  Initial version
+
+
+giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  
+
+-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.valuelink.TestValueLinkGiftCardProcessor">
+      <group id="testGetBalance">
+        <test id="testService_test1">
+			<objs>
+				<obj id="VLGiftCardProcessor" type="com.bbb.valuelink.ValueLinkGiftCardProcessor" hint="call" method="resolveName" calltype="com.bbb.valuelink.TestValueLinkGiftCardProcessor">
+					<item type="string">/com/bbb/valuelink/ValueLinkGiftCardProcessor</item>
+				</obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777060829062488</obj>	
+				<obj id="pinNo" type="string">24003025</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testRedeem">
+        <test id="testService_test2">
+			<objs>
+				<obj id="VLGiftCardProcessor" type="com.bbb.valuelink.ValueLinkGiftCardProcessor" hint="call" method="resolveName" calltype="com.bbb.valuelink.TestValueLinkGiftCardProcessor">
+					<item type="string">/com/bbb/valuelink/ValueLinkGiftCardProcessor</item>
+				</obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777060829062488</obj>	
+				<obj id="pinNo" type="string">24003025</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testRedeemRollBack">
+        <test id="testService_test3">
+			<objs>
+				<obj id="VLGiftCardProcessor" type="com.bbb.valuelink.ValueLinkGiftCardProcessor" hint="call" method="resolveName" calltype="com.bbb.valuelink.TestValueLinkGiftCardProcessor">
+					<item type="string">/com/bbb/valuelink/ValueLinkGiftCardProcessor</item>
+				</obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777060829062488</obj>	
+				<obj id="pinNo" type="string">24003025</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>        
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

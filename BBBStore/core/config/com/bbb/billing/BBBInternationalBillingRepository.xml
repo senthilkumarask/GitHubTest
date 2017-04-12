@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Country Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="bccManagedCountry" display-name="BCC Managed Country" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" display-property="countryName" >
+		<table name="BBB_BCC_COUNTRIES" type="primary" id-column-name="id" >
+			<property name="countryName" column-name="COUNTRY_NAME" display-name-resource="countryName" data-type="string">
+				<attribute name="resourceBundle" value="com.bbb.cms.BBBManagedCountryResources"/>
+	        	<attribute name="propertySortPriority" value="1"/>
+			</property> 
+			<property name="countryCode" column-name="COUNTRY_CODE" display-name-resource="countryCode" data-type="string">
+				<attribute name="resourceBundle" value="com.bbb.cms.BBBManagedCountryResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+			</property>
+			<property name="enabled" column-name="ENABLED" display-name-resource="enabled" data-type="boolean">
+				<attribute name="resourceBundle" value="com.bbb.cms.BBBManagedCountryResources"/>
+	        	<attribute name="propertySortPriority" value="3"/>
+	        	<attribute name="default" value="1"/>
+			</property>
+		</table>
+    </item-descriptor>
+</gsa-template>

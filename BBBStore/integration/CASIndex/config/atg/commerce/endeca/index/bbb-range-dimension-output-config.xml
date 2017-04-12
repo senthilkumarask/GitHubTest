@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<item item-descriptor-name="rangeDimension" is-document="true" repository-path="/com/bbb/search/endeca/indexing/repository/RangeDimensionRepository">
+  <properties>	   
+  	<property name="endecaId" output-name="Endeca.Id" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/RangeDimensionEndecaIdAccessor" is-non-repository-property="true"/>
+  	<property name="dimName" output-name="dimval.dimension_name" type="string" text-searchable="true"/> 
+    <property name="dimSpec" output-name="dimval.spec" type="string"/>    
+  	<property name="parentSpec" output-name="dimval.parent_spec" type="string"/>	         
+    <property name="displayOrder" output-name="dimval.display_order" type="integer"/>	
+    <property name="dimSpec" output-name="dimval.display_name" type="string" is-non-repository-property="true"/> 	
+	<property name="lowerBound" output-name="dimval.range.lower_bound" type="integer"/>	      
+	<property name="lowerBoundInclusive" output-name="dimval.range.lower_bound_inclusive" type="enumerated"/>	
+	<property name="upperBound" output-name="dimval.range.upper_bound" type="integer"/>	
+	<property name="upperBoundInclusive" output-name="dimval.range.upperbound_inclusive" type="enumerated"/> 
+	
+	<!--SUPPRESSED PROPERTIES-->	
+	<property name="$itemDescriptor.itemDescriptorName" output-name="itemDescriptor.itemDescriptorName" type="string" is-non-repository-property="true" suppress="true"/> 
+	<property name="$repository.repositoryName" output-name="repository.repositoryName" type="string" is-non-repository-property="true" suppress="true"/> 
+	<property name="$docId" output-name="docId" type="string" is-non-repository-property="true" suppress="true"/>
+	
+	<!--Automatically Included Properties-->	
+	<property name="$baseUrl" output-name="rangeDimension.baseUrl" type="string" is-non-repository-property="true"/>
+	<property name="$repositoryId" output-name="rangeDimension.repositoryId" type="string" is-non-repository-property="true"/>
+	<property name="$siteId" output-name="rangeDimension.siteId" type="string" is-non-repository-property="true"/>
+	<property name="$url" output-name="rangeDimension.url" type="string" is-non-repository-property="true"/>
+	
+</properties>
+</item>

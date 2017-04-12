@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="International_Order_Submission">
+  <ReviewIssue id="HW3IN6BU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:45:37:290 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:46:07:167 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add Javab Docs comments for Public method</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3IVUU7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:52:22:303 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:53:46:489 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>persistXml is misleading name for this method becuase its actually removing XML and updating order. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3IXU42">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:53:54:674 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:54:49:099 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>No need of creating a wrapper (persisXML) over orderUpdate method.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3IZYQM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:55:33:982 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:56:38:387 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Fix Exception handling , there is no exception thrown from persistXML method</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J1H7P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:56:44:581 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:57:23:322 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Write Log Message , Fix Exception Handling for orderUpdate</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J2SO3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:57:46:083 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:59:23:966 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>orderPersist | No Logging in this critical method ????</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J4Y5I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 18:59:26:502 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:00:28:504 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>orderPersist | if(order!=null) should be before synchronised block. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J6H4W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:00:37:760 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:01:17:208 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>orderPersist | Throw exception from this method. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J8R66">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:02:24:078 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:02:58:549 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>updateOnlineOrderNumber | There is no need of String msg , its not reused in catch block. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3J9J7G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:03:00:412 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:03:25:446 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>updateOnlineOrderNumber | Add log message and performance logs</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3JABV1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:03:37:549 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:04:00:167 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>removeXml | Throw exception from catch block. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW3JEGWR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:06:50:715 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-06 :: 19:07:38:415 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Kapil_Ratan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>BBBCoreConstants.FALSE.equalsIgnoreCase(updateAllInventory) &amp;&amp; !bbbItem.isVdcInd() --- Change this condition. You can have if(updateAllInventory) even before for loop. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,402 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBProfileFormHandler">
+  
+      <group id="testHandleLogin">
+        <test id="testHandleLogin_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+			<!-- <asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>-->  
+        </test>
+      </group>
+      <group id="testHandleInvalidLogin">
+        <test id="testHandleInvalidLogin_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">test2@example.com</obj>
+				<obj id="invalidemail" type="string">test1example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>
+        </test>
+      </group>
+      <group id="testHandleCreate">
+        <test id="testHandleCreate_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">testnew@example.com</obj>
+				<obj id="password" type="string">Sapient@123</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+			</objs>      
+		</test>
+      </group>
+       <group id="testHandleUpdate">
+        <test id="testHandleUpdate">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="email" type="string">ngarg2@sapient.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>      
+		</test>
+      </group>
+      <group id="testHandleRegistration">
+        <test id="testHandleRegistration">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbOrderTrackingManager" type="com.bbb.account.BBBOrderTrackingManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBOrderTrackingManager</item>
+				</obj>
+				<obj id="orderId" type="string">BBB0004440004</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BedBathUS</obj>
+			</objs>      
+		</test>
+      </group>
+      <group id="testHandleRegister">
+        <test id="testHandleRegister_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs> 
+        </test>
+      </group>
+      <group id="testHandleChangePassword">
+        <test id="testHandleChangePassword_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+                <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+			</objs>
+        </test>
+      </group>
+      <group id="testHandleLegacyForgetPassword">
+        <test id="testHandleLegacyForgetPassword">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="email" type="string">test2@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>
+        </test>
+      </group>
+      
+       <group id="testHandleCreditCard">
+        <test id="testHandleCreditCard_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="cardNickname" type="string">
+				tcdec1cardnickname1
+				</obj>	
+				<obj id="secondaryAddrNickname" type="string">
+				tcdec1addrnickname1
+				</obj>
+				<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+			</objs>   
+        </test>
+      </group>
+      
+      <!--    
+        <group id="testChangePassword1">
+        <test id="testChangePassword_test1">
+			<objs>
+				<obj id="changePasswordFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="param1" type="java.lang.Boolean" action="isTrue">true</assert>
+	        </asserts>  
+        </test> 
+      </group> 
+       <group id="testChangeEmail">
+        <test id="testChangeEmail_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="isEmailUpdated_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isEmailUpdated_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>  
+        </test> 
+      </group>
+      
+      
+       <group id="testHandleCreditCard">
+        <test id="testHandleCreditCard_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="cardNickname" type="string">
+				tcdec1cardnickname1
+				</obj>	
+				<obj id="secondaryAddrNickname" type="string">
+				tcdec1addrnickname1
+				</obj>		
+				
+			</objs>      
+			<asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts> 
+        </test>
+      </group>
+      
+      <group id="testHandleCreateNewCreditCardAndAddress">
+        <test id="testHandleCreateNewCreditCardAndAddress_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="cardNickname" type="string">
+				tcdec1cardnickname1
+				</obj>	
+				<obj id="secondaryAddrNickname" type="string">
+				tcdec1addrnickname1
+				</obj>		
+				<obj id="newCard" type="java.util.HashMap" hint="map">
+						<item>
+							<key type="java.lang.String">creditCardNumber</key>
+							<value type="java.lang.String">411111111111111</value>
+						</item>
+						<item>
+							<key type="java.lang.String">creditCardType</key>
+							<value type="java.lang.String">Visa</value>
+						</item>
+						<item>
+							<key type="java.lang.String">expirationMonth</key>
+							<value type="java.lang.String">04</value>
+						</item>
+						<item>
+							<key type="java.lang.String">expirationYear</key>
+							<value type="java.lang.String">2013</value>
+						</item>
+						<item>
+							<key type="java.lang.String">nameOnCard</key>
+							<value type="java.lang.String">nameoncardtcdec1</value>
+						</item>
+				</obj>
+				<obj id="newAddress" type="java.util.HashMap" hint="map">
+						<item>
+							<key type="java.lang.String">address1</key>
+							<value type="java.lang.String">tcdec1addr1</value>
+						</item>
+						<item>
+							<key type="java.lang.String">address2</key>
+							<value type="java.lang.String">tcdec1addr2</value>
+						</item>
+						<item>
+							<key type="java.lang.String">firstName</key>
+							<value type="java.lang.String">tcdec1fname1</value>
+						</item>
+						<item>
+							<key type="java.lang.String">lastName</key>
+							<value type="java.lang.String">tcdec1lname1</value>
+						</item>
+						<item>
+							<key type="java.lang.String">company</key>
+							<value type="java.lang.String">tcdec1comapny1</value>
+						</item>
+						<item>
+							<key type="java.lang.String">state</key>
+							<value type="java.lang.String">NH</value>
+						</item>
+						<item>
+							<key type="java.lang.String">postalCode</key>
+							<value type="java.lang.String">12345</value>
+						</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>
+        </test>
+      </group>
+      
+      <group id="testHandleCreateNewCreditCard">
+        <test id="testHandleCreateNewCreditCard_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="name" type="string">Test</obj>
+                <obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="cardNickname" type="string">
+				tcdec1cardnicknameexisting1
+				</obj>	
+				<obj id="secondaryAddrNickname" type="string">
+				tcdec1addrnicknameexisting1
+				</obj>		
+				<obj id="newCard" type="java.util.HashMap" hint="map">
+						<item>
+							<key type="java.lang.String">creditCardNumber</key>
+							<value type="java.lang.String">411111111111111</value>
+						</item>
+						<item>
+							<key type="java.lang.String">creditCardType</key>
+							<value type="java.lang.String">Visa</value>
+						</item>
+						<item>
+							<key type="java.lang.String">expirationMonth</key>
+							<value type="java.lang.String">05</value>
+						</item>
+						<item>
+							<key type="java.lang.String">expirationYear</key>
+							<value type="java.lang.String">2014</value>
+						</item>
+						<item>
+							<key type="java.lang.String">nameOnCard</key>
+							<value type="java.lang.String">nameoncardtcdec2</value>
+						</item>
+				</obj>
+					
+			</objs>      
+			<asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>
+        </test>
+      </group>
+      
+      <group id="testHandleRemoveCard">
+        <test id="testHandleRemoveCard_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="cardNickname" type="string">Visa - 1111##1</obj>	
+			</objs>      
+			<asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts>
+        </test>
+        
+      </group>
+      
+      <group id="testHandleMakePreferredCard">
+        <test id="testHandleMakePreferredCard_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">test1@example.com</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+                <obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="cardNickname" type="string">tcdec1cardnickname1</obj>	
+			</objs>      
+			<asserts> 
+	        	<assert id="isCreateStatus_Pass" type="java.lang.Boolean" action="isTrue">true</assert>
+	        	<assert id="isCreateStatus_Fail" type="string" action="isEqual">true</assert>
+	        </asserts> 
+        </test>
+      </group> -->
+      
+      
+    </cluster>
+</ddtunit>

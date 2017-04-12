@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-143">
+  <ReviewIssue id="IP689VIE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:00:06:854 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:00:20:297 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="45">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Is this correct constant for this method?</Summary>
+    <Description>OMNITURE_PRODUCT_BOOSTING</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP68GDMG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:05:10:264 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:05:30:503 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="82">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add null check for other objects too</Summary>
+    <Description>queueRequestVO.getOmnitureReportConfigVo().getReportTimeRange()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP68H2LD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:05:42:625 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:05:48:759 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="86">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add null check for other objects too</Summary>
+    <Description>queueRequestVO.getOmnitureReportConfigVo().getReportTimeRange()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP68I350">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:06:29:988 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:06:45:002 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="86">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add comments</Summary>
+    <Description>queueRequestVO.getOmnitureReportConfigVo().getReportTimeRange()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP68IW65">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:07:07:613 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:07:25:690 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="78">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Move them to starting of the method</Summary>
+    <Description>int reportTimeRange=0;  
+		int reportTimeRangeAduj=0;
+		int noOfPastDays=0;
+		int noOfDays=0;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP68NJK9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:10:44:553 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 22:11:07:266 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="139">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPLPProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>50000 is too big for batch size, make default batch size to 5000</Summary>
+    <Description>FIFTY_THOUSANDS</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

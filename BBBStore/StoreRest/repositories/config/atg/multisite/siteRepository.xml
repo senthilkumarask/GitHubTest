@@ -1,0 +1,64 @@
+<gsa-template xml-combine="append">
+	<!-- Already present in web2.0. Need to comment during merge -->
+	<!-- <item-descriptor name="siteConfiguration" xml-combine="append">
+		<table name="BBB_SITE_ATTRIBUTES" type="auxiliary"
+			id-column-name="id">
+			<property name="sortOption" column-names="SORT_OPTION"
+				display-name-resource="sortOption" item-type="sortingOption"
+				category-resource="BBBSortingOption">
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="50" />
+			</property>
+
+		</table>
+		<table name="BBB_SORT_OPTION_LIST" type="multi" id-column-names="id">
+			<property name="defaultSortingOptions" column-names="SORTING_OPTION_ID"
+				display-name-resource="defaultSortingOptions" data-type="set"
+				component-item-type="sortingOption" category-resource="BBBSortingOption">
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="49" />
+			</property>
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="sortingOption" display-name="BCC MANAGED SORTING OPTION"
+		last-modified-property="lastModifiedDate" display-property="sortingValue">
+		<attribute name="updateLastModified" value="true" />
+		<table name="BBB_SORTING_OPTIONS" id-column-name="sorting_option_id"
+			type="primary">
+			<property column-name="sorting_Code" data-type="string"
+				name="sortingCode" writable="true" display-name-resource="sortingCode">
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="55" />
+			</property>
+			<property column-name="sorting_Value" data-type="string"
+				name="sortingValue" writable="true" display-name-resource="sortingValue">
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="56" />
+			</property>
+			<property column-name="sorting_Order" data-type="enumerated"
+				name="sortingOrder" writable="true" display-name-resource="sortingOrder">
+				<option value="ascending" code="0" />
+				<option value="descending" code="1" />
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="57" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date"
+				display-name-resource="lastModifiedDate" data-type="timestamp"
+				hidden="true">
+				<attribute name="resourceBundle"
+					value="com.bbb.commerce.catalog.GSSiteTemplateResources" />
+				<attribute name="propertySortPriority" value="58" />
+			</property>
+
+		</table>
+	</item-descriptor> -->
+
+
+</gsa-template>
+

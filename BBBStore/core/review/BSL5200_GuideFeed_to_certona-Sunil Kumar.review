@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BSL5200_GuideFeed_to_certona">
+  <ReviewIssue id="IDBMTLPJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-14 :: 18:19:44:743 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-14 :: 18:20:50:914 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil Kumar</ReviewerId>
+    <AssignedTo>Sunil Kumar</AssignedTo>
+    <File></File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>CertonaGuideVO</Summary>
+    <Description>CertonaGuideVO  is missing the java docs .</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

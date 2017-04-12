@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-6214">
+  <ReviewIssue id="IJAHQRPU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 16:38:02:322 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 16:39:07:246 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="10">src/com/bbb/thirdparty/omniture/vo/OmnitureReportDataPathVO.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This review is for repository, not for code</Summary>
+    <Description>Writing the review for java class as i cannot add one for XML, is there any reason why are we using timestamp and just printing Date without time?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IJAHXWVN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 16:43:35:603 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 16:43:56:811 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1">config/com/bbb/thirdparty/omniture/scheduler/OmnitureReportPurgeScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>did you set this value true in production job JVMs?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

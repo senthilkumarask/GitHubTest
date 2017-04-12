@@ -1,0 +1,7 @@
+1 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/dynamo/service/ClientLockManager_production.properties
+1 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/dynamo/service/ClientLockManager_staging.properties
+1 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/dynamo/service/ClientLockManager.properties
+2 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/scenario/internalScenarioManager.xml
+2 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/scenario/scenarioManager.xml
+1 changed. Successfully modified /u02/opt/21_pub/localconfig/atg/epub/workflow/process/workflowProcessManager.xml
+changed 6 files

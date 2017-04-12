@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="webservice_framework_20111109_manohar">
+  <ReviewIssue id="GUSHA58F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:22:55:359 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:26:33:406 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="47">src/com/bbb/framework/integration/exception/ServiceException.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use super (string, throwable)</Summary>
+    <Description>Always keep the original exception, if available.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUSHFQ0Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:27:15:578 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:27:38:093 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="50">src/com/bbb/framework/integration/exception/ServiceResponseException.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Always call super method with both message and exception</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUSHKUW3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:31:15:171 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:32:20:781 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="35">src/com/bbb/framework/integration/RequestMarshallerIF.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove Header Version</Summary>
+    <Description>This was specific to Sprint WS, once we have more details, we will modify it.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUSHY145">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:41:29:765 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:42:29:578 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="2">src/com/bbb/framework/webservices/handlers/ServiceHandlerPerformanceLogAdvice.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>No implementation of afterInvoke and cancelInvoke</Summary>
+    <Description>If we are not sure, then we can remove this methods. Else atleast log the details.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUSI09G3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:43:13:875 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:43:46:000 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="108">src/com/bbb/framework/webservices/handlers/ServiceHandlerInfoLogAdvice.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>No implementation of afterInvoke and cancelInvoke</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUSI3D73">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:45:38:703 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-09 :: 10:46:29:828 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit_kumar</ReviewerId>
+    <AssignedTo>asit_kumar</AssignedTo>
+    <File line="2">src/com/bbb/framework/webservices/BBBWebservicesConfig.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Instead of having map for each attribute, we should create a configuration for each web services.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

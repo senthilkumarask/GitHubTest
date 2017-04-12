@@ -1,0 +1,352 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE: TestBBBShippingGroupFormhandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBShippingGroupFormhandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler">
+		<group id="testHandleChangeToStorePickup">
+			<test id="testHandleChangeToStorePickup_test">
+				<objs>
+					<obj id="bbbShippingGroupFormhandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					
+			    <obj id="siteId" type="string">BuyBuyBaby</obj>
+			    <obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+			         <header>
+			            <orderId>O1234SHGRP</orderId>
+			            <siteId>BedBathUS</siteId>
+			            <orderDate>2012-02-16T09:00:00.0</orderDate>
+			            <!--Optional:-->
+			            <currencyCode>USD</currencyCode>
+			            <callingAppCode>bbb</callingAppCode>
+			            <!--Optional:-->
+			            <timestamp>2012-02-02T09:00:00.0</timestamp>
+			            <!--Optional:-->
+			            <coupons>
+			               <!--1 or more repetitions:-->
+			               <coupon>
+			                  <identifier>ONLBBB110215</identifier>
+			                  <type>BBB_COUPON</type>
+			               </coupon>
+			            </coupons>
+			         </header>
+			         <request>
+			            <shippingGroups>
+			               <!--1 or more repetitions:-->
+			               <shippingGroup>
+			                  <shippingGroupId>sg1234</shippingGroupId>
+			                  <shippingMethod>1a</shippingMethod>
+			                  <giftWrapRequired>false</giftWrapRequired>
+			                  <!--Optional:-->
+			                  
+			                  <shippingAddress>
+			                  	 <firstName>123</firstName>
+			                  	 <lastName>123</lastName>
+			                     <addressLine1>123</addressLine1>
+			                     <!--Optional:-->
+			                     <addressLine2>Main St.</addressLine2>
+			                     <city>New York</city>
+			                     <state>NY</state>
+			                    <zipCode>10019-1234</zipCode>
+			                     <country>US</country>
+			                  </shippingAddress>
+			                  <itemList>
+			                  	 <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="1" originalLineNumber="2">
+			                        <sku>sku40041</sku>
+			                        <quantity>3</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>		
+			                  	 <!--giftCatalogRefId-->
+			                     <item lineNumber="2" originalLineNumber="1">
+			                        <sku>sku30004</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                        
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="3" originalLineNumber="2">
+			                        <sku>sku10013</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId2-->
+			                     <item lineNumber="4" originalLineNumber="2">
+			                        <sku>sku10014</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>			                     		                    
+			                  </itemList>
+			               </shippingGroup>
+			            </shippingGroups>
+			         </request>
+			      </pricingRequest>]]></obj>
+			<obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>
+			</objs>
+			
+			</test>
+		</group>
+		<group id="testHandleChangeToShipOnline">
+			<test id="testHandleChangeToShipOnline_test">
+				<objs>
+					<obj id="bbbShippingGroupFormhandler" type="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					
+			    <obj id="siteId" type="string">BuyBuyBaby</obj>
+			    <obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+			         <header>
+			            <orderId>O1234SHGRP</orderId>
+			            <siteId>BedBathUS</siteId>
+			            <orderDate>2012-02-16T09:00:00.0</orderDate>
+			            <!--Optional:-->
+			            <currencyCode>USD</currencyCode>
+			            <callingAppCode>bbb</callingAppCode>
+			            <!--Optional:-->
+			            <timestamp>2012-02-02T09:00:00.0</timestamp>
+			            <!--Optional:-->
+			            <coupons>
+			               <!--1 or more repetitions:-->
+			               <coupon>
+			                  <identifier>ONLBBB110215</identifier>
+			                  <type>BBB_COUPON</type>
+			               </coupon>
+			            </coupons>
+			         </header>
+			         <request>
+			            <shippingGroups>
+			               <!--1 or more repetitions:-->
+			               <shippingGroup>
+			                  <shippingGroupId>sg1234</shippingGroupId>
+			                  <shippingMethod>1a</shippingMethod>
+			                  <giftWrapRequired>false</giftWrapRequired>
+			                  <!--Optional:-->
+			                  
+			                  <shippingAddress>
+			                  	 <firstName>123</firstName>
+			                  	 <lastName>123</lastName>
+			                     <addressLine1>123</addressLine1>
+			                     <!--Optional:-->
+			                     <addressLine2>Main St.</addressLine2>
+			                     <city>New York</city>
+			                     <state>NY</state>
+			                    <zipCode>10019-1234</zipCode>
+			                     <country>US</country>
+			                  </shippingAddress>
+			                  <itemList>
+			                  	 <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="1" originalLineNumber="2">
+			                        <sku>sku40041</sku>
+			                        <quantity>3</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>		
+			                  	 <!--giftCatalogRefId-->
+			                     <item lineNumber="2" originalLineNumber="1">
+			                        <sku>sku30004</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                        
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="3" originalLineNumber="2">
+			                        <sku>sku10013</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId2-->
+			                     <item lineNumber="4" originalLineNumber="2">
+			                        <sku>sku10014</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>			                     		                    
+			                  </itemList>
+			               </shippingGroup>
+			            </shippingGroups>
+			         </request>
+			      </pricingRequest>]]></obj>
+			<obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>
+			</objs>
+			
+			</test>
+		</group>
+		<group id="testHandleGiftMessaging">
+			<test id="testHandleGiftMessaging_test">
+				<objs>
+					<obj id="bbbShippingGroupFormhandler" type="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.formhandler.TestBBBShippingGroupFormhandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					
+			    <obj id="siteId" type="string">BuyBuyBaby</obj>
+			    <obj id="xmlAsString" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+			         <header>
+			            <orderId>O1234SHGRP</orderId>
+			            <siteId>BedBathUS</siteId>
+			            <orderDate>2012-02-16T09:00:00.0</orderDate>
+			            <!--Optional:-->
+			            <currencyCode>USD</currencyCode>
+			            <callingAppCode>bbb</callingAppCode>
+			            <!--Optional:-->
+			            <timestamp>2012-02-02T09:00:00.0</timestamp>
+			            <!--Optional:-->
+			            <coupons>
+			               <!--1 or more repetitions:-->
+			               <coupon>
+			                  <identifier>ONLBBB110215</identifier>
+			                  <type>BBB_COUPON</type>
+			               </coupon>
+			            </coupons>
+			         </header>
+			         <request>
+			            <shippingGroups>
+			               <!--1 or more repetitions:-->
+			               <shippingGroup>
+			                  <shippingGroupId>sg1234</shippingGroupId>
+			                  <shippingMethod>1a</shippingMethod>
+			                  <giftWrapRequired>false</giftWrapRequired>
+			                  <!--Optional:-->
+			                  
+			                  <shippingAddress>
+			                  	 <firstName>123</firstName>
+			                  	 <lastName>123</lastName>
+			                     <addressLine1>123</addressLine1>
+			                     <!--Optional:-->
+			                     <addressLine2>Main St.</addressLine2>
+			                     <city>New York</city>
+			                     <state>NY</state>
+			                    <zipCode>10019-1234</zipCode>
+			                     <country>US</country>
+			                  </shippingAddress>
+			                  <itemList>
+			                  	 <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="1" originalLineNumber="2">
+			                        <sku>sku40041</sku>
+			                        <quantity>3</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>		
+			                  	 <!--giftCatalogRefId-->
+			                     <item lineNumber="2" originalLineNumber="1">
+			                        <sku>sku30004</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                        
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId1-->
+			                     <item lineNumber="3" originalLineNumber="2">
+			                        <sku>sku10013</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>
+			                     <!--nonGiftcatalogRefId2-->
+			                     <item lineNumber="4" originalLineNumber="2">
+			                        <sku>sku10014</sku>
+			                        <quantity>1</quantity>
+			                        <price>25.00</price>
+			                        <!--Optional:-->
+			                        <finalPrice>25.00</finalPrice>
+			                                                
+			                        <status>PROCESS</status>
+			                        <!--Optional:-->
+			                        
+			                     </item>			                     		                    
+			                  </itemList>
+			               </shippingGroup>
+			            </shippingGroups>
+			         </request>
+			      </pricingRequest>]]></obj>
+			<obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.BBBPricingWSMapper" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+                    <item type="string">/com/bbb/commerce/service/pricing/BBBPricingWSMapper</item>
+                </obj>
+			</objs>
+			
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

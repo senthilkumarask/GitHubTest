@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-4673_Offshore-Review">
+  <ReviewIssue id="INU2NNQD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:39:55:813 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:39:56:729 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="36">src/com/bbb/order/bean/BBBOrderPriceInfo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INU2O4ZD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:40:18:169 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:40:20:266 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="174">src/com/bbb/order/bean/BBBOrderPriceInfo.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

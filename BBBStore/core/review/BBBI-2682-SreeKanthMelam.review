@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2682">
+  <ReviewIssue id="IQN0EXLN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 20:31:53:243 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 20:31:56:473 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanthMelam</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="744">src/com/bbb/framework/httpquery/HTTPCallInvoker.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add a null check for config key value before we parse to integer</Summary>
+    <Description>connectionTimeout = Integer.parseInt(getCatalogTools().getAllValuesForKey(HTTP_CONNECTION_ATTRIBS,JOBS_JVM_CONNECTION_TIME_OUT).get(0));</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQN0F796">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 20:32:05:754 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 20:32:09:874 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanthMelam</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="753">src/com/bbb/framework/httpquery/HTTPCallInvoker.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add a null check for config key value before we parse to integer</Summary>
+    <Description>socketTimeout = Integer.parseInt(getCatalogTools().getAllValuesForKey(HTTP_CONNECTION_ATTRIBS,JOBS_JVM_SOCKET_TIME_OUT).get(0));</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

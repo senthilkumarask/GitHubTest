@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_SS_INVESTOR_RELATIONSHIP">
+  <ReviewIssue id="GX0GCS4P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:08:32:809 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 12:23:08:805 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="10">j2ee-apps/BBBStore/store.war/selfservice/investor_relations.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>1. use the $imagePath variable as done in other JSPs. This will ensure that image can be picked even from any location if $imagePath is changed.  2. modify the image source, as provided in static html from sitedev</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0GHH0U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:12:11:694 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 12:22:52:061 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="33">j2ee-apps/BBBStore/store.war/selfservice/investor_relations.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>close button not working</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0GQYP8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:19:34:508 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 12:22:40:861 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Sandeep_Yadav</AssignedTo>
+    <File line="18">j2ee-apps/BBBStore/store.war/selfservice/investor_relations.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>should open the link in new window</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

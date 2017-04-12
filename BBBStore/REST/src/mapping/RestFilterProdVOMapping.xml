@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.commerce.catalog.vo.ProductVO</class-a>
+		<class-b>com.bbb.rest.catalog.vo.ProductPLPVO</class-b>
+		<field>
+			<a>productId</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>name</a>
+			<b>productName</b>
+		</field>
+		 <field>
+			<a>shortDescription</a>
+			<b>productShortDescription</b>
+		</field>
+		<field>
+			<a>longDescription</a>
+			<b>productLongDescription</b>
+		</field>
+		<field>
+			<a>priceRangeDescription</a>
+			<b>productPriceRangeDescription</b>
+		</field>
+		 <field>
+			<a>skuLowPrice</a>
+			<b>productSkuLowPrice</b>
+		</field>
+		<field>
+			<a>skuHighPrice</a>
+			<b>productSkuHighPrice</b>
+		</field>
+	</mapping>	
+</mappings>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="CLP_2014_09_17_Review">
+  <ReviewIssue id="I06ZBA9J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:34:23:863 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 00:18:04:941 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="47">src/com/bbb/seo/CustomLandingPageIndirectUrlTemplate.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Adding logDebug Statement</Summary>
+    <Description>Adding logDebug statements in the start, end  of the method  is  good.It would be helpfull if you add the debug  statements for the values that is passed inside to the method/ values that are formulated inside the method.
+It  applies to all the methods.</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I06ZM3UJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:42:48:763 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-17 :: 23:44:48:997 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Whay are not extending the BBBIndirectUrlTemplate</Summary>
+    <Description>We can extend the BBBIndirectUrlTemplate class instead of OOTB-IndirectUrlTemplate  . If needed override the methods that are defined in BBBIndirectUrlTemplate  other use the existing class.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I070EKEN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-18 :: 00:04:56:591 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-19 :: 00:17:13:080 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="13">src/com/bbb/cms/vo/CLPResponseVO.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Implemement Serializable  Interface</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<concept>
+		<id>10</id>
+		<resultsperpage>4</resultsperpage>
+		<defaultradius>10</defaultradius>
+		<searchformimage>imgs/u1.jpeg</searchformimage>
+		<searchformtext>To find the Bed Bath &amp; Beyond store nearest you, please enter either your city and state or your zip code.</searchformtext>
+		<showstorenumber>true</showstorenumber>
+	</concept>
+	<concept>
+		<id>20</id>
+		<resultsperpage>4</resultsperpage>
+		<defaultradius>10</defaultradius>
+		<searchformimage>imgs/u1.jpeg</searchformimage>
+		<searchformtext>To find the Christmas Tree Shops nearest you, please enter either your city and state or your zip code.</searchformtext>
+		<showstorenumber>true</showstorenumber>
+	</concept>
+	<concept>
+		<id>30</id>
+		<resultsperpage>4</resultsperpage>
+		<defaultradius>10</defaultradius>
+		<searchformimage>imgs/u1.jpeg</searchformimage>
+		<searchformtext>To find the Harmon Face Value store nearest you, please enter either your city and state or your zip code.</searchformtext>
+		<showstorenumber>true</showstorenumber>
+	</concept>
+	<concept>
+		<id>40</id>
+		<resultsperpage>4</resultsperpage>
+		<defaultradius>50</defaultradius>
+		<searchformimage></searchformimage>
+		<searchformtext>To find the buybuy BABY store nearest you, please enter either your city and state or your zip code.</searchformtext>		
+		<showstorenumber>true</showstorenumber>
+	</concept>
+	<concept>
+		<id>50</id>
+		<resultsperpage>4</resultsperpage>
+		<defaultradius>25</defaultradius>
+		<searchformimage>imgs/u1.jpeg</searchformimage>
+		<searchformtext>To find the Bed Bath &amp; Beyond store nearest you, please enter either your city and province or your postal code.</searchformtext>
+		<showstorenumber>false</showstorenumber>
+	</concept>
+</config>

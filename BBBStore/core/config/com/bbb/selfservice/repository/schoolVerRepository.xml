@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Schools Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="schoolsVer" display-name-resource="schoolsRepositoryVer" display-property="schools" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" >
+		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+		<table name="BBB_SCHOOLS_VER" type="primary" id-column-name="SCHOOL_VER_ID">
+			<property name="id" column-name="SCHOOL_VER_ID" display-name-resource="SCHOOL_VER_ID" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources" />
+        	</property>
+        	<property name="smallLogoURL" column-name="SMALL_LOGO_URL" display-name-resource="smallLogoURL" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>
+           	<property name="largeLogoURL" column-name="LARGE_LOGO_URL" display-name-resource="largeLogoURL" data-type="string" hidden="true" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>
+           	<property name="smallWelcomeMsg" column-name="SMALL_WELCOME_MSG" display-name-resource="smallWelcomeMsg" data-type="big string" hidden="true" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="largeWelcomeMsg" column-name="LARGE_WELCOME_MSG" display-name-resource="largeWelcomeMsg" data-type="big string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="4"/>
+           	</property>
+           	<property name="promotion" column-name="PROMOTION_ID" display-name-resource="promotionId" item-type="promotion" repository="/atg/commerce/catalog/ProductCatalog" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="5"/>
+           	</property>
+           	<property name="creationDate" column-name="CREATE_DATE" display-name-resource="creationDate" data-type="date" category-resource="BasicInfo" hidden="true">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="-2"/>
+            	<attribute name="useNowForDefault" value="true"/>
+            	<attribute name="uiwritable" value="false"/>
+           	</property>
+           	<property name="lastModifiedDate" column-name="LAST_MODIFIED_DATE" display-name-resource="lastModifiedDate" data-type="date" category-resource="BasicInfo" hidden="true">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="-2"/>
+            	<attribute name="uiwritable" value="false"/>
+           	</property>
+           	<property name="imageURL" column-name="IMAGE_URL" display-name-resource="imageURL" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="6"/>
+           	</property>
+           	<property name="prefStoreId" column-name="PREF_STORE_ID" display-name-resource="prefStoreId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="7"/>
+           	</property>
+           	<property name="pdfURL" column-name="PDF_URL" display-name-resource="pdfURL" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="8"/>
+           	</property>
+           	<property name="collegeTag" column-name="COLLEGE_TAG" display-name-resource="collegeTag" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="9"/>
+           	</property>
+           	<property name="collegeLogo" column-name="COLLEGE_LOGO" display-name-resource="collegeLogo" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="10"/>
+           	</property>
+           	<property name="schoolSeoName" column-name="COLLEGE_SEO_NAME" display-name-resource="schoolSeoName" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="11"/>
+           	</property>	 	 
+			<property name="schools" column-name="SCHOOL_ID" display-name-resource="schools" item-type="schools" category-resource="BasicInfo" repository="/com/bbb/selfservice/repository/SchoolRepository">
+            	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="-4"/>
+           	</property>
+      
+           	 <!--R2.2 School Promo container from BCC Start -->
+			 <property name="schoolPromoId" column-name="SCHOOL_PROMO_CONTAINER_ID" display-name-resource="schoolPromoId" item-type="schoolpromoKeysValue" category-resource="SchoolPromoContainer" >
+		          <attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+		          <attribute name="propertySortPriority" value="12"/>
+		      </property>
+		     <!--R2.2 School Promo container from BCC END -->
+	    	
+		</table>
+		<table name="BBB_BEDDING_KIT_SHIP_ADDR" type="auxiliary" id-column-names="SCHOOL_VER_ID">  
+         	<property name="addrLine1" column-name="ADDR_LINE1" display-name-resource="beddingAddrLine1" data-type="string" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="1"/>
+         	</property>
+         	<property name="addrLine2" column-name="ADDR_LINE2" display-name-resource="beddingAddrLine2" data-type="string" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="2"/>
+         	</property>
+         	<property name="city" column-name="CITY" display-name-resource="beddingCity" data-type="string" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="3"/>
+          	</property>                                     
+          	<property name="state" column-name="STATE" display-name-resource="beddingState" item-type="state" repository="/com/bbb/commerce/shipping/ShippingRepository" category-resource="BeddingKitShipAddressInfo" >
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="4"/>
+          	</property>
+          	<property name="zip" column-name="ZIP" display-name-resource="beddingZip" data-type="string" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="5"/>
+          	</property>
+          	<property name="shippingStartDate" column-name="SHIPPING_START_DATE" display-name-resource="shippingStartDate" data-type="timestamp" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="6"/>
+          	</property>
+          	<property name="shippingEndDate" column-name="SHIPPING_END_DATE" display-name-resource="shippingEndDate" data-type="timestamp" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="7"/>
+          	</property>
+          	<property name="companyName" column-name="COMPANY_NAME" display-name-resource="companyName" data-type="string" category-resource="BeddingKitShipAddressInfo">
+             	<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+             	<attribute name="propertySortPriority" value="8"/>
+          	</property>
+         </table>
+    </item-descriptor>
+     <item-descriptor name="schoolpromoKeysValue" display-name-resource="itemDescriptorPromoKeyValue" display-property="promoId" item-cache-size="100" query-cache-size="100" cache-mode="simple">
+			<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>  
+		<table name="BBB_SCHOOL_PROMO_CONTAINER" type="primary" id-column-name="SCHOOL_PROMO_CONTAINER_ID">
+		
+        <property name="promoId" column-name="SCHOOL_PROMO_CONTAINER_ID" display-name-resource="promoId" writable="false">
+				<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>	
+		</property>
+		
+		<property name="HTMLSnippet" column-names="HTML_SNIPPET" display-name-resource="HTMLSnippet" data-type="big string">
+		      <attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="2"/>	
+	    	</property>
+           	 
+           	<property name="jsFilePath" column-name="JS_FILE_PATH" display-name-resource="jsFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>	
+	    	</property>
+	    	<property name="cssFilePath" column-name="CSS_FILE_PATH" display-name-resource="cssFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.selfservice.repository.SchoolTemplateResources"/>
+            	<attribute name="propertySortPriority" value="4"/>
+	    	</property>
+			
+		</table>		
+	</item-descriptor>
+    <!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component
+    <query-items item-descriptor="schoolsVer" quiet="true">ALL</query-items>
+    -->
+    
+</gsa-template>

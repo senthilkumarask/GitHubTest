@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="price_droplet_2011_11_04_sunil">
+  <ReviewIssue id="GUM955S6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:18:28:806 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:58:41:983 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="32">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>spelling mistake in the comments., There are no javadocs comments.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUM96STG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:19:45:316 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:40:36:055 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="41">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>All constants should be BBBCoreConstants file in core modules</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUM9WUSX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:40:00:945 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:41:07:970 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="101">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This should not be difference with saleprice. Rather the difference between was price and current price multiplied by quantity.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUM9YW1I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:41:35:862 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:43:30:054 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="104">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>was price is set from listprice but the saved percentage is calculate from rawtotal price,make this consistent</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMA27SI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:44:11:058 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:55:05:238 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="41">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Droplet are global scoped objects should not any state variables</Summary>
+    <Description>This is going to give multithreading issues, people hitting same droplet at time will reset other people's priceinfo properties.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMA5OHC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:46:52:656 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:54:04:693 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="97">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The priceinfo object should be local variable. As the droplet is global component.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMABR8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:51:36:157 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 12:54:59:759 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="128">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>the order priceinfo should also have details about adjustments, total amount saved, %saved</Summary>
+    <Description>the order priceinfo should also have details about adjustments, total amount saved, %saved. This is required for full cart page and order summary page on all the checkout pages.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMBC4WZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 13:19:53:507 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:29:49:752 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="97">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add null check for item</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMBD0P8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 13:20:34:700 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:29:44:403 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="98">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>null check for priceInfo</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUMBFKCM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-05 :: 13:22:33:478 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-08 :: 10:29:40:440 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="130">src/com/bbb/commerce/pricing/droplet/BBBPriceDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>add null check for pOrder</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-3803_4_08_16">
+  <ReviewIssue id="IRJVCSFH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:26:38:957 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:27:43:244 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="282">j2ee-apps/tbs/tbs.war/_includes/modules/product_grid_5x4-rwd.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need explanation below part, why are we updating the URL? Do not we have a differen option without updating URL?</Summary>
+    <Description>&lt;c:choose&gt;
+									&lt;c:when test="${not empty CategoryId}"&gt;
+										&lt;dsp:a  page="${finalUrl}?categoryId=${CategoryId}"  title="${prodName}"&gt;
+										&lt;dsp:valueof param="productVO.productName" valueishtml="true" /&gt;
+										&lt;/dsp:a&gt;
+									&lt;/c:when&gt;
+									&lt;c:when test="${not empty brandId}"&gt;
+										&lt;dsp:a  page="${finalUrl}?brandId=${brandId}"  title="${prodName}"&gt;
+										&lt;dsp:valueof param="productVO.productName" valueishtml="true" /&gt;
+										&lt;/dsp:a&gt;
+									&lt;/c:when&gt;
+									&lt;c:when test="${not empty searchTerm}"&gt;
+										&lt;dsp:a  page="${finalUrl}?keyword=${searchTerm}"  title="${prodName}"&gt;
+										&lt;dsp:valueof param="productVO.productName" valueishtml="true" /&gt;
+										&lt;/dsp:a&gt;
+									&lt;/c:when&gt;								
+									&lt;c:otherwise&gt;
+										&lt;dsp:a  page="${finalUrl}"  title="${prodName}"&gt;
+										&lt;dsp:valueof param="productVO.productName" valueishtml="true" /&gt;
+										&lt;/dsp:a&gt;
+									&lt;/c:otherwise&gt;
+								&lt;/c:choose&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRJVGJO7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:29:34:231 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:30:03:313 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="2035">j2ee-apps/tbs/tbs.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>When there are no existing events, do we fire event as ",event90", which can be wrong.</Summary>
+    <Description>event90=',event90'</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRJVID4J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:30:59:059 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:31:24:904 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="2015">j2ee-apps/tbs/tbs.war/browse/quickview_product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>when s.events is empty, do we fire the event as ",event90"? It is wrong</Summary>
+    <Description>s.events=s.events + ',event90';</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<xsd:schema xmlns:ns="http://www.bedbath.com/PorchIntegration/SharedResources/Schemas/OrderInput" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bedbath.com/PorchIntegration/SharedResources/Schemas/OrderInput" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xsd:element name="Order">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Header">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="UserToken" type="xsd:string"/>
+                            <xsd:element name="ApplicationName" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="Hostname" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="DataCenterName" type="xsd:string" minOccurs="0"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="CreationDate" type="xsd:dateTime" minOccurs="0">
+					<xsd:annotation>
+						<xsd:documentation>Date this XML file is created</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+                <xsd:element name="ServiceName" type="xsd:string" minOccurs="1">
+					<xsd:annotation>
+						<xsd:documentation>PorchServiceOrder - Name of the service generating this JSONData feed</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+                <xsd:element name="JSONData" type="xsd:string" minOccurs="1" >
+					<xsd:annotation>
+						<xsd:documentation>Contains the data in JSON format</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

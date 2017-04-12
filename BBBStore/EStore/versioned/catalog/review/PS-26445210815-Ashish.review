@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="PS-26445210815">
+  <ReviewIssue id="IDLIHHMM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 16:16:02:878 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 11:26:53:298 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7438">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>Add a null pointer check here&#xD;
+Add trim to the method to trim the spaces if any.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDLIKTVC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 16:18:38:712 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 11:25:38:789 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7435">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>Add loggers</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDLIYDOZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 16:29:10:931 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 11:53:38:536 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7462">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>should be else if instead of if</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDLJ0UVA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 16:31:06:502 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 14:27:19:400 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7481">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>regionItem - add itemforupdate instead of getItem so that you don't have to call again in the else clause</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDLPSD1B">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 19:40:27:455 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 13:05:39:449 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7464">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>Make strings like "siteSkuRegion " as constants instead of literals</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDLPZCSC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 19:45:53:724 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 19:46:28:149 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7631">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>Check with Ashish Srivastav - Adding the cascade delete constraint to the child's foreign key reference should do the trick.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDPG9NVR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 10:25:03:207 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 13:37:16:370 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7446">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>createItem - Instead of making 2 db calls to first persist with the primary key and then updating that, check if the same can be persisted in a single call by first creating the item, setting its properties and then persisting it.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDPORXQD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 14:23:12:709 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-24 :: 14:26:23:300 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Shubham</AssignedTo>
+    <File line="7449">src/com/bbb/importprocess/tools/BBBCatalogLoadTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary />
+    <Description>Check if the cascade delete constraint at the DDL level can be leveraged instead of handling this at the code level.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

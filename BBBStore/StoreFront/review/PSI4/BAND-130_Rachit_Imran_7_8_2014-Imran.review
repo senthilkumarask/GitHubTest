@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-130_Rachit_Imran_7_8_2014">
+  <ReviewIssue id="HYSNAZHQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:09:45:710 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:37:01:363 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="371">j2ee-apps/BBBStore/store.war/bbregistry/baby_landing.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do not use hard coding instead create label for it</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSNCSM2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:11:10:106 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:17:482 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="394">j2ee-apps/BBBStore/store.war/bbregistry/baby_landing.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do not use hard coding for &lt;a title&gt; instead use label aas used in its href value</Summary>
+    <Description>&lt;li id="topRegCertonaLI"&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Top Registry Items" href="#tabs-1"&gt;&lt;bbbl:label key="lbl_blanding_topreg" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;c:if test="${not empty keepsakeShopList}" &gt;
+					       &lt;li&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Keepsake Shop" href="#tabs-2"&gt;&lt;bbbl:label key="lbl_blanding_keepsake" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+						&lt;/c:if&gt;
+				       	&lt;c:if test="${not empty brandList}" &gt;
+					    	&lt;li&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Bridal Brands" href="#tabs-3"&gt;&lt;bbbl:label key="lbl_blanding_brands" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+					   	&lt;/c:if&gt;</Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSO8U1K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:36:04:952 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:20:016 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File line="426">j2ee-apps/BBBStore/store.war/bbregistry/bridal_landing.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do not use hard coding for &lt;a title&gt; instead use label as in href value.</Summary>
+    <Description>	&lt;li id="topRegCertonaLI"&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Top Registry Items" href="#tabs-1"&gt;&lt;bbbl:label key="lbl_blanding_topreg" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;c:if test="${not empty keepsakeShopList}" &gt;
+								   &lt;li&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Keepsake Shop" href="#tabs-2"&gt;&lt;bbbl:label key="lbl_blanding_keepsake" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;/c:if&gt;
+								&lt;c:if test="${not empty brandList}" &gt;
+									&lt;li&gt;&lt;div class="arrowSouth"&gt;&lt;/div&gt;&lt;a title="Bridal Brands" href="#tabs-3"&gt;&lt;bbbl:label key="lbl_blanding_brands" language="${pageContext.request.locale.language}"/&gt;&lt;/a&gt;&lt;/li&gt;
+								&lt;/c:if&gt;</Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSODRE2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:39:54:794 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:22:273 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove certona_rectangular_slots.jsp</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSOPFFI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 18:48:59:166 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:25:466 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File></File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Code should execute javascript events and invoke other droplet like ProdOutDroplet only in case CertonaTag is True</Summary>
+    <Description>This will help in improving response time in case Certona is off. Please CertonaOn check before following two droplet calls
+
+&lt;dsp:droplet name="Switch"&gt;
+        &lt;dsp:param name="value" bean="Profile.transient"/&gt;
+&lt;dsp:droplet name="ProdToutDroplet"&gt;</Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSP6VFU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:02:33:066 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:27:673 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add no_search_results_cetona.jsp as well in the .jupiter file</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSPIZ7Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:11:57:839 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 14:37:30:577 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Imran</AssignedTo>
+    <File></File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add coupon_include.jsp for review</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>98221</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

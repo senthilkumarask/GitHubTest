@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1484">
+  <ReviewIssue id="IM4KLSGM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-23 :: 13:40:38:806 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-23 :: 13:41:07:757 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="104">j2ee-apps/BBBStore/store.war/cart/cart_includes/shippingType.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Check for null  - currentZipcodeVO</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

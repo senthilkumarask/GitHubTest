@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>EDW Profile Data Repository</name>
+		<author>Sanam Jain</author>
+	</header>
+	
+	<item-descriptor name="bbbEDWData" last-modified-property="lastModifiedDate" >
+		<table name="BBB_CUSTOMER_PROFILE" type="primary" id-column-name="email_addr">
+		    <property name="emailAdress" column-name="email_addr" data-type="string"/>
+			<property name="profileId" column-names="atg_profile_id" data-types="string"/>
+			<property name="profileAttributeValues" column-names="profile_data_name_value_pairs" data-type="big string"/>
+            <property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp"/>
+		</table>
+		
+	</item-descriptor>
+</gsa-template>

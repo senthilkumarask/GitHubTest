@@ -1,0 +1,17 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will check shipping method for sku</description>
+	<action>/rest/bean/atg/commerce/order/ShippingGroupManager/checkShippingMethodForSkus</action>
+	<params>
+		<param id="atg-rest-depth" required="true" name="atg-rest-depth" type="text" class="reqBody">3</param>
+		<param id="atg-rest-input" required="true" name="atg-rest-input" type="text" class="reqBody">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param id="arg1" required="true" name="skuIds" type="text" class="reqBody">11811841</param>
+		<param id="arg2" required="true" name="shippingMethod" type="text" class="reqBody">3g</param>
+		<param type="text" name="clientID" id="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>
+			
+			
+							

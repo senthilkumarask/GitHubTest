@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+	<header>
+		<name>Search Config Repository </name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Search Configuration Repository -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="searchConfigGroups"
+		display-name-resource="searchConfigGroups" display-property="groupName" item-cache-size="100">
+		<attribute name="resourceBundle" value="com.bbb.searchConfig.BBBSearchConfigTemplateResources"/>
+		<table name="BBB_SEARCH_CONFIG_GROUPS" type="primary"
+			id-column-names="GROUP_ID">
+			<property name="groupName" column-names="GROUP_NAME"
+				display-name-resource="groupName" data-type="String" writable="true">
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="unique" value="true"/>
+			</property>
+			<property name="groupDesc" column-names="GROUP_DESCRIPTION"
+				display-name-resource="groupDesc" data-type="String" writable="true">
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="id" column-names="GROUP_ID"
+				display-name-resource="groupId" data-type="String" writable="true">
+			 <attribute name="propertySortPriority" value="4" />
+			</property>
+			<property name="relevancyRanking" column-names="GROUP_RELRANK"
+				display-name-resource="relevancyRanking" data-type="String" writable="true">
+			 <attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+		<!-- Multi Relationship between a group and searchableItemAttributes -->
+		<table name="BBB_SEARCH_GROUP_ITEMS" type="multi"
+			id-column-names="GROUP_ID" multi-column-name="sequence_num">
+			<property name="searchItemId" column-names="SEARCH_ITEM_ID"
+				data-type="list" writable="true" display-name-resource="searchItemId" component-item-type="searchableItem">
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="searchableItem"
+		display-name-resource="searchableItem" item-cache-size="1000" display-property="id"
+		sub-type-property="type">
+		<attribute name="resourceBundle" value="com.bbb.searchConfig.BBBSearchConfigTemplateResources"/>
+		<table name="BBB_SEARCHABLE_ITEM" type="primary"
+			id-column-names="SEARCH_ITEM_ATTR_ID">
+			<property name="id" column-names="SEARCH_ITEM_ATTR_ID"
+				display-name-resource="searchableItemAttrId" data-type="String" writable="true">
+			</property>
+			<property name="type" column-name="ATTR_TYPE" required="true"
+				display-name-resource="type" data-type="enumerated" default="propertyItemRelationalObj">
+				<attribute name="uiwritable" value="true" />
+				<attribute name="useCodeForValue" value="false" />
+				<option value="propertyItemRelationalObj" code="0" />
+				<option value="skuFacetTypeRelationalObj" code="1" />
+			</property>
+			<property name="isSearchable" column-names="SEARCHABLE"
+				display-name-resource="isSearchable" data-type="boolean" writable="true">
+			</property>
+			<property name="priority" column-names="PRIORITY"
+				display-name-resource="priority" data-type="int" writable="true" required="true">
+			</property>
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="propertyItemRelationalObj" display-name-resource="propertyItemsRelObjRepository"
+		sub-type-value="propertyItemRelationalObj" super-type="searchableItem"
+		display-property="property" cache-mode="simple" item-cache-size="500">
+		<attribute name="resourceBundle" value="com.bbb.searchConfig.BBBSearchConfigTemplateResources"/>
+		<table name="BBB_SEARCH_PROPERTY_REF_ITEM" type="auxiliary"
+			id-column-names="SEARCH_ITEM_ATTR_ID">
+			<property name="property" column-names="PROPERTY_ID"
+				display-name-resource="propertyId" item-type="propertyItem" writable="true">
+			</property>
+		</table>
+	</item-descriptor>
+	<item-descriptor name="skuFacetTypeRelationalObj" display-name-resource="skuFacetTypeRepository"
+		sub-type-value="skuFacetTypeRelationalObj" super-type="searchableItem"
+		display-property="skuFacet" cache-mode="simple" item-cache-size="1000">
+		<attribute name="resourceBundle" value="com.bbb.searchConfig.BBBSearchConfigTemplateResources"/>
+		<table name="BBB_FACET_TYPES_VER" type="auxiliary"
+			id-column-name="SEARCH_ITEM_ATTR_ID">
+			<property name="skuFacet" column-name="SKU_FACET_ID" item-type="skuFacetType" display-name-resource="skuFacet" repository="/com/bbb/ipad/SkuFacetRepository">
+			</property>
+		</table>
+	</item-descriptor>
+	<item-descriptor name="propertyItem" display-name-resource="propertyItemsRepository"
+		display-property="id" cache-mode="simple" item-cache-size="500">
+		<attribute name="resourceBundle" value="com.bbb.searchConfig.BBBSearchConfigTemplateResources"/>
+		<table name="BBB_SEARCH_PROPERTY_ITEM" type="primary"
+			id-column-names="PROPERTY_ID">
+			<property name="propertyName" column-names="PROPERTY_NAME"
+				display-name-resource="nameOfProperty" data-type="String" writable="true">
+				<attribute name="unique" value="true"/>
+			</property>
+			<property name="propertyDescrption" column-names="PROPERTY_DESC"
+				display-name-resource="propertyDescrption" data-type="String" writable="true">
+			</property>
+			<property name="id" column-names="PROPERTY_ID"
+				display-name-resource="propertyId" data-type="String" writable="true">
+			</property>
+		</table>
+	</item-descriptor>
+</gsa-template>

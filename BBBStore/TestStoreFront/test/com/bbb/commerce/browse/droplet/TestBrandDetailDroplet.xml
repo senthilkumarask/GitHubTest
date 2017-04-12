@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestCategoryLandingDroplet.xml
+
+  DESCRIPTION: ddtunit data file for CategoryLandingDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.browse.droplet.TestBrandDetailDroplet">
+       <group id="testProcessBrandResults">
+        <test id="testProcessBrandResults_test1">
+			<objs>
+				<obj id="brandDetailDroplet" type="com.bbb.commerce.browse.droplet.TestBrandDetailDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestBrandDetailDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/BrandDetailDroplet</item>
+				</obj>
+				<obj id="siteContextManager"
+					type="com.bbb.commerce.browse.droplet.TestBrandDetailDroplet"
+					hint="call" method="resolveName"
+					calltype="com.bbb.commerce.browse.droplet.TestBrandDetailDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="origBrandName" type="string">Amazon</obj>
+				<obj id="keywordName" type="string">100005</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

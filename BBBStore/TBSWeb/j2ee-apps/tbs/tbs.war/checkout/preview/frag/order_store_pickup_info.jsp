@@ -1,0 +1,105 @@
+<dsp:page>
+	<dsp:droplet name="/com/bbb/selfservice/SearchStoreDroplet">
+       	<dsp:param name="storeId" param="shippingGroup.storeId" />
+       	<dsp:oparam name="output">
+			<ul class="address">
+			<h2 class="divider"></h2>
+			<c:if test="${not empty showLinks}">
+				<h3 class="sectionHeading marTop_20"><bbbl:label key="lbl_shipping_store_pickup" language="<c:out param='${language}'/>"/></h3>
+			</c:if>	
+								
+				<li class="shippingItemAddDetails small-12 columns">
+					<div class="small-12 large-4 columns no-padding-left">
+						<h3><bbbl:label key="lbl_preview_storelocation" language="<c:out param='${language}'/>"/></h3>
+						<h3><dsp:valueof param="StoreDetails.storeName"/></h3>
+						<%-- <div class="storeAdd">
+							<p><span class="street"><dsp:valueof param="StoreDetails.address"/></span></p>
+							<p><span class="city"><dsp:valueof param="StoreDetails.city"/></span></p>
+							<p><span class="state"><dsp:valueof param="StoreDetails.state"/></span>&nbsp;<span class="zip"><dsp:valueof param="StoreDetails.postalCode"/></span></p>
+						</div> --%>
+						<ul class="address">
+							<li><span class="street"><dsp:valueof param="StoreDetails.address"/></span></li>
+							<li><span class="city"><dsp:valueof param="StoreDetails.city"/></span></li>
+							<li><span class="state"><dsp:valueof param="StoreDetails.state"/></span>&nbsp;<span class="zip"><dsp:valueof param="StoreDetails.postalCode"/></span></li>
+							<li><p><span class="phone"><dsp:valueof param="StoreDetails.storePhone"/></span></p></li>
+							
+						</ul>
+						<%-- <p><span class="phone"><dsp:valueof param="StoreDetails.storePhone"/></span></p> --%>
+<%-- 						<c:if test="${not empty showLinks}">
+							<p class="marTop_10"><a class="upperCase" href="${pageContext.request.contextPath}/checkout/shipping/shipping.jsp" title="<bbbl:label key="lbl_preview_changestore" language="<c:out param='${language}'/>"/>"><strong><bbbl:label key="lbl_preview_changestore" language="<c:out param='${language}'/>"/></strong></a></p>
+						</c:if>
+--%>
+					</div>
+					<div class="small-12 large-8 columns">
+					<dsp:getvalueof var="StoreDetailsVar" param="StoreDetails" scope="page"/>
+						<h3><bbbl:label key="lbl_preview_storehours" language="<c:out param='${language}'/>"/></h3>
+						<dl class="pickupTimimngs">
+							
+							<c:forTokens items="${StoreDetailsVar.weekdaysStoreTimings}" delims="," var="item" varStatus="status">
+								<c:choose>
+									<c:when test="${status.count == 1}">
+										<dt class="columns large-3">${item}</dt>	
+									</c:when>
+									<c:otherwise>
+										<dd class="upperCase">${item}</dd>			
+									</c:otherwise>				
+								</c:choose>
+							</c:forTokens>
+							
+							<c:forTokens items="${StoreDetailsVar.satStoreTimings}" delims="," var="item" varStatus="status">
+								<c:choose>
+									<c:when test="${status.count == 1}">
+										<dt class="columns large-3">${item}</dt>	
+									</c:when>
+									<c:otherwise>
+										<dd class="upperCase">${item}</dd>			
+									</c:otherwise>				
+								</c:choose>
+							</c:forTokens>
+							
+							<c:forTokens items="${StoreDetailsVar.sunStoreTimings}" delims="," var="item" varStatus="status">
+								<c:choose>
+									<c:when test="${status.count == 1}">
+										<dt class="columns large-3">${item}</dt>	
+									</c:when>
+									<c:otherwise>
+										<dd class="upperCase">${item}</dd>			
+									</c:otherwise>				
+								</c:choose>
+							</c:forTokens>
+							<c:forTokens items="${StoreDetailsVar.otherTimings1}" delims="," var="item" varStatus="status">
+								<c:choose>
+									<c:when test="${status.count == 1}">
+										<dt class="columns large-3">${item}</dt>	
+									</c:when>
+									<c:otherwise>
+										<dd class="upperCase">${item}</dd>			
+									</c:otherwise>				
+								</c:choose>
+							</c:forTokens>
+							<c:forTokens items="${StoreDetailsVar.otherTimings2}" delims="," var="item" varStatus="status">
+								<c:choose>
+									<c:when test="${status.count == 1}">
+										<dt class="columns large-3">${item}</dt>	
+									</c:when>
+									<c:otherwise>
+										<dd class="upperCase">${item}</dd>			
+									</c:otherwise>				
+								</c:choose>
+							</c:forTokens>
+							<dsp:valueof param="StoreDetails.storeDescription" />
+						</dl>
+<%--						<c:if test="${not empty showLinks}">
+							<p class="marTop_10">
+								<a class="viewDirectionsNew upperCase" data-storeid="<dsp:valueof param="StoreDetails.storeId"/>" href="#" id="getDirections" title="<bbbl:label key="lbl_find_store_get_directions" language="<c:out param='${language}'/>"/>">
+									<strong><bbbl:label key="lbl_find_store_get_directions" language="<c:out param='${language}'/>"/></strong>
+								</a>
+							</p>
+						</c:if>	
+--%>
+ 					</div>
+				</li>
+			</ul>
+		</dsp:oparam>
+	</dsp:droplet>
+</dsp:page>

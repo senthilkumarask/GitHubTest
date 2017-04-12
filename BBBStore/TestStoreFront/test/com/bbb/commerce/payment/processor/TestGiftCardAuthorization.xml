@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftCardAuthorization.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftCardAuthorization.java test case
+
+  HISTORY:
+  Feb 02, 2012  Initial version
+
+
+giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  
+
+-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.payment.processor.TestGiftCardAuthorization">
+      <group id="testGiftCardAuthorization">
+        <test id="testGiftCardAuthorization">
+			<objs>
+				<obj id="giftCardFormHandler" type="com.bbb.payment.giftcard.BBBGiftCardFormHandler" hint="call" method="resolveName" 
+				calltype="com.bbb.commerce.payment.processor.TestGiftCardAuthorization">
+					<item type="string">/com/bbb/payment/giftcard/BBBGiftCardFormHandler</item>
+				</obj>
+				<obj id="paymentManager" type="atg.commerce.payment.PaymentManager" hint="call" method="resolveName" 
+				calltype="com.bbb.commerce.payment.processor.TestGiftCardAuthorization">
+					<item type="string">/atg/commerce/payment/PaymentManager</item>
+				</obj>
+				<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.payment.processor.TestGiftCardAuthorization">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<!--giftCardNo and pinNo from file Sapient_BBB_EAN_Data_p27197_m28449.txt  -->
+				<obj id="giftCardNo" type="string">7777007222593189</obj>	
+				<obj id="pinNo" type="string">53996938</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="siteContextManager" type="com.bbb.selfservice.droplet.StateDroplet" hint="call" method="resolveName" calltype="com.bbb.selfservice.survey.TestSurveyDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

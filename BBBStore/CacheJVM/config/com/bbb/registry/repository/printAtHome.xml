@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Print At Home Repository</name>
+		<author>BBB Technical Team</author>
+		<version>1.0</version>
+	</header>
+	<!-- Will be loadign the JVM Cache-->
+	<query-items item-descriptor="printAtHome" quiet="true">ALL</query-items>
+	<query-items item-descriptor="announcementcard" quiet="true">ALL</query-items>
+</gsa-template>

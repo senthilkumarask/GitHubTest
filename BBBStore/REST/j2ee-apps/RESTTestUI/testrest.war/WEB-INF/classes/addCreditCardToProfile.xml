@@ -1,0 +1,32 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will add credit card to profile</description>
+	<action>/rest/bean/atg/userprofiling/ProfileFormHandler/addCreditCardToProfile
+	</action>
+	<params>
+		<param id="atg-rest-depth" name="atg-rest-depth" class="reqBody" type="text">3</param>
+		<param id="atg-rest-input" name="atg-rest-input" class="reqBody" type="text">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" class="reqBody" required="true">json:json,xml:xml</param>
+		<param id="editValue.creditCardType" required="true" class="reqBody" name="creditCardType" type="text">Visa</param>
+		<param id="editValue.nickname" name="nickname" type="text" class="reqBody"></param>
+		<param id="editValue.creditCardNumber" required="true" name="creditCardNumber" class="reqBody" type="text">4111111111111111</param>
+		<param id="editValue.expirationMonth" required="true" name="expirationMonth" class="reqBody" type="text">1</param>
+		<param id="editValue.expirationYear" required="true" name="expirationYear" class="reqBody" type="text">2017</param>
+		<param id="editValue.nameOnCard" required="true" name="nameOnCard" class="reqBody" type="text">sandeeeee</param>
+		<param id="billAddrValue.newNickname" name="newNickname" class="reqBody" type="text">Address##6</param>
+		<param id="billAddrValue.makeBilling" name="makeBilling" class="reqBody" type="text">true</param>
+		<param id="billAddrValue.firstName" name="firstName" class="reqBody" type="text"></param>
+		<param id="billAddrValue.lastName" name="lastName" class="reqBody" type="text"></param>
+		<param id="billAddrValue.companyName" name="companyName" class="reqBody" type="text"></param>
+		<param id="billAddrValue.address1" name="address1" class="reqBody" type="text"></param>
+		<param id="billAddrValue.address2" name="address2" class="reqBody" type="text"></param>
+		<param id="billAddrValue.city" name="city" class="reqBody" type="text"></param>
+		<param id="billAddrValue.state" name="state" class="reqBody" type="text"></param>
+		<param id="billAddrValue.country"  name="country" class="reqBody" type="text"></param>
+		<param id="billAddrValue.postalCode" name="postalCode" class="reqBody" type="text"></param>
+		<param id="makePreferredSet"  name="makePreferredSet" class="reqBody" type="text">true</param>
+		<param type="text" name="clientID" id="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>
+					

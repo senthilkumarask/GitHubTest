@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: InventoryTestCase.xml 
+	DESCRIPTION: ddtunit data file for InventoryTextCase test case HISTORY: Oct 
+	14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.inventory.InventoryTestCase">
+
+		<group id="testPerformInventoryFeedCheck">
+			<test id="testPerformInventoryFeedCheck_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="feedStatus" type="string">PARTIAL_OPEN</obj>
+				</objs>
+			</test>
+		</group>
+
+		<group id="testGetAltAfs">
+			<test id="testGetAltAfs_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku10014</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetIgr">
+			<test id="testGetIgr_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku10014</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetAfs">
+			<test id="testGetAfs_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku10014</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetInventory">
+			<test id="testGetInventory_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku10014</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetInventoryList">
+			<test id="testGetInventoryList_test1">
+				<objs>
+					<obj id="Inventorymanager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="skuId" type="string">sku10014</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testDecrementSkuInventory">
+			<test id="testDecrementSkuInventory_test1">
+				<objs>
+					<obj id="InventoryTools" type="com.bbb.commerce.inventory.InventoryToolsImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/com/bbb/commerce/inventory/InventoryTools</item>
+					</obj>
+					<obj id="InventoryManager" type="com.bbb.commerce.inventory.OnlineInventoryManagerImpl"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.inventory.InventoryTestCase">
+						<item type="string">/atg/commerce/inventory/InventoryManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

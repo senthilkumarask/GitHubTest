@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<id-spaces xml-combine="append">
+     <id-space name="list" seed="0" batch-size="50000"/>
+     <id-space name="listCategory" seed="0" batch-size="50000"/>
+     <id-space name="listType" seed="0" batch-size="50000"/>
+     <id-space name="skuRule" seed="0" batch-size="50000"/>
+     <id-space name="rule" seed="0" batch-size="50000"/>
+</id-spaces>

@@ -1,0 +1,285 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGetApplicableShippingMethodsDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestGetApplicableShippingMethodsDroplet.java test case
+
+  HISTORY:
+  Dec 29, 2011  Initial version
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+       
+       <group id="testServiceForShippingMethodsPerOrder">
+        <test id="testServiceForShippingMethodsPerOrder">
+			<objs>
+				<obj id="bbbGetApplicableShippingMethodsDroplet" type="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/GetApplicableShippingMethodsDroplet</item>
+				</obj>	
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>	
+                <obj id="bbbCheckoutManger" type="com.bbb.commerce.checkout.manager.BBBCheckoutManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/shipping/manager/CheckoutManager</item>
+                </obj>
+                <obj id="bbbShippingGroupHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+                </obj>
+                <obj id="siteId" type="string">
+                    BuyBuyBaby
+                </obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="catalogRefIdGiftCard" type="string">
+					sku10014
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>	
+				<obj id="productIdGiftCard" type="string">
+					prod10009
+				</obj>		
+				<obj id="storeId1" type="string">
+					25
+				</obj>	
+				<obj id="storeId2" type="string">
+					1032
+				</obj>	
+				<obj id="registryId" type="string">
+					reg123
+				</obj>									
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>	
+				<obj id="perSku" type="string">perSku</obj>
+				<obj id="perOrder" type="string">perOrder</obj>
+				
+			</objs>			 
+        </test>
+      </group>      
+      
+      <group id="testServiceForShippingMethodsPerSku">
+        <test id="testServiceForShippingMethodsPerSku">
+			<objs>
+				<obj id="bbbGetApplicableShippingMethodsDroplet" type="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/GetApplicableShippingMethodsDroplet</item>
+				</obj>	
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>	
+                <obj id="bbbCheckoutManger" type="com.bbb.commerce.checkout.manager.BBBCheckoutManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/shipping/manager/CheckoutManager</item>
+                </obj>
+                <obj id="bbbShippingGroupHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+                </obj>
+                <obj id="siteId" type="string">
+                    BuyBuyBaby
+                </obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="catalogRefIdGiftCard" type="string">
+					sku10014
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>	
+				<obj id="productIdGiftCard" type="string">
+					prod10009
+				</obj>							
+				<obj id="storeId1" type="string">
+					25
+				</obj>	
+				<obj id="storeId2" type="string">
+					1032
+				</obj>	
+				<obj id="registryId" type="string">
+					reg123
+				</obj>									
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>	
+				<obj id="perSku" type="string">perSku</obj>
+				<obj id="perOrder" type="string">perOrder</obj>
+				<obj id="bbbGiftCardFilter" type="com.bbb.commerce.pricing.BBBGiftCardFilter" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+                    <item type="string">/com/bbb/commerce/pricing/BBBGiftCardFilter</item>
+                </obj>
+			</objs>			 
+        </test>
+      </group> 
+      
+      <group id="testServiceForShippingMethodsErrOrder">
+        <test id="testServiceForShippingMethodsErrOrder">
+			<objs>
+				<obj id="bbbGetApplicableShippingMethodsDroplet" type="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/GetApplicableShippingMethodsDroplet</item>
+				</obj>	
+			</objs>			 
+        </test>
+      </group>  
+      
+      <group id="testServiceForShippingMethodsErrOperation">
+        <test id="testServiceForShippingMethodsErrOperation">
+			<objs>
+				<obj id="bbbGetApplicableShippingMethodsDroplet" type="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.droplet.TestGetApplicableShippingMethodsDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/GetApplicableShippingMethodsDroplet</item>
+				</obj>	
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>	
+                <obj id="bbbCheckoutManger" type="com.bbb.commerce.checkout.manager.BBBCheckoutManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/shipping/manager/CheckoutManager</item>
+                </obj>
+                <obj id="bbbShippingGroupHandler" type="com.bbb.commerce.order.formhandler.BBBShippingGroupFormhandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+                    <item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+                </obj>
+                <obj id="siteId" type="string">
+                    BuyBuyBaby
+                </obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="catalogRefIdGiftCard" type="string">
+					sku10014
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>	
+				<obj id="productIdGiftCard" type="string">
+					prod10009
+				</obj>					
+				<obj id="storeId1" type="string">
+					25
+				</obj>	
+				<obj id="storeId2" type="string">
+					1032
+				</obj>	
+				<obj id="registryId" type="string">
+					reg123
+				</obj>									
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>	
+				<obj id="perSku" type="string">perSku</obj>
+				<obj id="perOrder" type="string">perOrder</obj>
+				
+			</objs>		 
+        </test>
+      </group>  
+     
+       <group id="testCIAttributesBasedFilterSuccess">
+        <test id="testCIAttributesBasedFilterSuccess">
+			<objs>
+				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+				</obj>	
+				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+				</obj>		
+				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+				</obj>	
+                
+                <obj id="siteId" type="string">
+                    BuyBuyBaby
+                </obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="catalogRefIdGiftCard" type="string">
+					sku10014
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>	
+				<obj id="productIdGiftCard" type="string">
+					prod10009
+				</obj>							
+				<obj id="listPriceId" type="string">
+					plist100005
+				</obj>
+				<obj id="salePriceId" type="string">
+					plist100004
+				</obj>
+				<obj id="catalogId" type="string">
+					masterCatalog
+				</obj>	
+				
+				<obj id="bbbCIAttributesBasedFilter" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+                    <item type="string">/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter</item>
+                </obj>
+			</objs>			 
+        </test>
+      </group> 
+      
+      <group id="testNoItemForCIAttributesBasedFilter">
+        <test id="testNoItemForCIAttributesBasedFilter">
+         <objs>
+			 <obj id="bbbCIAttributesBasedFilter" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+                    <item type="string">/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter</item>
+             </obj>	
+         </objs>		 
+        </test>
+      </group>  
+     
+    </cluster>
+</ddtunit>
+

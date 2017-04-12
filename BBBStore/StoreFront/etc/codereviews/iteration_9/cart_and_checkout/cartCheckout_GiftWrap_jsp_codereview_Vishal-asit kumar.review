@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="cartCheckout_GiftWrap_jsp_codereview_Vishal">
+  <ReviewIssue id="GW224MPD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:56:07:921 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:58:03:828 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="48">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/singleShippingOptionsFrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Order Include Gifts checkbox and greeting will be outside of GiftWrap check droplet.</Summary>
+    <Description>Order Include Gifts checkbox will be checked if either gift message or gift wrap was selected before.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW227O2G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:58:29:656 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:59:15:093 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="51">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/singleShippingOptionsFrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The GiftWrap checkbox will be mapped to BBBShippingGroupFormhandler.BBBShippingInfoBean.giftWrap</Summary>
+    <Description>This checkbox should be checked, when user is coming back and shippingGroup.giftWrapInd is true</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW228U7T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:59:24:281 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 07:59:37:515 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="51">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/singleShippingOptionsFrag.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>CMS keys are missing</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22UFB2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:16:11:390 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:16:34:296 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="73">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/singleShippingOptionsFrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Is 200 character count is implemented by site dev</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

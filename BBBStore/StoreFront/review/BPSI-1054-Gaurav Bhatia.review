@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-1054">
+  <ReviewIssue id="I88GHUE8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-08 :: 13:40:48:224 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-08 :: 13:44:35:355 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="45">j2ee-apps/BBBStore/store.war/giftregistry/frags/registry_items_guest_category.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Formatting issue on  - c:set var="enableLTLRegForSite</Summary>
+    <Description>Formatting issue on  - c:set var="enableLTLRegForSite
+Fix all formatting issue on this JSP</Description>
+    <Annotation>Formatting issue on  - c:set var="enableLTLRegForSite</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.profile.TestOrderTrackingDetails">
+		<group id="testOrderTrackingDetails">
+			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-properties" type="boolean">true</obj>
+					<obj id="email" type="string">archit_goel@infosys.com</obj>
+					<obj id="orderId" type="string">BAB5000000018570172</obj>
+					<obj id="orderTrackingDetailsRequest" type="string">/rest/bean/com/bbb/account/BBBOrderTrackingFormHandler/getOrderTrackingDetails</obj>
+					<obj id="trackOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="trackOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testOrderTrackingDetailsError">
+			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-properties" type="boolean">true</obj>
+					<obj id="email" type="string">archit_goel@infosys.com</obj>
+					<obj id="orderId" type="string"></obj>
+					<obj id="orderTrackingDetailsRequest" type="string">/rest/bean/com/bbb/account/BBBOrderTrackingFormHandler/getOrderTrackingDetails</obj>
+					<obj id="trackOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="trackOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+				 
+			</test>
+		</group>
+				
+	</cluster>
+</ddtunit>
+ 

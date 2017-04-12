@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_478_BILLING_UNUSED DROPLET">
+  <ReviewIssue id="I124A1KU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 18:34:15:486 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 18:35:18:817 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Put JSP comment on JSTL when condition</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I124C98K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 18:35:58:724 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 18:37:02:198 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check Order is null or not before getting ItemCount from it.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

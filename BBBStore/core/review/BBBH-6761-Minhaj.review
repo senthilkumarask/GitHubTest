@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-6761">
+  <ReviewIssue id="IQL4PM7T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 12:56:37:817 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 12:57:32:513 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="13">src/com/bbb/utils/BBBLogBuildNumber.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused import</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQL4UPD8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 13:00:35:180 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 13:01:02:509 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="105">src/com/bbb/utils/BBBLogBuildNumber.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add java doc</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQL4X0Q0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 13:02:23:208 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-13 :: 13:03:10:756 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>ikhan2</AssignedTo>
+    <File line="114">src/com/bbb/utils/BBBLogBuildNumber.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>use appropriate variable name</Summary>
+    <Description>build.from is being used for BuildTag</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

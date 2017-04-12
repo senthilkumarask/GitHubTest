@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1941">
+  <ReviewIssue id="IQO05GWS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-15 :: 22:42:17:884 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:28:24:775 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1312">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>Add more details to the description. Right now not able to convey the use of this method</Summary>
+    <Description>Match registry items. --- add details</Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQO38L87">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-16 :: 00:08:42:295 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:28:18:311 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1305">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add logDebug at the end of the method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQO3ABJU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-16 :: 00:10:03:066 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:28:21:216 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1350">src/com/bbb/commerce/checklist/tools/CheckListTools.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add logDebug at the end of the method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Done.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

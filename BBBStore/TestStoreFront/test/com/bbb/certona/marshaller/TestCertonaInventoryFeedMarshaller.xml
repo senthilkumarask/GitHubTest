@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestCertonaInventoryFeedMarshaller.xml
+
+  DESCRIPTION: ddtunit data file for CertonaInventoryFeedMarshaller.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.certona.marshaller.TestCertonaInventoryFeedMarshaller">
+	  <group id="testFullFeedMarshall">
+			 
+			<test id="testFullFeedMarshall">
+				<objs>
+					<obj id="marshaller" type="com.bbb.certona.marshaller.TestCertonaInventoryFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaInventoryFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaInventoryFeedMarshaller</item>
+					</obj>
+					<obj id="fullDataFeed" type="boolean">true</obj>					
+					<obj id="incrementalDataFeed" type="boolean">true</obj>
+					<obj id="myDate" hint="date" type="java.util.Date" dateformat="EEE MMM dd HH:mm:ss yyyy">
+						Thu Jan 26 10:11:12 2012
+					</obj>	
+				</objs>				
+			</test>
+		</group> 
+		<group id="testIncrementalFeedMarshall">
+			 
+			<test id="testIncrementalFeedMarshall">
+				<objs>
+					<obj id="marshaller" type="com.bbb.certona.marshaller.TestCertonaInventoryFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaInventoryFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaInventoryFeedMarshaller</item>
+					</obj>
+					<obj id="fullDataFeed" type="boolean">false</obj>					
+					<obj id="incrementalDataFeed" type="boolean">true</obj>
+					<obj id="myDate" hint="date" type="java.util.Date" dateformat="EEE MMM dd HH:mm:ss yyyy">
+						Thu Jan 26 10:11:12 2012
+					</obj>	
+				</objs>				
+			</test>
+		</group>		
+	</cluster>
+</ddtunit>

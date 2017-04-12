@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.manager.TestLblTxtManager">
+		<group id="testLableValueService">
+			<test id="testService_test1">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.LblTxtTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestLblTxtManager">
+						<item type="string">/com/bbb/cms/manager/LblTxtTemplateManager</item>
+					</obj>
+					<obj id="labelId" type="string">lbl_confirm_submit</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+
+					<obj id="placeHolder" type="java.util.HashMap" hint="map">
+						<item>
+							<key type="java.lang.String">firstName</key>
+							<value type="java.lang.String">Parvinder</value>
+						</item>
+						<item>
+							<key type="java.lang.String">middleName</key>
+							<value type="java.lang.String">Singh</value>
+						</item>
+						<item>
+							<key type="java.lang.String">lastName</key>
+							<value type="java.lang.String">Arora</value>
+						</item>
+					</obj>
+				</objs>
+				<asserts>
+					<assert id="labelValue" type="java.lang.String" action="isEqual">SUBMIT</assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testTextAreaService">
+			<test id="testTextAreaService_test1">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.LblTxtTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestLblTxtManager">
+						<item type="string">/com/bbb/cms/manager/LblTxtTemplateManager</item>
+					</obj>
+					<obj id="labelId" type="string">txtarea_contactus_pleasetells</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="placeHolder" type="java.util.HashMap" hint="map">
+
+					</obj>
+				</objs>
+				<asserts>
+					<assert id="textArea" type="java.lang.String" action="isNotNull"></assert>
+				</asserts>
+			</test>
+		</group>
+		<group id="testErrorService">
+			<test id="testErrorService_test1">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.LblTxtTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestLblTxtManager">
+						<item type="string">/com/bbb/cms/manager/LblTxtTemplateManager</item>
+					</obj>
+					<obj id="labelId" type="string">err_login_Password_Error</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="placeHolder" type="java.util.HashMap" hint="map">
+                    
+					</obj>
+				</objs>
+				<asserts>
+					<assert id="error" type="java.lang.String" action="isNotNull"></assert>
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

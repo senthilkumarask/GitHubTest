@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!-- 
+	Copyright 2011, BBB All Rights Reserved.
+	Reproduction or use of this	file without express written consent is prohibited. 
+	FILE: TestInvalidateStoreRepositoryCacheScheduler.xml
+	DESCRIPTION: ddtunit data file for TestInvalidateStoreRepositoryCacheScheduler.java test case HISTORY: 
+	Jan 03, 2014 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.store.scheduler.TestInvalidateStoreRepositoryCacheScheduler">
+		<group id="testInvalidateStoreRepositoryCacheScheduler">
+		   <test id="testInvalidateStoreRepositoryCacheScheduler">
+				<objs>
+					<obj id="scheduledTask" type="com.bbb.store.scheduler.TestInvalidateStoreRepositoryCacheScheduler"
+						hint="call" method="resolveName" calltype="com.bbb.store.scheduler.TestInvalidateStoreRepositoryCacheScheduler">
+						<item type="string">/com/bbb/store/scheduler/InvalidateStoreRepositoryCacheScheduler</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+  </cluster>
+</ddtunit>

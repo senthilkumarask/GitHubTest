@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddShippingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddShippingAddress.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestMultiShippingToOrder">
+		<group id="testAddMultiShippingToOrder">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">uattestuser2@gmail.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">uattestuser2@gmail.com</obj>
+					<obj id="phoneNumber" type="string">1112223344</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shippingOption3g" type="string">3g</obj>
+					<obj id="shippingOption1a" type="string">1a</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="getMultishipAddresses" type="string">/rest/bean/com/bbb/commerce/shipping/droplet/DisplayMultiShippingAddress/getMultishippingAddresses</obj>
+					<obj id="addMultipleShippingToOrder" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addMultipleShippingToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="restAddNewAddress" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/restAddNewAddress</obj>
+					<obj id="getCisiItemsRequest" type="string">/rest/bean/com/bbb/commerce/order/purchase/MultiShippingManager/getCommerceItemShippingInfos</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testAddMultiShippingToOrderError">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">uattestuser2@gmail.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">uattestuser2@gmail.com</obj>
+					<obj id="phoneNumber" type="string">1112223344</obj>
+					<obj id="saveShippingAddress" type="boolean">false</obj>
+					<obj id="shippingOption3g" type="string">3g</obj>
+					<obj id="shippingOption1a" type="string">1a</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"1","price":"$38.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="getMultishipAddresses" type="string">/rest/bean/com/bbb/commerce/shipping/droplet/DisplayMultiShippingAddress/getMultishippingAddresses</obj>
+					<obj id="addMultipleShippingToOrder" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addMultipleShippingToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="restAddNewAddress" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/restAddNewAddress</obj>
+					<obj id="getCisiItemsRequest" type="string">/rest/bean/com/bbb/commerce/order/purchase/MultiShippingManager/getCommerceItemShippingInfos</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

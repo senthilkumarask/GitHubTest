@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Store Template</name>
+         <author></author>
+    </header>
+
+
+    <item-descriptor name="couponRules" display-name-resource="couponRuleRepository" display-property="entryCode" cache-mode="simple" item-cache-size="250000" >
+		<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+		<table name="BBB_COUPON_RULES" type="primary" id-column-name="ID">
+			<property name="id" column-name="ID" display-name-resource="id" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources" />
+        	</property>
+        	<property name="entryCode" column-name="ENTRY_CD" display-name-resource="entryCode" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>
+           	<property name="sequence" column-name="SEQ" display-name-resource="sequence" data-type="int" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>
+           	<property name="skuId" column-name="SKU" display-name-resource="skuId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="jdaDeptId" column-name="JDA_DEPT_ID" display-name-resource="jdaDeptId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="4"/>
+           	</property>
+           	<property name="vendorId" column-name="VENDOR_ID" display-name-resource="vendorId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="5"/>
+           	</property>
+           	<property name="jdaSubDeptId" column-name="JDA_SUB_DEPT_ID" display-name-resource="jdaSubDeptId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="6"/>
+           	</property>
+           	<property name="jdaClass" column-name="JDA_CLASS" display-name-resource="jdaClass" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="7"/>
+           	</property>
+           	<property name="ruleToEvaluate" column-name="RULE_EVAL" display-name-resource="ruleToEvaluate" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="8"/>
+           	</property>
+           	<property name="rowXngDt" column-name="ROW_XNG_DT" display-name-resource="rowXngDt" data-type="date" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="9"/>
+           	</property>
+           	<property name="rowXngUser" column-name="ROW_XNG_USR" display-name-resource="rowXngUser" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="10"/>
+           	</property>
+           	<property name="status" column-name="ROW_STATUS" display-name-resource="status" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="11"/>
+           	</property>   
+           <property name="siteId" column-name="site_id" display-name-resource="siteId" data-type="string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="12"/>
+           	</property>          	
+		</table>
+	</item-descriptor>
+	<item-descriptor name="exclusionText" display-name-resource="exclusionText" display-property="exclusionText" cache-mode="simple" item-cache-size="25000" >
+		<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+		<table name="BBB_EXCLUSION_TEXT" type="primary" id-column-names="ENTRY_CD,SITE_ID">			  
+           	<property name="entryCode" column-name="ENTRY_CD" display-name-resource="entryCode" data-type="string" required="true" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="0"/>
+           	</property>   
+           	<property name="siteId" column-name="SITE_ID" display-name-resource="siteId" data-type="string" required="true" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>      
+           	<property name="exclusionText" column-name="EXCLUSION_TEXT" display-name-resource="exclusionText" data-type="big string" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.commerce.coupon.repository.CouponRuleResources"/>
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>   	
+         </table>    	
+     </item-descriptor>
+</gsa-template>

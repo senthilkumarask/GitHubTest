@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id=" UC_AM_LOGIN_USER_2011_11_17_Abhilash">
+  <ReviewIssue id="GV9X6VED">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 01:50:21:493 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:21:09:943 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="1">config/atg/userprofiling/B2CProfileFormHandler.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Layered Property File Should Only Contain Delta Of Changes</Summary>
+    <Description>Looks like this property file contains the OOB ATG stuff also, outside of the BBB Specific changes requried. As a best practice the layered property files should only contain the deltas and not the entire set of properties from OOB property file.</Description>
+    <Annotation></Annotation>
+    <Revision>Resolved the name is now ProfileFormHandler.properties</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV9X93NO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 01:52:05:508 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 18:00:13:087 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="98">config/atg/userprofiling/B2CProfileFormHandler.properties</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Reference To CRS SessionBean</Summary>
+    <Description>This looks to be refering to the CRS SessionBean and should be updated with BBB or ATG OOB version, if it is getting used -
+"sessionBean=/atg/store/profile/SessionBean"</Description>
+    <Annotation></Annotation>
+    <Revision>removed and resloved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV9Y60CS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 02:17:40:876 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:00:39:965 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="1744">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>validLength Boolean should be renamed or check reversed</Summary>
+    <Description>The name of the Boolean is validLength - however from its use its set to true when the length is invalid.
+Therefore either the variable should be renamed or the negation should be removed while setting this and while using using this inthe else if.</Description>
+    <Annotation></Annotation>
+    <Revision>resloved and naming is done according to convention</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA07PKO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 03:14:59:448 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 21:59:31:741 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="1800">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Same Error Message For Incorrect Username and/or Password</Summary>
+    <Description>Per the AM BRD Section 8.2 Annotation L - the error message shown to the user should be same, to avoid phishing, whether the username is wrong or just the password is wrong. I am seeing two different error keys on the front end for this - loginerr_profile_no_such_profile and loginPasswordError. It should be updated to return the same error in both the scenarios.</Description>
+    <Annotation></Annotation>
+    <Revision>Resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA1XMC3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 04:03:07:923 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 21:45:35:165 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="158">src/com/bbb/pipeline/BBBAccessController.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Descriptive Name For Constants</Summary>
+    <Description>For Contants at least the name of the constant should be descriptive (value can be anything - if intent is to keep it small). It is not clear what is the use of Constant R.</Description>
+    <Annotation></Annotation>
+    <Revision>changed the name acc to the convention</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA22J92">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 04:06:57:206 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 21:45:07:111 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="143">src/com/bbb/pipeline/BBBAccessController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use Profile.IsTransient() instead of relying on Email Being Null</Summary>
+    <Description>The standard check for seeing if the profile is anonymous or not, everywhere we are using the Transient property. We should do the same here instead of email null check.</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved added transient</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA39O3A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 04:40:29:686 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:05:28:601 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="10">config/atg/dynamo/servlet/dafpipeline/AccessControlServlet.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Incomplete List of Protected Pages</Summary>
+    <Description>Note there are other pages as well which should be in the list of these protected pages, redirectUrl property. These include -
+Personal Information Page (change email + change password), credit card wallet, address book, orders etc. - Whatever has been developed or know - do add them to this list.
+Additionally for future pages to be developed, I will advise entering commented items or expected names - to make sure this gets tracked.</Description>
+    <Annotation></Annotation>
+    <Revision>resloved, but team member have to update this when there story get completed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA3KQ1F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 04:49:05:427 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 21:42:21:653 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="121">src/com/bbb/pipeline/BBBAccessController.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No Debug Logging</Summary>
+    <Description>There is no Debug Logging in the method service(). This should include the standard logging part of every other method.</Description>
+    <Annotation></Annotation>
+    <Revision>Resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA3MBJP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 04:50:19:957 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 21:39:01:521 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="1732">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>No Performance Logging</Summary>
+    <Description>There is no performance logging in preLogin(), postLogin() or for that matter other Account Management methods. That should be included per the standard framework.</Description>
+    <Annotation></Annotation>
+    <Revision>Resloved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

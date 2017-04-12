@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND1042-Scene7DomainsSharding">
+  <ReviewIssue id="I276J667">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:15:53:791 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:16:55:051 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="914">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Variable name is not java stanadard</Summary>
+    <Description>SCENE_SEVEN_PATH should be changed to scene7Path</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I276KNTF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:17:03:315 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:17:55:740 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="914">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>SCENE_SEVEN_PATH should be set to default value and not null </Summary>
+    <Description>Set it to default value like //s7dx.bedbath</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I276MT06">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:18:43:350 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-07 :: 12:22:25:695 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File line="1034">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Avoid replaceFirst("8","9") for every product</Summary>
+    <Description>Replace has some complexity so let split this into multiple statement as below 
+
+int lastDigit =Integer.parseInt(bbbProduct.getProductID())%10+1);
+if(lastDigit ==8)
+	lastDigit=9;
+
+bbbProduct.setSceneSevenURL(SCENE_SEVEN_PATH.replaceFirst("x", lastDigit ))</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

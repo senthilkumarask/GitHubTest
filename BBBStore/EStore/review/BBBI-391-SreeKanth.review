@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-391">
+  <ReviewIssue id="IP501INU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:21:53:850 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:22:13:348 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="71">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Print input parameter in logDebug</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP5025MU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:22:23:622 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:22:48:309 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="57">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add performance monitor logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP5059EU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:24:48:486 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:25:28:372 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="577">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Any reason for calling the method with OmnitureBoostedProductTools object?</Summary>
+    <Description>getDefaultTool</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP507E0A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:26:27:754 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:27:47:026 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="85">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why cannot we implement OmnitureReportAPITools interface and call cancelQueueReport() rahter than calling it using OmnitureBoostedProductTools object?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50A1T8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:28:31:916 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:28:50:371 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="85">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Same comment as others about DEfaultTool</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50BS66">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:29:52:734 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:30:26:965 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1879">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Print input requests in logDebug and also add performance logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50GD79">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:33:26:613 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:35:19:173 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1889">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why are we setting blank value as default?</Summary>
+    <Description>If we set blank as default, what's the point in calling method with default value as input parameter? We can set bbbywebmaster:Bed Bath Beyond instead of blank</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50JJZF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:35:55:371 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:19:42:045 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1893">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We can create a new config key or extact the string before : from BCC</Summary>
+    <Description>configuredUserId
+
+Do not assign this variable to constant value, extract the string before : from BCC config key value and trim if there are any spaces.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50O9E1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:39:34:921 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:40:50:734 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2018">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Print input parameters in debug log and add performance logging</Summary>
+    <Description>getOmnitureReportConfig</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50QIQU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:41:20:358 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:41:42:715 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2052">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>What is e? Give some meaningful names</Summary>
+    <Description>e</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50RJ8K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:42:07:652 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:42:29:995 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2056">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Print output parameters and where method end log?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP50TF8G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:43:35:776 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 01:44:39:415 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1897">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Duplicate calling of method</Summary>
+    <Description>We already have this information in reportConfigList variable, why are we calling this method. Will it not make duplicate calls to DB?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP51XQ1Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:14:56:030 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:15:28:836 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1904">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why cancalable reports cannot be empty? It can be empty when all the reports are important</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP520T4G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:17:19:984 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:17:49:424 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2121">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add debug logs to print input parameters and perofrmance logging</Summary>
+    <Description>isThresholdExceededForReport</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP525SSI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:21:12:834 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:22:06:487 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2121">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do equalsIgnoreCase</Summary>
+    <Description>configuredUserId
+
+if(StringUtils.isNotBlank(configuredUserId) &amp;&amp; configuredUserId.equals(userId))</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP52EALI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:27:49:158 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:28:26:469 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2069">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add logDebug statement to print input parameter and add performance logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP52I8NZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:30:53:279 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-15 :: 09:25:33:884 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="2067">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are not we iterating this map in isThresholdExceededForReport method?</Summary>
+    <Description>getCancelableReportIdEmailVoMap
+
+We are already iterating this map in isThresholdExceededForReport method, cannot we add this logic also there and return map with boolean value instead of breaking the loop after identifying if there is a report which is crossed threshold?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP52VT2E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 02:41:26:246 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-15 :: 09:18:47:542 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="1833">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add logDebug to print input parameters, add performence logging</Summary>
+    <Description>updateReportStatus</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPJ7QYAN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 00:06:24:287 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 00:07:10:587 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="342">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>If we throw exception, will this process further. I do see we are pushing site because it's job JVM</Summary>
+    <Description>if(StringUtils.isBlank(SiteId))
+		{
+			logError("SiteId not found for concept:"+concept);
+			throw new SystemException("SiteId not found ");
+		}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPJ7WGDS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-17 :: 00:10:41:008 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 21:51:46:688 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>SreeKanth</ReviewerId>
+    <AssignedTo>SreeKanth</AssignedTo>
+    <File line="403">src/com/bbb/thirdparty/omniture/manager/OmnitureReportAPIManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Why are we repeating duplicate code?</Summary>
+    <Description>QueueRequestVO requestVO = new QueueRequestVO();
+							requestVO.setBatchRequest(true);
+							requestVO.setCount(count);
+							requestVO.setStartingWith(startingWith);
+							requestVO.setTop(top);
+							requestVO.setConcept(concept);
+							requestVO.setReportType(reportType);
+							requestVO.setReportIndex(reportSeq);
+							requestVO.setMethodType(methodType);
+							requestVO.setDateFrom(dateFrom);
+							requestVO.setDateTo(dateTo); 
+							requestVO.setBatchId(batchId);
+							requestVO.setBatchSize(batchSize);
+							requestVO.setOmnitureReportConfigVo(omnitureReportConfigVo);
+							logDebug("OmnitureReportAPIManager: performQueue:requestVO"+requestVO.toString());
+							omnitureReportEmailContentVO= new OmnitureReportEmailContentVO();
+							emailContentList.add(omnitureReportEmailContentVO);
+							omnitureReportAPITools.doQueueReport(requestVO,omnitureReportEmailContentVO);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

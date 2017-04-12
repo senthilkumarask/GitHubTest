@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP_1855_Offshore_Review">
+  <ReviewIssue id="IFROVEHE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:20:51:410 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:20:52:596 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="162">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFROVNMY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:03:274 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:04:694 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="77">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFROVS8J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:09:235 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:10:077 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="80">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFROVVLI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:13:590 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:21:564 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="83">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFROW6YT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:28:325 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:30:010 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="100">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFROWNGO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:49:704 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:21:51:374 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="247">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRP004V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:24:26:095 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:24:31:836 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="45">src/com/bbb/commerce/cart/droplet/SinglePageCktEligible.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRP3OLG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:17:764 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:22:726 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="656">src/com/bbb/account/order/manager/OrderDetailsManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRP4352">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:36:614 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:38:502 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="3142">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRP4C7V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:48:379 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:49:549 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="79">src/com/bbb/commerce/order/purchase/ShippingMethodDescriptionDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IFRP4L6E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:27:59:990 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-15 :: 09:28:01:287 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rachit</ReviewerId>
+    <AssignedTo>Sneha Ghosh</AssignedTo>
+    <File line="268">src/com/bbb/rest/generic/BBBSessionManagerFacade.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

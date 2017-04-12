@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Shipping_Multiple_SapeUnit_09_01_2012_Asit_Jyoti">
+  <ReviewIssue id="GX7KOAW7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-09 :: 19:43:52:039 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-09 :: 19:43:54:342 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Jyoti</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

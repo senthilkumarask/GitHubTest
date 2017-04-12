@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: InventoryTestCase.xml 
+	DESCRIPTION: ddtunit data file for InventoryTextCase test case HISTORY: Oct 
+	14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.certona.marshaller.TestCertonaProfileFeedMarshaller">
+
+		<group id="testFullFeedMarshall">
+			<test id="testFullFeedMarshall_test1">
+				<objs>
+					<obj id="profileMarshaller" type="com.bbb.certona.marshaller.CertonaProfileFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaProfileFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller</item>
+					</obj>
+					<obj id="typeOfFeed" type="string">profile</obj>
+					<obj id="full" type="boolean">true</obj>
+					<obj id="lastModeDate" type="boolean">true</obj>
+				</objs>
+			</test>
+			<test id="testFullFeedMarshall_test2">
+				<objs>
+					<obj id="profileMarshaller" type="com.bbb.certona.marshaller.CertonaProfileFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaProfileFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller</item>
+					</obj>
+					<obj id="typeOfFeed" type="string">profile</obj>
+					<obj id="full" type="boolean">true</obj>
+					<obj id="lastModeDate" type="boolean">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testIncrementalFeedMarshall">
+			<test id="testIncrementalFeedMarshall_test1">
+				<objs>
+					<obj id="profileMarshaller" type="com.bbb.certona.marshaller.CertonaProfileFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaProfileFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller</item>
+					</obj>
+					<obj id="typeOfFeed" type="string">profile</obj>
+					<obj id="full" type="boolean">false</obj>
+					<obj id="lastModeDate" type="boolean">true</obj>
+				</objs>
+			</test>
+			<test id="testIncrementalFeedMarshall_test2">
+				<objs>
+					<obj id="profileMarshaller" type="com.bbb.certona.marshaller.CertonaProfileFeedMarshaller"
+						hint="call" method="resolveName" calltype="com.bbb.certona.marshaller.TestCertonaProfileFeedMarshaller">
+						<item type="string">/com/bbb/certona/marshaller/CertonaProfileFeedMarshaller</item>
+					</obj>
+					<obj id="typeOfFeed" type="string">profile</obj>
+					<obj id="full" type="boolean">false</obj>
+					<obj id="lastModeDate" type="boolean">false</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

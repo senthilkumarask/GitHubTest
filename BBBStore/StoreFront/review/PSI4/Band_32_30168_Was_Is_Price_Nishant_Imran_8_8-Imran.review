@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Band_32_30168_Was_Is_Price_Nishant_Imran_8_8">
+  <ReviewIssue id="HYSQF8PK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:37:03:128 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:47:39:204 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="408">j2ee-apps/BBBStore/store.war/_includes/modules/product_grid_4x4.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Changes are not correctly written.  Check for param="element.wasPriceRange" instead  and do not check for salePriceRange null again</Summary>
+    <Description>	&lt;dsp:getvalueof var="wasPriceRange" value="element.wasPriceRange"/&gt;
+						   &lt;dsp:droplet name="IsEmpty"&gt;
+							&lt;dsp:param name="value" param="${wasPriceRange}"/&gt;
+							&lt;dsp:oparam name="false"&gt;
+								&lt;li class="isPrice"&gt;
+									&lt;span class="highlightRed"&gt;&lt;dsp:valueof converter="currency" param="element.priceRange" /&gt;&lt;/span&gt;
+								&lt;/li&gt;
+								&lt;dsp:getvalueof var="salePriceRange" param="element.wasPriceRange"/&gt;
+								&lt;c:if test="${salePriceRange != null}"&gt;
+					</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSQV47G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:49:23:788 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:49:40:090 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="423">j2ee-apps/BBBStore/store.war/_includes/modules/product_grid_5x4.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Changes are not correctly written.  Check for param="element.wasPriceRange" instead  and do not check for salePriceRange null again</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSR0766">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:53:20:910 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:53:37:586 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="303">j2ee-apps/BBBStore/store.war/_includes/modules/product_list_1x10.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Changes are not correctly written.  Check for param="element.wasPriceRange" instead  and do not check for salePriceRange null again</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSR1AZN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:54:12:515 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 19:54:20:767 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="304">j2ee-apps/BBBStore/store.war/_includes/modules/product_list.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Changes are not correctly written.  Check for param="element.wasPriceRange" instead  and do not check for salePriceRange null again</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+	<xs:element name="userProfile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="profileAttributes" type="profileDetail" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>This structure defines the header level for profile details</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="profileDetail">
+		<xs:sequence>
+			<xs:element name="emailType" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="firstName" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="lastName" type="xs:string" minOccurs="1"	maxOccurs="1" />
+			<xs:element name="emailAddress" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="submitDate" type="xs:dateTime" minOccurs="1" maxOccurs="1" />
+			<xs:element name="siteFlag" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="phone1" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="phone2" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="optin" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="profileId" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="shareAccount" type="xs:string" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

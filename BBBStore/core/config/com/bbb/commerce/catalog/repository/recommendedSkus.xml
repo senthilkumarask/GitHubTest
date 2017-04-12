@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+	<header>
+		<name>Recommended Skus Repository</name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Recommended Skus Repository -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="recommendedSkus"
+		display-property="sku" display-name-resource="recommendedSkus"
+		cache-mode="simple">
+		<attribute name="resourceBundle"
+			value="com.bbb.commerce.catalog.BBBCatalogTemplateResources" />
+		<table name="BBB_RECOMM_SKUS" type="primary" id-column-name="SKU_ID">
+			<property name="sku" column-name="SKU_MAIN" item-type="sku"
+				display-name-resource="cartSku" writable="true" repository="/atg/commerce/catalog/ProductCatalog" category-resource="CartAnalyze">
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+			<property name="id" column-name="SKU_ID" data-type="string"
+				writable="true" category-resource="CartAnalyze">
+				<attribute name="propertySortPriority" value="9" />
+			</property>
+			<property name="recommSku" column-name="RECOMM_SKU_ID"
+				item-type="sku" repository="/atg/commerce/catalog/ProductCatalog" display-name-resource="recommSku" writable="true"
+				category-resource="CartAnalyze">
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="description" column-name="DESCRIPTION"
+				data-type="string" display-name-resource="description" required="false"
+				category-resource="CartAnalyze">
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+			<property name="priority" column-name="priority" data-type="int"
+				display-name-resource="priority" required="true" category-resource="CartAnalyze">
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+		</table>
+	</item-descriptor>
+</gsa-template>

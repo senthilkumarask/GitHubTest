@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://tuckey.org/urlrewrite/
+
+-->
+<urlrewrite decode-using="null">
+    <!--
+    <rule>
+        <note>
+            The rule means that requests to /test/status/ will be redirected to /rewrite-status
+            the url will be rewritten.
+        </note>
+        <from>/test/status/</from>
+        <to type="redirect">%{context-path}/rewrite-status</to>
+    </rule>
+    <outbound-rule>
+        <note>
+            The outbound-rule specifies that when response.encodeURL is called (if you are using JSTL c:url)
+            the url /rewrite-status will be rewritten to /test/status/.
+
+            The above rule and this outbound-rule means that end users should never see the
+            url /rewrite-status only /test/status/ both in thier location bar and in hyperlinks
+            in your pages.
+        </note>
+        <from>/rewrite-status</from>
+        <to>/test/status/</to>
+    </outbound-rule>
+
+    INSTALLATION
+        in your web.xml add...
+
+        <filter>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+            <init-param>
+                <param-name>logLevel</param-name>
+                <param-value>WARN</param-value>
+            </init-param>
+        </filter>
+        <filter-mapping>
+            <filter-name>UrlRewriteFilter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+
+     EXAMPLES
+
+     Redirect one url
+        <rule>
+            <from>/some/old/page.html</from>
+            <to type="redirect">/very/new/page.html</to>
+        </rule>
+
+    Redirect a directory
+        <rule>
+            <from>/some/olddir/(.*)</from>
+            <to type="redirect">/very/newdir/$1</to>
+        </rule>
+
+    Clean a url
+        <rule>
+            <from>/products/([0-9]+)</from>
+            <to>/products/index.jsp?product_id=$1</to>
+        </rule>
+    eg, /products/1234 will be passed on to /products/index.jsp?product_id=1234 without the user noticing.
+
+    Browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <from>/some/page.html</from>
+            <to>/some/page-for-old-browsers.html</to>
+        </rule>
+    eg, will pass the request for /some/page.html on to /some/page-for-old-browsers.html only for older
+    browsers whose user agent srtings match Mozilla/1, Mozilla/2, Mozilla/3 or Mozilla/4.
+
+    Centralised browser detection
+        <rule>
+            <condition name="user-agent">Mozilla/[1-4]</condition>
+            <set type="request" name="browser">moz</set>
+        </rule>
+    eg, all requests will be checked against the condition and if matched
+    request.setAttribute("browser", "moz") will be called.
+
+    -->
+    <!-- rule> <from>^/ss/(.*).jsp$</from> <to>/selfservice/$1.jsp</to> </rule -->
+	<!-- rule> <from>^/selfservice/(.*)$</from> <to>/selfservice/$1.jsp?contentKey=$1</to> </rule-->
+   
+    
+    <rule><from>^(.*);jsessionid=[A-Za-z0-9\-\+\*\._]+(.*)$</from><to type="redirect">$1$2</to></rule>
+    <rule> <from>/null$</from> <to>/blank.gif</to> </rule>
+    <rule> <from>^/gr/(.*)$</from><set type="request" name="originalUrl">/gr/$1</set> <to>/giftregistry/$1.jsp?contentKey=$1</to> </rule>
+	<rule> <from>^/static/([A-Za-z0-9]*)([/]?)$</from><set type="request" name="originalUrl">/static/$1</set><to>/cms/static/staticpage.jsp?pageName=$1&amp;contentKey=$1</to> </rule>
+	<rule> <from>^/registry/([A-Za-z0-9]*)([/]?)$</from> <set type="request" name="originalUrl">/registry/$1</set><to>/giftregistry/registry_features.jsp?pageName=$1&amp;contentKey=$1</to> </rule>
+	
+	<!-- R2.2 SEO Friendly URL Added for category Page : Start-->
+	<!-- L1 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogRefId=$2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;CatalogRefId=$2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$2</to> </rule>
+	<rule> <from>^/category/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$2&amp;contentKey=$2&amp;CatalogId=$3&amp;CatalogRefId=$2</to> </rule>
+	
+	<!-- L2 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogRefId=$3</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;CatalogRefId=$3</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$3</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$3&amp;contentKey=$3&amp;CatalogId=$4&amp;CatalogRefId=$3</to> </rule>
+	
+	<!-- L3 Category URLs-->
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogRefId=$4</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;pagNum=$5&amp;pagFilterOpt=$6&amp;CatalogRefId=$4</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;pagNum=$6&amp;pagFilterOpt=$7&amp;CatalogRefId=$4</to> </rule>
+	<rule> <from>^/category/([^/]*)/([^/]*)/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to>/browse/category.jsp?categoryId=$4&amp;contentKey=$4&amp;CatalogId=$5&amp;CatalogRefId=$4</to> </rule>
+	
+	<!-- R2.2 SEO Friendly URL Added for category Page : End-->
+	
+
+	<!-- R2.2 SEO Friendly URL Added for Search Page : Start-->
+	<rule> <from>^/s/([^/]*)$</from> <to>/search/search.jsp?Keyword=${escape:$1}</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9]*)-([0-9]*)$</from> <to>/search/search.jsp?Keyword=${escape:$1}&amp;pagNum=$2&amp;pagFilterOpt=$3</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)$</from> <to>/search/search.jsp?Keyword=${escape:$1}&amp;CatalogId=$2&amp;pagNum=$3&amp;pagFilterOpt=$4</to> </rule>
+	<rule> <from>^/s/([^/]*)/([0-9\\-]*)$</from> <to>/search/search.jsp?Keyword=${escape:$1}&amp;CatalogId=$2</to> </rule>
+	<!-- R2.2 SEO Friendly URL Added for Search Page : End-->
+	
+	<!-- R2.2 SEO Friendly URL Added for Brand Page : Start-->
+	
+	<rule> <from>^/brand/([^/]*)/([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=${escape:$2}&amp;frmBrandPage=true&amp;brandId=$2</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=${escape:$2}&amp;pagNum=$3&amp;pagFilterOpt=$4&amp;frmBrandPage=true&amp;brandId=$2</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)/([0-9]*)-([0-9]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=${escape:$2}&amp;CatalogId=$3&amp;pagNum=$4&amp;pagFilterOpt=$5&amp;frmBrandPage=true&amp;brandId=$2</to> </rule>
+	<rule> <from>^/brand/([^/]*)/([0-9]*)/([0-9\\-]*)([/]?)$</from> <to>/browse/brands.jsp?brandNameForUrl=$1&amp;Keyword=${escape:$2}&amp;CatalogId=$3&amp;frmBrandPage=true&amp;brandId=$2</to> </rule>
+	
+	<!-- R2.2 SEO Friendly URL Added for Brand Page : End-->
+
+	
+	<rule> <from>^/product/([^/]*)/([A-Za-z0-9]*)([/]?)$</from> <to>/browse/product_details.jsp?productId=$2&amp;contentKey=$2</to> </rule>
+	<rule> <from>^/guide/([^/]*)/([A-Za-z0-9]*)([/]?)$</from> <set type="request" name="originalUrl">/guide/$1/$2</set><to>/cms/guide_detail.jsp?guideId=$2&amp;contentKey=$2</to> </rule>
+	
+	<rule> <from>^/page/Circulars$</from> <set type="request" name="originalUrl">/page/circulars</set> <to>/browse/gadgets/circular_landing.jsp</to> </rule>
+    <rule> <from>^/page/Circular/(.*)$</from><set type="request" name="originalUrl">/page/circular/$1</set> <to>/browse/gadgets/circular.jsp?cirID=$1</to> </rule>
+	<rule> <from>^/page/Brands$</from> <set type="request" name="originalUrl">/page/brands</set><to>/browse/brands/AllBrands.jsp?pageName=Brands</to> </rule>
+	<rule> <from>^/page/Brands/$</from> <set type="request" name="originalUrl">/page/brands/</set><to>/browse/brands/AllBrands.jsp?pageName=Brands</to> </rule>
+	<rule> <from>^/page/GiftCards$</from> <set type="request" name="originalUrl">/page/GiftCards</set><to>/browse/gift_card_grid.jsp?pageName=GiftCards</to> </rule>
+	<rule> <from>^/page/GiftCards/$</from> <set type="request" name="originalUrl">/page/GiftCards</set><to>/browse/gift_card_grid.jsp?pageName=GiftCards</to> </rule>
+	<rule> <from>^/page/GuidesAdvice$</from> <set type="request" name="originalUrl">/page/GuidesAdvice</set><to>/cms/guides_advice.jsp?pageName=GuidesAdvice</to> </rule>
+	<rule> <from>^/page/GuidesAdvice/$</from><set type="request" name="originalUrl">/page/GuidesAdvice/</set> <to>/cms/guides_advice.jsp?pageName=GuidesAdvice</to> </rule>
+	<rule> <from>^/page/ArticleDetail$</from> <set type="request" name="originalUrl">/page/ArticleDetail</set><to>/cms/article_detail_page.jsp?pageName=ArticleDetail</to> </rule>
+	<rule> <from>^/page/ArticleDetail/$</from><set type="request" name="originalUrl">/page/ArticleDetail/</set> <to>/cms/article_detail_page.jsp?pageName=ArticleDetail</to> </rule>
+	<rule> <from>^/page/GuideDetail$</from><set type="request" name="originalUrl">/page/GuideDetail</set> <to>/cms/guide_detail.jsp?pageName=GuideDetail</to> </rule>
+	<rule> <from>^/page/GuideDetail/$</from><set type="request" name="originalUrl">/page/GuideDetail/</set> <to>/cms/guide_detail.jsp?pageName=GuideDetail</to> </rule>
+	<rule> <from>^/page/BridalShows$</from><set type="request" name="originalUrl">/page/BridalShows</set> <to>/cms/bridal_shows.jsp?pageName=BridalShow</to> </rule>
+	<rule> <from>^/page/BridalShows/$</from><set type="request" name="originalUrl">/page/BridalShows/</set> <to>/cms/bridal_shows.jsp?pageName=BridalShow</to> </rule>
+	<rule> <from>^/page/BabyEvents$</from><set type="request" name="originalUrl">/page/BabyEvents</set> <to>/cms/bridal_shows.jsp?pageName=BabyEvents</to> </rule>
+	<rule> <from>^/page/BabyEvents/$</from><set type="request" name="originalUrl">/page/BabyEvents/</set> <to>/cms/bridal_shows.jsp?pageName=BabyEvents</to> </rule>
+	<rule> <from>^/page/College$</from><set type="request" name="originalUrl">/page/College</set> <to>/bbcollege/college_landing.jsp?pageName=College</to> </rule>
+	<rule> <from>^/page/College/$</from><set type="request" name="originalUrl">/page/College/</set> <to>/bbcollege/college_landing.jsp?pageName=College</to> </rule>
+	<rule> <from>^/page/Registry$</from><set type="request" name="originalUrl">/page/Registry</set> <to>/giftregistry/bridal_landing.jsp?pageName=Bridal</to> </rule>
+	<rule> <from>^/page/Registry/$</from><set type="request" name="originalUrl">/page/Registry/</set> <to>/giftregistry/bridal_landing.jsp?pageName=Bridal</to> </rule>
+    <rule> <from>^/page/BabyRegistry$</from><set type="request" name="originalUrl">/page/BabyRegistry</set> <to>/giftregistry/baby_landing.jsp?pageName=Baby</to> </rule>
+	<rule> <from>^/page/BabyRegistry/$</from><set type="request" name="originalUrl">/page/BabyRegistry</set> <to>/giftregistry/baby_landing.jsp?pageName=Baby</to> </rule>
+	<rule> <from>^/page/BabyCanadaRegistry$</from><set type="request" name="originalUrl">/page/BabyCanadaRegistry</set> <to>/giftregistry/baby_canada_landing.jsp?pageName=Bridal</to> </rule>
+	<rule> <from>^/page/BabyCanadaRegistry/$</from><set type="request" name="originalUrl">/page/BabyCanadaRegistry</set> <to>/giftregistry/baby_canada_landing.jsp?pageName=Bridal</to> </rule>
+	
+   	<rule><from>^/selfservice/ContactUs$</from><set type="request" name="originalUrl">/selfservice/ContactUs</set><to>/selfservice/contact_us.jsp?pageName=ContactUs</to></rule>
+	<rule><from>^/selfservice/ContactUs/$</from><set type="request" name="originalUrl">/selfservice/ContactUs/</set><to>/selfservice/contact_us.jsp?pageName=ContactUs</to></rule>
+   	<rule><from>^/account/Login$</from><set type="request" name="originalUrl">/account/Login</set><to>/account/login.jsp?pageName=Login</to></rule>
+	<rule><from>^/account/Login/$</from><set type="request" name="originalUrl">/account/Login/</set><to>/account/login.jsp?pageName=Login</to></rule>
+
+   	<rule><from>^/bbregistry/BridalBook$</from><set type="request" name="originalUrl">/bbregistry/BridalBook</set><to>/bbregistry/bridal_book.jsp?pageName=BridalBook</to></rule>
+   	<rule><from>^/bbregistry/BridalBook/$</from><set type="request" name="originalUrl">/bbregistry/BridalBook/</set><to>/bbregistry/bridal_book.jsp?pageName=BridalBook</to></rule>
+   	<rule><from>^/bbregistry/BabyBook$</from><set type="request" name="originalUrl">/bbregistry/BabyBook</set><to>/bbregistry/baby_book.jsp?pageName=BabyBook</to></rule>
+   	<rule><from>^/bbregistry/BabyBook/$</from><set type="request" name="originalUrl">/bbregistry/BabyBook/</set><to>/bbregistry/baby_book.jsp?pageName=BabyBook</to></rule>
+   	<rule><from>^/bbregistry/HowToBook$</from><set type="request" name="originalUrl">/bbregistry/HowToBook</set><to>/bbregistry/bridal_book_how_to_book.jsp</to></rule>
+   	<rule><from>^/bbregistry/HowToBook/$</from><set type="request" name="originalUrl">/bbregistry/HowToBook/</set><to>/bbregistry/bridal_book_how_to_book.jsp</to></rule>
+   	
+   	
+   	<rule><from>^/wishlist/WishList$</from><set type="request" name="originalUrl">/wishlist/WishList</set><to>/wishlist/wish_list.jsp?pageName=WishList</to> </rule>
+	<rule><from>^/wishlist/WishList/$</from><set type="request" name="originalUrl">/wishlist/WishList/</set><to>/wishlist/wish_list.jsp?pageName=WishList</to> </rule>
+   	
+   	<rule><from>^/selfservice/FindStore$</from><set type="request" name="originalUrl">/selfservice/FindStore</set><to>/selfservice/store/find_store.jsp?pageName=FindStore&amp;flashEnabled=true</to> </rule>
+	<rule><from>^/selfservice/FindStore/$</from><set type="request" name="originalUrl">/selfservice/FindStore/</set><to>/selfservice/store/find_store.jsp?pageName=FindStore&amp;flashEnabled=true</to> </rule>
+   	
+   	<rule><from>^/selfservice/CanadaStoreLocator$</from><set type="request" name="originalUrl">/selfservice/CanadaStoreLocator</set><to>/selfservice/store/canada_store_locator.jsp?pageName=CanadaStoreLocator</to> </rule>
+	<rule><from>^/selfservice/CanadaStoreLocator/$</from><set type="request" name="originalUrl">/selfservice/CanadaStoreLocator/</set><to>/selfservice/store/canada_store_locator.jsp?pageName=CanadaStoreLocator</to> </rule>
+   	
+   	<rule><from>^/selfservice/InvestorRelations$</from><set type="request" name="originalUrl">/selfservice/InvestorRelations</set><to>/selfservice/investor_relations.jsp?pageName=InvestorRelations</to></rule>
+   	<rule><from>^/selfservice/InvestorRelations/$</from><set type="request" name="originalUrl">/selfservice/InvestorRelations/</set><to>/selfservice/investor_relations.jsp?pageName=InvestorRelations</to></rule>
+   	
+   	<rule><from>^/selfservice/EasyReturns$</from><set type="request" name="originalUrl">/selfservice/EasyReturns</set><to>/selfservice/easy_returns_form.jsp?pageName=EasyReturns</to></rule>
+   	<rule><from>^/selfservice/EasyReturns/$</from><set type="request" name="originalUrl">/selfservice/EasyReturns/</set><to>/selfservice/easy_returns_form.jsp?pageName=EasyReturns</to></rule>
+
+	<rule><from>^/selfservice/FindCollege$</from><set type="request" name="originalUrl">/selfservice/FindCollege</set><to>/selfservice/findyourcollege.jsp?pageName=FindCollege</to></rule>
+   	<rule><from>^/selfservice/FindCollege/$</from><set type="request" name="originalUrl">/selfservice/FindCollege/</set><to>/selfservice/findyourcollege.jsp?pageName=FindCollege</to></rule>
+
+ 	<rule><from>^/account/TrackOrder$</from><set type="request" name="originalUrl">/account/TrackOrder</set> <to>/account/track_order.jsp?pageName=TrackOrder</to></rule>
+	<rule><from>^/account/TrackOrder/$</from> <set type="request" name="originalUrl">/account/TrackOrder/</set><to>/account/track_order.jsp?pageName=TrackOrder</to></rule>
+
+	<rule> <from>^/selfservice/xmlconfig/config.xml$</from> <to>/selfservice/store/xmlconfig/config.xml</to> </rule>
+	<rule> <from>^/selfservice/imgs/</from> <to>/selfservice/store/imgs/</to> </rule>
+	<rule> <from>^/email/([A-Za-z0-9]*)([/]?)$</from> <to>/emailtemplates/fetchPersistedEmail.jsp?token=$1</to> </rule>
+	
+	<!-- Kick Starters URLs-->
+	<rule> <from>^/kickstarters([/]?)$</from> <to>/giftregistry/view_kickstarters.jsp</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;eventType=$2</to> </rule>	
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)([/]?)$</from> <to>/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;registryId=$2&amp;eventType=$3</to> </rule>
+	<rule> <from>^/topconsultant/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/top_consultants_picks.jsp?id=$1&amp;registryId=$2&amp;eventType=$3/$4</to> </rule>	
+		
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1</to> </rule>	
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;eventType=$2</to> </rule>	
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)([/]?)$</from> <to>/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;registryId=$2&amp;eventType=$3</to> </rule>
+	<rule> <from>^/shopthislook/([A-Za-z0-9]*)/([A-Za-z0-9]*)/([A-Za-z0-9%]*)/([A-Za-z0-9]*)([/]?)$</from> <to>/giftregistry/kickstarters/shop_the_look_details.jsp?id=$1&amp;registryId=$2&amp;eventType=$3/$4</to> </rule>
+	<!-- Mexico Site URLs-->	
+ 	<rule><from>^/mx([/]?)$</from><to>/mx/bridal_landing.jsp</to></rule>
+ 	
+ 	<!-- Envoy URL -->
+ 	<rule> <from>^/checkoutSuccess([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/checkoutPending([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/checkoutFailure([/]?)$</from> <to>/checkout/envoySubmissionCart.jsp?$1</to> </rule>	
+	<rule> <from>^/cart$</from> <to>/cart/cart.jsp</to> </rule>	
+	<rule> <from>^/paypalReturn$</from> <to>/checkout/envoy_paypal.jsp</to> </rule>	
+	<rule> <from>^/paypalCancel$</from> <to>/checkout/envoy_paypal.jsp</to> </rule>	
+	
+	<rule> <from>^/page/CollegeEvents$</from><set type="request" name="originalUrl">/page/CollegeEvents</set> <to>/cms/college_events.jsp?pageName=CollegeEvents</to> </rule>
+	<rule> <from>^/page/CollegeEvents/$</from><set type="request" name="originalUrl">/page/CollegeEvents/</set> <to>/cms/college_events.jsp?pageName=CollegeEvents</to> </rule>
+</urlrewrite>

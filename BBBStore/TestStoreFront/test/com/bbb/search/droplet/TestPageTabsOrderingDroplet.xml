@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSearchDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestBnSBaseDroplet.java test case
+
+  HISTORY:
+  Nov. 7, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.search.droplet.TestPageTabsOrderingDroplet">
+      <group id="testService">
+        <test id="testService_test1">
+			<objs>
+				<obj id="pageTabsOrderingDroplet" type="com.bbb.search.droplet.TestPageTabsOrderingDroplet" hint="call" method="resolveName" calltype="com.bbb.search.droplet.TestPageTabsOrderingDroplet">
+					<item type="string">/com/bbb/cms/droplet/PageTabsOrderingDroplet</item>
+				</obj>
+                <obj id="pageName" type="string">Product Details Page</obj>
+			</objs>
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

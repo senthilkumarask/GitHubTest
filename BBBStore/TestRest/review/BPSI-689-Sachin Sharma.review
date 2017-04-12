@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-689">
+  <ReviewIssue id="I7NBE95T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:34:52:961 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:35:30:396 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin Sharma</ReviewerId>
+    <AssignedTo>Sachin Sharma</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unwanted imports</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NBGS2V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:36:50:791 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:37:14:246 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin Sharma</ReviewerId>
+    <AssignedTo>Sachin Sharma</AssignedTo>
+    <File line="113">test/com/bbb/rest/giftregistry/TestAddItemToRegistry.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove unnecessary sys out statement</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I7NBM3I1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:40:58:873 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-03-24 :: 18:41:13:400 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin Sharma</ReviewerId>
+    <AssignedTo>Sachin Sharma</AssignedTo>
+    <File line="3">test/com/bbb/rest/giftregistry/TestAddItemToRegistry.xml</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Update comments</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

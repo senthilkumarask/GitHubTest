@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="cartCheckout_GiftWrap_codereview_core_Sunil">
+  <ReviewIssue id="GW1HZ44A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 22:31:58:234 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 22:32:58:234 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="132">src/com/bbb/ecommerce/order/BBBHardGoodShippingGroup.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There should be no input to this method, ADD was wrong, this should just return based on this object.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1I0K7A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 22:33:05:734 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 22:33:21:109 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="136">src/com/bbb/ecommerce/order/BBBHardGoodShippingGroup.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There should be no input to this method.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

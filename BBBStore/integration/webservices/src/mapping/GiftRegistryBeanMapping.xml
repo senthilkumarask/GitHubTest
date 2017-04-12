@@ -1,0 +1,2421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<!-- Update registry mapping start -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.UpdateRegistryDocumentImpl$UpdateRegistryImpl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>event.eventDateWS</a>
+			<b>eDate</b>
+		</field>
+		 <field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>event.guestCount</a>
+			<b>estimateNumGuests</b>
+		</field>
+		<field>
+			<a>event.showerDateWS</a>
+			<b>showerDate</b>
+		</field>
+
+		<field>
+			<a>event.babyGender</a>
+			<b>babyGender</b>
+		</field>
+
+
+		<field>
+			<a>event.babyName</a>
+			<b>babyName</b>
+		</field>
+
+
+		<field>
+			<a>event.babyNurseryTheme</a>
+			<b>babyNurseryDecororTheme</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.firstName</a>
+			<b>reFirstNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.lastName</a>
+			<b>reLastNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.email</a>
+			<b>reEmail</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>rePhone1</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.cellPhone</a>
+			<b>rePhone2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.babyMaidenName</a>
+			<b>babyReMaidenName</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine1</a>
+			<b>reAddr1</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine2</a>
+			<b>reAddr2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.city</a>
+			<b>reCity</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.state</a>
+			<b>reState</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.zip</a>
+			<b>reZip</b>
+		</field>
+		<field>
+			<a>coRegistrant.firstName</a>
+			<b>coFirstNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.lastName</a>
+			<b>coLastNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.email</a>
+			<b>coEmail</b>
+		</field>
+		<field>
+			<a>coRegistrant.babyMaidenName</a>
+			<b>babyCoMaidenName</b>
+		</field>
+		<field>
+			<a>coRegistrant.primaryPhone</a>
+			<b>coPhone1</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.cellPhone</a>
+			<b>coPhone2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.profileId</a>
+			<b>coRegProfileID</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine1</a>
+			<b>coAddr1</b>
+		</field>
+
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine2</a>
+			<b>coAddr2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.city</a>
+			<b>coCity</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.state</a>
+			<b>coState</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.zip</a>
+			<b>coZip</b>
+		</field>
+			<field>
+			<a>shipping.shippingAddress.firstName</a>
+			<b>shpFirstNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.lastName</a>
+			<b>shpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.addressLine1</a>
+			<b>shpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.shippingAddress.addressLine2</a>
+			<b>shpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.city</a>
+			<b>shpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.state</a>
+			<b>shpState</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.zip</a>
+			<b>shpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.firstName</a>
+			<b>fuShpFirstNm</b>
+		</field>
+		<field>
+			<a>shipping.futureShippingDateWS</a>
+			<b>fuShpAsOfDate</b>
+		</field>
+		<field>
+			<a>shipping.futureshippingAddress.lastName</a>
+			<b>fuShpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine1</a>
+			<b>fuShpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine2</a>
+			<b>fuShpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.city</a>
+			<b>fuShpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.state</a>
+			<b>fuShpState</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.zip</a>
+			<b>fuShpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.primaryPhone</a>
+			<b>fuShpPhone1</b>
+		</field>
+		<!-- New fields-->
+		<field>
+			<a>coRegistrant.coRegEmailFlag</a>
+			<b>coRegEmailFlag</b>
+		 </field>
+		<field>
+			<a>networkAffiliation</a>
+			<b>networkAffiliation</b>
+		</field>
+		<field>
+			<a>prefRegContMeth</a>
+			<b>prefRegContMeth</b>
+		</field>
+
+		<field>
+			<a>prefRegContTime</a>
+			<b>prefRegContTime</b>
+		</field>
+		<field>
+			<a>prefCoregContMeth</a>
+			<b>prefCoregContMeth</b>
+		</field>
+		<field>
+			<a>prefCoregContTime</a>
+			<b>prefCoregContTime</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>signup</a>
+			<b>signup</b>
+		</field>
+		<field>
+			<a>affiliateOptIn</a>
+			<b>affiliateOptIn</b>
+		</field>
+		<field>
+			<a>hint</a>
+			<b>hint</b>
+		</field>
+		<field>
+			<a>word</a>
+			<b>word</b>
+		</field>
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>shpPhone1</b>
+		</field>
+		<field>
+			<a>event.college</a>
+			<b>shpCo</b>
+		</field>
+		<field>
+			<a>prefStoreNum</a>
+			<b>prefStoreNum</b>
+		</field>
+		<field>
+			<a>refStoreContactMethod</a>
+			<b>prefStoreContactMethod</b>
+		</field>
+	   <field>
+			<a>event.birthDateWS</a>
+			<b>otherDate</b>
+		</field>
+
+	</mapping>
+
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.CreateRegistryDocumentImpl$CreateRegistryImpl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>event.eventDateWS</a>
+			<b>eDate</b>
+		</field>
+		 <field>
+			<a>registryType.registryTypeName</a>
+			<b>registryType</b>
+		</field>
+
+		<field>
+			<a>event.guestCount</a>
+			<b>estimateNumGuests</b>
+		</field>
+
+
+		<field>
+			<a>event.showerDateWS</a>
+			<b>showerDate</b>
+		</field>
+
+		<field>
+			<a>event.babyGender</a>
+			<b>babyGender</b>
+		</field>
+		<field>
+			<a>event.babyName</a>
+			<b>babyName</b>
+		</field>
+
+
+		<field>
+			<a>event.babyNurseryTheme</a>
+			<b>babyNurseryDecororTheme</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.firstName</a>
+			<b>reFirstNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.lastName</a>
+			<b>reLastNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.email</a>
+			<b>reEmail</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>rePhone1</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.cellPhone</a>
+			<b>rePhone2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.profileId</a>
+			<b>profileID</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.babyMaidenName</a>
+			<b>babyReMaidenName</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine1</a>
+			<b>reAddr1</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine2</a>
+			<b>reAddr2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.city</a>
+			<b>reCity</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.state</a>
+			<b>reState</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.zip</a>
+			<b>reZip</b>
+		</field>
+		<field>
+			<a>coRegistrant.firstName</a>
+			<b>coFirstNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.lastName</a>
+			<b>coLastNm</b>
+		</field>
+		<field>
+			<a>coRegistrant.babyMaidenName</a>
+			<b>babyCoMaidenName</b>
+		</field>
+		<field>
+			<a>coRegistrant.email</a>
+			<b>coEmail</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.primaryPhone</a>
+			<b>coPhone1</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.cellPhone</a>
+			<b>coPhone2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.profileId</a>
+			<b>coRegProfileID</b>
+		</field>
+		<field>
+			<a>coRegistrant.contactAddress.addressLine1</a>
+			<b>coAddr1</b>
+		</field>
+
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine2</a>
+			<b>coAddr2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.city</a>
+			<b>coCity</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.state</a>
+			<b>coState</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.zip</a>
+			<b>coZip</b>
+		</field>
+		<field>
+			<a>shipping.shippingAddress.firstName</a>
+			<b>shpFirstNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.lastName</a>
+			<b>shpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.addressLine1</a>
+			<b>shpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.shippingAddress.addressLine2</a>
+			<b>shpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.city</a>
+			<b>shpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.state</a>
+			<b>shpState</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.zip</a>
+			<b>shpZip</b>
+		</field>
+
+		<!-- Shipping address ends -->
+
+
+		<!-- Future Shipping address start -->
+
+		<field>
+			<a>shipping.futureshippingAddress.firstName</a>
+			<b>fuShpFirstNm</b>
+		</field>
+		<field>
+			<a>shipping.futureShippingDateWS</a>
+			<b>fuShpAsOfDate</b>
+		</field>
+		<field>
+			<a>shipping.futureshippingAddress.lastName</a>
+			<b>fuShpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine1</a>
+			<b>fuShpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine2</a>
+			<b>fuShpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.city</a>
+			<b>fuShpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.state</a>
+			<b>fuShpState</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.zip</a>
+			<b>fuShpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.primaryPhone</a>
+			<b>fuShpPhone1</b>
+		</field>
+	    <!-- new added field -->
+		<field>
+			<a>networkAffiliation</a>
+			<b>networkAffiliation</b>
+		</field>
+		<field>
+			<a>prefRegContMeth</a>
+			<b>prefRegContMeth</b>
+		</field>
+
+		<field>
+			<a>prefRegContTime</a>
+			<b>prefRegContTime</b>
+		</field>
+		<field>
+			<a>prefCoregContMeth</a>
+			<b>prefCoregContMeth</b>
+		</field>
+		<field>
+			<a>prefCoregContTime</a>
+			<b>prefCoregContTime</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.coRegEmailFlag</a>
+			<b>coRegEmailFlag</b>
+		</field>
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>signup</a>
+			<b>signup</b>
+		</field>
+		<field>
+			<a>affiliateOptIn</a>
+			<b>affiliateOptIn</b>
+		</field>
+		<field>
+			<a>hint</a>
+			<b>hint</b>
+		</field>
+		<field>
+			<a>word</a>
+			<b>word</b>
+		</field>
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>shpPhone1</b>
+		</field>
+		<field>
+			<a>event.college</a>
+			<b>shpCo</b>
+		</field>
+		<field>
+			<a>prefStoreNum</a>
+			<b>prefStoreNum</b>
+		</field>
+		<field>
+			<a>refStoreContactMethod</a>
+			<b>prefStoreContactMethod</b>
+		</field>
+
+		 <field>
+			<a>event.birthDateWS</a>
+			<b>otherDate</b>
+		</field>
+
+
+		<!-- Future Shipping address ends -->
+
+
+	</mapping>
+	<!-- new webservice updateregistry2 mapping  -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.UpdateRegistry2DocumentImpl$UpdateRegistry2Impl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>event.eventDateWS</a>
+			<b>eDate</b>
+		</field>
+		 <field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>event.guestCount</a>
+			<b>estimateNumGuests</b>
+		</field>
+		<field>
+			<a>event.showerDateWS</a>
+			<b>showerDate</b>
+		</field>
+
+		<field>
+			<a>event.babyGender</a>
+			<b>babyGender</b>
+		</field>
+
+
+		<field>
+			<a>event.babyName</a>
+			<b>babyName</b>
+		</field>
+
+
+		<field>
+			<a>event.babyNurseryTheme</a>
+			<b>babyNurseryDecororTheme</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.firstName</a>
+			<b>reFirstNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.lastName</a>
+			<b>reLastNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.email</a>
+			<b>reEmail</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>rePhone1</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.cellPhone</a>
+			<b>rePhone2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.babyMaidenName</a>
+			<b>babyReMaidenName</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine1</a>
+			<b>reAddr1</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine2</a>
+			<b>reAddr2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.city</a>
+			<b>reCity</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.state</a>
+			<b>reState</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.zip</a>
+			<b>reZip</b>
+		</field>
+		<field>
+			<a>coRegistrant.firstName</a>
+			<b>coFirstNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.lastName</a>
+			<b>coLastNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.email</a>
+			<b>coEmail</b>
+		</field>
+		<field>
+			<a>coRegistrant.babyMaidenName</a>
+			<b>babyCoMaidenName</b>
+		</field>
+		<field>
+			<a>coRegistrant.primaryPhone</a>
+			<b>coPhone1</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.cellPhone</a>
+			<b>coPhone2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.profileId</a>
+			<b>coRegProfileID</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine1</a>
+			<b>coAddr1</b>
+		</field>
+
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine2</a>
+			<b>coAddr2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.city</a>
+			<b>coCity</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.state</a>
+			<b>coState</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.zip</a>
+			<b>coZip</b>
+		</field>
+			<field>
+			<a>shipping.shippingAddress.firstName</a>
+			<b>shpFirstNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.lastName</a>
+			<b>shpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.addressLine1</a>
+			<b>shpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.shippingAddress.addressLine2</a>
+			<b>shpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.city</a>
+			<b>shpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.state</a>
+			<b>shpState</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.zip</a>
+			<b>shpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.firstName</a>
+			<b>fuShpFirstNm</b>
+		</field>
+		<field>
+			<a>shipping.futureShippingDateWS</a>
+			<b>fuShpAsOfDate</b>
+		</field>
+		<field>
+			<a>shipping.futureshippingAddress.lastName</a>
+			<b>fuShpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine1</a>
+			<b>fuShpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine2</a>
+			<b>fuShpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.city</a>
+			<b>fuShpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.state</a>
+			<b>fuShpState</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.zip</a>
+			<b>fuShpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.primaryPhone</a>
+			<b>fuShpPhone1</b>
+		</field>
+		<!-- New fields-->
+		<field>
+			<a>coRegistrant.coRegEmailFlag</a>
+			<b>coRegEmailFlag</b>
+		 </field>
+		<field>
+			<a>networkAffiliation</a>
+			<b>networkAffiliation</b>
+		</field>
+		<field>
+			<a>prefRegContMeth</a>
+			<b>prefRegContMeth</b>
+		</field>
+
+		<field>
+			<a>prefRegContTime</a>
+			<b>prefRegContTime</b>
+		</field>
+		<field>
+			<a>prefCoregContMeth</a>
+			<b>prefCoregContMeth</b>
+		</field>
+		<field>
+			<a>prefCoregContTime</a>
+			<b>prefCoregContTime</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>signup</a>
+			<b>signup</b>
+		</field>
+		<field>
+			<a>affiliateOptIn</a>
+			<b>affiliateOptIn</b>
+		</field>
+		<field>
+			<a>hint</a>
+			<b>hint</b>
+		</field>
+		<field>
+			<a>word</a>
+			<b>word</b>
+		</field>
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>shpPhone1</b>
+		</field>
+		<field>
+			<a>event.college</a>
+			<b>shpCo</b>
+		</field>
+		<field>
+			<a>prefStoreNum</a>
+			<b>prefStoreNum</b>
+		</field>
+		<field>
+			<a>refStoreContactMethod</a>
+			<b>prefStoreContactMethod</b>
+		</field>
+	   <field>
+			<a>event.birthDateWS</a>
+			<b>otherDate</b>
+		</field>
+
+	</mapping>
+	
+	<!-- create registry mapping for new webservice createRegistry2 -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.CreateRegistry2DocumentImpl$CreateRegistry2Impl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>event.eventDateWS</a>
+			<b>eDate</b>
+		</field>
+		 <field>
+			<a>registryType.registryTypeName</a>
+			<b>registryType</b>
+		</field>
+
+		<field>
+			<a>event.guestCount</a>
+			<b>estimateNumGuests</b>
+		</field>
+
+
+		<field>
+			<a>event.showerDateWS</a>
+			<b>showerDate</b>
+		</field>
+
+		<field>
+			<a>event.babyGender</a>
+			<b>babyGender</b>
+		</field>
+		<field>
+			<a>event.babyName</a>
+			<b>babyName</b>
+		</field>
+
+
+		<field>
+			<a>event.babyNurseryTheme</a>
+			<b>babyNurseryDecororTheme</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.firstName</a>
+			<b>reFirstNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.lastName</a>
+			<b>reLastNm</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.email</a>
+			<b>reEmail</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>rePhone1</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.cellPhone</a>
+			<b>rePhone2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.profileId</a>
+			<b>profileID</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.babyMaidenName</a>
+			<b>babyReMaidenName</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine1</a>
+			<b>reAddr1</b>
+		</field>
+
+
+		<field>
+			<a>primaryRegistrant.contactAddress.addressLine2</a>
+			<b>reAddr2</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.city</a>
+			<b>reCity</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.state</a>
+			<b>reState</b>
+		</field>
+
+		<field>
+			<a>primaryRegistrant.contactAddress.zip</a>
+			<b>reZip</b>
+		</field>
+		<field>
+			<a>coRegistrant.firstName</a>
+			<b>coFirstNm</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.lastName</a>
+			<b>coLastNm</b>
+		</field>
+		<field>
+			<a>coRegistrant.babyMaidenName</a>
+			<b>babyCoMaidenName</b>
+		</field>
+		<field>
+			<a>coRegistrant.email</a>
+			<b>coEmail</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.primaryPhone</a>
+			<b>coPhone1</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.cellPhone</a>
+			<b>coPhone2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.profileId</a>
+			<b>coRegProfileID</b>
+		</field>
+		<field>
+			<a>coRegistrant.contactAddress.addressLine1</a>
+			<b>coAddr1</b>
+		</field>
+
+
+		<field>
+			<a>coRegistrant.contactAddress.addressLine2</a>
+			<b>coAddr2</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.city</a>
+			<b>coCity</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.state</a>
+			<b>coState</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.contactAddress.zip</a>
+			<b>coZip</b>
+		</field>
+		<field>
+			<a>shipping.shippingAddress.firstName</a>
+			<b>shpFirstNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.lastName</a>
+			<b>shpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.addressLine1</a>
+			<b>shpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.shippingAddress.addressLine2</a>
+			<b>shpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.city</a>
+			<b>shpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.state</a>
+			<b>shpState</b>
+		</field>
+
+		<field>
+			<a>shipping.shippingAddress.zip</a>
+			<b>shpZip</b>
+		</field>
+
+		<!-- Shipping address ends -->
+
+
+		<!-- Future Shipping address start -->
+
+		<field>
+			<a>shipping.futureshippingAddress.firstName</a>
+			<b>fuShpFirstNm</b>
+		</field>
+		<field>
+			<a>shipping.futureShippingDateWS</a>
+			<b>fuShpAsOfDate</b>
+		</field>
+		<field>
+			<a>shipping.futureshippingAddress.lastName</a>
+			<b>fuShpLastNm</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine1</a>
+			<b>fuShpAddr1</b>
+		</field>
+
+
+		<field>
+			<a>shipping.futureshippingAddress.addressLine2</a>
+			<b>fuShpAddr2</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.city</a>
+			<b>fuShpCity</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.state</a>
+			<b>fuShpState</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.zip</a>
+			<b>fuShpZip</b>
+		</field>
+
+		<field>
+			<a>shipping.futureshippingAddress.primaryPhone</a>
+			<b>fuShpPhone1</b>
+		</field>
+	    <!-- new added field -->
+		<field>
+			<a>networkAffiliation</a>
+			<b>networkAffiliation</b>
+		</field>
+		<field>
+			<a>prefRegContMeth</a>
+			<b>prefRegContMeth</b>
+		</field>
+
+		<field>
+			<a>prefRegContTime</a>
+			<b>prefRegContTime</b>
+		</field>
+		<field>
+			<a>prefCoregContMeth</a>
+			<b>prefCoregContMeth</b>
+		</field>
+		<field>
+			<a>prefCoregContTime</a>
+			<b>prefCoregContTime</b>
+		</field>
+
+		<field>
+			<a>coRegistrant.coRegEmailFlag</a>
+			<b>coRegEmailFlag</b>
+		</field>
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>signup</a>
+			<b>signup</b>
+		</field>
+		<field>
+			<a>isPublic</a>
+			<b>isPublic</b>
+		</field>
+		<field>
+			<a>affiliateOptIn</a>
+			<b>affiliateOptIn</b>
+		</field>
+		<field>
+			<a>hint</a>
+			<b>hint</b>
+		</field>
+		<field>
+			<a>word</a>
+			<b>word</b>
+		</field>
+		<field>
+			<a>primaryRegistrant.primaryPhone</a>
+			<b>shpPhone1</b>
+		</field>
+		<field>
+			<a>event.college</a>
+			<b>shpCo</b>
+		</field>
+		<field>
+			<a>prefStoreNum</a>
+			<b>prefStoreNum</b>
+		</field>
+		<field>
+			<a>refStoreContactMethod</a>
+			<b>prefStoreContactMethod</b>
+		</field>
+
+		 <field>
+			<a>event.birthDateWS</a>
+			<b>otherDate</b>
+		</field>
+
+
+		<!-- Future Shipping address ends -->
+
+
+	</mapping>
+	<!-- mapping input parameters for forget password start -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.ForgetRegPassRequestVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.ForgetRegistryPasswordDocumentImpl$ForgetRegistryPasswordImpl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>forgetPassRegistryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>forgetPassRegistryEmail</a>
+			<b>emailAddr</b>
+		</field>
+	</mapping>
+	<!-- mapping input parameters for  forget password end -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.bean.GiftRegistryViewBean</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.AddItemsToRegistryDocumentImpl$AddItemsToRegistryImpl</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>sku</a>
+			<b>skus</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>quantity</a>
+			<b>quantities</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.bean.GiftRegistryViewBean</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.AddItemsToRegistry2DocumentImpl$AddItemsToRegistry2Impl</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+
+		<field>
+			<a>sku</a>
+			<b>skus</b>
+		</field>
+
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>quantity</a>
+			<b>quantities</b>
+		</field>
+		<field>
+			<a>refNum</a>
+			<b>referenceIDs</b>
+		</field>
+		<field>
+			<a>itemTypes</a>
+			<b>itemTypes</b>
+		</field>
+		<field>
+			<a>personlizationCodes</a>
+			<b>personlizationCodes</b>
+		</field>
+		<field>
+			<a>personalizationPrices</a>
+			<b>personalizationPrices</b>
+		</field>
+		<field>
+			<a>personalizationDescrips</a>
+			<b>personalizationDescrips</b>
+		</field>
+		<field>
+			<a>personalizedImageUrls</a>
+			<b>personalizedImageUrls</b>
+		</field>
+		<field>
+			<a>personalizedImageUrlThumbs</a>
+			<b>personalizedImageUrlThumbs</b>
+		</field>
+		<field>
+			<a>personalizedMobImageUrls</a>
+			<b>personalizedMobImageUrls</b>
+		</field>
+		<field>
+			<a>personalizedMobImageUrlThumbs</a>
+			<b>personalizedMobImageUrlThumbs</b>
+		</field>
+		<field>
+			<a>assemblySelections</a>
+			<b>assemblySelections</b>
+		</field>
+		<field>
+			<a>itemTypes</a>
+			<b>itemTypes</b>
+		</field>
+		<field>
+			<a>assemblyPrices</a>
+			<b>assemblyPrices</b>
+		</field>
+		<field>
+			<a>ltlDeliveryServices</a>
+			<b>ltlDeliveryServices</b>
+		</field>
+		<field>
+			<a>ltlDeliveryPrices</a>
+			<b>ltlDeliveryPrices</b>
+		</field>
+		<field>
+			<a>customizationPrices</a>
+			<b>customizationPrices</b>
+		</field>
+	</mapping>
+
+	<!-- mapping input parameters for import registry start -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.ImportRegistryDocumentImpl$ImportRegistryImpl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>registryIdWS</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>password</a>
+			<b>password</b>
+		</field>
+		<field>
+			<a>registrantVO.profileId</a>
+			<b>profileID</b>
+		</field>
+		<!--  New Field - 29 March -->
+		<field>
+			<a>registrantVO.email</a>
+			<b>email</b>
+		</field>
+		<field>
+			<a>registrantVO.firstName</a>
+			<b>firstNm</b>
+		</field>
+		<field>
+			<a>registrantVO.lastName</a>
+			<b>lastNm</b>
+		</field>
+		<field>
+			<a>registrantVO.primaryPhone</a>
+			<b>phone1</b>
+		</field>
+		<field>
+			<a>registrantVO.cellPhone</a>
+			<b>phone2</b>
+		</field>
+	</mapping>
+	<!-- mapping input parameters for import registry end -->
+	<!-- Start:mapping response parameters for import registry UnMarshaller -->
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.impl.ImportRegistryResponseDocumentImpl$ImportRegistryResponseImpl</class-a>
+		<class-b>com.bbb.commerce.giftregistry.vo.RegistryResVO</class-b>
+		<field>
+			<a>importRegistryResult.isImportedAsReg</a>
+			<b>importedAsReg</b>
+		</field>
+	</mapping>
+	<!-- End:mapping response parameters for import registry UnMarshaller -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.SetAnnouncementCardCountDocumentImpl$SetAnnouncementCardCountImpl
+		</class-b>
+
+		<!-- Event VO start -->
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+
+
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+
+		<field>
+			<a>registryIdWS</a>
+			<b>registryNum</b>
+		</field>
+
+
+		<field>
+			<a>numRegAnnouncementCards</a>
+			<b>numberOfCards</b>
+		</field>
+	</mapping>
+	<!-- mapping input parameters for updateRegistryItems start -->
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.bean.GiftRegistryViewBean</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.UpdateRegistryItemsDocumentImpl$UpdateRegistryItemsImpl</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>quantity</a>
+			<b>quantities</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>rowId</a>
+			<b>rowIds</b>
+		</field>
+	</mapping>
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.bean.GiftRegistryViewBean</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.UpdateRegistryItems2DocumentImpl$UpdateRegistryItems2Impl</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>quantity</a>
+			<b>quantities</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>rowId</a>
+			<b>rowIds</b>
+		</field>
+		<field>
+			<a>itemTypes</a>
+			<b>itemTypes</b>
+		</field>
+		<field>
+			<a>assemblySelections</a>
+			<b>assemblySelections</b>
+		</field>
+		<field>
+			<a>assemblyPrices</a>
+			<b>assemblyPrices</b>
+		</field>
+		<field>
+			<a>ltlDeliveryServices</a>
+			<b>ltlDeliveryServices</b>
+		</field>
+		<field>
+			<a>ltlDeliveryPrices</a>
+			<b>ltlDeliveryPrices</b>
+		</field>
+	</mapping>
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.GetRegistryInfoDocumentImpl$GetRegistryInfoImpl</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+	</mapping>
+<!-- new webservice giftregistryinfo2 -->
+<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.GetRegistryInfo2DocumentImpl$GetRegistryInfo2Impl</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>registryId</a>
+			<b>registryNum</b>
+		</field>
+	</mapping>
+	<mapping>
+		<class-a>com.bbb.commerce.giftregistry.vo.RegistryReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.impl.LinkCoRegToRegDocumentImpl$LinkCoRegToRegImpl</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+		<field>
+			<a>siteId</a>
+			<b>siteFlag</b>
+		</field>
+		<field>
+			<a>registryIdWS</a>
+			<b>registryNum</b>
+		</field>
+		<field>
+			<a>profileId</a>
+			<b>profileID</b>
+		</field>
+	</mapping>
+	<!-- mapping input parameters for doCoRegToRegLinking ends -->
+
+
+
+		<!-- mapping output parameters for getRegistryInfo start -->
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.impl.GetRegistryInfoResponseDocumentImpl$GetRegistryInfoResponseImpl</class-a>
+		<class-b>com.bbb.commerce.giftregistry.vo.RegistryResVO</class-b>
+
+		<field>
+			<a>getRegistryInfoResult.regHeader.eventType</a>
+			<b>registrySummaryVO.registryType.registryTypeName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regHeader.eventDate</a>
+			<b>registrySummaryVO.eventDate</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.firstName</a>
+			<b>registrySummaryVO.primaryRegistrantFirstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.profileId</a>
+			<b>registrySummaryVO.ownerProfileID</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.email</a>
+			<b>registrySummaryVO.registrantEmail</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.lastName</a>
+			<b>registrySummaryVO.primaryRegistrantLastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.bridalToolkitToken</a>
+			<b>registrySummaryVO.bridalToolkitToken</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.dayPhone</a>
+			<b>registrySummaryVO.primaryRegistrantPrimaryPhoneNum</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.evePhone</a>
+			<b>registrySummaryVO.primaryRegistrantMobileNum</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regHeader.eventDate</a>
+			<b>registryVO.event.eventDate</b>
+		</field>
+		 <field>
+			<a>getRegistryInfoResult.regHeader.regNum</a>
+			<b>registryVO.registryId</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.evePhone</a>
+			<b>registryVO.primaryRegistrant.cellPhone</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.estimateNumGuests</a>
+			<b>registryVO.event.guestCount</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.showerDate</a>
+			<b>registryVO.event.showerDate</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.babyGender</a>
+			<b>registryVO.event.babyGender</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfoResult.BabyName</a>
+			<b>registryVO.event.babyName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.college</a>
+			<b>registryVO.event.college</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.babyNurseryDecorOrTheme</a>
+			<b>registryVO.event.babyNurseryTheme</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.firstName</a>
+			<b>registryVO.primaryRegistrant.firstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.lastName</a>
+			<b>registryVO.primaryRegistrant.lastName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.email</a>
+			<b>registryVO.primaryRegistrant.email</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.dayPhone</a>
+			<b>registryVO.primaryRegistrant.primaryPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.evePhone</a>
+			<b>registryVO.primaryRegistrant.cellPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.babyReMaidenName</a>
+			<b>registryVO.primaryRegistrant.babyMaidenName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.addr1</a>
+			<b>registryVO.primaryRegistrant.contactAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.addr2</a>
+			<b>registryVO.primaryRegistrant.contactAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.city</a>
+			<b>registryVO.primaryRegistrant.contactAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.state</a>
+			<b>registryVO.primaryRegistrant.contactAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regInfo.zip</a>
+			<b>registryVO.primaryRegistrant.contactAddress.zip</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regInfo.affiliateOptIn</a>
+			<b>registryVO.affiliateOptIn</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.firstName</a>
+			<b>registryVO.coRegistrant.firstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.lastName</a>
+			<b>registryVO.coRegistrant.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.babyCoMaidenName</a>
+			<b>registryVO.coRegistrant.babyMaidenName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.email</a>
+			<b>registryVO.coRegistrant.email</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.dayPhone</a>
+			<b>registryVO.coRegistrant.primaryPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.evePhone</a>
+			<b>registryVO.coRegistrant.cellPhone</b>
+		</field>
+
+		<!--  Co Reg Address -->
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.addr1</a>
+			<b>registryVO.coRegistrant.contactAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.addr2</a>
+			<b>registryVO.coRegistrant.contactAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.city</a>
+			<b>registryVO.coRegistrant.contactAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.state</a>
+			<b>registryVO.coRegistrant.contactAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.zip</a>
+			<b>registryVO.coRegistrant.contactAddress.zip</b>
+		</field>
+		<!--  End Co Reg Address -->
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.email</a>
+			<b>registrySummaryVO.coRegistrantEmail</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.firstName</a>
+			<b>registrySummaryVO.coRegistrantFirstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.profileId</a>
+			<b>registrySummaryVO.coownerProfileID</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.coRegInfo.lastName</a>
+			<b>registrySummaryVO.coRegistrantLastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.giftsPurchased</a>
+			<b>registrySummaryVO.giftPurchased</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.giftsRegistered</a>
+			<b>registrySummaryVO.giftRegistered</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.firstNm</a>
+			<b>registrySummaryVO.shippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.LastNm</a>
+			<b>registrySummaryVO.shippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.addr1</a>
+			<b>registrySummaryVO.shippingAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.addr2</a>
+			<b>registrySummaryVO.shippingAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.city</a>
+			<b>registrySummaryVO.shippingAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.state</a>
+			<b>registrySummaryVO.shippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.zip</a>
+			<b>registrySummaryVO.shippingAddress.zip</b>
+		</field>
+
+		<!-- Map shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.firstNm</a>
+			<b>registryVO.shipping.shippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.LastNm</a>
+			<b>registryVO.shipping.shippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.addr1</a>
+			<b>registryVO.shipping.shippingAddress.addressLine1</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.addr2</a>
+			<b>registryVO.shipping.shippingAddress.addressLine2</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.city</a>
+			<b>registryVO.shipping.shippingAddress.city</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.state</a>
+			<b>registryVO.shipping.shippingAddress.state</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.shippingAddr.zip</a>
+			<b>registryVO.shipping.shippingAddress.zip</b>
+		</field>
+		<!-- End Shipping Address   -->
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.firstNm</a>
+			<b>registrySummaryVO.futureShippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.LastNm</a>
+			<b>registrySummaryVO.futureShippingAddress.lastName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.addr1</a>
+			<b>registrySummaryVO.futureShippingAddress.addressLine1</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.addr2</a>
+			<b>registrySummaryVO.futureShippingAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.city</a>
+			<b>registrySummaryVO.futureShippingAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.state</a>
+			<b>registrySummaryVO.futureShippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.zip</a>
+			<b>registrySummaryVO.futureShippingAddress.zip</b>
+		</field>
+
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.firstNm</a>
+			<b>registryVO.shipping.futureshippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.LastNm</a>
+			<b>registryVO.shipping.futureshippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.addr1</a>
+			<b>registryVO.shipping.futureshippingAddress.addressLine1</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.addr2</a>
+			<b>registryVO.shipping.futureshippingAddress.addressLine2</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.city</a>
+			<b>registryVO.shipping.futureshippingAddress.city</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.state</a>
+			<b>registryVO.shipping.futureshippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.zip</a>
+			<b>registryVO.shipping.futureshippingAddress.zip</b>
+		</field>
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfoResult.prefStoreNum</a>
+			<b>registryVO.prefStoreNum</b>
+		</field>
+
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfoResult.prefStoreContactMethod</a>
+			<b>registryVO.refStoreContactMethod</b>
+		</field>
+
+		<!-- Future Shipping Date -->
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.asOfDate</a>
+			<b>registryVO.shipping.futureShippingDate</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.futureShippingAddr.asOfDate</a>
+			<b>registrySummaryVO.futureShippingDate</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regHeader.regNum</a>
+			<b>registrySummaryVO.registryId</b>
+		</field>
+		<field>
+			<a>getRegistryInfoResult.regHeader.eventType</a>
+			<b>registryVO.registryType.registryTypeName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfoResult.regHeader.otherDate</a>
+			<b>registryVO.event.birthDate</b>
+		</field>
+	</mapping>
+	<!-- mapping output parameters for getRegistryInfo ends -->
+
+
+	<!-- mapping output parameters for getRegistryInfo2 start -->
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.impl.GetRegistryInfo2ResponseDocumentImpl$GetRegistryInfo2ResponseImpl</class-a>
+		<class-b>com.bbb.commerce.giftregistry.vo.RegistryResVO</class-b>
+
+		<field>
+			<a>getRegistryInfo2Result.regHeader.eventType</a>
+			<b>registrySummaryVO.registryType.registryTypeName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regHeader.eventDate</a>
+			<b>registrySummaryVO.eventDate</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.firstName</a>
+			<b>registrySummaryVO.primaryRegistrantFirstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.profileId</a>
+			<b>registrySummaryVO.ownerProfileID</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.email</a>
+			<b>registrySummaryVO.registrantEmail</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.lastName</a>
+			<b>registrySummaryVO.primaryRegistrantLastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.bridalToolkitToken</a>
+			<b>registrySummaryVO.bridalToolkitToken</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.dayPhone</a>
+			<b>registrySummaryVO.primaryRegistrantPrimaryPhoneNum</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.evePhone</a>
+			<b>registrySummaryVO.primaryRegistrantMobileNum</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regHeader.eventDate</a>
+			<b>registryVO.event.eventDate</b>
+		</field>
+		 <field>
+			<a>getRegistryInfo2Result.regHeader.regNum</a>
+			<b>registryVO.registryId</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.evePhone</a>
+			<b>registryVO.primaryRegistrant.cellPhone</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.estimateNumGuests</a>
+			<b>registryVO.event.guestCount</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.showerDate</a>
+			<b>registryVO.event.showerDate</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.babyGender</a>
+			<b>registryVO.event.babyGender</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfo2Result.BabyName</a>
+			<b>registryVO.event.babyName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.college</a>
+			<b>registryVO.event.college</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.babyNurseryDecorOrTheme</a>
+			<b>registryVO.event.babyNurseryTheme</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.firstName</a>
+			<b>registryVO.primaryRegistrant.firstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.lastName</a>
+			<b>registryVO.primaryRegistrant.lastName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.email</a>
+			<b>registryVO.primaryRegistrant.email</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.dayPhone</a>
+			<b>registryVO.primaryRegistrant.primaryPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.evePhone</a>
+			<b>registryVO.primaryRegistrant.cellPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.babyReMaidenName</a>
+			<b>registryVO.primaryRegistrant.babyMaidenName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.addr1</a>
+			<b>registryVO.primaryRegistrant.contactAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.addr2</a>
+			<b>registryVO.primaryRegistrant.contactAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.city</a>
+			<b>registryVO.primaryRegistrant.contactAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.state</a>
+			<b>registryVO.primaryRegistrant.contactAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regInfo.zip</a>
+			<b>registryVO.primaryRegistrant.contactAddress.zip</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regInfo.affiliateOptIn</a>
+			<b>registryVO.affiliateOptIn</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.firstName</a>
+			<b>registryVO.coRegistrant.firstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.lastName</a>
+			<b>registryVO.coRegistrant.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.babyCoMaidenName</a>
+			<b>registryVO.coRegistrant.babyMaidenName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.email</a>
+			<b>registryVO.coRegistrant.email</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.dayPhone</a>
+			<b>registryVO.coRegistrant.primaryPhone</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.evePhone</a>
+			<b>registryVO.coRegistrant.cellPhone</b>
+		</field>
+
+		<!--  Co Reg Address -->
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.addr1</a>
+			<b>registryVO.coRegistrant.contactAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.addr2</a>
+			<b>registryVO.coRegistrant.contactAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.city</a>
+			<b>registryVO.coRegistrant.contactAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.state</a>
+			<b>registryVO.coRegistrant.contactAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.zip</a>
+			<b>registryVO.coRegistrant.contactAddress.zip</b>
+		</field>
+		<!--  End Co Reg Address -->
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.email</a>
+			<b>registrySummaryVO.coRegistrantEmail</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.firstName</a>
+			<b>registrySummaryVO.coRegistrantFirstName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.profileId</a>
+			<b>registrySummaryVO.coownerProfileID</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.coRegInfo.lastName</a>
+			<b>registrySummaryVO.coRegistrantLastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.giftsPurchased</a>
+			<b>registrySummaryVO.giftPurchased</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.giftsRegistered</a>
+			<b>registrySummaryVO.giftRegistered</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.firstNm</a>
+			<b>registrySummaryVO.shippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.LastNm</a>
+			<b>registrySummaryVO.shippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.addr1</a>
+			<b>registrySummaryVO.shippingAddress.addressLine1</b>
+		</field>
+
+
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.addr2</a>
+			<b>registrySummaryVO.shippingAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.city</a>
+			<b>registrySummaryVO.shippingAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.state</a>
+			<b>registrySummaryVO.shippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.zip</a>
+			<b>registrySummaryVO.shippingAddress.zip</b>
+		</field>
+
+		<!-- Map shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.firstNm</a>
+			<b>registryVO.shipping.shippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.LastNm</a>
+			<b>registryVO.shipping.shippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.addr1</a>
+			<b>registryVO.shipping.shippingAddress.addressLine1</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.addr2</a>
+			<b>registryVO.shipping.shippingAddress.addressLine2</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.city</a>
+			<b>registryVO.shipping.shippingAddress.city</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.state</a>
+			<b>registryVO.shipping.shippingAddress.state</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.shippingAddr.zip</a>
+			<b>registryVO.shipping.shippingAddress.zip</b>
+		</field>
+		<!-- End Shipping Address   -->
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.firstNm</a>
+			<b>registrySummaryVO.futureShippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.LastNm</a>
+			<b>registrySummaryVO.futureShippingAddress.lastName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.addr1</a>
+			<b>registrySummaryVO.futureShippingAddress.addressLine1</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.addr2</a>
+			<b>registrySummaryVO.futureShippingAddress.addressLine2</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.city</a>
+			<b>registrySummaryVO.futureShippingAddress.city</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.state</a>
+			<b>registrySummaryVO.futureShippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.zip</a>
+			<b>registrySummaryVO.futureShippingAddress.zip</b>
+		</field>
+
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.firstNm</a>
+			<b>registryVO.shipping.futureshippingAddress.firstName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.LastNm</a>
+			<b>registryVO.shipping.futureshippingAddress.lastName</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.addr1</a>
+			<b>registryVO.shipping.futureshippingAddress.addressLine1</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.addr2</a>
+			<b>registryVO.shipping.futureshippingAddress.addressLine2</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.city</a>
+			<b>registryVO.shipping.futureshippingAddress.city</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.state</a>
+			<b>registryVO.shipping.futureshippingAddress.state</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.zip</a>
+			<b>registryVO.shipping.futureshippingAddress.zip</b>
+		</field>
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfo2Result.prefStoreNum</a>
+			<b>registryVO.prefStoreNum</b>
+		</field>
+
+		<!-- Map future shipping Address with RegistryVO -->
+		<field>
+			<a>getRegistryInfo2Result.prefStoreContactMethod</a>
+			<b>registryVO.refStoreContactMethod</b>
+		</field>
+
+		<!-- Future Shipping Date -->
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.asOfDate</a>
+			<b>registryVO.shipping.futureShippingDate</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.futureShippingAddr.asOfDate</a>
+			<b>registrySummaryVO.futureShippingDate</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regHeader.regNum</a>
+			<b>registrySummaryVO.registryId</b>
+		</field>
+		<field>
+			<a>getRegistryInfo2Result.regHeader.eventType</a>
+			<b>registryVO.registryType.registryTypeName</b>
+		</field>
+
+		<field>
+			<a>getRegistryInfo2Result.regHeader.otherDate</a>
+			<b>registryVO.event.birthDate</b>
+		</field>
+	</mapping>
+	<!-- mapping output parameters for getRegistryInfo ends -->
+
+
+</mappings>

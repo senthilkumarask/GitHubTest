@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. 					
+	-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.personalstore.droplet.TestPersonalStoreDroplet">
+		<group id="testPersonalStoreDroplet_GuestUser">
+			<test id="test1">
+				<objs>
+					<obj id="TestPersonalStoreDroplet"
+						type="com.bbb.personalstore.droplet.TestPersonalStoreDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.droplet.TestPersonalStoreDroplet">
+						<item type="string">/com/bbb/personalstore/droplet/PersonalStoreDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testPersonalStoreDroplet_LoggedInUser">
+			<test id="test1">
+				<objs>
+					<obj id="TestPersonalStoreDroplet"
+						type="com.bbb.personalstore.droplet.TestPersonalStoreDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.droplet.TestPersonalStoreDroplet">
+						<item type="string">/com/bbb/personalstore/droplet/PersonalStoreDroplet</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

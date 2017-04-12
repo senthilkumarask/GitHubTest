@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+ATG-Required: BBBStore.envtype.dev1 BBBStore.envtype.dev2 
+ BBBStore.envtype.dev3 BBBStore.envtype.dev4 
+ BBBStore.envtype.dev5 BBBStore.envtype.dev6 BBBStore.envtype.dps BBBStore.envtype.test1 BBBStore.envtype.test2 BBBStore.envtype.test3 BBBStore.envtype.test4 BBBStore.envtype.test5 BBBStore.envtype.sbx1 BBBStore.envtype.sbx2 
+ BBBStore.envtype.bf_dc1 BBBStore.envtype.bf_dc2 BBBStore.envtype.bf_dc3 BBBStore.envtype.bfstg_dc1 BBBStore.envtype.bfstg_dc2 BBBStore.envtype.bfstg_dc3 BBBStore.envtype.prod_dc1 BBBStore.envtype.prod_dc2 BBBStore.envtype.prod_dc3 BBBStore.envtype.prod_dc4 
+ BBBStore.envtype.prodstg_dc1 BBBStore.envtype.prodstg_dc2 BBBStore.envtype.prodstg_dc3 BBBStore.envtype.prodstg_dc4 BBBStore.envtype.tps_dc1 BBBStore.envtype.tps_dc2 BBBStore.envtype.tps_dc3 BBBStore.envtype.tpsstg_dc1 BBBStore.envtype.tpsstg_dc2 BBBStore.envtype.tpsstg_dc3 
+ BBBStore.envtype.uat_dc1 BBBStore.envtype.uat_dc2 BBBStore.envtype.uat_dc3 BBBStore.envtype.uatstg_dc1 BBBStore.envtype.uatstg_dc2 BBBStore.envtype.uatstg_dc3 BBBStore.envtype.lt1

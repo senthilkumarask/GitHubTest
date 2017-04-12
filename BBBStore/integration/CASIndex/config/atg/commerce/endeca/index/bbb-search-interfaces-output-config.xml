@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<item is-document="true" item-descriptor-name="searchableItem">
+	<properties>
+		<property filter="unique" name="id" output-name="P_Endeca.Id" text-searchable="true" type="string"/>
+		</properties>
+</item>

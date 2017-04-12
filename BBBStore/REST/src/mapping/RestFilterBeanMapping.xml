@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.rest.catalog.vo.ProductRestVO</class-a>
+		<class-b>com.bbb.rest.catalog.vo.ProductFilterVO</class-b>
+		<field>
+			<a>productVO.productId</a>
+			<b>productVORest.productId</b>
+		</field>
+		<field>
+			<a>productVO.productBrand.brandId</a>
+			<b>productVORest.productBrand.brandId</b>
+		</field>
+		 <field>
+			<a>productVO.shortDescription</a>
+			<b>productVORest.shortDescription</b>
+		</field>
+		    <field>
+		    <a>productVO.attributesList</a>
+		    <b>productVORest.attributesList</b>
+		    <a-hint>java.util.Map</a-hint>
+		    <b-hint>java.util.Map</b-hint> 
+		  </field>
+		  <field>
+		    <a>productVO.childSKUs</a>
+		    <b>productVORest.childSKUs</b>
+		    <a-hint>java.util.List</a-hint>
+		    <b-hint>java.util.List</b-hint> 
+		  </field>
+	</mapping>	
+</mappings>

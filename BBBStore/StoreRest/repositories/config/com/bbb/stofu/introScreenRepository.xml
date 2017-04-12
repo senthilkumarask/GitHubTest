@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Intro Screen Repository</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     Intro Screen repository -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="IntroScreenTemplate" display-name-resource="IntroScreenTemplate" display-property="channel" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_INTRO_SCRN" type="primary" id-column-name="intro_id">
+		<property name="id" column-name="intro_id" display-name-resource="intro_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="channel" column-name="channel" display-name-resource="channel" item-type="channelInfo" required="true" repository="/com/bbb/channel/ChannelRepository" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="leftText" column-name="left_text" display-name-resource="leftText" data-type="string" category-resource="leftInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+		<property name="rightText" column-name="right_text" display-name-resource="rightText" data-type="string" category-resource="rightInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>		
+		<property name="leftImages" column-name="left_image" display-name-resource="leftImages" item-type="ImageCarousel" category-resource="leftInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="rightImages" column-name="right_image" display-name-resource="rightImages" item-type="ImageCarousel" category-resource="rightInfo" repository="/com/bbb/stofu/CommonRepository">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="leftInstrtext" column-names="left_Instr_text" display-name-resource="leftInstrtext" data-type="big string" category-resource="leftInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		
+		<property name="rightInstrtext" column-names="right_Instr_text" display-name-resource="rightInstrtext" data-type="big string" category-resource="rightInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="7"/>
+		</property>  
+		
+	</table>
+	
+	<table name="BBB_GS_INTRO_SITE" type="multi" id-column-name="intro_id">
+			<property name="sites" column-name="site_id"  display-name-resource="sites" component-item-type="siteConfiguration" data-type="set" repository="/atg/multisite/SiteRepository" category-resource="MasterInfo">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+      	</property>
+     </table>
+  
+     <table name="BBB_GS_INTRO_CH_THEME" type="multi" id-column-name="intro_id">
+			<property name="channelTheme" column-name="channel_theme_id" display-name-resource="channelTheme" component-item-type="channelThemeInfo" data-type="set" repository="/com/bbb/channelTheme/ChannelThemeRepository" category-resource="MasterInfo">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="8" />
+      		</property>
+     </table>
+	
+</item-descriptor>
+ 
+</gsa-template>

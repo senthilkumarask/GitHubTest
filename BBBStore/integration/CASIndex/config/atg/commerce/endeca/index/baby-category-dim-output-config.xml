@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<!--
+  Indexing Dependency Schema for Commerce Catalog Cateogries
+
+  @version $Id: //product/DCS/version/11.1/templates/DCS/Endeca/Index/config/atg/commerce/endeca/index/category-dim-output-config.xml#2 $$Change: 882941 $
+  @updated $DateTime: 2014/04/14 09:42:56 $$Author: jsiddaga $
+-->
+
+<item item-descriptor-name="category" is-document="true">
+  <title property-name="displayName"/>
+  <meta-properties>
+    <property name="dimval.spec" type="string"
+	      output-name="dimval.spec"
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/SpecPropertyAccessor"
+	      is-non-repository-property="true"/>
+    <property name="dimval.qualified_spec" type="string" 
+	      output-name="dimval.qualified_spec"
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/QualifiedSpecPropertyAccessor"
+	      is-non-repository-property="true"/>
+    <property name="$url" suppress="true"/>
+    <property name="$baseUrl" suppress="true"/>
+    <property name="$siteId" output-name="dimval.prop.category.siteId" filter="/atg/commerce/endeca/index/ConcatFilter" />
+    <property name="rootCatalogId"
+	      output-name="dimval.prop.category.rootCatalogId"
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/RootCatalogPropertyAccessor"
+	      is-non-repository-property="true"/>
+    <property name="ancestorCatalogIds"
+	      output-name="dimval.prop.category.ancestorCatalogIds"
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/AncestorCatalogsPropertyAccessor"
+	      is-non-repository-property="true"/>
+    <property name="$repository.repositoryName" suppress="true"/>
+    <property name="$itemDescriptor.itemDescriptorName" suppress="true"/>
+
+    <property name="dimval.dimension_spec" type="string" 
+	      output-name="dimval.dimension_spec" 
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/DimensionSpecPropertyAccessor"
+	      default-value="product.parentNode.id"
+	      is-non-repository-property="true"/>
+    <property name="dimval.parent_spec" type="string"
+	      property-accessor="/atg/commerce/endeca/index/accessor/baby/ParentSpecPropertyAccessor"
+	      output-name="dimval.parent_spec"
+	      is-non-repository-property="true" />
+	<property name="$repositoryId" output-name="dimval.prop.category.repositoryId" />
+	<property name="phantomCategory" output-name="phantom_category" type="boolean"/>
+	<property name="college" output-name="is_college" type="boolean"/>
+	<property name="nodeType" output-name="node_type" type="string"/>
+	<property name="$repositoryId" output-name="node.dvalid"/>
+	  
+    <!-- override $sideId output name, since it's irritatingly defined as
+         having an explicit output name. -->
+  </meta-properties>
+  <text-properties>
+    <property name="displayName" output-name="dimval.display_name"/>
+    
+<!--    <property name="description"/> -->
+<!--    <property name="longDescription"/> -->
+    <property name="keywords" filter="concat" suppress="true"/>
+    <property name="fixedChildCategories" filter="concat" suppress="true"/>
+    <property name="childCategoryGroup" filter="concat" suppress="true"/>
+    <property name="childCategories" filter="concat" suppress="true"/>
+  </text-properties>
+
+  <item property-name="parentCategoriesForCatalog">
+    <meta-properties>
+      <property name="$repositoryId" suppress="true"/>      
+      <property name="$repository.repositoryName" suppress="true"/>      
+      <property name="$itemDescriptor.itemDescriptorName" type="string" filter="unique" suppress="true"/>
+    </meta-properties>
+    <monitor>
+      <!-- monitor repository id, since it goes into CategoryParentPropertyAccessor -->
+      <property name="$repositoryId"/>
+    </monitor>
+  </item>
+
+  <item property-name="parentCatalog">
+    <meta-properties>
+      <property name="$repositoryId" suppress="true"/> 
+      <property name="$repository.repositoryName" suppress="true"/>      
+      <property name="$itemDescriptor.itemDescriptorName" suppress="true"/>
+    </meta-properties>
+    <monitor>
+      <!-- monitor repository id, since it goes into CategoryParentPropertyAccessor -->
+      <property name="$repositoryId"/>
+    </monitor>
+  </item>
+
+  <item is-multi="true" property-name="catalogs">
+    <meta-properties>
+      <property name="$repositoryId" output-name="dimval.prop.category.catalogs.repositoryId" filter="/atg/commerce/endeca/index/ConcatFilter" /> 
+      <property name="$repository.repositoryName" suppress="true"/>      
+      <property name="$itemDescriptor.itemDescriptorName" suppress="true"/>
+    </meta-properties>
+  </item>
+
+</item>
+
+<!-- @version $Id: //product/DCS/version/11.1/templates/DCS/Endeca/Index/config/atg/commerce/endeca/index/category-dim-output-config.xml#2 $$Change: 882941 $ -->
+

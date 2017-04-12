@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_ORDERFEED_NehaJain_2Jan2012">
+  <ReviewIssue id="GWZ6HAT1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:44:21:301 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:45:17:349 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="120">src/com/bbb/commerce/order/feeds/OrderFeedMessageListener.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Make a new Queue</Summary>
+    <Description>When it goes for testing we might not be able to test everything on same queue. </Description>
+    <Annotation>Make a new queue. We cannot test all messages on same queue</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6JJN7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:46:06:067 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:46:35:011 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="161">src/com/bbb/commerce/order/feeds/OrderFeedMessageListener.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>don't have both logDebug and logError</Summary>
+    <Description>Have only logError and you also need to check if(isLoggingError()) before logerror. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6L3LK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:47:18:584 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:47:49:914 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="25">src/com/bbb/commerce/order/feeds/OrderFeedTestQueue.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Get XML from component</Summary>
+    <Description>Get XML from component. Atleast that way tomorrow we will be able to check for other orders too. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6M4KR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:48:06:507 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:48:19:419 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="33">src/com/bbb/commerce/order/feeds/OrderFeedVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add it in constants</Summary>
+    <Description>Define this in BBBCoreConstants</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6NXD2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:49:30:470 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:50:12:342 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="66">src/com/bbb/commerce/order/feeds/OrderStatusUpdateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Too many times XML logged</Summary>
+    <Description>Overall there are multiple times the same XML is logged. So have it logged only once or may be twice. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6Q53T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:51:13:817 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:51:48:921 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="149">src/com/bbb/commerce/order/feeds/OrderStatusUpdateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Method too big</Summary>
+    <Description>See if you can split the methods in to multiple sub methods as the logic has become a lot in this method and maintainability will be a problem</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ6WVCE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:56:27:758 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:57:30:746 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="172">src/com/bbb/commerce/order/feeds/OrderStatusUpdateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Curly brace in same line</Summary>
+    <Description>This is a general low priority comment. Generally if write if statements as 
+if(condition) {
+}
+
+but you write as 
+
+if(condition)
+{//curly brace should be inline with if-statement
+}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ70BS1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 22:59:09:025 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:01:18:884 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="62">src/com/bbb/commerce/order/feeds/OrderStatusUpdateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Don't throw exception from here. handle it here</Summary>
+    <Description>This method should not have throws class. All the exceptions should be handled here than in the listener class. Because this is your business class and all your business logic will be here. The Listener class just listens and sends the message to the business layer. Whatever are the exceptions should be handled here. I am thinking is it better to send a notification of all the orders whose order status update failed once processing is complete. This notification can be enabled or disabled through component property. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWZ87F6W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:32:39:656 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-03 :: 23:33:17:859 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra_Karamcheti</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="62">src/com/bbb/commerce/order/feeds/OrderStatusUpdateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Run PMD</Summary>
+    <Description>Run PMD once. This method has a huge NPath complexity number. Main reason is because there is too much code in this method and too many conditions. We need to split this up. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

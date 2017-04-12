@@ -1,0 +1,55 @@
+#/com/bbb/commerce/catalog/BBBCatalogTools
+$class=com.bbb.commerce.catalog.BBBCatalogToolsImpl
+$scope=global
+siteRepository=/atg/multisite/SiteRepository
+shippingRepository=/com/bbb/commerce/shipping/ShippingRepository
+catalogRepository=/atg/commerce/catalog/ProductCatalog
+configureRepository=/com/bbb/configurekeys/ConfigureKeys
+promotionRepository=/atg/commerce/pricing/Promotions
+schoolRepository=/com/bbb/selfservice/repository/SchoolRepository
+schoolVerRepository=/com/bbb/selfservice/repository/SchoolVerRepository
+bazaarVoiceRepository=/com/bbb/commerce/BazaarVoice/BazaarVoiceRepository
+couponRepository=/com/bbb/commerce/promotion/CouponRuleRepository
+attributeInfoRepository=/atg/commerce/catalog/ProductCatalog
+inventoryManager=/atg/commerce/inventory/InventoryManager
+shippingCostRqlQuery=shipMethodCode EQUALS IGNORECASE ?0 and site = ?1 and giftCard=1
+maxClearanceProducts=50
+loggingDebug=false
+loggingError=true
+rollUpSkuPropertyMap=color=color,size=size,finish=color
+shippingFeeRqlQuery=shipMethodCode EQUALS IGNORECASE ?0 and site = ?1 and state= ?2
+shippingFeeRqlQueryForNullState=shipMethodCode EQUALS IGNORECASE ?0 and site = ?1 and state is null
+thresholdQuery=skuId =?0 and siteId = ?1
+promotionQuery=bbbCoupons=?0
+registryTypeQuery=registryTypeCode=?0
+collegeCategoryQuery=id=?0 and college=1
+giftCertProductQuery=giftCertProduct=1 and (collection=1 or leadPrd=1)
+collegeQuery=college=?0
+bopusEligibleStateQuery=bopus=1
+bopusInEligibleStoreQuery=bopus=false and storeType=?0
+priceListManager=/atg/commerce/pricing/priceLists/PriceListManager
+profilePriceListPropertyName=priceList
+defaultLocale=en_US
+storeRepository=/com/bbb/selfservice/repository/StoreRepository
+canadaStoresQuery=storeType=50
+maxProductsPerCollegeKey=maxProductsPerCollege
+configType=ContentCatalogKeys
+collegeConfigKey=rootCollegeId
+collegeConfigKeyCanada=rootCollegeIdCanada
+regCatRepo=/com/bbb/commerce/catalog/repository/RegCatalogMapRepository
+couponRuleQuery=skuid=?0 and entryCode=?1
+couponVendorQuery=vendorId=?0  and entryCode=?1
+couponJdaQuery=jdaDeptId=?0 and entryCode=?1
+othersCatKey=DefaultCategoryForRegistry
+shipGrpFreeShipAttrMap=3g=10_1,2a=10_2,1a=10_3
+rebateKey=rebateKey
+freeShipAttrShipGrpMap=10_1=3g,10_2=2a,10_3=1a
+environmentIdentifier=/com/bbb/commerce/catalog/EnvironmentIdentifier
+idgen=/atg/dynamo/service/IdGenerator
+exceptionalDeliveryDateStatesList=AK,HI
+stateNoOfDaysThanNormalMap=AK=2,HI=2
+specialPurchaseAttrID=1_106
+beyondValueAttrID=1_127
+clearenceAttrID=1_4
+zipCodeSaperater=,
+prop65AttributesList=prop65Crystal,prop65Lighting,prop65Dinnerware,prop65Other

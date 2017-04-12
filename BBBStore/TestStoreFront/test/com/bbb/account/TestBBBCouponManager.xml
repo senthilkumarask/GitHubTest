@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBCouponManager">
+       <group id="testProcessCoupon">
+        <test id="testProcessCoupon">
+			<objs>
+				<obj id="droplet" type="com.bbb.selfservice.droplet.ProcessCouponDroplet" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBCouponManager">
+					<item type="string">/com/bbb/selfservice/ProcessCouponDroplet</item>
+				</obj>				
+				<obj id="entryCd" type="string">ONLBBB110215</obj>
+				<obj id="serviceName" type="string">processCoupon</obj>
+				<obj id="siteId" type="string">id = ?0</obj>
+				<obj id="siteFlag" type="string">1</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="emailAddr" type="string">MAILME.TEST40@REDIFFMAIL.COM</obj>
+				<obj id="requestType" type="string">status</obj>	
+				<obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>														
+			</objs>			 
+        </test>
+      </group>        
+    </cluster>
+</ddtunit>
+

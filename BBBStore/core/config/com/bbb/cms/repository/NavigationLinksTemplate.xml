@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+        <name>Navigation Links</name>
+        <author></author>
+    </header>
+
+	<item-descriptor name="navigationLinks" cache-mode="simple" display-property="id" display-name-resource="navigationLinks" item-cache-size="50" query-cache-size="50">
+      <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+      
+      	<table name="BBB_NAVIGATION_LINKS" type="primary" id-column-name="nav_link_id">
+      
+      	<property name="id" column-name="nav_link_id" display-name-resource="nav_link_id" writable="true" >
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration"  
+        		repository="/atg/multisite/SiteRepository">
+            <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="1"/>
+        </property>
+		
+        </table>
+        
+       <table name="BBB_NAVIGATION_LINKS_BANNER" type="multi" multi-column-name="sequence_num" id-column-names="nav_link_id" >
+      	<property name="homeBanner" column-name="home_banner_id" data-type="list" display-name-resource="homeBanner" component-item-type="banner" repository="/com/bbb/cms/repository/WSHomePageTemplate" >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+       </table>
+      
+      </item-descriptor>
+      
+</gsa-template>

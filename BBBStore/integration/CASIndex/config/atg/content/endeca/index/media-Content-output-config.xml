@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<!--
+  Indexing Dependency Schema for Endeca Integration
+
+  @version $Id: //product/ContentMgmt/version/11.1/Endeca/Index/src/config/atg/content/endeca/index/mediaContent-output-config.xml#3 $$Change: 886143 $
+  @updated $DateTime: 2014/04/30 09:24:52 $$Author: jsiddaga $
+-->
+<item item-descriptor-name="bbbOtherMedia" is-document="true">
+  <title property-name="Media"/>
+  <properties>
+    <property name="id" output-name="P_Media_ID" text-searchable="true" type="string"/>
+    <property name="product" output-name="P_Product_ID" text-searchable="true" type="string"/>
+    <property name="widget" is-dimension="false" output-name="P_Video_Location" text-searchable="true" type="string"/>
+	<property name="mediaDescription" is-dimension="false" output-name="P_Video_Metadata" text-searchable="true" type="string"/>
+    <property name="mediaTranscript" is-dimension="false" output-name="P_Video_Transcript" text-searchable="true" type="string"/>
+	<property name="sites" output-name="Site_ID" is-dimension="true" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/MediaSiteIdAccessor"/>
+	<property name="Record Type" is-non-repository-property="true" output-name="Record Type" type="string" is-dimension="true" default-value="Media" property-accessor="null" autogen-dimension-values="true"/>
+	<property name="SearchMerchandisingPages" is-non-repository-property="true" output-name="MerchandisingPages_Search" default-value="Search" property-accessor="null"/>
+	<property name="$url"    type="string"   suppress="true"/>
+	<property name="$baseUrl"    type="string"   suppress="true"/>
+	<property name="$repositoryId" suppress="true"/>
+	<property name="$repository.repositoryName" suppress="true"/>
+	<property name="$itemDescriptor.itemDescriptorName" suppress="true"/>
+  </properties>
+</item>
+
+<!-- @version $Id: //product/ContentMgmt/version/11.1/Endeca/Index/src/config/atg/content/endeca/index/mediaContent-output-config.xml#3 $$Change: 886143 $-->

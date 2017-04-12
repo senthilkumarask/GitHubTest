@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler">
+       <group id="testGeneratePurgeQuery">
+        <test id="testGeneratePurgeQuery">
+			<objs>
+				<obj id="bbbpurgeorderscheduler" type="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler">
+					<item type="string">/com/bbb/commerce/order/scheduler/BBBPurgeSubmittedOrderScheduler</item>
+				</obj>		
+				<obj id="ordermanager" type="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler">
+					<item type="string">/atg/commerce/order/OrderManager</item>
+				</obj>	
+				<obj id="milliseconds" type="string">
+					63113904000
+				</obj>
+				<obj id="daysToPurge" type="Integer">
+					1825
+				</obj>		
+				<obj id="myDate" hint="date" type="java.util.Date" dateformat="EEE MMM dd HH:mm:ss yyyy">
+					Thu May 06 10:11:12 2007
+				</obj>			
+			</objs>			 
+        </test>       
+      </group>           
+    </cluster>
+</ddtunit>
+

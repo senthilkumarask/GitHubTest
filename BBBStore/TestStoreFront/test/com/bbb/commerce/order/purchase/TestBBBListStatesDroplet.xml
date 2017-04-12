@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.purchase.TestBBBListStatesDroplet">
+       <group id="testService">
+        <test id="testService">
+			<objs>										
+				<obj id="bbbListStatesDroplet" type="com.bbb.commerce.order.purchase.BBBListStatesDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBListStatesDroplet">
+					<item type="string">/com/bbb/commerce/shipping/droplet/ListStatesDroplet</item>
+				</obj>				
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+			</objs>			 
+        </test>
+      </group>       
+    </cluster>
+</ddtunit>
+

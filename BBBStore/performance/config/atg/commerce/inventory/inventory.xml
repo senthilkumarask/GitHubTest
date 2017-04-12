@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>Inventory SQL Repository</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+
+	<item-descriptor name="inventory" xml-combine="append"
+		cache-mode="disabled" query-cache-size="0" item-cache-size="0">
+	</item-descriptor>
+
+	<item-descriptor name="inventoryTranslation"
+		cache-mode="disabled" query-cache-size="0" item-cache-size="0">
+	</item-descriptor>
+	
+	<item-descriptor name="cachedInventory" xml-combine="append"
+		cache-mode="simple" item-cache-size="200000" query-cache-size="200000" item-expire-timeout="1800000" query-expire-timeout="1800000">
+	</item-descriptor>
+
+	<item-descriptor name="cachedInventoryTranslation"
+		cache-mode="simple" item-cache-size="200000" query-cache-size="200000" item-expire-timeout="1800000" query-expire-timeout="1800000">
+	</item-descriptor>
+
+	<!-- Commented as part of BBBSL-3018
+	
+	<item-descriptor name="inventoryFeed"
+		last-modified-property="lastUpdated" cache-mode="distributedJMS">
+	</item-descriptor> -->
+</gsa-template>

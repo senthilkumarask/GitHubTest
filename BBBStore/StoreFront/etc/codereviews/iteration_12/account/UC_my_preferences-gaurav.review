@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_my_preferences">
+  <ReviewIssue id="GYE25GZM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:19:25:954 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-02-08 :: 13:20:01:232 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav</ReviewerId>
+    <AssignedTo>lokesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove hardcoding of hhURL and take from configuration repository</Summary>
+    <Description>hhURL=http://bedbathandbeyond:7003/store/account/testwebservice.jsp - take from configuration repository</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 sp1 (x64) (http://www.altova.com) by Neha (sap) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="sku" type="skuType">
+		<xs:annotation>
+			<xs:documentation>Main root node</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="skuType">
+		<xs:sequence>
+			<xs:element name="skuProperties" type="skuDetail" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for sku details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skuDetail">
+		<xs:sequence>
+			<xs:element name="ltlFlag" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Is SKU LTL flag</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sku id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="creationDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>creation date of the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuEnableDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Enable date of the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isGiftCertsku" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the sku a gift certificate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="smallImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mediumImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>medium image associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="largeImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>medium image associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="swatchImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>swatchimage associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="thumbNailImage" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zoomImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zoomIndex" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="jdaDept" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>jda department </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="jdaSubDept" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Jda sub Department</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="jdaClass" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Jda class</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="color" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>color of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="colorGroup" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>color group of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="size" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>size of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vdcSkuMessage" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>vdc sku message</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vdcSkuType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>vdc sku type</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="upc" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>upc</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eComFulfillment" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ecom fulfillment</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vendorId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>vendor id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="onsale" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>if sku is  on sale or not</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="collegeId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>college id associated with sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emailOutOfStock" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>if mail is to be sent when sku is out of stock</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="giftWrapEligible" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>gift wrap eligible or not</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="bopusExclusion" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is sku excluded for buy online pick up from store</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuTaxStatus" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>tax status of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prop65Flags" type="prop65Type" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>brands for the product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="siteSpecificDetails" type="siteSKUSpecificType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>sku attributes that are specific to the site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="prop65Type">
+		<xs:sequence>
+			<xs:element name="prop65Lighting" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Prop65 flag for lighting</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prop65Crystal" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Prop65 flag for Crystal</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prop65Dinnerware" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Prop65 flag for Dinnerware</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prop65Other" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Prop65 flag for Others</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="siteSKUSpecificType">
+		<xs:sequence>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Site Id for which the site specific properties are applicable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="displayName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>display name of the sku </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isActiveSku" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the sku active.enabled for display</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the sku </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="longDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>long description associated with the sku </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="listPrice" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>list price of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="salePrice" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sale price of sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="skuAttributes" type="skuAttributesType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>attributes defined for sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shippingSurcharge" type="xs:double" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>shipping surcharge </xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="skuRebates" type="rebatesDetails" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>sku rebates</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nonShippableStates" type="statesDetails" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>states to which sku is non shippable</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eligibleShipMethods" type="shippingDetails" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>shipping methods that are applicable for sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="freeShipMethods" type="shippingDetails" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>shipping methods that are free for skut</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="skuAttributesType">
+		<xs:sequence>
+			<xs:element name="attributeId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sku attribute Id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attributeDisplayName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sku attribute display name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attributeStartDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation> attribute start date for the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attributeEndDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation> attribute end date for the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="placeHolder" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>place holder that will decide where the attribute will reside on page</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="priority" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>priority of the attribute </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attrImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>attribute  image url</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="attrActionURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>attribute  action URL</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="rebatesDetails">
+		<xs:sequence>
+			<xs:element name="rebateId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>rebate id for the sku</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rebateDescrip" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the rebate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rebateURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>url of the rebate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rebateStartDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>start date of the rebate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rebateEndDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>end date of the rebate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="shippingDetails">
+		<xs:sequence>
+			<xs:element name="shipMethodId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ship method id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shipMethodName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ship method name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shipMethodDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ship method description</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="minDaysToShip" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>min days required to ship</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="maxDaysToShip" type="xs:int" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>max days required to ship</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cutOffTime" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>cut off time to submit order so thatshipping processing starts on current date itself.After cut off time is exceeded processing will start next day</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="statesDetails">
+		<xs:sequence>
+			<xs:element name="stateCode" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>state code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="stateName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>state name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="countryCd" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>country code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="bopus" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>bopus flag</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

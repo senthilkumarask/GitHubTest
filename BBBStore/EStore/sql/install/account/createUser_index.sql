@@ -1,0 +1,1 @@
+CREATE INDEX BBB_DPS_USER_user_idx ON BBB_DPS_USER(user_id);

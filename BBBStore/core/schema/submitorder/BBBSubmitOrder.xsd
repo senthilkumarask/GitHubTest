@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created with Liquid XML 2014 Designer Edition 12.0.3.4958 (http://www.liquid-technologies.com)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified">
+   <xs:element name="orders">
+      <xs:annotation>
+         <xs:documentation>Multiple orders will be sent in one message.</xs:documentation>
+         <xs:documentation>Version - 20160525</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="order" type="OrderType" maxOccurs="2" />
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+   <xs:simpleType name="OrderTypes">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="DELIVERY" />
+         <xs:enumeration value="BOPUS" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:simpleType name="PaymentTypes">
+      <xs:restriction base="xs:string">
+         <xs:enumeration value="CREDIT_CARD" />
+         <xs:enumeration value="GIFT_CARD" />
+         <xs:enumeration value="PAYPAL" />
+         <xs:enumeration value="POS" />
+      </xs:restriction>
+   </xs:simpleType>
+   <xs:complexType name="OrderType">
+      <xs:sequence>
+         <xs:element name="orderInfo" type="OrderInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the header level
+						information of an order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderPriceInfo" type="OrderPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the order level pricing
+						information</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderTaxInfo" type="TaxInfoType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the tax info of an order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="billingAddress" type="AddressType">
+            <xs:annotation>
+               <xs:documentation>Structure for billing address information</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shipmentList" type="ShipmentListType">
+            <xs:annotation>
+               <xs:documentation>Structure for the details of shipping group in an order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="paymentList" type="PaymentListType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Structure for the details of payment group in an order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="OrderInfoType">
+      <xs:sequence>
+         <xs:element name="atgOrderId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>OrderId generated in the ATG system.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderNumber" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>BBB Order Number</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderType" type="OrderTypes">
+            <xs:annotation>
+               <xs:documentation>Order Type [ONLINE, BOPUS]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderDate" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation>The order submission date.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="atgProfileId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>This is atg profile Id of the user who submitted the order.
+						We will pass for all orders, but if user placed an order as guest and didn't register,
+						any lookup to ATG system for that profileId will return NO_DATA_FOUND.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="mbrNum" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>OPTIONAL, NOT AVAILABLE for Annonymous and Non Legacy user</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ipAddress" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>IP address of the user placed the order.
+						The IPAddress will be the remote addr from request.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="siteId">
+            <xs:annotation>
+               <xs:documentation>One of the siteId configured in ATG Site configuration</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="BedBathUS" />
+                  <xs:enumeration value="BedBathCanada" />
+                  <xs:enumeration value="BuyBuyBaby" />
+                  <xs:enumeration value="TBSBedBathUS" />
+                  <xs:enumeration value="TBSBedBathBaby" />
+                  <xs:enumeration value="TBSBedBathCanada" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="currencyCode" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>USD for US sites and CAD for .ca site</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="USD" />
+                  <xs:enumeration value="CAD" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="cartCreate" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>cartCreate is the channel that created the order upon the first add to cart (MOBILE/DESKTOP)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="cartFinal" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>cartFinal is the channel that closed the order status (MOBILE/DESKTOP)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="salesOS" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>sales OS is OS through which order placed</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="schoolPromo" type="SchoolPromoType" minOccurs="0" />
+         <xs:element name="affiliate" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Affiliate name in case user has placed has order through affiliate referral</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="OrderInfoAttr" type="OrderInfoAttrType" minOccurs="0" />
+         <xs:element name="taxExemptId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>taxExemptId is used for processing BorderFree orders and required for DS to process orders without domestic sales tax</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="emailSignUp" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>This structure defines if the customer requested for email sign up during checkout</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="tbsStoreNo" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Store Number of the order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SchoolPromoType">
+      <xs:sequence>
+         <xs:element name="schoolID" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>SchoolID.
+						The SchoolID will be from school specific URL.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="promoCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>promoCode.
+						The promoCode is the coupon code, This coupon contains school promotion.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="OrderPriceInfoType">
+      <xs:sequence>
+         <xs:element name="orderTotal" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Total amount of the order (BOPUS + ONLINE).   	
+						Includes Items total + Shipping + Surcharge (Item + Delivery)+ GiftWrapCost + Assembly Fee + Tax</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="totalShipping" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total shipping amount for all shipping groups, will include surcharge also.
+						OPTIONAL, For BOPUS ONLY ORDER this will not be available.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="totalSurcharge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total surcharge for all shipping groups. OPTIONAL, For BOPUS ONLY ORDER this will not be available.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="totalGiftWrapCost" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total gift wrap cost for all shipping groups. OPTIONAL, For BOPUS ONLY ORDER this will not be available.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adjustmentList" type="AdjustmentListType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>All order level adjustments are prorated with items and will be passed with item price,
+						this will empty. Keeping it for future purpose.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="totalDeliveryCharge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This is the total delivery charge on the order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="TaxInfoType">
+      <xs:sequence>
+         <xs:element name="totalTax" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total tax for the order (Since there is no tax for BOPUS, it will just be ONLINE part).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="cityTax" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>break-up of total tax into city tax.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="countyTax" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>break-up of total tax into county tax</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="districtTax" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>break-up of total tax into district tax.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="stateTax" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>break-up of total tax into state tax</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="AddressType">
+      <xs:sequence>
+         <xs:element name="firstName" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>First Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="middleName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>OPTIONAL Middle Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="lastName" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Last Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="companyName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>OPTIONAL Company Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="emailAddress" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Email</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="homePhoneNumber" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Customer Home Phone Number</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="workPhoneNumber" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Customer Work Phone Number</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="addressLine1" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Address Line 1</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="addressLine2" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Address Line 2.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="city" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>City Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="state" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>State (APO/FPO)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="zipCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Zip, Zip + 4, Postal Code</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="countryCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Country</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ShipmentListType">
+      <xs:sequence>
+         <xs:element name="shipmentInfo" type="ShipmentInfoType" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PaymentListType">
+      <xs:sequence>
+         <xs:element name="paymentInfo" type="PaymentInfoType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ItemListType">
+      <xs:sequence>
+         <xs:element name="item" type="ItemType" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="AdjustmentListType">
+      <xs:sequence>
+         <xs:element name="adjustment" type="AdjustmentType" maxOccurs="unbounded" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="AdjustmentType">
+      <xs:sequence>
+         <xs:element name="atgPromotionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>ATG Promotion Id of the promotion applied.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="couponCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Coupon Code for this discount.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="discountAmount" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>The discount due the promotion.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adjustmentDesc" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Adjustment description from ATG</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adjustmentType" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Adjustment Type from ATG. e.g. Order Discount - Amount Off</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceOverrideReasonCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the reason for the item price override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceOverrideCompetitor" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the competitor for the item price override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceOverride" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - New price of the item after overriding</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingFeeOverrideReasonCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the reason for the Shipping fee override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingFeeOverrideCompetitor" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the competitor for the shipping fee override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shipFeeOverride" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - New shipping fee after overriding</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemSurchargeOverrideReasonCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the reason for the item surcharge override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemSurchargeOverrideCompetitor" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the competitor for the item surcharge override.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemSurchargeOverride" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - New surcharge of the item after overriding</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+		 <xs:element name="assemblyFeeOverrideReasonCode" type="xs:string" minOccurs="0"> 
+            <xs:annotation> 
+               <xs:documentation>TBS Next - Holds the reason for the assembly fee override.</xs:documentation> 
+            </xs:annotation> 
+         </xs:element> 
+         <xs:element name="assemblyFeeOverrideCompetitor" type="xs:string" minOccurs="0"> 
+            <xs:annotation> 
+               <xs:documentation>TBS Next - Holds the competitor for the assembly fee override.</xs:documentation> 
+            </xs:annotation> 
+         </xs:element> 
+         <xs:element name="assemblyFeeOverride" type="xs:decimal" minOccurs="0"> 
+            <xs:annotation> 
+               <xs:documentation>TBS Next - New assembly fee of the item after overriding</xs:documentation> 
+            </xs:annotation> 
+         </xs:element> 
+	</xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ShipmentInfoType">
+      <xs:sequence>
+         <xs:element name="atgShippingGroupId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Shipping Group Id to uniquely indentify a shipment for order status.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="subTotal" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Shipping Group Subtotal, sum of all items amount in this group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:sequence>
+            <xs:annotation>
+               <xs:documentation>For normal shipping orders, a shipment can be of type to-be-shipped or store pick-up but for SDD Order we will have both Shipping Info and Store Info</xs:documentation>
+            </xs:annotation>
+            <xs:element name="shippingInfo" type="ShippingInfoType" minOccurs="0"/>
+            <xs:element name="storeInfo" type="StoreInfoType"  minOccurs="0" />
+         </xs:sequence>
+         <xs:element name="itemList" type="ItemListType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for items in a shipment</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="trackingNumber" type="xs:string" minOccurs="0"> 
+           <xs:annotation><xs:documentation>Shipment tracking number to reference delivery status from the 3rd Party system. </xs:documentation> 
+           </xs:annotation> 
+        </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ShippingInfoType">
+      <xs:sequence>
+         <xs:element name="shippingMethod" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Shipping method [Standard - 3g, Express - 1a, Expedited - 2b, Curbside - LC, Threshold - LT, Room of Choice - LR, WhiteGlove = LW, Same Day Delivery - SDD].</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shipOnDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Hold the shipment until the given date</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="registryId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Registry Id if address is registry address.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingAddress" type="AddressType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for shipping
+						address</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingPriceInfo" type="ShippingPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for price
+						details at shipping group level</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:choice>
+            <xs:element name="taxCalculationFailure" type="xs:boolean">
+               <xs:annotation>
+                  <xs:documentation>Indicates if the tax calculation was a success or failure</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="taxInfo" type="TaxInfoType" minOccurs="0">
+               <xs:annotation>
+                  <xs:documentation>Total tax of this shipping group.</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+         <xs:element name="giftInfo" type="GiftInfoType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total tax of this shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GiftInfoType">
+      <xs:sequence>
+         <xs:element name="message" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>OPTIONAL gift message.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="charge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>OPTIONAL Gift Wrap Charge.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="skuId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Gift Wrap SkuId.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="giftTaxInfo" type="TaxInfoType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total tax of this shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ShippingPriceInfoType">
+      <xs:sequence>
+         <xs:element name="shippingRawAmount" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Shipping amount, which includes surcharge.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingAmount" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Shipping amount, which includes surcharge.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="surcharge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Raw total surcharge for this shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="finalSurcharge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Final total surcharge for this shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shipDeliverySurcharge" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Final total delivery surcharge on the ship group</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="shippingTaxInfo" type="TaxInfoType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total tax of this shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adjustmentList" type="AdjustmentListType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for the shipping promotion applied. [FREE SHIP OVER $49]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="StoreInfoType">
+      <xs:sequence>
+         <xs:element name="storeId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Store Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="storeAddress" type="StoreAddressType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Structure for store address information</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PaymentInfoType">
+      <xs:sequence>
+         <xs:element name="paymentId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>ATG Payment Group Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="paymentType" type="PaymentTypes">
+            <xs:annotation>
+               <xs:documentation>Payment Type [CREDIT_CARD, GIFT_CARD]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="amount" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>The amount paid by this payment method.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:choice>
+            <xs:annotation>
+               <xs:documentation>Payment method used by user for order, it can be credit card or gift card.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="creditCardInfo" type="CreditCardInfoType" />
+            <xs:element name="giftCardInfo" type="GiftCardInfoType" />
+            <xs:element name="payPalInfo" type="PayPalInfoType" />
+			<xs:element name="posInfo" type="PosInfoType" />
+         </xs:choice>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="CreditCardInfoType">
+      <xs:sequence>
+         <xs:element name="nameOnCreditCard" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Card holder's name on credit card</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="creditCardType" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Credit Card Type.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="creditCardNumber" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Credit Card Number.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="expiration" type="xs:gYearMonth">
+            <xs:annotation>
+               <xs:documentation>Credit Card expiration date</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:choice>
+            <xs:element name="ccAuthInfo" type="CCAuthInfoType">
+               <xs:annotation>
+                  <xs:documentation>This structure defines the fields for credit card auth response from cybersource</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+            <xs:element name="ccAuthError" type="CCAuthErrorType">
+               <xs:annotation>
+                  <xs:documentation>This structure defines the fields for credit card auth error response from cybersource</xs:documentation>
+               </xs:annotation>
+            </xs:element>
+         </xs:choice>
+         <xs:element name="cc3DSecureInfo" type="CC3DSecureInfoType" minOccurs="0" />
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="CCAuthInfoType">
+      <xs:sequence>
+         <xs:element name="requestId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>The requestId from cybersource response.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authTime" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation>The auth time from cybersource response.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>The auth code from cybersource response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="avsCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>The avs code from cybersource response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authAmount" type="xs:double">
+            <xs:annotation>
+               <xs:documentation>The amount authorized in cybersource response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authResponseRecord" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Cybersource response record</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="CCAuthErrorType">
+      <xs:sequence>
+         <xs:element name="requestId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>The requestId from cybersource response.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authTime" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation>The auth time from cybersource response.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authError" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Cybersource Auth error response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GiftCardInfoType">
+      <xs:sequence>
+         <xs:element name="giftCardNumber" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Gift Card entered by user.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="pin" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Gift Card PIN entered by user.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="gcAuthInfo" type="GCAuthInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the redeem call response from Value Link</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="GCAuthInfoType">
+      <xs:sequence>
+         <xs:element name="authTime" type="xs:dateTime">
+            <xs:annotation>
+               <xs:documentation>The authorization date/time.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Auth Code from Value Link Redeem response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="traceNumber" type="xs:integer" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Trace Number from Value Link  Redeem response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="previousBalance" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>DO WE REALLY NEED THIS??</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="responseCode" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>Response Code from Value Link Redeem response</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ItemType">
+      <xs:sequence>
+         <xs:element name="atgCommerceItemId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>ATG Commerce Item Id</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sku" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>sku Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="quantity" type="xs:integer">
+            <xs:annotation>
+               <xs:documentation>Item quantity</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="registryId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Registry Id if item is added from registry</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="freeShipping" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>IF Free shipping method as per the sku attribute is same as user selected shipping method Then Y ELSE N.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:enumeration value="Y" />
+                  <xs:enumeration value="N" />
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+         <xs:element name="surchargeAmount" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>IF the FREE_SHIPPING_FLAG is Y, then this will be $0, else it will be sku surcharge. This is total surcharge of all the quantities of this item.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="taxCD" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This value will be retrieve from Catalog for the sku</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="isGiftCard" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
+            <xs:annotation>
+               <xs:documentation>This structure defines the sku is a gift cart or not</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="jdaDeptNum" minOccurs="0" maxOccurs="1" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>This structure defines the jda department name of a sku</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="isVdcInd" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
+            <xs:annotation>
+               <xs:documentation>This structure defines the sku is a vdc or not</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceInfo" type="ItemPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for item priceInfo</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ecoFee" type="EcoFeeType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for ECO Fee associated with this item</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="isLtlInd" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>This structure defines the sku is a LTL item or not</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="isAssemblyInd" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>This structure defines if the customer request assembly for this item</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="assemblyFee" type="AssemblyFeeType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for Assembly Fee associated with this item</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="deliverySurcharge" type="ShipSurchargeType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the delivery surcharge on the item</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="prodRatedDeliverySurcharge" type="ShipSurchargeType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>This structure defines the pro rated delivery surcharge on the item</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="estimatedFromDeliveryDate" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Estimated Delivery date range - From</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="estimatedToDeliveryDate" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Estimated Delivery date range - To</xs:documentation>
+            </xs:annotation>
+      </xs:element>
+         <xs:element name="externalCart" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Identifier for Kirsch and CMO items</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="configId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - For Kirsch and CMO products</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="presentedLeadTime" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Holds the estimated delivery time presented to the customer</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+ 		 <xs:element name="isPcInd" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>PC - Indicator for personalization/ Customization is true or false </xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="pcInfo" type="PcInfoType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>PC - Indicator of type of personalization ()</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ItemPriceInfoType">
+      <xs:sequence>
+         <xs:element name="unitPrice" type="xs:decimal" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Unit price for the item.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="totalAmount" type="xs:decimal">
+            <xs:annotation>
+               <xs:documentation>Total item amount for the all quantity.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+			<xs:element name="vendorCost" type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+				   <xs:documentation>TBS Next - For Kirsch and CMO orders / PC - to send vendor cost</xs:documentation>
+				</xs:annotation>
+			 </xs:element>
+			 <xs:element name="pcUnitCost" type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+				   <xs:documentation>PC - Cost from vendor</xs:documentation>
+				</xs:annotation>
+			 </xs:element>
+			 <xs:element name="pcUnitPrice" type="xs:decimal" minOccurs="0">
+				<xs:annotation>
+				   <xs:documentation>PC - Price for actual personalization provided by vendor</xs:documentation>
+				</xs:annotation>
+			 </xs:element>
+		 <xs:element name="itemTaxInfo" type="TaxInfoType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Total tax of this item in the shipping group.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="adjustmentList" type="AdjustmentListType" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Item level promotion applied to these items [20% OFF HEI]</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="EcoFeeType">
+      <xs:sequence>
+         <xs:element name="sku" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>sku Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceInfo" type="ItemPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for item priceInfo</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="AssemblyFeeType">
+      <xs:sequence>
+         <xs:element name="sku" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>sku Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceInfo" type="ItemPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for item priceInfo</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="ShipSurchargeType">
+      <xs:sequence>
+         <xs:element name="sku" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>sku Id.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="itemPriceInfo" type="ItemPriceInfoType">
+            <xs:annotation>
+               <xs:documentation>This structure defines the fields for item priceInfo</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="StoreAddressType">
+      <xs:sequence>
+         <xs:element name="storeName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Store Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="storeDescription" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Store Description</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="address" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Store Address</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="city" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>City Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="state" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>State (APO/FPO)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="zipCode" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Zip, Zip + 4, Postal Code</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="country" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Country</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="storePhoneNumber" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Store Phone Number</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="satStoreTimings" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Saturday Store Timings</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sunStoreTimings" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Sunday Store Timings</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="weekdaysStoreTimings" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Weekdays Store Timings</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="OrderInfoAttrType">
+      <xs:sequence>
+         <xs:element name="deviceFingerprint" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>generated value obtained for device fingerprinting pixels</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="verifiedMilitaryStatus" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>military status verified by third party service</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="verifiedMilitaryLastName" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>last name used for military verification status</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="orderIdentifier" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Indicates the source for the orders</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="storeAssociateId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Store associate who submits the order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="approverId" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Overrides approver Id</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PayPalInfoType">
+      <xs:sequence>
+         <xs:element name="orderTimeStamp" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>timestamp when the paypal authorization was obtained</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authTimeStamp" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>timestamp when the order was placed with paypal</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalPayerId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>paypal payer id numeric value</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalPayerEmail" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>paypal payer email account used to generate the payment</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalOrderId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>order id value supplied by paypal</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalInvoiceId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>invoice id provided to paypal which should match the bbby order id</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalTransactionId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>paypal transaction string value</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalCorelationId" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>paypal correlation id which use to troubleshoot a specific paypal transaction</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalUserVerified" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Paypal buyer is verified</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalShippingVerified" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>paypal shipping address is verified</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalSellerProtection" type="xs:string">
+            <xs:annotation>
+               <xs:documentation>order is eligible for payal seller protection</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="payPalBillingAddressUsed" type="xs:boolean" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>the paypal supplied billing address was used in this order</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PosInfoType">
+      <xs:sequence>
+        <xs:element name="posPayment" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>TBS Next - Identifier for POS payment</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="CC3DSecureInfoType">
+      <xs:sequence>
+         <xs:element name="xid" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Transaction identifier</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="eciFlag" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>electronic  commerce indicator or override flag</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="cavvUCAF" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Carholder authenication verification value (VbV) or universal cardholder authentication field (SecureCode)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="ecomIndicator" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>ecommerce indicator text string</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="enrollmentStatus" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Holds the 3DSecure status of enrollment</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="authenticationStatus" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Holds the 3DSecure status of authentication</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="signatureStatus" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>Holds the 3DSecure status of signature</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+	<xs:complexType name="PcInfoType">
+      <xs:sequence>
+         <xs:element name="referenceId" type="xs:string" minOccurs="1">
+            <xs:annotation>
+               <xs:documentation>PC - Provided by the vendor</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+		 <xs:element name="pcType" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Holds the item type value</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="vendorConfiguratorName" type="xs:string" minOccurs="1">
+            <xs:annotation>
+               <xs:documentation>PC - Vendor Configurator Name</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="imageUrlSmall" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Holds the URL for small image</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="imageUrlLarge" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Holds the URL for large image</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="pcDescription" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Personalization Description</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="serviceType" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Type of customization</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="metaDataFlag" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>PC - Metadata indicator</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="metaDataUrl" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - URL to get the metadata</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="moderationFlag" type="xs:boolean" minOccurs="0" default="false">
+            <xs:annotation>
+               <xs:documentation>PC - Moderation Flag (Y/N)</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="moderationUrl" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - URL to get the moderation status</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Home Page template for Mobile Device</name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- HomePage for Mobile -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="homeScreenMD"
+		display-name-resource="homeScreenTemplate" display-property="channel"
+		cache-mode="simple">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_MOB_HOME_SCR" type="primary" id-column-name="homescreen_template_id">
+
+			<property name="id" column-name="homescreen_template_id"
+				display-name-resource="homeScreenTemplateId" writable="true"
+				category-resource="Master">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+			</property>
+
+			<property name="channel" column-name="channel"
+				display-name-resource="channel" item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository"
+				category-resource="Master">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+
+		</table>
+
+		<table name="BBB_MOB_HOME_SITES" type="multi" id-column-names="homescreen_template_id">
+			<property name="sites" column-name="site_id"
+				display-name-resource="appSites" category-resource="Master"
+				component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository"
+				required="true" data-type="set">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+		</table>
+
+		<table name="BBB_HOME_IMG_LIST" type="multi"
+			id-column-names="homescreen_template_id" multi-column-name="sequence_num">
+			<property name="carouselImageElement" column-names="home_image_id"
+				display-name-resource="carouselImageElement" data-type="list"
+				component-item-type="carouselImageElement" category-resource="Master">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+
+	</item-descriptor>
+
+	<item-descriptor name="carouselElement"
+		display-name-resource="carouselElement" display-property="carouselElementName"
+		cache-mode="simple" sub-type-property="type">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_HOME_CAROUSEL_CONT" type="primary"
+			id-column-name="carousel_content_id">
+			<property name="id" column-name="carousel_content_id"
+				display-name-resource="carouselElementId" writable="true"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+			</property>
+			<property name="type" column-name="carousel_content_type"
+				display-name-resource="carouselElementType" data-type="enumerated" default="Web URL"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="uiwritable" value="true" />
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Web URL" code="0" />
+				<option value="Image" code="1" />
+				<option value="Video" code="2" />
+				<option value="Article" code="3" />
+				<option value="ImageGrid" code="4" />
+				<option value="Scan" code="5" />
+				<option value="QR" code="6" />
+			</property>
+			<property name="carouselElementName" column-name="carousel_content_name"
+				display-name-resource="carouselElementName" writable="true"
+				category-resource="Carousel" data-type="string" required="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="carouselElementTitle" column-name="carousel_content_title"
+				display-name-resource="carouselElementTitle" data-type="string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+			</property>
+			<property name="carouselElementDesc" column-name="carousel_content_desc"
+				display-name-resource="carouselElementDesc" data-type="big string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+			<property name="carouselElementUrl" column-name="carousel_content_url"
+				display-name-resource="carouselElementUrl" data-type="string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="carouselImageElement"
+		display-name-resource="carouselImageElement" cache-mode="simple" super-type="carouselElement"
+		sub-type-value="Image">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+
+			<property name="imageAltText" column-name="image_alt_text"
+				display-name-resource="imageAltText" data-type="string"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+			<property name="targetContentType" column-name="target_content_type"
+				display-name-resource="targetContentType" item-type="carouselElement"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="carouselVideoElement"
+		display-name-resource="carouselVideoElement" cache-mode="simple" super-type="carouselElement"
+		sub-type-value="Video">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+		<property name="videoButtonLabel" column-name="button_label"
+				display-name-resource="videoButtonLabel" data-type="string"
+				category-resource="Video">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+			
+		<property name="videoButtonAction" column-name="target_content_type"
+				display-name-resource="videoButtonAction" item-type="carouselElement"
+				category-resource="Video">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="carouselArticleElement"
+		display-name-resource="carouselArticleElement" cache-mode="simple" super-type="carouselElement"
+		sub-type-value="Article">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+
+			<property name="articleText" column-name="article_text"
+				display-name-resource="articleText" data-type="big string"
+				category-resource="Article">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+		</table>
+	</item-descriptor>
+	
+	<item-descriptor name="carouselImageGridElement" display-name-resource="carouselImageGridElement" cache-mode="simple" super-type="carouselElement" 
+	sub-type-value="ImageGrid">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+		
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+		<property name="largeImg" column-name="large_img"
+				display-name-resource="largeImg" writable="true" item-type="carouselImageElement" category-resource="ImageGrid">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+		<property name="imgGridShortDesc" column-name="img_grid_short_desc"
+				display-name-resource="imgGridDesc" writable="true" data-type="string" category-resource="ImageGrid">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+		</property>
+		<property name="ImageGridButtonLabel" column-name="button_label"
+				display-name-resource="ImageGridButtonLabel" data-type="string"
+				category-resource="ImageGrid">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+			
+		<property name="imageGridButtonAction" column-name="target_content_type"
+				display-name-resource="imageGridButtonAction" item-type="carouselElement"
+				category-resource="ImageGrid">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+		
+		<table name="BBB_IMAGE_LIST" type="multi" multi-column-name="sequence_num"
+			id-column-names="carousel_content_id">
+			<property name="imageList" column-name="img_id" data-type="list"
+				display-name-resource="imageList" component-item-type="carouselImageElement" category-resource="ImageGrid">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="carouselScanElement"
+		display-name-resource="carouselScanElement" cache-mode="simple" super-type="carouselElement"
+		sub-type-value="Scan">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+
+			<property name="webViewEvent" column-name="web_view_event"
+				display-name-resource="Web View Event" data-type="string"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+			<property name="browserLinkToNative" column-name="browser_link_to_native"
+				display-name-resource="Browser Link To Native" data-type="string"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="carouselQRElement"
+		display-name-resource="carouselQRElement" cache-mode="simple" super-type="carouselElement"
+		sub-type-value="QR">
+		<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+
+		<table name="BBB_CAROUSEL_ELEMENT" type="auxiliary" id-column-name="carousel_content_id">
+
+			<property name="webViewEvent" column-name="web_view_event"
+				display-name-resource="Web View Event" data-type="string"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+			<property name="browserLinkToNative" column-name="browser_link_to_native"
+				display-name-resource="Browser Link To Native" data-type="string"
+				category-resource="Image">
+				<attribute name="resourceBundle" value="com.bbb.cms.MDHomeTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+
+		</table>
+	</item-descriptor>
+</gsa-template>

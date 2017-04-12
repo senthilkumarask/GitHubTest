@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="cartCheckout_GiftWrap_codereview_Sunil">
+  <ReviewIssue id="GW1H7LZB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:40:35:015 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 11:22:49:296 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="528">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add more logDebug &amp; PerformanceLogger and NOT NULL check</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1H9YT5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:42:24:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 11:25:43:766 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="537">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We have to pass siteId to catalog API to get the sku and productId</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HBI8S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:43:36:796 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 11:18:54:358 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="556">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add more logDebug and Not Null check in addGiftWrap and removeGiftWrap method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HCIAZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:44:23:531 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:49:58:585 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="568">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Instead of hardcoding in this class, add the API and catalogUtil and remove data from there.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HDYAX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:45:30:921 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:49:47:578 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="562">src/com/bbb/commerce/order/purchase/BBBPurchaseProcessHelper.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add JavaDocs also</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HEPCW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:46:05:984 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:49:37:914 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="732">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This method is supposed be called from Multi-Ship To Page, so we have to loop thru the ShippingInfoBean to get all the ShippingGroupId</Summary>
+    <Description>This is open as of now since single shipping is working on BBBShippingInfoBean object and it is not an array as of now. This can only be handled once we have multi shipping functionality implemented.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HLW8S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:51:41:500 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:47:27:098 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="754">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>RepriceOrder is not called after GiftWrap modifications</Summary>
+    <Description>The repriceOrder call has made as part of handle shipping address.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HMI2D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:52:09:781 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:45:55:399 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="759">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>For all exceptions, add SystemError message and redirect user to system error page using checkFormRedirect. Use logError(message, e) method instead of logError (message);</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HODDJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:53:37:015 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:45:38:584 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="759">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add more debug statement</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW1HOOWH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 08:53:51:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:45:20:577 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="738">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>See handleChangeStoreToOnline for how the handle method should be written, it should have ensureTransaction, RepeatingRequestMonitor and synchronized block.</Summary>
+    <Description>This is done as a part of handle shipping address, we have just added a block over there. So may not required to set these checks again.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22D2EJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:32:41:515 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:44:00:757 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="735">src/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>How are we handling single shipping page GiftMessaging</Summary>
+    <Description>We are setting the gift message in the BBBShippingInfoBean and then setting into the shipping group special instructions map.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22DOOM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:33:10:390 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:42:07:692 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="81">src/com/bbb/commerce/order/droplet/GiftWrapGreetingsDroplet.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>When are we getting catalog API</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22EIFT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:33:48:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:41:52:917 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="77">src/com/bbb/commerce/order/droplet/GiftWrapGreetingsDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We don't need OUTPUT_START &amp; OUTPUT_END, if you want to use it, then extend the droplet from ForEach and implements getArray Method</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22NV36">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:41:05:250 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:40:02:220 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="2">src/com/bbb/commerce/order/droplet/GiftWrapCheckDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Input to this droplet should also be ShippingGroup, which we should pass from both single/multi shipping</Summary>
+    <Description>Fixed</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22OYBH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:41:56:093 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:39:39:388 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="2">src/com/bbb/commerce/order/droplet/GiftWrapCheckDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We should only work on the shipping group passed as input, no need to get it from order.</Summary>
+    <Description>Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22R0B4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:43:31:984 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 10:39:17:086 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="89">src/com/bbb/commerce/order/droplet/GiftWrapCheckDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>If isGiftWrap is true, then call catalog API to get giftWrap charge, set the giftwrap price and service output param and come out of the for loop.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW22TG50">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-11 :: 18:45:25:812 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-14 :: 11:25:23:488 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>asit kumar</ReviewerId>
+    <AssignedTo>asit kumar</AssignedTo>
+    <File line="89">src/com/bbb/commerce/order/droplet/GiftWrapCheckDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Java docs are wrong</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

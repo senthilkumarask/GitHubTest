@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestGSProductDetails.xml 
+	DESCRIPTION: ddtunit data file for TestGSProductDetails.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.stofu.TestGSMultipleProductDetails">
+		<group id="testMultipleProductDetails">
+			 
+			<test id="TestProductDetail_test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-show-rest-paths" type="string">false</obj>
+					<obj id="multipleProductDetails" type="string">/rest/bean/com/bbb/store/catalog/BBBGSCatalogToolsImpl/getMultipleProductDetails</obj>					 
+					<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440","productId":"1013499098","categoryId":"12262"}]}</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testMultipleProductDetailsProductErr">
+			 
+			<test id="TestProductDetail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-show-rest-paths" type="string">false</obj>
+					<obj id="multipleProductDetails" type="string">/rest/bean/com/bbb/store/catalog/BBBGSCatalogToolsImpl/getMultipleProductDetails</obj>											 
+					<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991a","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440","productId":"1013499098","categoryId":"12262"}]}</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testMultipleProductDetailsSkuErr">
+			 
+			<test id="TestProductDetail_test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-show-rest-paths" type="string">false</obj>
+					<obj id="multipleProductDetails" type="string">/rest/bean/com/bbb/store/catalog/BBBGSCatalogToolsImpl/getMultipleProductDetails</obj>											 
+					<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440a","productId":"1013499098","categoryId":"12262"}]}</obj>
+				</objs>
+				 
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

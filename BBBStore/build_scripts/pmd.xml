@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project name="Run PMD" default="executePMD" basedir=".">
+
+<property name="src.dir" location="" />
+<property name="tempbuild" location=""/>
+<property name="pmdOutput" location=""/>
+<property name="build.path" location=""/>
+<property name="pmdConfig" location=""
+<!--<property name="dir.rulesets" location="rulesets" />-->
+
+<path id="pmd.classpath">
+    <pathelement location="${build.path}"/>
+    <fileset dir="/path/to/my/pmd/lib/">
+        <include name="*.jar"/>
+    </fileset>
+</path>
+
+<target name="executePMD" description="Runs PMD on Code" depends="compile">
+  <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath" /> 
+  <pmd rulesetfiles="pmd_rule.xml" shortFilenames="true" targetjdk="1.5">
+	<formatter type="html" toFile="${tempbuild}/pmd_report.html" toConsole="true"/>
+	<formatter type="xml" toFile="${tempbuild}/pmd_report.xml"/>
+	<fileset dir="${src.dir}">
+		<include name="**/*.java" /> 
+		<exclude name="**/folder to exclude/*.java" />
+	</fileset>
+  </pmd>
+</target>
+
+<xslt in="${tempbuild}/pmd_report.xml" style="${pmdConfig}/wz-pmd-report.xslt" out="${pmdOutput}/$report_pmd.html" />
+
+</project>

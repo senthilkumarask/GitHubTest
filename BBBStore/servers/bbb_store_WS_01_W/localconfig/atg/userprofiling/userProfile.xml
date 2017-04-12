@@ -1,0 +1,41 @@
+<gsa-template xml-combine="append">
+	<header>
+		<name>Webservices JVM Related Changes</name>
+		<author>Sapient</author>
+		<version>1</version>
+	</header>
+	<item-descriptor name="user" xml-combine="append" cache-mode="disabled">
+		<table name="dps_user" id-column-name="id" type="primary" shared-table-sequence="1">
+			<property column-name="first_name" data-type="string" name="firstName" cache-mode="disabled" />
+			<property column-name="last_name" data-type="string" name="lastName" cache-mode="disabled" />
+			<property column-name="email" data-type="string" name="email" cache-mode="disabled" />
+		</table>
+
+		<table name="dps_user_address" id-column-name="id" type="auxiliary"	shared-table-sequence="1">
+			<property column-name="shipping_addr_id" item-type="contactInfo" name="shippingAddress" cache-mode="disabled" />
+			<property column-name="billing_addr_id" item-type="contactInfo" name="billingAddress" cache-mode="disabled" />
+		</table>
+
+		<table name="BBB_DPS_USER" id-column-name="user_id" type="auxiliary">
+			<property column-name="phone_number" data-type="string" name="phoneNumber" cache-mode="disabled" />
+			<property column-name="mobile_number" data-type="string" name="mobileNumber" cache-mode="disabled" />
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="contactInfo" xml-combine="append" cache-mode="disabled">
+	</item-descriptor>
+
+	<item-descriptor name="mailing" xml-combine="append">
+		<table name="dps_email_address" id-column-name="mailing_id"	type="multi" shared-table-sequence="1">
+			<property column-name="email_address" data-type="list" name="emailAddresses" component-data-type="string" cache-mode="disabled" />
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="userSiteAssoc" xml-combine="append" cache-mode="disabled">
+		<table id-column-names="user_site_id" name="BBB_USER_SITE_ASSOC" type="primary">
+			<property column-name="emailoptin" data-type="int" name="emailoptin" cache-mode="disabled" />
+		</table>
+	</item-descriptor>
+
+</gsa-template>
+

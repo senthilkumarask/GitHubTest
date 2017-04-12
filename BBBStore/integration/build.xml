@@ -1,0 +1,274 @@
+<project name="Integration" default="build" basedir=".">
+
+   <property file="../build_scripts/build.properties" />
+
+        <path id="dynamo.classpath">
+        <fileset dir="${dynamo.home}/../DAS/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../DAS-UI/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../DPS/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../DSS/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../DCS/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../CyberSourceIntegration/lib">
+            <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../CyberSourceIntegration/TaxAddressVerification/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../CyberSourceIntegration/FraudManagementBase/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/lib">
+                <include name="**/*.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../CyberSourceIntegration/CreditCard/PaymentTokenization/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<!-- Start included for Assembler classes -->
+        <fileset dir="${basedir}/../hotfix">
+                <include name="p21119099_111_v1_lib.jar" />
+        </fileset>
+        <fileset dir="${dynamo.home}/../DAF/Endeca/Assembler/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<!-- End for Assembler classes -->
+		<!-- Start included for Accessor classes implementations -->
+		<fileset dir="${dynamo.home}/../DAF/Endeca/Index/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<fileset dir="${dynamo.home}/../DAF/Endeca/Base/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<fileset dir="${dynamo.home}/../DAF/Search/Base/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<fileset dir="${dynamo.home}/../DAF/Search/Index/lib">
+                <include name="**/*.jar" />
+        </fileset>
+		<!-- end -->		
+        </path>
+
+        <path id="bbb.estore">
+                <fileset dir="../EStore/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+
+
+        <path id="java.classpath">
+                <fileset dir="${JAVA_HOME}/lib">
+                        <include name="*.jar" />
+                </fileset>
+                <fileset dir="${JAVA_HOME}/jre/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+
+        <path id="bbb.core">
+                <fileset dir="../core/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+
+        <path id="bbb.qas">
+                <fileset dir="../integration/qas/lib">
+                <include name="**/*" />
+                 </fileset>
+                <pathelement location="../integration/qas/lib"/>
+                <pathelement location="../integration/qas/lib/atg/qas"/>
+        </path>
+
+		<path id="bbb.tbsqas">
+			<fileset dir="../integration/tbsqas/lib">
+                <include name="*.jar" />
+			 </fileset>
+        </path>
+
+		<path id="bbb.idm">
+			<fileset dir="../integration/idm/lib">
+                <include name="*.jar" />
+			 </fileset>
+        </path>
+        <path id="bbb.valuelink">
+                <fileset dir="../integration/valuelink/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+        <path id="bbb.endeca">
+                <fileset dir="../integration/endeca/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+        <path id="bbb.webservices">
+                <fileset dir="../integration/webservices/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+		<path id="bbb.vendorsearch">
+                <fileset dir="../integration/vendorsearch/lib">
+                        <include name="*.jar" />
+                </fileset>
+        </path>
+
+
+  <target name="build" depends="clean,compile,copy,jar"/>
+
+  <!-- Clean the build environment -->
+  <target name="clean">
+        <delete dir="${basedir}/cybersource/classes/com" />
+        <delete dir="cybersource/lib/cybersource.jar" />
+
+        <delete dir="${basedir}/endeca/classes/com" />
+        <delete dir="endeca/lib/endeca.jar" />
+        
+        <delete dir="${basedir}/CASIndex/classes/com" />
+        <delete dir="endeca/lib/CASIndex.jar" />
+
+        <delete dir="${basedir}/giftregistry/classes/com" />
+        <delete dir="giftregistry/lib/giftregistry.jar" />
+
+        <delete dir="${basedir}/oms/classes/com" />
+        <delete dir="oms/lib/oms.jar" />
+
+        <delete dir="${basedir}/valuelink/classes/com" />
+        <delete dir="valuelink/lib/valuelink.jar" />
+
+        <delete dir="${basedir}/webservices/classes/com" />
+        <delete dir="webservices/lib/webservices.jar" />
+		
+		<delete dir="${basedir}/vendorsearch/classes/com" />
+        <delete dir="vendorsearch/lib/vendorsearch.jar" />
+  </target>
+
+  <!-- Compiling all the integration modules -->
+  <target name="compile" >
+    <javac srcdir="cybersource/src" destdir="cybersource/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+    </javac>
+        <javac srcdir="endeca/src" destdir="endeca/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.endeca" />
+        </javac>
+		<javac srcdir="vendorsearch/src" destdir="vendorsearch/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.vendorsearch" />
+        </javac>
+       <!--<javac srcdir="CASIndex/src" destdir="CASIndex/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+	  <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.endeca" />
+          <classpath refid="bbb.estore" />
+        </javac>-->
+        <javac srcdir="giftregistry/src" destdir="giftregistry/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+       </javac>
+        <javac srcdir="oms/src" destdir="oms/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+    </javac>
+        <javac srcdir="valuelink/src" destdir="valuelink/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.valuelink" />
+    </javac>
+    <javac srcdir="webservices/src" destdir="webservices/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+      	  <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.webservices" />
+    </javac>
+    <javac srcdir="qas/src" destdir="qas/classes" fork="no" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+          <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.estore" />
+          <classpath refid="bbb.qas" />
+    </javac>
+	 <javac srcdir="tbsqas/src" destdir="tbsqas/classes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+	  <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.estore" />
+          <classpath refid="bbb.tbsqas" />
+    </javac>
+	 <javac srcdir="idm/src" destdir="idm/classes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+          <classpath refid="java.classpath" />
+	  <classpath refid="dynamo.classpath" />
+          <classpath refid="bbb.core" />
+          <classpath refid="bbb.idm" />
+    </javac>
+
+  </target>
+
+  <!-- Copying all the files except java files from src to classes folder -->
+  <target name="copy"  description="copy all files from src">
+        <copy todir="cybersource/classes">
+                      <fileset dir="cybersource/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="endeca/classes">
+                      <fileset dir="endeca/src" excludes="**/*.java"/>
+        </copy>
+		<copy todir="vendorsearch/classes">
+			<fileset dir="vendorsearch/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="CASIndex/classes">
+                      <fileset dir="CASIndex/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="giftregistry/classes">
+                      <fileset dir="giftregistry/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="oms/classes">
+                      <fileset dir="oms/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="valuelink/classes">
+                      <fileset dir="valuelink/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="webservices/classes">
+                      <fileset dir="webservices/src" excludes="**/*.java"/>
+        </copy>
+        <copy todir="qas/classes">
+                      <fileset dir="qas/src" excludes="**/*.java"/>
+        </copy>
+		<copy todir="tbsqas/classes">
+			  <fileset dir="tbsqas/src" excludes="**/*.java"/>
+        </copy>
+		<copy todir="idm/classes">
+			  <fileset dir="idm/src" excludes="**/*.java"/>
+        </copy>
+  </target>
+
+  <!-- creating individual jars for 9 modules in integration -->
+  <target name="jar" >
+        <jar jarfile="cybersource/lib/cybersource.jar" basedir="cybersource/classes"/>
+        <jar jarfile="endeca/lib/endeca.jar" basedir="endeca/classes"/>
+		<jar jarfile="vendorsearch/lib/vendorsearch.jar" basedir="vendorsearch/classes"/>
+        <jar jarfile="giftregistry/lib/giftregistry.jar" basedir="giftregistry/classes"/>
+        <jar jarfile="oms/lib/oms.jar" basedir="oms/classes"/>
+        <jar jarfile="valuelink/lib/valuelink.jar" basedir="valuelink/classes"/>
+        <jar jarfile="webservices/lib/webservices.jar" basedir="webservices/classes"/>
+        <jar jarfile="qas/lib/qas.jar" basedir="qas/classes"/>
+	<jar jarfile="tbsqas/lib/tbsqas.jar" basedir="tbsqas/classes"/>
+	<jar jarfile="idm/lib/idm.jar" basedir="idm/classes"/>
+  </target>
+
+</project>

@@ -1,0 +1,41 @@
+<gsa-template xml-combine="append">
+
+	<header>
+		<name>BBB Custom Pricing Models</name>
+		<author></author>
+		<version>$Revision: #1 $</version>
+	</header>
+
+	<item-descriptor display-name-resource="itemDescriptorPromotion" cache-mode="simple" name="promotion" xml-combine="append">
+		<table name="BBB_PROMO_MAPPING" type="auxiliary" id-column-names="promotion_id">
+			<property name="bbbCoupons" column-names="bbb_coupon_id" display-name="bbbcoupons" data-type="string" />
+			<property name="activationText" column-names="ACTIVATION_TEXT" display-name="COUPON ACTIVATION TEXT" data-type="big string" />
+			<property name="activatedText" column-names="ACTIVATED_TEXT" display-name="COUPON ACTIVATED TEXT" data-type="big string" />
+			<property name="tandc" column-names="TANDC_TEXT" display-name="TERMS CONDITION TEXT" data-type="big string" />
+		</table>
+		<table name="dcs_promotion" id-column-name="promotion_id" type="primary" shared-table-sequence="1">
+			<property expert="false" readable="true" category-resource="categoryBasics" display-name-resource="pmdlVersion" writable="true" cache-mode="inherit" column-name="pmdl_version"
+				default="2" data-type="int" hidden="true" name="pmdlVersion" required="false" queryable="true">
+				<attribute name="propertySortPriority" value="100" />
+			</property>
+			<property expert="false" readable="true" category-resource="categoryBasics" column-name="promotion_type" display-name="Discount Type Detail" data-type="enumerated"
+				hidden="false" writable="false" name="typeDetail" required="false" cache-mode="inherit" queryable="true">
+				<option value="Item Discount" code="0" />
+				<option value="Item Discount - Percent Off" code="1" />
+				<option value="Item Discount - Amount Off" code="2" />
+				<option value="Item Discount - Fixed Price" code="3" />
+				<option value="Shipping Discount" code="5" />
+				<option value="Shipping Discount - Percent Off" code="6" />
+				<option value="Shipping Discount - Amount Off" code="7" />
+				<option value="Shipping Discount - Fixed Price" code="8" />
+				<option value="Order Discount" code="9" />
+				<option value="Order Discount - Percent Off" code="10" />
+				<option value="Order Discount - Amount Off" code="11" />
+				<option value="Order Discount - Fixed Price" code="12" />
+				<attribute name="uiwritable" value="false" />
+				<attribute name="useCodeForValue" value="false" />
+				<attribute name="propertySortPriority" value="100" />
+			</property>
+		</table>
+	</item-descriptor>
+</gsa-template>

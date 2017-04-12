@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_FB_ATG_Profile_2011_11_17_amit_lakra">
+  <ReviewIssue id="GVD52ELC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 07:54:08:544 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:12:52:297 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="100">src/com/bbb/social/facebook/api/FBGraph.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Standard interface and implementation class naming convention</Summary>
+    <Description>I am seeing different naming conventions for example most of the places Impl is used in implementation files however here IF is used for the interface file and no Impl is used.
+
+Suggestion is to make this consistent.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVD52L0R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 07:54:16:875 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:12:56:553 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="8">src/com/bbb/social/facebook/api/vo/EmployerVO.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This Class is not needed</Summary>
+    <Description>Per the Social Integration BRD Education is not to be stored. I would suggest removing this class. Also remove the code to load it and its reference from FBWorkVO.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVD52RER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 07:54:25:155 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 11:12:23:924 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="45">src/com/bbb/social/facebook/api/FBGraph.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use JSON instead of GSON</Summary>
+    <Description>JSON has been used for Store Locator stuff also. That library also offers the similar method which could receive the JSON respone and create objects from it. Therefore I would suggest using the same library here also.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

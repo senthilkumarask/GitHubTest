@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftCardListDroplet.xml
+
+  DESCRIPTION: ddtunit data file for RollUpListDroplet.java test case
+
+  HISTORY:
+  Dec 28, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.droplet.TestGiftRegistryFetchProductIdDroplet">
+       <group id="testService">
+        <test id="testService_test">
+			<objs>
+				<obj id="giftRegistryFetchProductIdDroplet" type="com.bbb.commerce.giftregistry.droplet.GiftRegistryFetchProductIdDroplet" 
+					   hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.droplet.TestGiftRegistryFetchProductIdDroplet">
+					<item type="string">/com/bbb/commerce/giftregistry/droplet/GiftRegistryFetchProductIdDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_validate_Coupon_jsp">
+  <ReviewIssue id="GWG6CS2W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:33:13:064 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:36:50:902 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>gaurav_bhatia</AssignedTo>
+    <File line="4">j2ee-apps/BBBStore/store.war/account/getcoupon.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Change default value of status and rename variable</Summary>
+    <Description>current - &lt;dsp:getvalueof id="status" value="status"/&gt;
+new &lt;dsp:getvalueof id="status" value="showCoupon"/&gt;
+
+change variable name status to action. Also add comment that values of action can be 'showCoupon' or 'activateCoupon'
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG6HNJ5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:37:00:449 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:37:49:616 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>gaurav_bhatia</AssignedTo>
+    <File line="8">j2ee-apps/BBBStore/store.war/account/getcoupon.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>rename activate to activateCoupon</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG6J0N0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:38:04:092 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 15:39:35:798 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>gaurav_bhatia</AssignedTo>
+    <File line="20">j2ee-apps/BBBStore/store.war/account/getcoupon.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The value of siteFlag and userToken is incorrect</Summary>
+    <Description>The value of userToken and siteFlag should come from catalog configuration API
+userToken - would not be site specific
+siteFlag - would be site specific</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWG9GTRB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:00:20:711 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-21 :: 17:00:46:081 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>gaurav_bhatia</AssignedTo>
+    <File line="17">j2ee-apps/BBBStore/store.war/account/getcoupon.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>service name should be coming from property file and not as field in jsp</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

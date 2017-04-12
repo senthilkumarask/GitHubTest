@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<item is-document="true" item-descriptor-name="searchConfigGroups">
+	<properties>
+		<property name="groupName" output-name="search.interface" text-searchable="true" type="string"/>
+		<property name="relevancyRanking" output-name="search.strategy" text-searchable="true" type="string"/>
+	</properties>
+</item>

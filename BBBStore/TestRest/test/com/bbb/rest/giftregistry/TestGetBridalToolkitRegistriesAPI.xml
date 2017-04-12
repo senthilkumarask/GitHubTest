@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestGetBridalToolkitRegistriesAPI">
+		<group id="testGetBridalToolkitRegistries">
+
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="email" type="string">testwishlist@bbb.com</obj>
+					<obj id="login" type="string">testwishlist@bbb.com</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="getBridalToolkitRegistriesRequest" type="string">/rest/bean/com/bbb/rest/giftregistry/BridalToolkitRegistriesAPI/getBridalToolkitRegistries</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>			
+				</objs>
+			</test>
+		</group>
+			
+		<group id="testGetBridalToolkitRegistriesError">
+
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="email" type="string">test_rest@bbb.com</obj>
+					<obj id="login" type="string">test_rest@bbb.com</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="getBridalToolkitRegistriesRequest" type="string">/rest/bean/com/bbb/rest/giftregistry/BridalToolkitRegistriesAPI/getBridalToolkitRegistries</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>			
+				</objs>
+			</test>
+		</group>		
+	</cluster>
+</ddtunit>
+ 

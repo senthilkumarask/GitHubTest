@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1104">
+  <ReviewIssue id="IPP0STJW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:08:31:196 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:08:59:576 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="7">config/com/bbb/eph/scheduler/BBBKeywordEphCategoryMapScheduler.properties</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Have a task to configure this scheduler at right time during prod deployment</Summary>
+    <Description>every 1 day</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP0TRB6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:09:14:946 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 06:14:58:725 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="8">config/com/bbb/eph/scheduler/BBBKeywordEphCategoryMapScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Did you check in files to enable this scheduler only in JOBs JVM? From which data center we wanted to run this scheduler? Running it from one data center should be enough as we have this table golden gated</Summary>
+    <Description>schedulerEnabled</Description>
+    <Annotation></Annotation>
+    <Revision>done,yes file created for job server bbb_store_SS_02_U</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP0WHJ6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:11:22:242 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 00:33:11:541 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="3">config/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove additional space</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP0XUHA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:12:25:678 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:12:47:341 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="11">config/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We may need to tweak this query, I sent a separate email to Manuj</Summary>
+    <Description>SYSDATE-1</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP11ERK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:15:11:936 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:15:25:911 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="11">config/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove additional spaces</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP15YXG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:18:44:692 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:19:00:273 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="59">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add method comments</Summary>
+    <Description>createEPHCategoryMapping</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP1BFPB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:22:59:711 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 00:32:53:085 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="396">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add detailed comments</Summary>
+    <Description>getKeywordsForConcept</Description>
+    <Annotation></Annotation>
+    <Revision>done</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP1VBVG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 11:38:27:868 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 06:16:47:419 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="456">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>If the delta of keywords is 100,000, we call this method 100,000 times and we open 100,000 connections and close them?</Summary>
+    <Description>Is not better to create some join call and process or get whole data in one shot?
+
+getProductAndEPHForKeyword</Description>
+    <Annotation></Annotation>
+    <Revision>done, code now pulls all OBP with keyword in only select</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPP2QD2V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 12:02:35:767 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 06:15:55:011 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="141">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should do update/inserts in batches</Summary>
+    <Description>insertOrUpdateMapping</Description>
+    <Annotation></Annotation>
+    <Revision>done,update and insert both now happening in batch now</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPRBX84Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 01:55:24:842 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 01:56:08:980 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="477">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>I am not saying it's wrong but do we need a method to just get the config key?</Summary>
+    <Description>private int getTopProductCount(){
+		int topProductCount= Integer.parseInt(getBbbCatalogTools().getConfigKeyValue(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.OMNITURE_TOP_PRODUCT_COUNT_EPH_MAPPING, BBBCoreConstants.STRING_THREE));
+		logDebug(CLS_NAME+":getTopProductCount End:topProductCount:["+topProductCount+"]");
+		return topProductCount;
+	}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPRDN0X1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 02:43:28:165 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 02:51:53:074 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="197">src/com/bbb/eph/tools/BBBKeywordEphCategoryMapTool.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>This condition is working fine but can we find a better logic?</Summary>
+    <Description>if ((StringUtils.isNotBlank(ephList) &amp;&amp; !ephList
+						.equalsIgnoreCase(ephInRep))
+						
+						|| (StringUtils.isNotBlank(categoryList) &amp;&amp; !categoryList
+								.equalsIgnoreCase(categoryInRep))
+								
+						|| (StringUtils.isNotBlank(ephInRep) &amp;&amp; !ephInRep
+								.equalsIgnoreCase(ephList))
+								
+						|| (StringUtils.isNotBlank(categoryInRep) &amp;&amp; !categoryInRep
+								.equalsIgnoreCase(categoryList)))  
+					{</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

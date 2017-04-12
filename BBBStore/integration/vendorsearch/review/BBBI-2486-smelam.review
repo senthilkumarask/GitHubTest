@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2486">
+  <ReviewIssue id="IR2J6QOR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 17:13:56:379 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 20:09:54:092 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smelam</ReviewerId>
+    <AssignedTo>smelam</AssignedTo>
+    <File line="6">src/com/bbb/search/vendor/customizer/VendorResponseCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add comments</Summary>
+    <Description>VendorResponseCustomizer</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IR2PLMWS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 20:13:29:020 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 20:21:20:577 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smelam</ReviewerId>
+    <AssignedTo>smelam</AssignedTo>
+    <File line="130">src/com/bbb/search/vendor/customizer/VendorResponseDisplayPropsCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We do not need this check because this class already extending BBBGenericService, you can remove all instances</Summary>
+    <Description>if(isLoggingDebug()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IR2PVBOA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 20:21:01:018 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-25 :: 20:21:25:604 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smelam</ReviewerId>
+    <AssignedTo>smelam</AssignedTo>
+    <File line="45">src/com/bbb/search/vendor/customizer/VendorResponseMappingCustomizer.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We do not need this check because this class already extending BBBGenericService, you can remove all instances</Summary>
+    <Description>if(isLoggingDebug()</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

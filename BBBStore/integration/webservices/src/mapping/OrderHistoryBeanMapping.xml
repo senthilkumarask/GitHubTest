@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.account.vo.order.OrderHistoryReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.GetOrderHistoryDocument$GetOrderHistory
+		</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+
+		<field>
+			<a>MbrNum</a>
+			<b>MbrNum</b>
+		</field>
+		
+		<field>
+			<a>ProfileId</a>
+			<b>AtgProfileId</b>
+		</field>
+	</mapping>
+
+	<mapping date-format="MM/dd/yyyy">
+		<class-a>com.bedbathandbeyond.www.OrderHistoryInfoReturn</class-a>
+		<class-b>com.bbb.account.vo.order.GetOrderHistoryResVO
+		</class-b>
+
+		<field>
+			<a>status</a>
+			<b>errorStatus</b>
+		</field>
+
+		<field>
+			<a>orders.orderArray</a>
+			<b>orderList</b>
+		</field>
+	</mapping>
+
+	<mapping date-format="MM/dd/yyyy">
+		<class-a>com.bedbathandbeyond.www.Order</class-a>
+		<class-b>com.bbb.account.vo.order.OrderHistoryResVO
+		</class-b>
+
+		<field>
+			<a>orderNumber</a>
+			<b>orderNumber</b>
+		</field>
+
+		<field>
+			<a>orderDate</a>
+			<b>orderDate</b>
+			<a-hint>java.lang.String</a-hint>
+			<b-hint>java.util.Date</b-hint>
+
+		</field>
+
+		<field>
+			<a>orderStatus</a>
+			<b>orderStatus</b>
+		</field>
+
+		<field>
+			<a>shipments.shipmentArray</a>
+			<b>shipment</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bedbathandbeyond.www.Shipment</class-a>
+		<class-b>com.bbb.account.vo.order.ShipmentTrackingInfoVO
+		</class-b>
+
+		<field>
+			<a>carrier</a>
+			<b>carrier</b>
+		</field>
+
+		<field>
+			<a>trackingNumber</a>
+			<b>trackingNumber</b>
+		</field>
+
+		<field>
+			<a>shippingDate</a>
+			<b>shippingDate</b>
+		</field>
+
+		<field>
+			<a>deliveryDate</a>
+			<b>deliveryDate</b>
+		</field>
+	</mapping>
+
+</mappings>

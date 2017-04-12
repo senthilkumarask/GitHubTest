@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSKUDetailDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSKUDetailDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.browse.droplet.TestSKUDetailDroplet">
+       <group id="testService">
+        <test id="testService_test1">
+			<objs>
+				<obj id="sKUDetailDroplet" type="com.bbb.commerce.browse.droplet.SKUDetailDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestSKUDetailDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/SKUDetailDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="skuId" type="string">sku40057</obj>
+			</objs>      
+        </test>
+      </group> 
+       <group id="testServiceInvalid">
+        <test id="testServiceInvalid_test1">
+			<objs>
+				<obj id="sKUDetailDroplet" type="com.bbb.commerce.browse.droplet.SKUDetailDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.browse.droplet.TestSKUDetailDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/SKUDetailDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="skuId" type="string">null</obj>
+			</objs>      
+        </test>
+      </group> 
+    </cluster>
+</ddtunit>

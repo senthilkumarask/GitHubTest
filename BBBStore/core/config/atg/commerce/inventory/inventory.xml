@@ -1,0 +1,236 @@
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>Inventory SQL Repository</name>
+    <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+
+	<item-descriptor name="inventory" xml-combine="append" cache-mode="disabled" query-cache-size="0" item-cache-size="0">
+		<table name="dcs_inventory">		  
+		<property name="stockLevel" column-name="stock_level" cache-mode="inherit" ></property>
+		<property name="version" column-name="version" cache-mode="inherit" ></property>
+       </table>
+		<table name="bbb_inventory" id-column-name="inventory_id" type="auxiliary">
+			<property name="siteStockLevelDefault" column-name="alt_afs"
+				readable="true" writable="true" cache-mode="inherit" data-type="long"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="feedID" column-name="feed_id" readable="true"
+				writable="true" cache-mode="inherit" data-type="string" hidden="false"
+				queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="registryStockLevelDefault" column-name="igr"
+				readable="true" writable="true" cache-mode="inherit" data-type="long"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name="lastModifiedDate" data-type="timestamp" hidden="true">
+  			</property> 
+		</table>
+		<property name="siteStockLevel" data-type="long"
+              writable="false" hidden="true" queryable="true" display-name="siteStockLevel">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteOnlyTranslation">
+                  <expression>siteStockLevelDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="siteStockLevelDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="inventory"/>
+    	</property>
+    	<property name="registryStockLevel" data-type="long"
+              writable="false" hidden="true" queryable="true" display-name="registryStockLevel">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteOnlyTranslation">
+                  <expression>registryStockLevelDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="registryStockLevelDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="inventory"/>
+    	</property>
+		<table name="bbb_inventory_site_translation" type="multi"
+			id-column-names="inventory_id" multi-column-name="site_id">
+			<property name="translations" column-name="translation_id"
+				data-type="map" component-item-type="inventoryTranslation" />
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="inventoryTranslation" cache-mode="disabled" query-cache-size="0" item-cache-size="0" >
+		<table name="bbb_inventory_translation" id-column-name="translation_id"
+			type="primary">
+			<property name="siteStockLevel" column-name="alt_afs"
+				data-type="long" readable="true" writable="true" cache-mode="inherit"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="registryStockLevel" column-name="igr"
+				data-type="long" readable="true" writable="true" cache-mode="inherit"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name="lastModifiedDate" data-type="timestamp" hidden="true">
+  			</property> 
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="cachedInventory" display-property="displayName" version-property="version" id-space-name="cachedInventory"  cache-mode="simple" item-cache-size="200000" query-cache-size="200000" item-expire-timeout="1800000" query-expire-timeout="1800000" display-name-resource="itemDescriptorInventory">
+    <attribute name="resourceBundle" value="atg.commerce.InventoryTemplateResources"/>
+    <table name="dcs_inventory" type="primary" id-column-name="inventory_id">
+      <property category-resource="categoryInfo" name="version" data-type="int" column-name="version" cache-mode="inherit" group="stockLevel" display-name-resource="version">
+        <attribute name="uiwritable" value="false"/>
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categoryInfo" name="inventoryLock" data-type="string" column-name="inventory_lock" group="admin" display-name-resource="inventoryLock">
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categoryInfo" name="creationDate" data-type="timestamp" column-name="creation_date" group="admin" display-name-resource="creationDate">
+        <attribute name="uiwritable" value="false"/>
+        <attribute name="useNowForDefault" value="true"/>
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categorySchedule" name="startDate" data-type="timestamp" column-name="start_date" group="admin" display-name-resource="startDate">
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categorySchedule" name="endDate" data-type="timestamp" column-name="end_date" group="admin" display-name-resource="endDate">
+        <attribute name="propertySortPriority" value="-1"/>
+      </property>
+      <property category-resource="categoryBasics" name="displayName" data-type="string" column-name="display_name" required="true" group="admin" display-name-resource="name">
+        <attribute name="propertySortPriority" value="-4"/>
+      </property>
+      <property category-resource="categoryBasics" name="description" data-type="string" column-name="description" group="admin" display-name-resource="description">
+        <attribute name="propertySortPriority" value="-1"/>
+      </property>
+      <property category-resource="categoryBasics" name="catalogRefId" data-type="string" column-name="catalog_ref_id" required="true" group="admin"
+                     editor-class="atg.ui.commerce.SkuItemStringEditor" display-name-resource="catalogRefId">
+        <attribute name="unique" value="true"/>
+        <attribute name="propertySortPriority" value="-3"/>
+      </property>
+      <property category-resource="categoryBasics" name="availabilityStatus" data-type="enumerated" default="availabilityStatusDerived" column-name="avail_status" required="true" group="stockLevel" display-name-resource="availabilityStatus">
+        <attribute name="useCodeForValue" value="true"/>
+        <option resource="availabilityStatusInstock" code="1000"/>
+        <option resource="availabilityStatusOutOfStock" code="1001"/>
+        <option resource="availabilityStatusPreorderable" code="1002"/>
+        <option resource="availabilityStatusBackorderable" code="1003"/>
+        <option resource="availabilityStatusDerived" code="1004"/>
+	      <option resource="availabilityStatusDiscontinued" code="1005"/>
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categoryBasics" name="availabilityDate" data-type="timestamp" column-name="availability_date" group="availability" display-name-resource="availabilityDate">
+        <attribute name="propertySortPriority" value="-1"/>
+      </property>
+      <property category-resource="categoryInventoryLevels" name="stockLevel" data-type="long" column-name="stock_level" cache-mode="inherit" group="stockLevel" display-name-resource="stockLevel">
+        <attribute name="propertySortPriority" value="-3"/>
+      </property>
+      <property category-resource="categoryInventoryLevels" name="backorderLevel" data-type="long" column-name="backorder_level" cache-mode="inherit" group="backorderLevel" display-name-resource="backorderLevel">
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categoryInventoryLevels" name="preorderLevel" data-type="long" column-name="preorder_level" cache-mode="inherit" group="preorderLevel" display-name-resource="preorderLevel">
+        <attribute name="propertySortPriority" value="-1"/>
+      </property>
+      <property category-resource="categoryInventoryWarning" name="stockThreshold" data-type="long" column-name="stock_thresh" group="threshold" display-name-resource="stockThreshold">
+        <attribute name="propertySortPriority" value="-3"/>
+      </property>
+      <property category-resource="categoryInventoryWarning" name="backorderThreshold" data-type="long" column-name="backorder_thresh" group="threshold" display-name-resource="backorderThreshold">
+        <attribute name="propertySortPriority" value="-2"/>
+      </property>
+      <property category-resource="categoryInventoryWarning" name="preorderThreshold" data-type="long" column-name="preorder_thresh" group="threshold" display-name-resource="preorderThreshold">
+        <attribute name="propertySortPriority" value="-1"/>
+      </property>
+    </table>
+    <table name="bbb_inventory" id-column-name="inventory_id" type="auxiliary">
+			<property name="siteStockLevelDefault" column-name="alt_afs"
+				readable="true" writable="true" cache-mode="inherit" data-type="long"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="feedID" column-name="feed_id" readable="true"
+				writable="true" cache-mode="inherit" data-type="string" hidden="false"
+				queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="registryStockLevelDefault" column-name="igr"
+				readable="true" cache-mode="inherit" writable="true" data-type="long"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name="lastModifiedDate" data-type="timestamp" hidden="true">
+  			</property> 
+		</table>
+		<property name="siteStockLevel" data-type="long"
+              writable="false" hidden="true" queryable="true" cache-mode="inherit" display-name="siteStockLevel">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteOnlyTranslation">
+                  <expression>siteStockLevelDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="siteStockLevelDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="inventory"/>
+    	</property>
+    	<property name="registryStockLevel" data-type="long"
+              writable="false" hidden="true" queryable="true" cache-mode="inherit" display-name="registryStockLevel">
+    		<derivation user-method="com.bbb.commerce.catalog.SiteOnlyTranslation">
+                  <expression>registryStockLevelDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="registryStockLevelDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="itemType" value="inventory"/>
+    	</property>
+		<table name="bbb_inventory_site_translation" type="multi"
+			id-column-names="inventory_id" multi-column-name="site_id">
+			<property name="translations" column-name="translation_id"
+				data-type="map" component-item-type="cachedInventoryTranslation" />
+		</table>
+  	</item-descriptor>
+
+  
+  	
+	<item-descriptor name="cachedInventoryTranslation"
+		cache-mode="simple" item-cache-size="200000" query-cache-size="200000" item-expire-timeout="1800000" query-expire-timeout="1800000">
+		<table name="bbb_inventory_translation" id-column-name="translation_id"
+			type="primary">
+			<property name="siteStockLevel" column-name="alt_afs"
+				data-type="long" readable="true" writable="true" cache-mode="inherit" hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="registryStockLevel" column-name="igr"
+				data-type="long" readable="true" writable="true" cache-mode="inherit" hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name="lastModifiedDate" data-type="timestamp" hidden="true">
+  			</property> 
+		</table>
+	</item-descriptor>
+
+
+	<!-- Commented as part of BBBSL-3018
+	
+	<item-descriptor name="inventoryFeed"
+		last-modified-property="lastUpdated" cache-mode="disabled">
+		<table name="bbb_inventory_feed" type="primary"
+			id-column-names="feed_id">
+
+			<property name="feedID" column-name="feed_id" readable="true"
+				writable="true" cache-mode="inherit" data-type="string" hidden="false"
+				queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+		<property name="creationDate" column-name="creation_date"
+				data-type="timestamp" readable="true" writable="true" cache-mode="inherit"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+				<attribute name="useNowForDefault" value="true" />
+			</property>
+			<property name="feedStatus" column-name="feed_status"
+				data-type="string" readable="true" writable="true" cache-mode="inherit"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+			</property>
+			<property name="lastUpdated" column-name="last_updated"
+				data-type="timestamp" readable="true" writable="true" cache-mode="inherit"
+				hidden="false" queryable="true">
+				<attribute name="uiwritable" value="true" />
+				<attribute name="useNowForDefault" value="true" />
+			</property>
+		</table>
+	</item-descriptor> -->
+</gsa-template>

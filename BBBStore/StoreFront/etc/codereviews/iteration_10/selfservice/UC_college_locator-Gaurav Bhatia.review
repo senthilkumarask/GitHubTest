@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_college_locator">
+  <ReviewIssue id="GX0FAAPW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:38:37:316 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:10:47:028 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="18">j2ee-apps/BBBStore/store.war/selfservice/findyourcollege.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do not hardcode language </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0FM7A7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 19:47:52:735 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:10:31:604 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="5">j2ee-apps/BBBStore/store.war/selfservice/findyourcollege.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Annotation A is missing </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>invalid defect</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0GYWKN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:25:44:999 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:10:10:523 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="51">j2ee-apps/BBBStore/store.war/selfservice/findyourcollege.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The content of sel college is coming from find_your_college_json.jsp.. Is this duplicate code in jsp</Summary>
+    <Description>This seems to be duplicate code and need removal as it makes unnecessary call</Description>
+    <Annotation></Annotation>
+    <Revision>no, it is not</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0HN15X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:44:30:693 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:09:51:345 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="20">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Image path not appended to image</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0HTX1R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:49:51:951 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:09:34:947 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="31">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Image path missing.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I0ZBL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:55:21:489 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:09:40:673 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="48">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Requirement missing - primary store id</Summary>
+    <Description>2.	Per the Business Logic the “Schools” table in the ATG DB will specify one of the stores (using the store id), out of those returned by the MapQuest API’s, as the Primary Store for the College. This store should be shown at the top of list, if specified.
+3.	If not Primary store is specified the results are presented in the order returned by the MapQuest API’s.
+</Description>
+    <Annotation></Annotation>
+    <Revision>Requirement is changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I5EKB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 20:58:47:867 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:09:00:104 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="50">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Requirement missing</Summary>
+    <Description>Driving Directions - Annotation H not integrated</Description>
+    <Annotation></Annotation>
+    <Revision>added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0I896G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 21:01:00:856 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:08:48:584 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="50">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing requirement (not sure)</Summary>
+    <Description>Results are ordered to show the closest stores to the search criteria first.</Description>
+    <Annotation></Annotation>
+    <Revision>Yes, it is showing</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX0IKAGN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 21:10:22:391 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:08:20:038 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="97">j2ee-apps/BBBStore/store.war/selfservice/frags/findyourcollegefrag.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Annotation L implementation missing</Summary>
+    <Description>Optional field that displays a special message if available for a location.</Description>
+    <Annotation></Annotation>
+    <Revision>Added</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

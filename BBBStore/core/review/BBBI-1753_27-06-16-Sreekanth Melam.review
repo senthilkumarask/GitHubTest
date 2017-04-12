@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1753_27-06-16">
+  <ReviewIssue id="IQ1EJ1WR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:36:04:203 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-06 :: 13:35:05:781 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="2360">src/com/bbb/constants/BBBCoreConstants.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Please check with Manuj if it's fine to hard code this in constant file.</Summary>
+    <Description>COLORGROUP_KEY
+
+We are still looking at this key in DimDisplayConfig, assume if business updated the value of this key to XYZ (example: They might have updated to COLOR from COLORGROUP now), will the value XYZ matches the endeca COLORGROUP dimension?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

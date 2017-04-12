@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="product_comparison_30-05-14">
+  <ReviewIssue id="HVTIWP5C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 18:55:19:824 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:16:35:674 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>BBBCatalogToolsImpl.java</Summary>
+    <Description>Please put inline null checks for compareProductVO</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVTJ4IBN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:01:24:227 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:07:26:731 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>BBBCatalogToolsImpl.java</Summary>
+    <Description>For newly created two methods (getCompareSkuDetail &amp; getSkuSwatch) in BBBCatalogToolsImpl.java, if they are not been used outside this class. Make them private.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVTJ71TB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:03:22:799 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:07:07:849 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>BBBCatalogToolsImpl.java</Summary>
+    <Description>Lines - 12285-12288
+Use Constants for Sku Repository Item Properties while fetching</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVTJ80JZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:04:07:823 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:06:51:698 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>BBBCatalogToolsImpl.java</Summary>
+    <Description>what is the need to comment out a line of code?
+Line no. 12062 (BBBCatalogToolsImpl.java) 
+Commented - //productVO.setCollection(false);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVTJKOTQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:13:59:150 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 19:14:42:285 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>BBBCompareProductHandler.java</Summary>
+    <Description>For newly added class variables, use camelCasing nomenclature.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

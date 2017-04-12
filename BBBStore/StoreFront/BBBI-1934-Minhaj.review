@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1934">
+  <ReviewIssue id="IQJT73W1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:46:32:305 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:47:07:959 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="123">j2ee-apps/BBBStore/store.war/_includes/header/elements/checklistFullView.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Move "%" &amp; "|" symbol to label, check if we already have existing labels or not.</Summary>
+    <Description>checklistFullView.jsp</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQJT8RM7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:47:49:711 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:50:23:768 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="34">j2ee-apps/BBBStore/store.war/_includes/header/elements/checklistStaticFullView.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Droplet Cache timeout should be configurable, its harcoded in jsp - 2 occurrences</Summary>
+    <Description>checklistStaticFullView.jsp
+&lt;dsp:param name="cacheCheckSeconds" value="864000" /&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQJTFE8F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:52:58:959 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 14:53:27:311 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="87">j2ee-apps/BBBStore/store.war/_includes/header/elements/StaticFullView.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Move "|" symbol to label, check if we already have existing labels or not.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQJTPPA0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 15:00:59:832 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 15:03:03:416 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/_includes/header/elements/StaticFullView.jsp</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Remove unused fmt tag</Summary>
+    <Description>also fix for checklistStaticFullView.jsp</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQJTZ1IB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 15:08:15:587 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 15:10:29:733 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Minhaj</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use print.css instead of adding all the css content on the jsps</Summary>
+    <Description>Use print.css instead of adding all the css content on the jsps ( All jsps)
+Check with UI lead and let me know in case of any issues </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileTools.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileTools.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBProfileTools">
+      <group id="testCreateSiteItem">
+        <test id="testService_test1">
+			<objs>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileTools">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>	
+				<obj id="emailId" type="string">
+					test2@example.com
+				</obj>
+			</objs>      
+			
+        </test>
+      </group>
+      <group id="testIsDuplicateEmailAddress">
+        <test id="testService_test2">
+			<objs>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileTools">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>	
+				<obj id="emailId" type="string">
+					test2@example.com
+				</obj>
+				<obj id="inValidEmailId" type="string">
+					invalid@invalid.inv
+				</obj>
+			</objs>      
+			
+        </test>
+      </group>
+      <group id="testLookupUsers">
+        <test id="testService_test3">
+			<objs>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileTools">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>	
+				<obj id="login" type="string">
+					test2@example.com
+				</obj>
+			</objs>      
+			
+        </test>
+      </group>
+      
+      <group id="testGetAndUpdateAutoLoginForProfile">
+        <test id="testService_test4">
+			<objs>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileTools">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>	
+				<obj id="login" type="string">
+					test2@example.com
+				</obj>
+				<obj id="password" type="string">
+				    S@pient1
+				</obj>
+			</objs>      
+			
+        </test>
+      </group>
+      
+      <group id="testUpdateSiteItem">
+        <test id="testService_test5">
+			<objs>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileTools">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+				<obj id="addressId" type="string">DC14340106</obj>
+				<obj id="propertyMap" type="java.util.HashMap" hint="map">
+						<item>
+							<key type="java.lang.String">emailOptin</key>
+							<value type="java.lang.String">yes</value>
+						</item>
+				</obj>
+			</objs>      
+			
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

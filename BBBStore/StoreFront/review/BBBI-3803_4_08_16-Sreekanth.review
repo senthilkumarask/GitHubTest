@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-3803_4_08_16">
+  <ReviewIssue id="IRJUA2S1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 19:56:32:785 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 19:56:53:981 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="68">j2ee-apps/BBBStore/store.war/browse/brands.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why do we need below logic?</Summary>
+    <Description>dsp:oparam name="redirect"&gt;
+			&lt;dsp:getvalueof	var="isRedirectToParent" param="redirectToParent"/&gt;
+				&lt;c:if test="${isRedirectToParent eq 'true'}"&gt;
+					&lt;dsp:droplet name="/atg/dynamo/droplet/Redirect"&gt;
+						&lt;dsp:param name="url" value="${contextPath}${seoUrl}" /&gt;
+					&lt;/dsp:droplet&gt;
+				&lt;/c:if&gt;
+		&lt;/dsp:oparam&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRJUB2YM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 19:57:19:678 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 19:57:50:453 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="38">j2ee-apps/BBBStore/store.war/browse/brands.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do not we have any other exisitng variable? I think we do pass page names for exisitng omniture tagging, is n't it?</Summary>
+    <Description>&lt;input type="hidden" name="fromPage" value="brandsPage"/&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRJUGKTN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:01:36:107 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:02:13:863 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="1972">j2ee-apps/BBBStore/store.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>When the existing events are empty then will it fire event as ",event90"? It will be wrong</Summary>
+    <Description>event90=',event90';</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IRJV3ULS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:19:41:872 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-06 :: 20:20:26:137 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="32">j2ee-apps/BBBStore/store.war/search/search.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do not we have a common variable? I think we have pageName for omniture purpose, is n't it?</Summary>
+    <Description>&lt;input type="hidden" name="fromPage" value="searchPage"/&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

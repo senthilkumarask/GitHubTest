@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-3198_DSK_Personalize_msg">
+  <ReviewIssue id="I9PD1YO5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:16:15:749 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:18:49:470 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>How JS is setting customizableRequired  to true for MKSW, Collection and Accessory products</Summary>
+    <Description>How customizableRequired is set to true from JS? Please varify scenarios where we are comparing MKSW, Collection, Accessories lead produts and selecting customizable mandatory skus.
+
+&lt;c:otherwise&gt;
+												&lt;div class="personalizationOffered clearfix cb fl hidden"&gt;
+													&lt;a href="${contextPath}${finalUrl}?openKatori=true&amp;skuId=${skuID}" role="button" data-sku="${skuID}" data-refnum="" data-quantity=""&gt;
+														&lt;img src="/_assets/global/images/personalize-button.png" alt="Personalize This Button" role="button"&gt;
+													&lt;/a&gt;
+													&lt;span class="personalizationDetail"&gt;
+														&lt;bbbl:label key='lbl_cart_personalization_detail' language="${pageContext.request.locale.language}" /&gt;
+													&lt;/span&gt;	
+													&lt;c:if test="${customizableRequired}"&gt; 
+                                                         &lt;div class="personalizeToProceed"&gt;
+                                                         	&lt;bbbl:label key='lbl_personalization_required' language="${pageContext.request.locale.language}" /&gt;
+                                                           &lt;/div&gt;
+													&lt;/c:if&gt;
+												&lt;/div&gt;
+											&lt;/c:otherwise&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9PD84DP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:21:03:085 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:21:21:349 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>How JS is setting customizableRequired  to true for MKSW, Collection and Accessory products</Summary>
+    <Description>How customizableRequired is set to true from JS? Please varify scenarios where we are comparing MKSW, Collection, Accessories lead produts and selecting customizable mandatory skus.
+
+&lt;c:otherwise&gt;
+												&lt;div class="personalizationOffered clearfix cb fl hidden"&gt;
+													&lt;a href="${contextPath}${finalUrl}?openKatori=true&amp;skuId=${skuID}" role="button" data-sku="${skuID}" data-refnum="" data-quantity=""&gt;
+														&lt;img src="/_assets/global/images/personalize-button.png" alt="Personalize This Button" role="button"&gt;
+													&lt;/a&gt;
+													&lt;span class="personalizationDetail"&gt;
+														&lt;bbbl:label key='lbl_cart_personalization_detail' language="${pageContext.request.locale.language}" /&gt;
+													&lt;/span&gt;	
+													&lt;c:if test="${customizableRequired}"&gt; 
+                                                         &lt;div class="personalizeToProceed"&gt;
+                                                         	&lt;bbbl:label key='lbl_personalization_required' language="${pageContext.request.locale.language}" /&gt;
+                                                           &lt;/div&gt;
+													&lt;/c:if&gt;
+												&lt;/div&gt;
+											&lt;/c:otherwise&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I9PD9050">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:21:44:244 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-05-15 :: 14:22:06:420 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>vnalini</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>product_detail_colletion should be modified accordingly</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

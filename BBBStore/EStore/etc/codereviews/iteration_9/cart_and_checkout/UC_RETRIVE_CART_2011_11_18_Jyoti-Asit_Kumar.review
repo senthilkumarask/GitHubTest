@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_RETRIVE_CART_2011_11_18_Jyoti">
+  <ReviewIssue id="GVABIDTU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:01:13:218 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:52:30:843 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="121">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add NOT NULL CHECK for pItem and bbbDestItem also</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVABL3T7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:03:20:203 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:51:48:750 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="119">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Date should also be copied from source item bbbSrcItem</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVABLN0L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:03:45:093 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:51:53:890 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="124">src/com/bbb/commerce/order/BBBCommerceItemManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>No Need for this if condition, if both are null, the other details (bts, vdc, freeshippingmethod) will not be copied.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVABQ0KH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:07:09:281 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:52:00:359 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="2">src/com/bbb/commerce/order/BBBOrderManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Null check for destCommerceItemsList before using it in for loop (line 106), check other places also</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVAC51EJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:18:50:203 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:58:21:140 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1">src/com/bbb/commerce/order/BBBShippingGroupManager.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>mergeOrdersCopyStoreShippingGroup has similar code logic as getStorePickupShippingGroup, try refactoring move common logic to another method findStorePickupShippingGroup</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>This is not needed, since the getStorePickupShippingGroup creates and addShippingGroup to order also. But we don't need to add at the time of merge method call.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVAD206H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 22:44:28:265 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 12:50:04:562 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="89">src/com/bbb/commerce/order/BBBOrderManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add PerformaceLogger</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>There is no BBBPerformanceMonitor.end call, start is called twice. And we should call cancel in exception block. </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPJC423">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:36:50:187 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 12:50:47:952 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="92">src/com/bbb/commerce/order/BBBOrderManager.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add performance monitor to this method also, since this might be an expensive operation</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Not needed now</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVPTVC42">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 18:31:43:250 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 14:35:35:640 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="93">src/com/bbb/commerce/order/BBBOrderManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We have to call this method in BBBProfileTools's loadShoppingCart method to make sure that if the current cart is empty then in that case mergeOrder is not called, the loadShoppingCart it self return last saved order.</Summary>
+    <Description>In the method call super method first, then call the removeDisabledSKUs method.
+
+Method to override - loadShoppingCarts(pProfile, pShoppingCart);</Description>
+    <Annotation></Annotation>
+    <Revision>Need to discuss the implementation</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

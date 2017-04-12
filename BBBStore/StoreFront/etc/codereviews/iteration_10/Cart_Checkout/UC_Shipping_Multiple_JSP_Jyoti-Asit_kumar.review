@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Shipping_Multiple_JSP_Jyoti">
+  <ReviewIssue id="GX3OF2H4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:47:34:984 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:48:57:421 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="46">j2ee-apps/BBBStore/store.war/checkout/shipping/multiShipping.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use CMS Key</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3OGWCN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:49:00:359 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:49:22:718 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="46">j2ee-apps/BBBStore/store.war/checkout/shipping/multiShipping.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Make add new address as a include fragments</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3OQEJ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:56:23:828 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:57:10:937 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_store_details.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3ORH44">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:57:13:828 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:58:13:750 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_store_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Lets use the Order Availability map to display 'Availability Message'. Can we have this same include jsp as on cart or order review.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3OULOM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 15:59:39:718 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:00:16:140 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_method_selection.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We should call this droplet once and not per line item and pass the Map to this jsp to iterate over.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3OW4PY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:00:51:046 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:04:01:171 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="11">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_line_item.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>The flag clearContainer is used reversed, the var name should be notClear</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3Q2G3J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:33:45:343 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:35:42:343 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="79">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_line_item.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>pass skuId also to this droplet, otherwise we will get default/first sku detail. Also it will be better if we create a lightweight droplet for display otherwise it might create a performance issue.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QC6XR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:41:20:031 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:42:03:734 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_item_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>It should be salePrice if that is set, else listPrice. The unit price that user is paying.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QP2OM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:51:21:046 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:51:58:140 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="13">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_address_selection.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This droplet is getting called multiple times for each item, we should call once and then use the container.addressMap here.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QQHJD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:52:26:953 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:53:45:046 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="21">j2ee-apps/BBBStore/store.war/checkout/shipping/frag/multi_shipping_address_selection.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>You should get registryId and registryInfo from address object not from commerceItem.</Summary>
+    <Description> If address is registry address, then we are hiding the address. A registry item can be shipped to non-registry address, then in that case we have to display complete address.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3QVML9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:56:26:781 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 16:56:57:343 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="46">j2ee-apps/BBBStore/store.war/checkout/shipping/multiShipping.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>In case of Add new Address, we have to pre-select the new address with that commerceItem.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX3ROGN1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 17:18:52:093 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 17:33:44:656 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="94">j2ee-apps/BBBStore/store.war/checkout/shipping/multiShipping.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>saveToAccount should be displayed to authenticated user only and should be checked by default.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

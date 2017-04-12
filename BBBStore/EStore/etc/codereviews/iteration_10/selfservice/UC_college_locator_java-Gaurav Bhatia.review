@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_college_locator_java">
+  <ReviewIssue id="GX0IPYNL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 21:14:47:025 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-04 :: 21:15:06:458 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav Bhatia</ReviewerId>
+    <AssignedTo>Gaurav Bhatia</AssignedTo>
+    <File line="71">src/com/bbb/selfservice/droplet/GetCollegeProductDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add loginfo for input and output from catalog API</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

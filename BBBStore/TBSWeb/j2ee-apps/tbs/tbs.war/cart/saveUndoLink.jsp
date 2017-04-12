@@ -1,0 +1,72 @@
+<dsp:page>
+	<dsp:importbean bean="/atg/commerce/ShoppingCart" />
+	<dsp:importbean bean="/atg/commerce/gifts/GiftlistFormHandler" />
+	<dsp:importbean bean="/atg/dynamo/droplet/ForEach"/>
+	<dsp:getvalueof id="movedCommerceItemId" param="movedCommerceItemId"/>
+	<dsp:getvalueof id="fromWishlist" param="fromWishlist"/>
+	<dsp:getvalueof id="quantity" param="quantity"/>
+	<dsp:getvalueof id="countNo" param="currentCount"/>
+	  <c:set var="contextPath" value="${pageContext.request.contextPath}" scope="page"/>
+	 <dsp:droplet name="/atg/commerce/order/droplet/BBBCartDisplayDroplet">
+			<dsp:param name="order" bean="ShoppingCart.current" />
+			<dsp:oparam name="output">
+				 <dsp:droplet name="ForEach">
+					<dsp:param name="array" param="commerceItemList" />
+					<dsp:param name="elementName" value="commerceItem" />
+					<dsp:oparam name="output">
+						<dsp:getvalueof id="commerceItemId" param="commerceItem.BBBCommerceItem.id" />
+						<c:if test="${(not empty movedCommerceItemId) and (movedCommerceItemId eq commerceItemId) and fromWishlist}">
+							<dsp:getvalueof var="commItem" param="commerceItem"/>
+								<div class="savedItemRow movedItem movedToCart itemJustMovedToCartUndoLink" id="savedItemID_2">
+										<div class="prodItemWrapper clearfix">
+											<p class="small-10 columns prodInfo breakWord textLeft">
+												<dsp:droplet name="/atg/repository/seo/CanonicalItemLink">
+													<dsp:param name="id" param="commerceItem.BBBCommerceItem.repositoryItem.productId" />
+													<dsp:param name="itemDescriptorName" value="product" />
+													<dsp:param name="repositoryName" value="/atg/commerce/catalog/ProductCatalog" />
+													<dsp:oparam name="output">
+														<c:choose>
+															<c:when test="${not flagOff}">
+																<dsp:getvalueof var="finalUrl" vartype="java.lang.String" param="url" />
+															</c:when>
+															<c:otherwise>
+																<dsp:getvalueof var="finalUrl" vartype="java.lang.String" value="#" />
+															</c:otherwise>
+														</c:choose>	 
+													</dsp:oparam>
+												</dsp:droplet>
+												<dsp:getvalueof var="ltlShipMethod" value="${commItem.BBBCommerceItem.ltlShipMethod}" />
+												<c:choose>
+											     <c:when test="${commItem.skuDetailVO.ltlItem && not empty ltlShipMethod && (commItem.BBBCommerceItem.whiteGloveAssembly)}">
+												      <c:set var="url">${finalUrl}?skuId=${commItem.BBBCommerceItem.catalogRefId}&sopt=LWA</c:set>
+												</c:when>
+												 <c:when test="${commItem.skuDetailVO.ltlItem && not empty ltlShipMethod && (!commItem.BBBCommerceItem.whiteGloveAssembly)}">
+												      <c:set var="url">${finalUrl}?skuId=${commItem.BBBCommerceItem.catalogRefId}&sopt=${ltlShipMethod}</c:set>
+												</c:when>
+												<c:otherwise>
+													 <c:set var="url">${finalUrl}?skuId=${commItem.BBBCommerceItem.catalogRefId}</c:set>			
+												</c:otherwise>
+											</c:choose>	
+												<a href="${contextPath}${finalUrl}?skuId=${commItem.BBBCommerceItem.catalogRefId}" title="${commItem.skuDetailVO.displayName}" class="prodName">${commItem.skuDetailVO.displayName}</a>
+												&nbsp;<bbbl:label key="lbl_save_top_link_moved" language="${pageContext.request.locale.language}"/>
+												<c:set var="lbl_save_top_link_undo"><bbbl:label key="lbl_save_top_link_undo" language="${pageContext.request.locale.language}"/></c:set>
+												<a class="lnkAction undoMoveToCart btnAjaxSubmitSFL" data-ajax-frmID="frmSaveUndoCart" title="${lbl_save_top_link_undo}" href="#">${lbl_save_top_link_undo}</a>
+											</p>
+											<p class="small-2 columns textRight">
+												<c:set var="lbl_save_top_link_view_cart"><bbbl:label key="lbl_save_top_link_view_cart" language="${pageContext.request.locale.language}"/></c:set>
+												<a href="#" title="${lbl_save_top_link_view_cart}" class="lnkAction viewCart">${lbl_save_top_link_view_cart}</a>
+											</p>
+											<dsp:getvalueof id="cartUndoCountNo" value="${countNo}" />
+                                            <dsp:getvalueof id="cartUndoCommerceId" value="${movedCommerceItemId}" /> 
+                                            <input type="hidden" name="cartUndoQuantity" class="frmAjaxSubmitData" value="${quantity}" />
+                                            <input type="hidden" name="cartUndoCount" class="frmAjaxSubmitData" value="${cartUndoCountNo}" />
+                                            <input type="hidden" name="cartUndoCommerceId" class="frmAjaxSubmitData" value="${cartUndoCommerceId}" />
+										</div>
+										<div class="hidden">3</div>									
+								</div>	
+						</c:if>	
+					</dsp:oparam>
+				</dsp:droplet>	
+			</dsp:oparam>
+	</dsp:droplet>
+</dsp:page>

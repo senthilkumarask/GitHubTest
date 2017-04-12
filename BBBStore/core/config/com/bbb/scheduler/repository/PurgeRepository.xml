@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+        <name> Purge Scheduler</name>
+        <author></author>
+    </header>
+    
+    <!--///////////////////////////////-->
+  	<!--     Purge Repository       -->
+    <!--///////////////////////////////-->
+
+	<item-descriptor name="purge" display-name="Purge Scheduler" cache-mode="simple" last-modified-property="lastModifiedDate">
+	<attribute name="updateLastModified" value="true"/>
+		<table name="BBB_PURGE_SCHEDULER" type="primary" id-column-name="purge_id" >
+			<property name="purgeId" column-name="purge_id" display-name-resource="purgeId" data-type="string" required="true" >
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="1" />	
+			</property>
+			<property name="purgeType" column-name="purge_type" display-name-resource="purgeType" data-type="string" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="2"/>             
+    		</property>
+		    <property name="description" column-name="description" display-name-resource="description" data-type="string" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="3"/>             
+		    </property>
+		    <property name="repository" column-name="repository" display-name-resource="repository" data-type="string" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="4"/>             
+		    </property>
+		    <property name="itemDescriptor" column-name="item_descriptor" display-name-resource="itemDescriptor" data-type="string" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="5"/>             
+		    </property>
+		    <property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="6"/>             
+		    </property>
+		    <property name="interval" column-name="interval_in_days" display-name-resource="interval" data-type="int" required="true">
+				<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+				<attribute name="propertySortPriority" value="7"/>             
+		    </property>    
+		</table>
+
+		<table name="BBB_PURGE_PARAM" type="multi" id-column-name="purge_id" multi-column-name="key_param">       
+		    <property name="valueParam" column-name="value_param" display-name-resource="valueParam" data-type="map" component-data-type="string">
+		    	<attribute name="resourceBundle" value="com.bbb.scheduler.BBBSchedulerTemplateResources"/>
+		    	<attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+	</item-descriptor>
+ </gsa-template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BPSI-469_07042015">
+  <ReviewIssue id="I8PW5VXZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-20 :: 18:31:29:207 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-04-20 :: 18:32:17:104 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Rattan</ReviewerId>
+    <AssignedTo>Kapil_Rattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>log statements have to be added while entering and exiting a method</Summary>
+    <Description>Log Statement should mention &lt;methodname&gt; : Start / End </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

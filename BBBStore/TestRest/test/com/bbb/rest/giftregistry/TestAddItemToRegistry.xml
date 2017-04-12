@@ -1,0 +1,203 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY:
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestAddItemToRegistry">
+		<group id="testAddItemToRegistry">
+
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"203522800","qty":"11","price":"$89.99"}],"parentProdId":"1014826360","registryName":"other"}</obj>
+					<obj id="login" type="string">rest@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+		<group id="testAddItemToRegistryErr">
+
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"14826360","prodId":"1014826360","registryId":"181479294","qty":"1","price":"$89.99"}],"parentProdId":"1014826360","registryName":"Baby"}</obj>
+					<obj id="login" type="string">5262test@bbb.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+				</objs>
+
+			</test>
+		</group>
+		<group id="testAddItemToRegistryNonLogged">
+
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"14826360A","prodId":"1014826360","registryId":"181479294","qty":"1","price":"$89.99"}],"parentProdId":"1014826360","registryName":"Baby"}</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				</objs>
+
+			</test>
+		</group>
+
+		<group id="testAddItemToRegistryRecommender">
+
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"14826360","prodId":"1014826360","registryId":"203522800","qty":"1","price":"$89.99"}],"parentProdId":"1014826360","registryName":"other"}</obj>
+					<obj id="login" type="string">shiva139@example.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="recommededFlag" type="string">true</obj>
+					<obj id="registryId" type="string">203522800</obj>
+					<obj id="skuId" type="string">17744674</obj>
+					<obj id="comment" type="string"> try this</obj>
+					<obj id="recommendedQuantity" type="string">3</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+
+		<group id="testAcceptRecommendationRegistry">
+
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203521617","qty":"1","price":"$79.99"}],"repositoryId":"DC1100004","isFromPendingTab":true,"isDeclined":false}</obj>
+					<obj id="login" type="string">shiva139@example.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="recommededFlag" type="string">false</obj>
+					<obj id="registryId" type="string">203522800</obj>
+					<obj id="skuId" type="string">17744674</obj>
+					<obj id="comment" type="string"> try this</obj>
+					<obj id="recommendedQuantity" type="string">3</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+
+		<group id="testAcceptRecommendationFromDeclinedTab">
+
+			<test id="test5">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203524631","qty":"1","price":"$79.99"}],"repositoryId":"DC1600001","isFromDeclinedTab":true}</obj>
+					<obj id="login" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="recommededFlag" type="string">false</obj>
+					<obj id="registryId" type="string">203524631</obj>
+					<obj id="skuId" type="string">17744674</obj>
+					<obj id="comment" type="string"> try this</obj>
+					<obj id="recommendedQuantity" type="string">3</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+		<group id="testAcceptRecommendationFromDeclinedTabErr">
+
+			<test id="test6">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203524631","qty":"1","price":"$79.99"}],"repositoryId":"DC161813","isFromDeclinedTab":true}</obj>
+					<obj id="login" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="recommededFlag" type="string">false</obj>
+					<obj id="registryId" type="string">203524631</obj>
+					<obj id="skuId" type="string">17744674</obj>
+					<obj id="comment" type="string"> try this</obj>
+					<obj id="recommendedQuantity" type="string">3</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+
+		<group id="testDeclineRecommendationFromPendingTab">
+
+			<test id="test7">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203524611","qty":"1","price":"$79.99"}],"repositoryId":"DC12500005","isFromPendingTab":"true","isDeclined":"true"}</obj>
+					<obj id="login" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+		<group id="testDeclineRecommendationFromPendingTabErr">
+
+			<test id="test8">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203524611","qty":"1","price":"$79.99"}],"repositoryId":"DC12500","isFromPendingTab":"true","isDeclined":"true"}</obj>
+					<obj id="login" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+		<group id="testAcceptRecommendationFromPendingTabErr">
+
+			<test id="test9">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"16788597","prodId":"120667","registryId":"203524631","qty":"1","price":"$79.99"}],"repositoryId":"DC125000","isFromPendingTab":"true","isDeclined":"false"}</obj>
+					<obj id="login" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="recommendedQuantity" type="string">3</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/addItemToGiftRegistry</obj>
+				    <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>
+
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE secured-repository-template SYSTEM "dynamosystemresource:/atg/dtds/security/secured_repository_template_1.0.dtd">
+
+<secured-repository-template>
+
+  <item-descriptor name="catalog">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+   
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="category">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+   
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="category-info">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="product">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="product-info">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="sku">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="sku-info">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="genericFolder">
+    
+    
+        <!-- the ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- the ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="sku-link">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="configurableSku">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="configurableProperty">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="configurationOption">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  <item-descriptor name="foreignCatalog">
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read"/>
+
+    
+        <!-- The property that the ACL will be stored in 
+ The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list"/>
+
+  
+    
+    
+        <!-- The ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+    
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <item-descriptor name="catalogFolder">
+    
+    
+        <!-- the ACL that applies to the item view/descriptor -->
+<descriptor-acl value="Admin$role$administrators-group:read,write,create,delete;Admin$role$everyone-group:read;Profile$role$epubSuperAdmin:read,write,create,delete;Profile$role$epubAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read"/>
+
+    
+        <!-- The property that the ACL will be stored in -->
+<acl-property name="itemAcl"/>
+
+    
+       <!-- An ACL fragment that is assigned to all new items -->
+<creation-base-acl value="Admin$role$administrators-group:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Admin$role$everyone-group:read,list;Profile$role$epubSuperAdmin:read,write,list,destroy,read_owner,write_owner,read_acl,write_acl;Profile$role$epubAdmin:read,list;Profile$role$epubManager:read,list;Profile$role$epubUser:read,list"/>
+
+  </item-descriptor>
+
+  
+
+  
+
+  
+
+  
+
+  
+</secured-repository-template>

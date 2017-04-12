@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+ATG-Required: DAS REST
+ATG-J2EE: j2ee-apps/AdminUI
+ATG-EAR-Module: j2ee-apps/adminUI
+ATG-Class-Path: classes
+ATG-Config-Path: config/

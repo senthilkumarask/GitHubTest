@@ -1,0 +1,56 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_cat_id":1,
+			"rule_id":1,
+			"facet_rule_id":1,
+			"facet_rule_name":"Rule 1",
+			"sequence_num":1,
+			"jda_dept_id":100,
+			"jda_dept_name":"JDA Dept Name 1",
+			"jda_sub_dept_id":null,
+			"jda_sub_dept_name":"",
+			"jda_class":null,
+			"jda_class_name":"",
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Red"}
+			]
+
+		},
+		{
+			"list_cat_id":1,	
+			"rule_id":2,
+			"facet_rule_id":2,
+			"facet_rule_name":"Rule 2",
+			"sequence_num":2,
+			"jda_dept_id":100,
+			"jda_dept_name":"JDA Dept Name 3",
+			"jda_sub_dept_id":110,
+			"jda_sub_dept_name":"JDA Sub Dept Name 3",
+			"jda_class":null,
+			"jda_class_name":"",
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Red2"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Big Red2"}
+			]
+		},
+		{
+			"list_cat_id":1,
+			"rule_id":3,
+			"facet_rule_id":3,
+			"facet_rule_name":"Rule 3",
+			"sequence_num":3,
+			"jda_dept_id":100,
+			"jda_dept_name":"JDA Dept Name 3",
+			"jda_sub_dept_id":110,
+			"jda_sub_dept_name":"JDA Sub Dept Name 3",
+			"jda_class":120,
+			"jda_class_name":"JDA Class Name 3",
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Red3"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Big Red3"}
+			]
+		}
+	]
+}

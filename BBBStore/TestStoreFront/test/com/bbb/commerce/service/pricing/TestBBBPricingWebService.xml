@@ -1,0 +1,917 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBPricingWebService.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBPricingWebService.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+       <group id="testPricingService">
+        <test id="testPricingService">
+			<objs>
+				<obj id="bbbPriceObject" type="com.bbb.commerce.service.pricing.TestBBBPricingWebService" hint="call" method="resolveName" calltype="com.bbb.commerce.service.pricing.TestBBBPricingWebService">
+					<item type="string">/com/bbb/commerce/service/pricing/BBBPricingWebService</item>
+				</obj>	
+				<obj id="xmlAsString" type="string"><![CDATA[<pricingRequest xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathUS</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            
+            <callingAppCode>1</callingAppCode>
+            
+            
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  
+                  <shippingAddress>
+                     <addressLine1>1206</addressLine1>
+                  
+                     <city>Hyderabad</city>
+                     <state>TX</state>
+                    <zipCode>70512</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku60010</sku>
+                        <quantity>2</quantity>
+                        <price>15.00</price>      
+                        <status>SHIPPED</status>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                  </itemList>
+                  
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+				<obj id="xmlAsString1" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BuyBuyBaby</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90018</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>1206</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Topaz</addressLine2>
+                     <city>Hyderabad</city>
+                     <state>Texas</state>
+                    <zipCode>70512</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                       
+                        <status>SHIPPED</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90018</couponCode>
+                              <!--Optional:-->
+                             <discountAmount>5.00</discountAmount>
+                              <promotionDescription>20% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+             <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              
+                              <couponCode>promo4</couponCode>
+                              
+                              <discountAmount>5.00</discountAmount>
+                              <!--Optional:-->
+                              <promotionDescription>20% off on entire order</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>BBB_COUPON</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku60010</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              
+                              <couponCode>promo4</couponCode>
+                              
+                              <discountAmount>5.00</discountAmount>
+                              <!--Optional:-->
+                              <promotionDescription>20% off on entire order</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>BBB_COUPON</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>    
+                     <item lineNumber="4" originalLineNumber="4">
+                        <sku>sku10013</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                                
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              
+                              <couponCode>promo4</couponCode>
+                              
+                              <discountAmount>5.00</discountAmount>
+                              <!--Optional:-->
+                              <promotionDescription>20% off on entire order</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>BBB_COUPON</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="5" originalLineNumber="5">
+                        <sku>sku10014</sku>
+                        <quantity>2</quantity>
+                        <price>15.00</price>
+                        <!--Optional:-->
+                        <finalPrice>15.00</finalPrice>
+                                                
+                        <status>WORK</status>
+                        <isLTLSku>false</isLTLSku>
+                        <!--Optional:-->
+                        
+                     </item>        
+    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+				<obj id="xmlAsString2" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BuyBuyBaby</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90018</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>SHIPPED</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90018</couponCode>
+                              <!--Optional:-->
+                              <discountAmount>5.00</discountAmount> 
+                              <promotionDescription>20% off on 100$</promotionDescription>
+                                
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90018</couponCode>
+                              <discountAmount>5.00</discountAmount> 
+                              <!--Optional:-->
+                              <promotionDescription>20% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku60010</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90018</couponCode>
+                              <!--Optional:-->
+                            <discountAmount>5.00</discountAmount>   
+                              <promotionDescription>20% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>    
+                    <item lineNumber="4" originalLineNumber="4">
+                        <sku>sku10013</sku>
+                        <quantity>2</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90018</couponCode>
+                            <discountAmount>5.00</discountAmount>   
+                              <!--Optional:-->
+                              <promotionDescription>20% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+            
+    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString3" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BuyBuyBaby</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90019</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>SHIPPED</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90019</couponCode>
+                              <!--Optional:-->
+                  <discountAmount>5.00</discountAmount> 
+                              <promotionDescription>15% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90019</couponCode>
+                              <!--Optional:-->
+                              <discountAmount>5.00</discountAmount> 
+                              <promotionDescription>15% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku60010</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90019</couponCode>
+                              <!--Optional:-->
+                              <discountAmount>5.00</discountAmount> 
+                              <promotionDescription>15% off on 100$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString4" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathCanada</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90037</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>BC</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                       
+                        <status>SHIPPED</status>
+                       <isLTLSku>false</isLTLSku>
+                     </item>
+                    <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                       
+                        <status>PROCESS</status>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                    <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku60010</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        <!--Optional:-->
+                       
+                        <status>PROCESS</status>
+                        <isLTLSku>false</isLTLSku>                     
+                     </item>    
+            
+            
+    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString5" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathCanada</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90027</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>true</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>2</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>SHIPPED</status>
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90027</couponCode>
+                              <discountAmount>5.00</discountAmount> 
+                              <!--Optional:-->
+                              <promotionDescription>25$ off on 75$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                       <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>2</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>PROCESS</status>
+                        
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90027</couponCode>
+                              <discountAmount>5.00</discountAmount> 
+                              <!--Optional:-->
+                              <promotionDescription>25$ off on 75$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                
+            
+            
+    
+                  </itemList>
+               </shippingGroup>
+                <shippingGroup>
+                  <shippingGroupId>sg2345</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>12883</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St. WS</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     
+             <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku40032</sku>
+                        <quantity>2</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                                          
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <adjustmentList>
+                           <!--1 or more repetitions:-->
+                           <adjustment>
+                              <!--You have a CHOICE of the next 2 items at this level-->
+                              <couponCode>promo90027</couponCode>
+                              <discountAmount>5.00</discountAmount>
+                              <!--Optional:-->
+                              <promotionDescription>25$ off on 75$</promotionDescription>
+                              <!--Optional:-->
+                              <promotionType>ATG_PROMOTION</promotionType>
+                           </adjustment>
+                        </adjustmentList>
+                       <isLTLSku>false</isLTLSku>
+                     </item>    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString6" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BuyBuyBaby</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90018</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>sku40041</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="2" originalLineNumber="2">
+                        <sku>sku60012</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                                
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="3" originalLineNumber="3">
+                        <sku>sku60010</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                                               
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <isLTLSku>false</isLTLSku>
+                     </item>    
+                     <item lineNumber="4" originalLineNumber="4">
+                        <sku>sku10013</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <isLTLSku>false</isLTLSku>
+                     </item>
+                     <item lineNumber="5" originalLineNumber="5">
+                        <sku>sku10014</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                       
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                
+                        <isLTLSku>false</isLTLSku>
+                     </item>        
+    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString7" type="string"><![CDATA[<pricingRequest  xmlns="http://bedbathandbeyond.com/atg">
+         <header>
+            <orderId>O1234</orderId>
+            <siteId>BuyBuyBaby</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+            <!--Optional:-->
+            <currencyCode>USD</currencyCode>
+            <callingAppCode>bbb</callingAppCode>
+            <!--Optional:-->
+            <timestamp>2012-02-02T09:00:00.0</timestamp>
+            <!--Optional:-->
+            <coupons>
+               <!--1 or more repetitions:-->
+               <coupon>
+                  <identifier>promo90018</identifier>
+                  <type>ATG_PROMOTION</type>
+               </coupon>
+            </coupons>
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>1a</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  <!--Optional:-->
+                  
+                  <shippingAddress>
+                     <addressLine1>123</addressLine1>
+                     <!--Optional:-->
+                     <addressLine2>Main St.</addressLine2>
+                     <city>New York</city>
+                     <state>NY</state>
+                    <zipCode>10019-1234</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>fateGa</sku>
+                        <quantity>1</quantity>
+                        <price>25.00</price>
+                        <!--Optional:-->
+                        <finalPrice>25.00</finalPrice>
+                        
+                        <status>PROCESS</status>
+                        <!--Optional:-->
+                        <isLTLSku>false</isLTLSku>
+                     </item>    
+                  </itemList>
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+      <obj id="xmlAsString8" type="string"><![CDATA[<pricingRequest xmlns="http://bedbathandbeyond.com/atg">
+           <header>
+            <orderId>O1234</orderId>
+            <siteId>BedBathUS</siteId>
+            <orderDate>2012-02-16T09:00:00.0</orderDate>
+                        
+            <callingAppCode>1</callingAppCode>
+            
+            
+         </header>
+         <request>
+            <shippingGroups>
+               <!--1 or more repetitions:-->
+               <shippingGroup>
+                  <shippingGroupId>sg1234</shippingGroupId>
+                  <shippingMethod>LC</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  
+                  <shippingAddress>
+                     <addressLine1>addr11206</addressLine1>
+                     <city>Plano</city>
+                     <state>TX</state>
+                    <zipCode>70512</zipCode>
+                     <country>US</country>
+                     <dayPhone>9090909090</dayPhone>
+                     <evePhone>9999999999</evePhone>
+                     <email>ugoel@sapient.com</email>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>17463668</sku>
+                        <quantity>2</quantity>
+                        <price>15.00</price>      
+                        <status>PROCESS</status>
+						<isLTLSku>true</isLTLSku>
+                     </item>    
+                  </itemList>
+                  
+               </shippingGroup>
+			   <shippingGroup>
+                  <shippingGroupId>sg1254</shippingGroupId>
+                  <shippingMethod>LR</shippingMethod>
+                  <giftWrapRequired>false</giftWrapRequired>
+                  
+                  <shippingAddress>
+                     <addressLine1>1206</addressLine1>
+                  
+                     <city>Hyderabad</city>
+                     <state>TX</state>
+                    <zipCode>70512</zipCode>
+                     <country>US</country>
+                  </shippingAddress>
+                  <itemList>
+                     <!--1 or more repetitions:-->
+                     <item lineNumber="1" originalLineNumber="1">
+                        <sku>17463668</sku>
+                        <quantity>2</quantity>
+                        <price>15.00</price>      
+                        <status>PROCESS</status>
+						<isLTLSku>true</isLTLSku>
+                     </item>
+                  </itemList>
+                  
+               </shippingGroup>
+            </shippingGroups>
+         </request>
+      </pricingRequest>]]></obj>
+			</objs>			 
+        </test>
+      </group>      
+    </cluster>
+</ddtunit>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-474Offshore">
+  <ReviewIssue id="IDL6VOXT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 10:51:10:145 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 10:52:30:827 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Ashish</AssignedTo>
+    <File line="34">src/com/bbb/commerce/inventory/BBBStoreInventoryManagerImpl.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDL7BQID">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 11:03:38:677 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 11:04:50:601 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Ashish</AssignedTo>
+    <File line="871">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Make fetchFavStoreInvMultiSkus method public</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDL7GJSY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 11:07:23:266 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 11:08:53:635 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Ashish</AssignedTo>
+    <File line="85">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.type.label.other</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check if there is any regression on PDP </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validWontfix</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

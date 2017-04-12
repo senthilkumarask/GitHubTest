@@ -1,0 +1,136 @@
+<project name="StoreRestVersioned" default="build" basedir=".">
+
+  <!-- <property file="../../build_scripts/build.properties" /> -->
+  
+
+	<path id="dynamo.classpath">
+		<fileset dir="${dynamo.home}/../DAS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DAS-UI/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DPS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DSS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../DCS/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	<fileset dir="${dynamo.home}/../REST/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	
+	<!--<fileset dir="${dynamo.home}/../CommerceReferencStoreRest/Store/StoreRest/lib">
+		<include name="**/*.jar" />
+	</fileset>-->
+	<fileset dir="${dynamo.home}/../PublishingAgent/base/lib">
+		<include name="**/*.jar" />
+	</fileset>
+	
+	<fileset dir="${dynamo.home}/../CyberSourceIntegration">
+		<include name="**/*.jar" />
+	</fileset>
+	
+	</path>
+	
+	<path id="java.classpath">
+		<fileset dir="${JAVA_HOME}/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${JAVA_HOME}/jre/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	
+	<path id="bbb.core">
+		<fileset dir="../../core/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	
+
+
+	<path id="bbb.integration">
+		<fileset dir="../../integration/cybersource/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../../integration/endeca/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../../integration/giftregistry/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../../integration/oms/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../../integration/valuelink/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../../integration/webservices/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="bbb.estore">
+		<fileset dir="../../EStore/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="bbb.estore.versioned">
+		<fileset dir="../../EStore/versioned/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.rest">
+		<fileset dir="../../REST/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<path id="bbb.StoreRest.repositories">
+		<fileset dir="../repositories/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	
+  <target name="build" depends="clean,compile,copy,jar"/>
+
+  <target name="compile" >
+    <javac srcdir="src"	destdir="classes" fork="yes">
+	  <classpath refid="java.classpath" />
+      <classpath refid="dynamo.classpath" />
+	  <classpath refid="bbb.core" />
+	  <classpath refid="bbb.integration" />
+	  <classpath refid="bbb.estore" />
+	  <classpath refid="bbb.estore.versioned" />
+	  
+	  <classpath refid="bbb.rest" />
+	  <classpath refid="bbb.StoreRest.repositories" />
+    </javac>
+  </target>
+  
+  
+  	<target name="copy" description="copy all files from src">
+		<copy todir="classes">
+			<fileset dir="src" excludes="**/*.java" />
+		</copy>
+	</target>
+	
+  <target name="jar" >
+	<jar jarfile="lib/StoreRest.versioned.jar" basedir="classes"/>
+  </target>
+
+  <!-- Clean the build environment -->
+  <target name="clean">
+	<delete dir="${basedir}/classes/com" />
+	<delete dir="lib/StoreRest.versioned.jar" />
+  </target>
+
+</project>

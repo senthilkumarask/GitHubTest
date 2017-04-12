@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_AM_SHARE_PROFILE_JSP">
+  <ReviewIssue id="GVNOHWBN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 16:55:45:827 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-02 :: 13:22:36:594 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="58">j2ee-apps/BBBStore/store.war/includes/pageStart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why is value hardcoded here. It should come from BBB_SITE_ATTRIBUTES table</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>added cssFile id</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

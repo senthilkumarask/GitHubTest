@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Personal Store</name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Personal Store Page -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="personalStore"
+		display-name-resource="personalStore" display-property="personalStoreName"
+		cache-mode="simple" item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000">
+		<attribute name="resourceBundle"
+			value="com.bbb.personalstore.PersonalStoreResources" />
+
+		<table name="BBB_PERSONAL_STORE" type="primary" id-column-name="personal_store_id">
+
+			<property name="id" column-name="personal_store_id"
+				display-name-resource="personalStoreId" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+
+			<property name="personalStoreName" column-name="personal_store_name"
+				display-name-resource="personalStoreName" writable="true"
+				category-resource="basicInfo" data-type="string">
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+
+			<property name="personalStoreTitleDefault" column-name="personal_store_title_default"
+				display-name-resource="personalStoreTitleDefault" writable="true"
+				category-resource="basicInfo" data-type="big string">
+				<attribute name="propertySortPriority" value="2" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+			
+			<property name="personalStoreTitleTrending" column-name="personal_store_title_trending"
+				display-name-resource="personalStoreTitleTrending" writable="true"
+				category-resource="basicInfo" data-type="big string">
+				<attribute name="propertySortPriority" value="3" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+
+		</table>
+
+		<table name="BBB_PERSONAL_STORE_STRATEGY" type="multi"
+			id-column-names="personal_store_id" multi-column-name="sequence_num">
+			<property name="strategies" column-name="strategy_id"
+				display-name-resource="strategies" category-resource="basicInfo"
+				component-item-type="psStrategy" required="true" data-type="list">
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+		</table>
+
+
+		<table name="BBB_PERSONAL_STORE_SITES" id-column-names="personal_store_id"
+			type="multi">
+			<property name="sites" data-type="set" column-name="site_id"
+				display-name-resource="sites" component-item-type="siteConfiguration"
+				repository="/atg/multisite/SiteRepository" category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+
+	</item-descriptor>
+
+	<item-descriptor name="psStrategy"
+		display-name-resource="psStrategy" display-property="strategyDisplayName"
+		cache-mode="simple" item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000">
+		<attribute name="resourceBundle"
+			value="com.bbb.personalstore.PersonalStoreResources" />
+
+		<property property-type="com.bbb.personalstore.StrategyDisplayNamePropertyDescriptor"
+			readable="true" writable="true" data-type="string" hidden="true" name="strategyDisplayName"
+			queryable="true"/>
+			<table name="BBB_PS_STRATEGY" type="primary" id-column-name="strategy_id">
+
+				<property name="id" column-name="strategy_id"
+					display-name-resource="strategyId" writable="true"
+					category-resource="personalStoreStrategy" data-type="string">
+					<attribute name="propertySortPriority" value="0" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+				</property>
+
+
+				<property name="strategyPageTitle" column-name="strategy_page_title"
+					display-name-resource="strategyPageTitle" writable="true"
+					category-resource="personalStoreStrategy" data-type="string" required="true">
+					<attribute name="propertySortPriority" value="1" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+				</property>
+
+				<property name="strategyContextTitle" column-name="strategy_context_title"
+					display-name-resource="strategyContextTitle" writable="true"
+					category-resource="personalStoreStrategy" data-type="big string">
+					<attribute name="propertySortPriority" value="2" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+				</property>
+
+				<property name="strategyName" column-name="strategy_name"
+					display-name-resource="strategyName" property-type="atg.adapter.gsa.StringEnumPropertyDescriptor" writable="true"
+					category-resource="personalStoreStrategy" data-type="enumerated"
+					required="true">
+					<attribute name="propertySortPriority" value="3" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+					<attribute name="useCodeForValue" value="true" />
+					<option value="Viewed-Bought" code="BBB1001" />
+					<option value="Bought-Bought" code="BBB1002" />
+					<option value="Viewed-Viewed" code="BBB1003" />
+					<option value="Just-for-you" code="BBB1004" />
+					<option value="Viewed-Bought-Trending" code="BBB1005" />
+					<option value="Bought-Bought-Trending" code="BBB1006" />
+					<option value="Viewed-Viewed-Trending" code="BBB1007" />
+					<option value="Just-for-you-Trending" code="BBB1008" />
+				</property>
+
+		 
+				<property name="strategyType" column-name="strategy_type"
+					display-name-resource="strategyType" writable="true"
+					category-resource="personalStoreStrategy" data-type="enumerated"
+					required="true">
+					<attribute name="propertySortPriority" value="4" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+					<attribute name="useCodeForValue" value="false" />
+					<option value="Recommendation" code="100" />
+					<option value="Trending" code="200" />
+				</property>
+
+				<property name="strategyLayout" column-name="layout_id"
+					display-name-resource="strategyLayout" writable="true"
+					category-resource="personalStoreStrategy" item-type="psLayout"
+					required="true">
+					<attribute name="propertySortPriority" value="6" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+				</property>
+
+				<property name="customerType" default="Both" data-type="enumerated"
+					column-name="CUSTOMER_TYPE" category-resource="personalStoreStrategy"
+					display-name-resource="customerType">
+					<attribute name="useCodeForValue" value="false" />
+					<attribute name="propertySortPriority" value="7" />
+					<attribute name="resourceBundle"
+						value="com.bbb.personalstore.PersonalStoreResources" />
+					<option value="Both" code="0" />
+					<option value="LoggedIn" code="1" />
+					<option value="Anonymous" code="2" />
+				</property>
+
+			</table>
+
+	</item-descriptor>
+
+	<item-descriptor name="psLayout" display-name-resource="psLayout"
+		display-property="layoutName" cache-mode="simple" item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000">
+		<attribute name="resourceBundle"
+			value="com.bbb.personalstore.PersonalStoreResources" />
+
+		<table name="BBB_PS_LAYOUT" type="primary" id-column-name="layout_id">
+
+			<property name="id" column-name="layout_id"
+				display-name-resource="layoutId" writable="true"
+				category-resource="personalStoreStrategyLayout" data-type="string">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+			
+			<property name="layoutName" column-name="layout_name"
+				display-name-resource="layoutName" writable="true"
+				category-resource="personalStoreStrategyLayout" data-type="enumerated"
+				property-type="atg.adapter.gsa.StringEnumPropertyDescriptor" required="true" default="Mason">
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Mason" code="Mason" />
+				<option value="Fouracross" code="Fouracross" />
+				<option value="Twoacross" code="Twoacross" />
+				<option value="Threeacross" code="Threeacross" />
+				<option value="Fiveandhalfaccross" code="Fiveandhalfaccross" />
+			</property>
+
+			<property name="layoutTypeData" column-name="layout_type_data"
+				display-name-resource="layoutTypeData" writable="true"
+				category-resource="personalStoreStrategyLayout" data-type="enumerated"
+				required="true">
+				<attribute name="propertySortPriority" value="2" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Product" code="0" />
+			</property>
+
+			<property name="layoutNumProducts" column-name="number_of_products"
+				display-name-resource="layoutNumProducts" writable="true"
+				category-resource="personalStoreStrategyLayout" data-type="string"
+				required="true">
+				<attribute name="propertySortPriority" value="3" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="psSource" display-name-resource="psSource"
+		display-property="id" cache-mode="simple" item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000">
+		<attribute name="resourceBundle"
+			value="com.bbb.personalstore.PersonalStoreResources" />
+
+		<table name="BBB_PS_SOURCE" type="primary" id-column-name="source_id">
+			<property name="id" column-name="source_id"
+				display-name-resource="sourceId" writable="true" category-resource="personalStoreSource"
+				data-type="string">
+				<attribute name="propertySortPriority" value="0" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+			</property>
+
+			<property name="sourceName" column-name="source_name"
+				display-name-resource="sourceName" writable="true" property-type="atg.adapter.gsa.StringEnumPropertyDescriptor" 
+				category-resource="personalStoreSource" data-type="enumerated"
+				required="true">
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+				<attribute name="useCodeForValue" value="true" />
+				<option value="Viewed-Bought" code="BBB1001" />
+				<option value="Bought-Bought" code="BBB1002" />
+				<option value="Viewed-Viewed" code="BBB1003" />
+				<option value="Just-for-you" code="BBB1004" />
+				<option value="Viewed-Bought-Trending" code="BBB1005" />
+				<option value="Bought-Bought-Trending" code="BBB1006" />
+				<option value="Viewed-Viewed-Trending" code="BBB1007" />
+				<option value="Just-for-you-Trending" code="BBB1008" />
+			</property>
+		</table>
+
+		<table name="BBB_PS_SOURCE_PARAM" id-column-names="source_id"
+			type="multi" multi-column-name="source_parameters_key">
+
+			<property name="sourceParameters" column-name="source_parameters"
+				display-name-resource="sourceParameters" writable="true"
+				category-resource="personalStoreSource" data-type="map"
+				component-data-type="string">
+				<attribute name="propertySortPriority" value="2" />
+				<attribute name="resourceBundle"
+					value="com.bbb.personalstore.PersonalStoreResources" />
+
+			</property>
+		</table>
+	</item-descriptor>
+
+</gsa-template>

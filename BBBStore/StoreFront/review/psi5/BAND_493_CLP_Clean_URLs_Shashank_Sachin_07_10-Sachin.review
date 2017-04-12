@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_493_CLP_Clean_URLs_Shashank_Sachin_07_10">
+  <ReviewIssue id="I0Z4EVJW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:14:42:428 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 17:00:13:521 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Review comments incorporated </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0Z4F5Q2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:14:55:610 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:59:13:783 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="33">j2ee-apps/BBBStore/store.war/_includes/header/elements/menu_contents.jsp</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Put Comments on JSP</Summary>
+    <Description>When ever adding new droplet or JSTL condition in jsp , put a JSP comments.</Description>
+    <Annotation></Annotation>
+    <Revision>Review comments incorporated </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0Z4KKIO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:19:08:064 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:59:17:735 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="48">j2ee-apps/BBBStore/store.war/browse/subcategories_list.jsp</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Put comments on JSP</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Review comments incorporated </Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I0Z57TQT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:37:13:109 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-07 :: 16:39:41:749 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Shashank</AssignedTo>
+    <File line="19">j2ee-apps/BBBStore/store.war/browse/category_landing.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add comments on JSP</Summary>
+    <Description>&lt;dsp:include page="category_breadcrumb.jsp"&gt;&lt;/dsp:include&gt;
+
+Purpose of including category_breadcrumb.jsp.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-2391_01_04_16">
+  <ReviewIssue id="IMMBINV6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 14:16:07:506 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 14:16:50:281 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgupta5</ReviewerId>
+    <AssignedTo>mgupta5</AssignedTo>
+    <File line="928">j2ee-apps/tbs/tbs.war/browse/product_details.jsp</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>What is the difference in logic from below two conditional blocks?</Summary>
+    <Description>&lt;c:when test="${itemAlreadyPersonalized &amp;&amp; (personalizedSku.personalizationComplete eq false)  &amp;&amp; (personalizationType eq 'PY' || personalizationType eq 'CR')}"&gt;
+							${shopperCurrency}${eximItemPrice }
+							
+							&lt;/c:when&gt;
+						
+						&lt;c:when test="${itemAlreadyPersonalized &amp;&amp; (personalizedSku.personalizationComplete eq false)  &amp;&amp; (personalizationType eq 'PB')}"&gt;
+							${shopperCurrency}${eximItemPrice }
+							
+							&lt;/c:when&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMMBNWXW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 14:20:12:548 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-04 :: 14:20:48:110 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgupta5</ReviewerId>
+    <AssignedTo>mgupta5</AssignedTo>
+    <File line="1212">j2ee-apps/tbs/tbs.war/browse/product_details.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Where is the logic to disable to ADD TO CART and ADD TO REGISTRY in case of in progess items?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

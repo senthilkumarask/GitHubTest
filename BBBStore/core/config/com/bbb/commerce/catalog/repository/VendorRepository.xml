@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Vendor Feed Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="vendors" display-name-resource="vendorRepository" cache-mode="simple" item-cache-size="100" item-cache-timeout="720">
+		<table name="BBB_VENDORS" type="primary" id-column-name="vendor_id">
+			<property name="id" column-name="vendor_id" display-name-resource="vendorId" category-resource="BasicInfo" writable="true">
+        	</property>
+        	<property name="name" column-name="name" display-name="name" data-type="string" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>
+           	<property name="rowXngDt" column-name="row_xng_dt" display-name="rowXngDt" data-type="timestamp" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>
+           	<property name="rowXngUsr" column-name="row_xng_usr" display-name="rowXngUsr" data-type="string" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="rowStatus" column-name="row_status" display-name="Status" data-type="string" category-resource="BasicInfo">
+            	<attribute name="propertySortPriority" value="4"/>
+           	</property>
+		</table>
+    </item-descriptor>
+    
+    <item-descriptor name="vendorsCustomization" cache-mode="simple" item-cache-size="10000" query-cache-size="10000">
+		<table name="BBB_CUSTOMIZATION_VENDORS" type="primary" id-column-name="CUSTOMIZATION_VENDOR_ID">
+			<property name="customizationVendorId" column-name="CUSTOMIZATION_VENDOR_ID" data-type="string"/>
+			<property name="customizationVendorName" column-name="CUSTOMIZATION_VENDOR_NAME" data-type="string"/>
+			<property name="vendorJs" column-name="VENDOR_JS" data-type="string"/>
+			<property name="vendorCss" column-name="VENDOR_CSS" data-type="string"/>
+			<property name="vendorMobileJs" column-name="VENDOR_MOBILE_JS" data-type="string"/>
+			<property name="vendorMobileCss" column-name="VENDOR_MOBILE_CSS" data-type="string"/>
+			<property name="apiURL" column-name="API_URL" data-type="string"/>
+			<property name="apiVersion" column-name="API_VERSION" data-type="string"/>
+			<property name="babyClientId" column-name="BAB_CLIENT_ID" data-type="string"/>
+			<property name="bbbClientId" column-name="BBB_CLIENT_ID" data-type="string"/>
+			<property name="canClientId" column-name="CAN_CLIENT_ID" data-type="string"/>
+			<property name="tbsBabyClientId" column-name="TBS_BAB_CLIENT_ID" data-type="string"/>
+			<property name="tbsBbbClientId" column-name="TBS_BBB_CLIENT_ID" data-type="string"/>
+			<property name="tbsCanClientId" column-name="TBS_CAN_CLIENT_ID" data-type="string"/>
+			<property name="apiKey" column-name="API_KEY" data-type="string"/>
+			
+		</table>		
+	</item-descriptor>
+    
+    
+    
+    
+</gsa-template>

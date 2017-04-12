@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template
+PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+"http://www.atg.com/dtds/activitymanager/activitymanager_1.0.dtd">
+<generic-activities>
+<!-- Add a link named "Edit Inventory" -->
+<activity>
+<id>editInventory</id>
+<resource-bundle>com.webui.WebAppResources</resource-bundle>
+<display-name-resource>editInventory.displayName</display-name-resource>
+<description-resource>editInventory.description</description-resource>
+<destination-page>
+<!-- This link takes the user to the AssetManager UI -->
+<url>/AssetManager/assetManager.jsp</url>
+<!-- The clear-context flag clears any active Content Administration project references out of the user's session. -->
+<clear-context>true</clear-context>
+<!-- The ACL is optional. This ACL limits the visibility of this link to people with any of the epub roles. -->
+<acl>Profile$role$epubAdmin:read;Profile$role$epubSuperAdmin:read;Profile$role$epubManager:read;Profile$role$epubUser:read</acl>
+</destination-page>
+</activity>
+</generic-activities>

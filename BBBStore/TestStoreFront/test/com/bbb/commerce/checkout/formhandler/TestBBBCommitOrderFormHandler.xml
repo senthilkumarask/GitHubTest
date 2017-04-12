@@ -1,0 +1,664 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster
+		id="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">			
+		<group id="testhandleCommitOrderByPayPal">
+			<test id="testhandleCommitOrderByPayPal">
+				<objs>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="payPalDroplet"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/commerce/droplet/PaypalDroplet</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.droplet.TestPayPalDroplet">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						127013
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="orderId" type="string">
+						111222333
+					</obj>
+				</objs>
+			</test>
+		</group>		
+		<group id="testhandleVerifiedByVisaLookup">
+			<test id="testhandleVerifiedByVisaLookup">
+				<objs>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBAddressAPI</item>
+					</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbShippingGroupFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="billingAddrForm"
+						type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+					<obj id="paymentGroupFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku60263
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod60064
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="orderId" type="string">
+						55566667777
+					</obj>
+					<obj id = "FirstName" type="string">
+						LookUp
+					</obj>
+					<obj id="payLoad" type="string">
+						LookUp
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testhandleVerifiedByVisaAuth">
+			<test id="testhandleVerifiedByVisaAuth">
+				<objs>
+					<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBAddressAPI</item>
+					</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+					<obj id="orderRepository" type="atg.commerce.order.OrderRepository"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderRepository/</item>
+					</obj>
+					<obj id="paymentGroupManager" type="atg.commerce.order.PaymentGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/PaymentGroupManager</item>
+					</obj>
+					<obj id="shippingGroupManager" type="atg.commerce.order.ShippingGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">atg/commerce/order/ShippingGroupManager</item>
+					</obj>					
+					<obj id="commerceItemManager" type="atg.commerce.order.CommerceItemManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/CommerceItemManager</item>
+					</obj>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbShippingGroupFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="billingAddrForm"
+						type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+					<obj id="paymentGroupFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku40004
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod10011
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="orderId" type="string">
+						444555666
+					</obj>
+					<obj id = "FirstName" type="string">
+						Authenticate
+					</obj>
+					<obj id="payLoad" type="string">
+						Authenticate
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testFailureScenarioVBVFirst">
+			<test id="testFailureScenarioVBVFirst">
+				<objs>
+					<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBAddressAPI</item>
+					</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+					<obj id="orderRepository" type="atg.commerce.order.OrderRepository"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderRepository/</item>
+					</obj>
+					<obj id="paymentGroupManager" type="atg.commerce.order.PaymentGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/PaymentGroupManager</item>
+					</obj>
+					<obj id="shippingGroupManager" type="atg.commerce.order.ShippingGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">atg/commerce/order/ShippingGroupManager</item>
+					</obj>					
+					<obj id="commerceItemManager" type="atg.commerce.order.CommerceItemManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/CommerceItemManager</item>
+					</obj>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbShippingGroupFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="billingAddrForm"
+						type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+					<obj id="paymentGroupFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku40004
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod10011
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="orderId" type="string">
+						444555666
+					</obj>
+					<obj id = "FirstName" type="string">
+						NYY
+					</obj>
+					<obj id="payLoad" type="string">
+					NYY
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testFailureScenarioVBVSecond">
+			<test id="testFailureScenarioVBVSecond">
+				<objs>
+					<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBAddressAPI</item>
+					</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+					<obj id="orderRepository" type="atg.commerce.order.OrderRepository"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderRepository/</item>
+					</obj>
+					<obj id="paymentGroupManager" type="atg.commerce.order.PaymentGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/PaymentGroupManager</item>
+					</obj>
+					<obj id="shippingGroupManager" type="atg.commerce.order.ShippingGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">atg/commerce/order/ShippingGroupManager</item>
+					</obj>					
+					<obj id="commerceItemManager" type="atg.commerce.order.CommerceItemManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/CommerceItemManager</item>
+					</obj>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbShippingGroupFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="billingAddrForm"
+						type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+					<obj id="paymentGroupFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku40004
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod10011
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="orderId" type="string">
+						444555666
+					</obj>
+					<obj id = "FirstName" type="string">
+						YNY
+					</obj>
+					<obj id="payLoad" type="string">
+					YNY
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testFailureScenarioVBVThird">
+			<test id="testFailureScenarioVBVThird">
+				<objs>
+					<obj id="addressAPI" type="com.bbb.account.api.BBBAddressAPIImpl"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBAddressAPI</item>
+					</obj>
+					<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileTools</item>
+					</obj>
+					<obj id="orderRepository" type="atg.commerce.order.OrderRepository"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderRepository/</item>
+					</obj>
+					<obj id="paymentGroupManager" type="atg.commerce.order.PaymentGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/PaymentGroupManager</item>
+					</obj>
+					<obj id="shippingGroupManager" type="atg.commerce.order.ShippingGroupManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">atg/commerce/order/ShippingGroupManager</item>
+					</obj>					
+					<obj id="commerceItemManager" type="atg.commerce.order.CommerceItemManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/CommerceItemManager</item>
+					</obj>
+					<obj id="shoppingCart" type="atg.commerce.ShoppingCart"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/ShoppingCart</item>
+					</obj>
+					<obj id="orderManager" type="atg.commerce.order.OrderManager"
+						hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/OrderManager</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbCartFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+					</obj>
+					<obj id="bbbShippingGroupFormHandler"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler</item>
+					</obj>
+					<obj id="bbbPriceListManager"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+					</obj>
+					<obj id="bbbCatalogTools"
+						type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+						<item type="string">/atg/commerce/catalog/CatalogTools</item>
+					</obj>
+					<obj id="billingAddrForm"
+						type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+					<obj id="paymentGroupFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBPaymentGroupFormHandler">
+						<item type="string">/atg/commerce/order/purchase/PaymentGroupFormHandler</item>
+					</obj>
+					<obj id="bbbCommitOrderFormHandler"
+						type="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBCommitOrderFormHandler">
+						<item type="string">/atg/commerce/order/purchase/CommitOrderFormHandler</item>
+					</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="listPriceId" type="string">
+						plist100005
+					</obj>
+					<obj id="salePriceId" type="string">
+						plist100004
+					</obj>
+					<obj id="catalogId" type="string">
+						masterCatalog
+					</obj>
+					<obj id="catalogRefIdZip" type="string">
+						sku40004
+					</obj>
+					<obj id="productIdZip" type="string">
+						prod10011
+					</obj>
+					<obj id="siteId" type="string">
+						BedBathUS
+					</obj>
+					<obj id="profileId" type="string">130003</obj>
+					<obj id="email" type="string">amit_1@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="orderId" type="string">
+						444555666
+					</obj>
+					<obj id = "FirstName" type="string">
+						YYN
+					</obj>
+					<obj id="payLoad" type="string">
+						YYN
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

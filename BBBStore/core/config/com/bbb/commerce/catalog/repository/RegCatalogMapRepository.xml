@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Registry Category Group Template</name>
+        <author></author>
+    </header>
+       
+    <item-descriptor name="regCatGrp" display-name="CatalogJDAMap" display-property="catName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+		
+		<table name="BBB_REGISTRY_CATEGORY_GROUP" type="primary" id-column-name="ID">
+			<property name="id" column-name="ID" display-name="id" writable="true" required="true">
+        		<attribute name="propertySortPriority" value="4"/>	
+			</property>
+           	<property name="catName" column-name="CATEGORY_NAME" display-name="CategoryName" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="0"/>
+           	</property>	
+           	 <property name="catId" column-name="CATEGORY_ID" cascade="update" display-name="CategoryId" item-type="category" repository="/atg/commerce/catalog/ProductCatalog" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="1"/>
+           	</property>	
+           	<property name="addItemFlag" column-name="ADDITEM_FLAG" display-name="addItemFlag" data-type="boolean" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="2"/>
+           	</property>	
+           	<property name="recommendedCatFlag" column-name="RECOMMENDED_CATEGORY_FLAG" display-name="recommendedCatFlag" data-type="boolean" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="siteId" column-name="SITE_ID" display-name="siteId" data-type="String" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="4"/>
+           	</property>
+		</table>
+		
+   		<table name="BBB_JDA_SUB_DEPT_CATEGORY" type="multi" id-column-names="ID">
+			<property name="jdaSubCat" column-names="JDA_SUB_DEPT_ID" display-name="jdaSubCat" repository="/atg/commerce/catalog/ProductCatalog" data-type="set"  component-item-type="jdaSubDept" category-resource="BBBRegistryTypes">  		
+				<attribute name="propertySortPriority" value="5"/>
+			</property>
+  		</table>
+  		
+    </item-descriptor>
+    
+     <item-descriptor name="registryMap" display-name="RegCatalogMap" display-property="registryCatTypes" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+		
+		<table name="BBB_REGISTRY_CATEGORY_MAP" type="primary" id-column-name="REGISTRY_ID">
+			<property name="id" column-name="REGISTRY_ID" display-name="registryId" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>	
+           	<property name="registryCatTypes" column-name="REGISTRY_TYPE_ID" display-name="registryCatTypes"  category-resource="BasicInfo" repository="/atg/multisite/SiteRepository" item-type="registrytype">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>
+           	<property name="promoBox" column-name="PROMO_BOX" display-name="promoBox" category-resource="BasicInfo" repository="/com/bbb/cms/repository/WSHomePageTemplate" item-type="imageBox" >
+	          	<attribute name="propertySortPriority" value="1"/>
+	        </property>
+        </table>
+		
+		<table name="BBB_REGISTRY_TYPES_CATEGORY" type="multi" multi-column-name="sequence_num" id-column-names="REGISTRY_ID">
+			<property name="regCat" column-names="REGISTRY_CATEGORY_ID" display-name="registryCat" data-type="list" component-item-type="regCatGrp" category-resource="BBBRegistryTypes">
+			<attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+		
+	</item-descriptor>
+	
+     <item-descriptor name="regPriceGrp" display-name="RegPriceGroup" display-property="priceRange" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+		
+		<table name="BBB_REGISTRY_PRICE_GROUP" type="primary" id-column-name="ID">
+			<property name="id" column-name="ID" display-name="id" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>	
+           	<property name="minPrice" column-name="MIN_PRICE" display-name="minPrice" data-type="double" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>	
+           	 <property name="maxPrice" column-name="MAX_PRICE" display-name="maxPrice" data-type="double" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="6"/>
+           	</property>		
+           	<property name="priceRange" column-name="PRICE_RANGE" display-name="priceRange" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="7"/>
+           	</property>	
+		</table>
+		
+	</item-descriptor>
+	
+	<item-descriptor name="regPriceGrpMX" display-name="RegPriceGroupMX" display-property="priceRange" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+		
+		<table name="BBB_REGISTRY_PRICE_GRPMX" type="primary" id-column-name="ID">
+			<property name="id" column-name="ID" display-name="id" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>	
+           	<property name="minPrice" column-name="MIN_PRICE" display-name="minPrice" data-type="double" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="5"/>
+           	</property>	
+           	 <property name="maxPrice" column-name="MAX_PRICE" display-name="maxPrice" data-type="double" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="6"/>
+           	</property>		
+           	<property name="priceRange" column-name="PRICE_RANGE" display-name="priceRange" data-type="string" category-resource="BasicInfo">
+                <attribute name="propertySortPriority" value="7"/>
+           	</property>	
+		</table>
+		
+	</item-descriptor>
+	
+</gsa-template>

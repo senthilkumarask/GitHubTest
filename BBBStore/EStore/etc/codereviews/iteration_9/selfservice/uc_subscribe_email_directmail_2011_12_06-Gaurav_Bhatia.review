@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_subscribe_email_directmail_2011_12_06">
+  <ReviewIssue id="GVW2E1SG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 13:46:50:320 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 13:48:02:413 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="298">src/com/bbb/selfservice/formhandler/SubscriptionFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>validation missing - email and confirm email same check missing</Summary>
+    <Description>validation missing - email and confirm email same check missing</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVW4AIMV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:40:04:759 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:40:53:008 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="353">src/com/bbb/selfservice/formhandler/SubscriptionFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>logError(ex) should be changed to logError(ex.getMessage,ex)</Summary>
+    <Description>logError(ex) should be changed to logError(ex.getMessage,ex)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVW4SZY8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:54:27:008 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 14:54:55:539 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="298">src/com/bbb/selfservice/formhandler/SubscriptionFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Zipcode validation - separate for US and CA missing</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVW74QGG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 15:59:33:808 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:49:58:618 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="433">src/com/bbb/selfservice/formhandler/SubscriptionFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>All validations are not handled</Summary>
+    <Description>This page has multiple mandatory validations but only address line1 and city is checked. Need validation for
+•	First Name must not be empty
+•	Last Name must not be empty
+•	Address Line 1 must not be empty
+•	City must not be empty
+•	State must be selected from drop down
+•	Zip code must not be empty
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

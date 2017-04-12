@@ -1,0 +1,39 @@
+CREATE INDEX BBB_CATEGORY_category_idx ON BBB_CATEGORY(category_id);
+
+CREATE INDEX BBB_PRODUCT_product_idx ON BBB_PRODUCT(product_id);
+
+CREATE INDEX BBB_PRD_COL_RUP_RN_prt_rln_idx ON BBB_PRD_COLL_ROLLUP_RELN(product_relan_id, rollup_order);
+
+CREATE INDEX BBB_PRD_PRD_RELN_product_idx ON BBB_PRD_PRD_RELN(product_id, sequence_num);
+
+CREATE INDEX BBB_PRD_ROUP_RELN_product_idx ON BBB_PRD_ROLLUP_RELN(product_id, rollup_order);
+
+CREATE INDEX BBB_PRD_MEDIA_product_idx ON BBB_PRD_MEDIA(product_id);
+
+CREATE INDEX BBB_PD_CR_PCRS_pdt_idx ON BBB_PROD_COLOR_PICTURES(product_id);
+
+CREATE INDEX BBB_PRODUCT_TABS_product_idx ON BBB_PRODUCT_TABS(product_id);
+
+CREATE INDEX BBB_APBE_SP_MD_SS_state_idx ON BBB_APPLICABLE_SHIP_METHOD_STATES(state_id, ship_method_cd);
+
+CREATE INDEX BBB_OTHER_MEDIA_STS_media_idx ON BBB_OTHER_MEDIA_SITES(media_id, site_id);
+
+CREATE INDEX BBB_SKU_sku_idx ON BBB_SKU(sku_id);
+
+CREATE INDEX BBB_SKU_OTHER_MEDIA_sku_idx ON BBB_SKU_OTHER_MEDIA(sku_id, sequence_num);
+
+CREATE INDEX BBB_SKU_FREE_SHIPPING_sku_idx ON BBB_SKU_FREE_SHIPPING(sku_id, ship_method_cd);
+
+CREATE INDEX BBB_SKU_ELGBLE_SPMTDS_sku_idx ON BBB_SKU_ELIGIBLE_SHIPMETHODS(sku_id, ship_method_cd);
+
+CREATE INDEX BBB_SKU_MEDIA_sku_idx ON BBB_SKU_MEDIA(sku_id);
+
+CREATE INDEX BBB_SKU_REBATES_sku_idx ON BBB_SKU_REBATES(sku_id, rebate_id);
+
+CREATE INDEX BBB_SKU_NNSIPABE_sku_idx ON BBB_SKU_NONSHIPPABLE(sku_id, state_id);
+
+CREATE INDEX BBB_SKU_ATRIBT_STS_sku_atr_idx ON BBB_SKU_ATTRIBUTE_SITES(sku_attribute_id, site_id);
+
+CREATE INDEX BBB_SKU_ATTRIBUTES_sku_idx ON BBB_SKU_ATTRIBUTES(sku_id, priority);
+
+CREATE INDEX BBB_APL_SP_MTD_SS_st_idx ON BBB_APPLICABLE_SHIP_METHOD_STATES(state_id, ship_method_cd);

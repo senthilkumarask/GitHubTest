@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1739">
+  <ReviewIssue id="IQ18RR3E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:24:52:394 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:19:15:898 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="278">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>I could not understand this piece, we should have calculated number of OBP (omniture product boosting) products are &gt; OPB% of page size but why are we adding up L2/L3</Summary>
+    <Description>if(l2l3BrandBoostingEnabled){
+				opbProductList.addAll(((L2L3BrandBoostingStrategy) getSearchBoostingStrategyMap().get(BBBCoreConstants.L2L3BRAND)).getBoostedProducts(searchQuery, searchBoostingAlgorithm));
+			} else {
+				opbProductList.addAll(((OPBSearchBoostingStrategy) getSearchBoostingStrategyMap().get(BBBEndecaConstants.OPB_BOOSTING_STRATEGY)).getBoostedProducts(searchQuery, searchBoostingAlgorithm));
+			}</Description>
+    <Annotation>This IF-ELSE gets OPB products List for Keyword Search OR L2L3/Brand pages. We are not adding L2/L3 but opting for Search page OR  L2/L3/Brand.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ18VS7W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:28:00:476 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:19:25:040 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="278">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add comments indicating that you are setting L2/L3 boosted products if it's L2/L3 page otherwise search page results OPB</Summary>
+    <Description>if(l2l3BrandBoostingEnabled){
+				opbProductList.addAll(((L2L3BrandBoostingStrategy) getSearchBoostingStrategyMap().get(BBBCoreConstants.L2L3BRAND)).getBoostedProducts(searchQuery, searchBoostingAlgorithm));
+			} else {
+				opbProductList.addAll(((OPBSearchBoostingStrategy) getSearchBoostingStrategyMap().get(BBBEndecaConstants.OPB_BOOSTING_STRATEGY)).getBoostedProducts(searchQuery, searchBoostingAlgorithm));
+			}</Description>
+    <Annotation>Comment Added</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ18ZP1R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:31:02:991 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:21:23:468 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="593">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we referring this name as SiteSpect header variable name or just session variable we set to store SiteSpect variable? SiteSpect variable may change</Summary>
+    <Description>BOOST_ALGORITHM_BOOST_CODE</Description>
+    <Annotation>Yes, Site Spect variable. It could be configured using config key SITE_SPECT_BOOST_CODE_HEADER in ContentCatalogKeys and Default value is boostCode.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ191TV5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:32:42:545 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:21:34:430 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="595">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This SiteSpect param name will change, I will send the exact param name</Summary>
+    <Description>BOOST_ALGORITHM_BOOST_CODE</Description>
+    <Annotation>config key SITE_SPECT_BOOST_CODE_HEADER in ContentCatalogKeys and Default value is boostCode.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ19Q3R7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:51:35:107 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:21:53:046 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="57">src/com/bbb/search/endeca/tools/EndecaSearchToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>BBB Arch recommendation to have better caching for the response of this query to avoid calling DB for each and every user input</Summary>
+    <Description>SearchBoostingAlgorithmVO</Description>
+    <Annotation>Acknowledged.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ19UXO6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:55:20:502 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:23:14:873 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="119">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we still depending on BCC config key to turn on/off boosting? Are not we just depend on BCC configuration?  Provide me clarity before you make any change</Summary>
+    <Description>l2L3BrandBoostingEnabled</Description>
+    <Annotation>We have added both option as per discussion with Manuj.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ19W659">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 00:56:18:141 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:23:11:044 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="145">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we still depending on BCC config key to turn on/off boosting? Are not we just depend on BCC configuration?  Provide me clarity before you make any change</Summary>
+    <Description>opbEnabled</Description>
+    <Annotation>We have added both option as per discussion with Manuj.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1B989F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 01:34:27:027 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-05 :: 16:01:20:955 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="70">src/com/bbb/search/endeca/boosting/SortSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Do we need to set NavRefinement off for this query? Not required if it's by default off. Also we should test this turning off WhyMatch and see how the response is coming back.  Same comment applicable for facet query too</Summary>
+    <Description>pSearchQuery</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1BBZKA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 01:36:35:722 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:23:54:019 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="48">src/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can we change the variable name to reflect that it's facetAlgorithmProductList?</Summary>
+    <Description>sortProdList</Description>
+    <Annotation>Incorporated.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1BOLTL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 01:46:24:441 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:24:10:249 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="80">src/com/bbb/search/endeca/boosting/SortSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We may need to cache this response in a separate scheme (where we are saving light weight query and facet query) as the response won't change with facet application etc. Will create new story but we should track this</Summary>
+    <Description>opbResults</Description>
+    <Annotation>Acknowledged.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1BQ3O3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-30 :: 01:47:34:227 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-04 :: 21:24:19:081 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="83">src/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We may need to cache this response in a separate scheme (where we are saving light weight query and sort query) as the response won't change with facet application etc. Will create new story but we should track this</Summary>
+    <Description>opbResults</Description>
+    <Annotation>Acknowledged.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

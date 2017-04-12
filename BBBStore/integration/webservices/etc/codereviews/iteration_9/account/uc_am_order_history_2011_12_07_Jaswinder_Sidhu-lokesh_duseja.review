@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_order_history_2011_12_07_Jaswinder_Sidhu">
+  <ReviewIssue id="GVXJ63PF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:24:19:203 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:24:35:534 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="1">src/com/bbb/account/OrderHistoryMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJ6W5G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:24:56:068 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:25:11:228 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="44">src/com/bbb/account/OrderHistoryMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add method comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJ8EWV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:26:07:039 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:26:15:616 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="77">src/com/bbb/account/OrderHistoryMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>delete commented code</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJSLK1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:41:48:769 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:41:51:395 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="1">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJTSGM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:42:44:374 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:43:13:126 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="68">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Handle code if errorExists is true</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJUP3F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:43:26:667 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:43:34:685 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="78">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Remove commented code</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJV537">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:43:47:395 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:43:54:379 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="44">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add method comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJVGIY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:44:02:218 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:44:09:467 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="103">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add method comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXJVRL4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:44:16:552 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:44:24:362 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="114">src/com/bbb/account/OrderHistoryUnMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>remove commented code</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

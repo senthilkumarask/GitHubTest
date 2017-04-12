@@ -1,0 +1,3 @@
+ 
+CREATE INDEX GUIDES_LONG_DESC_guides_idx ON GUIDES_LONG_DESC(guides_id);
+CREATE INDEX BBB_GUIDES_SITE_guides_idx ON BBB_GUIDES_SITE(guides_id, site_id);

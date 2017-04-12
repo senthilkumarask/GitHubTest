@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cart.TestUpdateCartOrder">
+		<group id="testUpdateItemsToCart">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="setOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="setOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"3","price":"$11.99","bts":"false","storeId":""},{"skuId":"14282092","prodId":"1014282092","qty":"3","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="updateCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/updateCart</obj>
+					<obj id="getOrderObject" type="string">/rest/bean/atg/commerce/ShoppingCart/current</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testUpdateItemsToCartError">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="setOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="setOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"15005602","prodId":"1015005602","qty":"3","price":"$11.99","bts":"false","storeId":""},{"skuId":"14282092","prodId":"1014282092","qty":"3","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="updateCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/updateCart</obj>
+					<obj id="getOrderObject" type="string">/rest/bean/atg/commerce/ShoppingCart/current</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		<group id="testUpdateLTLItemsToCart">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="setOrderSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="setOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"ltlShipMethod":"LW","skuId":"14643125","prodId":"1014643125","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="updateCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/updateCart</obj>
+					<obj id="getOrderObject" type="string">/rest/bean/atg/commerce/ShoppingCart/current</obj>
+				</objs>
+		
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

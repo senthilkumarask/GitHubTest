@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestStoreLocatorDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestStoreLocatorDroplet.java test case 
+	HISTORY: DEc 30, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.kickstarters.tools.TestKickStarterTools">
+		<group id="testGetKickStartersByType">
+			<test id="testGetKickStartersByType">
+				<objs>
+					<obj id="KickStarterTools" type="com.bbb.kickstarters.tools.TestKickStarterTools"
+						hint="call" method="resolveName"
+						calltype="com.bbb.kickstarters.tools.TestKickStarterTools">
+						<item type="string">/com/bbb/kickstarters/tools/KickStarterTools</item>
+					</obj>
+					<obj id="registryType" type="String">wedding</obj>
+	                <obj id="siteId" type="String">BedBathUS</obj>
+	                <obj id="kickStarterType" type="String">Shop This Look</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetKickStartersForRest">
+			<test id="testGetKickStartersForRest">
+				<objs>
+					<obj id="KickStarterTools" type="com.bbb.kickstarters.tools.TestKickStarterTools"
+						hint="call" method="resolveName"
+						calltype="com.bbb.kickstarters.tools.TestKickStarterTools">
+						<item type="string">/com/bbb/kickstarters/tools/KickStarterTools</item>
+					</obj>
+					<obj id="registryType" type="String">wedding</obj>
+	                <obj id="siteId" type="String">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testGetTopConsultantDetails">
+			<test id="testGetTopConsultantDetails">
+				<objs>
+					<obj id="KickStarterTools" type="com.bbb.kickstarters.tools.TestKickStarterTools"
+						hint="call" method="resolveName"
+						calltype="com.bbb.kickstarters.tools.TestKickStarterTools">
+						<item type="string">/com/bbb/kickstarters/tools/KickStarterTools</item>
+					</obj>
+					<obj id="consultantId" type="String">DC2800008</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

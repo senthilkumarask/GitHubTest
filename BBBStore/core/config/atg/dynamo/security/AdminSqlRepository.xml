@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<gsa-template xml-combine="append">
+  <!-- BBB Password Hasher Addition --> 
+
+  <item-descriptor name="account" default="true">
+    <table name="das_account" type="primary" id-column-name="account_name">
+      <property name="passwordKeyDerivationFunction" column-name="password_kdf" data-type="enumerated" 
+				  default="/atg/dynamo/security/SaltedDigestPasswordHasher"  queryable="false"
+				  cache-mode="disabled" 
+				  display-name-resource="passwordKeyDerivationFunction" hidden="true"> 
+			<option value="/com/bbb/security/PBKDF2PasswordHasher" code="101"/>
+		</property>
+    </table>
+  </item-descriptor>
+</gsa-template>

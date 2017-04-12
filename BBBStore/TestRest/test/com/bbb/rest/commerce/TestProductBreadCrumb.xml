@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestProductBreadCrumb">
+		<group id="testProductBreadCrumbForProduct">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="arg1" type="string">1017052098</obj>
+					<obj id="breadCrumbRequest" type="string">/rest/bean/com/bbb/commerce/browse/droplet/BreadcrumbDroplet/getProductBreadCrumb</obj>
+				</objs>
+			</test>
+			
+		</group>
+		<group id="testProductBreadCrumbForCategory">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="arg2" type="string">30513</obj>
+					<obj id="breadCrumbRequest" type="string">/rest/bean/com/bbb/commerce/browse/droplet/BreadcrumbDroplet/getProductBreadCrumb</obj>
+				</objs>
+			</test>
+			
+		</group>
+		
+	</cluster>
+</ddtunit>

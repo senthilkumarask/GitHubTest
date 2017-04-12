@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBreadcrumbDroplet.xml
+
+  DESCRIPTION: ddtunit data file for BreadcrumbDroplet.java test case
+
+  HISTORY:
+  Nov 30, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.browse.TestBreadcrumbDroplet">
+       <group id="testBreadcrumbDropletProduct">
+        <test id="testBreadcrumbDropletProduct_test">
+			<objs>
+				<obj id="breadcrumbDropletProduct" type="com.bbb.commerce.browse.droplet.BreadcrumbDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestBreadcrumbDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/BreadcrumbDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="siteContextManager" type="com.bbb.commerce.browse.droplet.BreadcrumbDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.browse.TestBreadcrumbDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>			
+					<obj id="siteContextManager" type="com.bbb.commerce.browse.droplet.BreadcrumbDroplet"
+						hint="call" method="resolveName" calltype="com.bbb.browse.TestBreadcrumbDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+			</objs>
+			      
+        </test>
+      </group>
+      <group id="testBreadcrumbDropletCategory">
+        <test id="testBreadcrumbDropletCategory_test">
+			<objs>
+				<obj id="breadcrumbDropletCategory" type="com.bbb.commerce.browse.droplet.BreadcrumbDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestBreadcrumbDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/BreadcrumbDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>      
+        </test>
+      </group>
+      <group id="testBreadcrumbDropletPrimaryCategory">
+        <test id="testBreadcrumbDropletPrimaryCategory_test">
+			<objs>
+				<obj id="breadcrumbDropletPrimaryCategory" type="com.bbb.commerce.browse.droplet.BreadcrumbDroplet" hint="call" method="resolveName" calltype="com.bbb.browse.TestBreadcrumbDroplet">
+					<item type="string">/com/bbb/commerce/browse/droplet/BreadcrumbDroplet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group> 
+      
+    </cluster>
+</ddtunit>

@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGSProductDetails.xml
+
+  DESCRIPTION: ddtunit data file for TestGSProductDetails.java test case
+
+  HISTORY:
+  Apr 24, 2012  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.stofu.TestGetMultiSkuDetails">
+       
+      <group id="testGetMultiSkuDetailsSuccess">
+        <test id="test_testGetSkuDetails_success">
+			<objs>
+				<obj id="getMultiSkuDetails" type="com.bbb.store.catalog.BBBGSCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestGetMultiSkuDetails">
+					<item type="string">/com/bbb/store/catalog/BBBGSCatalogToolsImpl</item>
+				</obj>
+					<obj id="arg1" type="string">17317717,18080435</obj>
+				</objs>      
+        </test>
+      </group> 
+      <group id="testGetMultiSkuDetailsError">
+       <test id="test_testGetSkuDetails_err">
+			<objs>
+				<obj id="getMultiSkuDetails" type="com.bbb.store.catalog.BBBGSCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestGetMultiSkuDetails">
+					<item type="string">/com/bbb/store/catalog/BBBGSCatalogToolsImpl</item>
+				</obj>
+					<obj id="arg1" type="string">123a</obj>
+				</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-263_25_08_2015">
+  <ReviewIssue id="IDRMLR57">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 22:57:57:355 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:20:00:402 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="6">config/com/bbb/framework/cache/MobileNearCacheInvalidator.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove  serverPort property if not needed</Summary>
+    <Description>serverPort=</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMU5XA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:04:29:758 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:19:43:609 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1025">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Add log debug on function exit</Summary>
+    <Description>handleClearMobileCache</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMVDIT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:05:26:261 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:19:33:048 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1255">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>missing javadocs invokeToClearMobileCache()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMVWR0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:05:51:180 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:19:23:633 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1255">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>nearCacheMessage needs to be generic - invokeToClearMobileCache()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMWPI5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:06:28:445 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:19:14:122 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1305">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove the processing to build the string to print near cache size - invokeToClearMobileCache()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMXAW0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:06:56:160 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:19:02:594 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1197">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary> Add javadocs and exit log debug in all handler methods</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMYFTZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:07:49:223 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:18:52:074 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1200">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary> Use Arrays.asList instead of iterating on string array</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDRMZ2G8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-25 :: 23:08:18:536 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-26 :: 17:18:36:307 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="1398">src/com/bbb/integration/csr/CSRFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Reuse already existing method  - handleListAllKeys instead of handleListAllMobileKeys()</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

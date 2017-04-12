@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.wishlist.TestAddCartItemToWishlist">
+		
+	<group id="testCartItemToWishList"> 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">address@sapient.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="addToWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/moveItemsToWishListFromCart</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="moveItemsFromCartSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="moveItemsFromCartErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="moveItemsFromCartLoginURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="productDetailsRedirectUrl" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"16432300","prodId":"118736","qty":"1","price":"$9.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+				</objs> 
+			</test>
+		</group>
+		
+		<group id="testCartItemToWishListTransient"> 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"16432300","prodId":"118736","qty":"1","price":"$9.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addToWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/moveItemsToWishListFromCart</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="moveItemsFromCartSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="moveItemsFromCartErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="moveItemsFromCartLoginURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="productDetailsRedirectUrl" type="string">atg-rest-ignore-redirect</obj>
+				</objs> 
+			</test>
+		</group>
+			
+	</cluster>
+</ddtunit>
+ 

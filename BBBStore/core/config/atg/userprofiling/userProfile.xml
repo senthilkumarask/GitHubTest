@@ -1,0 +1,205 @@
+<!--///////////////////////////////-->
+<!--    USER PROFFILING            -->
+<!--///////////////////////////////-->
+<gsa-template xml-combine="append">
+
+	<header>
+		<name>BBB Related Profile Additions</name>
+		<author></author>
+		<version>1</version>
+	</header>
+	 
+	<item-descriptor name="user" xml-combine="append"  item-cache-timeout="550000" query-expire-timeout="550000" last-modified-property="lastModifiedDate">
+		<attribute name="updateLastModified" value="true"/>
+		<table name="dcs_usr_actvpromo" id-column-name="id" multi-column-name="sequence_num" type="multi" shared-table-sequence="1">
+			<property xml-combine="remove" expert="false" readable="true" category-resource="categoryCommercePromotions" component-item-type="promotionStatus" display-name-resource="activePromotions" writable="true" cache-mode="inherit" column-name="promo_status_id" data-type="list" cascade="update,delete" hidden="false" name="activePromotions" required="false" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+			</property>
+		</table>
+		<property expert="false" readable="true" category-resource="categoryCommercePromotions" component-item-type="promotionStatus" display-name-resource="activePromotions" writable="true" data-type="list"  hidden="false" name="activePromotions" required="false"  queryable="false">
+			<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+		</property>   
+		<property expert="false" readable="true" data-type="boolean"  writable="true" hidden="true" name="saveCreditCardInfoToProfile" required="false"  queryable="false"></property>
+		<table name="BBB_DPS_USER" type="auxiliary" id-column-name="user_id">
+			<property name="phoneNumber" column-name="phone_number" data-type="string" cache-mode="disabled" />
+			<property name="mobileNumber" column-name="mobile_number" data-type="string" cache-mode="disabled" />
+			<property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp" cache-mode="disabled" />
+			<property name="loggedIn" column-name="logged_in" data-type="boolean" default="false" cache-mode="disabled" />
+			<property name="migratedAccount" column-name="migrated_account" data-type="boolean" default="false" cache-mode="disabled" />
+			<property name="source" column-name="source" data-type="string" cache-mode="disabled" />
+			<property name="status" column-name="status" data-type="string" cache-mode="disabled" />
+			<property name="ForgotPwdToken" column-name="forgot_pwd_token" data-type="string" cache-mode="disabled" />
+<!-- 			<property name="ChallengeQuestion1" column-name="CHALLENGE_QUESTION1" data-type="string" cache-mode="disabled" />
+			<property name="ChallengeQuestion2" column-name="CHALLENGE_QUESTION2" data-type="string" cache-mode="disabled" />
+			<property name="ChallengeAnswer1" column-name="CHALLENGE_ANSWER1" data-type="string" cache-mode="disabled" />
+			<property name="ChallengeAnswer2" column-name="CHALLENGE_ANSWER2" data-type="string" cache-mode="disabled" /> -->
+		</table>
+		
+		<table name="BBB_WALLET" type="auxiliary" id-column-name="user_id">
+			<property name="walletId" column-name="wallet_id" data-type="string" cache-mode="disabled"/>
+		</table>
+		
+		<table name="BBB_USER_SITE_ITEMS" type="multi" id-column-name="user_id" multi-column-name="site_id">
+			<property name="userSiteItems" column-name="user_site_id" data-type="map" component-item-type="userSiteAssoc" expert="false" hidden="false" cache-mode="inherit"/>
+		</table>
+
+		<table name="BBB_FB_USER_ASSOC" type="auxiliary" id-column-name="bbb_user_id">
+			<property name="facebookProfile" column-name="fb_user_id" item-type="fbUser" queryable="true"/>
+		</table>
+
+		<table name="dps_user_address" id-column-name="id" type="auxiliary" shared-table-sequence="1">
+    
+	      <property column-name="billing_addr_id" item-type="contactInfo" category-resource="categoryCommerceAddressAndPhone" display-name-resource="billingAddress" cascade="insert,update" name="billingAddress" cache-mode="inherit">
+	        <attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/> 
+	        <attribute name="propertySortPriority" value="-5"/>
+	      </property>
+	
+	      <property column-name="shipping_addr_id" item-type="contactInfo" category-resource="categoryCommerceAddressAndPhone" display-name-resource="shippingAddress" cascade="insert,update" name="shippingAddress" cache-mode="inherit">
+	        <attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/> 
+	        <attribute name="propertySortPriority" value="-4"/>
+		  </property>
+		  
+		  <property column-name="mailing_addr_id" item-type="contactInfo" category-resource="categoryCommerceAddressAndPhone" display-name-resource="mailingAddress" cascade="insert,update" name="mailingAddress" cache-mode="inherit">
+	        <attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/> 
+	        <attribute name="propertySortPriority" value="-3"/>
+		  </property>
+    	</table>	
+		<!-- Setting schoolId and schoolPromotion at profile as transient property -->
+		<property name="schoolIds" data-type="string"/>
+		<property name="schoolPromotions" data-type="string"></property>
+		<!-- Setting newRegistration as transient property to show welcome message-->
+		<property name="newRegistration" data-type="boolean"/>
+		<property name="fbProfileExtended" data-type="boolean"/>
+		<property name="availablePromotionsList" data-type="list" component-item-type="promotion" repository="/atg/commerce/pricing/Promotions" />
+		<property name="selectedPromotionsList" data-type="list" component-data-type="string" />
+		<!-- Setting categoryId transient property for Personalization -->
+		<property name="categoryId" data-type="string"/>
+		<property name="loginFrom" data-type="string"/>
+		<!-- Setting countryId, currencyId and InternationalShippingContext transient property for International Shipping Context -->
+		<property name="countryCode" data-type="string"/>
+		<property name="currencyCode" data-type="string"/>
+		<property name="profileEDWData" data-type="big string"/>
+		<property name="internationalShippingContext" data-type="boolean"/>
+		<table name="dps_user" id-column-name="id" type="primary" shared-table-sequence="1">
+			<property column-name="login" data-type="string" name="login" cache-mode="disabled" />
+			<property column-name="generatedpwd" data-type="boolean" name="generatedPassword" cache-mode="disabled" />
+			<property property-type="com.bbb.userprofiling.AutoLoginPropertyDescriptor" xml-combine="replace" expert="false" readable="true" category-resource="categoryLogin" display-name-resource="autoLogin" writable="true" cache-mode="inherit" column-name="auto_login" default="false" data-type="boolean" hidden="false" name="autoLogin" required="false" queryable="true">
+		        <attribute name="resourceBundle" value="atg.userprofiling.UserProfileTemplateResources"/>
+		        <attribute name="propertySortPriority" value="-5"/>
+		     </property>
+		</table>
+		<property data-type="string" name="token" cache-mode="disabled" />
+		<property data-type="string" name="payerId" cache-mode="disabled" />	
+	</item-descriptor>
+	
+	<item-descriptor name="userManualCheckedCategories" cache-mode="simple" item-cache-size="3000" item-cache-timeout="550000">
+		<table name="BBB_USER_CAT_LIST" type="primary" id-column-names="user_id,registry_id">	
+		 	<property name="id" data-type="string"  column-name="user_id"/>
+		    <property name="registryId" data-type="string"  column-name="registry_id"/>
+	        <property name="checklistId" data-type="string"  column-name="list_id"/>
+	        <property name="userCompletedCategoryList" data-type="string" column-name="user_completed_category"/>
+	    </table>
+	</item-descriptor>
+	
+	<item-descriptor name="userSiteAssoc" cache-mode="simple" last-modified-property="lastModifiedDate" item-cache-size="3000" item-cache-timeout="550000">
+		<attribute name="updateLastModified" value="true"/>
+		<!-- User Site Assoc Tables -->
+		<table name="BBB_USER_SITE_ASSOC" type="primary" id-column-names="user_site_id">
+			<property name="siteId" column-name="site_id" data-type="string" expert="false" hidden="false"/>
+			<property name="favouriteStoreId" column-name="store_id" data-type="string" expert="false" hidden="false"/>
+			<property name="memberId" column-name="member_id" data-type="string" expert="false" hidden="false"/>
+			<property name="token" column-name="token" data-type="string" expert="false" hidden="false"/>
+			<property name="ipaddress" column-name="ipaddress" data-type="string" expert="false" hidden="false"/>
+			<property name="timeStamp" column-name="time_stamp" data-type="timestamp" expert="false" hidden="false"/>
+			<property name="emailoptin" column-name="emailoptin" data-type="int" default="0"/>
+			<property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp"/>
+		</table>			
+	</item-descriptor>
+	
+	<item-descriptor expert="false" folder="false" content="false" default="false" id-separator=":" display-name-resource="itemDescriptorCreditCard" hidden="false" writable="true" name="credit-card" use-id-for-path="false" cache-mode="simple"
+		xml-combine="replace" last-modified-property="lastModifiedDate">
+		<attribute name="updateLastModified" value="true"/>
+		<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+		<table name="dps_credit_card" id-column-name="id" type="primary" shared-table-sequence="1">
+			<property expert="false" readable="true" display-name-resource="id" hidden="false" writable="false" name="id" required="false" cache-mode="inherit" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="10"/>
+			</property>        
+			<property expert="false" readable="true" category-resource="categoryBasics" column-name="credit_card_type" display-name-resource="creditCardType" data-type="string" hidden="false" writable="true" name="creditCardType" required="false" cache-mode="inherit" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="30"/>
+			</property>        
+			<property expert="false" readable="true" category-resource="categoryBasics" column-name="expiration_month" display-name-resource="expirationMonth" data-type="string" hidden="false" writable="true" name="expirationMonth" required="false" cache-mode="inherit" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="40"/>
+			</property>        
+			<property expert="false" readable="true" category-resource="categoryBasics" column-name="exp_day_of_month" display-name-resource="expirationDayOfMonth" data-type="string" hidden="false" writable="true" name="expirationDayOfMonth" required="false" cache-mode="inherit" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="50"/>
+			</property>        
+			<property expert="false" readable="true" category-resource="categoryBasics" column-name="expiration_year" display-name-resource="expirationYear" data-type="string" hidden="false" writable="true" name="expirationYear" required="false" cache-mode="inherit" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="60"/>
+			</property>        
+			<!-- This is a key into the addresses map -->
+			<property expert="false" readable="true" item-type="contactInfo" category-resource="categoryBasics" display-name-resource="billingAddress" writable="true" cache-mode="inherit" column-name="billing_addr" cascade="update" hidden="false" name="billingAddress" required="false" queryable="true">
+				<attribute name="resourceBundle" value="atg.commerce.UserProfileTemplateResources"/>
+				<attribute name="propertySortPriority" value="70"/>
+			</property>        
+		</table>
+		<table name="BBB_DPS_CREDIT_CARD" type="auxiliary" id-column-name="id">
+			<property name="creditCardNumber" column-name="credit_card_number" data-type="string" property-type="com.bbb.framework.crypto.EncryptionPropertyDescriptor">
+				<attribute name="encryptorComponent" value="com/bbb/framework/crypto/AESEncryptorComponent"/>
+			</property>
+			<property expert="false" readable="true" column-name="name_on_card" data-type="string" hidden="false" writable="true" name="nameOnCard" required="false" cache-mode="inherit" queryable="true"/>
+			<property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp"/>
+		</table>
+	</item-descriptor>
+	
+	<!-- Facebook User Item Descriptors -->
+	
+	<item-descriptor name="fbUser" cache-mode="disabled" >
+		<table name="BBB_FB_USER" type="primary" id-column-name="id">
+			<property name="id" column-names="id" data-types="string"/>
+			<property name="userName" column-name="user_name" data-type="string"/>
+			<property name="name" column-name="name" data-type="string"/>
+			<property name="firstName" column-name="first_name" data-type="string" />
+			<property name="middleName" column-name="middle_name" data-type="string"/>
+			<property name="lastName" column-name="last_name" data-type="string"/>
+			<property name="gender" column-name="gender" data-type="string"/>
+			<property name="verified" column-name="verified" data-type="boolean"/>
+			<property name="offlineAccessToken" column-name="offline_access_token" data-type="string"/>
+			<property name="tokenValid" column-name="token_valid" data-type="boolean"/>
+		</table>
+		<table name="BBB_FB_USER_EDUCATION_ASSOC" type="multi" id-column-names="fb_user_id">
+			<property name="schools" column-names="fb_school_id" data-type="set" component-item-type="fbSchool" cascade="update,delete"/>
+		</table>
+		<table name="BBB_FB_USER_FRIEND_ASSOC" type="multi" id-column-names="fb_user_id">
+			<property name="friends" column-names="fb_friend_id" data-type="set" component-item-type="fbUser" cascade="update"/>
+		</table>
+		<table name="BBB_FB_USER_ASSOC" type="auxiliary" id-column-name="fb_user_id">
+			<property name="bbbProfile" column-name="bbb_user_id" item-type="user" queryable="true" />
+		</table>
+	</item-descriptor>
+	
+	<item-descriptor name="fbSchool" cache-mode="disabled">
+		<table name="BBB_FB_SCHOOL" type="primary" id-column-name="id">
+			<property name="id" column-names="id" data-types="string"/>
+			<property name="schoolID" column-name="school_id" data-type="string"/>
+			<property name="name" column-name="name" data-type="string"/>
+		</table>		
+	</item-descriptor>
+	<item-descriptor name="bbb_profile_lock" cache-mode="disabled">
+		<table name="BBB_PROFILE_LOCK" type="primary" id-column-name="user_id">
+			<property name="profileId" column-names="user_id" data-types="string"/>
+			<property name="lastInvalidLoginAttemptTime" column-name="invalid_login_attempt_time" data-type="timestamp"/>
+			<property name="invalidLoginAttemptCount" column-name="invalid_login_attempt_count" data-type="int" default="0"/>
+		</table>		
+	</item-descriptor>
+	<item-descriptor display-name-resource="itemDescriptorContactInfo" name="contactInfo" cache-mode="simple" item-cache-timeout="550000" item-cache-size="5000">
+		<table name="BBB_DPS_CONTACT_INFO" type="auxiliary" id-column-name="id">
+ 			<property name="poBoxAddress" column-name="isPoBoxAddress" data-type="boolean" display-name-resource="poBoxAddress" required="false"/>
+ 			<property name="qasValidated" column-name="isQASValidated" data-type="boolean" display-name-resource="qasValidated" required="false"/>
+ 		</table>
+</item-descriptor>
+</gsa-template>

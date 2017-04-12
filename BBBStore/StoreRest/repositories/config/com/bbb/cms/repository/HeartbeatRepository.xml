@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Heartbeat Monitoring</name>
+    <author></author> 
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     Heartbeat Repository -->
+    <!--///////////////////////////////-->
+<item-descriptor name="heartbeatmonitor">
+	<table name="BBB_GS_HEARTBEAT_MONITORING" id-column-names="APP_ID,LOG_TIME" type="primary">		
+		<property name="appId" column-name="APP_ID" data-type="string" required="true" />
+		<property name="logTime" column-name="LOG_TIME" data-type="timestamp" required="true" />
+		<property name="appState" column-name="APP_STATE" data-type="int" required="true" />
+		<property name="storeId" column-name="STORE_ID" data-type="string" required="true" />
+		<property name="channelId" column-name="CHANNEL_ID" data-type="string" required="true" />
+		<property name="terminalId" column-name="TERMINAL_ID" data-type="string" />
+		<property name="friendlyName" column-name="FRIENDLY_NAME" data-type="string" required="true" />
+		<property name="channelThemeId" column-name="CHANNEL_THEME_ID" data-type="string" />		
+	</table>  
+</item-descriptor>  
+  
+    
+</gsa-template>   

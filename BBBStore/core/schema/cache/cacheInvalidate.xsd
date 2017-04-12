@@ -1,0 +1,23 @@
+<?xml version="1.0" ?> 
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+		
+		<xs:element name="main">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="CACHE_INVALIDATE_RECORD" type="CACHE_INAVLIDATE_REQUEST" minOccurs="1" maxOccurs="1" /> 
+  				</xs:sequence>
+  			</xs:complexType>
+ 		 </xs:element>
+		
+		 <xs:complexType name="CACHE_INAVLIDATE_REQUEST">
+ 			<xs:sequence>
+ 			    <xs:element name="CLEAR_DROPLET_CACHE" type="xs:boolean" />
+ 			    <xs:element name="CLEAR_OBJECT_CACHE" type="xs:boolean" />
+ 			    <xs:element name="OBJECT_CACHE_TYPE" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+   </xs:schema>
+
+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.framework.encryption.TestEncryption">
+      <group id="testEncryptDecrypt">
+      	<test id="testEncryptDecrypt">
+      	</test>
+      </group>
+    </cluster>
+</ddtunit>

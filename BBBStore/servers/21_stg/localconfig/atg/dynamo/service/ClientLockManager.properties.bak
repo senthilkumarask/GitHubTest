@@ -1,0 +1,5 @@
+#Properties File created by CIM
+#Tue Jan 03 23:05:23 IST 2012
+lockServerPort=9014
+useLockServer=true
+lockServerAddress=del2l135BBB

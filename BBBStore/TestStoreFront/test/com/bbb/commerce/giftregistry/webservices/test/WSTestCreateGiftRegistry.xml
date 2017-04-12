@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.webservices.test.WSTestCreateGiftRegistry">
+     <group id="testWSServiceCreate">
+        <test id="testWSService_testwsCreate">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.webservices.test.WSTestCreateGiftRegistry">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				
+			</objs>      
+			<asserts> 
+	        	<assert id="isError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

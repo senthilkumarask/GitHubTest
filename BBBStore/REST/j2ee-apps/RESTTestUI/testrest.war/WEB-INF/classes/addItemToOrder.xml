@@ -1,0 +1,16 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will add sku item to order</description>
+	<action>/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</action>
+	<params>
+		<param type="text" id="atg-rest-depth" name="atg-rest-depth" class="reqBody" required="true">6</param>
+		<param type="text" id="atg-rest-input" name="atg-rest-input" class="reqBody" required="true">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output"  class="reqBody" required="true">json:json,xml:xml</param>
+		<param type="text" id="atg-rest-show-rest-paths"  name="atg-rest-show-rest-paths" class="reqBody" required="true">true</param>
+		<param type="text" id="clientID"  name="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text" id="token" name="token" class="reqHead"  >client123</param>
+		<param type="text" id="jsonResultString" name="jsonResultString" required="true" class="reqBody">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"2","price":"$11.99","bts":"false","storeId":""}]}</param>
+		<param type="text" id="addItemToOrderErrorURL" name="addItemToOrderErrorURL" required="true" class="reqBody">atg-rest-ignore-redirect</param>
+		<param type="text" id="addItemToOrderSuccessURL" name="addItemToOrderSuccessURL" required="true" class="reqBody">atg-rest-ignore-redirect</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>

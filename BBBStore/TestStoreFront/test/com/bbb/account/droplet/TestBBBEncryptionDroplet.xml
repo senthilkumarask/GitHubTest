@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBEncryptionDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBEncryptionDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.droplet.TestBBBEncryptionDroplet">
+       <group id="testEncrypt">
+        <test id="testEncrypt">
+			<objs>
+				<obj id="inputString" type="String">DC00123456</obj>			
+			</objs>			 
+        </test>
+      </group>
+      <group id="testDecrypt">
+        <test id="testDecrypt">
+			<objs>
+				<obj id="inputString" type="String">DC00123456</obj>
+			</objs>			 
+        </test>
+      </group>         
+      <group id="testInvalid">
+        <test id="testInvalid">
+			<objs>
+				<obj id="inputString" type="String">DC00123456</obj>
+			</objs>			 
+        </test>
+      </group>         
+    </cluster>
+</ddtunit>
+

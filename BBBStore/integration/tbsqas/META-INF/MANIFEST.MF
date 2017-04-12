@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Class-Path: classes lib/tbsqas.jar lib/axis2-kernel-1.6.1.jar lib/axis2-xmlbeans-1.6.1.jar lib/ProWeb-test-client.jar lib/xmlbeans-2.3.0.jar
+ATG-Required: 
+ATG-J2EE: j2ee-apps/tbsqas
+ATG-EAR-Module: j2ee-apps/tbsqas

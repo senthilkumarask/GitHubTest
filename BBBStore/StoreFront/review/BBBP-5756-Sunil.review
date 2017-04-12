@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-5756">
+  <ReviewIssue id="IJ44O04P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-07 :: 16:15:21:193 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-07 :: 16:15:33:843 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File></File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary></Summary>
+    <Description>Please add Jupiter file.
+Document is must for this implementation. done 
+Add content from DB to BCC also raise a defect to fix why content edit is not working from BCC. done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

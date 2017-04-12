@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_order_history_2011_12_07_Jaswinder_Sidhu">
+  <ReviewIssue id="GVXFM3VC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:44:47:448 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:00:35:515 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="91">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comment</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXFOE30">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:46:33:996 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:00:43:098 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="44">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>remove hardcoded "strings", move them to final variable or in constants</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXG9QA2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:03:09:578 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:19:537 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="44">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>check this code, if it carrier code can be mapped at jsp level. Current code will lead to multiple request to server(performance issue)</Annotation>
+    <Revision>That code was incomplete as already communicated in the review mail. Known Issue</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXGI423">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:09:40:683 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:26:858 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="97">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>remove un required commented code</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXGLM6A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:12:24:130 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:13:32:433 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="58">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>searchByUserId method sets error message in case of Commerce Exception. Should override that message.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHHESD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:37:07:549 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:22:39:608 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="74">src/com/bbb/account/order/droplet/OrderHistoryDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>should have specific errors for system exceptions and business exceptions. Technical exception might arise when orders are there but there is internal problem while fetching them.</Annotation>
+    <Revision>As discussed with Gaurav, incase of any error from webservice just log the error and show the rest order from ATG if any.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHKKWS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:39:35:452 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:40:834 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="22">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comment</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHMNV3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:41:12:591 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:18:26:697 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="47">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>should handle different types of errors returned from webservice. Technical errors, field validations, business errors should be handled separately</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHQEP8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:44:07:340 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:53:954 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="56">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add comments or TODO</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHQX3O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:44:31:188 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:57:347 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="65">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add comments for the method</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHTD99">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:46:25:437 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:04:02:435 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="97">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add code comments for the method</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHUM56">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:47:23:610 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:52:18:476 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="41">src/com/bbb/account/order/manager/OrderHistoryManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>avoid hardcoding in generateRequest method. These can be moved to .properties files for now</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXI3Y0P">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:54:38:905 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:04:59:854 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="4">config/com/bbb/account/OrderHistoryManager.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>can we make it global, to avoid creating instance on every request?</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

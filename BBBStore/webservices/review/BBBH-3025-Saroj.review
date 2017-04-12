@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-3025">
+  <ReviewIssue id="IN0D4I5T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:39:52:625 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:39:58:988 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="116">src/com/bbb/commerce/service/pricing/BBBPricingWebService.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IN0D4XC9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:40:12:297 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:40:23:166 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="332">src/com/bbb/commerce/service/pricing/BBBPricingWSMapper.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IN0D5LSQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:40:43:994 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-14 :: 19:40:46:262 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="62">src/com/bbb/commerce/service/pricing/ItemPricingWSCalculator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

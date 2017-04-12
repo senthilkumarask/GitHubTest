@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2012, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBBillingAddressDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBBillingAddressDroplet.java test case
+
+  HISTORY:
+  Sep 05, 2011  Initial version
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.checkout.droplet.TestBBBBillingAddressDroplet">
+       
+       <group id="testBBBBillingAddressDroplet">
+        <test id="testBBBBillingAddressDroplet">
+			<objs>
+				<obj id="billingAddressDroplet" type="com.bbb.commerce.checkout.droplet.BBBBillingAddressDroplet" hint="call" method="resolveName" 
+				calltype="com.bbb.commerce.checkout.droplet.TestBBBBillingAddressDroplet">
+					<item type="string">/com/bbb/commerce/checkout/droplet/BBBBillingAddressDroplet</item>
+				</obj>
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBMultiShippingAddressDroplet">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+                <obj id="firstName" type="String">TestFname</obj>
+				<obj id="middleName" type="String">TestMname</obj>
+				<obj id="lastName" type="String">TestLname</obj>
+				<obj id="address1" type="String">1855 Saint Fransis street</obj>
+				<obj id="address2" type="String">Metropoliatan 1307</obj>
+				<obj id="city" type="String">Reston</obj>
+				<obj id="zipCode" type="String">20190</obj>
+				<obj id="email" type="String">test1@sapient.com</obj>
+				<obj id="phoneNumber" type="String">5714360771</obj>
+				<obj id="state" type="String">VA</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+			</objs>			 
+        </test>
+      </group>      
+      
+    </cluster>
+</ddtunit>
+

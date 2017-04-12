@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.framework.messaging.TestMessaging">
+      <group id="testMessaging">
+      	<test id="test_messaging">
+      		<objs>
+      			<obj id="message" type="String">This is the test message</obj>
+      			<obj id="service" type="String">sapeunitMessage</obj>
+      		</objs>
+      		<asserts>
+      			<assert id="message_received" type="java.lang.String" action="isEqual">This is the test message</assert>
+      		</asserts>
+      	</test>
+      </group>
+    </cluster>
+</ddtunit>

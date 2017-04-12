@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN" "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>International Order Repository</name>
+		<author></author>
+	</header>
+
+	<item-descriptor name="internationalOrder" cache-mode="simple"
+		last-modified-property="creationDate">
+		<attribute name="updateLastModified" value="true" />
+		<table name="BBB_INTL_ORDER" type="primary" id-column-name="ORDER_ID">
+			<property name="orderId" column-name="ORDER_ID" data-type="string"
+				display-name="order Id" />
+			<property display-name-resource="orderXml" column-name="ORDER_XML"
+				name="orderXml" data-type="big string" />
+			<property name="e4xOrderId" column-name="E4X_ORDER_ID"
+				data-type="string" display-name="e4xOrderId" />
+			<property display-name-resource="creationDate" column-name="CREATION_DATE"
+				name="creationDate" data-type="timestamp" />
+				<property name="currencyCode" column-name="currency_code" data-type="String" display-name="currencyCode" />
+				<property name="countryCode" column-name="country_code"	data-type="String" display-name="countryCode" />
+				<property name="onlineOrderNumber" column-name="online_order_number" data-type="string"  display-name="online_order_number" />
+		</table>
+	</item-descriptor>
+
+
+
+	<item-descriptor name="retryFileProcess" cache-mode="disabled" last-modified-property="creationDate">
+		<attribute name="updateLastModified" value="true" />
+		<table name="INTL_PO_RETRY" type="primary" id-column-name="file_name">
+			<property name="fileName" column-name="file_name" data-type="string"
+				display-name="File Name" />
+			<property name="retryCount" column-name="retry_count"
+				data-type="int" display-name="Count" />
+			<property name="exceptionCause" column-name="exception_cause"
+				data-type="string" display-name="EXCEPTION_CAUSE" />
+				<property name="siteId" column-name="SITE_ID"
+				data-type="string" display-name="siteId" />
+			<property display-name-resource="creationDate" column-name="CREATION_DATE"
+				name="creationDate" data-type="timestamp" />
+			<property name="retrySuccessful" column-name="RETRY_SUCCESSFUL_FLAG" data-type="boolean" display-name="retry_successful" />
+		</table>
+	</item-descriptor>
+
+
+	<item-descriptor name="retryOrderConfirmation" cache-mode="disabled"  last-modified-property="creationDate">
+		<attribute name="updateLastModified" value="true" />
+		<table name="INTL_RETRY_ORDER_CONFIRM" type="primary"
+			id-column-name="E4X_ORDER_ID">
+			<property name="e4xOrderId" column-name="E4X_ORDER_ID"
+				data-type="string" display-name="order Id" />
+			<property name="retryCount" column-name="retry_count"
+				data-type="int" display-name="retry count" />
+			<property name="logTrace" column-name="log_trace" data-type="string"
+				display-name="log trace" />
+			<property name="merchantOrderId" column-name="merchant_order_id"
+				data-type="string" display-name="merchant order id" />
+			<property display-name-resource="creationDate" column-name="CREATION_DATE"
+				name="creationDate" data-type="timestamp" />
+			<property name="retrySuccessful" column-name="RETRY_SUCCESSFUL_FLAG" data-type="boolean" display-name="retry_successful" />
+		</table>
+	</item-descriptor>
+</gsa-template>

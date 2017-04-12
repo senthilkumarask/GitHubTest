@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Copyright Bed Bath & Beyond, Inc. All Rights Reserved.
+    This software is the proprietary information of Bed Bath & Beyond, Inc.
+    Use is subject to license terms.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.bbby.com/schemas/esb/common/Envelope"
+	 xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	 jaxb:version="1.0"
+	 targetNamespace="http://www.bbby.com/schemas/esb/common/Envelope"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:complexType name="EnvelopeType">
+		<xs:sequence>
+			<xs:element ref="ESBHeader"/>
+			<xs:element ref="Body"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ESBHeaderType">
+		<xs:sequence>
+			<xs:element ref="MessageId"/>
+			<xs:element ref="ConversationId"/>
+			<xs:element ref="CorrelationId" minOccurs="0"/>
+			<xs:element ref="Producer" minOccurs="0"/>
+			<xs:element ref="Consumer"/>
+			<xs:element ref="PayLoadType"/>
+			<xs:element ref="MessageFormat"/>
+			<xs:element ref="MessagePriority"/>
+			<xs:element ref="MessageCreateTS"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BodyType">
+		<xs:sequence>
+			<xs:element name="InvenDataDCDecrement" type="InventoryDataCenterDecrement"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="MessageId" type="xs:string"/>
+	<xs:element name="ConversationId" type="xs:string"/>
+	<xs:element name="CorrelationId" type="xs:string"/>
+	<xs:element name="Producer" type="xs:string"/>
+	<xs:element name="Consumer" type="xs:string"/>
+	<xs:element name="PayLoadType" type="xs:string"/>
+	<xs:element name="MessageFormat" type="xs:string"/>
+	<xs:element name="MessageCreateTS" type="xs:dateTime"/>
+	<xs:element name="MessagePriority" type="xs:integer"/>
+	<xs:element name="ESBHeader" type="ESBHeaderType"/>
+	<xs:element name="Body" type="BodyType"/>
+	<xs:element name="BBBYEnvelope" type="EnvelopeType"/>
+	<xs:complexType name="HeaderElement">
+		<xs:sequence>
+			<xs:element name="DataCenter" type="DC"/>
+			<xs:element name="Site" type="SiteId"/>
+			<xs:element name="Date" type="xs:date" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Order Submission Date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="DC">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AN"/>
+			<xs:enumeration value="SD"/>
+			<xs:enumeration value="UN"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="SiteId">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BedBathUS"/>
+			<xs:enumeration value="BedBathCanada"/>
+			<xs:enumeration value="BuyBuyBaby"/>
+			<xs:enumeration value="TBS_BedBathUS"/>
+			<xs:enumeration value="TBS_BuyBuyBaby"/>
+			<xs:enumeration value="TBS_BedBathCanada"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DT">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Shipping"/>
+			<xs:enumeration value="BOPUS"/>
+			<xs:enumeration value="ROPIS"/>
+			<xs:enumeration value="SDD"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="InventoryDecrement">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element
+			</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Item" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Sku" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Sku Id</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="Qty" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>Sku Quantity</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="DeliveryType" type="DT"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="InventoryDataCenterDecrement">
+		<xs:sequence>
+			<xs:element name="ItemList" type="InventoryDecrement"/>
+			<xs:element name="Header" type="HeaderElement"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

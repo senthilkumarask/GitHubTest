@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-4579">
+  <ReviewIssue id="IJ33C054">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-06 :: 12:20:15:544 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-06 :: 12:23:53:498 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="433">j2ee-apps/BBBStore/store.war/browse/subcategory.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Let's have both the containers</Summary>
+    <Description>I do see from the code that we are letting the promo stretch to full screen it's from endeca top conaiter (which is from FEATUREITEMS promo) otherwise controlling the image to 80X365. With this code there are two issues.
+#1. As we updated the grid_5 style old category images have moved from right to left of the screen.
+#2. As we kept this in if loop at a time we can show only one image, can we move the old promo out side the loop and let both promos display such a way
+	a. New smart assistant promo will be stretched to full screen
+	b. Old promo will be displayed in the same position like production.
+#3. We should also confirm that all old category promos coming from SEOTEXT and they do not belong to top column</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

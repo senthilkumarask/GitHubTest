@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+<item is-document="true" item-descriptor-name="skuFacet">
+	<properties>
+		<property filter="unique" name="facetValue" output-name="dimval.display_name" text-searchable="true" type="string" />
+		<property filter="unique" name="description" output-name="dimval.dimension_name" text-searchable="true" type="string" formatter="/com/bbb/search/endeca/indexing/formatter/DimValDisplayNameFormatter"/>
+   	  	<property filter="unique"  is-non-repository-property="true" name="endeca.id" output-name="Endeca.Id"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuFacetDescPropertyAccessor" text-searchable="true" type="string"/>
+	  	<property filter="unique"  is-non-repository-property="true" name="spec" output-name="dimval.spec"  property-accessor="/com/bbb/search/endeca/indexing/accessor/SkuFacetDescPropertyAccessor" text-searchable="true" type="string"/>
+		<property name="dimval.parent_spec" type="string" property-accessor="/atg/commerce/endeca/index/accessor/ParentSpecPropertyAccessor" output-name="dimval.parent_spec" is-non-repository-property="true" />
+		<property name="$url"    type="string"   suppress="true"/>
+		<property name="$baseUrl"    type="string"   suppress="true"/>
+		<property name="$repositoryId" suppress="true"/>
+		<property name="$repository.repositoryName" suppress="true"/>
+		<property name="$itemDescriptor.itemDescriptorName" suppress="true"/>
+		<property name="dimval.match.use_spec" is-non-repository-property="true" output-name="dimval.match.use_spec" default-value="true" property-accessor="null"/>
+	</properties>
+</item>

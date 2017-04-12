@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_order_history_2011_12_07_Jaswinder_Sidhu">
+  <ReviewIssue id="GVXFB1RE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:36:11:498 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:42:09:710 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="1">src/com/bbb/account/vo/order/GetOrderHistoryResVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>add code header comment</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXFDOHH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:38:14:261 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:41:55:183 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="15">src/com/bbb/account/vo/order/GetOrderHistoryResVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>property names should start with m like mOrderList</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXFEAMJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 12:38:42:955 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:40:43:651 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="22">src/com/bbb/account/vo/order/GetOrderHistoryResVO.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>param names should start with p like pOrderList</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

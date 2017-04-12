@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-107">
+  <ReviewIssue id="ID8P9SL1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:05:00:853 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:09:01:648 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="43">src/com/bbb/pipeline/BBBRestAccessController.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Refractoring of Code and add proper Logging</Summary>
+    <Description>Code refractored and now using one key , but not removed the other key.
+Added the  correct logging in file</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="ID8PFPYQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:09:37:394 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:11:12:076 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Code comments for which story code has been modified</Summary>
+    <Description>Proper comments have been added ,where code has been changed as part of this story.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="ID8PL8JK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:13:54:752 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-12 :: 17:15:05:714 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Is this cookie required only for mobile app</Summary>
+    <Description>yes , in mobile we check in ServiceProcessorImpl.java , if reponse has autologin cookie then we set the value in session.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

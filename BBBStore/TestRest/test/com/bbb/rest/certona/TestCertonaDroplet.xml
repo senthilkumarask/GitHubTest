@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.certona.TestCertonaDroplet">
+		<!-- <group id="testCertonaDroplet_college_landing">
+			<test id="testCertonaDroplet_college_landing">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">xml</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">clp_tci;clp_aco</obj>		
+				  	<obj id="exitemid" type="string">1013562318</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BedBathUS</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="pageName" type="string">CollegeLandingPage</obj>
+				   	<obj id="collegeid" type="string">123456</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group> -->
+		<group id="testCertonaDroplet_error">
+			<test id="testCertonaDroplet_error">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="exitemid" type="string">1013562318</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BedBathUS</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="pageName" type="string">CollegeLandingPage</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group>
+		 <!-- <group id="testCertonaDroplet_baby_landing">
+			<test id="testCertonaDroplet_baby_landing">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">grl_tri</obj>		
+				  	<obj id="exitemid" type="string">1015002093</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BuyBuyBaby</obj>
+				  	<obj id="number" type="string">15</obj>
+				  	<obj id="pageName" type="string">RegistryLandingPage</obj>		      
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group> -->	
+		<!-- <group id="testCertonaDroplet_bridal_landing">
+			<test id="testCertonaDroplet_bridal_landing">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">grl_tri</obj>		
+				  	<obj id="exitemid" type="string">1018925230</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BedBathUS</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="pageName" type="string">RegistryLandingPage</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group> -->
+		<group id="testCertonaDroplet_product_detail">
+			<test id="testCertonaDroplet_product_detail">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">pdp_cav;pdp_fbw</obj>		
+				  	<obj id="exitemid" type="string">1018925230</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BedBathUS</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="productId" type="string">1018925230</obj>
+				  	<obj id="pageName" type="string">CategoryDetailPage</obj>
+				  	<obj id="subcat" type="string">subcat</obj>
+				  	<obj id="ipaddress" type="string">202.123.12.34</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testCertonaDroplet_category_landing">
+			<test id="testCertonaDroplet_category_landing">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">clp_cd;clp_jfy</obj>		
+				  	<obj id="exitemid" type="string">1015002093</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BuyBuyBaby</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="categoryId" type="string">30004</obj>
+				  	<obj id="pageName" type="string">ProductDetailPage</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group>
+	
+		<group id="testCertonaDroplet_cart_slot">
+			<test id="testCertonaDroplet_cart_slot">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">fc_lmi</obj>
+				  	<obj id="exitemid" type="string">1015002093</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BuyBuyBaby</obj>
+				  	<obj id="number" type="string">15;15</obj>
+				  	<obj id="context" type="string">1015002093</obj>
+				  	<obj id="pageName" type="string">CartSlotPage</obj>
+				  	<obj id="ipaddress" type="string">202.123.12.34</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testCertonaDroplet_home_page">
+			<test id="testCertonaDroplet_home_page">
+				<objs>
+		         	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">hp_cd;hp_fnp;hp_jfy</obj>
+				  	<obj id="exitemid" type="string">1015002093</obj>	
+				  	<obj id="userid" type="string"></obj>
+				  	<obj id="siteId" type="string">BuyBuyBaby</obj>
+				  	<obj id="number" type="string">15;7;15</obj>
+				  	<obj id="pageName" type="string">HomePage</obj>
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group>
+		
+ 	<group id="testCertonaDroplet_top_reg_item">
+			<test id="testCertonaDroplet_top_reg_item">
+				<objs>
+		         	 	<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test81@test.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+				  	<obj id="scheme" type="string">fc_lmi</obj>
+				  	<obj id="exitemid" type="string">1015002093</obj>	
+				  	<obj id="userid" type="string">DC126010058</obj>
+				  	<obj id="siteId" type="string">BedBathUS</obj>
+				  	<obj id="number" type="string">3</obj>
+				  	<obj id="pageName" type="string">GiftRegistry</obj>
+				  	<obj id="giftregid" type="string">183412779</obj>	
+				  	<obj id="registrytype" type="string">Wedding</obj>		
+				  	<obj id="ipaddress" type="string">202.123.12.34</obj>	 	
+					<obj id="certonaDroplet" type="string">/rest/bean/com/bbb/certona/droplet/CertonaDroplet/getCertonaSlotDetails</obj>
+				</objs>
+			</test>
+		</group> 
+	</cluster>
+</ddtunit>
+ 

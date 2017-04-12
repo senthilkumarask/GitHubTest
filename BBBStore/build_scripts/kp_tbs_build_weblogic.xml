@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BBBStore" default="deploy-ear-to-weblogic" basedir=".">
+        <property environment="env" />
+
+        <property file="${user.name}.properties" />
+
+        <!-- Define an if and else task for use in this definition -->
+        <taskdef name="if" classname="ise.antelope.tasks.IfTask" classpath="../build_lib/atg/atg-ant.jar" />
+        <taskdef name="else" classname="ise.antelope.tasks.ElseTask" classpath="../build_lib/atg/atg-ant.jar" />
+
+
+        <if name="servername" value="prod" >
+                <property file="bbb_prod_dev_weblogic.properties" />
+                <echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+                <echo message="Modules list used for build..... ${include.modules}" level="info" />
+                <echo message="Weblogic server name is ${weblogic.server}" level="info" />
+        </if>
+
+        <if name="servername" value="pub" >
+                <property file="bbb_pub.properties" />
+                <echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+                <echo message="Weblogic server name is ${weblogic.server}" level="info" />
+        </if>
+
+        <if name="servername" value="prod_dev" >
+                <property file="bbb_prod_dev.properties" />
+                <echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+                <echo message="Weblogic server name is ${weblogic.server}" level="info" />
+        </if>
+
+        <if name="servername" value="pub_dev" >
+                <property file="bbb_pub_dev.properties" />
+                <echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+                <echo message="Weblogic server name is ${weblogic.server}" level="info" />
+        </if>
+
+
+        <if name="servername" value="prod_dev_sandbox" >
+                <property file="bbb_prod_dev_sandbox.properties" />
+                <echo message="Server Name passed is ${dynamo.server.name}" level="info" />
+                <echo message="Weblogic server name is ${weblogic.server}" level="info" />
+        </if>
+
+
+        <!-- The dynamo class path -->
+        <path id="dynamo.classpath">
+                <fileset dir="${dynamo.home}/../DAS/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <fileset dir="${dynamo.home}/../DAS-UI/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <fileset dir="${dynamo.home}/../DPS/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <fileset dir="${dynamo.home}/../DSS/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <fileset dir="${dynamo.home}/../DCS/lib">
+                        <include name="**/*.jar" />
+                </fileset>
+                <!--<fileset dir="${dynamo.home}/../CommerceReferenceStore/Store/EStore/International/lib">
+                        <include name="**/*.jar" />
+                </fileset>-->
+        </path>
+
+        <!-- This target builds the module, assembles the ear, and deploys it to JBoss. -->
+        <target name="deploy-ear-to-weblogic" depends="init, foot, copy, build-module, delete-symbolic-link, clean, copy-to-atg, execute-assembler-cmd, create-symbolic-link" description="builds the module" />
+
+        <!-- Deletes the build and install directories. -->
+        <target name="clean" depends="init" description="Deletes the contents of the install and build directories.">
+                <echo message="Deleting:" />
+                <echo message="  ${weblogic.home}/application/${weblogic.server}/${module.name}.ear" />
+                <echo message="  ${dynamo.root.dir}/${module.name}" />
+                <delete dir="${weblogic.home}/application/${weblogic.server}/${module.name}.ear" failonerror="false" includeEmptyDirs="true"/>
+                <delete dir="${dynamo.root.dir}/${module.name}" failonerror="false" includeEmptyDirs="true"/>
+        </target>
+
+        <target name="copy">
+                <copy todir="${dynamo.home}/servers/" overwrite="true">
+                        <fileset dir="../env">
+                        <include name="**"/>
+                        </fileset>
+                </copy>
+        </target>
+		
+		  <target name="deploy-jsp" description="Deploys all JSPs">
+			 <echo>Copying tbs war from ${j2ee.dir}/${store.module.name}.war to ${store.deploy.path}/${store.ear}/${store.module.name}.war</echo>
+
+			 <copy todir="${store.deploy.path}/${store.ear}/${store.module.name}.war">
+				 <fileset dir="${j2ee.dir}/${store.module.name}.war"/>
+			 </copy>
+		 </target>
+
+        <!--<target name="copy">
+                <copy todir="${dynamo.home}/servers/bbb_prod1_istW" overwrite="true">
+                        <fileset dir="../env/bbb_prod1_istW"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_prod_uatW_GSS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatW_GSS"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_prod_uatW_SLM" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatW_SLM"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_prod_uatW_SS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatW_SS"/>
+                 </copy>
+
+                 <copy todir="${dynamo.home}/servers/bbb_prod_uatW_WS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatW_WS"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_prod_uat_01_W" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_01_W"/>
+                 </copy>
+
+                <copy todir="${dynamo.home}/servers/bbb_store_GSS_01W" overwrite="true">
+                        <fileset dir="../env/bbb_store_GSS_01W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/importVersionedData" overwrite="true">
+                        <fileset dir="../env/importVersionedData"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_GSS_02W" overwrite="true">
+                        <fileset dir="../env/bbb_store_GSS_02W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_prod01_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_prod01_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_prod02_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_prod02_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_pub_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_pub_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SLM_01_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_SLM_01_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SLM_02_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_SLM_02_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SS_01_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_SS_01_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SS_02_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_SS_02_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_stg_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_stg_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_01_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_01_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_02_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_02_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_03_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_03_W"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_04_W" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_04_W"/>
+                 </copy>
+
+
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_01_E" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_01_E"/>
+                 </copy>
+
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_02_E" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_02_E"/>
+                </copy>
+                        <copy todir="${dynamo.home}/servers/bbb_store_prod01_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_prod01_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_prod02_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_prod02_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_pub_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_pub_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_stg_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_stg_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_GSS_01E" overwrite="true">
+                        <fileset dir="../env/bbb_store_GSS_01E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_GSS_02E" overwrite="true">
+                        <fileset dir="../env/bbb_store_GSS_02E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_01_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_01_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_02_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_02_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_03_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_03_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_WS_04_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_WS_04_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SS_01_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_SS_01_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SS_02_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_SS_02_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SLM_01_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_SLM_01_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_store_SLM_02_E" overwrite="true">
+                        <fileset dir="../env/bbb_store_SLM_02_E"/>
+                 </copy>
+                 <copy todir="${dynamo.home}/servers/bbb_prod_dev" overwrite="true">
+                        <fileset dir="../env/bbb_prod_dev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_dv" overwrite="true">
+                        <fileset dir="../env/bbb_prod_dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_dv" overwrite="true">
+                        <fileset dir="../env/bbb_pub_dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_dv" overwrite="true">
+                        <fileset dir="../env/bbb_stg_dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod1_dev" overwrite="true">
+                        <fileset dir="../env/bbb_prod1_dev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_qa" overwrite="true">
+                        <fileset dir="../env/bbb_prod_qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod1_qa" overwrite="true">
+                        <fileset dir="../env/bbb_prod1_qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_dev" overwrite="true">
+                        <fileset dir="../env/bbb_pub_dev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_qa" overwrite="true">
+                        <fileset dir="../env/bbb_pub_qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_dev" overwrite="true">
+                        <fileset dir="../env/bbb_stg_dev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_qa" overwrite="true">
+                        <fileset dir="../env/bbb_stg_qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_ist" overwrite="true">
+                        <fileset dir="../env/bbb_stg_ist"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_ist" overwrite="true">
+                        <fileset dir="../env/bbb_pub_ist"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_ist" overwrite="true">
+                        <fileset dir="../env/bbb_prod_ist"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod1_ist" overwrite="true">
+                        <fileset dir="../env/bbb_prod1_ist"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_cr4dv" overwrite="true">
+                        <fileset dir="../env/bbb_prod_cr4dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_cr4dv" overwrite="true">
+                        <fileset dir="../env/bbb_pub_cr4dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_cr4dv" overwrite="true">
+                        <fileset dir="../env/bbb_stg_cr4dv"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_cr4qa" overwrite="true">
+                        <fileset dir="../env/bbb_prod_cr4qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_cr4qa" overwrite="true">
+                        <fileset dir="../env/bbb_pub_cr4qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_cr4qa" overwrite="true">
+                        <fileset dir="../env/bbb_stg_cr4qa"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_lp" overwrite="true">
+                        <fileset dir="../env/bbb_prod_lp"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod1_lp" overwrite="true">
+                        <fileset dir="../env/bbb_prod1_lp"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_lp" overwrite="true">
+                        <fileset dir="../env/bbb_pub_lp"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_lp" overwrite="true">
+                        <fileset dir="../env/bbb_stg_lp"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_dvdev" overwrite="true">
+                        <fileset dir="../env/bbb_prod_dvdev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_dvdev" overwrite="true">
+                        <fileset dir="../env/bbb_pub_dvdev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_dvdev" overwrite="true">
+                        <fileset dir="../env/bbb_stg_dvdev"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_istW" overwrite="true">
+                        <fileset dir="../env/bbb_prod_istW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_istW" overwrite="true">
+                        <fileset dir="../env/bbb_pub_istW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_istW" overwrite="true">
+                        <fileset dir="../env/bbb_stg_istW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_dvW" overwrite="true">
+                        <fileset dir="../env/bbb_prod_dvW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_dvW" overwrite="true">
+                        <fileset dir="../env/bbb_pub_dvW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_dvW" overwrite="true">
+                        <fileset dir="../env/bbb_stg_dvW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_dvdevW" overwrite="true">
+                        <fileset dir="../env/bbb_prod_dvdevW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_dvdevW" overwrite="true">
+                        <fileset dir="../env/bbb_pub_dvdevW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_dvdevW" overwrite="true">
+                        <fileset dir="../env/bbb_stg_dvdevW"/>
+                </copy> -->
+        <!--    <copy todir="${dynamo.home}/servers/bbb_prod_uatE">
+                        <fileset dir="../env/bbb_prod_uatE"/>
+                </copy> -->
+                <!--<copy todir="${dynamo.home}/servers/bbb_pub_uatE" overwrite="true">
+                        <fileset dir="../env/bbb_pub_uatE"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_uatE" overwrite="true">
+                        <fileset dir="../env/bbb_stg_uatE"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uatW" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_pub_uatW" overwrite="true">
+                        <fileset dir="../env/bbb_pub_uatW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_stg_uatW" overwrite="true">
+                        <fileset dir="../env/bbb_stg_uatW"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_GSS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_GSS"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_PES" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_PES"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_SLM" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_SLM"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_SLMBck" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_SLMBck"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uat_SS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uat_SS"/>
+                </copy>
+                <copy todir="${dynamo.home}/servers/bbb_prod_uatWS" overwrite="true">
+                        <fileset dir="../env/bbb_prod_uatWS"/>
+                </copy>
+        </target>-->
+
+        <!-- This target builds the ATG module. -->
+        <target name="build-module" depends="init" description="">
+                <ant antfile="../core/build.xml" dir="../core" target="build"/>
+                <echo message="Module core built." />
+
+                <ant antfile="../integration/build.xml" dir="../integration" target="build"/>
+                <echo message="Module Integration built." />
+
+                <ant antfile="../EStore/build.xml" dir="../EStore" target="build"/>
+                <echo message="Module EStore built." />
+				
+				 <ant antfile="../TBSSrc/build.xml" dir="../TBSSrc" target="build"/>
+                <echo message="Module TBSSrc built." />
+
+                <ant antfile="../versioned/build.xml" dir="../EStore/versioned" target="build"/>
+        <echo message="Module EStore versioned built." />
+
+                <ant antfile="../catalog/build.xml" dir="../EStore/versioned/catalog" target="build"/>
+        <echo message="Module EStore versioned catalog built." />
+
+                <ant antfile="../webservices/build.xml" dir="../webservices" target="build"/>
+                <echo message="Module webservices built." />
+
+                <ant antfile="../REST/build.xml" dir="../REST" target="build"/>
+                <echo message="Module BBB REST built." />
+				
+				<ant antfile="../repositories/build.xml" dir="../StoreRest/repositories" target="build"/>
+                <echo message="Module BBB storerest.repositories built." />
+				
+				<ant antfile="../common/build.xml" dir="../StoreRest/common" target="build"/>
+                <echo message="Module BBB storerest.common built." />
+				
+				<ant antfile="../versioned/build.xml" dir="../StoreRest/versioned" target="build"/>
+                <echo message="Module BBB storerest.versioned built." />
+				
+                <ant antfile="../StoreRest/build.xml" dir="../StoreRest" target="build"/>
+                <echo message="Module BBB StoreRest built." />
+
+                <ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="build"/>
+                <echo message="Module Test Store from built." />
+
+                <ant antfile="../TestVersioned/test.build.xml" dir="../TestVersioned" target="build"/>
+                <echo message="Module TestVersioned  built"/>
+
+                <echo message="All Modules built." />
+        </target>
+
+        <target name="copy-to-atg" depends="clean-atg">
+                <mkdir dir="${dynamo.root.dir}/${ant.project.name}" />
+                <copy todir="${dynamo.root.dir}/${ant.project.name}">
+                        <fileset dir="../." >
+
+                                <exclude name="**/*.svn" />
+                                <exclude name="**/build.xml" />
+                                <exclude name="**/*.bat" />
+                                <!--<exclude name="**/build_lib/" />-->
+                                <exclude name="**/build_scripts/" />
+                        </fileset>
+                </copy>
+                <copy file="dynamolog.properties" todir="${dynamo.home}" overwrite="true"/>
+        </target>
+
+<!-- This target execute sapeunit/junit module. -->
+        <target name="test-junits" description="execute junit/sapeunit">
+
+                <ant antfile="${dynamo.home}/../BBBStore/TestStoreFront/test.build.xml" dir="${dynamo.home}/../BBBStore/TestStoreFront" target="test1"/>
+                <echo message="Module Test Store tests executed." />
+                <sleep seconds="20"/>
+
+        </target>
+
+        <!-- This target instrument the classes which will be tested through junit. -->
+        <target name="run-cobertura" description="execute cobertura/junit">
+
+                <ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="run-cobertura-instrumentation" />
+
+                <antcall target="copy-to-atg" />
+        </target>
+
+        <target name="run-cobertura-reports" depends="copy-report" description="assembles the ear, and deploys it to JBoss">
+                <sleep seconds="20" />
+                <ant antfile="../TestStoreFront/test.build.xml" dir="../TestStoreFront" target="cobertura-reports"/>
+        </target>
+
+
+        <target name="copy-report">
+
+                <delete dir="../TestStoreFront/reports" />
+                <mkdir dir="../TestStoreFront/reports" />
+                <copy todir="../TestStoreFront/reports">
+                        <fileset dir="${dynamo.home}/../BBBStore/TestStoreFront/reports" >
+
+                                <include name="**/*.xml" />
+                                <exclude name="test.xml" />
+                        </fileset>
+                        <fileset dir="${dynamo.home}/../BBBStore/TestRest/reports">
+
+                                <include name="**/*.xml" />
+                                <exclude name="test.xml" />
+                        </fileset>
+                </copy>
+                <delete file="../TestStoreFront/cobertura.ser" failonerror="false"/>
+                <delete file="../TestRest/cobertura.ser" failonerror="false"/>
+                <copy file="${dynamo.home}/../BBBStore/TestStoreFront/cobertura.ser" todir="../TestStoreFront/" />
+                <copy file="${dynamo.home}/../BBBStore/TestRest/cobertura.ser" todir="../TestRest/" />
+                </target>
+
+		 <!-- Create symbolic link on VM . -->
+		  <target name="create-symbolic-link">
+  			<if name="useSymLinks" value="true" >
+			  <echo message="symbolic link creating"/>
+			  <delete dir="${symlink.to.delete}" failonerror="false" includeEmptyDirs="true"/>
+				<symlink resource="${symlink.src.dir}" link="${symlink.dest.dir}" failonerror="yes"/>
+				<echo>symbolic link created for ${symlink.src.dir} with ${symlink.dest.dir}</echo>
+			</if>
+		  </target>
+		  
+		  
+		<!-- Delete symbolic link on VM . -->
+		 <target name="delete-symbolic-link">
+			<if name="useSymLinks" value="true" >
+			<exec executable="unlink" failonerror="false">
+				<arg value="${symlink.to.delete}"/>
+			</exec>
+			<exec executable="mkdir" failonerror="false">
+				<arg value="${symlink.to.delete}"/>
+			</exec>
+			</if>
+		 <!--<delete file="/u01/weblogic/application/bbb_prod/BBBStore.ear/tbs.war" followsymlinks="false" removenotfollowedsymlinks="true" />
+		  <symlink action="delete" link="/u01/weblogic/application/bbb_prod/BBBStore.ear/tbs.war"/>
+			<symlink resource="/media/sf_Code/TBSNext/BBBStore/TBSWeb/j2ee-apps/tbs/tbs.war" link="/u01/weblogic/application/bbb_prod/store.ear" failonerror="yes"/>
+			<sleep seconds="10"/> 
+			
+			<symlink action="delete" link="/u01/weblogic/application/bbb_prod/store.ear" failonerror="yes"/>
+			<symlink action="delete" link="/media/sf_Code/TBSNext/BBBStore/TBSWeb/j2ee-apps/tbs/tbs.war" failonerror="yes"/>
+			<sleep seconds="10"/> 
+
+			<available file="/media/sf_Code/TBSNext/BBBStore/TBSWeb/j2ee-apps/tbs/tbs.war" property="tbs.link.file.present"/>
+			<available file="/u01/weblogic/application/bbb_prod/store.ear" property="tbs.delete.link.still.there" value="ERROR: link deletion failed"/>-->
+		  </target>
+		  
+
+        <!-- This target uses the runAssembler command to build the assembled ear and deploy it to JBoss. -->
+        <target name="execute-assembler-cmd" description="Executes ATG's runAssembler by command line call">
+                <!-- Configure various arguments to pass to runAssembler depending upon ANT properties set by the user. -->
+                <if name="liveconfig" value="true">
+                        <property name="assemble.cmd.liveconfig" value="-liveconfig" />
+                        <else>
+                                <property name="assemble.cmd.liveconfig" value="" />
+                        </else>
+                </if>
+                <if name="standalone" value="true">
+                        <property name="assemble.cmd.standalone" value="-standalone" />
+                        <else>
+                                <property name="assemble.cmd.standalone" value="" />
+                        </else>
+                </if>
+                <if name="omitlicenses" value="true">
+                        <property name="assemble.cmd.omitlicenses" value="-omit-licenses" />
+                        <else>
+                                <property name="assemble.cmd.omitlicenses" value="" />
+                        </else>
+                </if>
+                <if name="pack" value="true">
+                        <property name="assemble.cmd.pack" value="-pack" />
+                        <else>
+                                <property name="assemble.cmd.pack" value="" />
+                        </else>
+                </if>
+                <if name="dynamo.server.name" value="">
+                        <property name="assemble.cmd.servername" value="" />
+                        <else>
+                                <property name="assemble.cmd.servername" value="-server ${dynamo.server.name}" />
+                        </else>
+                </if>
+                <if name="include.admin" value="true">
+                        <property name="assemble.cmd.modules" value="${include.modules} DafEar.Admin" />
+                        <else>
+                                <property name="assemble.cmd.modules" value="${include.modules}" />
+                        </else>
+                </if>
+                <if name="include.layer" value="true">
+                        <property name="assemble.cmd.layer" value="-layer staging" />
+                        <else>
+                                <property name="assemble.cmd.layer" value="" />
+                        </else>
+                </if>
+
+		<if name="hotfix" value="true">
+            <property name="assemble.cmd.hotfix" value="-prependJars ${basedir}/../hotfix/p13469587_1003_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix" value="" />
+            </else>
+        </if>
+                <if name="hotfix_prod" value="true">
+            <property name="assemble.cmd.hotfix_prod" value="-prependJars ${basedir}/../hotfix/p16217681_10032_v1_lib.jar,${basedir}/../hotfix/p16395932_10032_v1_lib.jar,${basedir}/../hotfix/p14283857_16395932_10032_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix_prod" value="" />
+            </else>
+        </if>
+                <!--<if name="hotfix_prod" value="true">
+            <property name="assemble.cmd.hotfix_prod" value="-prependJars ${dynamo.home}/hotfix/p16217681_10032_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix_prod" value="" />
+            </else>
+        </if>-->
+
+
+                <echo message="Invoking RunAssembler Command" />
+                <echo message="assemble.cmd.liveconfig=${assemble.cmd.liveconfig}" />
+                <echo message="assemble.cmd.omitlicenses=${assemble.cmd.omitlicenses}" />
+                <echo message="assemble.cmd.standalone=${assemble.cmd.standalone}" />
+                <echo message="assemble.cmd.pack=${assemble.cmd.pack}" />
+                <echo message="assemble.cmd.layer=${assemble.cmd.layer}" />
+                <echo message="assemble.cmd.modules=${assemble.cmd.modules}" />
+                <echo message="dynamo home=${dynamo.home}" />
+                <echo message="assemble.cmd.hotfix=${assemble.cmd.hotfix}" />
+                                <echo message="assemble.cmd.hotfix_prod=${assemble.cmd.hotfix_prod}" />
+
+                <echo message=" " />
+
+                <!-- The syntax of the run assembler command is:runAssembler [options] output-file-name -m module-list -->
+                <exec dir="${dynamo.home}/bin" vmlauncher="false" executable="${dynamo.home}/bin/runAssembler" failonerror="yes">
+                        <arg value="-overwrite" />
+                        <arg line="-dynamo-env-properties ${dynamo.home}/dynamolog.properties" />
+                        <arg value="${assemble.cmd.omitlicenses}" />
+                        <arg value="${assemble.cmd.liveconfig}" />
+                        <arg value="${assemble.cmd.standalone}" />
+                        <arg value="${assemble.cmd.pack}" />
+                        <arg line="${assemble.cmd.hotfix}" />
+						<arg line="${assemble.cmd.hotfix_prod}" />
+                        <arg value="${weblogic.home}/application/${weblogic.server}/${module.name}.ear" />
+                        <arg line="${assemble.cmd.layer}" />
+                        <arg line="-m ${assemble.cmd.modules}" />
+                </exec>
+                <if name="copyweblogicfile" value="true">
+                        <copy file="weblogic-application.xml" todir="${weblogic.home}/application/${weblogic.server}/${module.name}.ear/META-INF/"/>
+                </if>
+
+        </target>
+
+        <target name="assemble-bcc" description="Executes ATG's runAssembler by command line call for BCC">
+                <!-- Configure various arguments to pass to runAssembler depending upon ANT properties set by the user. -->
+                <if name="liveconfig" value="true">
+                        <property name="assemble.cmd.liveconfig" value="-liveconfig" />
+                        <else>
+                                <property name="assemble.cmd.liveconfig" value="" />
+                        </else>
+                </if>
+                <if name="standalone" value="true">
+                        <property name="assemble.cmd.standalone" value="-standalone" />
+                        <else>
+                                <property name="assemble.cmd.standalone" value="" />
+                        </else>
+                </if>
+                <if name="omitlicenses" value="true">
+                        <property name="assemble.cmd.omitlicenses" value="-omit-licenses" />
+                        <else>
+                                <property name="assemble.cmd.omitlicenses" value="" />
+                        </else>
+                </if>
+                <if name="pack" value="true">
+                        <property name="assemble.cmd.pack" value="-pack" />
+                        <else>
+                                <property name="assemble.cmd.pack" value="" />
+                        </else>
+                </if>
+                <if name="dynamo.server.name" value="">
+                        <property name="assemble.cmd.servername" value="" />
+                        <else>
+                                <property name="assemble.cmd.servername" value="-server ${dynamo.server.name}" />
+                        </else>
+                </if>
+                <if name="include.admin" value="true">
+                        <property name="assemble.cmd.modules" value="${include.modules} DafEar.Admin" />
+                        <else>
+                                <property name="assemble.cmd.modules" value="${include.modules}" />
+                        </else>
+                </if>
+				<property name="assemble.cmd.bccmodules" value="${include.bccmodules} DafEar.Admin" />
+                <if name="include.layer" value="true">
+                        <property name="assemble.cmd.layer" value="-layer staging" />
+                        <else>
+                                <property name="assemble.cmd.layer" value="" />
+                        </else>
+                </if>
+
+		<if name="hotfix" value="true">
+            <property name="assemble.cmd.hotfix" value="-prependJars ${basedir}/../hotfix/p13469587_1003_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix" value="" />
+            </else>
+        </if>
+                <if name="hotfix_prod" value="true">
+            <property name="assemble.cmd.hotfix_prod" value="-prependJars ${basedir}/../hotfix/p16217681_10032_v1_lib.jar,${basedir}/../hotfix/p16395932_10032_v1_lib.jar,${basedir}/../hotfix/p14283857_16395932_10032_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix_prod" value="" />
+            </else>
+        </if>
+                <!--<if name="hotfix_prod" value="true">
+            <property name="assemble.cmd.hotfix_prod" value="-prependJars ${dynamo.home}/hotfix/p16217681_10032_v1_lib.jar" />
+            <else>
+                <property name="assemble.cmd.hotfix_prod" value="" />
+            </else>
+        </if>-->
+                <echo message="Deleting:" />
+				<echo message="  ${weblogic.home}/application/${weblogic.server}/${module.bcc}.ear" />
+				<delete dir="${weblogic.home}/application/${weblogic.server}/${module.bcc}.ear" failonerror="false" includeEmptyDirs="true"/>
+
+                <echo message="Invoking RunAssembler Command" />
+                <echo message="assemble.cmd.liveconfig=${assemble.cmd.liveconfig}" />
+                <echo message="assemble.cmd.omitlicenses=${assemble.cmd.omitlicenses}" />
+                <echo message="assemble.cmd.standalone=${assemble.cmd.standalone}" />
+                <echo message="assemble.cmd.pack=${assemble.cmd.pack}" />
+                <echo message="assemble.cmd.layer=${assemble.cmd.layer}" />
+                <echo message="assemble.cmd.modules=${assemble.cmd.modules}" />
+                <echo message="dynamo home=${dynamo.home}" />
+                <echo message="assemble.cmd.hotfix=${assemble.cmd.hotfix}" />
+                <echo message="assemble.cmd.hotfix_prod=${assemble.cmd.hotfix_prod}" />
+                <echo message=" " />
+
+                <!-- The syntax of the run assembler command is:runAssembler [options] output-file-name -m module-list -->
+				<echo message="Building the BCC EAR" />
+			    <exec dir="${dynamo.home}/bin" vmlauncher="false" executable="${dynamo.home}/bin/runAssembler" failonerror="yes">
+                       <arg value="-overwrite" />
+                       <arg line="-dynamo-env-properties ${dynamo.home}/dynamolog.properties" />
+                       <arg value="${assemble.cmd.omitlicenses}" />
+                       <arg value="${assemble.cmd.liveconfig}" />
+                       <arg value="${assemble.cmd.standalone}" />
+                       <arg value="${assemble.cmd.pack}" />
+                       <arg line="${assemble.cmd.hotfix}" />
+					<arg line="${assemble.cmd.hotfix_prod}" />
+                       <arg value="${weblogic.home}/application/${weblogic.server}/${module.bcc}.ear" />
+                       <arg line="${assemble.cmd.layer}" />
+                       <arg line="-m ${assemble.cmd.bccmodules}" />
+				</exec>
+
+        </target>
+
+        <target name="clean-atg" >
+                <delete dir="${dynamo.root.dir}/${ant.project.name}" />
+        </target>
+
+        <!-- Initializes the build.  This target is not public, but should be called by all the others. -->
+        <target name="init">
+                <!-- Create the timestamp -->
+                <tstamp />
+                <echo message="" />
+                <echo message="" />
+                <echo message="#############################################################################" />
+                <echo message="#############################################################################" />
+                <echo message="${module.name}: start date = ${DSTAMP}  start time = ${TSTAMP}" />
+                <echo message="JAVA_HOME       = ${env.JAVA_HOME}" />
+                <echo message="dynamo.home     = ${dynamo.home}" />
+                <echo message="dynamo.root.dir = ${dynamo.root.dir}" />
+                <echo message="weblogic.home      = ${weblogic.home}" />
+                <echo message="#############################################################################" />
+                <echo message="#############################################################################" />
+                <echo message="" />
+                <echo message="" />
+
+
+                <propertyfile  file="../core/src/com/bbb/VersionNumber/build_number.properties">
+                        <entry key="build.count" type="int" operation="+" value="1" pattern="000"/>
+                </propertyfile>
+
+                <property file="../core/src/com/bbb/VersionNumber/build_number.properties"/>
+
+                <propertyfile  file="../core/src/com/bbb/VersionNumber/build_number.properties">
+                           <entry key="revision.number" value="${build.major}.${build.minor}.${build.patch}.${build.count}"/>
+                </propertyfile>
+                <!--
+                <delete file="../core/src/com/bbb/VersionNumber/svnurl.properties"/>
+                <concat destfile="../core/src/com/bbb/VersionNumber/svnurl.properties" append="true">${env.SVN_URL}</concat>
+        <chmod file="test.sh" perm="ugo+rx"/>
+                <sleep seconds="2"/>
+                <exec executable="dos2unix">
+                <arg value="test.sh"/>
+                </exec>
+                <exec executable="/bin/ksh">
+                <arg value="test.sh"/>
+                </exec>
+                <delete file="test.sh"/>
+                -->
+
+        </target>
+        <condition property="is-windows">
+    <os family="windows"/>
+        </condition>
+
+        <condition property="is-unix">
+    <not>
+    <os family="windows"/>
+        </not>
+        </condition>
+
+        <target name="foot" depends="ifWindows,ifNotWindows"/>
+        <!-- test if window platform ,then do nothing. and if unix platform run the target -->
+
+
+        <target name="ifWindows" if="is-windows">
+        </target>
+        <target name="ifNotWindows" if="is-unix">
+                <delete file="../core/src/com/bbb/VersionNumber/svnurl.properties"/>
+                <concat destfile="../core/src/com/bbb/VersionNumber/svnurl.properties" append="true">${env.SVN_URL}</concat>
+                <replaceregexp file="../core/src/com/bbb/VersionNumber/svnurl.properties"
+               match="(.*)/Web2.0/bbbdev/trunk/Development/Code"
+               replace="build.from=trunk"
+               byline="true"
+                />
+                <replaceregexp file="../core/src/com/bbb/VersionNumber/svnurl.properties"
+                match="02.(.*)"
+                replace="build.from=02.\1"
+                byline="true"
+                />
+        </target>
+
+</project>

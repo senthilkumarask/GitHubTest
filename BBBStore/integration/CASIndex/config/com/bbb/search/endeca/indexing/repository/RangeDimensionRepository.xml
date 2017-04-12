@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN" "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  <header>
+    <name>BBB Price Range</name>
+    <author>CASIndex Module</author>
+    <version>$Revision: #1 $</version>
+  </header>
+ <item-descriptor name="rangeDimension" display-property="dimSpec">
+  <table name="BBB_RANGE_DIMENSION" type="primary" id-column-name="id">
+  		<property name="dimName" column-name="DIM_NAME" data-type="string" display-name="Dimension Name">
+  			<attribute name="propertySortPriority" value="1"/>
+  		</property>
+		<property name="dimSpec" column-name="DIM_SPEC" data-type="string" display-name="Dimension Specification">
+			<attribute name="propertySortPriority" value="2"/>
+		</property>    	
+		<property name="parentSpec"  column-name="PARENT_SPEC"  data-type="string" display-name="Parent Specification">
+			<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="displayOrder"  column-name="DISPLAY_ORDER"  data-type="int" display-name="Display Order">
+			<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="lowerBound"  column-name="LOWER_BOUND"  data-type="int" display-name="Lower Bound">
+			<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="lowerBoundInclusive"  column-name="LOWER_BOUND_INCLUSIVE"  data-type="enumerated" display-name="Lower Bound Inclusive">
+			<attribute name="propertySortPriority" value="6"/>
+			<attribute name="useCodeForValue" value="false"/>
+			  <option value="true" code="1"/>
+			  <option value="false" code="0"/>
+		</property>
+		<property name="upperBound"  column-name="UPPER_BOUND"  data-type="int" display-name="Upper Bound">
+			<attribute name="propertySortPriority" value="7"/>
+		</property>
+		<property name="upperBoundInclusive"  column-name="UPPER_BOUND_INCLUSIVE"  data-type="enumerated" display-name="Upper Bound Inclusive">
+			<attribute name="propertySortPriority" value="8"/>
+			<attribute name="useCodeForValue" value="false"/>
+			  <option value="true" code="1"/>
+			  <option value="false" code="0"/>
+		</property> 
+  </table> 		   		   
+</item-descriptor>
+</gsa-template>

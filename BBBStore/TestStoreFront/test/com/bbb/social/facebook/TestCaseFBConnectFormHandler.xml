@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+		<group id="testhandleValidateAndExtendAccout">
+			<test id="testhandleValidateAndExtendAccout_test1">
+				<objs>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="fbemail" type="string">amit_2@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="fbusername" type="string">amit_2</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>					                
+				</objs>
+	        </test>
+		</group>
+		 <group id="testhandleExtendAccount">
+			<test id="testhandleExtendAccount_test1">
+				<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+	                <obj id="fbemail" type="string">amit_2@example.com</obj>					
+					<obj id="fbusername" type="string">amit_2</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>	
+					<obj id="siteId" type="string">BuyBuyBaby</obj>  
+				</objs>
+	        </test>
+		</group>
+		<group id="testBbbProfileNotExist">
+			<test id="testBbbProfileNotExist_test1">
+				<objs>
+				<obj id="fbConnectForm" type="com.bbb.social.facebook.formhandler.FBConnectFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/com/bbb/social/facebook/FBConnectFormHandler</item>
+					</obj>
+	                <obj id="fbemail" type="string">bbbusernotfound@example.com</obj>					
+					<obj id="fbusername" type="string">usernotfound</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>	
+					<obj id="siteId" type="string">BuyBuyBaby</obj>  
+				</objs>
+	        </test>
+		</group>
+		<group id="testBbbProfileExist">
+			<test id="testBbbProfileExist_test1">
+				<objs>
+				<obj id="fbConnectForm" type="com.bbb.social.facebook.formhandler.FBConnectFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/com/bbb/social/facebook/FBConnectFormHandler</item>
+					</obj>
+	                <obj id="fbemail" type="string">amit_2@example.com</obj>					
+					<obj id="fbusername" type="string">amit_2</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>	
+					<obj id="siteId" type="string">BuyBuyBaby</obj>  
+				</objs>
+	        </test>
+		</group>		
+		<group id="testCheckFBConnect">
+			<test id="testCheckFBConnect_test1">
+				<objs>
+				<obj id="fbConnectForm" type="com.bbb.social.facebook.formhandler.FBConnectFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/com/bbb/social/facebook/FBConnectFormHandler</item>
+					</obj>
+	                <obj id="fbemail" type="string">amit_2@example.com</obj>					
+					<obj id="fbusername" type="string">amit_2</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>	
+					<obj id="siteId" type="string">BuyBuyBaby</obj>  
+				</objs>
+	        </test>
+		</group>
+		<group id="testFBUnlinking">
+			<test id="testFBUnlinking_test1">
+				<objs>
+				<obj id="fbConnectForm" type="com.bbb.social.facebook.formhandler.FBConnectFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestCaseFBConnectFormHandler">
+						<item type="string">/com/bbb/social/facebook/FBConnectFormHandler</item>
+					</obj>
+	                <obj id="fbemail" type="string">amit_2@example.com</obj>					
+					<obj id="fbusername" type="string">amit_2</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>	
+					<obj id="siteId" type="string">BuyBuyBaby</obj>  
+				</objs>
+	        </test>
+		</group>
+		<!--<group id="testFacebookUnlink">
+			<test id="testFacebookUnlink_test1">
+				<objs>
+	                <obj id="fbUnlinkedUser" type="string">amit_1@example.com</obj>
+				</objs>
+	        </test>
+		</group>
+		<group id="testFacebookProfile">
+			<test id="testFacebookProfile_test1"/>
+		</group>	 -->
+		<group id="testFBConstants">
+			<test id="testFBConstants_test1">
+				<objs>
+	                <obj id="fbUnlinkedUser" type="string">amit_1@example.com</obj>
+				</objs>
+	        </test>
+		</group>
+	</cluster>
+</ddtunit>

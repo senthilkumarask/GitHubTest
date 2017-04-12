@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.personalstore.targeter.TestCertonaTargeter">
+		<group id="testProductRecommsWithError1">
+			<test id="test1">
+				<objs>
+					<obj id="TestCertonaTargeter"
+						type="com.bbb.personalstore.targeter.TestCertonaTargeter"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.targeter.TestCertonaTargeter">
+						<item type="string">/atg/registry/RepositoryTargeters/CertonaTargeter</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testProductRecommsWithError2">
+			<test id="test1">
+				<objs>
+					<obj id="TestCertonaTargeter"
+						type="com.bbb.personalstore.targeter.TestCertonaTargeter"
+						hint="call" method="resolveName"
+						calltype="com.bbb.personalstore.targeter.TestCertonaTargeter">
+						<item type="string">/atg/registry/RepositoryTargeters/CertonaTargeter</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

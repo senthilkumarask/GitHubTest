@@ -1,0 +1,39 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_cat_id":1,
+			"rule_id":1,
+			"facet_rule_id":1,
+			"facet_rule_name":"Rule 1",
+			"sequence_num":1,
+			"eph_nodes":[{"eph_node_id":1,"display_name":"EPH Category 1"}],
+			"facets":[{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Green"}]
+
+		},
+		{
+			"list_cat_id":1,
+			"rule_id":2,
+			"facet_rule_id":2,
+			"facet_rule_name":"Rule 2",
+			"sequence_num":2,
+			"eph_nodes":[{"eph_node_id":1,"display_name":"EPH Category 21"},{"eph_node_id":2,"display_name":"EPH Category 22"}],
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Green2"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Grande2"}
+			]
+		},
+		{
+			"list_cat_id":1,
+			"rule_id":3,
+			"facet_rule_id":3,
+			"facet_rule_name":"Rule 3",
+			"sequence_num":3,
+			"eph_nodes":[{"eph_node_id":1,"display_name":"EPH Category 31"},{"eph_node_id":2,"display_name":"EPH Category 32"},{"eph_node_id":3,"display_name":"EPH Category 33"}],
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Green3"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Grande3"}
+			]
+		}
+	]
+}

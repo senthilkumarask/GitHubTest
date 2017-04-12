@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item item-descriptor-name="reportData" is-document="true">
+
+  <title property-name="id"/>
+  <properties>
+     <property name="$url" suppress="true"/>
+     <property name="$baseUrl" suppress="true"/>
+     <property name="$docId" suppress="true"/>
+     <property name="$siteId" suppress="true"/>
+     <property name="$repositoryId" suppress="true"/>  
+     <property name="$repository.repositoryName" suppress="true"/>
+     <property is-non-repository-property="true" name="recordSiteID" type="string" output-name="P_Product_Site_ID" property-accessor="/com/bbb/search/endeca/indexing/accessor/OmnitureRecordIDAccessor"/>
+     <property name="concept" output-name="P_Site_ID" type="string" formatter="/com/bbb/search/endeca/indexing/formatter/SiteIDFormatter" is-dimension="false"/>
+     <property name="keyword" is-dimension="false" output-name="P_Omniture_SearchTerm" text-searchable="true" type="string"/>
+     <property name="productId" is-dimension="false" output-name="P_Omniture_ProductId" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/OmnitureProductIDAccessor"/>   
+     <property name="$itemDescriptor.itemDescriptorName" output-name="record.type" suppress="true"/>
+     <property multiselect-type="multi-or" autogen-dimension-values="true" name="RecordType" is-dimension="true" default-value="OPB_Terms" property-accessor="null" output-name="Record Type" is-non-repository-property="true"/>
+  </properties>
+</item>

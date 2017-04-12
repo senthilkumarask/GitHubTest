@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestHeaderWhatsNewDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSearchDroplet.java test case
+
+  HISTORY:
+  Nov. 7, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestHeaderWhatsNewDroplet">
+      <group id="testWhatsNewService">
+        <test id="testWhatsNewService_test1">
+			<objs>
+				<obj id="headerWhatsNewDroplet" type="com.bbb.cms.droplet.HeaderWhatsNewDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestHeaderWhatsNewDroplet">
+					<item type="string">/com/bbb/cms/droplet/HeaderWhatsNewDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+			</objs>
+			
+			<asserts>
+					<assert id="categoryId" type="java.lang.String" action="isNotNull"></assert> 
+					<assert id="categoryId" type="java.lang.String" action="isEqual">10008</assert>
+			</asserts>
+				   
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

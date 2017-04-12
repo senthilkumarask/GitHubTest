@@ -1,0 +1,49 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_cat_id":1,
+			"rule_id":1,
+			"facet_rule_id":1,
+			"facet_rule_name":"Rule 1",
+			"sequence_num":1,
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Silver"}
+			],
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_cat_id":2,
+			"rule_id":2,
+			"facet_rule_id":2,
+			"facet_rule_name":"Rule 2",
+			"sequence_num":2,
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Silver2"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Small2"}
+			],
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_cat_id":3,
+			"rule_id":3,
+			"facet_rule_id":3,
+			"facet_rule_name":"Rule 3",
+			"sequence_num":3,
+			"facets":[
+				{"facet_id":1, "facet_name":"Color", "facet_value_id":1, "facet_value_name":"Silver3"},
+				{"facet_id":2, "facet_name":"Size", "facet_value_id":2, "facet_value_name":"Small3"}
+			],
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		}
+	]
+}

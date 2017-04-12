@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-5757">
+  <ReviewIssue id="IJ9S0NV1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 15:07:53:869 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-01-11 :: 15:07:54:419 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/bbcollege/college_weblink.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

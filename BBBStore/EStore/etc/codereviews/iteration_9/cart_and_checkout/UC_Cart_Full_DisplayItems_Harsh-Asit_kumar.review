@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_Full_DisplayItems_Harsh">
+  <ReviewIssue id="GVX24K84">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 19:57:13:828 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 08:32:28:593 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="280">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Let this method throw the BBBBusiness and BBBSystem exceptions, no need to catch it. We will catch it in droplet and throw a error oparam.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVZNVBXI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 15:41:27:078 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 15:42:32:240 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="98">src/com/bbb/commerce/cart/droplet/BBBCartDisplayDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>In a order we will have items from multiple registry, we can't just check for one registry. Remove this, why do we need to know the registry type.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

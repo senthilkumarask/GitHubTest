@@ -1,0 +1,1 @@
+ALTER TABLE bbb_switch_b.endeca_export_prod_properties ADD (enable_date TIMESTAMP(6));

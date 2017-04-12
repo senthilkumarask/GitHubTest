@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+		<group id="testHandleSaveBillingAddress">
+			<test id="testHandleSaveBillingAddress_test">
+				<objs>
+					<obj id="billingAddrForm" type="com.bbb.commerce.checkout.formhandler.BBBBillingAddressFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+						<item type="string">/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler</item>
+					</obj>
+                    <obj id="stateDroplet" type="com.bbb.commerce.common.BBBPopulateStatesDroplet"
+                        hint="call" method="resolveName"
+                        calltype="com.bbb.commerce.checkout.formhandler.TestBBBBillingFormhandler">
+                        <item type="string">/com/bbb/commerce/common/BBBPopulateStatesDroplet</item>
+                    </obj>
+                    <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					
+					<obj id="firstName" type="String">Manohar</obj>
+					<obj id="middleName" type="String">Sangeetham</obj>
+					<obj id="lastName" type="String">Ramarao</obj>
+					<obj id="address1" type="String">1855 Saint Fransis street</obj>
+					<obj id="address2" type="String">Metropoliatan 1307</obj>
+					<obj id="city" type="String">Reston</obj>
+					<obj id="zipCode" type="String">20190</obj>
+					<obj id="email" type="String">test1@sapient.com</obj>
+					<obj id="phoneNumber" type="String">9898989898</obj>
+					<obj id="state" type="String">VA</obj>
+				</objs>
+				<asserts>
+					<assert id="firstName" type="java.lang.String"
+						action="isEqual">Manohar</assert>
+					<assert id="middleName" type="java.lang.String"
+						action="isEqual">Sangeetham</assert>
+					<assert id="lastName" type="java.lang.String"
+						action="isEqual">Ramarao</assert>
+					<assert id="address1" type="java.lang.String"
+						action="isEqual">1855 Saint Fransis street</assert>
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

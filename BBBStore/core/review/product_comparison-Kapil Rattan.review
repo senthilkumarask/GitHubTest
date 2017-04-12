@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="product_comparison">
+  <ReviewIssue id="HVTI752T">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 18:35:27:413 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-30 :: 18:36:27:201 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil Rattan</ReviewerId>
+    <AssignedTo>Kapil Rattan</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Reviewed. No Comments.</Summary>
+    <Description>Reviewed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.droplet.TestSearchStoreFormHandler">
+		<group id="testSearchStoreFormHandler">
+			<test id="testSearchStoreFormHandler">
+				<objs>
+					<obj id="searchStoreFormHandler" type="com.bbb.selfservice.formhandler.SearchStoreFormHandler" hint="call" method="resolveName" calltype="com.bbb.selfservice.droplet.TestSearchStoreFormHandler">
+						<item type="string">/com/bbb/selfservice/SearchStoreFormHandler</item>
+					</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.selfservice.droplet.TestSearchStoreFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>					
+					<obj id="postal" type="string">90048</obj>
+					<obj id="address" type="string">142 South San Vicente Boulevard</obj>
+					<obj id="city" type="string">Los Angeles</obj>
+					<obj id="state" type="string">CA</obj>
+					<obj id="searchType" type="string">2</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="favStore" type="string">8033</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

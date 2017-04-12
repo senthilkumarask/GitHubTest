@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<!--
+  Indexing Dependency Schema for Commerce Catalog Cateogries
+
+  @version $Id: //product/DCS/version/11.1/templates/DCS/Endeca/Index/config/atg/commerce/endeca/index/category-dim-output-config.xml#2 $$Change: 882941 $
+  @updated $DateTime: 2014/04/14 09:42:56 $$Author: jsiddaga $
+-->
+
+<item item-descriptor-name="category" is-document="true">
+  <title property-name="displayName"/>
+  <meta-properties>
+  <property filter="unique"  is-non-repository-property="true" name="endeca.id" output-name="Endeca.Id"  property-accessor="/com/bbb/search/endeca/indexing/accessor/L2CategoryTypeAHeadPropertyAccessor" text-searchable="true" type="string"/>
+  <property name="displayName" output-name="dimval.display_name"/>
+  <property filter="unique"  is-non-repository-property="true" name="dimenssion_name" output-name="dimval.dimension_name" property-accessor="/com/bbb/search/endeca/indexing/accessor/L2CategoryDimenssionNameAccessor" text-searchable="true" type="string"/>
+  <property name="dimval.parent_spec" type="string" property-accessor="/com/bbb/search/endeca/indexing/accessor/DefaultParentSpecPropertyAccessor" output-name="dimval.parent_spec" is-non-repository-property="true" />
+  <property filter="unique"  is-non-repository-property="true" name="spec" output-name="dimval.spec"  property-accessor="/com/bbb/search/endeca/indexing/accessor/L2CategoryTypeAHeadPropertyAccessor" text-searchable="true" type="string"/>
+  <property name="node_id" output-name="NODE_ID" is-non-repository-property="true" type="string"  property-accessor="/com/bbb/search/endeca/indexing/accessor/L2CategoryTypeAHeadPropertyAccessor" />
+  
+   <property name="$url" suppress="true"/>
+   <property name="$baseUrl" suppress="true"/>	 
+   <property name="$repositoryId" suppress="true"/>
+   <property name="$repository.repositoryName" suppress="true"/>
+   <property name="$itemDescriptor.itemDescriptorName" suppress="true"/>	      
+  </meta-properties>
+</item>
+
+<!-- @version $Id: //product/DCS/version/11.1/templates/DCS/Endeca/Index/config/atg/commerce/endeca/index/category-dim-output-config.xml#2 $$Change: 882941 $ -->
+

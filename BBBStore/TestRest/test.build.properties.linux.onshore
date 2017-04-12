@@ -1,0 +1,23 @@
+# Dynamo enviroment properties.  Recommended that you set DYNAMO_HOME as an environment propertie for your OS.  Or you can set things here...
+#dynamo.home=/u02/opt/atg/home
+dynamo.home=/local1/atg/atgapp/ATG10.0.2/home
+
+dynamo.root.dir=/local1/atg/atgapp/ATG10.0.2
+
+# The Weblogic server install you will be using.
+#weblogic.home=/u02/opt/weblogic
+weblogic.home=/local1/atg/weblogic
+#hostname=bedbathandbeyondcr4qa.com
+#JAVA_HOME=/usr/java/jdk1.6.0_27
+JAVA_HOME=/usr/java/jdk1.6.0_27
+hostname=192.168.20.47
+port=7007
+clientId=client123
+token=client123
+
+userId=admin
+password=admin
+
+BedBathUSHostName=vm.bedbath.com
+BedBathCanadaHostName=vm.bedbath.ca
+BuyBuyBabyHostName=vmbaby.bedbath.com

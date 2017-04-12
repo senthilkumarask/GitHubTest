@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-145">
+  <ReviewIssue id="IP92OU9M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 21:47:05:914 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 21:48:08:864 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="430">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Do we need a if else here? Why do not we just print the response? Also what is omnitureReportQueue?</Summary>
+    <Description>if (omnitureQueueResponseVO != null) {
+				  logDebug("omnitureQueueResponseVO is "+omnitureReportQueue);
+				} else {
+				  logDebug("No response from omniture");
+				}
+				</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP935XJ1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 22:00:23:293 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 22:01:14:922 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="445">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are we not catching individual exceptions and handle them separately? Is that because we take the same action in all three exception scenarios?</Summary>
+    <Description>catch (Exception ex)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP93DYSI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 22:06:38:178 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-09 :: 22:07:18:460 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="666">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can we print the error in logDebug? It will be useful if does not fall under one of the exceptions which we are calling below</Summary>
+    <Description>if (omnitureGetResponseVO == null || (!BBBUtility.isEmpty(omnitureGetResponseVO.getError()) &amp;&amp; !BBBUtility.isEmpty(omnitureGetResponseVO.getError_description()))) {
+				</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

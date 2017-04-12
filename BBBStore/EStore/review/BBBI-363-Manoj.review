@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-363">
+  <ReviewIssue id="IQFS2PBY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 19:04:02:494 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 19:05:19:842 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manoj</ReviewerId>
+    <AssignedTo>Manoj</AssignedTo>
+    <File line="20">src/com/bbb/commerce/giftregistry/droplet/BBBPresentationDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>BBBPresentationDroplet - Move all constants to BBBDynamoServlet</Summary>
+    <Description>DateCalculationDroplet extend BBBDynamoServlet instead of BBBDynamoServlet</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQFS64KF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 19:06:42:207 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-09 :: 19:08:28:587 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Manoj</ReviewerId>
+    <AssignedTo>Manoj</AssignedTo>
+    <File line="2">config/com/bbb/commerce/giftregistry/droplet/ManageRegistryChecklistDroplet.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why we have to define ManageRegistryChecklistDroplet  as request component</Summary>
+    <Description>ManageRegistryChecklistDroplet  component  defined as request.
+Is that to refer session bean?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

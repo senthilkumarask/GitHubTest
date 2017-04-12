@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestRemoveItemsFromCart.xml 
+	DESCRIPTION: ddtunit data file for TestRestRemoveItemsFromCart.java test case HISTORY: 
+	Nov 21, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestRemoveItemsFromCart">
+	
+		<group id="testRemoveItemFromOrderLoggedInUser">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">rest1@gmail.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="removeItemRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/removeItemFromCart</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"16938149","prodId":"1018709139","qty":"1","price":"$169.99","bts":"false","storeId":""}]}</obj>
+				</objs>
+			</test>
+		</group>
+		
+			<group id="testRemoveItemFromOrderTransientUser">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="removeItemRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/removeItemFromCart</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testRemoveItemFromOrderFailure">
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">rest1@gmail.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="removeItemRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/removeItemFromCart</obj>
+					<obj id="removeInvalidItemIdParam" type="string">xyz</obj>
+					<obj id="removeItemFromOrderErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

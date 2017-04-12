@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-208_180815">
+  <ReviewIssue id="IDH1Z51Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:22:48:214 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:23:24:216 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="153">src/com/bbb/account/ResetPasswordDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Use session bean to add these session values</Summary>
+    <Description>Use session bean to add these session values</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDH210II">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:24:15:642 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:28:43:007 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="1727">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove hard coding values</Summary>
+    <Description>Remove hard coding values</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDH27YQK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:29:39:932 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:29:55:441 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="2040">src/com/bbb/account/BBBProfileFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Session variables</Summary>
+    <Description>Remove the session attribute in proper way. Add a new VO and set it in session bean and remove it one the flow is completed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDH28S2Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:30:17:962 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-18 :: 13:30:56:149 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="153">src/com/bbb/account/ResetPasswordDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Functional review.</Summary>
+    <Description>[8/18/2015 1:30 PM] Sunil Kumar 8: 
+Header Footer is not apperaring on new password page.
+
+Token generation logic algo is not correct. It should be similar to harte hangs.
+
+Validation required from client side as well as from Backend side. This should be similar to the existing one.
+
+Token is reusable which should not be in any case. If same token is used second time there should be a user friendly message which explain user that it has already been consumed.
+
+Validate all test cases for LVP. I tested these for registry pages. Ajay will test it for checkout pages , save for later and other secured pages.
+
+Code review is done on local , Ajay will check the multiple clicks generating multiple emails for the user.
+Validate the lock out scenerios.
+Mcid should not be the part of link
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

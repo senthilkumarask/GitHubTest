@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Inventory_decrement_Vijay">
+  <ReviewIssue id="GWT64XYD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 17:48:07:717 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 17:48:52:310 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="74">src/com/bbb/commerce/inventory/InventoryDecrementManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Supply these values from Component</Summary>
+    <Description>Have these values come from component instead of hardcoding them. This allows us to test with any skuID and check if the inventory is decremented. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWT66EWC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 17:49:16:332 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-30 :: 17:49:32:544 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="74">schema/inventoryDecrement.xsd</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>See if you can make this as int</Summary>
+    <Description>See if quantity can be sent as int. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

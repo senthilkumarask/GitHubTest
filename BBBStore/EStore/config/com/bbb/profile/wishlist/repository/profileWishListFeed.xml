@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+<item-descriptor name="wishListFeeds" cache-mode="simple" item-cache-size="20000" query-cache-size="20000">
+      <table name="BBB_LEGACY_WLITEMS" type="primary" id-column-names="email,sku_id">
+	     	<property name="emailId" column-name="email" data-type="string"></property>
+	     	<property name="skuId" column-name="sku_id" data-type="string"></property>
+	     	<property name="productId" column-name="product_id" data-type="string"></property>
+	     	<property name="quantity" column-name="quantity" data-type="long"></property>
+	     	<property name="siteId" column-name="site_id" data-type="string"></property>
+	     	<property name="feedId" column-name="feed_id" data-type="int"></property>
+	     	<property name="feedDate" column-name="feed_date" data-type="timestamp"></property>
+	     	<property name="feedStatus" column-name="status" data-type="string"></property>
+	     	<property name="errorDescription" column-name="error_description" data-type="string"></property>
+     </table>
+  </item-descriptor>
+</gsa-template>

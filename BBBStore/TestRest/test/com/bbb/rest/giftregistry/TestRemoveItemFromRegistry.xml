@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestRemoveItemFromRegistry">
+		<group id="testRemoveItemFromRegistry">
+			 
+			<test id="test1">
+				<objs>
+				    <obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+						<obj id="login" type="string">8672test@bbb.com</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="registryId" type="string">183412779</obj>
+					<obj id="skuId" type="string">17320041</obj>
+			
+					<obj id="rowId" type="string">AAAJn4AACAABHP9AAp</obj>
+					<obj id="productId" type="string">1284511</obj>
+					<obj id="regItemOldQty" type="string">1</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="httpmethod" type="string">POST</obj>	
+					<obj id="jasonCollectionObj" type="string">{"addItemResults":[{"skuId":"17320041","prodId":"1017320041","registryId":"183412779","qty":"1","price":"$199.99"}],"parentProdId":"1017320041","registryName":"Wedding"}</obj>
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+					</objs>		 
+			</test>
+		</group>
+		
+		<group id="testRemoveItemFromRegistryNonLogin">
+			 
+			<test id="test1">
+				<objs>
+				    <obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="registryId" type="string">183412779</obj>
+					<obj id="skuId" type="string">17320041</obj>			
+					<obj id="rowId" type="string">AAAJn4AACAABHP9AAp</obj>
+					<obj id="productId" type="string">1284511</obj>
+					<obj id="regItemOldQty" type="string">1</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="httpmethod" type="string">POST</obj>	
+					<obj id="successURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="errorURL" type="string">atg-rest-ignore-redirect</obj>
+					
+					</objs>		 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

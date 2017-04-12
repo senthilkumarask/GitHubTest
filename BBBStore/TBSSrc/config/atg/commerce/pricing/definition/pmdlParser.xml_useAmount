@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD PMDL Parser//EN"
+        "http://www.atg.com/dtds/pmdl/pmdl-parser.dtd">
+
+<pmdl>
+	<group name="atoms">
+		<atom name="collection-name" class="java.lang.String"/>
+		<atom name="element-name" class="java.lang.String"/>
+		<atom name="element-quantity-property" class="java.lang.String"/>
+		<atom name="data-type" class="java.lang.String"/>
+		<atom name="string-value" class="java.lang.String"/>
+		<atom name="value" class="atg.commerce.pricing.definition.ValueElem"/>
+	</group>
+	
+	<bean name="attribute"  
+	  class="atg.commerce.pricing.definition.AttributeElem">
+	  <attribute name="name" property="name"/>
+	  <attribute name="value" property="value"/>
+	 
+	  <property name="-NULL-" property="attributes"/>
+	  <property name="-NULL-" property="subElements"/>
+    </bean>
+		
+	<bean name="pricing-model"  
+	  class="atg.commerce.pricing.definition.PricingModelElem">
+	  <attribute name="pricing-model-name" property="pricingModelName"/>
+	 
+	  <property name="-NULL-" property="attributes"/>
+	  <property name="-NULL-" property="subElements"/>
+		
+	  <property name="qualifier" property="qualifier"/>
+	  <property name="target" property="offer"/>
+	  <property name="offer" property="offer"/> 
+	</bean>
+	
+	<bean name="qualifier" 
+	  class="atg.commerce.pricing.definition.QualifierElem"/>
+	
+	<bean name="offer" 
+	  class="atg.commerce.pricing.definition.OfferElem">
+	  <attribute name="filter-collection-name" property="filterCollectionName"/>
+      <attribute name="quantity-property-name" property="quantityPropertyName"/>
+	</bean>
+	
+	<bean name="discount-structure" 
+	  class="atg.commerce.pricing.definition.DiscountStructureElem">
+	  <property name="target" property="target"/>
+	  <attribute name="calculator-type" property="calculatorType"/>
+	  <attribute name="discount-type" property="discountType"/>
+	  <attribute name="adjuster" property="adjuster"/>
+	</bean>
+	
+	<bean name="discount-detail" 
+	  class="atg.commerce.pricing.definition.DiscountDetailElem">
+	  <attribute name="name" property="name"/>
+	</bean>
+	
+	<bean name="target"   
+	  class="atg.commerce.pricing.definition.TargetElem"/>
+	
+	<group name="iterators">
+		<bean name="every" 
+		  class="atg.commerce.pricing.definition.EveryElem">
+		  <attribute name="sort-by" property="sortBy"/>
+		  <attribute name="sort-order" property="sortOrder"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		</bean>
+		
+		<bean name="next" 
+		  class="atg.commerce.pricing.definition.NextElem">
+		  <attribute name="number" property="number"/>
+		  <attribute name="sort-by" property="sortBy"/>
+		  <attribute name="sort-order" property="sortOrder"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		  <property name="element-quantity-property"
+			property="elementQuantityProperty"/>  
+		</bean>
+		
+		<bean name="up-to-and-including" 
+		  class="com.bbb.commerce.pricing.TBSUpToAndIncludingElem">
+		  <attribute name="number" property="number"/>
+		  <attribute name="sort-by" property="sortBy"/>
+		  <attribute name="sort-order" property="sortOrder"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		  <property name="element-quantity-property"
+			property="elementQuantityProperty"/>  
+		</bean>
+	</group>
+	
+	<group name="quantifiers">
+		<bean name="exactly" 
+		  class="atg.commerce.pricing.definition.ExactlyElem">
+		  <attribute name="number" property="number"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		  <property name="element-quantity-property"
+			property="elementQuantityProperty"/>  
+		</bean>
+			  
+		<bean name="at-least" 
+		  class="atg.commerce.pricing.definition.AtLeastElem">
+		  <attribute name="number" property="number"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		  <property name="element-quantity-property"
+			property="elementQuantityProperty"/> 
+		</bean>
+		
+		<bean name="at-most" 
+		  class="atg.commerce.pricing.definition.AtMostElem">
+		  <attribute name="number" property="number"/>
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		  <property name="element-quantity-property"
+			property="elementQuantityProperty"/>  
+		</bean>
+		
+		<bean name="all" 
+		  class="atg.commerce.pricing.definition.AllElem">
+		
+		  <property name="collection-name" property="collectionName"/>
+		  <property name="element-name" property="elementName"/>
+		</bean>
+	</group>
+	
+	<group name="operators">
+		<bean name="and" class="atg.commerce.pricing.definition.AndElem"/>
+		
+		<bean name="or" class="atg.commerce.pricing.definition.OrElem"/>
+		
+		<bean name="not" class="atg.commerce.pricing.definition.NotElem"/>
+	</group>
+	
+	<group name="comparators">
+		<bean name="starts-with" 
+		  class="atg.commerce.pricing.definition.StartsWithElem"/>
+		
+		<bean name="ends-with" 
+		  class="atg.commerce.pricing.definition.EndsWithElem"/>
+		
+		<bean name="contains" 
+		  class="atg.commerce.pricing.definition.ContainsElem"/>
+		
+		<bean name="equals" 
+		  class="atg.commerce.pricing.definition.EqualsElem"/>
+		
+		<bean name="not-equals" 
+		  class="atg.commerce.pricing.definition.NotEqualsElem"/>
+				  
+		<bean name="less-than" 
+		  class="atg.commerce.pricing.definition.LessThanElem"/>
+		
+		<bean name="less-than-or-equals" 
+		  class="atg.commerce.pricing.definition.LessThanOrEqualsElem"/>
+		
+		<bean name="greater-than-or-equals" 
+		  class="atg.commerce.pricing.definition.GreaterThanOrEqualsElem"/>
+		
+		<bean name="greater-than" 
+		  class="atg.commerce.pricing.definition.GreaterThanElem"/>
+		
+		<bean name="includes" 
+		  class="atg.commerce.pricing.definition.IncludesElem"/>
+		
+		<bean name="isoneof" 
+		  class="atg.commerce.pricing.definition.IsOneOfElem"/>
+		
+		<bean name="isnotoneof" 
+		  class="atg.commerce.pricing.definition.IsNotOneOfElem"/>
+		
+		<bean name="includes-any" 
+		  class="atg.commerce.pricing.definition.IncludesAnyElem"/>
+		
+		<bean name="includes-all" 
+		  class="atg.commerce.pricing.definition.IncludesAllElem"/>
+	</group>
+	
+	<group name="value-types"> 
+		<bean name="array" 
+		  class="atg.commerce.pricing.definition.ArrayElem"/>
+		
+		<bean name="item" 
+		  class="atg.commerce.pricing.definition.ItemElem"/>
+				  
+		<bean name="constant" 
+		  class="atg.commerce.pricing.definition.ConstantElem">
+		
+		  <property name="data-type" property="dataType"/>
+		  <property name="string-value" property="stringValues"/>
+		</bean>
+		
+		<bean name="null" class="atg.commerce.pricing.definition.NullElem"/>
+	</group>
+</pmdl>
+<!-- @version $Id: //product/DCS/version/10.0.3/templates/DCS/config/atg/commerce/pricing/definition/pmdlParser.xml#2 $$Change: 651448 $-->

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.droplet.TestGiftWrapGreetingsDroplet">
+      <group id="testGiftWrapGreetingsDroplet">
+        <test id="testGiftWrapGreetingsDroplet">
+			<objs>
+				<obj id="giftWrapGreetingsDroplet" type="com.bbb.commerce.order.droplet.GiftWrapGreetingsDroplet" hint="call" method="resolveName" 
+					calltype="com.bbb.commerce.order.droplet.TestGiftWrapGreetingsDroplet">
+                    <item type="string">/com/bbb/commerce/order/droplet/GiftWrapGreetingsDroplet</item>
+                </obj>  
+                <obj id="siteId" type="string">BedBathUS</obj>
+             </objs>			 
+        </test>
+      </group>         
+    </cluster>
+</ddtunit>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryFormHandler.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+      
+      <group id="testHandleRegistrySearch1">
+        <test id="testHandler_test1">
+			<objs>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>				
+			</objs>      
+			<asserts> 
+	        	<assert id="testValue1" type="java.lang.Boolean" action="isEqual">true</assert>
+	        </asserts>  
+        </test>
+      </group>
+      
+	  <group id="testUpdateWeddingRegistry">
+	      <test id="updateWeddingRegistry">
+				<objs>
+					<obj id="giftRegistryFormHandler" 
+						   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+						   hint="call" method="resolveName" 
+						   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+						<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>				
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+				</objs>      
+				<asserts> 
+	        		<assert id="isError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        	</asserts>  
+         </test>
+	  </group>
+      
+      <group id="testUpdateBabyRegistry">
+	      <test id="updateBabyRegistry">
+				<objs>
+					<obj id="giftRegistryFormHandler" 
+						   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+						   hint="call" method="resolveName" 
+						   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+						<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="siteContextManager" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+  						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>      
+				<asserts> 
+	        		<assert id="isError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        	</asserts>  
+         </test>
+	  </group>
+	  
+	  <group id="testUpdateCollegeRegistry">
+	      <test id="updateCollegeRegistry">
+				<objs>
+					<obj id="giftRegistryFormHandler" 
+						   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+						   hint="call" method="resolveName" 
+						   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+						<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+				</objs>      
+				<asserts> 
+	        		<assert id="isError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        	</asserts>    
+         </test>
+	  </group>
+	  
+	  <group id="testAddItemToGiftRegistry">
+	      <test id="addItemToGiftRegistry">
+				<objs>
+					<obj id="giftRegistryFormHandler" 
+						   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+						   hint="call" method="resolveName" 
+						   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler1">
+						<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>		
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/com/bbb/account/BBBProfileManager</item>
+					</obj>
+					<obj id="email" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>		
+				</objs>      
+				<asserts> 
+	        		<assert id="isError" type="java.lang.Boolean" action="isEqual">false</assert>
+	        	</asserts>    
+         </test>
+	  </group>
+	  
+	  
+     </cluster>
+</ddtunit>

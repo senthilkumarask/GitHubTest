@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gsa-template xml-combine="append">
+	<header>
+    <name>SEO repository</name>
+    <author>RajendraKaramcheti</author>
+    <description>This is an extension to SEO Repository to have site translations</description>    
+  </header>
+  <!--  SEOTags item descriptor -->
+  <item-descriptor name="SEOTags" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="200000">
+  </item-descriptor>
+  
+  <item-descriptor name="bbbSEOTranslation" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="200000"></item-descriptor>
+  <!-- 
+	<query-items item-descriptor="SEOTags" quiet="true">ALL</query-items>
+	<query-items item-descriptor="bbbSEOTranslation" quiet="true">ALL</query-items>
+   -->
+</gsa-template>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-182_100815">
+  <ReviewIssue id="ID66H44J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-10 :: 22:43:17:347 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-13 :: 00:30:36:182 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="389">j2ee-apps/BBBStore/store.war/browse/subcategory.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Same code repeated at multiple places</Summary>
+    <Description>We assigned true to fromCatL2AndL3 variable true in every condition of the loop, Instead of repeating the same can we do one check at page level and set the variable?</Description>
+    <Annotation></Annotation>
+    <Revision>121929</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_wishlist_add_create_2011_11_22_kunjal_shah">
+  <ReviewIssue id="GVDNIYN7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 16:30:54:115 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 21:26:25:558 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="559">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Test page does not set error url as login url</Summary>
+    <Description>We need to show in test page, which would be used by product page to add wishlist , how to redirect to login page if user is unauthenticated and still tries to add to wishlist
+
+This is handled in formhandler where code redirects to setAddItemToGiftlistErrorURL(getAddItemToGiftlistLoginURL()); when user is not signed in.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVDNO7KQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 16:34:58:970 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 16:39:18:309 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="572">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to write sapeunits for this method (is UserLoggedIn())</Summary>
+    <Description>Need to write sapeunits for this method (is UserLoggedIn())</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVDO6QBQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 16:49:23:078 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 21:25:37:229 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="515">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Error Messages are not coming from label</Summary>
+    <Description>Following error messages are not coming from cms 
+MSG_QUANTITY_LESSTHAN_OR_EQUALTO_ZERO
+MSG_ERROR_ADDING_TO_GIFTLIST
+MSG_NO_ITEMS_TO_ADD</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVDOAX7H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 16:52:38:621 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-29 :: 21:23:46:004 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="526">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>This is unnecessary code </Summary>
+    <Description>this is CRS code and not needed in BBB
+
+		if(getCatalogRefIds()[0].trim().length() == 0){
+			if(isUseWishlist()){
+				if(!isWoodFinishPicker()){
+					addFormException(new DropletException(formatUserMessage(MSG_ERROR_NO_COLOR_SIZE_SELECTED_WISHLIST, pRequest, pResponse)));
+				}
+				else{
+					addFormException(new DropletException(formatUserMessage(MSG_ERROR_NO_FINISH_SELECTED_WISHLIST, pRequest, pResponse)));
+				}
+			}
+			else{
+				if(!isWoodFinishPicker()){
+					addFormException(new DropletException(formatUserMessage(MSG_ERROR_NO_COLOR_SIZE_SELECTED_GIFTLIST, pRequest, pResponse)));
+				}
+				else{
+					addFormException(new DropletException(formatUserMessage(MSG_ERROR_NO_FINISH_SELECTED_GIFTLIST, pRequest, pResponse)));
+				}
+			}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

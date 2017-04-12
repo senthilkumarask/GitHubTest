@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBReclaimLegacyAccount.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBReclaimLegacyAccount.xml test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBReclaimLegacyAccount">
+       <group id="testVerifyAccount">
+        <test id="testService_test1">
+			<objs>
+				<obj id="bbbProfileManager" type="com.bbb.account.BBBProfileManager" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBReclaimLegacyAccount">
+					<item type="string">/com/bbb/account/BBBProfileManager</item>
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBReclaimLegacyAccount">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="emailId" type="string">testlegacy1@example.com</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="password" type="string">Testac123!</obj>
+				<obj id="invalidEmailId" type="string">invalid@invalid.com</obj>
+				<obj id="invalidSiteId" type="string">invalid</obj>
+				<obj id="invalidPassword" type="string">invalidpwd</obj>
+			</objs>			 
+        </test>
+      </group>        
+    </cluster>
+</ddtunit>
+

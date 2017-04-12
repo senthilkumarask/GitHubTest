@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE browse-hierarchy
+  PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Browse Hierarchy//EN"
+  'http://www.atg.com/dtds/toolbar/toolbar_1.0.dtd'>
+
+<toolbar xml-combine="append">
+
+   
+    <operation-menu id="ff1BrowseOpMenu">
+      <toolbar-scope asset-area="FF1" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="ff1FindOpMenu">
+      <toolbar-scope asset-area="FF1" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="channelThemeBrowseOpMenu">
+      <toolbar-scope asset-area="channelTheme" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="channelThemeFindOpMenu">
+      <toolbar-scope asset-area="channelTheme" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+   <operation-menu id="cmsTemplatesBrowseOpMenu">
+      <toolbar-scope asset-area="cmsTemplates" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="cmsMediaBrowseOpMenu">
+      <toolbar-scope asset-area="cmsMedia" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="ff2BrowseOpMenu">
+      <toolbar-scope asset-area="FF2" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="ff2FindOpMenu">
+      <toolbar-scope asset-area="FF2" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="ipadTemplatesBrowseOpMenu">
+      <toolbar-scope asset-area="ipadTemplates" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+  	<operation-menu id="ipadTemplateContentsBrowseOpMenu">
+      <toolbar-scope asset-area="ipadTemplateContents" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="tabsBrowseOpMenu">
+      <toolbar-scope asset-area="ipadTabs" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="questionsAnswersBrowseOpMenu">
+      <toolbar-scope asset-area="questionsAnswers" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+
+</toolbar>
+<!-- @version $Id: //hosting-blueprint/B2CBlueprint/version/10.0.2/EStore/Versioned/config/atg/remote/commerce/toolbar/MerchandisingToolbar.xml#1 $$Change: 633540 $-->

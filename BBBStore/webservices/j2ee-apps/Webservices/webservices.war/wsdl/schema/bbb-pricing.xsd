@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://bedbathandbeyond.com/atg" targetNamespace="http://bedbathandbeyond.com/atg" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+        <xs:documentation>Version-20150616</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="bbb-common.xsd"/>
+	
+	<!-- START: Pricing WebService Primary types -->
+	<xs:complexType name="PricingRequestInfo">
+		<xs:sequence>
+			<xs:element name="shippingGroups" type="ShippingList"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PricingResponseInfo">
+		<xs:sequence>
+			<xs:element name="orderPrice" type="OrderPriceInfo"/>
+			<xs:element name="shippingGroups" type="ShippingList"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PricingRequest">
+		<xs:sequence>
+			<xs:element name="header" type="MessageHeader"/>
+			<xs:element name="request" type="PricingRequestInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PricingResponse">
+		<xs:sequence>
+			<xs:element name="header" type="MessageHeader"/>
+			<xs:element name="response" type="PricingResponseInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PricingError">
+		<xs:sequence>
+			<xs:element name="header" type="MessageHeader"/>
+			<xs:element name="error" type="MessageError"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="pricingRequest" type="PricingRequest"/>
+	<xs:element name="pricingResponse" type="PricingResponse"/>
+	<xs:element name="pricingError" type="PricingError"/>
+	<!-- END: Pricing WebService Primary types -->
+
+	<xs:complexType name="OrderPriceInfo">
+		<xs:sequence>
+			<xs:element name="orderTotal" type="Price">
+				<xs:annotation>
+					<xs:documentation>Total amount of the order. Includes Items total + Shipping + Surcharge + GiftWrapCost</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalShipping" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total shipping amount for all shipping groups, will include surcharge also.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalSurcharge" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total surcharge for all shipping groups.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalDeliverySurcharge" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total delivery surcharge for all shipping groups in case of LTL items.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="deliveryThreshold" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Threshold for total delivery surcharge in case of LTL items.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalDeliverySurchargeSaving" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total saving on delivery surcharge when threshold achieved in case of LTL items.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="totalAssemblyFee" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total assembly fee for all shipping groups in case of LTL items.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>	
+	<xs:complexType name="MessageHeader">
+		<xs:sequence>
+			<xs:element name="orderId" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Order ID for the request</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="orderIdentifier" type="xs:string" minOccurs="0">
+            	<xs:annotation>
+               		<xs:documentation>TBS Next - Indicates the source for the orders</xs:documentation>
+            	</xs:annotation>
+         	</xs:element>
+			<xs:element name="siteId" type="Site">
+				<xs:annotation>
+					<xs:documentation>SiteId configured in ATG Site configuration</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="orderDate" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>Format is "CCYY-MM-DDThh:mm:ss"  (T is the date/time separator)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="currencyCode" type="Currency" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>USD for US sites and CAD for .ca site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="callingAppCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Application Code invoking the service</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="timestamp" type="xs:dateTime" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Format is "CCYY-MM-DDThh:mm:ss"  (T is the date/time separator)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="coupons" type="CouponList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Coupons to be considered for Order pricing</xs:documentation>
+				</xs:annotation>			
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CouponList">
+		<xs:sequence>
+			<xs:element name="coupon" type="Coupon" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Coupon">
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>ATG coupon/promotion id to be applied</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="type">
+				<xs:annotation>
+					<xs:documentation>Coupon type to interpret the identifier</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="ATG_PROMOTION"/>
+						<xs:enumeration value="BBB_COUPON"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ShippingList">
+		<xs:sequence>
+			<xs:element name="shippingGroup" type="ShippingGroup" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ShippingGroup">
+		<xs:sequence>
+			<xs:element name="shippingGroupId" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Shipping Group ID to uniquely identify a shipment</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shippingMethod" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Shipping method [Standard, Express, Expedited, Curbside, Threshold, Room of Choice, White Glove].</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="giftWrapRequired" type="xs:boolean">
+				<xs:annotation>
+					<xs:documentation>If the shipping group has gift wrap</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shippingPrice" type="ShippingPriceInfo" minOccurs="0"/>
+			<xs:element name="shippingAddress" type="Address">
+				<xs:annotation>
+					<xs:documentation>This structure defines the fields for shipping address</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="itemList" type="ItemList">
+				<xs:annotation>
+					<xs:documentation>This structure defines the fields for price details at shipping group level</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ShippingPriceInfo">
+		<xs:sequence>
+			<xs:element name="shippingRawAmount" type="Price">
+				<xs:annotation>
+					<xs:documentation>Shipping amount, which includes surcharge.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shippingAmount" type="Price">
+				<xs:annotation>
+					<xs:documentation>Shipping amount, which includes surcharge.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="surcharge" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Total surcharge for this shipping group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="giftWrapFee" type="Price" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Gift package fee for this shipping group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="adjustmentList" type="AdjustmentList" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>This structure defines the fields for the shipping promotion applied. [FREE SHIP OVER $49] </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ItemList">
+		<xs:sequence>
+			<xs:element name="item" type="Item" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Item">
+		<xs:sequence>
+		    <xs:element name="sku" type="xs:string">
+		        <xs:annotation>
+		            <xs:documentation>sku Id.</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:element name="quantity" type="xs:integer">
+		        <xs:annotation>
+		            <xs:documentation>Item quantity</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:element name="price" type="Price">
+		        <xs:annotation>
+		            <xs:documentation>Unit price for SKU</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:element name="finalPrice" type="Price" minOccurs="0">
+		        <xs:annotation>
+		            <xs:documentation>Extended price for SKU</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:element name="surcharge" type="Price" minOccurs="0">
+		        <xs:annotation>
+		            <xs:documentation>Surcharge per unit for SKU</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>		    
+            <xs:sequence maxOccurs="1" minOccurs="0">                
+                <xs:element name="ecoFee" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Eco-fee per unit for SKU</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ecoFeeSku" type="xs:string" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Eco fee sku id applied.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>               
+            </xs:sequence>		    
+		    <xs:element name="registryId" type="xs:string" minOccurs="0">
+		        <xs:annotation>
+		            <xs:documentation>Registry id if item is added from registry</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:element name="status">
+		        <xs:annotation>
+		            <xs:documentation>Item status [SHIPPED, PROCESS, WORK].</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="SHIPPED"/>
+						<xs:enumeration value="PROCESS"/>
+						<xs:enumeration value="WORK"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="adjustmentList" type="AdjustmentList" minOccurs="0"/>
+			<xs:element name="isLTLSku" type="xs:boolean" minOccurs="0">
+		        <xs:annotation>
+		            <xs:documentation>is sku ltl.</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+            <xs:sequence maxOccurs="1" minOccurs="0">
+                <xs:element name="DeliverySurchargePerQty" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Delivery surcharge amount for a commerce item per quantity.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DeliverySurcharge" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Total delivery surcharge for a commerce item for total quantity.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="DeliverySurchargeSku" type="xs:string" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Delivery surcharge sku id.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+				<xs:element name="DeliverySurchargeSaving" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Delivery surcharge saving for a commerce item in case of threshold achieved by total delivery surcharge.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+		</xs:sequence>
+		    <xs:element name="isAssemblyRequested" type="xs:boolean" minOccurs="0" maxOccurs="1">
+		        <xs:annotation>
+		            <xs:documentation>is Assembly requested in case of ltl item.</xs:documentation>
+		        </xs:annotation>
+		    </xs:element>
+		    <xs:sequence maxOccurs="1" minOccurs="0">                
+                <xs:element name="AssemblyFeePerQty" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Assembly fee amount for a commerce item per quantity.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AssemblyFee" type="Price" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Total Assembly fee for a commerce item for total quantity.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="AssemblyFeeSku" type="xs:string" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Assembly fee sku id.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>               
+            </xs:sequence>
+        <xs:element name="isPcInd" type="xs:boolean" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation>EXIM - Indicator for personalized item, value is true or false</xs:documentation>
+          </xs:annotation>
+        </xs:element>	
+		 <xs:element name="pcInfo" type="PcInfoType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>EXIM - Indicator of type of personalization ()</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+		</xs:sequence>
+		<xs:attribute name="lineNumber" type="xs:string" use="required"/>
+		<xs:attribute name="originalLineNumber" type="xs:string" use="optional"/>		
+	</xs:complexType>
+	
+	<xs:complexType name="PcInfoType">
+		<xs:sequence>		    
+         <xs:element name="referenceId" type="xs:string" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation>EXIM - Provided by the vendor</xs:documentation>
+            </xs:annotation>
+         </xs:element>        
+         <xs:element name="pcType" type="xs:string" minOccurs="0">
+            <xs:annotation>
+               <xs:documentation>PC - Holds the item type value</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

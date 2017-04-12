@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="giftcard_frontend_backen_codereview_VALUELINK_Vishal_4Jan">
+  <ReviewIssue id="GX238LFF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 23:36:54:843 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-08 :: 21:36:51:903 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit Kumar</ReviewerId>
+    <AssignedTo>Asit Kumar</AssignedTo>
+    <File line="27">src/com/bbb/valuelink/ValueLinkClient.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>As I was suggesting, it will be good if we can make the method signature to have ReqVO and ResponseVO.</Summary>
+    <Description>ReqVO or a Util class can have method to construct the payload based on the transaction and some validation for required field in Payload.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX244R3N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 00:01:55:187 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-08 :: 21:36:36:823 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit Kumar</ReviewerId>
+    <AssignedTo>Asit Kumar</AssignedTo>
+    <File line="27">src/com/bbb/valuelink/ValueLinkClient.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to add validation that if any of these are null or empty, then its an error.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX246JER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 00:03:18:531 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 19:25:14:020 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit Kumar</ReviewerId>
+    <AssignedTo>Asit Kumar</AssignedTo>
+    <File line="57">src/com/bbb/valuelink/ValueLinkClient.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Move the invokeMock to a difference class and create an interface so that only thing that we have to change is hte $class in property file.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX24A4KX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 00:06:05:937 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 19:21:33:486 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit Kumar</ReviewerId>
+    <AssignedTo>Asit Kumar</AssignedTo>
+    <File line="248">src/com/bbb/valuelink/ValueLinkClient.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We should use BBBBusinessException for these kind of error.</Summary>
+    <Description>if(giftCardNo != null &amp;&amp; giftCardNo.startsWith("999")){ status = error_status; throw new VXNException("The gift card or Pin you entered is not valid, please check and try again"); }</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX26ECZZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 01:05:22:703 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-08 :: 21:35:51:626 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit Kumar</ReviewerId>
+    <AssignedTo>Asit Kumar</AssignedTo>
+    <File line="1061">src/com/bbb/valuelink/ValueLinkGiftCardProcessorImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>You need to use SimpleDateFormat to make sure its in HHmmss format. Otherwise it will not be 6 char.</Summary>
+    <Description>For method getCurrentSysDate &amp; getCurrentSysTime</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

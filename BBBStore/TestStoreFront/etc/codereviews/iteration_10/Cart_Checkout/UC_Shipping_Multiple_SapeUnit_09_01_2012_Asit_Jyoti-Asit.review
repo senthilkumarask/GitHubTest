@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Shipping_Multiple_SapeUnit_09_01_2012_Asit_Jyoti">
+  <ReviewIssue id="GX7WVQWD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-10 :: 01:25:34:765 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-10 :: 10:58:02:608 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="1">test/com/bbb/commerce/order/purchase/TestBBBShippingFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>instead of calling shipping group manager, we can call the sgfh.handleAddNewShippingAddress as you did in the testHandleAddNewAddress</Summary>
+    <Description>cant use FH method as I ma setting the sgName in BBBAddressContainer</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX7WXZP8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-10 :: 01:27:19:484 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-10 :: 10:55:39:072 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="602">test/com/bbb/commerce/order/purchase/TestBBBShippingFormhandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We should add a check for 'Order includes Gift' also and check that CheckoutStates has changed to GIFT.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

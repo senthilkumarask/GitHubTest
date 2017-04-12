@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1472_Offshore-review">
+  <ReviewIssue id="IMPYYH17">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 13:05:34:843 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 13:05:46:499 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="275">src/com/bbb/commerce/order/droplet/UserCouponWalletDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMQ3MTT7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 15:16:29:611 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 15:16:39:557 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="4350">src/com/bbb/commerce/order/purchase/BBBCartFormhandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMQ3N4FM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 15:16:43:378 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-07 :: 15:17:23:494 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

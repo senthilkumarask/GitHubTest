@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.commerce.catalog.vo.CollectionProductVO</class-a>
+		<class-b>com.bbb.rest.catalog.vo.ProductPLPVO</class-b>
+		<field>
+			<a>productId</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>name</a>
+			<b>productName</b>
+		</field>
+		<field>
+			<a>salePriceRangeDescription</a>
+			<b>productSalePriceRangeDescription</b>
+		</field>
+		<field>
+			<a>productImages</a>
+			<b>productImages</b>
+			<a-hint>com.bbb.commerce.catalog.vo.ImageVO</a-hint>
+		    <b-hint>com.bbb.commerce.catalog.vo.ImageVO</b-hint>
+		</field>
+		<field>
+			<a>bvReviews</a>
+			<b>productBVReviews</b>
+			<a-hint>com.bbb.commerce.catalog.vo.BazaarVoiceProductVO</a-hint>
+		    <b-hint>com.bbb.commerce.catalog.vo.BazaarVoiceProductVO</b-hint>
+		</field>
+		<field>
+			<a>attributesList</a>
+			<b>productAttributesList</b>
+			<a-hint>com.bbb.commerce.catalog.vo.AttributeVO</a-hint>
+		    <b-hint>com.bbb.commerce.catalog.vo.AttributeVO</b-hint>
+		</field>
+	</mapping>	
+</mappings>

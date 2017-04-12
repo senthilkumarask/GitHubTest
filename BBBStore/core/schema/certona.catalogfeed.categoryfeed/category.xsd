@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 sp1 (x64) (http://www.altova.com) by Neha (sap) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="category" type="categoryType">
+		<xs:annotation>
+			<xs:documentation>Main root node</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="categoryType">
+		<xs:sequence>
+			<xs:element name="categoryAttributes" type="categoryDetail" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for category details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="categoryDetail">
+		<xs:sequence>
+			<xs:element name="categoryId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>category id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="displayName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>display name of the category </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="creationDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>creation date of the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isActive" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the category active or enabled for display</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>description of the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="longDescription" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>long description associated with the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="associatedSites" type="siteType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>sites to which the category is associated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isCollegeCategory" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>is the category a college category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="nodeType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>node type of the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="shopGuide" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>shop guide details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="categoryKeywords" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>category keywords</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="childCategoryIds" type="childCategoriesType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>category ids of sub categories </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="childProductIds" type="childProductType" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>product ids of all child products </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="smallImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>small image associated with the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="thumbNailImageURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>thumbnailimage associated with the category</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="siteType">
+		<xs:sequence>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>site id for the site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childProductType">
+		<xs:sequence>
+			<xs:element name="childProductId" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>product id for the child product</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="childCategoriesType">
+		<xs:sequence>
+			<xs:element name="subCategoryId" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>child category id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

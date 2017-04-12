@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP_582_20150827">
+  <ReviewIssue id="IDTXE7IG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-27 :: 13:35:33:448 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-27 :: 13:35:41:082 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish Abrol</ReviewerId>
+    <AssignedTo>Ashish Abrol</AssignedTo>
+    <File line="3448">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IDTXFTER">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-27 :: 13:36:48:483 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-27 :: 13:38:02:466 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish Abrol</ReviewerId>
+    <AssignedTo>Ashish Abrol</AssignedTo>
+    <File line="3453">src/com/bbb/wishlist/StoreGiftlistFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Find the logic of getting the quantity for toggleSwitch</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.unsureValidity</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestBuildContext.xml 
+	DESCRIPTION: ddtunit data file for TestBuildContext.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.utils.TestBuildContext">
+	
+	<!-- TestBuildContextFromIP -->
+	
+	<group id="testBuildContextFromIPSuccess">
+        <test id="test1">
+			<objs>
+				<obj id="internationalShippingBuilder" type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilderImpl" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+					<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+				</obj>
+				<obj id="clientIPAddress" type="string">27.255.128.0</obj>
+			</objs>      
+        </test>
+      </group>
+      
+       <group id="testBuildContextFromIPError">
+       <test id="test1">
+			<objs>
+				<obj id="internationalShippingBuilder" type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilderImpl" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+					<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+				</obj>
+				<obj id="clientIPAddress" type="string"></obj>
+			</objs>      
+        </test>
+    </group>
+    
+    <!-- TestBuildContextOnCountryCode -->
+    
+   <group id="testBuildContextOnCountryCodeSuccess">
+			<test id="test2">
+				<objs>
+					<obj id="internationalShippingBuilder"
+						type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilder"
+						hint="call" method="resolveName"
+						calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+						<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+					</obj>
+
+					<obj id="countryCode" type="string">IN</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testBuildContextOnCountryCodeError">
+			<test id="test2">
+				<objs>
+					<obj id="internationalShippingBuilder"
+						type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilder"
+						hint="call" method="resolveName"
+						calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+						<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+					</obj>
+
+					<obj id="countryCode" type="string"></obj>
+
+				</objs>
+			</test>
+		</group>
+	
+		<!-- TestBuildContextAll -->
+	
+		<group id="testBuildContextAll">
+			<test id="test1">
+				<objs>
+					<obj id="internationalShippingBuilder"	type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilder"
+						hint="call" method="resolveName" calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+						<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+
+
+	<!-- TestBuildCurrencyMap -->
+	
+	<group id="testBuildCurrencyMap">
+			<test id="test1">
+				<objs>
+					<obj id="internationalShippingBuilder"	type="com.bbb.internationalshipping.utils.BBBInternationalShippingBuilder"
+						hint="call" method="resolveName" calltype="com.bbb.internationalshipping.utils.TestBuildContext">
+						<item type="string">/com/bbb/internationalshipping/utils/BBBInternationalShippingBuilder</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+	
+	
+	</cluster>
+</ddtunit>
+ 

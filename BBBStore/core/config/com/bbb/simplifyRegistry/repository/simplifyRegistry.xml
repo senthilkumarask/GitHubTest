@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Simplify Registry Repository</name>
+		<author>Dhanashree Waghmare</author>
+		<version>1.0</version>
+	</header>                   
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--          registryInputsByType          -->
+  <!--                               -->
+  <!--///////////////////////////////-->                                                  
+	<item-descriptor name="registryInputsByType" display-name-resource="registryInputsByType" cache-mode="simple" display-property="eventType">
+	 <attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+		<table name="BBB_REGINPUTS_BY_REGTYPE" id-column-name="ID" type="primary">
+			<property name="eventType" data-type="string" column-name="EVENT_TYPE" display-name-resource="eventType" category-resource="Registry Inputs By RegistryType" required="true">							
+			<attribute name="propertySortPriority" value="-1"/>
+			</property>
+			<property name="isPublic" column-name="ISPUBLIC" display-name-resource="isPublic" data-type="boolean" category-resource="Registry Inputs By RegistryType">
+			<attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+			</property>
+			<property name="id" data-type="string" column-name="ID" />		
+		</table>
+		 <!-- This property has the list of pick list repository items which are specific to  registeryType,customer type,site and channel -->
+		<table name="BBB_REG_INPUTLIST"  type="multi" id-column-names="ID">
+			<property  name="regInputList" column-name="REG_INPUTLIST_ID" data-type="set" component-item-type="regInputs" category-resource="Registry Input List" display-name-resource="registryInputList">
+			 <attribute name="propertySortPriority" value="-3"/>
+             </property>
+		</table>
+ 
+	</item-descriptor>
+	
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--   regInputs                   -->
+  <!--                               -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="regInputs" cache-mode="simple" display-name-resource="regInputs" display-property="fieldName" >
+	 <attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+		<table name="BBB_REG_INPUT" id-column-name="id" type="primary">	
+		 <property name="id" data-type="string" column-name="ID" />
+		<!-- This property defines input field-->
+			<property name="fieldName" data-type="enumerated" column-name="FIELD_NAME"  category-resource="Reg Inputs" display-name-resource="fieldName" >
+				<attribute name="useCodeForValue" value="false" />
+				<option value="PhoneNumber" code="0" />
+				<option value="MobileNumber" code="1" />
+				<option value="CoRegistrantFirstName " code="2" />
+				<option value="CoRegistrantLastName" code="3" />
+				<option value="CoRegistrantEmail" code="4" />
+				<option value="birthDate" code="5" />
+				<option value="showerDate" code="6" />	
+				<option value="numberOfGuests" code="7" />
+				<option value="showContactAddress" code="8" />
+				<option value="showShippingAddress" code="9" />
+				<option value="useContactAddrAsShippingAddr" code="10" />
+				<option value="showFutureShippingAddr" code="11" />
+				<option value="babyExpectedArivalDate" code="12" />
+				<option value="eventDate" code="13" />
+				<option value="babyGender" code="14" />
+				<option value="babyName" code="15" />
+				<option value="nurseryTheme" code="16" />
+				<option value="favoriteStore" code="17" />
+				<option value="confirmPassword" code="18" />
+				<option value="futureShippingDate" code="19" />
+				<option value="college" code="20" />
+				<option value="networkAffiliation" code="21" />		
+				<attribute name="propertySortPriority" value="-2"/>
+			</property>
+		   
+		   <property name="displayOnForm" column-name="DISPLAY_ON_FORM" display-name-resource="displayOnForm" data-type="boolean" category-resource="Registry Input List">
+			<attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="requiredInputCreate" column-name="REQUIRED_INPUT_CREATE" display-name-resource="requiredInputCreate" data-type="boolean" category-resource="Registry Input List">
+			<attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		
+		<property name="requiredInputUpdate" column-name="REQUIRED_INPUT_UPDATE" display-name-resource="requiredInputUpdate" data-type="boolean" category-resource="Registry Input List">
+			<attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		
+		<property name="requiredToMakeRegPublic" column-name="REQUIRED_FOR_PUBLIC" display-name-resource="requiredToMakeRegPublic" data-type="boolean" category-resource="Registry Input List">
+			<attribute name="resourceBundle" value="com.bbb.simplifyRegistry.BBBSimplifyRegistryTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		
+		</table>		
+		
+	</item-descriptor>
+ <query-items item-descriptor="registryInputsByType" quiet="true">ALL</query-items>
+ <query-items item-descriptor="regInputs" quiet="true">ALL</query-items>
+ 
+</gsa-template>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-149">
+  <ReviewIssue id="IPMWW489">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:43:34:185 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:17:161 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="4">config/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove additional spaces</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMWWF6E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:43:48:374 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:24:861 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="1">config/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMWWWGF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:44:10:767 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:11:087 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="14">config/com/bbb/search/endeca/boosting/SearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove unncessary space</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMWX8KK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:44:26:468 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:27:521 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="1">config/com/bbb/search/endeca/boosting/SearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMWYI2L">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:45:25:437 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:45:35:651 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="1">config/com/bbb/search/endeca/boosting/SortSearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMWYSLD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:45:39:073 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:08:012 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="4">config/com/bbb/search/endeca/boosting/SortSearchBoostingStrategy.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove unnecessary spaces</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMX0AWP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:46:49:465 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:31:491 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="1">config/com/bbb/search/endeca/tools/EndecaSearchTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove commented code</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMX0KHK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-19 :: 23:47:01:880 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:52:02:532 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="13">config/com/bbb/search/endeca/tools/EndecaSearchTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Remove unnecessary spaces</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMXKMRC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:02:37:944 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:58:101 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="117">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add performance logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMXL7IC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:03:04:836 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:55:521 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="247">src/com/bbb/search/endeca/assembler/cartridge/handler/BBBResultsListHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add performance logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMXLV1M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:03:35:338 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:51:742 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="1">src/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add performance logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMXXB40">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:12:29:376 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:49:093 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="80">src/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add performance logging</Summary>
+    <Description>sortProdList</Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMXZ8KG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:13:59:392 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:36:052 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="65">src/com/bbb/search/endeca/boosting/FacetSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Did we make sure no user applied facets or SWS keywords being passed to this query?</Summary>
+    <Description>facetQuery</Description>
+    <Annotation>Already Implemented</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMYEE9V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:25:46:627 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:54:58:984 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="131">src/com/bbb/search/endeca/boosting/OPBSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can you check this logic with Jagdev once, I remember we always request 1 record from endeca for OPB and we also pass rel+EXACT for exact match. That one single records returns list of product for EXACT match as comma separated list</Summary>
+    <Description>Refer fetchOmnitureBoostedProducts() from EndecaQueryGenerator class also for more details
+
+
+recordCount</Description>
+    <Annotation>This is already in place. please check @urlGen.addParam(BBBEndecaConstants.NAV_SEARCH_MODE, getQueryGenerator().getNtxParamMatchAllExact());</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMYKSDX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:30:44:853 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:51:18:683 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="62">src/com/bbb/search/endeca/boosting/SortSearchBoostingStrategy.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Did we make sure no user applied facets or SWS keywords being passed to this query?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPMZ1T1S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 00:43:58:864 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-20 :: 15:50:04:055 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Pradeep</AssignedTo>
+    <File line="184">src/com/bbb/search/endeca/tools/EndecaSearchToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should add number of Days to NEW algorithm type only, rest of the sort algorithms does not require number of days</Summary>
+    <Description>numberOfdays</Description>
+    <Annotation></Annotation>
+    <Revision>e9576a9b39b903ab62c7248749f6d3fee36ede13</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

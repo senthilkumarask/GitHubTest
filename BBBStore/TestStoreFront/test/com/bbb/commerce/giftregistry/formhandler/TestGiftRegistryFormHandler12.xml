@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryFormHandler.java test case
+
+  HISTORY:
+  Nov 03, 2011 Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler12">
+      
+      <group id="testHandleRegistrySearch12">
+        <test id="testHandler_test1">
+			<objs>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="password" type="string">Sapient!2</obj>
+					<obj id="username1" type="string">qa2@qa.com</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="giftRegistryFormHandler" 
+					   type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.giftregistry.formhandler.TestGiftRegistryFormHandler12">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="testValue12" type="java.lang.Boolean" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+      
+     </cluster>
+</ddtunit>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="coupon_exclusion_estore">
+  <ReviewIssue id="H0MWAFMR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-05 :: 03:04:40:035 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-09 :: 11:43:02:359 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Narinder_Garg</AssignedTo>
+    <File line="80">src/com/bbb/commerce/order/droplet/PromotionExclusionMsgDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Set the comItemExclMap here do not need another loop or exclusionMap</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="H0MWJHM1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-05 :: 03:11:42:505 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-04-09 :: 11:42:56:263 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Narinder_Garg</ReviewerId>
+    <AssignedTo>Narinder_Garg</AssignedTo>
+    <File line="82">src/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add a constant for bbbCoupons</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

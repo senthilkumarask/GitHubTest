@@ -1,0 +1,8 @@
+#test line 1 -- to test auto merge of patches
+#Fri Apr 27 13:11:27 IST 2012
+revision.number=4.5.2
+build.minor=00
+build.count=001
+build.patch=00
+build.major=01
+#test line 1 added 2 added 3 added4-- to test auto merge of patches

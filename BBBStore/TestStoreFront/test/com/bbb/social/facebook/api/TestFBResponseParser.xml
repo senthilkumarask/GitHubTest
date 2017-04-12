@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileServices.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileServices.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.social.facebook.api.TestFBResponseParser">
+		<group id="testParseFacebookBasicInfo">
+     		<test id="testParseFacebookBasicInfo_test1">
+				<objs>
+					<obj id="fbResponseParser" type="com.bbb.social.facebook.api.FBResponseParserImpl" hint="call" method="resolveName" calltype="com.bbb.social.facebook.api.TestFBResponseParser">
+						<item type="string">/com/bbb/social/facebook/FBResponseParser</item>
+					</obj>
+					<obj id="fbBasicInfoJson" type="string">{"id":"12345678","name":"Test User","first_name":"Test","last_name":"User","link":"http://www.facebook.com/profile.php?id=12345678","education":[{"school":{"id":"14455474","name":"School Name"},"year":{"id":"137616982934053","name":"2006"},"type":"College"},{"school":{"id":"12547894","name":"Test School, New Delhi"},"type":"Graduate School"}],"gender":"male","email":"test.user@gmail.com","timezone":5.5,"locale":"en_US","languages":[{"id":"106059522759137","name":"English"},{"id":"112969428713061","name":"Hindi"}],"verified":true,"updated_time":"2012-04-25T07:40:48 0000"}</obj>
+				</objs>      
+     		</test>
+   		</group>
+   		<group id="testParseFacebookErrorInfo">
+     		<test id="testParseFacebookErrorInfo_test1">
+				<objs>
+					<obj id="fbResponseParser" type="com.bbb.social.facebook.api.FBResponseParserImpl" hint="call" method="resolveName" calltype="com.bbb.social.facebook.api.TestFBResponseParser">
+						<item type="string">/com/bbb/social/facebook/FBResponseParser</item>
+					</obj>
+					<obj id="fbBasicInfoJson" type="string">{"error":"unexpected error occured"}</obj>
+				</objs>      
+     		</test>
+   		</group>
+    </cluster>
+</ddtunit>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_anonymous_order_query_2011_12_07_lokesh_duseja">
+  <ReviewIssue id="GVXHO77S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:42:24:328 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:53:35:549 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="87">src/com/bbb/account/GetOrderTrackingInfoServiceMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>removed commented code</Summary>
+    <Description>removed commented code</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXHOU5A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:42:54:046 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:02:57:900 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="79">src/com/bbb/account/GetOrderTrackingInfoServiceMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Method name needs to change </Summary>
+    <Description>From  dozerMap to
+getDozerMappedRequest</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXI04Q6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:51:40:974 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:06:52:753 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="93">src/com/bbb/account/GetOrderTrackingInfoServiceMarshaller.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Perf monitory will have to be closed in case you return from method by either throwing exception and return</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXI9T6M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 13:59:12:574 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:21:203 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="67">src/com/bbb/account/GetOrderTrackingInfoServiceMarshaller.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are you catching Exception rather than specific exception sub types, also log the exception</Summary>
+    <Description>- dont catch Exception
+- log exception</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXIGRXT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:04:37:553 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:35:178 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="82">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Dont catch exception and log exception</Summary>
+    <Description>Dont catch exceptions , only catch specific exceptions
+Log excetions with message</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXIIBC4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:05:49:348 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:06:24:619 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="88">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Perf logger should be closed in case of exceptions</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXIKMG9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:07:37:065 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 16:03:47:570 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="87">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented lines</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXIMEYP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:09:00:673 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:06:30:315 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="94">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>rename method dozerMap </Summary>
+    <Description>use better name  something like getDozerMappedResponse</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXINSHN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:10:04:859 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:06:36:258 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="108">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Whenever log error log both error and message  </Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXIPAR6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:11:15:186 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 17:06:42:914 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>gaurav_bhatia</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="80">src/com/bbb/account/GetOrderTrackingInfoServiceUnMarshaller.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Rename method dozerErrorMap to better name - see other similar comments for possible name</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

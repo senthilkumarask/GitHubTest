@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+        <name>Home Page template for web service</name>
+        <author></author>
+    </header>
+
+	 <!--///////////////////////////////-->
+  	 <!--       HomePage for Web service -->
+  	 <!--///////////////////////////////-->
+  
+<item-descriptor name="homepageWS" display-name-resource="homePageTemplate" display-property="site" cache-mode="simple" item-cache-size="50" query-cache-size="50">
+	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	
+	<table name="BBB_WS_HOMEPAGE_TEMPLATE" type="primary" id-column-name="homepage_template_id">
+		
+		<property name="id" column-name="homepage_template_id" display-name-resource="homepageTemplateId"  writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+        </property>
+        
+        <property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration"  
+        		repository="/atg/multisite/SiteRepository">
+            <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="1"/>
+        </property>
+        
+       
+        <property name="homeCarousel" column-name="HOME_CAROUSEL_ID" display-name-resource="homeCarousel" item-type="carousel"  >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="3"/>
+        </property>
+        
+       <property name="homeBanner" column-name="HOME_BANNER_ID" display-name-resource="homeBanner" item-type="links"  >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="4"/>
+        </property>
+         
+        <property name="homeProductCarousel" column-name="HOME_PRODUCT_CAROUSEL_ID" display-name-resource="homeProductCarousel" item-type="productCarousel" >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="5"/>
+        </property>
+	
+         <property name="homeCategoryCarousel" column-name="HOME_CATEGORY_CAROUSEL" display-name-resource="homeCategoryCarousel" item-type="categoryContainer"  >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="6"/>
+        </property>
+        
+         <property name="isInternationalTemplate" column-name="IS_INTERNATIONAL_TEMPLATE" display-name-resource="isInternationalTemplate" data-type="boolean" default="false">
+        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="7"/>
+       </property>
+        
+	</table>
+  
+    
+    
+    
+    <table name="BBB_WS_HMPG_PROMO_TIER_FIRST" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+       <property name="homePromoTierLayOut1" column-names="promobox_id"  data-type="list" display-name-resource="homePromoTierLayOut1" component-item-type="promoBox">
+        <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="8"/>
+       </property>
+     </table>
+     
+      <table name="BBB_WS_HMPG_PROMO_TIER_SECOND" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+       <property name="homePromoTierLayOut2" column-names="promobox_id"  data-type="list" display-name-resource="homePromoTierLayOut2" component-item-type="promoBox">
+         <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="9"/>
+       </property>
+     </table>
+     
+    
+     
+</item-descriptor>
+   
+     
+    <!--///////////////////////////////	-->
+  	<!--          Carousel Information  -->
+  	<!--///////////////////////////////	-->
+   
+   	<item-descriptor name="carousel"   cache-mode="simple" display-property="title" display-name-resource="carousel" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <table name="BBB_WS_CAROUSEL" type="primary" id-column-names="carousel_id">
+        	<property name="id" column-name="carousel_id" display-name-resource="carouselId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+			
+            <property name="flipTime" column-names="flip_time" display-name-resource="carouselFlipTime" data-type="int">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>	
+            	<attribute name="default" value="10"/>
+            </property>
+            
+            <property name="title" column-names="title" display-name-resource="carouselTitle" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>	
+            </property>
+            
+          
+        </table>
+        
+        <table name="BBB_WS_CAROUSEL_IMAGES" type="multi" id-column-names="carousel_id" multi-column-name="sequence_num">
+	  		<property name="carouselImages" column-names="imagebox_id" display-name-resource="carouselImages" data-type="list" component-item-type="imageBox">
+	  			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+	        </property>
+	  	</table>
+	  	
+	  	<property name="carouselImageCount" property-type="com.bbb.cms.RecordCountPropertyDescriptor" writable="false" queryable="false" data-type="string" hidden="true">
+     	 <attribute name="propertyToCount" value="carouselImages"/>
+   		 </property>
+     </item-descriptor>
+     
+     
+      	<!--///////////////////////////////	-->
+  		<!--          ImageBox Information 	-->
+  		<!--///////////////////////////////	-->
+   
+   	<item-descriptor name="imageBox"   cache-mode="simple" display-property="imageAltText" display-name-resource="imageBox" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <table name="BBB_WS_IMAGEBOX" type="primary" id-column-names="imagebox_id">
+        	<property name="id" column-name="imagebox_id" display-name-resource="imageBoxId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+            <property name="imageUrl" column-names="image_url" display-name-resource="imageUrl" data-type="string"  >
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>	
+			</property>
+			<property name="imageBoxTitle" column-names="image_box_title" display-name-resource="imageBoxTitle" data-type="string"  >
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>	
+			</property>
+			<property name="imageLink" column-names="image_link" display-name-resource="imageLink" data-type="string"  >
+           		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>	
+			</property>
+            <property name="imageAltText" column-names="image_alt_text" display-name-resource="imageAltText" data-type="string" required="true">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>	
+			</property>
+            <property name="imageMapName" column-names="image_map_name" display-name-resource="imageMapName" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>	
+			</property>
+            <property name="height" column-names="height" display-name-resource="height" data-type="string">
+           		<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>	
+			</property>
+            <property name="width" column-names="width" display-name-resource="width" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>	
+			</property>
+        </table>
+     </item-descriptor>
+     
+     
+           	<!--///////////////////////////////	-->
+  			<!--          LINKS Information 	-->
+  			<!--///////////////////////////////	-->
+   
+     	<item-descriptor name="links"   cache-mode="simple" display-property="text" display-name-resource="links" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <table name="BBB_LINK" type="primary" id-column-names="link_id">
+        	<property name="id" column-name="link_id" display-name-resource="linkId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+            <property name="text" column-names="text" display-name-resource="text" data-type="big string"  >
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>	
+			</property>
+            <property name="link" column-names="link" display-name-resource="link" data-type="string" >
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>	
+			</property>
+            <property name="background" column-names="background" display-name-resource="background" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>	
+			</property>
+            <property name="foreground" column-names="foreground" display-name-resource="foreground" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>	
+			</property>
+            <property name="fontSize" column-names="font_size" display-name-resource="fontSize" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>	
+			</property>
+            <property name="fontWeight" column-names="font_weight" display-name-resource="fontWeight" data-type="string"  >
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="6"/>	
+			</property>
+			<property name="hiddenFlag" column-names="hidden_flag" default="false" display-name-resource="hiddenFlag" data-type="boolean">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>	
+			</property>
+			<property name="linkCode" column-names="link_code" display-name-resource="linkCode" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="8"/>	
+			</property>
+			
+        </table>
+        
+        <table name="BBB_LINKS_MULTILEVEL" type="multi" multi-column-name="sequence_num"
+			id-column-names="link_id">
+			<property name="multiLinks" column-name="multiLinks" data-type="list"
+				display-name-resource="multiLinks" component-item-type="links"
+				repository="/com/bbb/cms/repository/WSHomePageTemplate">
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources" />
+				<attribute name="propertySortPriority" value="7" />
+			</property>
+		</table>
+        
+     </item-descriptor>
+     
+     	<!--///////////////////////////////	-->
+  		<!--          Product Carousel Information 	-->
+  		<!--///////////////////////////////	-->
+     
+     <item-descriptor name="productCarousel"   cache-mode="simple" display-property="title" display-name-resource="productCarousel" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+     
+    
+     <table name="BBB_WS_PRODUCT_CAROUSEL" type="primary" id-column-names="Product_Carousel_id">
+      	<property name="id" column-name="Product_Carousel_id" display-name-resource="productCarouselId" writable="true" >
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+        <property name="title" column-name="TITLE" display-name-resource="productCarouselTitle" data-type="string" />
+        <property name="flipTime" column-names="flip_time" display-name-resource="productCarouselFlipTime" data-type="int" default="10">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>	
+            	<attribute name="default" value="10"/>
+            </property>
+      </table>
+      	<table name="BBB_WS_PROD_CAR_PROD" type="multi" multi-column-name="sequence_num" id-column-names="Product_Carousel_id">
+          <property name="carouselProducts" column-name="product_id" data-type="list" component-item-type="product" display-name-resource="carouselProducts" 
+         					repository="/atg/commerce/catalog/ProductCatalog">  
+
+            <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="2"/>
+        </property> 
+       </table>  
+   
+        <property name="noOfProductsInProductCarousel" property-type="com.bbb.cms.RecordCountPropertyDescriptor" writable="false" queryable="false" data-type="string" hidden="true">
+     	 <attribute name="propertyToCount" value="carouselProducts"/>
+   		 </property>
+      </item-descriptor>
+       
+     	<!--///////////////////////////////	-->
+  		<!--          Promo Box Information 	-->
+  		<!--///////////////////////////////	-->
+      
+       <item-descriptor name="promoBox"   cache-mode="simple" display-property="id" display-name-resource="promoBox" item-cache-size="100" query-cache-size="100">
+    	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        <table name="BBB_WS_PROMOBOX" type="primary" id-column-names="promobox_id">
+      	<property name="id" column-name="promobox_id" display-name-resource="promoboxId" writable="true" >
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+         <property name="imageBox1" column-name="PRIMARY_IMAGE_BOX" display-name-resource="imageBox1" item-type="imageBox" >
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="1"/>
+	        </property>
+	         <property name="imageBox2" column-name="SECONDRY_IMAGE_BOX" display-name-resource="imageBox2" item-type="imageBox">
+	        	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	          	<attribute name="propertySortPriority" value="2"/>
+	        </property>
+	            </table>  
+      </item-descriptor>
+      
+      <!--///////////////////////////////	-->
+  		<!--          Category Container Information 	-->
+  		<!--///////////////////////////////	-->
+      
+       <item-descriptor name="categoryContainer" cache-mode="simple" display-property="title" display-name-resource="categoryContainer" item-cache-size="50" query-cache-size="50">
+      <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+      <table name="BBB_WS_CATEGORY_CONTAINER" type="primary" id-column-names="cat_container_id">
+      	<property name="id" column-name="cat_container_id" display-name-resource="catContainerId" writable="true" >
+			<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+             
+         <property name="flipTime" column-names="flip_time" display-name-resource="carouselFlipTime" data-type="int">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="3"/>	
+            	<attribute name="default" value="10"/>
+            </property>
+            
+            <property name="title" column-names="title" display-name-resource="categoryContainerTitle" data-type="string">
+            	<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            	<attribute name="propertySortPriority" value="1"/>	
+            </property>
+      </table>
+      	<table name="BBB_WS_CAT_CONTAINER_CAT" type="multi" multi-column-name="sequence_num" id-column-names="cat_container_id">
+          <property name="categoryInCatContainer" column-name="category_id" data-type="list" component-item-type="category" display-name-resource="categoryInCatContainer" 
+         				 repository="/atg/commerce/catalog/ProductCatalog">  
+
+            <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="2"/>
+        </property> 
+    </table>
+    
+     <property name="noOfCatInCatContainer" property-type="com.bbb.cms.RecordCountPropertyDescriptor" writable="false" queryable="false" data-type="string" hidden="true">
+     	 <attribute name="propertyToCount" value="categoryInCatContainer"/>
+   		 </property>
+    </item-descriptor>
+</gsa-template>

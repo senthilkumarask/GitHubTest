@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.social.facebook.TestFBUserSiteAssocDroplet">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>					
+					<obj id="fbConnectDroplet" type="com.bbb.social.facebook.droplet.FBUserSiteAssocDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.social.facebook.TestFBUserSiteAssocDroplet">
+						<item type="string">/com/bbb/social/facebook/FBUserSiteAssocDroplet</item>
+					</obj>
+					<obj id="fbemail" type="string">amit_3@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="fbusername" type="string">amit_3</obj>
+					<obj id="fbfname" type="string">Test</obj>		
+					<obj id="fblname" type="string">User</obj>
+					<obj id="fbmname" type="string">MUser</obj>
+					<obj id="gender" type="string">male</obj>	  
+					<obj id="fbname" type="string">JSidhu</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="sisterSite" type="string">BuyBuyBaby</obj>									                
+				</objs>
+	        </test>
+		</group>		 
+	</cluster>
+</ddtunit>

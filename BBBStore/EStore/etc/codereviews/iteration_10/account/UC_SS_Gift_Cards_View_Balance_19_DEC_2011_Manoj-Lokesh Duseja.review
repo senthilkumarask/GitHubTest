@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_SS_Gift_Cards_View_Balance_19_DEC_2011_Manoj">
+  <ReviewIssue id="GWESE9S4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:14:41:860 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:39:56:616 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="1">config/com/bbb/payment/giftcard/BBBGiftCardFormHandler.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Always remove the loggingDebug in final delivery. This is for local code debugging only.</Annotation>
+    <Revision>loggingDebug removed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESJ9PD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:18:35:041 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:39:38:015 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="109">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>error should always be logged when exception is caught. Remove if IsLogginError</Annotation>
+    <Revision>removed isLoggingError</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESLGAZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:20:16:907 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:39:13:645 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="94">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add more explanatory error message</Annotation>
+    <Revision>added proper message with explanation</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESMKQT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:21:09:317 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:48:261 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="118">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>error should always be logged when exception is caught. Remove if IsLogginError</Annotation>
+    <Revision>removed isLogging error</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESOMEY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:22:44:794 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:41:500 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="73">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Missing preBalance method. The field validations should be performed both at front end and at server side in preBalance method. Refer to validation code written in BBBProfileFormHandler</Annotation>
+    <Revision>added validateFormInputs method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWESZXMG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:31:32:536 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:32:524 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="62">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Member variables name should start with "m"</Annotation>
+    <Revision>Updated variable name to start with m</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWET0JLL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:32:01:017 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:30:236 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="67">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Member variables name should start with "m"</Annotation>
+    <Revision>Updated variable name to start with m</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWET17HE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:32:31:970 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:28:180 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="152">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Param names should start with "p"</Annotation>
+    <Revision>Updated param name to start with p</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWET1V6S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:33:02:692 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:25:683 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="166">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Param names should start with "p"</Annotation>
+    <Revision>Updated param name to start with p</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWET226S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:33:11:764 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:20:723 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="180">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Param names should start with "p"</Annotation>
+    <Revision>Updated param name to start with p</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GWET29XO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 16:33:21:804 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-20 :: 18:38:17:995 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh Duseja</ReviewerId>
+    <AssignedTo>Manoj Mishra</AssignedTo>
+    <File line="194">src/com/bbb/payment/giftcard/BBBGiftCardFormHandler.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Param names should start with "p"</Annotation>
+    <Revision>Updated param name to start with p</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

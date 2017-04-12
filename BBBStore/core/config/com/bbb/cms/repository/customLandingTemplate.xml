@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Custom Landing Page template</name>
+		<author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- Custom Landing Page -->
+	<!--/////////////////////////////// -->
+
+	<item-descriptor name="customLandingTemplate"
+		display-name-resource="customLandingTemplate" display-property="associatedCategory"
+		cache-mode="simple"   item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000">
+		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+
+		<table name="BBB_CLP_TEMPLATE" type="primary" id-column-name="clp_template_id">
+
+			<property name="id" column-name="clp_template_id"
+				display-name-resource="customLandingPageTemplateId" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="0"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+			
+			<property name="clpTitle" column-name="clp_title"
+				display-name-resource="clpTitle" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="0"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+			
+			<property name="clpName" column-name="clp_name"
+				display-name-resource="clpName" writable="true"
+				category-resource="basicInfo" required="true">
+				<attribute name="propertySortPriority" value="1"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+			
+			<property name="associatedCategory" column-name="associated_category"
+				display-name-resource="associatedCategory" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="2"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+			
+			<property name="usCategoryId" column-name="us_category_id"
+				display-name-resource="usCategoryId" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="3"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+			
+			<property name="canadaCategoryId" column-name="canada_category_id"
+				display-name-resource="canadaCategoryId" writable="true"
+				category-resource="basicInfo">
+				<attribute name="propertySortPriority" value="4"/>
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+			</property>
+
+			<property name="channel" column-name="channel"
+				display-name-resource="channel" hidden="true" default="DesktopWeb"
+				category-resource="basicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="5"/>
+			</property>
+		
+			<property name="seoStaticText" data-type="big string" column-name="seo_static_text" category-resource="basicInfo" display-name-resource="seoStaticText">
+		        <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+		        <attribute name="propertySortPriority" value="6"/>
+	      	</property>
+			
+		</table>
+
+		<table name="BBB_CLP_SITES" type="multi" id-column-names="clp_template_id">
+			<property name="sites" column-name="site_id"
+				display-name-resource="appSites" category-resource="basicInfo"
+				component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository"
+				required="true" data-type="set">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="10" />
+			</property>
+		</table>
+
+		<table name="BBB_CLP_HEROIMAGE" type="multi" id-column-names="clp_template_id" multi-column-name="sequence_num">
+			<property name="heroImagePromoBox" repository="/com/bbb/cms/repository/LandingTemplate" column-names="hero_image" display-name-resource="heroImage" data-type="list"
+				component-item-type="promoBox"  category-resource="basicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+		
+		<table name="BBB_3CROSS_PBOX_TIER" type="multi" multi-column-name="sequence_num" id-column-names="clp_template_id" >
+	      <property name="3XPromoTierLayOut" column-names="promoboxtemp_id"  data-type="list" display-name-resource="3XPromoTierLayOut" 
+	      component-item-type="promoBox3MultiContentLayout"  repository="/com/bbb/cms/repository/LandingTemplate" category-resource="3XPromoContainers">
+	       <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+	       <attribute name="propertySortPriority" value="7"/>
+	      </property>
+       </table>
+		
+		<table name="BBB_4CROSS_PBOX_TIER" type="multi" multi-column-name="sequence_num" id-column-names="clp_template_id" >
+	      <property name="4XPromoTierLayOut" column-names="promoboxtemp_id"  data-type="list" display-name-resource="4XPromoTierLayOut" 
+	      component-item-type="promoBox4MultiContentLayout" repository="/com/bbb/cms/repository/LandingTemplate"  category-resource="4XPromoContainers">
+	       <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+	       <attribute name="propertySortPriority" value="9"/>
+	      </property>
+       </table>
+		
+	</item-descriptor>
+  
+    
+  
+</gsa-template>

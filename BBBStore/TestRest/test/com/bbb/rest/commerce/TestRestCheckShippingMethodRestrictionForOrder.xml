@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestGetCurrentOrderDetails.xml 
+	DESCRIPTION: ddtunit data file for TestRestGetCurrentOrderDetails.java test case HISTORY: 
+	Nov 16, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestCheckShippingMethodRestrictionForOrder">
+	
+	<group id="testCheckShippingMethodForSkus">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="isShippingMethodValidForSkus" type="string">/rest/bean/atg/commerce/order/ShippingGroupManager/checkShippingMethodForSkus</obj>
+					<obj id="skuIds" type="string">11811841</obj>
+					<obj id="shippingMethod" type="string">3g</obj>
+					
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

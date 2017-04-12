@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="user" type="userType">
+		<xs:annotation>
+			<xs:documentation>Main root node</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="userType">
+		<xs:sequence>
+			<xs:element name="userAttributes" type="userDetail" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for profile details</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userDetail">
+		<xs:sequence>
+			<xs:element name="userId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>user id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="userFirstName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>First NameOf user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="userLastName" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Last Name Of user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="userType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>user Type</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="locale" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>locale of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lastActivity" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>last activity of user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="registrationDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>registration Date of user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emailAddress" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>email Address of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="mobileNumber" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Mobile number of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="phoneNumber" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>phone number of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="gender" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Gender of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dateOfBirth" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>date of birth of the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="giftRegistry" type="giftRegistryDetails" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>giftregistry details for theuser</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="isFacebookIntegrated" type="xs:boolean" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>has the user connected its profile with social networking site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="userSiteAssoc" type="userSiteAssocType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>user site association values for different site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="userSiteAssocType">
+		<xs:sequence>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>site id </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="memberId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>member id based on site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="storeId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>favourite store id based on site</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="giftRegistryDetails">
+		<xs:sequence>
+			<xs:element name="registryId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>registry id for the user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>site id for the user registry</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eventType" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>event type for which registry is set</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>date of the event</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

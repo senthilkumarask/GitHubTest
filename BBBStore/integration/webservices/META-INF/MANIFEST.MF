@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Required: DAS DPS DSS BBBStore.core
+ATG-Class-Path: classes 
+    lib/eservices-test-client.jar
+    lib/eservices-test-client-bigBlue.jar
+    lib/DOMWebServicesService-test-client.jar
+    lib/bv-seo-sdk-3.1.1-jar-with-dependencies.jar
+    lib/fluent-hc-4.3.1.jar
+    lib/bbb-paypal-stub.jar
+    lib/fedexopenshipservicetag.jar
+    lib/fedexshipserviceemail.jar
+    lib/autowaiveshippingserviceclient.jar
+    lib/autowaiveshippingXBeans-packaged.jar

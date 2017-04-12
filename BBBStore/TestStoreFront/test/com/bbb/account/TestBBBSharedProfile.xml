@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileTools.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileTools.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.TestBBBSharedProfile">
+      <group id="testIsUserMulitpleGroups">
+        <test id="testSharedProfileGroups1">
+			<objs>
+				<obj id="siteId" type="string">
+					BuyBuyBaby
+				</obj>	
+				<obj id="emailId" type="string">
+					test4@example.com
+				</obj>
+				<obj id="siteCA" type="string">
+					BedBathCanada
+				</obj>	
+			</objs>
+        </test>         
+      </group>
+     </cluster>
+</ddtunit>

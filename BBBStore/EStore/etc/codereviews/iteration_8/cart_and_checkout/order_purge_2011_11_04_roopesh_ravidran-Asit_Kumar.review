@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="order_purge_2011_11_04_roopesh_ravidran">
+  <ReviewIssue id="GUIXJKU2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:00:27:578 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:02:45:625 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="39">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Java Doc missing for class</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIXL6QP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:01:42:625 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:02:26:734 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="45">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>OrderRepository should be OrderRepository component not string path</Summary>
+    <Description>This way we don't have to resolve the repository again.</Description>
+    <Annotation></Annotation>
+    <Revision>It was for OrderManager</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIXOXC6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:04:37:062 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:01:49:984 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="111">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>logDebug, logError, logWarning shouldn't be used without isLoggingDebug, isLoggingError and isLoggingWarning</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIXTXIQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:08:30:578 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:01:40:125 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="128">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Always use logError(string, exception) method</Summary>
+    <Description>that will print the exception stacktrace, which will be helpful in debugging.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIY9LHO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:20:41:484 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:32:11:410 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="148">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Batch transaction handling</Summary>
+    <Description>We need to add logic to commit the transactions in batch, for details u can refer AbandonedOrderService.processAbandonedOrders method</Description>
+    <Annotation></Annotation>
+    <Revision>Need to discuss</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYBLWV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:22:15:343 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:32:26:426 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="141">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>During unit testing did u check if the data in Abandoned order info tables are also deleted or not</Summary>
+    <Description>If not, we might have to call methods to do that, refer AbandonedOrderService.updateLostOrder</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYDOGW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:23:51:968 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:00:58:906 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="124">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add more debug statements, what orderId is being deleted.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYESMN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:24:44:015 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:00:39:546 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="162">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>TWO_YEARS_MILLISCONDS should be a configurable property, not hardcoded.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYG4F5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:25:45:953 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 18:00:31:000 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="146">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add null check for generatePurgeQuery method return, before exeuting the query</Summary>
+    <Description>Add NULL checks to each objects before using it.</Description>
+    <Annotation></Annotation>
+    <Revision>Ficxed it</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYI1U9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:27:15:921 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 17:56:12:515 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="149">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add NULL checks to all objects before using it.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Asit - Fixed it</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYKHLZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:29:09:671 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 17:50:46:921 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="164">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Extend SingletonSchedulableService instead of GenericService</Summary>
+    <Description>And don't overwrite performScheduledTask, rather move the logic to doScheduledTask</Description>
+    <Annotation></Annotation>
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYN7IQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:31:16:562 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 17:50:31:031 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="110">src/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Don't hardcode JobName, JobDescription, once you extend SingletonScheduableService, these will be a configurable property.</Summary>
+    <Description>Then no need to overwrite doStartService &amp; doStopService.</Description>
+    <Annotation></Annotation>
+    <Revision>Verified</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUIYPUCD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-02 :: 19:33:19:453 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-21 :: 17:49:57:390 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_Kumar</ReviewerId>
+    <AssignedTo>Asit_Kumar</AssignedTo>
+    <File line="9">config/com/bbb/commerce/order/scheduler/BBBPurgeOrderScheduler.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>we shouldn't set running from properties file, this is derived attribute. Add jobName, jobDescription</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Verified in properties files</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

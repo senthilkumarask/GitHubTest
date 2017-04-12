@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.droplet.TestSearchInStoreDroplet">
+		<group id="testSearchInStore">
+			<test id="test_testSearchInStore">
+				<objs>
+					<obj id="SearchInStoreDroplet" type="com.bbb.selfservice.droplet.TestSearchInStoreDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.droplet.TestSearchInStoreDroplet">
+						<item type="string">/com/bbb/selfservice/SearchInStoreDroplet</item>
+					</obj>					
+				
+					<obj id="searchBasedOn" type="string">default</obj>
+					<obj id="searchString" type="string">judt</obj>
+					<!-- <obj id="searchType" type="string">Raj</obj> -->
+					<obj id="productId" type="string">sku60016</obj>
+					<obj id="orderedQty" type="string">20</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+				<asserts>
+					<!-- <assert id="orderNumber" type="java.lang.String" action="isEqual">o2700001
+					</assert>
+					<assert id="orderState" type="java.lang.String" action="isEqual">Delivered
+					</assert> -->
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

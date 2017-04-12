@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+  <header>
+    <name>Email Repository</name>
+    <author></author>
+  </header>
+
+    <!--///////////////////////////////-->
+  	<!--     Email repository       -->
+    <!--///////////////////////////////-->
+
+
+  <item-descriptor name="emailRepository" display-name-resource="itemDescriptorEmailTemplatePage"  display-property="emailType" cache-mode="simple" item-cache-size="1000" >
+  	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	     <table name="BBB_Email_Template" type="primary" id-column-names="email_template_id">
+	     	<property name="id" column-name="email_template_id" display-name-resource="emailTemplateId" category-resource="BasicInfo" hidden="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        	</property>
+
+	        <property name="emailType" column-name="email_type" data-type="enumerated" display-name-resource="emailType" required="true"
+	        			default="ForgotPassword" queryable="true" category-resource="BasicInfo" expert="true">
+	             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="1" />
+	             	<attribute name="uiwritable" value="true"/>
+					<attribute name="useCodeForValue" value="false"/>
+						<option value="ForgotPassword" code="201"/>
+						<option value="ProfileCreation" code="202"/>
+						<option value="EmailAPage" code="203"/>
+						<option value="BridalBookTellAFriend" code="204"/>
+						<option value="OrderConfirmation" code="205"/>
+						<option value="EmailCart" code="206"/>
+						<option value="EmailARegistrySingular" code="207"/>
+						<option value="EmailCoFoundRegistry" code="208"/>
+						<option value="EmailCoNotFoundRegistry" code="209"/>
+						<option value="ContactUs" code="210"/>
+						<option value="BabyBookTellAFriend" code="211"/>
+						<option value="CoRegistrantEmail" code="212"/>
+						<option value="EmailAFriendPDP" code="213"/>
+						<option value="EmailARegistryPlural" code="214"/>
+						<option value="FAKEDISPLAYNAME%" code="999"/>
+						<option value="EmailSavedItems" code="215"/>
+						<option value="EmailAFriendCatalog" code="216"/>
+						<option value="MxEmailARegistrySingular" code="217"/>
+						<option value="MxEmailARegistryPlural" code="218"/>
+						<option value="EmailRegistryRecommendation" code="219"/>
+						<option value="RegistrantScheduledBulkEmail" code="220"/>
+		   </property>
+
+            <property name="emailFromDefault" column-name="email_from" data-type="string" display-name-resource="emailFrom" category-resource="BasicInfo">
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="2" />
+            </property>
+
+        	<property name="emailSubjectDefault" column-name="email_subject" data-type="string" display-name-resource="emailSubject" category-resource="BasicInfo">
+        	 <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="3" />
+            </property>
+
+            <property name="emailBodyDefault" column-name="email_body" data-type="big string" display-name-resource="emailBody" category-resource="BasicInfo">
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="4" />
+            </property>
+
+            <property name="emailHeaderDefault" column-name="email_header" data-type="big string" display-name-resource="emailHeader" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="5" />
+            </property>
+
+			<property name="emailFooterDefault" column-name="email_footer" data-type="big string" display-name-resource="emailFooter" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="5" />
+            </property>
+<!--            Added New Property for Email Flag #69 -->
+            <property name="emailFlagDefault" column-name="email_flag" data-type="string" display-name-resource="emailFlag" category-resource="BasicInfo">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="6" />
+            </property>
+	     </table>
+
+    	<table name="BBB_EMAIL_SITE_TRANSLATIONS" type="multi" id-column-names="email_template_id">
+  		<property name="emailTranslations" column-names="translation_id" display-name-resource="emailTranslations" data-type="set" component-item-type="emailTranslations" category-resource="BBBEmailSiteTranslation">
+  			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="7" />
+        </property>
+  	</table>
+
+  	<property name="emailFrom" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="emailFrom">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailFromDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailFromDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailFrom"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+    <property name="emailSubject" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="emailSubject">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailSubjectDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailSubjectDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailSubject"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+    <property name="emailBody" data-type="big string" writable="false" hidden="true" queryable="true" display-name-resource="emailBody">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailBodyDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailBodyDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailBody"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+    <property name="emailHeader" data-type="big string" writable="false" hidden="true" queryable="true" display-name-resource="emailHeader">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailHeaderDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailHeaderDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailHeader"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+    <property name="emailFooter" data-type="big string" writable="false" hidden="true" queryable="true" display-name-resource="emailFooter">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailFooterDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailFooterDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailFooter"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+<!--  Added New Property Site Translation for Email Flag #69 -->
+    <property name="emailFlag" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="emailFlag">
+    	<derivation user-method="com.bbb.commerce.catalog.SiteLocaleTranslation">
+                  <expression>emailFlagDefault</expression>
+           </derivation>
+           <attribute name="defaultProperty" value="emailFlagDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="emailFlag"/>
+           <attribute name="translations" value="emailTranslations"/>
+    </property>
+
+   </item-descriptor>
+
+   <item-descriptor name="emailTranslations" cache-mode="simple" display-property="site" display-name-resource="BBBEmailSiteTranslation">
+ 	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+ 	<table name="BBB_EMAIL_TRANSLATIONS" type="primary" id-column-name="translation_id">
+ 		<property name="id" column-name="translation_id" display-name-resource="emailTransaltionId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+ 		<property name="site" column-name="site_id" display-name-resource="translationSite" item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="EmailTranslation">
+    		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="1"/>
+    	</property>
+    	<property name="locale" column-name="locale_id" display-name-resource="translationLocale" data-type="string" category-resource="EmailTranslation">
+    		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="2"/>
+    	</property>
+    	<property name="configurableType" column-name="configurable_type" display-name-resource="configurableType" data-type="string" category-resource="EmailTranslation">
+    		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="3"/>
+    	</property>
+		  <property name="channel" column-name="channel" item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository" display-name-resource="channel" category-resource="EmailTranslation">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+			<attribute name="propertySortPriority" value="10"/>
+		</property>
+		<property name="channelTheme" column-name="channel_theme" item-type="channelThemeInfo" repository="/com/bbb/channelTheme/ChannelThemeRepository" display-name-resource="Guided Selling Theme" category-resource="EmailTranslation">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+			<attribute name="propertySortPriority" value="11"/>
+		</property>
+    	<property name="emailFrom" column-name="email_from" data-type="string" display-name-resource="emailFrom" category-resource="EmailTranslation">
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="4" />
+            </property>
+
+        	<property name="emailSubject" column-name="email_subject" data-type="string" display-name-resource="emailSubject" category-resource="EmailTranslation">
+        	 <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="5" />
+            </property>
+
+            <property name="emailBody" column-name="email_body" data-type="big string" display-name-resource="emailBody" category-resource="EmailTranslation">
+             <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="6" />
+            </property>
+
+            <property name="emailHeader" column-name="email_header" data-type="big string" display-name-resource="emailHeader" category-resource="EmailTranslation">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="7" />
+            </property>
+
+			<property name="emailFooter" column-name="email_footer" data-type="big string" display-name-resource="emailFooter" category-resource="EmailTranslation">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="8" />
+            </property>
+
+            <!-- Added New Property for Email Flag #69 -->
+            <property name="emailFlag" column-name="email_flag" data-type="string" display-name-resource="emailFlag" category-resource="EmailTranslation">
+            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             	<attribute name="propertySortPriority" value="9" />
+            </property>
+	     </table>
+
+		<!-- <property name="siteLocaleDisplayName" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="siteLocaleDisplayName">
+	    	<derivation user-method="com.bbb.commerce.catalog.StringConcatenatePropertyDescriptor">
+	                  <expression>emailSubject</expression>
+	           </derivation>
+	          <attribute name="propertiesToConcatenate" value="site,locale" />
+				<attribute name="delimiter" value="-" />
+	    </property> -->
+
+
+ </item-descriptor>
+
+</gsa-template>

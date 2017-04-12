@@ -1,0 +1,110 @@
+<project name="core" default="build" basedir=".">
+
+	<property file="../build_scripts/build.properties" />
+
+	<path id="dynamo.classpath">
+		<fileset dir="${weblogic.home}/wlserver/server/lib">
+			<include name="**/wlclient.jar" />
+			<include name="**/wljmsclient.jar" />
+			<include name="**/weblogic.jar" />
+		</fileset>
+		<fileset dir="${weblogic.home}/coherence/lib">
+                        <include name="**/*.jar" />
+        </fileset>
+		<fileset dir="${dynamo.home}/../DAS/j2ee-lib">
+			<include name="**/jboss-javaee.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DAS-UI/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DPS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DSS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${dynamo.home}/../DCS/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<path id="bbb.core">
+		<fileset dir="../core/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<path id="java.classpath">
+		<fileset dir="${JAVA_HOME}/lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${JAVA_HOME}/jre/lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="build" depends="clean,compile,build-jaxb-jar,copy,jar" />
+
+	<target name="copy" description="copy all files from src">
+		<copy todir="classes">
+			<fileset dir="src" excludes="**/*.java" />
+			<fileset dir="schema/submitorder" includes="BBBSubmitOrder.xsd" />
+		</copy>
+	</target>
+
+	<target name="compile">
+		<javac srcdir="src" destdir="classes" fork="yes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1">
+			<classpath refid="java.classpath" />
+			<classpath refid="dynamo.classpath" />
+			<classpath refid="bbb.core" />
+		</javac>
+	</target>
+
+	<target name="jar">
+		<jar jarfile="lib\core.jar" basedir="classes" />
+	</target>
+
+	<!-- Clean the build environment -->
+	<target name="clean">
+		<delete dir="${basedir}/classes/com" />
+		<delete dir="lib\core.jar" />
+	</target>
+
+	<!-- JAXB Packaging -->
+	<taskdef resource="net/sf/antcontrib/antcontrib.properties">
+		<classpath>
+			<pathelement location="buildlib/ant-contrib-1.0b3.jar" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+		<classpath>
+			<fileset dir="buildlib" includes="*.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="generate-all">
+		<foreach param="letter" target="generate">
+			<path>
+				<dirset dir="schema" casesensitive="no" includes="*/**" />
+			</path>
+		</foreach>
+	</target>
+
+	<target name="generate">
+		<echo message="${letter}" />
+		<basename property="dir" file="${letter}" />
+		<echo>processing \schema\${dir}\${dir}.xsd</echo>
+		<xjc destdir="src" package="com.bbb.framework.jaxb.${dir}" stackSize="1024mb">
+			<schema dir="${letter}" includes="*.xsd" />
+		</xjc>
+	</target>
+	<target name="build-jaxb-jar" depends="generate-all">
+		<javac srcdir="src" destdir="classes" includes="com/bbb/framework/jaxb/**" fork="yes" debug="true" debuglevel="vars,lines,source" encoding="iso-8859-1" />
+		<jar jarfile="lib\bbb-jaxb-stubs.jar" basedir="classes" includes="com/bbb/framework/jaxb/**" />
+		<delete dir="src/com/bbb/framework/jaxb" />
+		<delete dir="classes/com/bbb/framework/jaxb" />
+	</target>
+</project>

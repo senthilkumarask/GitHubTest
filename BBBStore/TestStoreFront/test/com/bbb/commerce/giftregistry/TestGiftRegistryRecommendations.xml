@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryRecommendations.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryRecommendations.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+      <group id="testGiftRegistryRecommendations">
+        <test id="testService_test1">
+			<objs>
+				<obj id="testGiftRegistryRecommendations" type="com.bbb.commerce.giftregistry.manager.GiftRegistryRecommendationManager" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/manager/GiftRegistryRecommendationManager</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="registryId" type="string">166635887</obj>
+				<obj id="skuId" type="string">18942283</obj>
+				<obj id="profileId" type="string">700002</obj>
+				<obj id="comment" type="string">Test Recommendations Comment</obj>
+				<obj id="registryId1" type="string">193934308</obj>
+				<obj id="firstName" type="string">Imran</obj>
+				<obj id="skuDisplayName" type="string">Kate Spade Newport Sheet Set, 100% Cotton, 300 Thread Count-California King</obj>
+				<obj id="listPrice" type="string">9.99</obj>
+				<obj id="pageSize" type="string">10</obj>				
+				<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>	
+				
+			</objs>       
+        </test>
+      </group>
+      <group id="testValidateToken">
+        <test id="testService_test2">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/manager/GiftRegistryManager</item>
+				</obj>
+				<obj id="giftRegistryTools" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/tool/GiftRegistryTools</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="validTokenRegistry" type="string">testregistry1</obj>
+				<obj id="expiredTokenRegistry" type="string">testregistry1</obj>
+				<obj id="invalidTokenRegistry" type="string">testregistry1</obj>
+				<obj id="validToken" type="string">validtoken</obj>
+				<obj id="expiredToken" type="string">expiredtoken</obj>
+				<obj id="invalidToken" type="string">invalidtoken1</obj>
+				<obj id="siteContextManager" type="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations" hint="call" method="resolveName"	calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="testPersistToken">
+        <test id="testService_test3">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="giftRegistryTools" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/tool/GiftRegistryTools</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="validTokenRegistry" type="string">testregistry1</obj>
+				<obj id="expiredTokenRegistry" type="string">testregistry1</obj>
+				<obj id="invalidTokenRegistry" type="string">testregistry1</obj>
+				<obj id="profileId" type="string">700002</obj>
+				<obj id="validToken" type="string">validtoken</obj>
+				<obj id="expiredToken" type="string">expiredtoken</obj>
+				<obj id="invalidToken" type="string">invalidtoken1</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+				<obj id="siteContextManager" type="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations" hint="call" method="resolveName"	calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="profileId" type="string">700002</obj>
+			</objs>       
+        </test>
+      </group>
+      <group id="recommendRegistryList">
+        <test id="testService_test3">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="giftRegistryTools" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/com/bbb/commerce/giftregistry/tool/GiftRegistryTools</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="validTokenRegistry" type="string">testregistry1</obj>
+				<obj id="expiredTokenRegistry" type="string">testregistry1</obj>
+				<obj id="invalidTokenRegistry" type="string">testregistry1</obj>
+				<obj id="profileId" type="string">700002</obj>
+				<obj id="validToken" type="string">validtoken</obj>
+				<obj id="expiredToken" type="string">expiredtoken</obj>
+				<obj id="invalidToken" type="string">invalidtoken1</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+				<obj id="password" type="string">S@pient1</obj>
+				<obj id="siteContextManager" type="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations" hint="call" method="resolveName"	calltype="com.bbb.commerce.giftregistry.TestGiftRegistryRecommendations">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+				</obj>
+				<obj id="profileId" type="string">700002</obj>
+			</objs>       
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

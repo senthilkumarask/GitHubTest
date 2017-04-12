@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestStoreLocatorDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestStoreLocatorDroplet.java test case 
+	HISTORY: DEc 30, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.manager.TestSearchStoreManager">
+		<group id="testGetStoreDirections">
+			<test id="testGetDirections_test1">
+				<objs>
+					<obj id="SearchStoreManager" type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/com/bbb/selfservice/SearchStoreManager</item>
+					</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="startAddress" type="string">90046</obj>
+					<obj id="endAddress" type="string">142 South San Vicente Boulevard,Los Angeles,CA,90048</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>			
+			</test>
+		</group>
+		
+		<group id="testModifyLatLngCookie">
+			<test id="testModifyLatLngCookie_test1">
+				<objs>
+					<obj id="SearchStoreManager" type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/com/bbb/selfservice/SearchStoreManager</item>
+					</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="storeIdFromURL" type="string">1009</obj>
+				</objs>			
+			</test>
+		</group>
+		
+		<group id="testGetFavStoreByStoreIdForPLP">
+			<test id="testGetFavStoreByStoreIdForPLP_test1">
+				<objs>
+					<obj id="SearchStoreManager" type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/com/bbb/selfservice/SearchStoreManager</item>
+					</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.selfservice.manager.TestSearchStoreManager"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestSearchStoreManager">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="favoriteStoreID" type="string">1009</obj>
+				</objs>			
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="inventory_feed_2011_11_05_amit_lakra">
+  <ReviewIssue id="GUPBDIOM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-07 :: 15:44:16:534 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-07 :: 15:44:22:720 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>amit_lakra</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUPBDXN2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-07 :: 15:44:35:918 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 13:36:48:025 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>amit_lakra</AssignedTo>
+    <File line="21">config/atg/commerce/inventory/inventory.xml</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>inconsistent data-type for translations</Summary>
+    <Description>Data type should be map.Implementation will be more easier and optimized if we are using map specially for the site</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUPBLD1O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-07 :: 15:50:22:476 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 13:35:01:842 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>amit_lakra</AssignedTo>
+    <File line="10">config/atg/commerce/inventory/inventory.xml</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>distributed should be part of live configuration</Summary>
+    <Description>distributed should be part of live configuration</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUPBOEM8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-07 :: 15:52:44:480 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-11 :: 13:36:33:017 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>amit_lakra</AssignedTo>
+    <File></File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Inconsistent data-type for site</Summary>
+    <Description>Site should be data type as String</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUYXB0YI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 09:08:07:386 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-14 :: 09:10:48:684 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>parvinder_singh</ReviewerId>
+    <AssignedTo>amit_lakra</AssignedTo>
+    <File line="53">src/com/bbb/commerce/inventory/InventoryManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Inventory interface should be extended from ATG OOTB interface</Summary>
+    <Description>
+Inventory is called by so many pipelines and it should be extended from ATG OOTB interface</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

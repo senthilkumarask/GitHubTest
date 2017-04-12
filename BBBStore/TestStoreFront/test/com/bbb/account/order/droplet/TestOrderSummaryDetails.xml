@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestStoreLocatorDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestStoreLocatorDroplet.java test case 
+	HISTORY: DEc 30, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.account.order.droplet.TestOrderSummaryDetails">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>
+					<obj id="getOrderSummaryDetails" type="com.bbb.account.order.droplet.TestOrderSummaryDetails"
+						hint="call" method="resolveName"
+						calltype="com.bbb.account.order.droplet.TestOrderSummaryDetails">
+						<item type="string">/com/bbb/account/OrderSummaryDetails</item>
+					</obj>
+					<obj id="orderNum" type="string">BAB5003050005</obj>
+					<obj id="wsOrder" type="string">false</obj>			
+							
+				</objs>			
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

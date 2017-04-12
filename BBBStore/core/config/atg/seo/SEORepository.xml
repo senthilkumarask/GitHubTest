@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gsa-template xml-combine="append">
+	<header>
+    <name>SEO repository</name>
+    <author>RajendraKaramcheti</author>
+    <description>This is an extension to SEO Repository to have site translations</description>    
+  </header>
+  <!--  SEOTags item descriptor -->
+  <item-descriptor name="SEOTags" display-property="displayNameDefault" xml-combine="append">
+  	<attribute name="resourceBundle" value="atg.seo.SEOTemplateResources"/>
+  	<table name="das_seo_tag"  type="primary" id-column-name="seo_tag_id">
+  		<property name="title" xml-combine="remove"/>
+      	<property name="description" xml-combine="remove"/>
+      	<property name="displayName" xml-combine="remove"/> 
+      	<property name="keywords" xml-combine="remove"/>
+      	<property name="titleDefault" column-name="title" data-type="string" category-resource="categoryBasics" display-name-resource="title"/>  
+      	<property name="descriptionDefault" column-name="description" data-type="string" category-resource="categoryBasics" display-name-resource="description"/>  
+      	<property name="keywordsDefault" column-name="keywords" data-type="string" category-resource="categoryBasics" display-name-resource="keywords"/>
+      	<property name="displayNameDefault" column-name="display_name" data-type="string" category-resource="categoryBasics" display-name-resource="displayName"/>
+      	<property name="seoFooterContentDefault" column-name="seo_footer_content" data-type="big string" category-resource="categoryBasics" display-name-resource="seoFooterContent"/>
+  	</table>
+  	<property name="title" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="title">
+    		<derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>titleDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="titleDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="title"/>
+           <attribute name="translations" value="seoTranslations"/>
+    	</property>
+    	<property name="description" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="description">
+    		<derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>descriptionDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="descriptionDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="description"/>
+           <attribute name="translations" value="seoTranslations"/>
+    	</property>
+    	<property name="keywords" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="keywords">
+    		<derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>keywordsDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="keywordsDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="property" value="keywords"/>
+            <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="translations" value="seoTranslations"/>
+    	</property>
+    	<property name="displayName" data-type="string" writable="false" hidden="true" queryable="true" display-name-resource="displayName">
+    		<derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>displayNameDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="displayNameDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="displayName"/>
+           <attribute name="translations" value="seoTranslations"/>
+    	</property>
+    	<property name="seoFooterContent" data-type="big string" writable="false" hidden="true" queryable="true" display-name-resource="seoFooterContent">
+    		<derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>seoFooterContentDefault</expression>        
+           </derivation>
+           <attribute name="defaultProperty" value="seoFooterContentDefault"/>
+           <attribute name="defaultLocale" value="en_US"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="seoFooterContent"/>
+           <attribute name="translations" value="seoTranslations"/>
+    	</property>
+    <table name="BBB_SEO_SITE_TRANSLATE" type="multi" id-column-names="seo_tag_id">
+		<property name="seoTranslations" column-names="translation_id" display-name-resource="seoTranslations" data-type="set" component-item-type="bbbSEOTranslation" category-resource="BBBSEOTranslation"/>
+	</table>
+  </item-descriptor>
+  
+  <item-descriptor name="bbbSEOTranslation" cache-mode="simple" display-property="id" display-name-resource="BBBSEOTranslation">
+ 	<attribute name="resourceBundle" value="atg.seo.SEOTemplateResources"/>
+ 	<table name="BBB_SEO_TRANSLATION" type="primary" id-column-name="translation_id">
+ 		<property name="id" column-name="translation_id" display-name-resource="seoTransaltionId" category-resource="categoryBasics" writable="true"/>
+ 		<property name="site" column-name="site_id" display-name-resource="translationSite" item-type="siteConfiguration" category-resource="categoryBasics" repository="/atg/multisite/SiteRepository"/>
+    	<property name="locale" column-name="locale_id" display-name-resource="translationLocale" default="en_US" data-type="string" category-resource="categoryBasics"/>
+    	<property name="title" column-name="title" data-type="string" category-resource="categoryBasics" display-name-resource="title"/>  
+      	<property name="description" column-name="description" data-type="string" category-resource="categoryBasics" display-name-resource="description"/>  
+      	<property name="keywords" column-name="keywords" data-type="string" category-resource="categoryBasics" display-name-resource="keywords"/>
+      	<property name="displayName" column-name="display_name" data-type="string" category-resource="categoryBasics" display-name-resource="displayName"/>
+      	<property name="channel" column-name="channel_id" display-name-resource="channel" category-resource="categoryBasics" item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository"/>
+      	<property name="seoFooterContent" column-name="seo_footer_content" data-type="big string" category-resource="categoryBasics" display-name-resource="seoFooterContent"/>
+ 	   
+ 	</table>
+  </item-descriptor>
+</gsa-template>

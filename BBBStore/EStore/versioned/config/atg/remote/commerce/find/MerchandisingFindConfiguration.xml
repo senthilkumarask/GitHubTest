@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- BBB customizations for merchandising find configuration -->
+<find-configuration>
+	<!-- Shipping Find View -->
+  <asset-family id="shipping" site-filtering="true">
+
+    <display-name>Shipping</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>shippingMethods</default-asset-type>
+
+		    <asset-type id="shippingMethods" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/shipping/ShippingRepository
+			</repository-path>
+		      <repository-item-type>shippingMethods</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="shippingMethodPrices" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/shipping/ShippingRepository
+			</repository-path>
+		      <repository-item-type>shippingMethodPrices</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="holidayMessaging" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/shipping/ShippingRepository
+			</repository-path>
+		      <repository-item-type>holidayMessaging</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="state" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/shipping/ShippingRepository
+			</repository-path>
+		      <repository-item-type>state</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="deliverySurcharge" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/shipping/ShippingRepository
+			</repository-path>
+		      <repository-item-type>deliverySurcharge</repository-item-type>
+		    </asset-type>
+
+  </asset-family>
+
+	<!-- CMS Find View -->
+  <asset-family id="CMS" site-filtering="true">
+	<display-name>CMS</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>labelTemplate</default-asset-type>
+
+
+			<asset-type id="bridalTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/BridalShowTemplate
+			</repository-path>
+		      <repository-item-type>BridalShowTemplate</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="labelTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LabelTemplate
+			</repository-path>
+			<repository-item-type>labelTextArea</repository-item-type>
+		</asset-type>
+		
+		<asset-type id="labelTranslations" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LabelTemplate
+			</repository-path>
+			<repository-item-type>lblTxtTranslation</repository-item-type>
+		</asset-type>
+
+		    <asset-type id="personalizedShopTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/PersonalizedShopTemplate
+			</repository-path>
+		      <repository-item-type>personalizedShopPage</repository-item-type>
+		    </asset-type>
+ 			<asset-type id="webFooterLinks" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WebFooterLinksTemplate
+			</repository-path>
+		      <repository-item-type>webFooterLinks</repository-item-type>
+		    </asset-type>
+		    <asset-type id="manageCheckListItems" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/ManageCheckListItems
+			</repository-path>
+		      <repository-item-type>ManageCheckListLink</repository-item-type>
+		    </asset-type>
+		    <asset-type id="staticTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/StaticTemplate
+			</repository-path>
+		      <repository-item-type>siteStaticPage</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="mobStaticContentTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSStaticTemplate
+			</repository-path>
+			<repository-item-type>mobileSiteStaticContentTemplate
+			</repository-item-type>
+		    </asset-type>
+
+		<asset-type id="mobStaticCollectionTemplate"
+			site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSStaticTemplate
+			</repository-path>
+			<repository-item-type>mobileSiteStaticCollectionTemplate
+			</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="mobStaticModalTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSStaticTemplate
+			</repository-path>
+			<repository-item-type>mobileSiteStaticModalTemplate
+			</repository-item-type>
+		    </asset-type>
+
+		    <!-- Page tabs Repository -->
+		    <asset-type id="pageTabs" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/cms/repository/PageTabsOrdering</repository-path>
+		      <repository-item-type>pageTabs</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="tabs" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/cms/repository/PageTabsOrdering</repository-path>
+		      <repository-item-type>tabsDetail</repository-item-type>
+		    </asset-type>
+   
+		    <asset-type id="guidesTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/GuidesTemplate
+			</repository-path>
+		      <repository-item-type>guides</repository-item-type>
+		    </asset-type>
+		    <asset-type id="registryTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/RegistryTemplate
+			</repository-path>
+		      <repository-item-type>siteRegistryPage</repository-item-type>
+		    </asset-type>
+		    <asset-type id="landingTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LandingTemplate
+			</repository-path>
+		      <repository-item-type>landing</repository-item-type>
+		    </asset-type>
+		    <asset-type id="RecommendationPageTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/RecommendationLandingPageTemplate
+			</repository-path>
+		      <repository-item-type>registrantLanding</repository-item-type>
+		    </asset-type>
+		     <asset-type id="RecommenderPageTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/RecommenderLandingPageTemplate
+			</repository-path>
+		      <repository-item-type>recommenderLanding</repository-item-type>
+		    </asset-type>
+		    <asset-type id="AppointmentTypeTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/AppointmentTypeTemplate
+			</repository-path>
+		      <repository-item-type>appointmentType</repository-item-type>
+		    </asset-type>
+		     <asset-type id="homePageTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/HomePageTemplate
+			</repository-path>
+		      <repository-item-type>homepage</repository-item-type>
+		    </asset-type>
+
+		     <asset-type id="promoBoxTemp" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LandingTemplate
+			</repository-path>
+		      <repository-item-type>promoBoxTemp</repository-item-type>
+		    </asset-type>
+
+		     <asset-type id="promoBox" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LandingTemplate
+			</repository-path>
+		      <repository-item-type>promoBox</repository-item-type>
+		    </asset-type>
+
+		     <asset-type id="promoImage" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/LandingTemplate
+			</repository-path>
+		      <repository-item-type>promoImage</repository-item-type>
+		    </asset-type>
+
+		     <asset-type id="promoBox2" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/HomePageTemplate
+			</repository-path>
+		      <repository-item-type>promoBoxTemp2layouts</repository-item-type>
+		    </asset-type>
+
+		     <asset-type id="categoryContainer" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/HomePageTemplate
+			</repository-path>
+		      <repository-item-type>categoryContainer</repository-item-type>
+		    </asset-type>
+
+
+
+		<asset-type id="MDHomeScreenTemplate" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>homeScreenMD</repository-item-type>
+		</asset-type>
+
+		<asset-type id="carouselElement" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>carouselElement</repository-item-type>
+		</asset-type>
+
+
+		<asset-type id="carouselImageElement" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>carouselImageElement</repository-item-type>
+		</asset-type>
+
+
+		<asset-type id="carouselVideoElement" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>carouselVideoElement</repository-item-type>
+		</asset-type>
+
+		<asset-type id="carouselArticleElement" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>carouselArticleElement</repository-item-type>
+		</asset-type>
+		    
+		<asset-type id="carouselImageGridElement" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MDHomeScreenTemplate
+			</repository-path>
+			<repository-item-type>carouselImageGridElement</repository-item-type>
+		</asset-type>
+
+
+		     <asset-type id="WSHomePageTemplate" site-filtering="true">
+		      	<enable-default-query>true</enable-default-query>
+		      	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSHomePageTemplate</repository-path>
+		      	<repository-item-type>homepageWS</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="clpContainer" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/CustomLandingTemplate
+			</repository-path>
+		      <repository-item-type>customLandingTemplate</repository-item-type>
+		    </asset-type>
+		    
+		       <asset-type id="mobileClpContainer" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/MobileCustomLandingTemplate
+			</repository-path>
+		      <repository-item-type>mobileCustomLandingTemplate</repository-item-type>
+		    </asset-type>
+		    
+		   <asset-type id="oneXPromoContainer" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate</repository-path>
+		      	<repository-item-type>mobilePromoBox1MultiContentLayout</repository-item-type>
+		    </asset-type>
+		    
+		   <asset-type id="twoXPromoContainer" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate</repository-path>
+		      	<repository-item-type>mobilePromoBox2MultiContentLayout</repository-item-type>
+		    </asset-type>
+		    
+		     <asset-type id="mobilePromoBoxImage" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate</repository-path>
+		      	<repository-item-type>mobilePromoBoxImageContentType</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="mobilePromoBoxVideo" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate</repository-path>
+		      	<repository-item-type>mobilePromoBoxVideoContentType</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="mobilePromoBoxStatic" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate</repository-path>
+		      	<repository-item-type>mobilePromoBoxStaticContentType</repository-item-type>
+		    </asset-type>
+		    
+		    <asset-type id="threeXPromoContainer" site-filtering="true">
+				<enable-default-query>true</enable-default-query>
+			   	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/LandingTemplate</repository-path>
+			   	<repository-item-type>promoBox3MultiContentLayout</repository-item-type>
+			</asset-type>
+		    
+			<asset-type id="fourXPromoContainer" site-filtering="true">
+				<enable-default-query>true</enable-default-query>
+			   	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/LandingTemplate</repository-path>
+			   	<repository-item-type>promoBox4MultiContentLayout</repository-item-type>
+			</asset-type>
+		    
+		    <asset-type id="promoBoxImage" site-filtering="true">
+				<enable-default-query>true</enable-default-query>
+			   	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/LandingTemplate</repository-path>
+			   	<repository-item-type>promoBoxImageContentType</repository-item-type>
+			</asset-type>
+			
+			<asset-type id="promoBoxVideo" site-filtering="true">
+				<enable-default-query>true</enable-default-query>
+			   	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/LandingTemplate</repository-path>
+			   	<repository-item-type>promoBoxVideoContentType</repository-item-type>
+			</asset-type>
+			
+			<asset-type id="promoBoxStatic" site-filtering="true">
+				<enable-default-query>true</enable-default-query>
+			   	<enable-filter-as-you-type>true</enable-filter-as-you-type>
+				<repository-path>/com/bbb/cms/repository/LandingTemplate</repository-path>
+			   	<repository-item-type>promoBoxStaticContentType</repository-item-type>
+			</asset-type>
+		    
+
+		      <asset-type id="carouselWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>homepageWS</repository-item-type>
+		    </asset-type>
+
+		      <asset-type id="imageBoxWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>imageBox</repository-item-type>
+		    </asset-type>
+
+		      <asset-type id="linksWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>links</repository-item-type>
+		    </asset-type>
+
+		      <asset-type id="promoBoxWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>promoBox</repository-item-type>
+		    </asset-type>
+
+		      <asset-type id="productCarouselWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>productCarousel</repository-item-type>
+		    </asset-type>
+
+		      <asset-type id="categoryContainerWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSHomePageTemplate
+			</repository-path>
+		      <repository-item-type>categoryContainer</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="WSCategoryLandingTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSCategoryLandingTemplate
+			</repository-path>
+		      <repository-item-type>catLandingWS</repository-item-type>
+		    </asset-type>
+		    <asset-type id="bccManagedCategoryWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/catalog/BBBManagedCatalogRepository</repository-path>
+		      <repository-item-type>bccManagedCategory</repository-item-type>
+		    </asset-type>
+		    <asset-type id="BBBInternationalBillingRepository" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/billing/BBBInternationalBillingRepository</repository-path>
+		      <repository-item-type>bccManagedCountry</repository-item-type>
+		    </asset-type>
+		      <asset-type id="sortingOptionWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/catalog/BBBManagedCatalogRepository</repository-path>
+		      <repository-item-type>sortingOption</repository-item-type>
+		    </asset-type>
+		    <asset-type id="bccManagedBrand" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		      <repository-path>/com/bbb/catalog/BBBManagedCatalogRepository</repository-path>
+		      <repository-item-type>bccManagedBrand</repository-item-type>
+		    </asset-type>
+		    <asset-type id="navigationLinksWS" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/WSNavigationLinksTemplate
+			</repository-path>
+		      <repository-item-type>navigationLinksWS</repository-item-type>
+		    </asset-type>
+		    
+  </asset-family>
+
+	<!-- Configure Find View -->
+  <asset-family id="configKeys" site-filtering="true">
+	<display-name>Config Keys</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>configRepository</default-asset-type>
+
+			<asset-type id="configRepository" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/configurekeys/ConfigureKeys
+			</repository-path>
+		      <repository-item-type>configKeys</repository-item-type>
+		    </asset-type>
+		
+		<asset-type id="configKeysTranslation" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/configurekeys/ConfigureKeys
+			</repository-path>
+			<repository-item-type>configKeysTranslation</repository-item-type>
+		</asset-type>
+		
+		
+		<asset-type id="configKeysValue" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/configurekeys/ConfigureKeys
+			</repository-path>
+			<repository-item-type>configKeysValue</repository-item-type>
+		</asset-type>
+		
+		
+    </asset-family>
+
+	<!-- Kick Starter Find View -->
+  <asset-family id="kickStarter" site-filtering="true">
+	<display-name>Kick Starters</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+              <default-asset-type>allKickStarter</default-asset-type>
+			<asset-type id="allKickStarter" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/kickstarters/repository/KickStarters</repository-path>
+		      <repository-item-type>kickStarter</repository-item-type>
+		 </asset-type>		
+		<asset-type id="kickStarterPicklist" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/kickstarters/repository/KickStarters</repository-path>
+			<repository-item-type>kickStarterPicklist</repository-item-type>
+		</asset-type>			
+		<asset-type id="registryType" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/kickstarters/repository/KickStarters</repository-path>
+			<repository-item-type>registryType</repository-item-type>
+		</asset-type>
+           <asset-type id="pickListSKUItem" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/kickstarters/repository/KickStarters</repository-path>
+			<repository-item-type>pickListSKUItem</repository-item-type>
+		</asset-type>		
+		   <asset-type id="popularItems" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/kickstarters/repository/KickStarters</repository-path>
+			<repository-item-type>popularItems</repository-item-type>
+		</asset-type>
+    </asset-family>
+
+    <!-- Search Config Find View -->
+  <asset-family id="searchConfigGroups" site-filtering="true">
+	<display-name>Search Config Groups</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+              <default-asset-type>searchConfigs</default-asset-type>
+		<asset-type id="searchConfigs" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/searchConfig/SearchConfig</repository-path>
+			<repository-item-type>searchConfigGroups</repository-item-type>
+		</asset-type>
+		<asset-type id="propertyItem" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/searchConfig/SearchConfig</repository-path>
+			<repository-item-type>propertyItem</repository-item-type>
+		</asset-type>
+		<asset-type id="skuFacetTypeRelationalObj" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/searchConfig/SearchConfig</repository-path>
+			<repository-item-type>skuFacetTypeRelationalObj</repository-item-type>
+		</asset-type>			
+    </asset-family>
+
+
+	<!-- printAtHome Find View -->
+  <asset-family id="printAtHome" site-filtering="true">
+	<display-name>Print At Home</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+              <default-asset-type>allprintAtHome</default-asset-type>
+			<asset-type id="allprintAtHome" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/registry/repository/PrintAtHome</repository-path>
+		      <repository-item-type>printAtHome</repository-item-type>
+		 </asset-type>		
+		<asset-type id="allAnnouncementcard" site-filtering="true">
+			<enable-default-query>true</enable-default-query>
+			<enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/registry/repository/PrintAtHome</repository-path>
+			<repository-item-type>announcementcard</repository-item-type>
+		</asset-type>	
+    </asset-family>
+
+	<!-- Product Tips Find View -->
+    <asset-family id="tipsPersonalization" site-filtering="true">
+	<display-name>Product Tips</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>tips</default-asset-type>
+
+		    <asset-type id="tips" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/personalization/TipsPersonalization
+			</repository-path>
+		      <repository-item-type>tipsPersonalization</repository-item-type>
+		    </asset-type>
+    </asset-family>
+
+	<!-- Schools Find View -->
+    <asset-family id="schoolsHome" site-filtering="true">
+	<display-name>Schools</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>schools</default-asset-type>
+
+		    <asset-type id="schools" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/selfservice/repository/SchoolVerRepository
+			</repository-path>
+		      <repository-item-type>schoolsVer</repository-item-type>
+		    </asset-type>
+    </asset-family>
+
+	<!-- Email Template Find View -->
+    <asset-family id="emailRepository" site-filtering="true">
+	<display-name>Email Templates</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>emailTemplate</default-asset-type>
+
+		    <asset-type id="emailTemplate" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/cms/repository/EmailTemplate
+			</repository-path>
+		      <repository-item-type>emailRepository</repository-item-type>
+		    </asset-type>
+    </asset-family>
+
+	<!-- Registry Catalog Find View -->
+    <asset-family id="regCat" site-filtering="true">
+	<display-name>Registry Catalog Mapping</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>regCatGrp</default-asset-type>
+
+		    <asset-type id="regCatGrp" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/catalog/repository/RegCatalogMapRepository
+			</repository-path>
+		      <repository-item-type>regCatGrp</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="registryMap" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/catalog/repository/RegCatalogMapRepository
+			</repository-path>
+		      <repository-item-type>registryMap</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="regPriceGrp" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/commerce/catalog/repository/RegCatalogMapRepository
+			</repository-path>
+		      <repository-item-type>regPriceGrp</repository-item-type>
+		    </asset-type>
+		    
+		     <asset-type id="regPriceGrpMX" site-filtering="true">
+		      	<enable-default-query>true</enable-default-query>
+		        <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			    <repository-path>/com/bbb/commerce/catalog/repository/RegCatalogMapRepository</repository-path>
+		      	<repository-item-type>regPriceGrpMX</repository-item-type>
+		    </asset-type>
+    </asset-family>
+
+    <!-- International Shipping restrictions Find View -->
+  <asset-family id="intlShippingRestrictions" site-filtering="true">
+
+    <display-name>International Shipping Restrictions</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>restrictedJdaDept</default-asset-type>
+
+		    <asset-type id="restrictedJdaDept" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/atg/commerce/catalog/ProductCatalog
+			</repository-path>
+		      <repository-item-type>restrictedJdaDept</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="restrictedJdaSubDept" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/atg/commerce/catalog/ProductCatalog
+			</repository-path>
+		      <repository-item-type>restrictedJdaSubDept</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="restrictedJdaclass" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/atg/commerce/catalog/ProductCatalog
+			</repository-path>
+		      <repository-item-type>restrictedJdaclass</repository-item-type>
+		    </asset-type>
+		    
+		     <asset-type id="restrictedBBBBrands" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/atg/commerce/catalog/ProductCatalog
+			</repository-path>
+		      <repository-item-type>restrictedBBBBrands</repository-item-type>
+		    </asset-type>
+
+  </asset-family>
+  
+  	<!-- Personal Store Find View -->
+  <asset-family id="personalStore" site-filtering="true">
+
+    <display-name>Personal Store</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+		<result-list page-size="100" />
+    <default-asset-type>personalStoreDetails</default-asset-type>
+
+		    <asset-type id="personalStoreDetails" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/personalstore/repository/PersonalStore
+			</repository-path>
+		      <repository-item-type>personalStore</repository-item-type>
+		    </asset-type>
+
+		    <asset-type id="strategy" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/personalstore/repository/PersonalStore
+			</repository-path>
+		      <repository-item-type>psStrategy</repository-item-type>
+		    </asset-type>
+			
+			<asset-type id="psSource" site-filtering="true">
+		      <enable-default-query>true</enable-default-query>
+		      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+			<repository-path>/com/bbb/personalstore/repository/PersonalStore
+			</repository-path>
+		      <repository-item-type>psSource</repository-item-type>
+		    </asset-type>
+
+  </asset-family>
+    
+
+    <!-- Cart Recommendations Find View -->
+  <asset-family id="recommendedSkus" site-filtering="true">
+    <display-name>CartAnalyzer</display-name>
+    <enable-default-query>true</enable-default-query>
+    <enable-filter-as-you-type>true</enable-filter-as-you-type>
+    <result-list page-size="100" />
+    <default-asset-type>allRecommendedSkus</default-asset-type>
+
+    <asset-type id="allRecommendedSkus" site-filtering="true">
+      <enable-default-query>true</enable-default-query>
+      <enable-filter-as-you-type>true</enable-filter-as-you-type>
+	<repository-path>/com/bbb/commerce/catalog/repository/RecommendedSkuRepository
+	</repository-path>
+      <repository-item-type>recommendedSkus</repository-item-type>
+    </asset-type>
+  </asset-family>
+
+
+</find-configuration>
+<!-- @version $Id: //hosting-blueprint/B2CBlueprint/version/10.0.2/EStore/Versioned/config/atg/remote/commerce/find/MerchandisingFindConfiguration.xml#1 
+	$$Change: 633540 $ -->

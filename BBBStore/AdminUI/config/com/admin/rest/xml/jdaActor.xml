@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="getJdaDept"
+	xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<actor-chain id="getJdaDept" transaction="TX_SUPPORTS">
+		<droplet var="getJdaDept" name="/com/admin/droplet/BBBJdaDeptDroplet"
+			id="getJdaDept">
+			<input name="descrip" value="${param.descrip}" />
+			<input name="jda_dept_id" value="${param.jda_dept_id}" />
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getJdaSubDept" transaction="TX_SUPPORTS">
+		<droplet var="getJdaSubDept" name="/com/admin/droplet/BBBJdaSubDeptDroplet"
+			id="getJdaSubDept">
+			<input name="descrip" value="${param.descrip}" />
+			<input name="jda_dept_id" value="${param.jda_dept_id}" />
+			<input name="jda_sub_dept_id" value="${param.jda_sub_dept_id}" />
+			
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getJdaClass" transaction="TX_SUPPORTS">
+		<droplet var="getJdaClass" name="/com/admin/droplet/BBBJdaClassDroplet"
+			id="getJdaClass">
+			<input name="descrip" value="${param.descrip}" />
+			<input name="jda_dept_id" value="${param.jda_dept_id}" />
+			<input name="jda_sub_dept_id" value="${param.jda_sub_dept_id}" />
+			<input name="jda_class" value="${param.jda_class}" />
+			
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getJdaRules" transaction="TX_SUPPORTS">
+		<droplet var="getJdaRules" name="/com/admin/droplet/BBBJdaFacetRulesDroplet"
+			id="getJdaRules">
+			<input name="categoryId" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getJdaFacets" transaction="TX_SUPPORTS">
+		<droplet var="getJdaFacets" name="/com/admin/droplet/BBBJdaFacetDroplet"
+			id="getJdaFacets">
+			<input name="jda_dept_id" value="${param.jda_dept_id}" />
+			<input name="jda_sub_dept_id" value="${param.jda_sub_dept_id}" />
+			<input name="jda_class" value="${param.jda_class}" />
+			<input name="description" value="${param.description}" />
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getJdaFacetValues" transaction="TX_SUPPORTS">
+		<droplet var="getJdaFacetValues" name="/com/admin/droplet/BBBJdaFacetValueDroplet"
+			id="getJdaFacetValues">
+			<input name="jda_dept_id" value="${param.jda_dept_id}" />
+			<input name="jda_sub_dept_id" value="${param.jda_sub_dept_id}" />
+			<input name="jda_class" value="${param.jda_class}" />
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+	
+	
+	
+	<actor-chain id="createJdaRule" transaction="TX_SUPPORTS">
+		<form id="createJdaRule" handle="createJdaRule" var="jdaRuleFormHandler"
+			name="/com/admin/formhandler/BBBJdaRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="jdaDept" value="${param.jda_dept_id}" />
+			<input name="jdaSubDept" value="${param.jda_sub_dept_id}" />
+			<input name="jdaClass" value="${param.jda_class}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+		</form>
+	</actor-chain>
+	
+	<actor-chain id="updateJdaRule" transaction="TX_SUPPORTS">
+		<form id="updateJdaRule" handle="updateJdaRule" var="jdaRuleFormHandler"
+			name="/com/admin/formhandler/BBBJdaRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="jdaDept" value="${param.jda_dept_id}" />
+			<input name="jdaSubDept" value="${param.jda_sub_dept_id}" />
+			<input name="jdaClass" value="${param.jda_class}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+		</form>
+	</actor-chain>
+	
+	<actor-chain id="removeJdaRule" transaction="TX_SUPPORTS">
+		<form id="removeJdaRule" handle="removeJdaRule" var="jdaRuleFormHandler"
+			name="/com/admin/formhandler/BBBJdaRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+		</form>
+	</actor-chain>
+	
+	
+
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 
+	$$Change: 875535 $ -->
+
+<!-- result of combining: C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml -->

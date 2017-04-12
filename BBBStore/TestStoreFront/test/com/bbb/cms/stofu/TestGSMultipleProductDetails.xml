@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGSMultipleProductDetails.xml
+
+  DESCRIPTION: ddtunit data file for TestGSMultipleProductDetails.java test case
+
+  HISTORY:
+  Apr 24, 2012  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.stofu.TestGSMultipleProductDetails">
+       <group id="testProductDetailsProductError">
+        <test id="testProductDetailsError_test1">
+			<objs>
+				<obj id="multipleProductDetails" type="com.bbb.store.catalog.BBBGSCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestGSMultipleProductDetails">
+					<item type="string">/com/bbb/store/catalog/BBBGSCatalogToolsImpl</item>
+				</obj>
+				<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991a","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440","productId":"1013499098","categoryId":"12262"}]}</obj>
+			</objs>  
+        </test>
+      </group>
+      <group id="testProductDetailsSkuError">
+        <test id="testProductDetailsError_test2">
+			<objs>
+				<obj id="multipleProductDetails" type="com.bbb.store.catalog.BBBGSCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestGSMultipleProductDetails">
+					<item type="string">/com/bbb/store/catalog/BBBGSCatalogToolsImpl</item>
+				</obj>
+				<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440a","productId":"1013499098","categoryId":"12262"}]}</obj>
+			</objs>  
+        </test>
+      </group>
+      <group id="testProductDetailsSuccess">
+        <test id="testProductDetailsSuccess_test1">
+			<objs>
+				<obj id="multipleProductDetails" type="com.bbb.store.catalog.BBBGSCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.cms.stofu.TestGSMultipleProductDetails">
+					<item type="string">/com/bbb/store/catalog/BBBGSCatalogToolsImpl</item>
+				</obj>
+				<obj id="jsonCompareListObj" type="string">{"compareMultipleProducts":[{"skuId":"","productId":"131991","categoryId":"12262"},{"skuId":"","productId":"133105","categoryId":"12262"},{"skuId":"16967440","productId":"1013499098","categoryId":"12262"}]}</obj>
+			</objs>      
+        </test>
+      </group> 
+    </cluster>
+</ddtunit>

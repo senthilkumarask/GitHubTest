@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- 
+  Copyright 2011, BBB  All Rights Reserved.
+  Reproduction or use of this file without express written
+  consent is prohibited.
+  FILE:  TestNavigationSearchFormHandler.xml
+  DESCRIPTION: ddtunit data file for TestNavigationSearchFormHandler.java test case
+  HISTORY:  May 2, 2012  Initial version
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.search.endeca.TestEndecaSearch">
+      <group id="testPerformSearch">
+        <test id="testPerformSearch_test1">
+			<objs>
+				<obj id="endecaSearch" type="com.bbb.search.endeca.TestEndecaSearch" hint="call" method="resolveName" calltype="com.bbb.search.endeca.TestEndecaSearch">
+					<item type="string">/com/bbb/search/endeca/EndecaSearch</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="hostname" type="string">bedbathandbeyond.com</obj>
+				<obj id="keyWord" type="string">glass</obj>
+				<obj id="pageNum" type="string">1</obj>
+				<obj id="headerSearch" type="boolean">1</obj>
+			</objs>   
+		</test>
+		</group>
+		<group id="testPerformFacetSearch">
+		<test id="testPerformFacetSearch_test2">
+			<objs>
+				<obj id="endecaSearch" type="com.bbb.search.endeca.TestEndecaSearch" hint="call" method="resolveName" calltype="com.bbb.search.endeca.TestEndecaSearch">
+					<item type="string">/com/bbb/search/endeca/EndecaSearch</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="keyWord" type="string">glass</obj>
+				<obj id="catalogId" type="string"></obj>
+				<obj id="pageFilterSize" type="string"></obj>
+				<obj id="showPopularTerms" type="boolean">1</obj>
+			</objs>   
+		</test>
+      </group>
+      <group id="testGetPopularItemsResults">
+		<test id="testGetPopularItemsResults_test3">
+			<objs>
+				<obj id="endecaSearch" type="com.bbb.search.endeca.TestEndecaSearch" hint="call" method="resolveName" calltype="com.bbb.search.endeca.TestEndecaSearch">
+					<item type="string">/com/bbb/search/endeca/EndecaSearch</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="bccSearchQuery" type="string">N=13039</obj>			
+			</objs>   
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

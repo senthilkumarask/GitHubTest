@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pipelinemanager
+        PUBLIC "-//Art Technology Group, Inc.//DTD Dynamo Pipeline Manager//EN"
+        'http://www.atg.com/dtds/pipelinemanager/pipelinemanager_1.0.dtd'>
+
+<!-- $Id: //product/DCS/version/9.1/templates/B2CCommerce/config/atg/commerce/commercepipeline.xml#1 $$Change: 531151 $ -->
+<!-- This commerce pipeline configuration file defines the              -->
+<!-- chains used for B2C commerce applications.                         -->
+
+
+<pipelinemanager>
+
+    <pipelinechain name="processOrder" transaction="TX_REQUIRED" xml-combine="append">
+		<pipelinelink name="sendPromotionUsedMessage" transaction="TX_MANDATORY" xml-combine="replace">
+			<processor jndi="/atg/commerce/order/processor/SendPromotionUsedMessage" />
+			<transition returnvalue="1" link="updateGSOrder" />
+		</pipelinelink>
+		<pipelinelink name="updateGSOrder" transaction="TX_MANDATORY">
+			<processor jndi="/atg/commerce/order/processor/UpdateGSOrder" />
+			<transition returnvalue="1" link="sendSubmitOrderMessage" />
+		</pipelinelink>
+	</pipelinechain>  
+</pipelinemanager>
+<!-- @version $Id: //product/DCS/version/9.1/templates/B2CCommerce/config/atg/commerce/commercepipeline.xml#1 $$Change: 531151 $ -->

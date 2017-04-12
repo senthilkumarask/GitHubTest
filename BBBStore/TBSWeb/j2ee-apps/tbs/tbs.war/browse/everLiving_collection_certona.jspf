@@ -1,0 +1,252 @@
+<dsp:page>
+			<div id="content" class="container_12 clearfix" role="main">
+			<div id="prodExplore" class="grid_12" role="complementary">
+			<h2>Explore it:</h2><br/>
+			 <%-- <span class="fl"><bbbl:label key='lbl_pdp_product_explore' language="${pageContext.request.locale.language}" /></span> --%>
+                <%-- Start for Chat and Ask and Answer 2.1.1 --%>
+               	<%-- Commenting Click to Chat as part of 34473 
+               	<c:if test="${chatEnabled}">
+               	<h2 class="clearfix">
+					<dsp:include page="/common/click2chatlink.jsp">
+					    <dsp:param name="pageId" value="${chatCode}"/>
+					    <dsp:param name="prodId" value="${parentProductId}"/>
+					    <dsp:param name="divApplied" value="${true}"/>
+						<dsp:param name="divClass" value="grid_3 omega fr"/>
+					</dsp:include>
+				</h2>
+				</c:if>
+				--%>
+				<%-- End for Chat and Ask and Answer 2.1.1 --%>
+				<div class="categoryProductTabs marTop_10">
+					<ul class="categoryProductTabsLinks">
+						<li><div class="arrowSouth"></div><a title='<bbbl:label key='lbl_pdp_product_info' language="${pageContext.request.locale.language}" />' href="#prodExplore-tabs1" onclick="pdpOmnitureProxy('${parentProductId}', 'productspec')"><bbbl:label key='lbl_pdp_product_info' language="${pageContext.request.locale.language}" /></a></li>
+						<c:set var="count" value="2" />
+						<dsp:droplet name="/atg/dynamo/droplet/ForEach">
+							<dsp:param param="productTabs" name="array"/>
+							<dsp:oparam name="output">
+
+								<li><div class="arrowSouth"></div><a title="<dsp:valueof param="element.tabName"/>" href="#prodExplore-tabs<c:out value='${count}'/>"><dsp:valueof param="element.tabName"/></a></li>
+								<c:set var="count" value="${count+1}" />
+
+							</dsp:oparam>
+						</dsp:droplet>
+
+	                    <c:if test="${BazaarVoiceOn}">
+	                    	<li><div class="arrowSouth"></div>
+	                    	<a title="<bbbl:label key='lbl_pdp_product_ratings_reviews' language="${pageContext.request.locale.language}" />" href="#prodExplore-tabs<c:out value='${count}'/>" onclick="pdpOmnitureProxy('${parentProductId}', 'ratingreviews')"><bbbl:label key='lbl_pdp_product_ratings_reviews' language="${pageContext.request.locale.language}" /></a>
+	                    	</li>
+	                    	<%-- Start for Chat and Ask and Answer 2.1.1 --%>
+							<c:if test="${askAndAnswerEnabled}">
+								<li><div class="arrowSouth"></div>
+			                    <a title="<bbbl:label key='lbl_pdp_product_ask_answer' language="${pageContext.request.locale.language}" />" class="aaBeta" href="#prodExplore-tabs<c:out value='${count+1}'/>" onclick="pdpOmnitureProxy('${parentProductId}', 'askAndAnswer')"><span><bbbl:label key='lbl_pdp_product_ask_answer' language="${pageContext.request.locale.language}" /></span><span class="aaBetaImg"></span><span class="clear"></span></a>
+								</li>
+								<c:set var="showQA" value="true" scope="request"/>
+							</c:if>
+				           	<%-- End for Chat and Ask and Answer 2.1.1 --%>
+	                    </c:if>
+					</ul>
+
+					<div id="prodExplore-tabs1" class="categoryProductTabsData">
+						<div class="bulletsReset grid_6 alpha appendSKUInfo marLeft_20" itemprop="description">
+						<dsp:valueof param="productVO.longDescription" valueishtml="true"/>
+						<c:if test="${not empty pDefaultChildSku}">
+							<p class="smalltext prodSKU"><bbbl:label key='lbl_pdp_sku_id' language="${pageContext.request.locale.language}" /> ${pDefaultChildSku}</p>
+						</c:if>
+						</div>
+
+                     <c:if test="${LiveClickerOn}">
+
+						<div id="prodVideo" class="grid_6 omega" data-parentProdId="${parentProductId}">
+							<input type="hidden" name="videoProdId" value="${parentProductId}" />
+						</div>
+						</c:if>
+					<%-- R 2.2.1 || Harmon START --%>
+						<dsp:getvalueof var="harmonLongDescription" param="productVO.harmonLongDescription"/>
+                       	<c:if test="${not empty harmonLongDescription}">
+                        	<div class="harmonDesc grid_12 noMar">
+                          		<dsp:valueof param="productVO.harmonLongDescription" valueishtml="true"/>
+                          	</div>
+                       	</c:if>
+                   	<%-- R 2.2.1 || Harmon END   --%>
+					</div>
+					<c:set var="count" value="2" />
+						<dsp:droplet name="/atg/dynamo/droplet/ForEach">
+							<dsp:param param="productTabs" name="array"/>
+						<dsp:oparam name="output">
+
+
+						<div id="prodExplore-tabs<c:out value='${count}'/>" class="categoryProductTabsData"><dsp:valueof param="element.tabContent" valueishtml="true"/></div>
+						<c:set var="count" value="${count+1}" />
+
+						</dsp:oparam>
+					</dsp:droplet>
+					<c:if test="${BazaarVoiceOn}">
+					<div id="prodExplore-tabs<c:out value='${count}'/>" class="categoryProductTabsData clearfix divRatings">
+						<%--<bbbl:label key='lbl_pdp_product_rate_and_review' language="${pageContext.request.locale.language}" />--%>
+
+						<div id="BVRRContainer">
+							<%-- Commenting out SmartSEO as part of 34473
+							<c:if test="${SmartSEOOn}">
+								<dsp:droplet name="/com/bbb/commerce/browse/droplet/BVReviewContentDroplet">
+									<dsp:param name="productId" param="productId"/>
+									<dsp:param name="pageURL" value="${pageURL}"/>
+									<dsp:param name="content" value="REVIEWS"/>
+									<dsp:oparam name="output"> 
+										<dsp:valueof param="bvContent" valueishtml="true"/>
+									</dsp:oparam>
+								</dsp:droplet>
+							</c:if>
+							--%>
+						<img width="20" height="20" alt="" src="/_assets/global/images/widgets/small_loader.gif" >
+						</div>
+
+					</div>
+					</c:if> 
+				
+				<%--  Start For BV Integration Container Tag 2.1 #216 --%>
+
+				<c:if test="${showQA}">
+					<div id="prodExplore-tabs<c:out value='${count+1}'/>" class="categoryProductTabsData clearfix divQuestions">
+						<dsp:include page="../browse/frag/ask_and_answer.jsp" >
+							<dsp:param name="productId" value="${parentProductId}"/>
+							<dsp:param name="pageURL" value="${pageURL}"/>
+						</dsp:include>
+					</div>
+					<c:set var="count" value="${count+1}" />
+				 </c:if>
+				 <%--  End For BV Integration Container Tag 2.1 #216 --%>
+				</div>
+			</div>
+			</div>
+
+
+			
+			<%--Start collection and accessories page certona container --%>
+			<div id="botCrossSell" class="marTop_20 grid_12" role="complementary">
+
+				<c:set var="relatedItemsDisplayFlag" value="false"/>
+				<c:set var="frequentlyBoughtDisplayFlag" value="false"/>
+           		<dsp:droplet name="ProdToutDroplet">
+					<dsp:param value="lastviewed" name="tabList" />
+						<dsp:param param="categoryId" name="id" />
+						<dsp:param value="${appid}" name="siteId" />
+						<dsp:param name="productId" param="productId" />
+					<dsp:oparam name="output">
+					<dsp:getvalueof var="clearanceProductsList" param="clearanceProductsList" />
+					<dsp:getvalueof var="lastviewedProductsList" param="lastviewedProductsList" />
+					<dsp:droplet name="ExitemIdDroplet">
+			          <dsp:param value="${lastviewedProductsList}" name="lastviewedProductsList" />
+			          <dsp:param name="certonaExcludedItems" value="${childProducts}"/>
+			          <dsp:oparam name="output">
+					    <dsp:getvalueof var="productList" param="productList" />
+                               </dsp:oparam>
+			        </dsp:droplet>
+			        <c:if test="${CertonaOn}">
+
+						<c:set var="custAlsoViewedProdMax" scope="request">
+			  				<bbbc:config key="PDPCustAlsoViewProdMax" configName="CertonaKeys" />
+		    			</c:set>
+						<c:set var="frequentlyBuyProdMax" scope="request">
+			  				<bbbc:config key="PDPFreqBoughtProdMax" configName="CertonaKeys" />
+		    			</c:set>
+				        <dsp:droplet name="CertonaDroplet">
+					 		<dsp:param name="scheme" value="${SchemeName}"/>
+							 <dsp:param name="userid" value="${userId}"/>
+							 <dsp:param name="context" value="${CertonaContext}"/>
+							 <dsp:param name="exitemid" value="${productList}"/>
+							 <dsp:param name="productId" value="${parentProductId}"/>
+							 <dsp:param name="siteId" value="${appid}"/>
+							 <dsp:param name="number" value="${custAlsoViewedProdMax};${frequentlyBuyProdMax}"/>
+							 <dsp:oparam name="output">
+							 		<c:set var="schemeArray" value="${fn:split(SchemeName, ';')}" />
+									<dsp:getvalueof var="relatedItemsProductsVOsList" param="certonaResponseVO.resonanceMap.${schemeArray[0]}.productsVOsList"/>
+									<dsp:getvalueof var="frequentlyBoughtProductsVOsList" param="certonaResponseVO.resonanceMap.${schemeArray[1]}.productsVOsList"/>
+									<dsp:getvalueof var="linksCertona" param="certonaResponseVO.resxLinks"/>
+			                        <dsp:getvalueof var="pageIdCertona" param="certonaResponseVO.pageId"/>
+							 </dsp:oparam>
+							 <dsp:oparam name="error">
+							 </dsp:oparam>
+							 <dsp:oparam name="empty">
+							 </dsp:oparam>
+						</dsp:droplet>
+					</c:if>
+				<c:if test="${(not empty relatedItemsProductsVOsList) || (not empty lastviewedProductsList) || (not empty frequentlyBoughtProductsVOsList)}">
+		         <div id="botCrossSell" class="marTop_10 grid_12">
+		         <h2><bbbl:label key='lbl_pdp_product_also_checkout' language="${pageContext.request.locale.language}" /></h2>
+
+				<div class="categoryProductTabs marTop_20">
+					<c:set var="customerAlsoViewedTab"><bbbl:label key='lbl_pdp_product_related_items' language="${pageContext.request.locale.language}" /></c:set>
+					<c:set var="lastViewedTab"><bbbl:label key='lbl_pdp_product_last_viewed' language="${pageContext.request.locale.language}" /></c:set>
+					<c:set var="frequentlyBoughtWithTab"><bbbl:label key='lbl_pdp_product_frequently_bought' language="${pageContext.request.locale.language}" /></c:set>
+					<ul class="categoryProductTabsLinks">
+					<dsp:droplet name="/atg/dynamo/droplet/IsEmpty">
+							<dsp:param name="value" value="${relatedItemsProductsVOsList}"/>
+							<dsp:oparam name="false">
+							<li><div class="arrowSouth"></div><a title="Customer Also Viewed" href="#botCrossSell-tabs1" ><bbbl:label key='lbl_pdp_product_related_items' language="${pageContext.request.locale.language}" /></a></li>
+
+							<c:set var="relatedItemsDisplayFlag" value="true"/>
+							</dsp:oparam>
+							<dsp:oparam name="true">
+							<c:set var="relatedItemsDisplayFlag" value="false"/>
+							</dsp:oparam>
+					</dsp:droplet>
+					<dsp:droplet name="/atg/dynamo/droplet/IsEmpty">
+							<dsp:param name="value" value="${frequentlyBoughtProductsVOsList}"/>
+							<dsp:oparam name="false">
+							<li><div class="arrowSouth"></div><a title="Frequently Bought With" href="#botCrossSell-tabs2" ><bbbl:label key='lbl_pdp_product_frequently_bought' language="${pageContext.request.locale.language}" /></a></li>
+
+							<c:set var="frequentlyBoughtDisplayFlag" value="true"/>
+
+							</dsp:oparam>
+							<dsp:oparam name="true">
+							<c:set var="frequentlyBoughtDisplayFlag" value="false"/>
+							</dsp:oparam>
+					</dsp:droplet>
+
+
+						<c:if test="${not empty lastviewedProductsList}">
+							<li><div class="arrowSouth"></div><a title="Last Viewed Items" href="#botCrossSell-tabs3" ><bbbl:label key='lbl_pdp_product_last_viewed' language="${pageContext.request.locale.language}" /></a></li>
+					  </c:if>
+					</ul>
+
+
+							<c:if test="${relatedItemsDisplayFlag eq 'true'}">
+                            <div id="botCrossSell-tabs1" class="categoryProductTabsData">
+								<dsp:include page="certona_prod_carousel.jsp" >
+								 	<dsp:param name="productsVOsList" value="${relatedItemsProductsVOsList}"/>
+								 	<dsp:param name="crossSellFlag" value="true"/>
+								 	<dsp:param name="desc" value="Customer Also Viewed (pdp)"/>
+
+							  	</dsp:include>
+                                </div>
+							</c:if>
+
+
+
+							<c:if test="${frequentlyBoughtDisplayFlag eq 'true'}">
+                                <div id="botCrossSell-tabs2" class="categoryProductTabsData">
+								<dsp:include page="certona_prod_carousel.jsp" >
+								 	<dsp:param name="productsVOsList" value="${frequentlyBoughtProductsVOsList}"/>
+								 	<dsp:param name="crossSellFlag" value="true"/>
+								 	<dsp:param name="desc" value="Frequently Bought(pdp)"/>
+							  	</dsp:include>
+                                </div>
+							</c:if>
+
+
+					<c:if test="${not empty lastviewedProductsList}">
+						<div id="botCrossSell-tabs3" class="categoryProductTabsData">
+							<dsp:include page="last_viewed.jsp" >
+								<dsp:param name="lastviewedProductsList" value="${lastviewedProductsList}"/>
+								<dsp:param name="desc" value="Last Viewed (pdp)"/>
+							</dsp:include>
+						</div>
+					</c:if>
+					</div>
+					</div>
+				  </c:if>
+				</dsp:oparam>
+			</dsp:droplet>
+			</div>
+		<%--End certona containers --%>	
+</dsp:page>

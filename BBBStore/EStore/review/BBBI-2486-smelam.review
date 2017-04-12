@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2486">
+  <ReviewIssue id="IR11A6VQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-24 :: 16:04:58:070 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-24 :: 16:06:57:093 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>smelam</ReviewerId>
+    <AssignedTo>smelam</AssignedTo>
+    <File line="157">src/com/bbb/search/integration/SearchManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Start reading this from BCC, also are you comparing the value or non null value of param, please note vendor param can have different values, in each scenario we should make sure value is one of the allowed vendors and direct the user to vendor search. Please update code accordingly, current logic is not enough</Summary>
+    <Description>"e1"</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

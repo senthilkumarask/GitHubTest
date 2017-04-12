@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+       <group id="testGetShippingGroupForItem">
+        <test id="testGetShippingGroupForItem">
+			<objs>
+				<obj id="bbbPurchaseProcessHelper" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/purchase/PurchaseProcessHelper</item>
+				</obj>
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbShippingGroupManager" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/ShippingGroupManager</item>
+				</obj>
+				 <obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet" hint="call" method="resolveName"	calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+					<item type="string">/atg/multisite/SiteContextManager</item>
+				</obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>
+				<obj id="quantity" type="string">
+					2
+				</obj>
+				<obj id="storeId" type="string">
+					25
+				</obj>	
+				<obj id="siteId" type="string">
+                    BedBathUS
+                </obj>			
+			</objs>			 
+        </test>
+      </group>
+      
+      
+      <group id="testCheckInventory">
+        <test id="testCheckInventory">
+			<objs>
+				<obj id="bbbPurchaseProcessHelper" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/purchase/PurchaseProcessHelper</item>
+				</obj>
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				<obj id="catalogRefId1" type="string">
+					sku10013
+				</obj>
+				<obj id="catalogRefId2" type="string">
+					sku10014
+				</obj>
+				<obj id="catalogRefId3" type="string">
+					sku40006
+				</obj>	
+				<obj id="productId" type="string">
+					prod10037
+				</obj>				
+				<obj id="siteId" type="string">
+					BedBathUS
+				</obj>		
+				<obj id="quantity" type="string">
+					2
+				</obj>	
+				<obj id="globalStock" type="string">
+					10
+				</obj>
+			</objs>			 
+        </test>
+      </group>  
+      
+      <group id="testDeleteItems">
+              <test id="testDeleteItems">
+      			<objs>
+      				<obj id="bbbPurchaseProcessHelper" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      					<item type="string">/atg/commerce/order/purchase/PurchaseProcessHelper</item>
+      				</obj>
+      				<obj id="shoppingCart" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      					<item type="string">/atg/commerce/ShoppingCart</item>
+      				</obj>
+      				<obj id="bbbPricingModelHolder" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      					<item type="string">/atg/commerce/pricing/UserPricingModels</item>
+      				</obj>
+      				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+      				</obj>
+      				<obj id="bbbProfile" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      					<item type="string">/atg/userprofiling/Profile</item>
+      				</obj>
+      				<obj id="ordermanager" type="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler">
+      					<item type="string">/atg/commerce/order/OrderManager</item>
+      				</obj>	
+      				<obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+      					<item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+      				</obj>	
+      				<obj id="bbbPriceListManager" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+      					<item type="string">/atg/commerce/pricing/priceLists/PriceListManager</item>
+      				</obj>		
+      				<obj id="bbbCatalogTools" type="com.bbb.commerce.order.purchase.TestBBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBCartFormHandler">
+      					<item type="string">/atg/commerce/catalog/CatalogTools</item>
+      				</obj>	
+      				<obj id="catalogRefId1" type="string">
+      					sku40041
+      				</obj>	
+      				<obj id="productId1" type="string">
+      					prod10037
+      				</obj>									
+      				<obj id="quantity1" type="string">
+      					2
+      				</obj>					
+      				<obj id="catalogRefId2" type="string">
+      					sku40032
+      				</obj>	
+      				<obj id="productId2" type="string">
+      					prod10031
+      				</obj>			
+      				<obj id="storeId2" type="string">
+      					25
+      				</obj>					
+      				<obj id="quantity2" type="string">
+      					2
+      				</obj>
+      				<obj id="registryId" type="string">
+      					30
+      				</obj>
+      				<obj id="listPriceId" type="string">
+      					plist100005
+      				</obj>
+      				<obj id="salePriceId" type="string">
+      					plist100004
+      				</obj>
+      				<obj id="catalogId" type="string">
+      					masterCatalog
+      				</obj>	
+      			</objs>			 
+              </test>
+      </group>
+      <group id="testManageAddOrRemoveGiftWrapToShippingGroup">
+        <test id="testManageAddOrRemoveGiftWrapToShippingGroup">
+			<objs>
+				<obj id="bbbPurchaseProcessHelper" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/purchase/PurchaseProcessHelper</item>
+				</obj>
+				<obj id="orderTools" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				<obj id="shoppingCart" type="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper" hint="call" method="resolveName" calltype="com.bbb.commerce.order.purchase.TestBBBPurchaseProcessHelper">
+      				<item type="string">/atg/commerce/ShoppingCart</item>
+      			</obj>
+      			<obj id="ordermanager" type="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.scheduler.TestBBBPurgeOrderScheduler">
+      					<item type="string">/atg/commerce/order/OrderManager</item>
+      			</obj>      			
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>	
+				<obj id="productId" type="string">
+					prod10037
+				</obj>			
+				<obj id="storeId" type="string">
+					25
+				</obj>	
+				<obj id="registryId" type="string">
+					reg123
+				</obj>
+				<obj id="siteId" type="string">
+					BedBathUS
+				</obj>		
+				<obj id="quantity" type="string">
+					2
+				</obj>	
+				<obj id="bbbNonMerchandiseCommerceItemFilter" type="com.bbb.commerce.pricing.BBBNonMerchandiseCommerceItemFilter" hint="call" method="resolveName" calltype="com.bbb.commerce.order.manager.WSTestPromotionLookupManager">
+                    <item type="string">/com/bbb/commerce/pricing/BBBNonMerchandiseCommerceItemFilter</item>
+                </obj>
+			</objs>			 
+        </test>
+      </group>  
+      
+    </cluster>
+</ddtunit>
+

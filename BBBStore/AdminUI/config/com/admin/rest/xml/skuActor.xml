@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="createSku"
+	xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<actor-chain id="createSku" transaction="TX_SUPPORTS">
+		<form id="sku-create" handle="createSku" var="skuFormHandler"
+			name="/com/admin/formhandler/BBBSkuFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="skuId" value="${param.sku_id}" />
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleEvaluation" value="${param.rule_evaluation_cd}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			<input name="userCreated" value="${param.create_user}" />
+		</form>
+	</actor-chain>
+	
+	<actor-chain id="editSku" transaction="TX_SUPPORTS">
+		<form id="sku-edit" handle="editSku" var="skuFormHandler"
+			name="/com/admin/formhandler/BBBSkuFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="ruleEvaluation" value="${param.rule_evaluation_cd}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="removeSku" transaction="TX_SUPPORTS">
+		<form id="sku-remove" handle="removeSku" var="skuFormHandler"
+			name="/com/admin/formhandler/BBBSkuFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+		</form>
+	</actor-chain>
+	<actor-chain id="getSku" transaction="TX_SUPPORTS">
+		<droplet var="getSku" name="/com/admin/droplet/BBBSkuDroplet"
+			id="getSku">
+			<input name="displayName" value="${param.display_name}" />
+			<input name="skuId" value="${param.sku_id}" />
+		</droplet>
+	</actor-chain>
+
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 
+	$$Change: 875535 $ -->
+
+<!-- result of combining: C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml -->

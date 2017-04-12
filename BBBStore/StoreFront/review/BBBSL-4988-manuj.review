@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBSL-4988">
+  <ReviewIssue id="IB3F84G9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-06-19 :: 15:05:31:209 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-06-19 :: 15:07:10:273 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>manuj</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>SWD - Omniture tags changing after applying facets</Summary>
+    <Description>Asked to check if there are any category names with " quotes</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

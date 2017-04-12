@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bbb.account.vo.order.OrderDetailsReqVO</class-a>
+		<class-b>com.bedbathandbeyond.www.GetOrderDetailDocument$GetOrderDetail
+		</class-b>
+
+		<field>
+			<a>userToken</a>
+			<b>userToken</b>
+		</field>
+
+		<field>
+			<a>siteFlag</a>
+			<b>siteFlag</b>
+		</field>
+
+		<field>
+			<a>orderID</a>
+			<b>orderNum</b>
+		</field>
+
+	</mapping>
+
+	<mapping date-format="MM/dd/yyyy">
+		<class-a>com.bedbathandbeyond.www.OrderDetailInfoReturn</class-a>
+		<class-b>com.bbb.account.vo.order.OrderDetailInfoReturn
+		</class-b>	
+			<field>
+			<a>shipments.shipmentArray</a>
+			<b>shipments</b>
+		</field>
+		<field>
+			<a>payments.giftCards.giftCardArray</a>
+			<b>payments.giftCards</b>
+		</field>
+	</mapping>
+		<mapping date-format="MM/dd/yyyy">
+		<class-a>com.bedbathandbeyond.www.CartDetailInfo</class-a>
+		<class-b>com.bbb.account.vo.order.CartDetailInfo
+		</class-b>
+		<field>
+			<a>cartItemDetailList.cartItemDetailInfoArray</a>
+			<b>cartItemDetailList</b>
+		</field>		
+	</mapping>
+</mappings>

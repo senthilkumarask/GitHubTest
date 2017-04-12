@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-4798_Offshore-Review">
+  <ReviewIssue id="INU2AHL3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:29:41:319 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-05-05 :: 14:29:43:491 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Shweta</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="542">src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

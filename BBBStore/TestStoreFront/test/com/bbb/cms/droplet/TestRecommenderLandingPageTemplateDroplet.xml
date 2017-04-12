@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestRecommenderLandingPageTemplateDroplet">
+      <group id="testRecommenderLandingPageTemplateDroplet">
+        <test id="testRecommenderLandingPageTemplateDroplet">
+			<objs>
+				<obj id="recommenderLandingPageTemplateDroplet" type="com.bbb.cms.droplet.RecommenderLandingPageTemplateDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestRecommenderLandingPageTemplateDroplet">
+					<item type="string">/com/bbb/cms/droplet/RecommenderLandingPageTemplateDroplet</item>
+				</obj>
+
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="channel" type="string">DesktopWeb</obj>
+				<obj id="registryType" type="string">200001</obj>
+				<obj id="tokenError" type="string"> </obj>
+				<obj id="recommenderURL" type="string">/store/account/login.jsp</obj>
+				<obj id="visibilityFlag" type="string">visible</obj>
+				<obj id="logInURL" type="string">/store/account/login.jsp</obj>
+				<obj id="tokenErrorLogin" type="string"> </obj>
+			</objs>
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

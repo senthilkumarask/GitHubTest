@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+        <name>Category Landing template for web service</name>
+        <author></author>
+    </header>
+
+	 <!--///////////////////////////////-->
+  	 <!--       Category Landing for Web service -->
+  	 <!--///////////////////////////////-->
+  
+<item-descriptor name="catLandingWS" display-name-resource="categoryPageTemplate" display-property="category" cache-mode="simple" item-cache-size="50" query-cache-size="50">
+<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+	
+	<table name="BBB_WS_CAT_LANDING_TEMPLATE" type="primary" id-column-name="CAT_LANDING_TEMPLATE_ID">
+		
+		<property name="id" column-name="CAT_LANDING_TEMPLATE_ID" display-name-resource="catTemplateId" category-resource="BasicInfo" writable="true" >
+				<attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0" />
+        </property>
+        <property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration" category-resource="BasicInfo" 
+        		repository="/atg/multisite/SiteRepository">
+            <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="1"/>
+        </property>
+         <property name="CategoryCarousel" column-name="CAT_LANDING_CAROUSEL_ID" display-name-resource="CategoryCarouselId" item-type="carousel" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="BasicInfo"  >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="3"/>
+        </property>
+        <property name="CategoryBanner" column-name="CAT_TEMPLATE_BANNER_ID" display-name-resource="CategoryBannerId" item-type="links" repository="/com/bbb/cms/repository/WSHomePageTemplate" category-resource="BasicInfo"  >
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="4"/>
+        </property>
+         <property name="category" column-name="CATEGORY_ID" item-type="category" display-name-resource="category" repository="/atg/commerce/catalog/ProductCatalog" category-resource="BasicInfo">
+          <attribute name="resourceBundle" value="com.bbb.cms.WSCmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+        
+	</table>
+</item-descriptor>
+
+    <!-- Mobile Promo Box Custom containers -->   
+	
+	<!--        promoBox1XMultiContentLayout         -->
+   <item-descriptor name="mobilePromoBox1MultiContentLayout" cache-mode="simple" display-property="id" display-name-resource="containerWithOnePromoBoxes" 
+   item-cache-size="100" item-cache-timeout="86400000" query-cache-size="100">
+      <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+      <table name="BBB_MOBILE_1PBOX_MULTI_CNTR" type="primary" id-column-names="promoboxtemp_id">
+      	<property name="id" column-name="promoboxtemp_id" display-name-resource="promoBoxContainerId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+        <property name="oneXPromoTitle" column-name="promo_title_1cross" display-name-resource="oneXPromoTitle" writable="true">
+		  <attribute name="propertySortPriority" value="1"/>
+		  <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+		</property>		
+        <property name="promoContainer1" column-name="Promo_Containers1" display-name-resource="promoContainer1" item-type="mobilePromoBoxMultiContentType">
+          <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+			
+      </table>
+    </item-descriptor> 
+  
+  
+    <!--        promoBox2XMultiContentLayout    -->  
+   <item-descriptor name="mobilePromoBox2MultiContentLayout" cache-mode="simple" display-property="id" display-name-resource="containerWithTwoPromoBoxes" 
+   item-cache-size="100" item-cache-timeout="86400000" query-cache-size="100">
+      <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+      <table name="BBB_MOBILE_2PBOX_MULTI_CNTR" type="primary" id-column-names="promoboxtemp_id">
+      	<property name="id" column-name="promoboxtemp_id" display-name-resource="promoBoxContainerId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="twoXPromoTitle" column-name="promo_title_2cross" display-name-resource="twoXPromoTitle" writable="true">
+		  <attribute name="propertySortPriority" value="1"/>
+		  <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+		</property>		
+        <property name="promoContainer1" column-name="Promo_Containers1" display-name-resource="promoContainer1" item-type="mobilePromoBoxMultiContentType">
+          <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+        <property name="promoContainer2" column-name="Promo_Containers2" display-name-resource="promoContainer2" item-type="mobilePromoBoxMultiContentType">
+          <attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources"/>
+          <attribute name="propertySortPriority" value="3"/>
+        </property>
+        
+      </table>
+    </item-descriptor> 
+  
+  <!-- mobilePromoBoxMultiContentType -->
+   
+
+  <item-descriptor name="mobilePromoBoxMultiContentType"
+		display-name-resource="promoBoxMultiContentType" display-property="promoElementName"
+		cache-mode="simple" sub-type-property="type">
+		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+
+		<table name="BBB_MOBILE_PROMO_BOX_REL" type="primary" id-column-name="PROMOBOX_ID">
+			<property name="id" column-name="PROMOBOX_ID"
+				display-name-resource="carouselElementId" writable="true"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+			</property>
+			<property name="type" column-name="promo_content_type" required="true" 
+				display-name-resource="type" data-type="enumerated" default="Image"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+				<attribute name="uiwritable" value="false"/>
+				<attribute name="useCodeForValue" value="false" />
+				<option value="Image" code="0" />
+				<option value="Video" code="1" />
+				<option value="Static" code="2" />
+			</property>
+			<property name="promoElementName" column-name="promo_content_name"
+				display-name-resource="promoElementName" writable="true"
+				category-resource="Carousel" data-type="string">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="2" />
+			</property>
+			<property name="promoAltText" column-name="image_alt_text"
+				display-name-resource="promoAltText" data-type="string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="4" />
+			</property>
+			<property name="promoImageLink" column-name="image_link"
+				display-name-resource="promoImageLink" data-type="string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+			<property name="overlayImage" column-name="overlay_Image"
+				display-name-resource="overlayImage" data-type="string"
+				category-resource="Carousel">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+			</property>
+		</table>
+	</item-descriptor>
+	
+  <item-descriptor name="mobilePromoBoxImageContentType" display-name-resource="promoBoxImageContentType" display-property="promoElementName"
+		cache-mode="simple" sub-type-value="Image" super-type="mobilePromoBoxMultiContentType">
+		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+
+		<table name="BBB_MOBILE_PROMOBOX_CONTENT" type="auxiliary" id-column-names="PROMOBOX_ID">
+        	<property name="id" column-name="promobox_id" display-name-resource="promoBoxId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+            
+            <property name="imageUrl" column-names="image_url" display-name-resource="imageUrl" data-type="string"  required="true"/>
+            <property name="imageMapName" column-names="image_map_name" display-name-resource="imageMapName" data-type="string" hidden="true" />
+            <property name="imageMapContent" column-names="image_map_content" display-name-resource="imageMapContent" data-type="big string" hidden="true" />
+                        
+        </table>
+	</item-descriptor>
+	  
+
+  	<item-descriptor name="mobilePromoBoxVideoContentType" display-name-resource="promoBoxVideoContentType" display-property="promoElementName"
+		cache-mode="simple" sub-type-value="Video" super-type="mobilePromoBoxMultiContentType">
+		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+
+		<table name="BBB_MOBILE_PROMOBOX_CONTENT" type="auxiliary" id-column-names="PROMOBOX_ID">
+        	<property name="id" column-name="promobox_id" display-name-resource="promoBoxId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+            <property name="videoURL" column-names="image_url" display-name-resource="videoURL" data-type="string" hidden="true"/>
+            <property name="videoThumbnail" column-names="video_thumbnail" display-name-resource="videoThumbnail" data-type="string" hidden="true"/>
+            <property name="videoId" column-names="video_id" display-name-resource="videoId" data-type="string" required="true"/>
+            <property name="videoBKGroundImg" column-names="video_bkground_img_url" display-name-resource="videoBKGroundImgURL" data-type="string">          
+            <attribute name="propertySortPriority" value="2"/>
+            </property> 
+        </table>
+	</item-descriptor>
+	
+	
+	 <item-descriptor name="mobilePromoBoxStaticContentType" display-name-resource="promoBoxStaticContentType" display-property="promoElementName"
+		cache-mode="simple" sub-type-value="Static" super-type="mobilePromoBoxMultiContentType">
+		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+
+		<table name="BBB_MOBILE_PROMOBOX_CONTENT" type="auxiliary" id-column-names="PROMOBOX_ID">
+        	<property name="id" column-name="promobox_id" display-name-resource="promoBoxId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+        		<attribute name="propertySortPriority" value="0"/>	
+			</property>
+            <property name="promoBoxContent" column-names="promo_box_content" display-name-resource="promoBoxContent" data-type="big string"/>
+            
+            <property name="jsFilePath" column-name="js_file_path" display-name-resource="jsFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+	    		<attribute name="propertySortPriority" value="1"/>	
+	    	</property>
+	    	<property name="cssFilePath" column-name="css_file_path" display-name-resource="cssFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.cms.CustomLandingTemplateResources" />
+	    		<attribute name="propertySortPriority" value="2"/>	
+	    	</property>
+        </table>
+	</item-descriptor>	
+</gsa-template>

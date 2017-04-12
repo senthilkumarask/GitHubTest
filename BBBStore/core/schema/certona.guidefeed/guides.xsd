@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="GuideFeed" type="GuideFeedType"/>
+	<xs:complexType name="GuideFeedType">
+		<xs:sequence>
+			<xs:element name="GuideDetail" type="Guide" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level for inventory feedr</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Guide">
+		<xs:sequence>
+			<xs:element name="guideId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This field is guide id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="guideURL" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This field is URL to guide id</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="siteId" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This field is siteid to which guide is associated. Values will be BedBathUS, BuyBuyBaby and BedbathCanada</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="products" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>This is list of products associated with guide and seperated by comma</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

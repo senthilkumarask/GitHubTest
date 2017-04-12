@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBridalBookFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBridalBookFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.selfservice.formhandler.TestBridalBookFormHandler">
+		<group id="testHandleBridalBookRequest">
+			<test id="testHandleBridalBookRequest">
+				<objs>
+					<obj id="bridalBookFormHandler" type="com.bbb.selfservice.formhandler.BridalBookFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestBridalBookFormHandler">
+						<item type="string">/com/bbb/selfservice/BridalBookFormHandler</item>
+					</obj>
+					
+					<obj id="emailAddr" type="String">test1@example.com</obj>
+					<obj id="firstName" type="String">Sandeep</obj>
+					<obj id="lastName" type="String">Nayak</obj>
+					<obj id="addressLine1" type="String">ffffffff</obj>
+					<obj id="addressLine2" type="String">ffffff</obj>
+					<obj id="city" type="String">ffff</obj>
+					<obj id="state" type="String">CA</obj>
+					<obj id="zipcode" type="String">12313</obj>
+					<obj id="phoneNumber" type="String">2342342342</obj>
+					<obj id="emailOffer" type="Boolean">true</obj>
+					<obj id="eventDate" type="Date">17/04/2012</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testHandleTellAFriend">
+			<test id="testHandleTellAFriend">
+				<objs>
+					<obj id="bridalBookFormHandler" type="com.bbb.selfservice.formhandler.BridalBookFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestBridalBookFormHandler">
+						<item type="string">/com/bbb/selfservice/BridalBookFormHandler</item>
+					</obj>
+					<obj id="senderFirstName" type="String">lokesh</obj>
+					<obj id="senderLastName" type="String">Jon</obj>
+					<obj id="senderEmailAddr" type="String">test1@example.com</obj>
+					<obj id="recipientFirstName" type="String">Amit</obj>
+					<obj id="recipientLastName" type="String">kumar</obj>
+					<obj id="recipientEmailAddr" type="String">test1@sapient.com</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testHandleSendEmail">
+			<test id="testHandleSendEmail">
+				<objs>
+					<obj id="bridalBookFormHandler" type="com.bbb.selfservice.formhandler.BridalBookFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.formhandler.TestBridalBookFormHandler">
+						<item type="string">/com/bbb/selfservice/BridalBookFormHandler</item>
+					</obj>
+					<obj id="templateUrl" type="String">/store/emailtemplates/selfservice/tellafriend_emailer.jsp</obj>
+					<obj id="mailSubject" type="String">Tell A Friend - Bridal Book</obj>
+					<obj id="senderFirstName" type="String">Jon</obj>
+					<obj id="senderLastName" type="String">Jon</obj>
+					<obj id="senderEmailAddr" type="String">test1@example.com</obj>
+					<obj id="recipientFirstName" type="String">Amit</obj>
+					<obj id="recipientLastName" type="String">kumar</obj>
+					<obj id="recipientEmailAddr" type="String">test1@sapient.com</obj>
+					<obj id="emailCopy" type="Boolean">true</obj>
+					<obj id="siteContextManager" type="com.bbb.cms.droplet.BBBGetRootCategoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestBBBGetRootCategoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBB:3915">
+  <ReviewIssue id="IRE85KYA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 21:38:20:626 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 21:38:44:455 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sreekanth</ReviewerId>
+    <AssignedTo>sreekanth</AssignedTo>
+    <File line="27">j2ee-apps/tbs/tbs.war/_includes/mPulse.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Any reason for commenting vendor code, we should set vendor name too</Summary>
+    <Description>&lt;%-- &lt;c:when test="${sessionScope.VendorParam ne null}"&gt;
+ 		&lt;c:set var="vendorName" value="${sessionScope.VendorParam}_SearchVendor_Sitespect"/&gt;
+ 		&lt;c:set var="mPulseTaggingVariable"&gt;&lt;bbbc:config key="${vendorName}" configName="VendorKeys" /&gt;&lt;/c:set&gt;
+ 	&lt;/c:when&gt; --%&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-364">
+  <ReviewIssue id="IQIG6QV8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 15:54:34:244 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:27:04:849 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="41">src/com/bbb/commerce/giftregistry/droplet/SelectHeaderDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>BBBPresentationDroplet </Summary>
+    <Description> Why do we have to extend BBBPresentationDroplet ?. 
+1.Move all constants to BBBDynamoServlet.
+/** The oparam name rendered once during processing. */
+	public static final String OPARAM_OUTPUT = "output";
+
+	/** The Constant OPARAM_ERROR. */
+	public static final String OPARAM_ERROR = "error";
+
+	/** The Constant OPARAM_EMPTY. */
+	public static final String OPARAM_EMPTY = "empty";	
+	
+	/** The Constant OUTPUT_ERROR_MSG. */
+	public static final String OUTPUT_ERROR_MSG = "errorMsg";
+
+2.Droplet defined as request scope to refer giftRegSessionBean=/com/bbb/commerce/giftregistry/bean/GiftRegSessionBean  session component.
+
+3. Pass the session object as a param to droplet for manipulation
+
+
+	</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIHPIC1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:37:09:265 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:39:37:608 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="2065">src/com/bbb/commerce/giftregistry/tool/GiftRegistryTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Removed Unwanted imports</Summary>
+    <Description>example  :import java.sql.Statement;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIHR10K">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:38:20:132 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 16:39:15:592 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="13">src/com/bbb/commerce/giftregistry/tool/GiftRegistryTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>regItemsWSCall - It is unused and can be removed</Summary>
+    <Description>It applies to all unused variables</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQIJJZN3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 17:28:50:991 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 17:34:53:928 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="2338">src/com/bbb/commerce/giftregistry/tool/GiftRegistryTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add Log debug statements  by capturing all input params, output params</Summary>
+    <Description>Add Log debug statements  by capturing all input params, output params  . It applies to all the methods</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

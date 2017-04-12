@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.TestCybersourceIntegration">
+       <group id="testCybersourceTax">
+        <test id="testCybersourceTax">
+			<objs>
+				<obj id="csConnection" type="com.bbb.commerce.order.TestCybersourceIntegration" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestCybersourceIntegration">
+					<item type="string">/atg/integrations/cybersourcesoap/CyberSourceConnection</item>
+				</obj>
+			</objs>			 
+        </test>
+      </group>
+      <group id="testCybersourceCreditCard">
+        <test id="testCybersourceCreditCard">
+			<objs>
+				<obj id="csConnection" type="com.bbb.commerce.order.TestCybersourceIntegration" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestCybersourceIntegration">
+					<item type="string">/atg/integrations/cybersourcesoap/CyberSourceConnection</item>
+				</obj>
+			</objs>			 
+        </test>
+      </group>
+    </cluster>
+</ddtunit>
+

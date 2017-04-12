@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileServices.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileServices.java test case
+
+  HISTORY:
+  Nov 24, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.profile.TestFeedFileParser">
+		<group id="testWriteProfileFeedResponse">
+     		<test id="testWriteProfileFeedResponse_test1">
+				<objs>
+					<obj id="feedFileParser" type="com.bbb.account.profile.FeedFileParserImpl" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestFeedFileParser">
+						<item type="string">/com/bbb/account/profile/FeedFileParser</item>
+					</obj>
+					<obj id="profileFeedSuccessResponseLocation" type="string">/u02/profileFeedSuccessResponse.txt</obj>
+					<obj id="profileFeedFailureResponseLocation" type="string">/u02/profileFeedFailureResponse.txt</obj>
+					<obj id="id" type="string">1</obj>
+					<obj id="memberId" type="string">10025</obj>
+					<obj id="email" type="string">test@sapient.com</obj>
+					<obj id="siteId" type="string">BEDBATHBEYOND</obj>
+					<obj id="firstName" type="string">firstName</obj>
+					<obj id="lastName" type="string">lastName</obj>
+					<obj id="phoneNumber" type="string">phoneNumber</obj>
+					<obj id="mobileNumber" type="string">mobileNumber</obj>
+					<obj id="optInFlag" type="string">true</obj>
+					<obj id="lastModifiedDateAsString" type="string">11/11/2011 09:00</obj>
+					<obj id="favStoreId" type="string">10000</obj>
+					<obj id="profileId" type="string">DC10001</obj>
+					<obj id="error" type="string">false</obj>
+					<obj id="errorCode" type="string"></obj>
+					<obj id="responseMessage" type="string">Successful</obj>
+				</objs>      
+     		</test>
+   		</group>
+   		<group id="testReadProfileFeed">
+     		<test id="testReadProfileFeed_test1">
+				<objs>
+					<obj id="feedFileParser" type="com.bbb.account.profile.FeedFileParserImpl" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestFeedFileParser">
+						<item type="string">/com/bbb/account/profile/FeedFileParser</item>
+					</obj>
+					<obj id="profileFeedLocation" type="string">/u02/profileFeedSuccessResponse.txt</obj>
+					<obj id="id" type="string">1</obj>
+				</objs>      
+     		</test>
+   		</group>
+   		<group id="testWriteRegistryAndCoRegistrantResponseFeed">
+     		<test id="testWriteRegistryAndCoRegistrantResponseFeed_test1">
+				<objs>
+					<obj id="feedFileParser" type="com.bbb.account.profile.FeedFileParserImpl" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestFeedFileParser">
+						<item type="string">/com/bbb/account/profile/FeedFileParser</item>
+					</obj>
+					<obj id="registryFeedSuccessResponseLocation" type="string">/u02/opt/feedpath/registryFeedSuccessResponse.txt</obj>
+					<obj id="coregistrantFeedSuccessResponseLocation" type="string">/u02/opt/feedpath/CoregistrantFeedSuccessResponse.txt</obj>
+					<obj id="registryFeedFailureResponseLocation" type="string">/u02/opt/feedpath/registryFeedFailureResponse.txt</obj>
+					<obj id="coregistrantFeedFailureResponseLocation" type="string">/u02/opt/feedpath/CoregistrantFeedFailureResponse.txt</obj>
+					<obj id="id" type="string">1</obj>
+					<obj id="registryId" type="string">100011</obj>
+					<obj id="email" type="string">test@sapient.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="registryType" type="string">BIRTHDAY</obj>
+					<obj id="eventDate" type="string">10/10/2010</obj>
+					<obj id="isRegistrant" type="string">true</obj>
+					<obj id="profileId" type="string">DC10001</obj>
+					<obj id="errorCode" type="string"></obj>
+					<obj id="responseMessage" type="string">Successful</obj>
+				</objs>      
+     		</test>
+   		</group>
+   		<group id="testReadRegistryFeed">
+     		<test id="testReadRegistryFeed_test1">
+				<objs>
+					<obj id="feedFileParser" type="com.bbb.account.profile.FeedFileParserImpl" hint="call" method="resolveName" calltype="com.bbb.account.profile.TestFeedFileParser">
+						<item type="string">/com/bbb/account/profile/FeedFileParser</item>
+					</obj>
+					<obj id="registryFeedResponseLocation" type="string">/u02/registryFeedSuccessResponse.txt</obj>
+					<obj id="id" type="string">1</obj>
+				</objs>      
+     		</test>
+   		</group>
+    </cluster>
+</ddtunit>

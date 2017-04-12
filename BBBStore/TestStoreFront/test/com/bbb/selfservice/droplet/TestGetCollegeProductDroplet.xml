@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. 
+	FILE: TestGetCollegeProductDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestGetCollegeProductDroplet.java test case 
+	HISTORY: DEc 30, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.droplet.TestGetCollegeProductDroplet">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>
+					<obj id="getCollegeProductDroplet" type="com.bbb.selfservice.droplet.GetCollegeProductDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.droplet.TestGetCollegeProductDroplet">
+						<item type="string">/com/bbb/selfservice/GetCollegeProductDroplet</item>
+					</obj>
+				<obj id="collegeId" type="string">10008</obj>	
+				<obj id="siteId" type="string">BuyBuyBaby</obj>	
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Cart_Full_DisplayItems_Harsh">
+  <ReviewIssue id="GVX2THM3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:16:36:843 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:25:33:385 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="29">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>We need to pass order to the droplet. Also move this droplet call to a fragment</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX33EHR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:24:19:359 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 03:58:22:977 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="33">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Move the error display before the div productListWrapper</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX35TB7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:26:11:875 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:19:25:256 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="61">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>This line should be inside the oparam output</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX37A2I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:27:20:250 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:18:57:264 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="72">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What are these label lbl_cartdetail_thebridal, seems specific to BuyBuyBaby. Cart page should be same for all 3 sites.</Summary>
+    <Description>How to handle this ? As in mark ups we are displaying Registrey name.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX3EP7O">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:33:06:468 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:16:53:874 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="118">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>I was suggesting writing a method in skuDetailVo, which loops through the states and create a comma separated sting, so that we can reuse all hte places for display.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX3O3GC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:40:24:828 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 20:46:35:062 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="120">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Need to add one more condition for BTS, packNHold window.</Summary>
+    <Description>I will have to discuss with Raj and Jyoti.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX68CVI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 21:52:09:390 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:56:08:699 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="102">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>We need else condition for OUT_OF_STOCK</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Similar condition for store items.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6AAHL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 21:53:39:609 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:55:21:057 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="122">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Surcharge needs to be displayed</Summary>
+    <Description>where to display the surcharge? at CI level or cart order summary level</Description>
+    <Annotation></Annotation>
+    <Revision>Message need to be displayed, if there is any surcharge</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6CDLL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 21:55:16:953 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 03:56:51:260 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="102">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Need to display City, State and zipCode</Summary>
+    <Description>for store details?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6E6A5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 21:56:40:781 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:42:13:492 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="124">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Condition is wrong for 'Ship This Item'/'Pickup This Item'</Summary>
+    <Description>If StoreId is null and skuDetailVO.bopusAllowed then display Pickup This Item Else display Ship This Item End.</Description>
+    <Annotation></Annotation>
+    <Revision>The else part is wrong, it should be c:when storeId ne null</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6HB6D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 21:59:07:093 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 05:41:51:775 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="154">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>ID should be unique, check with siteDev and also append commerceItemId.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6JF5M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:00:45:562 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 05:41:54:015 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="157">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove this text field</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6L6Y2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:02:08:234 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 03:56:58:662 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="158">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The ID attribute needs to be unique. Append CI.id and same needs to be appened in the onClick call.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6NAS3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:03:46:515 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 05:41:57:471 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="160">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>No need to do pageContext.request.locale.language again &amp; again, we should have this set in a var at top</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6OTAR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:04:57:171 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:36:34:060 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="163">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Remove giftListIds, quantity and loginURL from href. It should be pulled in handle method, no need to pass from href.</Summary>
+    <Description>giftListId ,loginUrl is removed from the href, only quantity is being passed as a part of href.</Description>
+    <Annotation></Annotation>
+    <Revision>quantity is not moved, lets only pass the commerceItemId, and first try to get teh CommerceItem and its quantity from Order</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6SJMA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:07:51:250 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 17:52:04:586 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="188">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>% saved is not displayed</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>unitSavedPercentage is not getting displayed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.reopened</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVX6UCS7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 22:09:15:703 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 07:50:46:333 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="249">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check with Raj and Make all part of one CMS key</Summary>
+    <Description>CMS key should include text and link to view shipping cost</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVZQDD5Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:51:27:719 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 16:52:58:645 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="129">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Logic is incorrect, it has to come from CartItemVO from AvailabilityMap</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVZQTMK2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 17:04:06:386 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 17:04:45:875 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Asit_kumar</ReviewerId>
+    <AssignedTo>Asit_kumar</AssignedTo>
+    <File line="289">j2ee-apps/BBBStore/store.war/cart/cart.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Check with AM SS track on how to integrate chat. Chat should be at the top, check with site dev, why are we adding here.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

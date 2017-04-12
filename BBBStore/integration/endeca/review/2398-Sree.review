@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="2398">
+  <ReviewIssue id="IMW7T6YD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 12:30:02:101 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 12:30:59:349 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sree</ReviewerId>
+    <AssignedTo>Sree</AssignedTo>
+    <File line="1438">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do we need for loop as we are requesting max one record from endeca?</Summary>
+    <Description>for (Object eRecObj : eRecs) {
+					  ERec eRec = (ERec) eRecObj;
+					  
+					  PropertyMap properties = eRec.getProperties();
+					  String omnitureKeyword = (String)properties.get(BBBEndecaConstants.NTK_L2_BOOST_SEARCH_TERM);
+					  
+					   if(properties !=null &amp;&amp; topPopularTerm.equalsIgnoreCase(omnitureKeyword)) {
+						   String boostedL2s = (String)properties.get(BBBEndecaConstants.L2_BOOST_L2S);
+						   String[] L2Data = boostedL2s.split(BBBEndecaConstants.OCB_L2_DEL);
+						   for (String categoryData : L2Data) {
+							  
+							  CategoryVO subCategoryVO = new CategoryVO();
+							  String[] ocbCategoryData = categoryData.split(BBBEndecaConstants.OCB_DATA_DEL);
+							  subCategoryVO.setCategoryName(ocbCategoryData[BBBEndecaConstants.OCB_DATA_L2_NAME_INDEX]);
+							  subCategoryVO.setCategoryId(ocbCategoryData[BBBEndecaConstants.OCB_DATA_L2_ID_INDEX]);
+							  omnitureBoostedL2List.add(subCategoryVO);
+						   }
+					   }
+					}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

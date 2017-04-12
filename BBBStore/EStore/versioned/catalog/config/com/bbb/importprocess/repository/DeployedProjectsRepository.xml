@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<item-descriptor name="saved-project-info" cache-mode="simple"
+		   item-cache-size="500" query-cache-size="500">
+		<table name="BBB_DEPLOYED_PROJECTS" type="primary" id-column-name="project_id">
+			<property name="projectId" column-name="project_id"	data-type="string" category-resource="BBBProject" />
+			<property name="projectName" column-name="project_name" data-type="string" category-resource="BBBProject" />
+			<property name="deploymentTime" column-name="deployment_time" data-type="timestamp" category-resource="BBBProject" />
+			<property name="projectType" column-name="project_type" data-type="string" category-resource="BBBProject" />
+		</table>
+		<table name="BBB_PROJECT_ASSETS" type="multi" id-column-names="project_id"	multi-column-name="sequence_num">
+			<property name="projectAssetsURI" column-names="asset_uri" data-type="list" component-data-type="string" category-resource="BBBProjectAssets">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources" />
+				<attribute name="propertySortPriority" value="1" />
+			</property>
+		</table>
+	</item-descriptor>
+</gsa-template>

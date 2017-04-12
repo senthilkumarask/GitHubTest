@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.wishlist.TestMoveWishListItemToRegistry">
+		
+
+		<group id="testMoveWishListItemToRegistry">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">wishlisttoregistryuser@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="wishListItemId" type="string">DC1gi3360004</obj>	
+					<obj id="registryId" type="string">185826870</obj>	
+					<obj id="moveWishListItemToRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/moveWishListItemToRegistry</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"prod60011","qty":"1","price":"$38.99"}],"parentProdId":"prod60011"}</obj>
+					<obj id="jsonResultString1" type="string">{"addItemResults":[{"skuId":"18111969","prodId":"1018111969","qty":"1","price":"$299.99"}],"parentProdId":"1018111969"}</obj>
+					<obj id="jsonResultString2" type="string">{"addItemResults":[{"skuId":"18137712","prodId":"1018137712","qty":"1","price":"$11.99"}],"parentProdId":"1018137712"}</obj>
+					<obj id="addWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/addItemListToGiftlist</obj>
+				</objs> 
+			</test>
+		</group>		
+		
+		
+		<group id="testMoveWishListItemToRegistryException">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">wishlisttoregistryuser@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="wishListItemId" type="string">DC1gi3360004</obj>	
+					<obj id="registryId" type="string">185826870</obj>	
+					<obj id="moveWishListItemToRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/moveWishListItemToRegistry</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"prod60011","qty":"1","price":"$38.99"}],"parentProdId":"prod60011"}</obj>
+					<obj id="jsonResultString1" type="string">{"addItemResults":[{"skuId":"18111969","prodId":"1018111969","qty":"1","price":"$299.99"}],"parentProdId":"1018111969"}</obj>
+					<obj id="jsonResultString2" type="string">{"addItemResults":[{"skuId":"18137712","prodId":"1018137712","qty":"1","price":"$11.99"}],"parentProdId":"1018137712"}</obj>
+					<obj id="addWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/addItemListToGiftlist</obj>
+				</objs> 
+			</test>
+		</group>		
+			
+		
+		<group id="testInvalidRegistryId">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">wishlisttoregistryuser@bbb.com</obj>
+						<obj id="password" type="string">Sapient123</obj>
+					<obj id="wishListItemId" type="string">DC1gi3360004</obj>	
+					<obj id="registryId" type="string">185820000</obj>	
+					<obj id="moveWishListItemToRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/moveWishListItemToRegistry</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"prod60011","qty":"1","price":"$38.99"}],"parentProdId":"prod60011"}</obj>
+					<obj id="jsonResultString1" type="string">{"addItemResults":[{"skuId":"18111969","prodId":"1018111969","qty":"1","price":"$299.99"}],"parentProdId":"1018111969"}</obj>
+					<obj id="jsonResultString2" type="string">{"addItemResults":[{"skuId":"18137712","prodId":"1018137712","qty":"1","price":"$11.99"}],"parentProdId":"1018137712"}</obj>
+					<obj id="addWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/addItemListToGiftlist</obj>
+				</objs> 
+			</test>
+		</group>	
+		
+		
+			<group id="testMoveWishListItemToRegistryNonLoggedInUser">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">wishlisttoregistryuser@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="wishListItemId" type="string">DC1gi3360004</obj>	
+					<obj id="registryId" type="string">185820000</obj>	
+					<obj id="moveWishListItemToRegistry" type="string">/rest/bean/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler/moveWishListItemToRegistry</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"prod60011","qty":"1","price":"$38.99"}],"parentProdId":"prod60011"}</obj>
+					<obj id="jsonResultString1" type="string">{"addItemResults":[{"skuId":"18111969","prodId":"1018111969","qty":"1","price":"$299.99"}],"parentProdId":"1018111969"}</obj>
+					<obj id="jsonResultString2" type="string">{"addItemResults":[{"skuId":"18137712","prodId":"1018137712","qty":"1","price":"$11.99"}],"parentProdId":"1018137712"}</obj>
+					<obj id="addWishListRequest" type="string">/rest/bean/atg/commerce/gifts/GiftlistFormHandler/addItemListToGiftlist</obj>
+				</objs> 
+			</test>
+		</group>	
+	</cluster>
+</ddtunit>
+ 

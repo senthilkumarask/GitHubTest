@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://bedbathandbeyond.com/atg" targetNamespace="http://bedbathandbeyond.com/atg" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:include schemaLocation="bbb-common.xsd"/>
+	<xs:complexType name="ProfileRequestVO">
+		<xs:sequence>
+			<xs:element name="email" nillable="false" type="xs:string" />
+			<xs:element name="emailOptIn"  type="xs:boolean" />
+			<xs:element name="firstName" nillable="false" type="xs:string" />
+			<xs:element name="lastName" nillable="false" type="xs:string" />
+			<xs:element name="password" nillable="false" type="xs:string" />
+			<xs:element name="confirmPassword" nillable="false" type="xs:string" />
+			<xs:element name="phoneNumber" nillable="true" type="xs:string" />
+			<xs:element name="mobileNumber" nillable="true" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="autoExtendProfile" nillable="false" type="xs:boolean"/>
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProfileResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" type="ErrorList" nillable="true" minOccurs="0"/>
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LoginRequestVO">
+		<xs:sequence>
+			<xs:element name="autoExtendProfile" type="xs:boolean" />
+			<xs:element name="loginId" nillable="false" type="xs:string" />
+			<xs:element name="loginProfileId" type="xs:boolean" />
+			<xs:element name="password" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LoginResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="profileAutoExtended" type="xs:boolean" />
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ForgotPasswordRequestVO">
+		<xs:sequence>
+			<xs:element name="email" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ForgotPasswordResponseVO">
+		<xs:sequence>
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="resetSuccess" type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProfileInfoRequestVO">
+		<xs:sequence>
+			<xs:element name="autoExtendProfile" type="xs:boolean" default="true"/>
+			<xs:element name="email" nillable="true" type="xs:string" />
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+			<xs:element name="password" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ProfileInfoResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="autoExtend" type="xs:boolean" />
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+			<xs:element name="firstName" nillable="true" type="xs:string" />
+			<xs:element name="lastName" nillable="true" type="xs:string" />
+			<xs:element name="email" nillable="true" type="xs:string" />
+			<xs:element name="phone" nillable="true" type="xs:string" />
+			<xs:element name="mobile" nillable="true" type="xs:string" />
+			<xs:element name="defaultShippingAddress" nillable="true" type="Address" />
+			<xs:element name="defaultBillingAddress" nillable="true" type="Address" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BillingAddressRequestVO">
+		<xs:sequence>
+			<xs:element name="email" nillable="false" type="xs:string" />
+			<xs:element name="profileId" nillable="false" type="xs:string" />
+			<xs:element name="securityToken" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BillingAddressResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+			<xs:element name="email" nillable="true" type="xs:string" />
+			<xs:element name="defaultBillingAddress" nillable="true" type="Address" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LinkProfileAndRegistryResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="profileId" nillable="true" type="xs:string" />
+			<xs:element name="coRegProfileId" nillable="true" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LinkProfileAndRegistryRequestVO">
+		<xs:sequence>
+			<xs:element name="profileId" nillable="false" type="xs:string" />
+			<xs:element name="regId" nillable="false" type="xs:string" />
+			<xs:element name="eventType" nillable="false" type="xs:string" />
+			<xs:element name="eventDate" nillable="false" type="xs:string" />
+			<xs:element name="coRegEmail" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LinkCoRegistrantsResponseVO">
+		<xs:sequence>
+			<xs:element name="error" type="xs:boolean" />
+			<xs:element name="exceptions" nillable="true" type="ErrorList" minOccurs="0"/>
+			<xs:element name="coRegProfileId" nillable="true" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="LinkCoRegistrantsRequestVO">
+		<xs:sequence>
+			<xs:element name="coRegEmail" nillable="false" type="xs:string" />
+			<xs:element name="regId" nillable="false" type="xs:string" />
+			<xs:element name="eventDate" nillable="false" type="xs:string" />
+			<xs:element name="eventType" nillable="false" type="xs:string" />
+			<xs:element name="siteId" nillable="false" type="xs:string" />
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ResponseVO">
+		<xs:sequence>
+			<xs:element name="authorzied" type="xs:boolean"/>
+			<xs:element name="message" nillable="true" type="xs:string"/>
+			<xs:element name="profileBasicVO" nillable="true" type="ProfileBasicVO"/>
+			<xs:element name="responseType" nillable="true" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RequestVO">
+		<xs:sequence>
+			<xs:element name="ipAddress" nillable="false" type="xs:string"/>
+			<xs:element name="requestType" nillable="false" type="xs:int"/>
+			<xs:element name="siteId" nillable="false" type="xs:string"/>
+			<xs:element name="source" nillable="false" type="xs:string"/>
+			<xs:element name="token" nillable="false" type="xs:string"/>
+			<xs:element name="appId" nillable="false" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ErrorList">
+		<xs:sequence>
+			<xs:element name="exception" type="Error" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>		
+	<xs:complexType name="Error">
+		<xs:sequence>
+			<xs:element name="code" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>	
+	<xs:complexType name="ProfileBasicVO">
+		<xs:sequence>
+			<xs:element name="addressLine1" nillable="false" type="xs:string"/>
+			<xs:element name="addressLine2" nillable="true" type="xs:string"/>
+			<xs:element name="city" nillable="false" type="xs:string"/>
+			<xs:element name="country" nillable="false" type="xs:string"/>
+			<xs:element name="email" nillable="false" type="xs:string"/>
+			<xs:element name="firstName" nillable="false" type="xs:string"/>
+			<xs:element name="lastName" nillable="false" type="xs:string"/>
+			<xs:element name="mobile" nillable="true" type="xs:string"/>
+			<xs:element name="phoneNum" nillable="true" type="xs:string"/>
+			<xs:element name="state" nillable="false" type="xs:string"/>
+			<xs:element name="zipcode" nillable="false" type="xs:string"/>
+			<xs:element name="profileId" nillable="false" type="xs:string"/>
+			<xs:element name="emailOptIn"  type="xs:boolean" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="profileRequestVO" type="ProfileRequestVO"/>
+	<xs:element name="profileResponseVO" type="ProfileResponseVO"/>
+	<xs:element name="loginRequestVO" type="LoginRequestVO"/>
+	<xs:element name="loginResponseVO" type="LoginResponseVO"/>
+	<xs:element name="forgotPasswordRequestVO" type="ForgotPasswordRequestVO"/>
+	<xs:element name="forgotPasswordResponseVO" type="ForgotPasswordResponseVO"/>
+	<xs:element name="profileInfoRequestVO" type="ProfileInfoRequestVO"/>
+	<xs:element name="profileInfoResponseVO" type="ProfileInfoResponseVO"/>
+	<xs:element name="linkProfileRequestVO" type="LinkProfileAndRegistryRequestVO"/>
+	<xs:element name="linkProfileResponseVO" type="LinkProfileAndRegistryResponseVO"/>
+	<xs:element name="linkCoRegistrantRequestVO" type="LinkCoRegistrantsRequestVO"/>
+	<xs:element name="linkCoRegistrantResponseVO" type="LinkCoRegistrantsResponseVO"/>
+	<xs:element name="billingAddressRequestVO" type="BillingAddressRequestVO"/>
+	<xs:element name="billingAddressResponseVO" type="BillingAddressResponseVO"/>
+	<xs:element name="requestVO" type="RequestVO"/>
+	<xs:element name="responseVO" type="ResponseVO"/>
+</xs:schema>

@@ -1,0 +1,67 @@
+	<li class="storeInformation">
+         <ul class="clearfix">
+         <li class="column1">
+         <div class="fl">
+         <div class="clearfix">
+         <label for="radioStoreAddress_33" class="storeAdd">
+         <div class="storeName upperCase"><strong>${storeDetail.storeName}</strong>
+         </div>
+         <div class="miles">(
+         <dsp:valueof value="${storeDetail.distance}" converter="number" />
+         <bbbl:label key="lbl_store_route_miles" language="${pageContext.request.locale.language}" />) </div>
+         <div class="street">${storeDetail.address}</div>
+         <div class="city">${storeDetail.city}</div>
+         <div class="state">${storeDetail.state}&nbsp;${storeDetail.postalCode}</div>
+         <div class="phoneNo">${storeDetail.storePhone}</div>
+         </label>
+         <!-- <p> 
+            </p> -->
+         <c:if test="${favStoreId == storeId}">
+         <div class="actionLinkForFavouriteStore">
+         <p class="marTop_5">
+         <c:choose>
+         <c:when test="${currentSiteId eq 
+            'BedBathCanada'}">
+         <a class="editFavouriteStore"
+            href="${contextPath}/selfservice/store/canada_store_locator.jsp?favStoreId=${storeDetail.postalCode}">
+         <bbbl:label 
+            key="lbl_edit_favorite_store" language="${pageContext.request.locale.language}" />
+         </a>
+         </c:when>
+         <c:otherwise>
+         <a class="editFavouriteStore"
+            href="${contextPath}/selfservice/store/find_store.jsp?favStoreId=${storeDetail.postalCode}">
+         <bbbl:label 
+            key="lbl_edit_favorite_store" language="${pageContext.request.locale.language}" />
+         </a>
+         </c:otherwise>
+         </c:choose>
+         </p>
+         </div>
+         </c:if>
+         </div>
+         </div>
+         </li>
+         <li class="column2 resultStoreWrapper">
+         ${storeDetail.weekdaysStoreTimings}
+         <div>
+         ${storeDetail.satStoreTimings}
+         </div>
+         <div>
+         ${storeDetail.sunStoreTimings}
+         </div>
+         <div>
+         ${storeDetail.otherTimings1}
+         </div>
+         <div>
+         ${storeDetail.otherTimings2}
+         </div>
+         </li>
+		 
+         <li class="column3 noPadRight resultStoreWrapper">
+		 <input type="button" data-field-storeid='${storeId}' class="button-Med btnPrimary storeAddtoCart selectStore" 
+            value="Select Store" onclick="redirectWithStoreID('${storeId}')" aria-label="Select ${storeDetail.storeName} as your local store">
+         </li>
+              
+         </ul>
+	</li>

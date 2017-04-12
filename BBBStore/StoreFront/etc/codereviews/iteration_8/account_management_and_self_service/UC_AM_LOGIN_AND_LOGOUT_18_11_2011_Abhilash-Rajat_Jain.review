@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_AM_LOGIN_AND_LOGOUT_18_11_2011_Abhilash">
+  <ReviewIssue id="GV9ZOWBC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 03:00:21:720 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 17:58:41:424 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Abhilash_khajuria</AssignedTo>
+    <File line="17">j2ee-apps/BBBStore/store.war/account/login.jsp</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>The Contextual Message On Login Page Needs To Be Targeted</Summary>
+    <Description>Per the Annotation B in section 8.2 of AM BRD this message needs to be targeted/personalized for the user depending on from where the user is coming from. If this is to be covered as a different (personalization) story then thats okay and this comment can be addressed/closed as part of that other story. Pasting the annotation below for quick reference - 
+"This text will vary depending on the context of what triggered the user to require sign-in/registration.
+So far the identified scenarios are -
+(i)	User trying to post a review
+(ii)	User trying to add to wishlist
+(iii)	User trying to add to registry
+(iv)	User trying to go to Levolor site
+(v)	User trying to create a registry"</Description>
+    <Annotation></Annotation>
+    <Revision>As discussed with rajat and gaurav. This is not the part of this story. As of now it is closed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV9ZX1K6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 03:06:41:766 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 03:07:52:519 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Abhilash_khajuria</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/account/login.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>W3C Validation Failure</Summary>
+    <Description>On doing a W3C Validation of the page I got - 4 Errors, 4 warning(s).
+Please work with site devs to get these errors fixed, you can use the parser at - http://validator.w3.org/check.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVA0ITXB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 03:23:38:303 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-22 :: 22:53:06:350 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Abhilash_khajuria</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/account/myaccount.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>The Target Of Logout Has To Be The Home Page</Summary>
+    <Description>Per the AM BRD Section 6.3 Annotation C and the Process Flow in section 5.5, the target of the Logout has to be the home page and not the Login Page.</Description>
+    <Annotation></Annotation>
+    <Revision>resolved</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

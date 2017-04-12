@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<!-- 
+  Copyright 2011, BBB  All Rights Reserved.
+  Reproduction or use of this file without express written
+  consent is prohibited.
+  FILE:  TestNavigationSearchFormHandler.xml
+  DESCRIPTION: ddtunit data file for TestNavigationSearchFormHandler.java test case
+  HISTORY:  May 2, 2012  Initial version
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager">
+      <group id="testGetPayPalRedirectURL">
+        <test id="testGetPayPalRedirectURL_test1">
+			<objs>
+				<obj id="paypalManager" type="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager">
+					<item type="string">/com/bbb/commerce/order/paypal/PayPalServiceManager</item>
+           		</obj>
+           		</objs>
+           		</test>
+      </group>   
+      <group id="testAddressInOrder">
+        <test id="testAddressInOrder_test1">
+			<objs>
+				<obj id="paypalManager" type="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager">
+					<item type="string">/com/bbb/commerce/order/paypal/PayPalServiceManager</item>
+           		</obj>
+           		<obj id="commerceItemManager" type="com.bbb.commerce.order.BBBCommerceItemManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBCommerceItemManager">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+           		</obj>			
+				   <obj id="bbbOrderManager" type="com.bbb.commerce.order.TestBBBOrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>
+                <obj id="shippingGroupManager" type="com.bbb.commerce.order.BBBShippingGroupManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBShippingGroupManager">
+                    <item type="string">/atg/commerce/order/ShippingGroupManager</item>
+                </obj>
+                <obj id="catalogTools" type="com.bbb.commerce.catalog.BBBCatalogToolsImpl" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/BBBCatalogTools</item>
+				</obj>
+				<obj id="sku" type="string">sku60010</obj>
+				 <obj id="orderId" type="string">
+						111222333
+			   </obj>
+           	</objs>          		
+          </test>
+      </group>
+      <group id="testValidateCoupons">
+        <test id="testValidateCoupons_test1">
+			<objs>
+				<obj id="paypalManager" type="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager">
+					<item type="string">/com/bbb/commerce/order/paypal/PayPalServiceManager</item>
+           		</obj>		
+				   <obj id="bbbOrderManager" type="com.bbb.commerce.order.TestBBBOrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>				
+				 <obj id="orderId" type="string">
+						111222333
+			   </obj>
+			    <obj id="firstName" type="String">TestFname</obj>
+				<obj id="middleName" type="String">TestMname</obj>
+				<obj id="lastName" type="String">TestLname</obj>
+				<obj id="address1" type="String">1855 Saint Fransis street</obj>
+				<obj id="address2" type="String">Metropoliatan 1307</obj>
+				<obj id="city" type="String">Reston</obj>
+				<obj id="zipCode" type="String">20190</obj>
+				<obj id="email" type="String">test1@sapient.com</obj>
+				<obj id="phoneNumber" type="String">5714360771</obj>
+				<obj id="state" type="String">VA</obj>				
+			   <obj id="bbbProfileTools" type="com.bbb.account.BBBProfileTools" hint="call" method="resolveName" calltype="com.bbb.account.TestBBBProfileFormHandler">
+					<item type="string">/atg/userprofiling/ProfileTools</item>
+				</obj>
+				<obj id="email" type="string">amit_1@example.com</obj>
+           	</objs>          		
+           </test>
+      </group>
+      <group id="testIsTokenExpired">
+        <test id="testIsTokenExpired_test1">
+			<objs>
+				<obj id="paypalManager" type="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.paypal.TestBBBPayPalServiceManager">
+					<item type="string">/com/bbb/commerce/order/paypal/PayPalServiceManager</item>
+           		</obj>		
+				   <obj id="bbbOrderManager" type="com.bbb.commerce.order.TestBBBOrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBOrderManager">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>				
+				 <obj id="orderId" type="string">
+						111222333
+			   </obj>		 
+           	</objs>          		
+          </test>
+      </group>
+    </cluster>
+</ddtunit>

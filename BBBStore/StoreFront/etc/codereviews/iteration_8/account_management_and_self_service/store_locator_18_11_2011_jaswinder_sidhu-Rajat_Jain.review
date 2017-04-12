@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="store_locator_18_11_2011_jaswinder_sidhu">
+  <ReviewIssue id="GVCSTMBG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 15:41:23:260 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 15:42:26:365 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="1">j2ee-apps/BBBStore/store.war/selfservice/store/find_store.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>W3C Validation Failed 11 Errors, 4 warning(s)</Summary>
+    <Description>For Find In Store Page the W3C validation failed with 11 Errors, 4 warning(s).
+You can verify this using the parser at - http://validator.w3.org/check. All W3C validation errors should be fixed.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCTB7FO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 15:55:03:780 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 16:10:03:638 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="12">j2ee-apps/BBBStore/store.war/selfservice/store/find_store.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Hardcoding of Content</Summary>
+    <Description>All this content for Find a Store and the description should come from CMS. This should not be hardcoded in the JSP.
+
+Note I am seeing more hard coding of content below under import store_search_field.jsp as well - not repeating the comment again. Treat this as the generic comment to remove all hard coding from JSP and make sure all the content comes from CMS.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCTE3VB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 15:57:19:127 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 16:05:47:353 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Rajat_Jain</AssignedTo>
+    <File line="26">j2ee-apps/BBBStore/store.war/selfservice/store/find_store.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Hardcoding of Promo Image</Summary>
+    <Description>Per the BRD annotation even the Promo Image should not be hardcoded, it needs to come from CMS too (I see your comment too on waiting for th key, but still providing this feedback for tracking).</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

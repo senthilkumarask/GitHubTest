@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BabyCanadaRedirect(BBBR-31) - Desktop">
+  <ReviewIssue id="HW25WUPH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-05 :: 20:01:27:605 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-05 :: 20:46:46:413 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>krattan</ReviewerId>
+    <AssignedTo>krattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove TODO Comments from the code</Summary>
+    <Description></Description>
+    <Annotation>Remove TODO Comments from the code</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HW27H2AF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-05 :: 20:45:10:167 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-05 :: 20:46:22:148 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>krattan</ReviewerId>
+    <AssignedTo>krattan</AssignedTo>
+    <File></File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Capture Source Domain too in Session variable</Summary>
+    <Description>To avoid Repository call on every request in site.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

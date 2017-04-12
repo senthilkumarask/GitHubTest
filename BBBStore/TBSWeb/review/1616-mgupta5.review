@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="1616">
+  <ReviewIssue id="IM28NBWH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-21 :: 13:00:22:913 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-21 :: 13:00:42:750 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>mgupta5</ReviewerId>
+    <AssignedTo>mgupta5</AssignedTo>
+    <File line="272">j2ee-apps/tbs/tbs.war/_includes/end_script.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why is this error hard coded?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

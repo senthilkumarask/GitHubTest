@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Guides Template</name>
+        <author></author>
+    </header>
+<item-descriptor name="guides" cache-mode="simple"  display-name-resource="guides" display-property="title"  item-cache-size="1000" last-modified-property="lastModifiedDate">
+      <attribute name="updateLastModified" value="true"/>
+      <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+     <table name="BBB_GUIDES" id-column-names="guides_id" type="primary">
+     	<property name="id" column-name="guides_id" display-name-resource="guideId" writable="true" category-resource="BasicInfo" >
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        </property>
+        <property name="contentType" column-name="content_type"  display-name-resource="contentType" data-type="enumerated" category-resource="BasicInfo" >
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+          <attribute name="uiwritable" value="true"/>
+          <attribute name="useCodeForValue" value="true"/>
+          <option value="guides" code="0"/>
+          <option value="articles" code="1"/>
+          <option value="tips" code="2"/>
+        </property>
+       
+        <property name="guidesCategory" column-name="guides_category"  display-name-resource="guidesCategory" data-type="enumerated" category-resource="BasicInfo" >
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="3"/>
+          <attribute name="uiwritable" value="true"/>
+          <attribute name="useCodeForValue" value="true"/>
+          <option value="product guide" code="0"/>
+          <option value="baby guide" code="1"/>
+          <option value="college guide" code="2"/>
+          <option value="bridal guide" code="3"/>
+         </property>
+       
+       <property name="title" column-name="title" display-name-resource="title" data-type="string" category-resource="BasicInfo" >
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="4"/>   
+       </property>
+       
+       <property name="imageUrl" column-name="image_url" display-name-resource="imageUrl" data-type="string" category-resource="BasicInfo" >
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="5"/>   
+       </property>
+       
+       <property name="imageAltText" column-name="image_alt_text" display-name-resource="imageAltText" data-type="string" category-resource="BasicInfo" >
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="6"/>   
+       </property>
+       <property name="shortDescription" column-name="short_description" display-name-resource="shortDescription" data-type="big string" category-resource="BasicInfo" >
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="7"/>   
+       </property>
+       
+       <property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+  			</property>
+       <property name="shopGuideId" column-name="shop_guide_id" display-name-resource="shopGuideId" data-type="string" category-resource="BasicInfo">
+   			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+       		<attribute name="propertySortPriority" value="10"/>
+       </property>
+     </table>
+	 <table name="BBB_GUIDES_SITE" type="multi" id-column-names="guides_id">
+          <property name="site" column-names="site_id" display-name-resource="siteId" data-type="set" component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="BasicInfo" >
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="9"/>
+          </property>
+      </table>
+      <table name="BBB_GUIDES_LONG_DESC" type="auxiliary" id-column-names="guides_id"> 
+         <property name="longDescription" column-name="long_description" display-name-resource="longDescription" data-type="big string" category-resource="BasicInfo" >
+           <attribute name="loadingStrategy" value="lazy"/>
+		   <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+           <attribute name="propertySortPriority" value="8"/>  
+         </property>
+       </table>
+       
+       <table name="BBB_OMINITURE_GUIDES_DATA" type="multi" id-column-names="guides_id"
+           multi-column-name="omniture_key">
+        <property name="OmnitureData" column-names="omniture_value" data-type="map" component-data-type="string">
+    	<attribute name="propertySortPriority" value="7"/>
+    	</property>
+    	</table>
+       
+    </item-descriptor> 
+    
+</gsa-template> 

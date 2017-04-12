@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Dhanesh_Performance_Review_11122014">
+  <ReviewIssue id="I2GBU7Q4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-13 :: 11:24:22:684 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-13 :: 11:36:44:406 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File line="30">EStore/src/com/bbb/commerce/giftregistry/droplet/BBBPresentationDroplet.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>BBBPresentationDroplet</Summary>
+    <Description>BBBPresentationDroplet - My understanding is  BBBPresentationDroplet is not required to define just constants only.
+
+These can be moved to super class BBBDynamoServlet and extend the BBBDynamoServlet  to all droplet.
+
+/** The oparam name rendered once during processing. */
+	public static final String OPARAM_OUTPUT = "output";
+
+	/** The Constant OPARAM_ERROR. */
+	public static final String OPARAM_ERROR = "error";
+
+	/** The Constant OPARAM_EMPTY. */
+	public static final String OPARAM_EMPTY = "empty";	
+	
+	/** The Constant OUTPUT_ERROR_MSG. */
+	public static final String OUTPUT_ERROR_MSG = "errorMsg";
+	
+It requires  refactoring and  make  the change during the downtime.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<actor-template default-chain-id="createEphRule"
+	xsi:noNamespaceSchemaLocation="http://www.atg.com/xsds/actorChain_1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<actor-chain id="createEphRule" transaction="TX_SUPPORTS">
+		<form id="eph-rule-create" handle="createEphRule" var="BBBEphRuleFormHandler"
+			name="/com/admin/formhandler/BBBEphRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ephId" value="${param.eph_node_id}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+			<input name="includeAll" value="${param.include_all}" />
+			<input name="userCreated" value="${param.create_user}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			
+		</form>
+	</actor-chain>
+	
+	<actor-chain id="getEphNode" transaction="TX_SUPPORTS">
+		<droplet var="getEphNodeById" name="/com/admin/droplet/BBBEphNodeDroplet"
+			id="getEphNodeById">
+			<input name="eph_node_id" value="${param.eph_node_id}" />
+			<input name="display_name" value="${param.display_name}" />
+			<input name="parent_node_id" value="${param.parent_node_id}" />
+		</droplet>
+	</actor-chain>
+	<!-- 
+	<actor-chain id="getEphNodeById" transaction="TX_SUPPORTS">
+		<droplet var="getEphNodeById" name="/com/admin/droplet/BBBEphNodeDroplet"
+			id="getEphNodeById">
+			<input name="eph_node_id" value="${param.eph_node_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="searchEphNodeById" transaction="TX_SUPPORTS">
+		<droplet var="searchEphNodeById" name="/com/admin/droplet/BBBEphNodeDroplet"
+			id="searchEphNodeById">
+			<input name="search_eph_id" value="${param.search_eph_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="searchEphByDisplayName" transaction="TX_SUPPORTS">
+		<droplet var="searchEphByDisplayName" name="/com/admin/droplet/BBBEphNodeDroplet"
+			id="searchEphByDisplayName">
+			<input name="display_name" value="${param.display_name}" />
+		</droplet>
+	</actor-chain>
+	 <actor-chain id="searchEphChildNode" transaction="TX_SUPPORTS">
+		<droplet var="searchEphChildNode" name="/com/admin/droplet/BBBEphNodeDroplet"
+			id="searchEphChildNode">
+			<input name="parent_node_id" value="${param.parent_node_id}" />
+			<input name="display_name" value="${param.display_name}" />
+		</droplet>
+	</actor-chain>
+	-->
+	<actor-chain id="getCategoryEphRules" transaction="TX_SUPPORTS">
+		<droplet var="getEphRules" name="/com/admin/droplet/BBBEphFacetRulesDroplet"
+			id="getEphRules">
+			<input name="list_cat_id" value="${param.list_cat_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="searchEphRules" transaction="TX_SUPPORTS">
+		<droplet var="getEphRules" name="/com/admin/droplet/BBBEphFacetRulesDroplet"
+			id="getEphRules">
+			<input name="rule_id" value="${param.rule_id}" />
+			<input name="facet_rule_name" value="${param.facet_rule_name}" />
+		</droplet>
+	</actor-chain>
+	
+	
+	
+		<actor-chain id="updateEphRule" transaction="TX_SUPPORTS">
+		<form id="eph-rule-update" handle="updateEphRule" var="BBBEphRuleFormHandler"
+			name="/com/admin/formhandler/BBBEphRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+			<input name="ephId" value="${param.eph_node_id}" />
+			<input name="facetRuleName" value="${param.facet_rule_name}" />
+			<input name="facetValuePair" value="${param.facet_value_pair_list}" />
+			<input name="includeAll" value="${param.include_all}" />
+			<input name="userCreated" value="${param.create_user}" />
+			<input name="lastModifiedUser" value="${param.last_mod_user}" />
+			
+		</form>
+			</actor-chain>
+			
+		<actor-chain id="removeEphRule" transaction="TX_SUPPORTS">
+		<form id="eph-remove" handle="removeEph" var="BBBEphRuleFormHandler"
+			name="/com/admin/formhandler/BBBEphRuleFormHandler" use-forwards="true"
+			requires-session-confirmation="true">
+			<input name="categoryId" value="${param.list_cat_id}" />
+			<input name="ruleId" value="${param.rule_id}" />
+		</form>
+
+	</actor-chain>	
+  <actor-chain id="getEphFacetByEphId" transaction="TX_SUPPORTS">
+		<droplet var="getEphFacet" name="/com/admin/droplet/BBBEphFacetDroplet"
+			id="getEphFacet">
+			<input name="eph_id" value="${param.eph_id}" />
+		</droplet>
+	</actor-chain>
+	
+	<actor-chain id="getEphFacetByFacetId" transaction="TX_SUPPORTS">
+		<droplet var="getEphFacetByFacetId" name="/com/admin/droplet/BBBEphFacetDroplet"
+			id="getEphFacetByFacetId">
+			<input name="eph_id" value="${param.eph_id}" />
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getEphFacetByFacetName" transaction="TX_SUPPORTS">
+		<droplet var="getEphFacetByFacetName" name="/com/admin/droplet/BBBEphFacetDroplet"
+			id="getEphFacetByFacetName">
+			<input name="eph_id" value="${param.eph_id}" />
+			<input name="facet_name" value="${param.facet_name}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getEphFacet" transaction="TX_SUPPORTS">
+		<droplet var="getEphFacetByFacetName" name="/com/admin/droplet/BBBEphFacetDroplet"
+			id="getEphFacetByFacetName">
+			<input name="eph_id" value="${param.eph_id}" />
+			<input name="facet_name" value="${param.description}" />
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+	<actor-chain id="getEphFacetValue" transaction="TX_SUPPORTS">
+		<droplet var="getEphFacetValue" name="/com/admin/droplet/BBBEphFacetValueDroplet"
+			id="getEphFacetValue">
+			<input name="eph_id" value="${param.eph_node_id}" />
+			<input name="facet_id" value="${param.facet_id}" />
+		</droplet>
+	</actor-chain>
+	
+ 
+
+</actor-template><!-- @version $Id: //product/DPS/version/11.1/templates/DPS/config/userprofiling/atg/userprofiling/profileActor.xml#1 
+	$$Change: 875535 $ -->
+
+<!-- result of combining: C:\Weblogic\application\bbb_prod\AdminUI.ear\atg_bootstrap.war\WEB-INF\ATG-INF\DPS\config\userprofiling.jar/atg/userprofiling/profileActor.xml -->

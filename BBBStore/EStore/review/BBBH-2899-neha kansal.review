@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-2899">
+  <ReviewIssue id="IMVOOG75">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 13:04:28:097 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 13:04:47:356 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>neha kansal</ReviewerId>
+    <AssignedTo>neha kansal</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add cosntant for SDD where used</Summary>
+    <Description>Add cosntant for SDD where used</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMVOOYI5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 13:04:51:821 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-11 :: 13:06:00:767 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>neha kansal</ReviewerId>
+    <AssignedTo>neha kansal</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Add comment and logging  for method populateStoreInfoType</Summary>
+    <Description>Add comment, java doc  and add few loggers inside method populateStoreInfoType</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>HomePage Template</name>
+        <author></author>
+    </header>
+     
+  <!--///////////////////////////////-->
+  <!--          HomePage             -->
+  <!--///////////////////////////////-->
+  
+<item-descriptor name="homepage" display-name-resource="homePageTemplate" display-property="id" cache-mode="simple" item-cache-size="50" query-cache-size="50">
+	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+	
+	<table name="BBB_HOMEPAGE_TEMPLATE" type="primary" id-column-name="homepage_template_id">
+		
+		<property name="id" column-name="homepage_template_id" display-name-resource="homepageTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        </property>
+        
+        <property name="site" column-name="site_id" display-name-resource="siteId" item-type="siteConfiguration" category-resource="BasicInfo" 
+        		repository="/atg/multisite/SiteRepository">
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="1"/>
+        </property>
+        
+        <property name="logoImage" column-name="logo_image" display-name-resource="logoImage" item-type="promoImage" category-resource="TBSAttribute" 
+        		repository="/com/bbb/cms/repository/LandingTemplate">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+
+        <property name="useAnnouncementFromWeb" column-name="use_announcement_fromweb" data-type="boolean" display-name-resource="useAnnouncementFromWeb" default="true" category-resource="TBSAttribute">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="4"/>
+        </property>
+        
+        <property name="announcement" column-name="announcement" item-type="promoBox" display-name-resource="announcement" category-resource="TBSAttribute" repository="/com/bbb/cms/repository/LandingTemplate">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="5"/>
+        </property>
+       
+        <property name="usePromoRegistryPanelFromWeb" column-name="use_promoregpanel_fromweb" data-type="boolean" display-name-resource="usePromoRegistryPanelFromWeb" default="true" category-resource="TBSAttribute">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="6"/>
+         </property>
+
+        <property name="registryStatus" column-name="registry_status" display-name-resource="registryStatus" data-type="enumerated" category-resource="BasicInfo">
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="7"/>
+            <attribute name="uiwritable" value="true"/>
+            <attribute name="useCodeForValue" value="true"/>
+            <option value="Search Registry Page" code="0"/>
+            <option value="Create Registry Page" code="1"/>
+			<option value="Both Pages" code="2"/>
+        </property>
+        
+        <property name="promoTierTempLayOut1" column-name="promo_Containers1" display-name-resource="promoContainer1" item-type="promoBox" category-resource="BasicInfo" 
+        		repository="/com/bbb/cms/repository/LandingTemplate">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="8"/>
+        </property>
+        
+        <property name="promoTierTempLayOut2" column-name="promo_Containers2" display-name-resource="promoContainer2" item-type="promoBox" category-resource="BasicInfo" 
+        		repository="/com/bbb/cms/repository/LandingTemplate">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="9"/>
+        </property>
+         
+         <property name="featuredProduct" column-name="product_id" data-type="string" display-name-resource="featuredProduct" category-resource="BasicInfo">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="14"/>
+         </property>
+         
+         <property name="justForYouFlag" column-name="justForYou_Flag" data-type="boolean" display-name-resource="justForYouFlag" category-resource="BasicInfo">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="15"/>
+         </property>
+         
+         <property name="clearanceDealsFlag" column-name="CLERANCEDEALS_FLAG" data-type="boolean" display-name-resource="clearanceDealsFlag" category-resource="BasicInfo">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="16"/>
+         </property>
+         
+         <property name="usePopularCategoriesFromWeb" column-name="use_popular_cat_fromweb" data-type="boolean" display-name-resource="usePopularCategoriesFromWeb" default="true" category-resource="TBSAttribute">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="17"/>
+         </property>
+         
+         <property name="useFeaturedCategoriesFromWeb" column-name="use_featured_cat_fromweb" data-type="boolean" display-name-resource="useFeaturedCategoriesFromWeb" default="true" category-resource="TBSAttribute">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="18"/>
+         </property>
+         
+          <property name="usePromoTierLayout1FromWeb" column-name="use_promotierlayout1_fromweb" data-type="boolean" display-name-resource="usePromoTierLayout1FromWeb" default="true" category-resource="TBSAttribute">
+         	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="19"/>
+         </property>
+	
+	</table>
+	
+	<table name="BBB_HOMEPAGE_FEAT_PRODUCTS" type="multi" id-column-name="homepage_template_id"> 
+         <property name="secondaryfeaturedProducts" column-name="product_id" data-type="set" component-item-type="product" display-name-resource="featuredProducts" 
+         					category-resource="secondaryfeaturedProducts" repository="/atg/commerce/catalog/ProductCatalog">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="7"/>
+         </property>
+    </table>
+	
+	<table name="BBB_HOMEPAGE_HEROIMAGE" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id">
+           
+        <property name="heroImages" column-names="hero_image_box" data-type="list" display-name-resource="heroImages" component-item-type="promoBox" category-resource="heroImageBox" 
+        		repository="/com/bbb/cms/repository/LandingTemplate">
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="3"/>
+        </property> 
+    </table>  
+    
+    <table name="BBB_HOMEPAGE_CATEGORY" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id">
+           
+        <property name="catContianer" column-names="cat_container_id" data-type="list" display-name-resource="popularCategories" component-item-type="categoryContainer" category-resource="popularCategories" >
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="14"/>
+        </property> 
+    </table> 
+    
+    <table name="BBB_HOMEPAGE_FEAT_CATEGORY" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id">
+           
+        <property name="featuredCatContainer" column-names="cat_container_id" data-type="list" display-name-resource="featuredCategories" component-item-type="categoryContainer" category-resource="TBSAttribute" >
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="16"/>
+        </property> 
+    </table>
+    
+    <table name="BBB_HMPG_PBOX_TMP_FIRST" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+       <property name="promoTierLayOut1" column-names="promoboxtemp_id"  data-type="list" display-name-resource="promoTierLayOut1" component-item-type="promoBoxTemp" 
+       		category-resource="promoLayout" repository="/com/bbb/cms/repository/LandingTemplate">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="10"/>
+       </property>
+     </table>
+     
+      <table name="BBB_HMPG_PBOX_TMP_SECOND" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+       <property name="promoTierLayOut2" column-names="promoboxtemp_id"  data-type="list" display-name-resource="promoTierLayOut2" component-item-type="promoBoxTemp2layouts" 
+       		category-resource="promoLayout">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="12"/>
+       </property>
+     </table>
+     
+      <table name="BBB_HMPG_PBOX_TMP_THIRD" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+       <property name="promoTierLayOut3" column-names="promoboxtemp_id"  data-type="list" display-name-resource="promoTierLayOut3" component-item-type="promoBoxTemp" 
+       		category-resource="promoLayout" repository="/com/bbb/cms/repository/LandingTemplate">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="13"/>
+       </property>
+     </table>   
+     
+     <table name="BBB_HOME_POP_SEARCH" type="multi" multi-column-name="sequence_num" id-column-names="homepage_template_id" >
+      	<property name="homePopSearch" column-names="home_pop_search"  data-type="list" display-name-resource="homePopSearch" component-data-type="string" category-resource="BasicInfo">
+        	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         	<attribute name="propertySortPriority" value="11"/>
+       	</property>
+     </table>
+     
+     <table name="BBB_HOMEPAGE_HEROIMAGE_INTL" type="multi" multi-column-name="sequence_num" id-column-names="homepage_intl_template_id">
+           
+        <property name="heroImagesIntl" column-names="hero_image_box_intl" data-type="list" display-name-resource="heroImagesInternational" component-item-type="promoBox" category-resource="heroImageBox" 
+        		repository="/com/bbb/cms/repository/LandingTemplate">
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="14"/>
+        </property> 
+    </table>
+     
+</item-descriptor>
+
+<item-descriptor name="promoBoxTemp2layouts" cache-mode="simple" display-property="id" display-name-resource="promoBoxContainers" item-cache-size="50" query-cache-size="50">
+      <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+      <table name="BBB_PBOX_2CONTAINERS" type="primary" id-column-names="promoboxtemp_id">
+      	<property name="id" column-name="promoboxtemp_id" display-name-resource="promoBoxContainerId" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+        <property name="promoTierTempLayOut1" column-name="Promo_Containers1" display-name-resource="promoContainer1" item-type="promoBox" repository="/com/bbb/cms/repository/LandingTemplate">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="1"/>
+        </property>
+        
+        <property name="promoTierTempLayOut2" column-name="Promo_Containers2" display-name-resource="promoContainer2" item-type="promoBox" repository="/com/bbb/cms/repository/LandingTemplate">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="2"/>
+        </property>
+        
+        
+      </table>
+    </item-descriptor> 
+    
+    <item-descriptor name="categoryContainer" cache-mode="simple" display-property="category" display-name-resource="categoryContainer" item-cache-size="50" query-cache-size="50">
+      <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+      <table name="BBB_CATEGORY_CONTAINER" type="primary" id-column-names="cat_container_id">
+      	<property name="id" column-name="cat_container_id" display-name-resource="catContainerId" writable="true" category-resource="categoryContainer">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+        <property name="category" column-name="category_id" display-name-resource="mainCategory" cascade="update" item-type="category" repository="/atg/commerce/catalog/ProductCatalog" category-resource="categoryContainer" >
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="1"/>
+        </property>        
+        
+      </table>
+      
+      <table name="BBB_CATEGORY_SUBCATEGORIES" type="multi" multi-column-name="sequence_num" id-column-names="cat_container_id">
+           
+        <property name="subCategories" column-names="category_id" data-type="list" display-name-resource="subCategories" cascade="update" component-item-type="category" category-resource="categoryContainer" 
+        		repository="/atg/commerce/catalog/ProductCatalog">
+            <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+            <attribute name="propertySortPriority" value="2"/>
+        </property> 
+    </table>    
+    </item-descriptor>
+<!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component     
+    <query-items item-descriptor="homepage" quiet="true">ALL</query-items>
+    <query-items item-descriptor="promoBoxTemp2layouts" quiet="true">ALL</query-items>
+    <query-items item-descriptor="categoryContainer" quiet="true">ALL</query-items>
+-->
+</gsa-template>

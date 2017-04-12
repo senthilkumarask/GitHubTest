@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="REST_getProductDetails">
+  <ReviewIssue id="H9F8WP4Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:33:05:786 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-11-12 :: 12:33:34:225 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Anurag</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="3">config/com/bbb/rest/BBBRestDozerBeanProvider.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Rename mapping file to more appropriate name than TestBeanMapping</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

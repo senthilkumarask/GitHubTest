@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-3026_Offshore-Review">
+  <ReviewIssue id="IMNHSMZJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:29:36:799 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:29:44:958 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="5">config/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMNHT1GH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:29:55:553 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:30:05:327 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="4">config/com/bbb/commerce/pricing/BBBCouponDetailsInitializer.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMNHTML0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:30:22:932 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:30:29:897 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="75">src/com/bbb/commerce/pricing/BBBCouponDetailsInitializer.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMNHU4EX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:30:46:041 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:31:05:553 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="70">src/com/bbb/commerce/pricing/BBBCIAttributesBasedFilter.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IMNHUYQC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:31:25:332 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-05 :: 19:31:46:357 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Saroj</ReviewerId>
+    <AssignedTo>Saroj</AssignedTo>
+    <File line="508">src/com/bbb/commerce/catalog/droplet/BBBPromotionTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

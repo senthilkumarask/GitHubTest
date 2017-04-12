@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_cc_wallet">
+  <ReviewIssue id="GVNQYI2S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:04:39:748 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:05:05:231 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="45">j2ee-apps/BBBStore/store.war/account/view_credit_card.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>My Account and Credit Card is hardcoded instead of label</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNR4GC6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:09:17:430 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:11:26:771 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="65">j2ee-apps/BBBStore/store.war/account/view_credit_card.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>remove all commented code </Summary>
+    <Description>example
+1) &lt;%-- Profile &lt;dsp:valueof bean="Profile.creditCards"/&gt; --%&gt;
+2) 
+&lt;%-- &lt;a href="#" onclick="document.getElementById('&lt;c:out value="${make_preferred}"/&gt;').click()"&gt;${make_preferred}&lt;/a&gt;
+														  	&lt;dsp:input type="submit" style="display:none" value="${make_preferred}" id="${make_preferred}"  bean="ProfileFormHandler.checkoutDefaults"/&gt; --%&gt;
+														  	
+3) </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNSG0EE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:46:16:262 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 18:49:31:008 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="112">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>remove commented code</Summary>
+    <Description>remove commented code like 
+
+		&lt;%--  &lt;div class="grid_12"&gt;
+	            &lt;h1 class="account fl"&gt;My Account&lt;/h1&gt;
+	            &lt;h3 class="wishList"&gt;Credit Cards&lt;/h3&gt;
+	        &lt;/div&gt;
+	        &lt;div class="grid_2"&gt;
+	            &lt;h3 class="overview"&gt;Overview&lt;/h3&gt;
+	            &lt;c:import url="/accounts/left_nav.jsp"/&gt;
+	        &lt;/div&gt; --%&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNUDQWV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:40:29:887 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:41:02:043 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="141">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Credit Card type should vary by Site and data should come from catalog API</Summary>
+    <Description>Credit Card type should vary by Site and data should come from catalog API</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNUIH6J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:44:10:555 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:44:39:085 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="150">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Requirement not met</Summary>
+    <Description>The list of credit card image configurable per site.
+2)	The card image will be ordered as per the configuration.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNULUA9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:46:47:505 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:48:22:862 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="174">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>CVV number is not there. Just keep this as open items</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNUR29X">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:50:51:141 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:51:25:015 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="215">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Missing requirement</Summary>
+    <Description>The year dropdown will be 5 years from current year (configurable value)
+This is not configurable value</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNUWGMB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:55:03:011 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 19:55:35:854 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="242">j2ee-apps/BBBStore/store.war/account/add_credit_card.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Keep an open item that address in not getting validated using QAS as that is pure HTML change</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVNVNZ5S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:16:26:752 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-01 :: 20:16:46:689 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Nalini_V</AssignedTo>
+    <File line="350">j2ee-apps/BBBStore/store.war/account/edit_credit_cards.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Requirement not implemented</Summary>
+    <Description>3)	The Make preferred card checkbox – will be disabled if already checked. This is because user needs to choose a different card as a preferred card from the base page</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

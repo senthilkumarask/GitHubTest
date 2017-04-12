@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_am_order_history_2011_12_07_Jaswinder_Sidhu">
+  <ReviewIssue id="GVXJZZYQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:47:34:034 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:48:16:957 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="57">j2ee-apps/BBBStore/store.war/account/order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>tracking number can be multiple for a shipment</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXK4XE3">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:51:23:979 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:51:27:306 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="6">j2ee-apps/BBBStore/store.war/account/order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Headers(My Account, ORders and Overview), should also come from CMS labels</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXK5FQP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:51:47:761 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:52:06:847 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="28">j2ee-apps/BBBStore/store.war/account/order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Use JSP comments instead of html comments</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVXK9TMM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:55:12:382 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 14:55:20:396 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>lokesh_duseja</ReviewerId>
+    <AssignedTo>jaswinder_sidhu</AssignedTo>
+    <File line="2">j2ee-apps/BBBStore/store.war/account/order_summary.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>w3c validation failing</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

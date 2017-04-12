@@ -1,0 +1,33 @@
+<?xml version="1.0" ?> 
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+		
+		<xs:element name="main">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="DATA_RECORD" type="SURVEY" minOccurs="1" maxOccurs="unbounded" /> 
+  				</xs:sequence>
+  			</xs:complexType>
+ 		 </xs:element>
+	
+		<xs:complexType name="SURVEY">
+ 			<xs:sequence>
+ 			    <xs:element name="SUBMIT_DT" type="xs:string" />
+				<xs:element name="NAME" type="xs:string" />
+				<xs:element name="SEND_EMAIL" type="xs:string" />
+				<xs:element name="SHOPPED_AT_BEFORE" type="xs:string" />
+				<xs:element name="FEATURES" type="xs:string" />
+				<xs:element name="FAVORITE" type="xs:string" />
+				<xs:element name="COMMENTS" type="xs:string" />
+				<xs:element name="EMAIL_ADDR" type="xs:string" />
+				<xs:element name="GENDER" type="xs:string" />
+				<xs:element name="AGE" type="xs:string" />
+				<xs:element name="LOCATION" type="xs:string" />
+				<xs:element name="SITE_FLAG" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+		
+   </xs:schema>
+
+
+
+

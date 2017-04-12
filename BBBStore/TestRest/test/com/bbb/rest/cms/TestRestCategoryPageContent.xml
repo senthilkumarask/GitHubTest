@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2013, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestStaticContent.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Jan 10, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.TestRestCategoryPageContent">
+		<group id="testCategoryPageContent">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="catId" type="string">32003</obj>
+					<obj id="restCategoryPageContentAPI" type="string">/rest/bean/com/bbb/rest/cms/manager/MobileTemplateManager/getCategoryPageContent</obj>
+				</objs>
+			</test>			
+		</group>	
+	</cluster>
+</ddtunit>

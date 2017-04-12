@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PricingService" basedir="." default="main">
+	
+	<property name="service.name" value="PricingService" />	
+	
+	<property environment="env" />
+	<property name="axis2.home" value="${env.AXIS2_HOME}" />
+	<property name="project.base.dir" value="." />
+	<property name="project.web" value="${project.base.dir}/j2ee-apps/Webservices/webservices.war" />
+	<property name="project.lib" value="${project.base.dir}/lib" />	
+	<property name="build.dir" value="${project.base.dir}/build" />
+	<property name="build.bin.dir" value="${build.dir}/bin" />	
+	<property name="build.src.dir" value="${build.dir}/src" />
+	<property name="build.res.dir" value="${build.dir}/resources" />
+	<property name="service.wsdl" value="${project.web}/wsdl/${service.name}.wsdl" />
+	<property name="jars.ok" value="" />
+	<path id="axis2.class.path">
+		<pathelement path="${java.class.path}" />
+		<fileset dir="${axis2.home}">
+			<include name="lib/*.jar" />
+		</fileset>
+	</path>
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+	</target>
+	<target name="init">
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.src.dir}" />
+		<mkdir dir="${build.res.dir}" />
+		<mkdir dir="${build.bin.dir}" />
+	</target>
+	<target name="pre-compile-test" depends="init">
+		<!--Test the classpath for the availability of necesary classes-->
+		<available classpathref="axis2.class.path" property="stax.available" classname="javax.xml.stream.XMLStreamReader" />
+		<available classpathref="axis2.class.path" property="axis2.available" classname="org.apache.axis2.engine.AxisEngine" />
+		<condition property="jars.ok">
+			<and>
+				<isset property="stax.available" />
+				<isset property="axis2.available" />
+			</and>
+		</condition>
+		<!--Print out the availabilities-->
+		<echo message="Stax Availability= ${stax.available}" />
+		<echo message="Axis2 Availability= ${axis2.available}" />
+	</target>
+	<target name="echo-classpath-problem" depends="pre-compile-test" unless="jars.ok">
+		<echo message="The class path is not set right!                                Please make sure the following classes are in the classpath                                1. XmlBeans                                2. Stax                                3. Axis2                 " />
+	</target>
+	<target name="wsdl2java" depends="pre-compile-test">
+		<package-name prefix="com.bbb.commerce.service." string="${service.name}" property="package.name" />
+		<java classname="org.apache.axis2.wsdl.WSDL2Java" fork="true">
+			<classpath refid="axis2.class.path" />
+			<arg value="-d" />
+			<arg value="xmlbeans" />
+			<arg value="-uri" />
+			<arg file="${service.wsdl}" />
+			<arg value="-sp" />
+			<arg value="-ss" />
+			<arg value="-sd" />
+			<arg value="-ssi" />
+			<arg value="-o" />
+			<arg file="${build.dir}" />
+			<arg value="-p" />
+			<arg value="${package.name}" />
+			<arg value="-sin" />
+			<arg value="${service.name}" />
+			<arg value="-scn" />
+			<arg value="${service.name}Impl" />
+		</java>
+	</target>
+	<target name="compile-src" depends="wsdl2java" if="jars.ok">
+		<javac debug="on" memoryMaximumSize="256m" memoryInitialSize="256m" fork="true" deprecation="true" failonerror="true" includeantruntime="false" srcdir="${build.src.dir}" destdir="${build.bin.dir}">
+			<classpath refid="axis2.class.path" />
+		</javac>
+	</target>
+	<target name="create-service-jar" depends="compile-src,echo-classpath-problem" if="jars.ok">
+		<copy toDir="${build.bin.dir}" failonerror="false">
+			<fileset dir="${build.res.dir}" />
+		</copy>
+		<move toDir="${build.bin.dir}/META-INF" failonerror="false">
+			<fileset dir="${build.bin.dir}">
+				<include name="*.xml" />
+				<include name="*.wsdl" />
+				<include name="*.xsd" />
+			</fileset>
+		</move >
+		<tstamp>
+			<format property="NOW" pattern="yyyy-MM-dd HH:mm:ss" />
+		</tstamp>
+		<manifest file="${build.bin.dir}/META-INF/MANIFEST.MF">
+			<attribute name="Built-By" value="${user.name}" />
+			<attribute name="Built-Date" value="${NOW}" />
+		</manifest>
+		<jar destfile="${project.lib}/${service.name}.jar" manifest="${build.bin.dir}/META-INF/MANIFEST.MF">
+			<fileset dir="${build.bin.dir}">
+				<exclude name="**/bbb/" />
+			</fileset>
+		</jar>
+
+		<copy file="${project.lib}/${service.name}.jar" tofile="${project.web}/WEB-INF/services/${service.name}.aar" />
+	</target>
+	<target name="main" depends="create-service-jar, clean" />
+	
+	<scriptdef language="javascript" name="package-name"> 
+	    <attribute name="prefix" />
+		<attribute name="string" />
+	    <attribute name="property" />
+		var str = new String(attributes.get("string")); 
+		var toStr = str.substring(0, str.indexOf("Service")).toLowerCase();
+	    project.setProperty(attributes.get("property"), attributes.get("prefix").concat(toStr)); 
+	</scriptdef> 	
+</project>

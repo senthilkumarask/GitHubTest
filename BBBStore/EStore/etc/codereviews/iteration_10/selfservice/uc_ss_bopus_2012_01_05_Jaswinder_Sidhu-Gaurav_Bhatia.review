@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_ss_bopus_2012_01_05_Jaswinder_Sidhu">
+  <ReviewIssue id="GX1S0SG1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 18:22:54:913 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 11:50:24:390 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="75">src/com/bbb/selfservice/formhandler/SearchStoreFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Rather than 'isAlpha' there is already code which just checks zipcode - (numeric only) use that</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>make it</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1S6AEF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 18:27:11:463 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 10:11:54:930 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="129">src/com/bbb/selfservice/formhandler/SearchStoreFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>strBuild first appends comma (,). Is this correct?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>That is requried as search string doesn't have extra criteria so it we didn't pass comma to it then it will assume recordid field as extracriteria.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1U03ZN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:18:22:451 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 10:29:56:768 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="95">src/com/bbb/selfservice/droplet/SearchInStoreDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Never log just e.getMessage. You must log e as well</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>code changed.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1U0TRN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:18:55:859 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 11:44:58:837 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="93">src/com/bbb/selfservice/droplet/SearchInStoreDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Ensure that loginfo is logged for all calls to SearchStoreManager</Summary>
+    <Description>log input - store id
+logoutput - if needed override toString method in StoreDetails to log all store details in loginfo or logdebug mode</Description>
+    <Annotation></Annotation>
+    <Revision>override toString method</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1VF7EQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 19:58:06:338 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 10:27:09:057 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="277">src/com/bbb/selfservice/droplet/SearchInStoreDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>All loginfo for each catalog call</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>changed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1VNZ3A">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:04:55:462 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 11:03:05:978 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="273">src/com/bbb/selfservice/droplet/SearchInStoreDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why there are two methods for checkProductAvailability - merge the two</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>code changed.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GX1VXCSU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-05 :: 20:12:13:134 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-06 :: 10:26:57:423 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Jaswinder_Sidhu</AssignedTo>
+    <File line="152">src/com/bbb/selfservice/droplet/SearchInStoreDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add loginfo for mapquest call for input and output</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>That is captured at StoreTools when interacting with MapQuest</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

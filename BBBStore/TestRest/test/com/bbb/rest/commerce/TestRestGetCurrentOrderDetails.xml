@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestGetCurrentOrderDetails.xml 
+	DESCRIPTION: ddtunit data file for TestRestGetCurrentOrderDetails.java test case HISTORY: 
+	Nov 16, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestGetCurrentOrderDetails">
+	
+	<group id="testGetCurrentOrderDetailsTransientUser">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		<group id="testGetCurrentOrderDetailsLoggedInUser">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">testwishlist@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+				    <obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		<group id="testGetATGOrderDetails">
+			 
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">testwishlist@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="orderId" type="string">5062670256</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+				    <obj id="getATGOrderRequest" type="string">/rest/bean/com/bbb/account/OrderDetailsManager/getATGOrderDetails</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+		<group id="testGetATGOrderDetailsFailure">
+			 
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj> 
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">testorder@bbb.com</obj>
+					<obj id="password" type="string">Sapient123</obj>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="orderId1" type="string">abc</obj>
+					<obj id="orderId2" type="string">1234567890</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+				    <obj id="getATGOrderRequest" type="string">/rest/bean/com/bbb/account/OrderDetailsManager/getATGOrderDetails</obj>
+				</objs>
+				 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

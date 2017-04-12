@@ -1,0 +1,28 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>Save billing Address In Order</description>
+	<action>/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</action>
+	<params>
+		<param id="atg-rest-depth" required="true" name="atg-rest-depth" class="reqBody" type="text">3</param>
+		<param id="atg-rest-input" required="true" name="atg-rest-input"  class="reqBody" type="text">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param id="userSelectedOption" required="true" name="userSelectedOption" class="reqBody" type="text">NEW</param>
+		<param id="saveToAccount" name="saveToAccount" class="reqBody" type="text">true</param>
+		<param id="billingAddress.firstName" name="firstName" class="reqBody" type="text">tester</param>
+		<param id="billingAddress.lastName" name="lastName" class="reqBody" type="text">tester</param>
+		<param id="billingAddress.companyName" name="companyName" class="reqBody" type="text">company</param>
+		<param id="billingAddress.address1" name="address1" class="reqBody" type="text">add1</param>
+		<param id="billingAddress.address2" name="address2" class="reqBody" type="text">add2</param>
+		<param id="billingAddress.city" name="city" class="reqBody" type="text">col</param>
+		<param id="billingAddress.state" name="state" class="reqBody" type="text">AL</param>
+		<param id="billingAddress.country" name="country" class="reqBody" type="text">US</param>
+		<param id="billingAddress.postalCode" name="postalCode" class="reqBody" type="text">89354</param>
+		<param id="billingAddress.email" required="true" name="email" class="reqBody" type="text">test@rest.com</param>
+		<param id="billingAddress.phoneNumber" name="phoneNumber" class="reqBody" type="text">1112223344</param>		
+		<param id="confirmedEmail" name="confirmedEmail" required="true" class="reqBody" type="text">test@rest.com</param>
+		<param id="billingAddress.phoneNumber" name="phoneNumber" class="reqBody" type="text">1112223344</param>
+		<param type="text"  name="clientID" id="clientID" required="true" class="reqHead" >client123</param>
+		<param type="text"  name="token" id="token" class="reqHead" >client123</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>
+							

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_FB_ATG_Profile_2011_11_17_amit_lakra">
+  <ReviewIssue id="GVCV9Y17">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 03:20:04:171 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:33:38:959 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="183">src/com/bbb/social/facebook/FBDataSchedulerJob.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use batchsize-- instead of reassignment</Summary>
+    <Description>Instead of invoking the getter again and reassigning use batchsize--.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCVMD8S">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 03:29:43:756 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:33:33:876 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="202">src/com/bbb/social/facebook/FBDataSchedulerJob.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>The variable users is already dereferenced inside the loop - using it in the while is errorneous</Summary>
+    <Description>Note this will dereference the variable for users to the return of the processFacebookProfileUpdates() (which actually has a if condition in creating the collection). So we cannot rely on this variable for the while check.
+
+Recommendation is to either use a different variable for reassignment or even better change the return type of processFacebookProfileUpdates() to void - as that method itself is processing the list of the user objects. There is no need to return it.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCW5D9U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 03:44:30:258 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:33:26:672 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="120">src/com/bbb/social/facebook/FBGraphAPIHandlerImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Offline Access Token Will Get Overwritten</Summary>
+    <Description>This will overwrite everything in the pUser object - including the offline access token, which was read originally from the repository.
+
+Question - Does FB Graph API return the same token? If not then we will need to preserve the token already in repository.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVCWDMLY">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 03:50:55:606 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 13:05:50:026 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="189">src/com/bbb/social/facebook/FBProfileToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use Constants or Property Manager for repository item fields</Summary>
+    <Description>Rather than hard coding the names it is recommended to user Property Manager for accessing the repository fields.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validFixlater</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVD3OCNT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 07:15:13:241 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-24 :: 14:33:22:725 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajat_Jain</ReviewerId>
+    <AssignedTo>Amit_Lakra</AssignedTo>
+    <File line="25">src/com/bbb/social/facebook/FBDataSchedulerJob.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Instead of implementing Schedulable consider using SchedulableService</Summary>
+    <Description>ATG SchedulableService class rather than implmenting Schedulable interface.
+That class offers getters/setters and some other basic methods already implemented (which can then be overridden if needed) and would save writing all this extra code and picking up of names from property files.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

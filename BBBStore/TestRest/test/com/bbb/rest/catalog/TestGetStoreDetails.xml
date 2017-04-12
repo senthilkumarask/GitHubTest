@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.catalog.TestGetStoreDetails">
+		<group id="testGetStoreDetails">
+			 <test id="test1">
+				<objs>
+				    <obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="username" type="string">rest_test@bbb.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="getAllStoreDetailsRequest" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getUSAStoreDetails</obj>
+				</objs>
+			</test>
+		</group>	
+		
+		<group id="testGetStoreDetailForSpecialityCode">
+			 <test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="storeId" type="string">2022</obj>
+					<obj id="username" type="string">rest_test@bbb.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="getStoreDetailsRequest" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getStoreDetails</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetStoreDetailError">
+			 <test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="host" type="string">bedbathandbeyond.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="storeId" type="string">12022</obj>
+					<obj id="username" type="string">rest_test@bbb.com</obj>
+					<obj id="password" type="string">Sapient@123</obj>
+					<obj id="getStoreDetailsRequest" type="string">/rest/bean/com/bbb/commerce/catalog/BBBCatalogTools/getStoreDetails</obj>
+				</objs>
+			</test>
+		</group>	
+			
+	</cluster>
+</ddtunit>
+ 

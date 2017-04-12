@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1420">
+  <ReviewIssue id="IPPV202R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:45:28:035 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-26 :: 10:57:41:928 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="157">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can make default batch size for this to 10000 instead of 1000?</Summary>
+    <Description>DEFAULT_BATCH_SIZE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPV3W6R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:46:56:307 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:47:26:441 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="312">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Ideally we do not get null keywords from omniture but add a null check for safer side</Summary>
+    <Description>if (keyword.contains(BBBCoreConstants.SLASH)){
+			keyword = keyword.split(BBBCoreConstants.SLASH)[0];
+		}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPV8VMQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:50:48:866 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:51:03:469 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="236">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Add performance logging</Summary>
+    <Description>private void removeExistingRecords</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPVF9S6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 15:55:47:142 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-26 :: 10:54:09:257 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="249">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>How are we handling failure scenarios such that some exception happend while deleting data from main table. Is it by rolling back?</Summary>
+    <Description>
+			connection = ((GSARepository) getOmnitureReportRepository()).getDataSource().getConnection();
+			
+			logDebug("Archiving popular search data in to archive table");
+			
+			archiveDataStatement = connection.prepareStatement(ARCHIVE_POPULAR_SEARCH_DATA);
+			archiveDataStatement.setString(1,concept);
+			archiveDataStatement.setString(2,reportID);
+			archiveDataStatement.setString(3, reportType);			
+			archiveDataStatement.executeQuery();
+			
+			logDebug("Archiving finished");
+			
+			
+			logDebug("Deleting existing data from Omniture report data table");
+			
+			deleteDataStatement = connection.prepareStatement(DELETE_POPULAR_SEARCH_DATA);		
+			deleteDataStatement.setString(1, concept);
+			deleteDataStatement.setString(2,reportID);
+			deleteDataStatement.setString(3, reportType);
+			deleteDataStatement.executeQuery();
+			
+			logDebug("Deleting existing data finished");
+			success=true;	
+		
+		</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPVONN4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 16:03:05:008 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 16:03:19:520 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="278">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Where are we closing the connection?</Summary>
+    <Description>finally {
+			try {
+				if (archiveDataStatement != null) {					
+					archiveDataStatement.close();
+				}
+				if(deleteDataStatement!=null){
+					deleteDataStatement.close();
+				}
+				if(connection!=null){						
+					if(success){							
+						connection.commit();
+					}else{
+						connection.rollback();
+					}						
+				}
+			} catch (SQLException e) {
+				logError("SQL Exception ocurred while closing the statement", e);	
+			}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IPPVPARV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-21 :: 16:03:34:987 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-26 :: 12:47:12:405 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="249">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedPopularSearchTermsTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we writing the logic of marking reports failed when the first report failed etc in a different story</Summary>
+    <Description>
+			connection = ((GSARepository) getOmnitureReportRepository()).getDataSource().getConnection();
+			
+			logDebug("Archiving popular search data in to archive table");
+			
+			archiveDataStatement = connection.prepareStatement(ARCHIVE_POPULAR_SEARCH_DATA);
+			archiveDataStatement.setString(1,concept);
+			archiveDataStatement.setString(2,reportID);
+			archiveDataStatement.setString(3, reportType);			
+			archiveDataStatement.executeQuery();
+			
+			logDebug("Archiving finished");
+			
+			
+			logDebug("Deleting existing data from Omniture report data table");
+			
+			deleteDataStatement = connection.prepareStatement(DELETE_POPULAR_SEARCH_DATA);		
+			deleteDataStatement.setString(1, concept);
+			deleteDataStatement.setString(2,reportID);
+			deleteDataStatement.setString(3, reportType);
+			deleteDataStatement.executeQuery();
+			
+			logDebug("Deleting existing data finished");
+			success=true;	</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

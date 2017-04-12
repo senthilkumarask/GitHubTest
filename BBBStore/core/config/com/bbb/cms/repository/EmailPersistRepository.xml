@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+  <header>
+    <name>Email Persist Repository</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     Email Persistance Repository       -->
+    <!--///////////////////////////////-->
+    
+    
+	<item-descriptor name="emailData" display-name="Email Data" cache-mode="simple" last-modified-property="emailDate">
+		<attribute name="updateLastModified" value="true"/>
+		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+		<table name="BBB_EMAIL_PERSIST" type="primary" id-column-name="email_Id" >
+			<property name="emailId" column-name="email_id" display-name-resource="emailId" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="1"/>
+		    </property>        	
+		    <property name="emailMessage" column-name="email_message" display-name-resource="emailMessage" data-type="big string">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="2"/>
+		    </property>
+		    <property name="emailType" column-name="email_type" display-name-resource="emailType" data-type="string">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="3"/>
+		    </property> 
+		    <property name="emailDate" column-name="email_date" display-name-resource="emaiDate" data-type="timestamp">
+			    <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+			    <attribute name="propertySortPriority" value="4"/>
+		    </property>
+		    <property name="siteId" column-name="site_id" display-name-resource="siteId" data-type="string">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="5"/>
+		    </property>		     
+		</table>
+	</item-descriptor>
+	
+</gsa-template>

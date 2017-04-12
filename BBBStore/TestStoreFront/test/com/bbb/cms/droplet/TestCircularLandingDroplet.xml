@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestCircularLandingDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestCircularLandingDroplet.java test case
+
+  HISTORY:
+  Dec 20, 2012  Initial version
+
+
+ -->
+ 
+ <ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestCircularLandingDroplet">
+      
+      <group id="testCircular">
+        <test id="testCircular_test1">
+			<objs>
+				<obj id="CircularLandingDroplet" type="com.bbb.cms.droplet.CircularLandingDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestCircularLandingDroplet">
+					<item type="string">/com/bbb/cms/droplet/CircularLandingDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="pageName" type="string">CircularLandingPage</obj>
+			</objs>        
+        </test>
+      </group>
+      <group id="testCircularNULL">
+        <test id="testCircular_test1">
+			<objs>
+				<obj id="CircularLandingDroplet" type="com.bbb.cms.droplet.CircularLandingDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestCircularLandingDroplet">
+					<item type="string">/com/bbb/cms/droplet/CircularLandingDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BedBathUS</obj>
+				<obj id="pageName" type="string">dummy</obj>
+			</objs>        
+        </test>
+      </group>
+     </cluster>
+</ddtunit>
+ 

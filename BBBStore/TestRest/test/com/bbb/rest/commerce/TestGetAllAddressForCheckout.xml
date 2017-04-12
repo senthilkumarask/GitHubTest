@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestAddBillingAddress.xml 
+	DESCRIPTION: ddtunit data file for TestRestAddBillingAddress.java test case HISTORY: 
+	Nov 14, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestGetAllAddressForCheckout">
+	
+	<group id="testGetAllAddressForCheckout">
+			<test id="test88">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"13637911","prodId":"1013637911","qty":"1","price":"$11.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">test@rest.com</obj>
+					<obj id="confirmedEmail" type="string">test@rest.com</obj>
+					<obj id="phoneNumber" type="string">1112223344</obj>
+					<obj id="getAllAddRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getAllAddresses</obj>
+				</objs>
+			</test>
+		</group>
+			<group id="testGetAllAddressForCheckoutLoggedInFlow">
+			<test id="test61">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"sku60010","prodId":"prod60011","registryId":"164854642","qty":"1","bts":"false"}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/saveBillingAddressAPI</obj>
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="saveToAccount" type="boolean">true</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">1981 Landings Drive Building K</obj>
+					<obj id="address2" type="string">Mountain View</obj>
+					<obj id="city" type="string">California</obj>
+					<obj id="state" type="string">FA</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">90210</obj>
+					<obj id="email" type="string">1104mtest_4@example.com</obj>
+					<obj id="login" type="string">1104mtest_4@example.com</obj>
+					<obj id="password" type="string">S@pient1</obj>
+					<obj id="confirmedEmail" type="string">1104mtest_4@example.com</obj>
+					<obj id="phoneNumber" type="string">1112223344</obj>
+					
+					<!-- shipping address -->
+					<obj id="addShippingAddressRequest" type="string">/rest/bean/com/bbb/commerce/order/formhandler/BBBShippingGroupFormhandler/addShippingAddress</obj>
+					<obj id="singleShippingGroupCheckout" type="boolean">true</obj>
+					<obj id="saveShippingAddress" type="boolean">true</obj>
+					<obj id="shipToAddressName" type="string">true</obj>
+					<obj id="shippingOption" type="string">1a</obj>
+					<obj id="sendShippingConfEmail" type="boolean">true</obj>
+					<obj id="shpfirstName" type="string">DDDD</obj>
+					<obj id="shplastName" type="string">DDDD</obj>
+					<obj id="shpcompanyName" type="string">shpcompany</obj>
+					<obj id="shpaddress1" type="string">1940 Lombard Street</obj>
+					<obj id="shpaddress2" type="string">San Francisco</obj>
+					<obj id="shpcity" type="string">col</obj>
+					<obj id="shpstate" type="string">CA</obj>
+					<obj id="shpcountry" type="string">US</obj>
+					<obj id="shppostalCode" type="string">94123</obj>
+					<obj id="getAllAddRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getAllAddresses</obj>
+				</objs>
+			</test>
+		</group>
+		
+				
+		
+	</cluster>
+</ddtunit>
+ 

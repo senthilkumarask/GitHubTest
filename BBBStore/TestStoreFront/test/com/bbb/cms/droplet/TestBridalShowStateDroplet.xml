@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestResultListDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSearchDroplet.java test case
+
+  HISTORY:
+  Nov. 7, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestBridalShowStateDroplet">
+      <group id="testBridalShowStateDetail">
+        <test id="testBridalShowStateDetail_test1">
+			<objs>
+				<obj id="bridalShowStateDroplet" type="com.bbb.cms.droplet.BridalShowStateDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestBridalShowStateDroplet">
+					<item type="string">/com/bbb/cms/droplet/BridalShowStateDroplet</item>
+				</obj>
+				<obj id="siteId" type="string">BuyBuyBaby</obj>
+				<obj id="stateId" type="string">AL</obj>
+			</objs>			   
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>EXIM Repository</name>
+		<author>Amandeep Singh Dhammu</author>
+	</header>
+	
+	<item-descriptor name="eximCodes" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+		<table name="BBB_EXIM_CUSTOMIZATION_CODES" type="primary" id-column-name="CUSTOMIZATION_CODE">
+			<property name="customizationCode" column-names="customization_code" data-type="String" />
+			<property name="description" column-names="description" data-type="String"/>
+			<property name="title" column-names="title" data-type="String"/>
+	      	<property name="singleCode" column-names="single_code" data-type="String" />		
+		</table>
+	</item-descriptor>
+</gsa-template>

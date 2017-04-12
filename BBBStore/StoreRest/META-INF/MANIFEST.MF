@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Required: BBBStore.StoreRest.common
+ATG-Class-Path: classes lib/jackson-core-asl-1.7.0.jar lib/jackson-mapper-asl-1.7.1.jar	lib/jackson-xc-1.1.2-sources.jar
+ATG-J2EE: j2ee-apps/BBBStore
+
+

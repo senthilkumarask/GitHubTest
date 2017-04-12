@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+	<header>
+		<name>SKU Facet Repository </name>
+	    <author></author>
+	</header>
+
+	<!--/////////////////////////////// -->
+	<!-- skuFacetRepository -->
+	<!--/////////////////////////////// -->
+
+
+	<item-descriptor name="skuFacet" display-name="skuFacetRepository"
+		display-property="lastModDate" cache-mode="simple" item-cache-size="1000"
+		query-cache-size="1000">
+
+
+		<table name="BBB_FACET_SKU" type="primary" id-column-names="ITEM_ID,FACET_ID">
+			<!-- <property name="id" column-names="ITEM_ID,FACET_ID" display-name="id" 
+				writable="true"> </property> -->
+			<property name="itemId" column-names="ITEM_ID" display-name="itemId"
+				data-type="String" category="MasterInfo" writable="true">
+			</property>
+			<property name="facetType" column-name="FACET_ID"
+				display-name="facetType" item-type="skuFacetType" category="MasterInfo">
+			</property>
+			<property name="facetValue" column-name="FACET_VALUE"
+				display-name="facetValue" data-type="big string" category="MasterInfo">
+			</property>
+			<property name="lastModDate" column-name="LAST_MOD_DATE"
+				display-name="lastModDate" data-type="timestamp" category="MasterInfo">
+			</property>
+			<property name="facetValueId" column-name="FACET_VALUE_ID"
+				display-name="facetValueId" data-type="string" category="MasterInfo">
+			</property>
+		</table>
+	</item-descriptor>
+
+	<item-descriptor name="skuFacetType" display-name="skuFacetType"
+		display-property="description" cache-mode="simple" item-cache-size="1000"
+		query-cache-size="1000">
+		<table name="BBB_FACET_TYPES" type="primary" id-column-name="FACET_ID">
+			<property name="id" column-name="FACET_ID" display-name="facetId"
+				writable="true">
+			</property>
+			<property name="description" column-name="DESCRIPTION"
+				display-name="description" data-type="big string" category="MasterInfo">
+			</property>
+			<property name="lastModDate" column-name="LAST_MOD_DATE"
+				display-name="lastModDate" data-type="timestamp" category="MasterInfo">
+			</property>
+
+		</table>
+	</item-descriptor>
+
+</gsa-template>

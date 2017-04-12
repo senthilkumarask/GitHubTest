@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_CMS_Templates_Static_Template_2011_11_24_Vishal">
+  <ReviewIssue id="GVGVME7Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-26 :: 22:40:49:718 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 17:54:10:352 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="10">config/com/bbb/cms/repository/StaticTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Have id property explicitly defined</Summary>
+    <Description>Have the &lt;property name="id" column-name="static_template_id"&gt; explicitly defined. It helps in having the import data work successfully. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVGVOUC1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-26 :: 22:42:43:921 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 17:55:14:914 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="46">config/com/bbb/cms/repository/StaticTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Change SiteId property as last one</Summary>
+    <Description>Make siteId soirt property as "5"</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVGW19JG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-26 :: 22:52:23:500 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 18:11:22:956 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>raj_karamcheti</ReviewerId>
+    <AssignedTo>raj_karamcheti</AssignedTo>
+    <File line="35">config/com/bbb/cms/repository/StaticTemplate.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Don't use CLOB for Page header copy</Summary>
+    <Description>You can have data type as big string but don't use CLOB for page header copy. Keep varchar2(1000) max. Header itself will never contain lot of content</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

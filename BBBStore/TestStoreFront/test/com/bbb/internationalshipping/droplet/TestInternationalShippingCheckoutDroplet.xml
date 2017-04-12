@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2014, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestInternationalShippingCheckoutDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestInternationalShippingCheckoutDroplet.java test case
+
+  HISTORY:
+  Nov. 7, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.internationalshipping.droplet.TestInternationalShippingCheckoutDroplet">
+       
+     <group id="testInternationalShippingCheckoutDroplet">
+        <test id="test1">
+			<objs>
+				<obj id="internationalShippingCheckoutDroplet" type="com.bbb.internationalshipping.droplet.InternationalShippingCheckoutDroplet" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.droplet.TestInternationalShippingCheckoutDroplet">
+					<item type="string">/com/bbb/internationalshipping/droplet/InternationalShippingCheckoutDroplet</item>
+			</obj>
+			<obj id="checkoutHelper" type="com.bbb.internationalshipping.utils.InternationaShippingCheckoutHelper" hint="call" method="resolveName" calltype="com.bbb.internationalshipping.droplet.TestInternationalShippingCheckoutDroplet">
+				<item type="string">/com/bbb/internationalshipping/utils/InternationaShippingCheckoutHelper</item>
+			</obj>	
+			<obj id="countryCode" type="string">IN</obj>
+			<obj id="currencyCode" type="string">INR</obj>
+			<obj id="countryName" type="string">INDIA</obj>
+			<obj id="currencyName" type="string">INDIAN RUPEES</obj>								
+			</objs>      
+        </test>
+      </group>     
+     
+    </cluster>
+</ddtunit>

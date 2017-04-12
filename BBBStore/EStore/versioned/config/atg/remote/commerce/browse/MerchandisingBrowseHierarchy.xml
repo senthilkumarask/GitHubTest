@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE browse-hierarchy
+  PUBLIC "-//Art Technology Group, Inc.//DTD Asset Manager Browse Hierarchy//EN"
+  'http://www.atg.com/dtds/browse-hierarchy/browse-hierarchy_1.0.dtd'>
+  
+<browse-hierarchy xml-combine="append">
+
+<!-- Adding Custom Browse to Home -->
+  <browse-item id="home" xml-combine="append">
+  	<browse-item reference-id="pricelists"/>
+    <browse-item reference-id="shipping"/>
+	<browse-item reference-id="cms"/>
+	<browse-item reference-id="labelTemplate"/>
+	<browse-item reference-id="configKeys"/>
+	<browse-item reference-id="schoolsHome"/>
+	<browse-item reference-id="tipsPersonalization"/>
+	<browse-item reference-id="emailRepository"/>
+	<browse-item reference-id="regCat"/>
+	<browse-item reference-id="channels"/>
+	<browse-item reference-id="kickStarter"/>
+	<browse-item reference-id="simplifyRegistry"/>
+	<browse-item reference-id="searchConfigGroups"/>
+	<browse-item reference-id="internationalShippingRestrictions"/>
+	<browse-item reference-id="recommendedSkus"/>	
+	<browse-item reference-id="printAtHome"/>
+	<browse-item reference-id="personalStore"/>
+	<browse-item reference-id="EDWProfileData"/>
+	<browse-item reference-id="manageCheckListItems"/>
+  </browse-item>
+
+<!-- The priceList node -->  
+  <browse-item id="pricelists" label-resource="node.priceLists.label" is-root="true" icon-resource="node.priceLists.iconSmall">
+ 		<list-definition id="pricelist" retriever="query" child-type="/atg/commerce/pricing/priceLists/PriceLists:priceList">
+ 			 <retriever-parameter name="query" value="ALL" />
+ 		</list-definition>
+  </browse-item> 
+  
+  			<!-- The Shipping Home -->
+  			<browse-item id="shipping" label-resource="node.shipping.label" is-root="true" icon-resource="node.shipping.iconSmall">
+    			<browse-item reference-id="shippingMethods"/>
+   				<browse-item reference-id="shippingDurations"/>
+    			<browse-item reference-id="shippingMethodPrices"/>
+   				<browse-item reference-id="state"/>
+   				<browse-item reference-id="deliverySurcharge"/>
+   				<browse-item reference-id="holidayMessaging"/>
+ 			</browse-item>
+
+ 			<!-- The Personal Store -->
+			<browse-item id="personalStore" label-resource="node.personalStore.label" is-root="true" icon-resource="node.personalStore.iconSmall">
+				<browse-item reference-id="personalStoreDetails"/>
+				<browse-item reference-id="strategy"/>
+				<browse-item reference-id="pslayout"/>
+				<browse-item reference-id="psSource"/>
+			</browse-item>
+
+			 <!-- The personalStoreDetails -->	
+			<browse-item id="personalStoreDetails" label-resource="node.personalStoreDetails.label" is-root="false" icon-resource="node.personalStoreDetails.iconSmall" show-count="true">
+				<list-definition id="allPersonalStoreDetails" retriever="query"
+			                     child-type="/com/bbb/personalstore/repository/PersonalStore:personalStore">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<!-- The strategy -->	
+			<browse-item id="strategy" label-resource="node.strategy.label" is-root="false" icon-resource="node.strategy.iconSmall" show-count="true">
+				<list-definition id="allStrategy" retriever="query"
+			                     child-type="/com/bbb/personalstore/repository/PersonalStore:psStrategy">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<!-- The Layout -->	
+			<browse-item id="pslayout" label-resource="node.pslayout.label" is-root="false" icon-resource="node.pslayout.iconSmall" show-count="true">
+				<list-definition id="allPsLayout" retriever="query"
+			                     child-type="/com/bbb/personalstore/repository/PersonalStore:psLayout">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<!-- The source -->	
+			<browse-item id="psSource" label-resource="node.source.label" is-root="false" icon-resource="node.source.iconSmall" show-count="true">
+				<list-definition id="allSource" retriever="query"
+			                     child-type="/com/bbb/personalstore/repository/PersonalStore:psSource">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			 <!-- The Shipping Methods -->	
+			<browse-item id="shippingMethods" label-resource="node.shippingMethods.label" is-root="false" icon-resource="node.shippingMethods.iconSmall" show-count="true">
+				<list-definition id="allShippingMethods" retriever="query"
+			                     child-type="/com/bbb/commerce/shipping/ShippingRepository:shippingMethods">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+
+			<browse-item id="shippingDurations" label-resource="node.shippingMethodsDurations.label" is-root="false" icon-resource="node.shippingMethodsDurations.iconSmall" show-count="true">
+				<list-definition id="allShippingMethodsDurations" retriever="query"
+			                     child-type="/com/bbb/commerce/shipping/ShippingRepository:shippingDurations">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+
+			 <!-- The Shipping Method Prices -->
+			<browse-item id="shippingMethodPrices" label-resource="node.shippingMethodPrices.label" is-root="false" icon-resource="node.shippingMethodPrices.iconSmall" show-count="true">
+				<list-definition id="allShippingMethodPrices" retriever="query"
+			                     child-type="/com/bbb/commerce/shipping/ShippingRepository:shippingMethodPrices">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<browse-item id="holidayMessaging" label-resource="node.holidayMessaging.label" is-root="false" icon-resource="node.holidayMessaging.iconSmall" show-count="true">
+				<list-definition id="allHolidayMessaging" retriever="query"
+			                     child-type="/com/bbb/commerce/shipping/ShippingRepository:holidayMessaging">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<browse-item id="state" label-resource="node.state.label" is-root="true" icon-resource="node.state.iconSmall">
+				<browse-item reference-id="usaStates"/>
+			    <browse-item reference-id="caStates"/>
+			</browse-item>
+
+			 <!-- The Shipping States -->
+			<browse-item id="usaStates" label-resource="node.usaStates.label" is-root="false" icon-resource="node.usaStates.iconSmall" show-count="true">
+				<list-definition id="allusaStates" retriever="query" child-type="/com/bbb/commerce/shipping/ShippingRepository:state" 
+															show-count-on-children="true" show-count-on-header="false">
+			      <retriever-parameter name="query" value='countryCd = "USA" ' />
+			      <retriever-parameter name="refresh-property" value="countryCd" />
+			    </list-definition> 
+			</browse-item>
+			
+			<browse-item id="caStates" label-resource="node.caStates.label" is-root="false" icon-resource="node.caStates.iconSmall" show-count="true">
+				<list-definition id="allcaStates" retriever="query" child-type="/com/bbb/commerce/shipping/ShippingRepository:state"
+														 show-count-on-children="true" show-count-on-header="false">
+			      <retriever-parameter name="query" value='countryCd = "CAN" ' />
+			      <retriever-parameter name="refresh-property" value="countryCd" />
+			    </list-definition> 
+			</browse-item>
+
+			<!-- The Delivery Surcharge LTL Start -->
+			<browse-item id="deliverySurcharge" label-resource="node.deliverySurcharge.label" is-root="false" icon-resource="node.shippingMethodPrices.iconSmall" show-count="true">
+				<list-definition id="allDeliverySurcharge" retriever="query"
+			                     child-type="/com/bbb/commerce/shipping/ShippingRepository:deliverySurcharge">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			<!-- The Delivery Surcharge LTL End -->
+
+
+	 <!-- The CMS Home -->			
+	<browse-item id="cms" label-resource="node.cms.label" is-root="true" icon-resource="node.cms.iconSmall" show-count="true">
+		<browse-item reference-id="WebTemplates"/>
+		<browse-item reference-id="MobileWebTemplates"/>
+		<browse-item reference-id="MobileAppTemplates"/>
+	</browse-item>
+	
+	<browse-item id="WebTemplates" label-resource="node.cms.WebTemplates" is-root="true" icon-resource="node.cms.iconSmall" show-count="true">
+		<browse-item reference-id="bridalTemplate"/>
+		<browse-item reference-id="webFooterLinks"/>
+		<browse-item reference-id="staticTemplate"/>
+		<browse-item reference-id="personalizedShopTemplate"/>
+		<browse-item reference-id="registryTemplate"/>
+		<browse-item reference-id="guidesTemplate"/>
+		<browse-item reference-id="landingTemplateRoot"/>
+		<browse-item reference-id="homePageTemplateRoot"/>
+		<browse-item reference-id="recommendationTemplateRoot"/>
+		<browse-item reference-id="recommenderTemplateRoot"/>
+		<browse-item reference-id="appointmentTemplateRoot"/>
+		<browse-item reference-id="BBBInternationalBillingRepository"/>
+		<browse-item reference-id="BBBManagedCatalogRepository"/>
+		<browse-item reference-id="pageTabsOrdering"/>
+	</browse-item>
+	
+	
+     <!-- Mobile Custom Landing Page Template -->
+	<browse-item id="mobileClpTemplate" label-resource="node.mobileClpTemplate.label" is-root="true" icon-resource="node.mobileClpTemplate.iconSmall">
+		<browse-item reference-id="mobileClpContainer"/>
+		<browse-item reference-id="imageBoxWS"/>
+		<browse-item reference-id="oneXPromoContainer"/>
+		<browse-item reference-id="twoXPromoContainer"/>
+		<browse-item reference-id="mobilePromoBoxImage"/>
+		<browse-item reference-id="mobilePromoBoxVideo"/>
+		<browse-item reference-id="mobilePromoBoxStatic"/>
+	</browse-item>
+		
+	<browse-item id="oneXPromoContainer" label-resource="node.1xPromoContainer.label" is-root="false" icon-resource="node.1xPromoContainer.iconSmall" show-count="true">
+		<list-definition id="allMobilePromoBox1MultiContentLayout" retriever="query" 
+			child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:mobilePromoBox1MultiContentLayout">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>	
+		
+	<browse-item id="twoXPromoContainer" label-resource="node.2xPromoContainer.label" is-root="false" icon-resource="node.2xPromoContainer.iconSmall" show-count="true">
+		<list-definition id="allMobilePromoBox2MultiContentLayout" retriever="query" 
+			child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:mobilePromoBox2MultiContentLayout">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="mobilePromoBoxImage" label-resource="node.mobilePromoBoxImageContentType.label" is-root="false" icon-resource="node.mobilePromoBoxImageContentType.iconSmall" show-count="true">
+		<list-definition id="allMobilePromoBoxImageContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:mobilePromoBoxImageContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="mobilePromoBoxVideo" label-resource="node.mobilePromoBoxVideoContentType.label" is-root="false" icon-resource="node.mobilePromoBoxVideoContentType.iconSmall" show-count="true">
+		<list-definition id="allMobilePromoBoxVideoContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:mobilePromoBoxVideoContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="mobilePromoBoxStatic" label-resource="node.mobilePromoBoxStaticContentType.label" is-root="false" icon-resource="node.mobilePromoBoxStaticContentType.iconSmall" show-count="true">
+		<list-definition id="allMobilePromoBoxStaticContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:mobilePromoBoxStaticContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+			
+		
+	  <!-- Mobile Custom Landing Page Template end -->
+		
+	
+	<!-- Desktop Custom Landing Page Template -->
+	<browse-item id="clpTemplate" label-resource="node.clpTemplate.label" is-root="true" icon-resource="node.clpTemplate.iconSmall">
+		<browse-item reference-id="clpContainer"/>
+		<browse-item reference-id="promoBox"/>
+		<browse-item reference-id="threeXPromoContainer"/>
+		<browse-item reference-id="fourXPromoContainer"/>
+		<browse-item reference-id="promoBoxImage"/>
+		<browse-item reference-id="promoBoxVideo"/>
+		<browse-item reference-id="promoBoxStatic"/>
+	</browse-item>
+	
+	
+	<browse-item id="threeXPromoContainer" label-resource="node.3xPromoContainer.label" is-root="false" icon-resource="node.3xPromoContainer.iconSmall" show-count="true">
+		<list-definition id="allPromoBox3MultiContentLayout" retriever="query" 
+		child-type="/com/bbb/cms/repository/LandingTemplate:promoBox3MultiContentLayout">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="fourXPromoContainer" label-resource="node.4xPromoContainer.label" is-root="false" icon-resource="node.4xPromoContainer.iconSmall" show-count="true">
+		<list-definition id="allPromoBox4MultiContentLayout" retriever="query" 
+		child-type="/com/bbb/cms/repository/LandingTemplate:promoBox4MultiContentLayout">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="promoBoxImage" label-resource="node.promoBoxImageContentType.label" is-root="false" icon-resource="node.promoBoxImageContentType.iconSmall" show-count="true">
+		<list-definition id="allPromoBoxImageContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/LandingTemplate:promoBoxImageContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="promoBoxVideo" label-resource="node.promoBoxVideoContentType.label" is-root="false" icon-resource="node.promoBoxVideoContentType.iconSmall" show-count="true">
+		<list-definition id="allPromoBoxVideoContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/LandingTemplate:promoBoxVideoContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+	
+	<browse-item id="promoBoxStatic" label-resource="node.promoBoxStaticContentType.label" is-root="false" icon-resource="node.promoBoxStaticContentType.iconSmall" show-count="true">
+		<list-definition id="allPromoBoxStaticContentType" retriever="query" 
+		child-type="/com/bbb/cms/repository/LandingTemplate:promoBoxStaticContentType">
+	    	<retriever-parameter name="query" value="ALL" />
+	    </list-definition>
+	</browse-item>
+
+	<!-- Desktop Custom Landing Page Template end-->
+	
+	
+	
+	<browse-item id="MobileWebTemplates" label-resource="node.cms.MobileWebTemplates" is-root="true" icon-resource="node.cms.iconSmall" show-count="true">
+		<browse-item reference-id="WSHomePageTemplate"/>
+		<browse-item reference-id="WSCategoryLandingTemplate"/>
+		<browse-item reference-id="mobileClpTemplate"/>
+		<browse-item reference-id="navigationLinksWS"/>
+		<browse-item reference-id="mobStaticTemplate"/>
+	</browse-item>
+	
+	<browse-item id="MobileAppTemplates" label-resource="node.cms.MobileAppTemplates" is-root="true" icon-resource="node.cms.iconSmall" show-count="true">
+		<browse-item reference-id="MDHomeScreenTemplate"/>
+	</browse-item>
+	
+		<!-- The BridalShow Template -->
+			<browse-item id="bridalTemplate" label-resource="node.bridalTemplate.label" is-root="true" icon-resource="node.bridalTemplate.iconSmall">
+				<browse-item reference-id="bridalShows"/>
+				<browse-item reference-id="babyShows"/>
+			</browse-item>
+			
+			 
+			<browse-item id="bridalShows" label-resource="node.bridalShows.label" is-root="false" icon-resource="node.bridalShows.iconSmall" show-count="true">
+				<list-definition id="allBridalShows" retriever="query" child-type="/com/bbb/cms/repository/BridalShowTemplate:BridalShowTemplate">
+		      		<retriever-parameter name="query" value=' (siteId ="BedBathUS" OR siteId="BedBathCanada")' />
+		      		<retriever-parameter name="refresh-property" value="siteId" />
+		    	</list-definition>
+			</browse-item>
+			
+			<browse-item id="babyShows" label-resource="node.babyShows.label" is-root="false" icon-resource="node.babyShows.iconSmall" show-count="true">
+				<list-definition id="allBabyShows" retriever="query" child-type="/com/bbb/cms/repository/BridalShowTemplate:BridalShowTemplate">
+		      		<retriever-parameter name="query" value=' siteId = "BuyBuyBaby"'  />
+		      		<retriever-parameter name="refresh-property" value="siteId" />
+		    	</list-definition>
+			</browse-item>
+		
+			<!-- The Label Template -->
+			
+			<browse-item id="labelTemplate" label-resource="node.labelTemplate.label" is-root="true" icon-resource="node.labelTemplate.iconSmall">
+				<browse-item reference-id="Web"/>
+				<browse-item reference-id="Mobile"/>								
+				<browse-item reference-id="ff1Label"/>
+				<browse-item reference-id="ff2Label"/>								
+			</browse-item>
+			
+			<browse-item id="Web" label-resource="node.labelTemplate.web" is-root="true" icon-resource="node.labelTemplate.iconSmall">
+				<browse-item reference-id="labelsWeb"/>
+				<browse-item reference-id="textAreasWeb"/>
+				<browse-item reference-id="errorMsgsWeb"/>			
+			</browse-item>
+			
+			<browse-item id="Mobile" label-resource="node.labelTemplate.mobile" is-root="true" icon-resource="node.labelTemplate.iconSmall">
+				<browse-item reference-id="labelsMobile"/>
+				<browse-item reference-id="textAreasMobile"/>
+				<browse-item reference-id="errorMsgsMobile"/>			
+			</browse-item>
+			
+			<!-- The Labels -->
+			<browse-item id="labelsWeb" label-resource="node.labels.label" is-root="false" icon-resource="node.labels.iconSmall" show-count="true">
+				<list-definition id="webLabels" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=0 and channel="DesktopWeb"'/>
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The TextAreas -->
+			<browse-item id="textAreasWeb" label-resource="node.textAreas.label" is-root="false" icon-resource="node.textAreas.iconSmall" show-count="true">
+				<list-definition id="webTextAreas" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=1 and channel="DesktopWeb"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Error Messages -->
+			<browse-item id="errorMsgsWeb" label-resource="node.errorMsgs.label" is-root="false" icon-resource="node.errorMsgs.iconSmall" show-count="true">
+				<list-definition id="webErrorMsgs" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=2 and channel="DesktopWeb"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Labels -->
+			<browse-item id="labelsMobile" label-resource="node.labels.label" is-root="false" icon-resource="node.labels.iconSmall" show-count="true">
+				<list-definition id="mobileLabels" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=0 and channel="MobileWeb"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The TextAreas -->
+			<browse-item id="textAreasMobile" label-resource="node.textAreas.label" is-root="false" icon-resource="node.textAreas.iconSmall" show-count="true">
+				<list-definition id="mobileTextAreas" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=1 and channel="MobileWeb"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Error Messages -->
+			<browse-item id="errorMsgsMobile" label-resource="node.errorMsgs.label" is-root="false" icon-resource="node.errorMsgs.iconSmall" show-count="true">
+				<list-definition id="mobileErrorMsgs" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=2 and channel="MobileWeb"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+
+			<browse-item id="ff1Label" label-resource="node.ff1.label" is-root="true" icon-resource="node.labelTemplate.iconSmall">
+				<browse-item reference-id="labelsFF1"/>
+				<browse-item reference-id="textAreasFF1"/>
+				<browse-item reference-id="errorMsgsFF1"/>			
+			</browse-item>
+			
+			<browse-item id="ff2Label" label-resource="node.ff2.label" is-root="true" icon-resource="node.labelTemplate.iconSmall">
+				<browse-item reference-id="labelsFF2"/>
+				<browse-item reference-id="textAreasFF2"/>
+				<browse-item reference-id="errorMsgsFF2"/>			
+			</browse-item>
+			
+			<!-- The Labels -->
+			<browse-item id="labelsFF1" label-resource="node.labels.label" is-root="false" icon-resource="node.labels.iconSmall" show-count="true">
+				<list-definition id="ff1Labels" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=0 and channel="FF1"'/>
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The TextAreas -->
+			<browse-item id="textAreasFF1" label-resource="node.textAreas.label" is-root="false" icon-resource="node.textAreas.iconSmall" show-count="true">
+				<list-definition id="f1fTextAreas" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=1 and channel="FF1"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Error Messages -->
+			<browse-item id="errorMsgsFF1" label-resource="node.errorMsgs.label" is-root="false" icon-resource="node.errorMsgs.iconSmall" show-count="true">
+				<list-definition id="ff1ErrorMsgs" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=2 and channel="FF1"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Labels -->
+			<browse-item id="labelsFF2" label-resource="node.labels.label" is-root="false" icon-resource="node.labels.iconSmall" show-count="true">
+				<list-definition id="ff2Labels" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=0 and channel="FF2"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The TextAreas -->
+			<browse-item id="textAreasFF2" label-resource="node.textAreas.label" is-root="false" icon-resource="node.textAreas.iconSmall" show-count="true">
+				<list-definition id="ff2TextAreas" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=1 and channel="FF2"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Error Messages -->
+			<browse-item id="errorMsgsFF2" label-resource="node.errorMsgs.label" is-root="false" icon-resource="node.errorMsgs.iconSmall" show-count="true">
+				<list-definition id="ff2ErrorMsgs" retriever="query" child-type="/com/bbb/cms/repository/LabelTemplate:labelTextArea">
+			      <retriever-parameter name="query" value='templateType=2 and channel="FF2"' />
+			      <retriever-parameter name="refresh-property" value="templateType" />
+			    </list-definition>
+			</browse-item>
+			<!-- Web Footer Links -->
+			<browse-item id="webFooterLinks" label-resource="node.webFooterLinks.label" is-root="false" icon-resource="node.navigationLinksWS.iconSmall" show-count="true">
+				<list-definition id="allwebFooterLinksWS" retriever="query" child-type="/com/bbb/cms/repository/WebFooterLinksTemplate:webFooterLinks">
+				<retriever-parameter name="query" value="ALL" />
+				</list-definition>
+			</browse-item>
+			<!-- Manage Checklist Items -->
+			<browse-item id="manageCheckListItems" label-resource="node.manageCheckListItems.label" is-root="false" icon-resource="node.manageCheckListItems.iconSmall" show-count="true">
+				<list-definition id="allManageCheckListItems" retriever="query" child-type="/com/bbb/cms/repository/ManageCheckListItems:ManageCheckListLink">
+				<retriever-parameter name="query" value="ALL" />
+				</list-definition>
+			</browse-item>
+			<!-- The Static Template -->
+			<browse-item id="staticTemplate" label-resource="node.staticTemplate.label" is-root="true" icon-resource="node.staticTemplate.iconSmall">
+				<browse-item reference-id="fullPage"/>
+				<browse-item reference-id="popup"/>
+			</browse-item>
+			<browse-item id="fullPage" label-resource="node.fullPage.label" is-root="false" icon-resource="node.fullPage.iconSmall" show-count="true">
+				<list-definition id="allFullPages" retriever="query" child-type="/com/bbb/cms/repository/StaticTemplate:siteStaticPage">
+			      <retriever-parameter name="query" value="pageType=201 " />
+			      <retriever-parameter name="refresh-property" value="pageType" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="popup" label-resource="node.popup.label" is-root="false" icon-resource="node.popup.iconSmall" show-count="true">
+				<list-definition id="allPopups" retriever="query" child-type="/com/bbb/cms/repository/StaticTemplate:siteStaticPage">
+			      <retriever-parameter name="query" value="pageType=202 " />
+			      <retriever-parameter name="refresh-property" value="pageType" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Personilzed Shop Static Template -->
+			<browse-item id="personalizedShopTemplate" label-resource="node.personalizedShopTemplate.label" is-root="false" icon-resource="node.personalizedShopTemplate.iconSmall" show-count="true">
+				<list-definition id="personalizedPopups" retriever="query" child-type="/com/bbb/cms/repository/PersonalizedShopTemplate:personalizedShopPage">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+
+			<!-- The WS Static Template -->
+			<browse-item id="mobStaticTemplate" label-resource="node.mobStaticTemplate.label" is-root="true" icon-resource="node.mobStaticTemplate.iconSmall">
+				<browse-item reference-id="contentType"/>
+				<browse-item reference-id="collectionType"/>
+				<browse-item reference-id="modalType"/>
+			</browse-item>
+			
+			<browse-item id="contentType" label-resource="node.contentType.label" is-root="false" icon-resource="node.contentType.iconSmall" show-count="true">
+				<list-definition id="allContentStaticPages" retriever="query" child-type="/com/bbb/cms/repository/WSStaticTemplate:mobileSiteStaticContentTemplate">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="collectionType" label-resource="node.collectionType.label" is-root="false" icon-resource="node.collectionType.iconSmall" show-count="true">
+				<list-definition id="allCollectionStaticPages" retriever="query" child-type="/com/bbb/cms/repository/WSStaticTemplate:mobileSiteStaticCollectionTemplate">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="modalType" label-resource="node.modalType.label" is-root="false" icon-resource="node.modalType.iconSmall" show-count="true">
+				<list-definition id="allModalStaticPages" retriever="query" child-type="/com/bbb/cms/repository/WSStaticTemplate:mobileSiteStaticModalTemplate">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+
+			<browse-item id="pageTabsOrdering" label-resource="node.pageTabsOrdering.label" is-root="true" icon-resource="node.pageTabsOrdering.iconSmall">
+				<browse-item reference-id="pageTabs"/>
+				<browse-item reference-id="tabs"/>
+			</browse-item>
+
+			 <browse-item id="pageTabs" label-resource="node.pageTabs.label" is-root="false" icon-resource="node.pageTabs.iconSmall" show-count="true">
+				<list-definition id="allPagesTabs" retriever="query" child-type="/com/bbb/cms/repository/PageTabsOrdering:pageTabs">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+
+			<browse-item id="tabs" label-resource="node.tabs.label" is-root="false" icon-resource="node.tabs.iconSmall" show-count="true">
+				<list-definition id="allTabs" retriever="query" child-type="/com/bbb/cms/repository/PageTabsOrdering:tabsDetail">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>			
+
+				<!-- The Category Page Template for Web service -->
+			<browse-item id="WSCategoryLandingTemplate" label-resource="node.WSCategoryLandingTemplate.label" is-root="true" icon-resource="node.WSHomePageTemplate.iconSmall">
+				<browse-item reference-id="categoryLandingTemplateWS"/>
+				<browse-item reference-id="carouselWS"/>
+				<browse-item reference-id="bannerWS"/>
+			</browse-item>
+			<browse-item id="categoryLandingTemplateWS" label-resource="node.catLandingTemplateWS.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allCategoryPagesWS" retriever="query" child-type="/com/bbb/cms/repository/WSCategoryLandingTemplate:catLandingWS">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="BBBInternationalBillingRepository" label-resource="node.BBBInternationalBillingRepository.label" is-root="true" icon-resource="node.BBBInternationalBillingRepository.iconSmall">
+				<browse-item reference-id="bccManagedCountry"/>
+			</browse-item>
+			<browse-item id="bccManagedCountry" label-resource="node.bccManagedCountry.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allManagedCountries" retriever="query" child-type="/com/bbb/billing/BBBInternationalBillingRepository:bccManagedCountry">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="BBBManagedCatalogRepository" label-resource="node.BBBManagedCatalogRepository.label" is-root="true" icon-resource="node.BBBManagedCatalogRepository.iconSmall">
+				<browse-item reference-id="bccManagedCategory"/>
+				<browse-item reference-id="sortingOption"/>
+				<browse-item reference-id="bccManagedBrand"/>
+				<browse-item reference-id="bccManagedUSCanadaCatMap"/>
+			</browse-item>
+			<browse-item id="bccManagedCategory" label-resource="node.bccManagedCategory.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allManagedCategories" retriever="query" child-type="/com/bbb/catalog/BBBManagedCatalogRepository:bccManagedCategory">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="sortingOption" label-resource="node.sortingOption.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allSortingOption" retriever="query" child-type="/com/bbb/catalog/BBBManagedCatalogRepository:sortingOption">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="bccManagedBrand" label-resource="node.bccManagedBrand.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allManagedBrand" retriever="query" child-type="/com/bbb/catalog/BBBManagedCatalogRepository:bccManagedBrand">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="bccManagedUSCanadaCatMap" label-resource="node.bccManagedUSCanadaCatMap.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allCategoryMapping" retriever="query" child-type="/com/bbb/catalog/BBBManagedCatalogRepository:bccManagedUSCanadaCatMap">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<!-- The Home Page Template for Mobile Device -->
+			
+			<browse-item id="MDHomeScreenTemplate" label-resource="node.homeScreenTemplatesMD.label" is-root="true" icon-resource="node.homeScreenTemplatesMD.iconSmall">
+				<browse-item reference-id="homeScreenMD"/>
+				<browse-item reference-id="MDHomeCarouselContent"/>
+			</browse-item>
+			
+			<browse-item id="MDHomeCarouselContent" label-resource="node.homeCarouselContentMD.label" is-root="true" icon-resource="node.homeCarouselContentMD.iconSmall">
+			    <browse-item reference-id="webURLElement"/>
+			    <browse-item reference-id="carouselImageElement"/>
+				<browse-item reference-id="carouselVideoElement"/>
+				<browse-item reference-id="carouselArticleElement"/>
+				<browse-item reference-id="carouselImageGridElement"/>
+			</browse-item>
+			
+			<browse-item id="homeScreenMD" label-resource="node.homeScreenTemplateMD.label" is-root="false" icon-resource="node.homeScreenTemplateMD.iconSmall" >
+				<list-definition id="allHomeScreenMD" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:homeScreenMD">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- <browse-item id="carouselElement" label-resource="node.carouselElement.label" is-root="true" icon-resource="node.carouselElement.iconSmall" >
+				<list-definition id="allCarouselContent" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselElement">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item> -->
+			<browse-item id="webURLElement" label-resource="node.webURLElement.label" is-root="false" icon-resource="node.webURLElement.iconSmall" show-count="true">
+				<list-definition id="allWebURLElement" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselElement">
+			    	<retriever-parameter name="query" value='type="Web URL"'/>
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="carouselImageElement" label-resource="node.carouselImageElement.label" is-root="false" icon-resource="node.carouselImageElement.iconSmall" show-count="true">
+				<list-definition id="allCarouselImageElement" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselImageElement">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="carouselVideoElement" label-resource="node.carouselVideoElement.label" is-root="false" icon-resource="node.carouselVideoElement.iconSmall" show-count="true">
+				<list-definition id="allCarouselVideoElement" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselVideoElement">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="carouselArticleElement" label-resource="node.carouselArticleElement.label" is-root="false" icon-resource="node.carouselArticleElement.iconSmall" show-count="true">
+				<list-definition id="allCarouselArticleElement" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselArticleElement">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			<browse-item id="carouselImageGridElement" label-resource="node.carouselImageGridElement.label" is-root="false" icon-resource="node.carouselImageGridElement.iconSmall" show-count="true">
+				<list-definition id="allCarouselImageGridElement" retriever="query" child-type="/com/bbb/cms/repository/MDHomeScreenTemplate:carouselImageGridElement">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+		
+			
+			<!--  Mobile Custom Landing Container -->
+			<browse-item id="mobileClpContainer" label-resource="node.clpContainer.mobile.label" is-root="false" icon-resource="node.clpContainer.mobile.iconSmall" show-count="true">
+					<list-definition id="allClpCntrs" retriever="query" child-type="/com/bbb/cms/repository/MobileCustomLandingTemplate:mobileCustomLandingTemplate">
+				    	<retriever-parameter name="query" value="ALL" />
+				    </list-definition>
+			</browse-item>
+			
+
+
+				<!-- The Home Page Template for Web service -->
+			<browse-item id="WSHomePageTemplate" label-resource="node.WSHomePageTemplate.label" is-root="true" icon-resource="node.WSHomePageTemplate.iconSmall">
+				<browse-item reference-id="homePageTemplateWS"/>
+				<browse-item reference-id="carouselWS"/>
+				<browse-item reference-id="imageBoxWS"/>
+				<browse-item reference-id="linksWS"/>
+				<browse-item reference-id="promoBoxWS"/>
+				<browse-item reference-id="productCarouselWS"/>
+				<browse-item reference-id="categoryContainerWS"/>
+			</browse-item>
+			
+
+			<browse-item id="homePageTemplateWS" label-resource="node.homePageTemplateWS.label" is-root="false" icon-resource="node.homePageTemplateWS.iconSmall" show-count="true">
+				<list-definition id="allHomePagesWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:homepageWS">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="carouselWS" label-resource="node.carouselWS.label" is-root="false" icon-resource="node.carouselWS.iconSmall" show-count="true">
+				<list-definition id="allCarouselWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:carousel">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="imageBoxWS" label-resource="node.imageBoxWS.label" is-root="false" icon-resource="node.imageBoxWS.iconSmall" show-count="true">
+				<list-definition id="allimageBoxWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:imageBox">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="linksWS" label-resource="node.bannerWS.label" is-root="false" icon-resource="node.bannerWS.iconSmall" show-count="true">
+				<list-definition id="allLinksWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:links">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="promoBoxWS" label-resource="node.promoBoxWS.label" is-root="false" icon-resource="node.promoBoxWS.iconSmall" show-count="true">
+				<list-definition id="allpromoBoxWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:promoBox">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="productCarouselWS" label-resource="node.productCarouselWS.label" is-root="false" icon-resource="node.productCarouselWS.iconSmall" show-count="true">
+				<list-definition id="allProductCarouselWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:productCarousel">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="categoryContainerWS" label-resource="node.categoryContainerWS.label" is-root="false" icon-resource="node.categoryContainerWS.iconSmall" show-count="true">
+				<list-definition id="allCategoryContainerWS" retriever="query" child-type="/com/bbb/cms/repository/WSHomePageTemplate:categoryContainer">
+			    	<retriever-parameter name="query" value="ALL" />
+
+			    </list-definition>
+			</browse-item>
+			
+			<browse-item id="clpContainer" label-resource="node.clpContainer.label" is-root="false" icon-resource="node.clpContainer.iconSmall" show-count="true">
+				<list-definition id="allClpContainer" retriever="query" child-type="/com/bbb/cms/repository/CustomLandingTemplate:customLandingTemplate">
+			    	<retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+			
+			<!-- The Guides Template -->
+			<browse-item id="guidesTemplate" label-resource="node.guidesTemplate.label" is-root="true" icon-resource="node.guidesTemplate.iconSmall">
+				<browse-item reference-id="guides"/>
+				<browse-item reference-id="articles"/>
+				<browse-item reference-id="tips"/>
+			</browse-item>
+				<browse-item id="guides" label-resource="node.guides.label" is-root="false" icon-resource="node.guides.iconSmall" show-count="true">
+					<list-definition id="allGuides" retriever="query" child-type="/com/bbb/cms/repository/GuidesTemplate:guides">
+				      <retriever-parameter name="query" value="contentType=0 " />
+				      <retriever-parameter name="refresh-property" value="contentType" />
+				    </list-definition>
+				</browse-item>
+				
+				<browse-item id="articles" label-resource="node.articles.label" is-root="false" icon-resource="node.articles.iconSmall" show-count="true">
+					<list-definition id="allArticles" retriever="query" child-type="/com/bbb/cms/repository/GuidesTemplate:guides">
+				      <retriever-parameter name="query" value="contentType=1 " />
+				      <retriever-parameter name="refresh-property" value="contentType" />
+				    </list-definition>
+				</browse-item>
+				
+				<browse-item id="tips" label-resource="node.tips.label" is-root="false" icon-resource="node.tips.iconSmall" show-count="true">
+					<list-definition id="allTips" retriever="query" child-type="/com/bbb/cms/repository/GuidesTemplate:guides">
+				      <retriever-parameter name="query" value="contentType=3 " />
+				      <retriever-parameter name="refresh-property" value="contentType" />
+				    </list-definition>
+				</browse-item>
+
+			<!-- The Registry Template -->
+			<browse-item id="registryTemplate" label-resource="node.registryTemplate.label" is-root="false" icon-resource="node.registryTemplate.iconSmall" show-count="true">
+				<list-definition id="allRegistryPages" retriever="query" child-type="/com/bbb/cms/repository/RegistryTemplate:siteRegistryPage">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition>
+			</browse-item>
+
+			<!-- The Landing Home-->
+			<browse-item id="landingTemplateRoot" label-resource="node.landingTemplateRoot.label" is-root="true" icon-resource="node.landingTemplateRoot.iconSmall">
+				<browse-item reference-id="catlandingTemplate"/>
+				<browse-item reference-id="clpTemplate"/>
+				<browse-item reference-id="colLandingTemplate"/>
+				<browse-item reference-id="regLandingTemplate"/>
+				<browse-item reference-id="cirLandingTemplate"/>
+			    <browse-item reference-id="promoBoxTemp"/>
+			    <browse-item reference-id="promoBox"/>
+			    <browse-item reference-id="promoImage"/>
+			    <browse-item reference-id="ksPromoBoxContainer"/>		
+				 <browse-item reference-id="regCreConformationPromoBoxes"/>	
+			    <browse-item reference-id="catContainer"/>
+			</browse-item>
+			
+					<!-- The Landing Template -->
+					<browse-item id="catlandingTemplate" label-resource="node.catlandingTemplate.label" is-root="false" icon-resource="node.catlandingTemplate.iconSmall" show-count="true">
+						<list-definition id="allcatlandingTemplate" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:landing">
+					      <retriever-parameter name="query" value="pageName=2 " />
+					      <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item>
+					
+					
+					<browse-item id="colLandingTemplate" label-resource="node.colLandingTemplate.label" is-root="false" icon-resource="node.colLandingTemplate.iconSmall" show-count="true">
+						<list-definition id="allcolLandingTemplate" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:landing">
+					      <retriever-parameter name="query" value="pageName=1 " />
+					      <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item>
+					
+					<browse-item id="regLandingTemplate" label-resource="node.regLandingTemplate.label" is-root="false" icon-resource="node.regLandingTemplate.iconSmall" show-count="true">
+						<list-definition id="allregLandingTemplate" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:landing">
+					      <retriever-parameter name="query" value="pageName=0 or pageName=4" />
+					      <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item>
+					
+					<browse-item id="cirLandingTemplate" label-resource="node.cirLandingTemplate.label" is-root="false" icon-resource="node.cirLandingTemplate.iconSmall" show-count="true">
+						<list-definition id="allcirLandingTemplate" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:landing">
+					      <retriever-parameter name="query" value="pageName=3 " />
+					      <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item>					
+					<!-- The Landing Template -->
+					<browse-item id="promoBoxTemp" label-resource="node.promoBoxTemp.label" is-root="false" icon-resource="node.promoBoxTemp.iconSmall" show-count="true">
+						<list-definition id="allpromoBoxTemp" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:promoBoxTemp">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The Landing Template -->
+					<browse-item id="promoBox" label-resource="node.promoBox.label" is-root="false" icon-resource="node.promoBox.iconSmall" show-count="true">
+						<list-definition id="allpromoBox" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:promoBox">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item> 
+					
+					<!-- The Landing Template -->
+					<browse-item id="promoImage" label-resource="node.promoImage.label" is-root="false" icon-resource="node.promoImage.iconSmall" show-count="true">
+						<list-definition id="allpromoImage" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:promoImage">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The Kick Starters PromoBox Template -->
+					<browse-item id="ksPromoBoxContainer" label-resource="node.ksPromoBoxContainer.label" is-root="false" icon-resource="node.ksPromoBoxContainer.iconSmall" show-count="true">
+						<list-definition id="allKSPromoImage" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:ksPromoBoxContainer">
+						       <retriever-parameter name="query" value='(pageName ="topConsultantDetails" OR pageName="shopThatLookDetails"  OR pageName="registryView"  OR pageName="kickStartersView" OR pageName="registryCheckList" )' />
+ 			                            <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item> 
+                   <!-- This is for registry creation conformation promo boxes -->
+					<browse-item id="regCreConformationPromoBoxes" label-resource="node.regCreConformationPromoBoxes.label" is-root="false" icon-resource="node.ksPromoBoxContainer.iconSmall" show-count="true">
+						<list-definition id="allRegCreConformationPromoBoxes" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:ksPromoBoxContainer">
+					        <retriever-parameter name="query" value='pageName = "registryCreationConformation" ' />
+			                <retriever-parameter name="refresh-property" value="pageName" />
+					    </list-definition>
+					</browse-item>
+					
+					
+					<!-- The Landing Template -->
+					<browse-item id="catContainer" label-resource="node.categoryContainer.label" is-root="false" icon-resource="node.categoryContainer.iconSmall" show-count="true">
+						<list-definition id="allCatContainer" retriever="query" child-type="/com/bbb/cms/repository/LandingTemplate:categoryContainer">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+
+			<!-- The HomePages Home-->
+			<browse-item id="homePageTemplateRoot" label-resource="node.homePageTemplateRoot.label" is-root="true" icon-resource="node.homePageTemplateRoot.iconSmall">
+				<browse-item reference-id="homePageTemplate"/>
+			    <browse-item reference-id="promoBox2"/>
+			    <browse-item reference-id="categoryContainer"/>
+			</browse-item>
+			
+			<browse-item id="recommendationTemplateRoot" label-resource="node.recommendationTemplateRoot.label" is-root="true" icon-resource="node.recommendationTemplateRoot.iconSmall">
+				<browse-item reference-id="recommendationLandingPageTemplate"/>
+			</browse-item>
+			
+			<browse-item id="recommenderTemplateRoot" label-resource="node.recommenderTemplateRoot.label" is-root="true" icon-resource="node.recommenderTemplateRoot.iconSmall">
+				<browse-item reference-id="recommenderLandingPageTemplate"/>
+			</browse-item>
+			
+			<browse-item id="appointmentTemplateRoot" label-resource="node.appointmentTemplateRoot.label" is-root="true" icon-resource="node.appointmentTemplateRoot.iconSmall">
+				<browse-item reference-id="appointmentTypeTemplate"/>
+			</browse-item>
+			
+					<!-- The RecommenderLandingPage -->
+					<browse-item id="recommenderLandingPageTemplate" label-resource="node.recommenderLandingPageTemplate.label" is-root="false" icon-resource="node.recommenderLandingPageTemplate.iconSmall" show-count="true">
+						<list-definition id="allRecommenderPages" retriever="query" child-type="/com/bbb/cms/repository/RecommenderLandingPageTemplate:recommenderLanding">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The RecommendationLandingPage -->
+					<browse-item id="recommendationLandingPageTemplate" label-resource="node.recommendationLandingPageTemplate.label" is-root="false" icon-resource="node.recommendationLandingPageTemplate.iconSmall" show-count="true">
+						<list-definition id="allRecommendationPages" retriever="query" child-type="/com/bbb/cms/repository/RecommendationLandingPageTemplate:registrantLanding">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!--  Appointment Types -->
+					<browse-item id="appointmentTypeTemplate" label-resource="node.appointmentTypeTemplate.label" is-root="false" icon-resource="node.appointmentTypeTemplate.iconSmall" show-count="true">
+						<list-definition id="allAppointmentPages" retriever="query" child-type="/com/bbb/cms/repository/AppointmentTypeTemplate:appointmentType">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The HomePages -->
+					<browse-item id="homePageTemplate" label-resource="node.homePageTemplate.label" is-root="false" icon-resource="node.homePageTemplate.iconSmall" show-count="true">
+						<list-definition id="allHomePages" retriever="query" child-type="/com/bbb/cms/repository/HomePageTemplate:homepage">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The 2 Sized PromoBox Containers -->
+					<browse-item id="promoBox2" label-resource="node.promoBox2.label" is-root="false" icon-resource="node.promoBox2.iconSmall" show-count="true">
+						<list-definition id="allPromoBox2" retriever="query" child-type="/com/bbb/cms/repository/HomePageTemplate:promoBoxTemp2layouts">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+					<!-- The Category Containers -->
+					<browse-item id="categoryContainer" label-resource="node.categoryContainer.label" is-root="false" icon-resource="node.categoryContainer.iconSmall" show-count="true">
+						<list-definition id="allCategoryContainer" retriever="query" child-type="/com/bbb/cms/repository/HomePageTemplate:categoryContainer">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+
+					<!-- Navigation Links -->
+					<browse-item id="navigationLinksWS" label-resource="node.navigationLinksWS.label" is-root="false" icon-resource="node.navigationLinksWS.iconSmall">
+						<list-definition id="allnavigationLinksWS" retriever="query" child-type="/com/bbb/cms/repository/WSNavigationLinksTemplate:navigationLinksWS">
+					      <retriever-parameter name="query" value="ALL" />
+					    </list-definition>
+					</browse-item>
+					
+
+	
+	<!-- The Registry Catalog Mapping Home-->
+	<browse-item id="regCat" label-resource="node.regCat.label" is-root="true" icon-resource="node.regCat.iconSmall">
+		<browse-item reference-id="regCatGrp"/>
+	    <browse-item reference-id="registryMap"/>
+	    <browse-item reference-id="regPriceGrp"/>
+	     <browse-item reference-id="regPriceGrpMX"/>
+	</browse-item>
+	
+				<!-- The Category JDA mapping-->
+				<browse-item id="regCatGrp" label-resource="node.regCatGrp.label" is-root="false" icon-resource="node.regCatGrp.iconSmall" show-count="true">
+					<list-definition id="allRegCatGrp" retriever="query" child-type="/com/bbb/commerce/catalog/repository/RegCatalogMapRepository:regCatGrp">
+				      <retriever-parameter name="query" value="ALL" />
+				    </list-definition> 
+				</browse-item>
+				
+				<!-- The Registry Category Mapping-->
+				<browse-item id="registryMap" label-resource="node.registryMap.label" is-root="false" icon-resource="node.registryMap.iconSmall" show-count="true">
+					<list-definition id="allRegistryMap" retriever="query" child-type="/com/bbb/commerce/catalog/repository/RegCatalogMapRepository:registryMap">
+				      <retriever-parameter name="query" value="ALL" />
+				    </list-definition> 
+				</browse-item>
+				
+				<!-- The Registry Price Group-->
+				<browse-item id="regPriceGrp" label-resource="node.regPriceGrp.label" is-root="false" icon-resource="node.regPriceGrp.iconSmall" show-count="true">
+					<list-definition id="allRegPriceGrp" retriever="query" child-type="/com/bbb/commerce/catalog/repository/RegCatalogMapRepository:regPriceGrp">
+				      <retriever-parameter name="query" value="ALL" />
+				    </list-definition> 
+				</browse-item>
+				
+				<!-- The Registry Price Group MX-->
+				<browse-item id="regPriceGrpMX" label-resource="node.regPriceGrpMX.label" is-root="false" icon-resource="node.regPriceGrpMX.iconSmall" show-count="true">
+					<list-definition id="allRegPriceGrpMX" retriever="query" child-type="/com/bbb/commerce/catalog/repository/RegCatalogMapRepository:regPriceGrpMX">
+				      <retriever-parameter name="query" value="ALL" />
+				    </list-definition> 
+				</browse-item>
+	
+	 <!-- The Configure Keys Home-->
+    <browse-item id="configKeys" label-resource="node.configKeys.label" is-root="true" icon-resource="node.configKeys.iconSmall">
+        <browse-item reference-id="configRepository"/>
+    </browse-item>
+
+	<!-- The Configure Keys -->
+    <browse-item id="configRepository" label-resource="node.configRepository.label" is-root="true" icon-resource="node.configRepository.iconSmall">
+        <list-definition id="configKeysDesc" retriever="query"  child-type="/com/bbb/configurekeys/ConfigureKeys:configKeys">
+			<retriever-parameter name="query" value="ALL" />
+		</list-definition>
+    </browse-item>
+
+	<!-- The Schools Home-->
+	<browse-item id="schoolsHome" label-resource="node.schoolsHome.label" is-root="true" icon-resource="node.schoolsHome.iconSmall">
+			<browse-item reference-id="schools"/>
+	</browse-item>
+			
+			<!-- The Schools-->
+			<browse-item id="schools" label-resource="node.schools.label" is-root="false" icon-resource="node.schools.iconSmall" show-count="true">
+				<list-definition id="allSchools" retriever="query" child-type="/com/bbb/selfservice/repository/SchoolVerRepository:schoolsVer">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+
+			</browse-item>
+
+	<!-- The Tips Home-->
+	<browse-item id="tipsPersonalization" label-resource="node.tipsPersonalization.label" is-root="true" icon-resource="node.tipsPersonalization.iconSmall">
+		<browse-item reference-id="productTips"/>
+	</browse-item>
+
+			<!-- The Tips -->	
+			<browse-item id="productTips" label-resource="node.productTips.label" is-root="false" icon-resource="node.productTips.iconSmall" show-count="true">
+				<list-definition id="allProductTips" retriever="query" child-type="/com/bbb/personalization/TipsPersonalization:tipsPersonalization">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+
+	<!-- The Email Templates Home-->
+	<browse-item id="emailRepository" label-resource="node.emailRepository.label" is-root="true" icon-resource="node.emailRepository.iconSmall">
+		<browse-item reference-id="emailTemplate"/>
+	</browse-item>
+	
+			<!-- The Email Templates-->	
+			<browse-item id="emailTemplate" label-resource="node.emailTemplate.label" is-root="false" icon-resource="node.emailTemplate.iconSmall" show-count="true">
+				<list-definition id="allEmails" retriever="query" child-type="/com/bbb/cms/repository/EmailTemplate:emailRepository">
+			        <retriever-parameter name="query" value="ALL" /> 
+					<retriever-parameter name="full-refresh-property" value="/com/bbb/cms/repository/EmailTemplate:emailRepository.emailType" />
+      		    </list-definition> 
+			</browse-item>
+			
+	<!-- channels Home-->
+	<browse-item id="channels" label-resource="node.channels.label" is-root="true" icon-resource="node.channels.iconSmall">
+        <browse-item reference-id="allChannels"/>
+    </browse-item>
+				
+	<browse-item id="allChannels" label-resource="node.allChannels.label" is-root="false" icon-resource="node.allChannels.iconSmall">
+ 		<list-definition id="channelInfo" retriever="query" child-type="/com/bbb/channel/ChannelRepository:channelInfo">
+ 			 <retriever-parameter name="query" value="ALL" />
+ 		</list-definition>
+  </browse-item>   
+   <!-- kickStarterHome-->
+   
+     <browse-item id="kickStarter" label-resource="node.kickstarter.label" is-root="true" icon-resource="node.kickstarter.iconSmall">
+        <browse-item reference-id="allTopConsultants"/>
+        <browse-item reference-id="allShopByLook"/>
+        <browse-item reference-id="allTopItems"/>
+     </browse-item>
+     <browse-item id="allTopConsultants" label-resource="node.allConsultant.label" is-root="false" icon-resource="node.allConsultant.iconSmall">
+        <list-definition id="topConsultant" retriever="query" child-type="/com/bbb/kickstarters/repository/KickStarters:kickStarter">
+ 			  <retriever-parameter name="query" value='kickstarterType = "Top Consultant" ' />
+			  <retriever-parameter name="refresh-property" value="kickstarterType" />
+ 	    </list-definition>
+     </browse-item>
+     <browse-item id="allShopByLook" label-resource="node.allShopByLook.label" is-root="false" icon-resource="node.allShopByLook.iconSmall">
+        <list-definition id="shopByLook" retriever="query" child-type="/com/bbb/kickstarters/repository/KickStarters:kickStarter">
+ 			   <retriever-parameter name="query" value='kickstarterType = "Shop This Look" ' />
+			   <retriever-parameter name="refresh-property" value="kickstarterType" />
+ 	     </list-definition>
+      </browse-item>
+      <browse-item id="allTopItems" label-resource="node.allTopItems.label" is-root="false" icon-resource="node.allTopItems.iconSmall">
+        <list-definition id="topItems" retriever="query" child-type="/com/bbb/kickstarters/repository/KickStarters:popularItems">
+ 			   <retriever-parameter name="query" value="ALL" /> 			   
+ 	     </list-definition>
+      </browse-item>
+
+      <!-- SimplifyRegistry Home-->
+   
+     <browse-item id="simplifyRegistry" label-resource="node.simplifyregistry.label" is-root="true" icon-resource="node.simplifyregistry.iconSmall">
+        <browse-item reference-id="allRegistryInputsByType"/>
+        <browse-item reference-id="allRegistryInputs"/>
+     </browse-item>
+     <browse-item id="allRegistryInputsByType" label-resource="node.registryInputsByType.label" is-root="false" icon-resource="node.registryInputsByType.iconSmall">
+        <list-definition id="registryInputsByType" retriever="query" child-type="/com/bbb/simplifyRegistry/repository/SimplifyRegistry:registryInputsByType">
+ 			  <retriever-parameter name="query" value="ALL" />			  
+ 	    </list-definition>
+     </browse-item>
+     <browse-item id="allRegistryInputs" label-resource="node.regInputs.label" is-root="false" icon-resource="node.regInputs.iconSmall">
+        <list-definition id="regInputs" retriever="query" child-type="/com/bbb/simplifyRegistry/repository/SimplifyRegistry:regInputs">
+ 			  <retriever-parameter name="query" value="ALL" />			  
+ 	    </list-definition>
+     </browse-item>
+
+     
+      
+      <!-- searchConfigGroups-->
+   	<browse-item id="searchConfigGroups" label-resource="node.searchConfigGroups.label" is-root="true" show-count="true" icon-resource="node.searchConfigGroups.iconSmall">
+          <browse-item reference-id="searchConfigs"/>
+          <browse-item reference-id="propertyItem"/>
+          <browse-item reference-id="skuFacetTypeRelationalObj"/>
+     </browse-item>
+     <browse-item id="searchConfigs" label-resource="node.searchConfigs.label" is-root="false" show-count="true" icon-resource="node.searchConfigs.iconSmall">
+         <list-definition id="allSearchConfigs" retriever="query" child-type="/com/bbb/searchConfig/SearchConfig:searchConfigGroups">
+ 			  <retriever-parameter name="query" value="ALL" />
+ 	    </list-definition>
+     </browse-item>
+      <browse-item id="propertyItem" label-resource="node.propertyItems.label" is-root="false" show-count="true" icon-resource="node.propertyItems.iconSmall">
+         <list-definition id="allPropertyItems" retriever="query" child-type="/com/bbb/searchConfig/SearchConfig:propertyItem">
+ 			  <retriever-parameter name="query" value="ALL" />
+ 	    </list-definition>
+     </browse-item>
+       <browse-item id="skuFacetTypeRelationalObj" label-resource="node.facetItems.label" is-root="false" show-count="true" icon-resource="node.facetItems.iconSmall">
+         <list-definition id="allSkuFacetType" retriever="query" child-type="/com/bbb/searchConfig/SearchConfig:skuFacetTypeRelationalObj">
+ 			  <retriever-parameter name="query" value="ALL" />
+ 	    </list-definition>
+     </browse-item>
+	<!-- END Search Config Groups-->
+     <!-- Print At Home -->
+     <browse-item id="printAtHome" label-resource="node.printAtHome.label" is-root="true" icon-resource="node.printAtHome.iconSmall">
+        <list-definition id="listPrintAtHome" retriever="query" child-type="/com/bbb/registry/repository/PrintAtHome:printAtHome">
+ 			  <retriever-parameter name="query" value="ALL" />
+ 	    </list-definition>
+     </browse-item>
+     
+       <!-- Print At Home Link-->
+   <links id="printAtHomeLink" parent-type="/com/bbb/registry/repository/PrintAtHome:printAtHome">
+      <list-definition id="printAtHomeLinks"  retriever="property" child-type="/com/bbb/registry/repository/PrintAtHome:announcementcard">
+        <retriever-parameter name="propertyName" value="announcementCards"/>
+      </list-definition>
+  </links>
+	<links id="configValuesLinks" parent-type="/com/bbb/configurekeys/ConfigureKeys:configKeys">
+      <list-definition id="configValueChildLinks"  retriever="property"
+        child-type="/com/bbb/configurekeys/ConfigureKeys:configKeysValue">
+        <retriever-parameter name="propertyName" value="configKeyValue"/>
+      </list-definition>
+	</links>
+	
+  <!-- kick Starter Top Pick List Link-->
+   
+   <links id="kickStarterLinks" parent-type="/com/bbb/kickstarters/repository/KickStarters:kickStarter">
+      <list-definition id="kickStarterChildLinks"  retriever="property" child-type="/com/bbb/kickstarters/repository/KickStarters:kickStarterPicklist">
+        <retriever-parameter name="propertyName" value="kickStarterPicklists"/>
+      </list-definition>
+  </links>
+  
+  	
+   <!-- kick Starter SKU Item  Link-->
+   
+   <links id="topPicklistLinks" parent-type="/com/bbb/kickstarters/repository/KickStarters:kickStarterPicklist">
+      <list-definition id="topPicklistChildLinks"  retriever="property" child-type="/com/bbb/kickstarters/repository/KickStarters:pickListSKUItem">
+        <retriever-parameter name="propertyName" value="pickListSkus"/>
+      </list-definition>
+  </links>
+
+
+ <!-- The International Shipping Restrictions Home -->
+	<browse-item id="internationalShippingRestrictions" label-resource="node.intlRestrictions.label" is-root="true" icon-resource="node.intlRestrictions.iconSmall">
+		<browse-item reference-id="restrictedJdaDept"/>
+		<browse-item reference-id="restrictedJdaSubDept"/>
+	    <browse-item reference-id="restrictedJdaclass"/>
+	    <browse-item reference-id="restrictedBBBBrands"/>
+	</browse-item>
+
+			 <!-- The Restricted JDA -->	
+			<browse-item id="restrictedJdaDept" label-resource="node.restrictedJda.label" is-root="false" icon-resource="node.restrictedJda.iconSmall" show-count="true">
+				<list-definition id="allRestrictedJda" retriever="query"
+			                     child-type="/atg/commerce/catalog/ProductCatalog:restrictedJdaDept">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			
+			<!-- The Restricted JDA -->	
+			<browse-item id="restrictedJdaSubDept" label-resource="node.restrictedJdaSubDept.label" is-root="false" icon-resource="node.restrictedJdaSubDept.iconSmall" show-count="true">
+				<list-definition id="allRestrictedJdaSubDept" retriever="query"
+			                     child-type="/atg/commerce/catalog/ProductCatalog:restrictedJdaSubDept">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+
+			 <!-- The Restricted JDA -->	
+			<browse-item id="restrictedJdaclass" label-resource="node.restrictedJdaclass.label" is-root="false" icon-resource="node.restrictedJdaclass.iconSmall" show-count="true">
+				<list-definition id="allRestrictedJdaclass" retriever="query"
+			                     child-type="/atg/commerce/catalog/ProductCatalog:restrictedJdaclass">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+			<!-- The Restricted JDA -->	
+			<browse-item id="restrictedBBBBrands" label-resource="node.restrictedBBBBrands.label" is-root="false" icon-resource="node.restrictedBBBBrands.iconSmall" show-count="true">
+				<list-definition id="allRestrictedBBBBrands" retriever="query"
+			                     child-type="/atg/commerce/catalog/ProductCatalog:restrictedBBBBrands">
+			      <retriever-parameter name="query" value="ALL" />
+			    </list-definition> 
+			</browse-item>
+		   <browse-item id="recommendedSkus" label-resource="node.recommendedSkus.label" is-root="true" icon-resource="node.recommendedSkus.iconSmall">
+		      <list-definition id="allRecommSkus" retriever="query" child-type="/com/bbb/commerce/catalog/repository/RecommendedSkuRepository:recommendedSkus">
+		 			 <retriever-parameter name="query" value="ALL" />
+		    	</list-definition>
+		     </browse-item>	
+		     
+		     <!-- EDW Data -->
+		     
+    <browse-item id="EDWProfileData" label-resource="node.edwRepository.label" is-root="true" icon-resource="node.edwRepository.iconSmall">
+        <list-definition id="edwProfileData" retriever="query"  child-type="/com/bbb/edwProfileData/edwSiteSpectData/repository/edwSiteSpectData:EDWSiteSpectData">
+			<retriever-parameter name="query" value="ALL" />
+		</list-definition>
+    </browse-item>		
+</browse-hierarchy>

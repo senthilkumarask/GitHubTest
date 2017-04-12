@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestGetCurrentOrderDetails.xml 
+	DESCRIPTION: ddtunit data file for TestRestGetCurrentOrderDetails.java test case HISTORY: 
+	Nov 16, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestExpressCheckoutForOrder">
+	
+	<group id="testGetExpressCheckoutforOrder">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">4178test@bbb.com</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="getExpressCheckoutForOrderRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/expressCheckoutForOrder</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

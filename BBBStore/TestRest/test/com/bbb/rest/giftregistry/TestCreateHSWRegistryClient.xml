@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestCreateHSWRegistryClient">
+		<group id="testCreateHSWReg">
+			 
+			<test id="testHSWReg">
+				<objs>
+				   <obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="profileLogin" type="string">test2@test.com</obj>
+					<obj id="profilePwd" type="string">Sapient!2</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="eventdate" type="string">11/29/2013</obj>
+					<obj id="eventtype" type="string">HSW</obj>
+					<obj id="guestcount" type="string">12</obj>
+					 <!-- primary Reg info  -->  
+					<obj id="regfirstname" type="string">Sunil</obj>
+					<obj id="reglastname" type="string">Bainsla</obj>
+					<obj id="regemail" type="string">test213@test.com</obj>
+					<obj id="regeprimaryphone" type="string">1111111111</obj>
+					<obj id="regcellphone" type="string">4342342342</obj>
+					
+					 <!-- primary Reg add info  -->  
+					<obj id="regaddflag" type="string">newPrimaryRegAddress</obj>
+					<obj id="regaddressLine1" type="string">2222 Lake View Ave</obj>
+					<obj id="regaddressLine2" type="string">Intracoastel Area</obj>
+					<obj id="regcity" type="string">Angelo</obj>
+					<obj id="regstate" type="string">NJ</obj>
+					<obj id="regzip" type="string">07083</obj>
+					
+					 <!-- CO Reg  info  (required only in some cases)--> 
+					<obj id="coemailfound" type="string">false</obj>
+					<obj id="cofirstname" type="string">Anu</obj>
+					<obj id="colastname" type="string">Bainsla</obj>
+					<obj id="coemail" type="string">test1@test.com</obj>
+					 
+					
+					<!-- Shp add info  -->
+					 
+					<obj id="shpaddflag" type="string">newShippingAddress</obj>
+					<obj id="optinweddingorbump" type="string"></obj>
+					<obj id="shpfirstname" type="string">Sunil</obj>
+					<obj id="shplastname" type="string">Bainsla</obj>
+					<obj id="shpaddressline1" type="string">2222 Lake View Ave</obj>
+					<obj id="shpaddressline2" type="string">6 avenue post area</obj>
+					<obj id="shpcity" type="string">Angelo</obj>
+					<obj id="shpstate" type="string">NJ</obj>
+					<obj id="shpzip" type="string">07083</obj>
+					
+					<!-- future Shp add info  -->
+					<obj id="futureshpadded" type="string">YES</obj>
+					<obj id="fushpaddflag" type="string">newFutureShippingAddress</obj>
+					<obj id="fushpaddfirstname" type="string">Sunil</obj>
+					<obj id="fushpaddlastname" type="string">Bainsla</obj>
+					<obj id="fushpaddressline1" type="string">2222 Lake View Ave</obj>
+					<obj id="fushpaddressline2" type="string">6 avenue post area</obj>
+					<obj id="fushpcity" type="string">Angelo</obj>
+					<obj id="fushpstate" type="string">NJ</obj>
+					<obj id="fushpdate" type="string">12/29/2014</obj>
+					<obj id="fushpzip" type="string">07083</obj>
+					</objs>
+
+	        			 
+			</test>
+		</group>
+		
+		<group id="testCreateHSWRegError">
+			 
+			<test id="testHSWRegError">
+				<objs>
+				    <obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="profileLogin" type="string">test2@test.com</obj>
+					<obj id="profilePwd" type="string">Sapient!2</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="eventdate" type="string">11/29/2013</obj>
+					<obj id="eventtype" type="string">HSW</obj>
+					<obj id="guestcount" type="string">22</obj>
+					 <!-- primary Reg info  -->  
+					<obj id="regfirstname" type="string">Sunil</obj>
+					<obj id="reglastname" type="string">Bainsla</obj>
+					<obj id="regemail" type="string"></obj>
+					<obj id="regeprimaryphone" type="string">1111111111</obj>
+					<obj id="regcellphone" type="string">4342342342</obj>
+					
+					 <!-- primary Reg add info  -->  
+					<obj id="regaddflag" type="string">newPrimaryRegAddress</obj>
+					<obj id="regaddressLine1" type="string">2222 Lake View Ave</obj>
+					<obj id="regaddressLine2" type="string">Intracoastel Area</obj>
+					<obj id="regcity" type="string">Angelo</obj>
+					<obj id="regstate" type="string">NJ</obj>
+					<obj id="regzip" type="string">07083</obj>
+					
+					 <!-- CO Reg  info  (required only in some cases)--> 
+					<obj id="coemailfound" type="string">false</obj>
+					<obj id="cofirstname" type="string">Anu</obj>
+					<obj id="colastname" type="string">Bainsla</obj>
+					<obj id="coemail" type="string">test1@test.com</obj>
+					 
+					<!-- Shp add info  -->
+					 
+					<obj id="shpaddflag" type="string">newShippingAddress</obj>
+					<obj id="optinweddingorbump" type="string"></obj>
+					<obj id="shpfirstname" type="string">Sunil</obj>
+					<obj id="shplastname" type="string">Bainsla</obj>
+					<obj id="shpaddressline1" type="string">2222 Lake View Ave</obj>
+					<obj id="shpaddressline2" type="string">6 avenue post area</obj>
+					<obj id="shpcity" type="string">Angelo</obj>
+					<obj id="shpstate" type="string">NJ</obj>
+					<obj id="shpzip" type="string">07083</obj>
+					
+					
+					<!-- future Shp add info  -->
+					<obj id="futureshpadded" type="string">YES</obj>
+					<obj id="fushpaddflag" type="string">newFutureShippingAddress</obj>
+					<obj id="fushpaddfirstname" type="string">Sunil</obj>
+					<obj id="fushpaddlastname" type="string">Bainsla</obj>
+					<obj id="fushpaddressline1" type="string">2222 Lake View Ave</obj>
+					<obj id="fushpaddressline2" type="string">6 avenue post area</obj>
+					<obj id="fushpcity" type="string">Angelo</obj>
+					<obj id="fushpstate" type="string">NJ</obj>
+					<obj id="fushpdate" type="string">12/29/2014</obj>
+					<obj id="fushpzip" type="string">07083</obj>
+					</objs>
+
+	        			 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

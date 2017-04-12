@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.integration.order.TestGetOrderHistoryDroplet">
+		<group id="testGetOrderHistory">
+			<test id="test_testGetOrderHistory">
+				<objs>
+					<obj id="orderHistoryDroplet" type="com.bbb.integration.order.TestGetOrderHistoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryDroplet">
+						<item type="string">/com/bbb/account/OrderHistoryDroplet</item>
+					</obj>					
+					<obj id="bbbProfileFormHandler" type="com.bbb.account.BBBProfileFormHandler"
+						hint="call" method="resolveName" calltype="com.bbb.integration.order.TestGetOrderHistoryDroplet">
+						<item type="string">/atg/userprofiling/ProfileFormHandler</item>
+					</obj>
+					<obj id="email" type="string">raj@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="name" type="string">Raj</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="orderType" type="string">ALL</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.integration.order.TestGetOrderHistoryDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.integration.order.TestGetOrderHistoryDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+				</objs>
+				<asserts>
+					<!-- <assert id="orderNumber" type="java.lang.String" action="isEqual">o2700001
+					</assert>
+					<assert id="orderState" type="java.lang.String" action="isEqual">Delivered
+					</assert> -->
+				</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

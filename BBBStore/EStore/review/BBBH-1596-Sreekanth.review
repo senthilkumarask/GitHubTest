@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1596">
+  <ReviewIssue id="IM81UGIB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:06:35:219 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:20:262 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1567">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should have declared these variables outside the loop</Summary>
+    <Description>String main = "";
+String mainId = "";
+
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM82200D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:12:27:085 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:23:221 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1555">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Should have declared these string constants outside the loop</Summary>
+    <Description>String category="";
+					String categoryId = "";
+
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM82DGGW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:21:21:632 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:28:733 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1739">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should declared these variables out side for loop</Summary>
+    <Description>String subCategory = "";
+					String subCategoryId = "";
+
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM82E3F0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:21:51:372 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:31:261 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1747">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.trivial</Severity>
+    <Summary>We should declared these variables out side for loop </Summary>
+    <Description>String Category="";
+					String categoryId = "";
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM82EUDW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:22:26:324 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:34:124 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1973">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should declared these variables out side for loop</Summary>
+    <Description>String subCategory = "";
+					String subCategoryId = "";
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM82FA46">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 00:22:46:710 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 18:33:37:508 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1984">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We should declared these variables out side for loop </Summary>
+    <Description>String category="";
+					String categoryId = "";
+We should declared these variables out side for loop at method level and assign them to "" (empty string) every time when you entered the loop. This way purposed will be solved. The way it is coded today 100,000 instenses will be created when you running generating feed for 100,000 products
+
+Otherwise assign them null instead of assign them with "" which will create an object. Talk to Imran on this.</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. I have initialized the strings with null.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM8672CF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 02:08:21:855 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 11:31:55:401 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1777">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are we setting (4) and (5) blank? It's for L3 and brand</Summary>
+    <Description>feedVO.addFeedDataMap(feedHeaders.get(4), BBBCatalogConstants.CATEGORY_ID_BLANK);
+						feedVO.addFeedDataMap(feedHeaders.get(5), BBBCatalogConstants.CATEGORY_ID_BLANK);</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed. It was a miss, 3 and 4 should be set blank here.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM86AMZU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-26 :: 02:11:08:586 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-29 :: 13:06:30:585 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2004">src/com/bbb/feeds/marketing/utils/BBBMarketingFeedTools.java</File>
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Want understand the logic and see if it can be optimized</Summary>
+    <Description>if(category.equalsIgnoreCase(BBBCatalogConstants.COMMERCE_ROOT)) {
+						subCategory = BBBUtility.isEmpty(subCategory) ? ""
+								: subCategorySB.append(subCategory)
+										.append(BBBCoreConstants.SEMICOLON)
+										.append(subCategoryId).toString();
+						feedVO.addFeedDataMap(feedHeaders.get(3), subCategory);
+						feedVO.addFeedDataMap(feedHeaders.get(4), BBBCatalogConstants.CATEGORY_ID_BLANK);
+						feedVO.addFeedDataMap(feedHeaders.get(5), BBBCatalogConstants.CATEGORY_ID_BLANK);
+					} else if((tempCatalogItem != null) &amp;&amp; ((String)tempCatalogItem.getPropertyValue(BBBCatalogConstants.DISPLAY_NAME_CATEGORY_PROPERTY_NAME)).equalsIgnoreCase(BBBCatalogConstants.COMMERCE_ROOT)){
+						subCategory = (BBBUtility.isEmpty(category) &amp;&amp; BBBUtility.isEmpty(subCategory)) ? ""
+								: subCategorySB
+								.append(category)
+								.append(BBBCoreConstants.GREATER_THAN_SYMBOL)
+								.append(subCategory)
+								.append(BBBCoreConstants.SEMICOLON)
+								.append(subCategoryId).toString();
+						category = BBBUtility.isEmpty(category) ? "" : categorySB
+								.append(category)
+								.append(BBBCoreConstants.SEMICOLON)
+								.append(categoryId).toString();
+						feedVO.addFeedDataMap(feedHeaders.get(7), category);
+						feedVO.addFeedDataMap(feedHeaders.get(8), subCategory);
+						feedVO.addFeedDataMap(feedHeaders.get(9), BBBCatalogConstants.CATEGORY_ID_BLANK);
+					} else {
+						subCategory = (BBBUtility.isEmpty(main) &amp;&amp; BBBUtility.isEmpty(category) &amp;&amp; BBBUtility.isEmpty(subCategory)) ? ""
+								: subCategorySB
+								.append(main)
+								.append(BBBCoreConstants.GREATER_THAN_SYMBOL)
+								.append(category)
+								.append(BBBCoreConstants.GREATER_THAN_SYMBOL)
+								.append(subCategory)
+								.append(BBBCoreConstants.SEMICOLON)
+								.append(subCategoryId).toString();
+						category = (BBBUtility.isEmpty(main) &amp;&amp; BBBUtility.isEmpty(category)) ? ""
+								: categorySB
+								.append(main)
+								.append(BBBCoreConstants.GREATER_THAN_SYMBOL)
+								.append(category)
+								.append(BBBCoreConstants.SEMICOLON)
+								.append(categoryId).toString();
+						main = BBBUtility.isEmpty(main) ? "" : mainSB.append(main)
+								.append(BBBCoreConstants.SEMICOLON).append(mainId)
+								.toString();
+						feedVO.addFeedDataMap(feedHeaders.get(7), main);
+						feedVO.addFeedDataMap(feedHeaders.get(8), category);
+						feedVO.addFeedDataMap(feedHeaders.get(9), subCategory);
+					}</Description>
+    <Annotation></Annotation>
+    <Revision>Please check the comments I have put before each condition.</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

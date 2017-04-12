@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+ATG-Required: BBBStore.track.dev BBBStore.track.eqa 
+ BBBStore.track.local BBBStore.track.prod 
+ BBBStore.track.bf BBBStore.track.uat BBBStore.track.sapient BBBStore.track.tps BBBStore.track.sb BBBStore.track.test BBBStore.track.lt

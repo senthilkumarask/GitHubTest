@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY:
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.giftregistry.TestGetRegistryInfoForProfileId">
+		<group id="testGetRegistryInfoForProfile">
+
+			<test id="testRegByProfileID">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+
+					</objs>
+
+
+			</test>
+		</group>
+
+		<group id="testGetRegistryInfoForProfileError">
+
+			<test id="testRegByProfileIDError">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">testerror@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					</objs>
+
+
+			</test>
+		</group>
+
+		<group id="testGetRegRecommItemsForDeclinedTab">
+			<test id="testGetRegRecommItemsForDeclinedTab">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="registryId" type="string">203524609</obj>
+					<obj id="tabId" type="string">2</obj>
+					<obj id="sortOption" type="string">date</obj>
+					<obj id="pPageSize" type="string">2</obj>
+					<obj id="pPageNum" type="string">0</obj>
+					<obj id="eventTypeCode" type="string">COL</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="getRegistryRecommendationItemsForTab" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager
+						/GiftRegistryRecommendationManager/getRegistryRecommendationItemsForTab</obj>
+					</objs>
+			</test>
+		</group>
+		<group id="testGetRegRecommItemsForDeclinedTabErr">
+			<test id="testGetRegRecommItemsForDeclinedTabErr">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient1</obj>
+					<obj id="registryId" type="string">203524</obj>
+					<obj id="tabId" type="string">2</obj>
+					<obj id="sortOption" type="string">date</obj>
+					<obj id="pPageSize" type="string">2</obj>
+					<obj id="pPageNum" type="string">0</obj>
+					<obj id="eventTypeCode" type="string">COL</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="getRegistryRecommendationItemsForTab" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager
+						/GiftRegistryRecommendationManager/getRegistryRecommendationItemsForTab</obj>
+					</objs>
+			</test>
+		</group>
+		<group id="testGetRegistryRecommendationItemsForDeclinedTab">
+
+			<test id="testGetRegistryRecommendationItemsForDeclinedTab">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">testtest123@sapient.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					</objs>
+
+
+			</test>
+		</group>
+		<group id="testSetEmailOption">
+
+			<test id="testSetEmailOption">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="httpmethod" type="string">POST</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					</objs>
+			</test>
+		</group>
+
+	</cluster>
+</ddtunit>

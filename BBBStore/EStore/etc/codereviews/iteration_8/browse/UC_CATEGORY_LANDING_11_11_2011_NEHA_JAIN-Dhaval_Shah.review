@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_CATEGORY_LANDING_11_11_2011_NEHA_JAIN">
+  <ReviewIssue id="GV47SP6D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 15:30:38:965 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 14:01:56:089 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="11">src/com/bbb/commerce/browse/category/IProdToutHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Change the name to getProducts or getProductsList</Summary>
+    <Description>NEHA&gt;&gt;&gt;Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4JM19Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:01:23:447 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 14:01:59:483 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="42">src/com/bbb/commerce/browse/category/ClearanceToutHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add entry and exit logging</Summary>
+    <Description>NEHA&gt;&gt;&gt;Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4JODTS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:03:13:024 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 14:02:03:310 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="79">src/com/bbb/commerce/browse/category/LastViewedToutHelper.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add entry and exit logging</Summary>
+    <Description>NEHA&gt;&gt;&gt;Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4JU749">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:07:44:265 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:52:19:959 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="2">config/com/bbb/commerce/browse/category/LastViewedToutHelper.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This cannot be global, it should be session</Summary>
+    <Description>LastViewedToutHelper cannot be session because else prodToutDroplet which is of global scope will not be able to call it.The session cope of item list is being mainatined by BBBSession bean which is being injected from jsp in ProdToutDroplet</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4JV606">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:08:29:478 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:50:22:401 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="3">config/com/bbb/commerce/browse/category/LastViewedToutHelper.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>What is the need of catalogTools?</Summary>
+    <Description>it s needed to get productDetails this.getCatalogTools().getProductDetails(siteId, productId)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4JVX17">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:09:04:507 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:49:03:170 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="55">src/com/bbb/commerce/browse/category/LastViewedToutHelper.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Who sets the productIdList?</Summary>
+    <Description>it is set byProdToutDroplet in getLastViewedItems method </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4K1H1I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:13:23:718 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:45:59:168 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="38">src/com/bbb/commerce/browse/droplet/ProductViewedDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>How are we ensuring this is not null and always set in the session?</Summary>
+    <Description>This droplet will be called on product landing page and the productId will be sent from that page as parameter</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4L0BIQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:40:29:522 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 12:26:51:089 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="37">src/com/bbb/commerce/browse/droplet/ProductViewedDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Create the field name as a constant </Summary>
+    <Description>And put it in the common constants file. Same applied to other field names.
+NEHA&gt;&gt;Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4LORQR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 21:59:30:291 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 12:26:42:099 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="37">src/com/bbb/commerce/browse/droplet/ProductViewedDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Need to check if the id value is empty or null</Summary>
+    <Description>Done</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4MUASZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 22:31:47:891 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 13:20:26:741 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="93">src/com/bbb/commerce/browse/category/LastViewedToutHelper.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use a while loop </Summary>
+    <Description>i=0;
+while(i&lt;maxLastItemsViewed &amp;&amp;i&lt;productIdListSize) {
+i++;
+String productId=getProductIdList().get(productIdListSize-i);
+}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4NKIK0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 22:52:10:992 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 12:26:23:172 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="56">src/com/bbb/commerce/browse/droplet/BrandsDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>The fork leads to two calls to Endeca/Search Framework</Summary>
+    <Description>Search Framework returns both the Featured brands as well as all the other brands in one call, change the logic so only one call needs to be made
+NEHA&gt;&gt;&gt;&gt;DONE</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GV4OA32U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-17 :: 23:12:03:990 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 12:09:06:624 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval_Shah</ReviewerId>
+    <AssignedTo>Neha_Jain</AssignedTo>
+    <File line="51">src/com/bbb/commerce/browse/droplet/BrandsDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Site Id should be passed to Search Framework</Summary>
+    <Description>Brands differ by Site, so Site Id should be passed on to Search Framework
+NEHA&gt;&gt;Currently the API of Endeca don't take any parameter as siteID.So how can we inject siteID in the search framework</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

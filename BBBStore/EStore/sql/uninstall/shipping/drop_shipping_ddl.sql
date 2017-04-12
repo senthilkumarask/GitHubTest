@@ -1,0 +1,4 @@
+drop table BBB_SHIP_METHOD_PRICES;
+
+drop table BBB_SHIPPING_METHODS_MASTER;
+

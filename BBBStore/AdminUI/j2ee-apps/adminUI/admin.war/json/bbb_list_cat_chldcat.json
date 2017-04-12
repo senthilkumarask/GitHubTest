@@ -1,0 +1,25 @@
+{
+	"status":"ok",
+	"data":[
+		{
+			"list_cat_id":4,
+			"child_list_cat_id":4,
+			"display_name":"Category 4",
+			"sequence_num":1,
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		},
+		{
+			"list_cat_id":5,
+			"child_list_cat_id":5,
+			"display_name":"Category 5",
+			"sequence_num":2,
+			"create_user":"user1",
+			"create_date":"01/01/2016",
+			"last_mod_user":"user1",
+			"last_mod_date":"01/01/2016"
+		}
+	]
+}

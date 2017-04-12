@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="Landing_06_12_AnuragJoshi">
+  <ReviewIssue id="GVV77HUT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:13:56:453 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:14:53:968 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rejendra_Karamcheti</ReviewerId>
+    <AssignedTo>Anurag_Joshi</AssignedTo>
+    <File line="188">src/com/bbb/cms/manager/LandingTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Call CatalogAPI </Summary>
+    <Description>Call CatalogAPI getProductDetails to get the product details. The API will supress any products which are no longer offered on the web. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVV7MCQV">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:25:29:671 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:25:51:406 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rejendra_Karamcheti</ReviewerId>
+    <AssignedTo>Anurag_Joshi</AssignedTo>
+    <File line="4">config/com/bbb/cms/manager/LandingTemplateManager.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Do we need this global</Summary>
+    <Description>Do we need this component as global componet?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVV7QO9E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:28:51:218 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-06 :: 23:29:31:203 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rejendra_Karamcheti</ReviewerId>
+    <AssignedTo>Anurag_Joshi</AssignedTo>
+    <File line="11">src/com/bbb/cms/droplet/LandingTemplateDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Need CMS Label Integration</Summary>
+    <Description>Integration with CMS Labels(also include the JSPs in the review list of files so that I can point out exact places where the comments are applicable)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

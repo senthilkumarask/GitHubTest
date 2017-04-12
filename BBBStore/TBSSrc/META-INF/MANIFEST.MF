@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Required: BBBStore.integration.idm BBBStore.EStore BBBStore.StoreRest DCS.PublishingAgent
+ATG-Client-Class-Path: lib/TBSSrc.jar
+ATG-Class-Path: classes lib/getItemsFromWorkbookResponse.jar lib/getLineItems.jar lib/getItemsFromWorkbookRequest.jar lib/barcode4j-2.1.jar lib/endeca_navigation.jar lib/endeca-content-2.1.1.jar lib/commons-lang-2.4.jar lib/json-lib-2.2.2-jdk15.jar lib/commons-beanutils-1.7.jar

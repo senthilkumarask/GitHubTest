@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_GR_CREATE_15_12_2011_sachin_dhaval">
+  <ReviewIssue id="GW8OGKC0">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:07:53:328 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:09:55:213 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="61">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move constants to a common file and make them public</Summary>
+    <Description>Class level constants can remain here, but fields of JSP should be moved to a common file</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8OJAR2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:10:00:878 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:11:45:081 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="138">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Pass this as a parameter from the calling JSP</Summary>
+    <Description>Don't make it a constant, since the URL name can change and we will have to go about changing everywhere. Either have it passed from JSP as a parameter or inject it from properties file. Check with Praveen for best practice	</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8OM07D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:12:07:177 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:12:40:514 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="54">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Should this be extending a common project level FormHandler?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8OP6IO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:14:35:328 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:15:17:577 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="339">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>What is this code trying to achieve?</Summary>
+    <Description>Seems to be of no impact</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8OQS9G">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:15:50:164 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:16:49:529 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="342">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do we not need to validate the value in the request?</Summary>
+    <Description>How will it handle if the value is invalid or null?</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8QAFQL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-15 :: 23:59:06:669 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:00:16:956 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="339">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use getter method</Summary>
+    <Description>For all global variable access them via their getter methods</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8QHPQX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:04:46:233 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:05:16:147 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="1182">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Use switch case</Summary>
+    <Description>With Wedding and Baby as constants</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8QN3LE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:08:57:458 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:09:17:253 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="1472">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Add validation for state</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GW8QPMYE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:10:55:862 EST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-16 :: 00:11:32:646 EST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="1441">src/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Create a common method to validate AddressVO which should be used all across</Summary>
+    <Description>Put it in BBBUtils</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

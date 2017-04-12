@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestIntlPOFileUnMarshaller.xml 
+	DESCRIPTION: ddtunit data file for TestIntlPOFileUnMarshaller.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.integration.poFileProcessing.TestIntlPOFileUnMarshaller">
+	
+	<!-- testUnmarshalPOFile -->
+	
+	<group id="testUnmarshalPOFile">
+        <test id="test1">
+			<objs>
+			
+			<obj id="orderPOFileUnMarshaller" type="com.bbb.internationalshipping.fulfillment.poservice.IntlPOFileUnMarshaller" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.integration.poFileProcessing.TestIntlPOFileUnMarshaller">
+					<item type="string">/com/bbb/internationalshipping/fulfillment/poservice/IntlPOFileUnMarshaller</item>
+				</obj>
+							   
+                <obj id="xmlString" type="string"><![CDATA[<OrderFeed version="1.0">
+					  <Order>
+					    <OrderId>
+					      <E4XOrderId>E4X001000271466</E4XOrderId>
+					      <MerchantOrderId>BBB3000109010</MerchantOrderId>
+					    </OrderId>
+					    <OrderDate>
+					      <CreateDate>2014-06-11</CreateDate>
+					      <ExpiryDate>2015-06-11</ExpiryDate>
+					    </OrderDate>
+					    <DomesticBasket>
+					      <BasketDetails>
+					        <BasketItem>
+					          <BasketItemID>4427619</BasketItemID>
+					          <MerchantSKU>40487977</MerchantSKU>
+					          <ProductName>Nostalgia Electrics&amp;trade; Quesadilla Maker</ProductName>
+					          <ProductURL>http://bedbathandbeyonddev.com/store/product/nostalgia-electrics-trade-quesadilla-maker/1040487977?skuId=40487977</ProductURL>
+					          <ProductDescription>Enjoy homemade quesadillas with this handy kitchen appliance. Features an 8" griddle and one touch control to help you quickly make crispy, mouthwatering quesadillas.</ProductDescription>
+					          <ProductListPrice>19.99</ProductListPrice>
+					          <ProductDiscount>4.00</ProductDiscount>
+					          <ProductSalePrice>15.99</ProductSalePrice>
+					          <ProductQuantity>10</ProductQuantity>
+					          <ProductExtraShipping>0</ProductExtraShipping>
+					          <ProductExtraHandling>0</ProductExtraHandling>
+					          <ProductParentCategoryID/>
+					          <ProductParentCategoryName/>
+					        </BasketItem>
+					      </BasketDetails>
+					      <OrderDetails>
+					        <TotalProductSaleValue>159.9</TotalProductSaleValue>
+					        <TotalItemLevelDiscounts>40</TotalItemLevelDiscounts>
+					        <TotalOrderLevelDiscounts>0</TotalOrderLevelDiscounts>
+					        <TotalDiscounts>40</TotalDiscounts>
+					        <TotalProductVAT>0</TotalProductVAT>
+					        <TotalServiceVAT>0</TotalServiceVAT>
+					        <TotalVAT>0</TotalVAT>
+					        <Custom>Channel:D_BFREE,TaxExemptID:0100982885,DataCenter:DC1-bbb_prod</Custom>
+					      </OrderDetails>
+					    </DomesticBasket>
+					    <COPShippingMethod>
+					      <DeliveryServiceType type="Standard">
+					        <DeliveryServiceName/>
+					        <ShippingPrice>0</ShippingPrice>
+					        <HandlingPrice>0</HandlingPrice>
+					        <DeliveryPromiseMin>3</DeliveryPromiseMin>
+					        <DeliveryPromiseMax>8</DeliveryPromiseMax>
+					        <ExtraInsurancePrice>0</ExtraInsurancePrice>
+					      </DeliveryServiceType>
+					    </COPShippingMethod>
+					    <DomesticProfile>
+					      <Address type="Billing">
+					        <FirstName>vPayment</FirstName>
+					        <MiddleInitials/>
+					        <LastName>E4X</LastName>
+					        <AddressLine1>292 Madison Avenue</AddressLine1>
+					        <AddressLine2>5th Floor</AddressLine2>
+					        <AddressLine3/>
+					        <City>New York</City>
+					        <Region>NY</Region>
+					        <Country>US</Country>
+					        <PostalCode>10017</PostalCode>
+					        <Email>E4X001000254382@sandboxorders.fiftyone.com</Email>
+					        <PrimaryPhone>18002073295</PrimaryPhone>
+					        <SecondaryPhone/>
+					      </Address>
+					      <Address type="Shipping">
+					        <FirstName>rohit</FirstName>
+					        <MiddleInitials/>
+					        <LastName>bansal</LastName>
+					        <AddressLine1>11101 Franklin Ave Ste 400</AddressLine1>
+					        <AddressLine2>E4X001000254382</AddressLine2>
+					        <AddressLine3/>
+					        <City>Franklin Park</City>
+					        <Region>IL</Region>
+					        <Country>US</Country>
+					        <PostalCode>60131</PostalCode>
+					        <Email>E4X001000254382@sandboxorders.fiftyone.com</Email>
+					        <PrimaryPhone>2122993555</PrimaryPhone>
+					        <SecondaryPhone/>
+					      </Address>
+					    </DomesticProfile>
+					    <CreditCard>
+					      <Type>AMEX</Type>
+					      <NameOnCard>E4X vPayment</NameOnCard>
+					      <Number>373953192351004</Number>
+					      <Expiry>
+					        <Month>12</Month>
+					        <Year>2019</Year>
+					      </Expiry>
+					      <CVN>9999</CVN>
+					    </CreditCard>
+					    <Marketing>
+					      <Address type="Shipping">
+					        <FirstName>rohit</FirstName>
+					        <MiddleInitials/>
+					        <LastName>bansal</LastName>
+					        <AddressLine1>okoko</AddressLine1>
+					        <AddressLine2>kok</AddressLine2>
+					        <AddressLine3>okok</AddressLine3>
+					        <City>desw</City>
+					        <Region>okok</Region>
+					        <Country>SV</Country>
+					        <PostalCode>12111</PostalCode>
+					        <Email>rbansal3@sapient.com</Email>
+					        <PrimaryPhone>1231231231</PrimaryPhone>
+					        <SecondaryPhone/>
+					      </Address>
+					      <Address type="Billing">
+					        <FirstName>rohit</FirstName>
+					        <MiddleInitials/>
+					        <LastName>bansal</LastName>
+					        <AddressLine1>okoko</AddressLine1>
+					        <AddressLine2>kok</AddressLine2>
+					        <AddressLine3>okok</AddressLine3>
+					        <City>desw</City>
+					        <Region>okok</Region>
+					        <Country>SV</Country>
+					        <PostalCode>12111</PostalCode>
+					        <Email>rbansal3@sapient.com</Email>
+					        <PrimaryPhone>1231231231</PrimaryPhone>
+					        <SecondaryPhone/>
+					      </Address>
+					    </Marketing>
+					  </Order>
+					</OrderFeed>
+			]]>
+      	</obj>
+			</objs>      
+        </test>
+      </group>
+      
+          
+     
+	</cluster>
+</ddtunit>
+ 

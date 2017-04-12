@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.profile.TestUpdateCreditCard">
+		<group id="testUpdateCreditCard">			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="creditCardType" type="string">Visa</obj>
+					<obj id="nickname" type="string">Visa - 1111</obj>
+					<obj id="creditCardNumber" type="string">4111111111111111</obj>
+					<obj id="expirationMonth" type="string">1</obj>
+					<obj id="expirationYear" type="string">2015</obj>
+					<obj id="nameOnCard" type="string">SandeepNayak</obj>
+					<obj id="newNickname" type="string">Address##4</obj>
+					<obj id="makeBilling" type="string">true</obj>
+					<obj id="firstName" type="string"></obj>
+					<obj id="lastName" type="string"></obj>
+					<obj id="companyName" type="string"></obj>
+					<obj id="address1" type="string"></obj>
+					<obj id="address2" type="string"></obj>
+					<obj id="city" type="string"></obj>
+					<obj id="state" type="string"></obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string"></obj>
+					<obj id="makePreferredSet" type="boolean">true</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="login" type="string">4178test@bbb.com</obj>
+					<obj id="updateCreditCardRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/updateCreditCardToProfile</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>				 
+			</test>
+			
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="creditCardType" type="string">Visa</obj>
+					<obj id="nickname" type="string">Visa - 1111##0</obj>
+					<obj id="creditCardNumber" type="string">4111111111111111</obj>
+					<obj id="expirationMonth" type="string">1</obj>
+					<obj id="expirationYear" type="string">2015</obj>
+					<obj id="nameOnCard" type="string">Sandeeppppppppp</obj>
+					<obj id="newNickname" type="string">newBillingAddress</obj>
+					<obj id="makeBilling" type="string">true</obj>
+					<obj id="firstName" type="string">fffffggg</obj>
+					<obj id="lastName" type="string">fffffffggg</obj>
+					<obj id="companyName" type="string">ffffffggg</obj>
+					<obj id="address1" type="string">ffffffffggg</obj>
+					<obj id="address2" type="string">ffffffggg</obj>
+					<obj id="city" type="string">ffff</obj>
+					<obj id="state" type="string">CA</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">12313</obj>
+					<obj id="makePreferredSet" type="boolean">true</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="login" type="string">4178test@bbb.com</obj>
+					<obj id="updateCreditCardRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/updateCreditCardToProfile</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>				 
+			</test>
+		</group>
+		<group id="testUpdateCreditCardError">			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="creditCardType" type="string">Visa</obj>
+					<obj id="nickname" type="string">Visa - 1111##0</obj>
+					<obj id="creditCardNumber" type="string">4111111111111111</obj>
+					<obj id="expirationMonth" type="string">1</obj>
+					<obj id="expirationYear" type="string">2010</obj>
+					<obj id="nameOnCard" type="string">sandeeeee</obj>
+					<obj id="newNickname" type="string">Address##6</obj>
+					<obj id="makeBilling" type="string">true</obj>
+					<obj id="firstName" type="string"></obj>
+					<obj id="lastName" type="string"></obj>
+					<obj id="companyName" type="string"></obj>
+					<obj id="address1" type="string"></obj>
+					<obj id="address2" type="string"></obj>
+					<obj id="city" type="string"></obj>
+					<obj id="state" type="string"></obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string"></obj>
+					<obj id="makePreferredSet" type="boolean">true</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="login" type="string">archit_goel@infosys.com</obj>
+					<obj id="updateCreditCardRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/updateCreditCardToProfile</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+				</objs>				 
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

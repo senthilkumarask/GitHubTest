@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+       <item-descriptor name="tipsPersonalization" display-name-resource="tipsPersonalization" display-property="id" cache-mode="simple" item-cache-size="1000" >
+	   <attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources"/>
+       
+      <table name="BBB_TIPS" type="primary" id-column-names="tips_id">
+      	<property name="id" column-name="tips_id" display-name-resource="tipsId" category-resource="BasicInfo" writable="true">
+      		<attribute name="propertySortPriority" value="0" />
+           	<attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources" />
+      	</property>
+      	
+      	<property name="categoryId" column-names="tips_category" item-type="category" repository="/atg/commerce/catalog/ProductCatalog"  cascade="update" 
+            display-name-resource="categoryId" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="1" />
+             <attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources" />
+         </property>
+         
+      	 <property name="tipsTxt" column-names="tips_txt" data-type="String"  display-name-resource="tipsTxt" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="2" />
+             <attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources" />
+         </property>
+         
+         <property name="tipsTitle" column-names="tips_title" data-type="String"  display-name-resource="tipsTitle" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="3" />
+             <attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources" />
+         </property>
+     
+      </table>
+  
+         
+     <table name="BBB_TIPS_SITE" type="multi" multi-column-name="sequence_num" id-column-names="tips_id">
+            <property name="siteId" column-name="site_id" data-type="list" component-item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="BasicInfo">
+             <attribute name="propertySortPriority" value="3" />
+             <attribute name="resourceBundle" value="com.bbb.personalization.TipsPerResources" />
+            </property>
+     </table>
+  </item-descriptor>
+  
+    
+</gsa-template>

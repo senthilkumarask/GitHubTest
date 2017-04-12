@@ -1,0 +1,483 @@
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:4:	A high number of imports can indicate a high degree of coupling within an object.
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:4:	Possible God class (WMC=48, ATFD=48, TCC=0.027777777777777776)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:42:	The class 'BBBCyberSourceTax' has a Cyclomatic Complexity of 6 (Highest = 14).
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:46:	Comment is too large: Too many lines
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:60:	Parameter 'ccinfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:63:	Avoid excessively long variable names like specialInstructions
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:63:	Local variable 'specialInstructions' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:63:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:67:	Found 'DD'-anomaly for variable 'taxStatuses' (lines '67'-'70').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:70:	Found 'DD'-anomaly for variable 'taxStatuses' (lines '70'-'75').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:80:	Avoid excessively long variable names like paramTaxRequestInfo
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:80:	Parameter 'paramTaxRequestInfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:82:	Found 'DD'-anomaly for variable 'arrayOfTaxStatus' (lines '82'-'90').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:82:	Found 'DU'-anomaly for variable 'arrayOfTaxStatus' (lines '82'-'115').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:87:	Avoid excessively long variable names like localCyberSourceStatus
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:87:	Local variable 'localCyberSourceStatus' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:88:	Avoid using if statements without curly braces
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:88:	Avoid using if statements without curly braces
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:89:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:90:	Found 'DU'-anomaly for variable 'arrayOfTaxStatus' (lines '90'-'115').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:94:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:97:	Avoid excessively long variable names like localCyberSourceException
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:100:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:100:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:105:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:107:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:110:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:110:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:113:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	Avoid variables with short names like i
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	Found 'UR'-anomaly for variable 'item' (lines '118'-'167').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	Parameter 'i' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	Parameter 'list' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	Parameter 'taxrequestinfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	The method 'calculate' has a Cyclomatic Complexity of 14.
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:118:	The method calculate() has an NPath complexity of 720
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:127:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:128:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:131:	Local variable 'cybersourceTagOn' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:131:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:137:	Local variable 'taxStatus' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:140:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:143:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:148:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:151:	Local variable 'stateId' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:151:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:151:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:152:	Local variable 'siteId' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:160:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:163:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:164:	Local variable 'taxableItems' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:164:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:166:	Local variable 'item' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:167:	Found 'DD'-anomaly for variable 'taxableItem' (lines '167'-'167').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:167:	Found 'DU'-anomaly for variable 'taxableItem' (lines '167'-'188').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:167:	Local variable 'taxableItem' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:168:	Local variable 'isGCItem' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:168:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:170:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:176:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:176:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:176:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:179:	Found 'DD'-anomaly for variable 'taxStatus' (lines '179'-'181').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:185:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:190:	Avoid excessively long variable names like paramRequestMessage
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:190:	Parameter 'paramRequestMessage' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:191:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:191:	Avoid variables with short names like i
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:191:	Parameter 'i' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:191:	Parameter 'taxrequestinfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:192:	Found 'DU'-anomaly for variable 'stateId' (lines '192'-'197').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:192:	Local variable 'stateId' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:192:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:192:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:193:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:194:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:199:	Parameter 'stateId' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:200:	Found 'DD'-anomaly for variable 'result' (lines '200'-'206').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:203:	Found 'DD'-anomaly for variable 'configValues' (lines '203'-'204').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:204:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:205:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:206:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:223:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:229:	Avoid reassigning parameters such as 'taxStatuses'
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:229:	Parameter 'taxRequestInfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:229:	The method 'handleTaxError' has a Cyclomatic Complexity of 14.
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:230:	Found 'DD'-anomaly for variable 'reasonCode' (lines '230'-'257').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:230:	Found 'DU'-anomaly for variable 'reasonCode' (lines '230'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:231:	Found 'DD'-anomaly for variable 'errorFlag' (lines '231'-'240').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:231:	Found 'DU'-anomaly for variable 'errorFlag' (lines '231'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:232:	Avoid excessively long variable names like specialInstructions
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:232:	Found 'DU'-anomaly for variable 'specialInstructions' (lines '232'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:232:	Local variable 'specialInstructions' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:232:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:233:	Avoid excessively long variable names like shippingDestinations
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:233:	Found 'DU'-anomaly for variable 'shippingDestinations' (lines '233'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:233:	Local variable 'shippingDestinations' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:236:	Local variable 'taxStatus' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:238:	Avoid unnecessary comparisons in boolean expressions
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:238:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:238:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:240:	Found 'DU'-anomaly for variable 'errorFlag' (lines '240'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:242:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:243:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:243:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:243:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:244:	Avoid excessively long variable names like cyberSourceStatuses
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:244:	Found 'DD'-anomaly for variable 'cyberSourceStatuses' (lines '244'-'246').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:246:	Found 'DD'-anomaly for variable 'cyberSourceStatuses' (lines '246'-'246').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:254:	Found 'DD'-anomaly for variable 'reply' (lines '254'-'256').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:254:	Found 'DU'-anomaly for variable 'reply' (lines '254'-'270').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:256:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:257:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:257:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:260:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:263:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:263:	Potential violation of Law of Demeter (static property access)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:272:	Avoid reassigning parameters such as 'i'
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:272:	Avoid reassigning parameters such as 'i'
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:272:	Avoid variables with short names like i
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:272:	Parameter 'taxrequestinfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:278:	Found 'DD'-anomaly for variable 'taxReplyItem' (lines '278'-'292').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:278:	Found 'DU'-anomaly for variable 'taxReplyItem' (lines '278'-'311').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:279:	Local variable 'itemsCount' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:279:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:279:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:280:	Found 'DD'-anomaly for variable 'taxReplyItems' (lines '280'-'299').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:281:	Local variable 'replyMessage' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:282:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:284:	Local variable 'taxReply' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:285:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:286:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:287:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:288:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:289:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:292:	Avoid instantiating new objects inside loops
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:293:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:294:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:295:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:296:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:297:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:298:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:299:	Found 'DD'-anomaly for variable 'taxReplyItems' (lines '299'-'299').
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:301:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:302:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:304:	Local variable 'cyberSourceStatus' could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:324:	Parameter 'catalogTools' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:328:	Comment is too large: Too many lines
+src/com/bbb/ecommerce/pricing/BBBCyberSourceTax.java:332:	Comment is too large: Line too long
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:30:	Comment is too large: Too many lines
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:49:	Parameter 'pShippingGroup' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:50:	Parameter 'pOrderPrice' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:50:	Parameter 'pTaxPriceInfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:51:	Parameter 'pShippingSubtotal' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:51:	Parameter 'pStatus' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:56:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:56:	Found 'DD'-anomaly for variable 'itemTaxPriceInfo' (lines '56'-'91').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:56:	Found 'DD'-anomaly for variable 'itemTaxPriceInfo' (lines '56'-'98').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:56:	Found 'DU'-anomaly for variable 'itemTaxPriceInfo' (lines '56'-'102').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:57:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:57:	Found 'DD'-anomaly for variable 'taxReplyItem' (lines '57'-'92').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:57:	Found 'DD'-anomaly for variable 'taxReplyItem' (lines '57'-'97').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:57:	Found 'DU'-anomaly for variable 'taxReplyItem' (lines '57'-'102').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:62:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:68:	A method should have only one exit point, and that should be the last statement in the method
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:70:	Local variable 'relationships' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:72:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:72:	Found 'DU'-anomaly for variable 'taxStatus' (lines '72'-'102').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:72:	Local variable 'taxStatus' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:74:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:74:	Found 'DU'-anomaly for variable 'itemTaxMap' (lines '74'-'102').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:74:	If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:74:	Local variable 'itemTaxMap' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:80:	Substitute calls to size() == 0 (or size() != 0) with calls to isEmpty()
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:84:	Local variable 'taxReply' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:84:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:86:	Local variable 'sgcir' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:88:	Local variable 'commerceItemId' could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:88:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:91:	Avoid instantiating new objects inside loops
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:91:	Found 'DD'-anomaly for variable 'itemTaxPriceInfo' (lines '91'-'93').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:92:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:94:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:97:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:97:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:98:	Found 'DD'-anomaly for variable 'itemTaxPriceInfo' (lines '98'-'99').
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:104:	Parameter 'itemTaxPriceInfo' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:104:	Parameter 'taxReplyItem' is not assigned and could be declared final
+src/com/bbb/ecommerce/pricing/BBBTaxProcessorTaxCalculator.java:114:	Parameter 'pTRI' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/BBBCreditCardStatus.java:14:	Avoid modifiers which are implied by the context
+src/com/bbb/integration/cybersource/creditcard/BBBCreditCardStatus.java:16:	Avoid modifiers which are implied by the context
+src/com/bbb/integration/cybersource/creditcard/BBBCreditCardStatus.java:18:	Avoid modifiers which are implied by the context
+src/com/bbb/integration/cybersource/creditcard/BBBCreditCardStatus.java:20:	Avoid excessively long variable names like pAuthResposeRecord
+src/com/bbb/integration/cybersource/creditcard/BBBCreditCardStatus.java:20:	Avoid modifiers which are implied by the context
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:25:	Avoid excessively long variable names like mAuthorizationCode
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:25:	Avoid using redundant field initializer for 'mAuthorizationCode'
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:25:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:30:	Avoid excessively long variable names like mAuthResponseRecord
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:30:	Avoid using redundant field initializer for 'mAuthResponseRecord'
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:30:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:39:	Parameter 'pReply' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:39:	Parameter 'pTotalAmount' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:42:	Local variable 'ccReply' could be declared final
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:52:	Parameter 'pReply' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:76:	Avoid excessively long variable names like pAuthorizationCode
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:76:	Parameter 'pAuthorizationCode' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:98:	Avoid excessively long variable names like pAuthResposeRecord
+src/com/bbb/integration/cybersource/creditcard/CreditCardStatus.java:98:	Parameter 'pAuthResposeRecord' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CyberSourceVO.java:20:	Parameter 'creditCardParams' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/creditcard/CyberSourceVO.java:34:	Parameter 'amount' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:29:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:29:	Found 'UR'-anomaly for variable 'paymentGroup' (lines '29'-'36').
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:29:	Parameter 'pParams' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:29:	Parameter 'pResult' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:32:	Found 'DD'-anomaly for variable 'creditCard' (lines '32'-'37').
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:32:	Found 'DU'-anomaly for variable 'creditCard' (lines '32'-'57').
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:33:	Local variable 'request' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:34:	Local variable 'card' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:35:	Local variable 'paymentGroup' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:35:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:47:	Local variable 'configMap' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:48:	Found 'DD'-anomaly for variable 'onlineOrderPrefix' (lines '48'-'52').
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:49:	Local variable 'orderId' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:50:	Local variable 'siteId' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:52:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:59:	Avoid excessively long variable names like mOnlineOrderPrefixKey
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:59:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:60:	Avoid excessively long variable names like mCartAndCheckOutConfigType
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:60:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:71:	Avoid excessively long variable names like pOnlineOrderPrefixKey
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:71:	Parameter 'pOnlineOrderPrefixKey' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:83:	Avoid excessively long variable names like pCartAndCheckOutConfigType
+src/com/bbb/integration/cybersource/processor/BBBProcAddCreditCardInfo.java:83:	Parameter 'pCartAndCheckOutConfigType' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:33:	The class 'BBBProcSendRequest' has a Cyclomatic Complexity of 8 (Highest = 24).
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:35:	Avoid excessively long variable names like CYBERSOURCE_AVS_FAIL
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:36:	Avoid excessively long variable names like CYBERSOURCE_INVALID_CVV
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:37:	Avoid excessively long variable names like CART_AND_CHECKOUT_KEYS
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:40:	Avoid using redundant field initializer for 'mCatalogTools'
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:40:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:41:	Avoid using redundant field initializer for 'mTestEnvironment'
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:41:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:47:	Avoid really long methods.
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:47:	Parameter 'pParams' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:47:	The method 'runCreditCardProcess' has a Cyclomatic Complexity of 24.
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:47:	The method runCreditCardProcess() has an NPath complexity of 12120
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:48:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:48:	Parameter 'pResult' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:50:	Found 'DD'-anomaly for variable 'result' (lines '50'-'114').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:51:	Found 'DD'-anomaly for variable 'systemError' (lines '51'-'66').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:52:	Found 'DD'-anomaly for variable 'siteID' (lines '52'-'55').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:55:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:57:	Local variable 'cybersourceTagOn' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:57:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:63:	Deeply nested if..then statements are hard to read
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:71:	Local variable 'request' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:73:	Deeply nested if..then statements are hard to read
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:76:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:81:	Found 'DU'-anomaly for variable 'startTime' (lines '81'-'172').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:81:	Local variable 'startTime' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:83:	Local variable 'pRequest' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:84:	Local variable 'cyberSourceVO' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:86:	Local variable 'totalAmount' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:86:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:87:	Local variable 'creditCardNum' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:93:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:96:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:96:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:96:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:99:	Local variable 'minAuthAmount' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:100:	Found 'DD'-anomaly for variable 'authAmount' (lines '100'-'102').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:104:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:110:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:119:	Avoid using Literals in Conditional Statements
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:131:	Local variable 'reply' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:132:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Found 'DU'-anomaly for variable 'originalAuthTime' (lines '133'-'172').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Local variable 'originalAuthTime' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Found 'DU'-anomaly for variable 'originalAuthCode' (lines '134'-'172').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Local variable 'originalAuthCode' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Found 'DU'-anomaly for variable 'originalAvsCode' (lines '135'-'172').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Local variable 'originalAvsCode' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:136:	Local variable 'originalRequestID' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:136:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:136:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:137:	Avoid excessively long variable names like originalAuthAmount
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:137:	Local variable 'originalAuthAmount' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:137:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:148:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:149:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:149:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:152:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:153:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:154:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:155:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:155:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:156:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:159:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:160:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:181:	Parameter 'errorFlag' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:181:	Parameter 'pParams' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:181:	The method 'checkError' has a Cyclomatic Complexity of 19.
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:181:	The method checkError() has an NPath complexity of 2028
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:182:	Local variable 'request' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:183:	Found 'DD'-anomaly for variable 'reasonCode' (lines '183'-'195').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:186:	Found 'DU'-anomaly for variable 'cyberSourceVO' (lines '186'-'257').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:186:	Local variable 'cyberSourceVO' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:195:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:196:	Avoid using Literals in Conditional Statements
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:197:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:199:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:205:	Comment is too large: Line too long
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:206:	Comment is too large: Line too long
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:207:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:207:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:207:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:207:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:211:	Local variable 'requestMessage' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:212:	Local variable 'totalAmount' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:212:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:217:	Avoid using Literals in Conditional Statements
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:218:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:220:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:226:	Comment is too large: Line too long
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:227:	Comment is too large: Line too long
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:228:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:232:	Local variable 'requestMessage' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:233:	Local variable 'totalAmount' could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:233:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:233:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:234:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:235:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:244:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:245:	Found 'DD'-anomaly for variable 'msg' (lines '245'-'247').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:245:	Found 'DD'-anomaly for variable 'msg' (lines '245'-'252').
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:246:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:246:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:247:	Prefer StringBuffer over += for concatenating strings
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:248:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:250:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:252:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:252:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:252:	Prefer StringBuffer over += for concatenating strings
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:255:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:255:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:271:	Parameter 'pCatalogTools' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/BBBProcSendRequest.java:285:	Parameter 'pTestEnvironment' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:23:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:23:	Parameter 'pParams' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:23:	Parameter 'pResult' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:24:	Local variable 'ccinfo' could be declared final
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:25:	Local variable 'reply' could be declared final
+src/com/bbb/integration/cybersource/processor/ProcCreateCyberSourceStatus.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:37:	Parameter 'pOrder' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:38:	Local variable 'orderImpl' could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:39:	Avoid excessively long variable names like persistedProperties
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:39:	Local variable 'persistedProperties' could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:40:	Avoid excessively long variable names like persistedPropertiesString
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:40:	Local variable 'persistedPropertiesString' could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:44:	Found 'DD'-anomaly for variable 'inputStream' (lines '44'-'47').
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:48:	Avoid excessively long variable names like propertiesFileLoader
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:48:	Local variable 'propertiesFileLoader' could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:63:	Deeply nested if..then statements are hard to read
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:81:	Parameter 'pTaxRequestInfo' is not assigned and could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:82:	Avoid excessively long variable names like persistedProperties
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:82:	Local variable 'persistedProperties' could be declared final
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/com/bbb/integration/cybersource/utils/BBBPreCalculatedTaxUtils.java:84:	A method should have only one exit point, and that should be the last statement in the method

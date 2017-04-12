@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestInternationalOrderXmlRepoTools.xml 
+	DESCRIPTION: ddtunit data file for TestInternationalOrderXmlRepoTools.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.scheduler.TestPOProcessScheduler">
+	
+	<!-- testCreateDSOrderId -->
+	
+	<group id="testSchedule">
+        <test id="test1">
+			<objs>
+				<obj id="poProcessScheduler" type="com.bbb.internationalshipping.fulfillment.scheduler.POProcessScheduler" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.scheduler.TestPOProcessScheduler">
+					<item type="string">/com/bbb/internationalshipping/fulfillment/scheduler/POProcessScheduler</item>
+				</obj>	
+				<obj id="filePath" type="String">/u02/opt/weblogic/borderfree/jobs/dev/international/purchaseorder/bbby</obj>
+               	<obj id="archive" type="string">/u02/opt/weblogic/borderfree/jobs/dev/international/purchaseorder/bbby/archive</obj>
+				  	<obj id="error" type="string">/u02/opt/weblogic/borderfree/jobs/dev/international/purchaseorder/bbby/error</obj>
+			</objs>      
+        </test>
+      </group>
+      
+          
+     
+	</cluster>
+</ddtunit>
+ 

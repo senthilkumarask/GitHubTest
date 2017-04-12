@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="OmnitureTagging">
+  <ReviewIssue id="HWXB5VEP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:09:17:953 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:10:07:841 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="465">src/com/bbb/commerce/order/droplet/BBBOrderOmnitureDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Do Proper Exception handling</Summary>
+    <Description>Do Proper Exception handling</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HWXB8P3M">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:11:29:746 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:14:16:186 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="494">src/com/bbb/commerce/order/droplet/BBBOrderOmnitureDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove code for event 60</Summary>
+    <Description>Since event 60 calculated on shipping group for non ltl items,it can be removed at item level </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HWXBFNRN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:16:54:611 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:18:54:428 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="113">src/com/bbb/commerce/order/droplet/BBBOrderOmnitureDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use Stringbuilder instead of declaring new variables  at global scope level</Summary>
+    <Description>Use Stringbuilder instead of declaring new variables  at global scope level</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HWXBIUHF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:19:23:283 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 15:21:38:527 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="498">src/com/bbb/commerce/order/droplet/BBBOrderOmnitureDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Handle scenario when both ltl item and coupon applied</Summary>
+    <Description>Handle scenario when both ltl item and coupon applied</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

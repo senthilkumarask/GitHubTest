@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-37">
+  <ReviewIssue id="HYSGIJCN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 14:59:40:727 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 15:49:19:276 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="6">config/atg/repository/seo/BrandIndirectTemplate.properties</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>These are not required, please remove irrelevant properites</Summary>
+    <Description># Regex that matches above format
+indirectRegex=.*/brand([^/].*?)(/.*)*$ 
+
+# Regex elements
+regexElementList= item | id
+
+# Forward Url template
+forwardUrlTemplateFormat=/search/search.jsp?Keyword={keyword}
+
+endecaSearch=/com/bbb/search/endeca/EndecaSearch
+
+bbbCatalogTools=/com/bbb/commerce/catalog/BBBCatalogTools</Description>
+    <Annotation>indirectRegex is used by parent class.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSGULRQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:09:03:734 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 09:10:34:041 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="19">config/atg/sitemap/BrandSitemapGenerator.properties</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use clear prefix for brand site map files.</Summary>
+    <Description>sitemapFilePrefix=brandPageitemap
+sitemapFilePrefixString=brandPageitemap</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSGXG8J">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:11:16:531 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 09:12:18:686 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="23">config/atg/sitemap/MobileBrandSitemapGenerator.properties</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>User clear prefix for mobile brand page sitemaps</Summary>
+    <Description>sitemapFilePrefix=mobileBrandPageitemap
+sitemapFilePrefixString=mobileBrandPageitemap</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSH1E4U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:14:20:430 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 07:34:19:785 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="42">config/atg/sitemap/MobileBrandSitemapGenerator.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>These two properties should point to MobileSitemapGeneratorService component's properties</Summary>
+    <Description># Context path should not be included here if webApp property is specified
+urlPrefix^=/atg/sitemap/SitemapGeneratorService.urlPrefix
+
+# Used to retrieve application's context root
+webApp^=/atg/sitemap/SitemapGeneratorService.webApp</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validDuplicate</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSH8YUF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:20:13:863 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:30:21:859 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File></File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Enviornment files for Mobile Generators, Services and Writer components. These are critical and should have mobile folder</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSHE5R4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:24:16:096 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 07:31:54:642 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="43">config/atg/sitemap/MobileBrandSitemapGenerator.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>This should point to MobileSitemapGeneratorService component properties</Summary>
+    <Description>urlPrefix^=/atg/sitemap/SitemapGeneratorService.urlPrefix
+
+# Used to retrieve application's context root
+webApp^=/atg/sitemap/SitemapGeneratorService.webApp</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSHIXRM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:27:59:026 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:36:18:340 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="64">config/atg/sitemap/MobileCategorySitemapGenerator.properties</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>This property does not seem relevant</Summary>
+    <Description>
+siteIdInRepository=siteId
+</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSHOVEI">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:32:35:898 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 15:48:41:798 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="21">config/atg/sitemap/MobileSitemapGeneratorService.properties</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Empty directory. These should be set either to default directory. There must be envt specific files just like desktop</Summary>
+    <Description>warDir=
+# URL prefix with protocol, host, port and context path.
+# Context path should not be included here if webApp property is specified
+urlPrefix=</Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSI1ZFF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:42:47:643 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:29:31:549 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="1">config/atg/sitemap/MobileSitemapRepository.xml</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Properties and xml files should be in same module. Currently these are scattered.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Resolved.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSI6ZAQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:46:40:754 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:28:07:589 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="5">config/atg/sitemap/MobileSitemapTools.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>There should be no space between property and its value</Summary>
+    <Description>sitemapRepository = /atg/sitemap/MobileSitemapRepository</Description>
+    <Annotation>This is not an issue , but we will fix it.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSIAMDA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:49:30:622 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:27:45:421 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="16">config/atg/sitemap/SitemapGeneratorService.properties</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Why we have , in end of the the list. This may cause issue.</Summary>
+    <Description>tor,\</Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSICM3I">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:51:03:582 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 10:02:14:644 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="25">src/atg/sitemap/BBBMobileCatalogDynamicSitemapGenerator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Generic type should be parameterized &lt;String,String&gt;</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSIG5FS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 15:53:48:616 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:34:14:363 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="52">src/atg/sitemap/BBBMobileCatalogDynamicSitemapGenerator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Null pointer checks should be placed before calling the below statements</Summary>
+    <Description>		params = template.cloneUrlParameters();
+		populateUrlParameters(params, lookups);
+(String)getUrlPrefixFromDomainMap().get((String)pSite.getPropertyValue(BBBCoreConstants.ID));</Description>
+    <Annotation>template we are setting from property file so there is no need to null check.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSIRCCC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:02:30:780 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:33:40:808 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="28">src/atg/sitemap/BBBMobileCatalogDynamicSitemapGenerator.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There are several PMD violations, please fix those</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSIT9GZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:04:00:371 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-19 :: 11:22:04:515 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="36">src/atg/sitemap/BBBMobileCatalogDynamicSitemapGenerator.java</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Check if logging is enabled before logging debug, error or info messages.</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision>Fixed</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSIUKCT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:05:01:133 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:28:37:490 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="50">src/atg/sitemap/MobileSitemapGeneratorService.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There are numberous PMD violations, please fix those.</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSJ0W88">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:09:56:456 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 11:19:12:523 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="25">src/atg/sitemap/MobileSitemapTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>There are PMD violations, please fix these.</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSJ1YWF">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:10:46:575 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-14 :: 07:38:01:774 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="51">src/atg/sitemap/MobileSitemapTools.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Use String constants from constant class instead of hard coding literals</Summary>
+    <Description></Description>
+    <Annotation>Fixed</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HYSJ5FL2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-13 :: 16:13:28:166 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 15:50:06:044 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>ikhan2</ReviewerId>
+    <AssignedTo>Sachin</AssignedTo>
+    <File line="6">config/atg/repository/seo/MobileCategoryIndirectTemplate.properties</File>
+    <Type>item.type.label.irrelevant</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>These properties does not look relevant</Summary>
+    <Description># Regex that matches above format
+indirectRegex=.*/category/[^/]*?/([^/].*?)(/.*)*$,
+
+# Regex elements
+regexElementList=\
+       item | id | /atg/commerce/catalog/ProductCatalog:category,\
+       mystring | string
+
+# Forward Url template
+forwardUrlTemplateFormat=/browse/category.jsp?categoryId\={item.id}
+
+# Supported Browser Types
+#supportedBrowserTypes=\
+#        robot
+
+# Web App registry
+webAppRegistry=/atg/registry/WebApplicationRegistry
+entities=&amp;trade;,&amp;amp;,&amp;lt;,&amp;gt;,&amp;quot;,&amp;ndash;,&amp;mdash;,&amp;ensp;,&amp;emsp;,&amp;nbsp;,&amp;shy;,&amp;reg;&amp;#58;,&amp;#63;
+listOfExcludedUrlsExpressions=non-navigable-products,20017,10017,10000,20000,30000
+catalogTools=/atg/commerce/catalog/CatalogTools
+type=/category
+bbbCatalogTools=/com/bbb/commerce/catalog/BBBCatalogTools</Description>
+    <Annotation>indirectRegex property is used by parent class.</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.invalidWontfix</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

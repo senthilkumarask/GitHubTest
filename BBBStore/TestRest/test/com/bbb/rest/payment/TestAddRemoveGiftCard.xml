@@ -1,0 +1,246 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY:
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.payment.TestAddRemoveGiftCard">
+			<group id="testAddGiftCardForPayment">
+			<test id="test41">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"11905145","prodId":"1011905145","qty":"33","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="giftCardNo" type="string">7777060829204424</obj>
+					<obj id="giftCardPin" type="string">81819898</obj>
+
+				</objs>
+			</test>
+		</group>
+
+		<group id="testAddGiftCardForPaymentError">
+			<test id="test42">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"11905145","prodId":"1011905145","qty":"99","price":"$44.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="errorString" type="string">A system error occurred</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="wrongGiftCardNo" type="string">77770608291691</obj>
+					<obj id="giftCardPin" type="string">28857169</obj>
+
+				</objs>
+			</test>
+		</group>
+			<group id="testIsOrderAmountCoveredByGC">
+			<test id="test43">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"11905145","prodId":"1011905145","qty":"1","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="giftCardNo" type="string">7777060829164841</obj>
+					<obj id="giftCardPin" type="string">28857169</obj>
+					<!-- checking the amount covered by GC -->
+					<obj id="isOrderAmount" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/isOrderAmountCoveredByGCAPI</obj>
+
+				</objs>
+			</test>
+		</group>
+			<group id="testIsGiftCardAlreadyExist">
+			<test id="test45">
+				<objs>
+				 <obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"18088282","prodId":"1018088282","qty":"33","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<obj id="giftCardAlreadyExist" type="string">giftCardExist</obj>
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="giftCardNo" type="string">7777007222699458</obj>
+					<obj id="giftCardPin" type="string">45398402</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testMaxGiftCardReached">
+			<test id="test48">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"11905145","prodId":"1011905145","qty":"99","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="giftCardNo" type="string">7777060829204424</obj>
+					<obj id="giftCardPin" type="string">28857169</obj>
+					<obj id="isMaxGiftCardReached" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/isMaxGiftCardReachedAPI</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRemoveGiftCard">
+			<test id="test49">
+				<objs>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<!-- Add item to order -->
+					<obj id="jsonResultString" type="string">{"addItemResults":[{"skuId":"11905145","prodId":"1011905145","qty":"99","price":"$39.99","bts":"false","storeId":""}]}</obj>
+					<obj id="addCartRequest" type="string">/rest/bean/atg/commerce/order/purchase/CartModifierFormHandler/addItemToOrder</obj>
+					<!-- <obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj> -->
+					<!-- Check order status -->
+					<obj id="currentOrderDetailsRequest" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getCurrentOrderDetails</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<!-- Adding billing order -->
+					<obj id="userSelectedOption" type="string">NEW</obj>
+					<obj id="firstName" type="string">tester</obj>
+					<obj id="lastName" type="string">tester</obj>
+					<obj id="companyName" type="string">company</obj>
+					<obj id="address1" type="string">add1</obj>
+					<obj id="address2" type="string">add2</obj>
+					<obj id="city" type="string">col</obj>
+					<obj id="state" type="string">AL</obj>
+					<obj id="country" type="string">US</obj>
+					<obj id="postalCode" type="string">89354</obj>
+					<obj id="email" type="string">testgift@bbb.com</obj>
+					<obj id="confirmedEmail" type="string">testgift@bbb.com</obj>
+					<obj id="mobileNumber" type="string">1112223344</obj>
+					<obj id="saveToAccount" type="boolean">false</obj>
+					<obj id="addBillingAddressRequest" type="string">/rest/bean/com/bbb/commerce/checkout/formhandler/BBBBillingAddressFormHandler/addBillingAddressToOrder</obj>
+					<!-- add gift card to order -->
+					<obj id="addGiftCard" type="string">/rest/bean/com/bbb/payment/giftcard/BBBGiftCardFormHandler/createGiftCard</obj>
+					<obj id="giftCardNo" type="string">7777060829164841</obj>
+					<obj id="giftCardPin" type="string">28857169</obj>
+					<!-- Remove Order -->
+				    <obj id="removeGiftCardURL" type="string">/rest/bean/atg/commerce/order/purchase/PaymentGroupFormHandler/removeGiftCard</obj>
+
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

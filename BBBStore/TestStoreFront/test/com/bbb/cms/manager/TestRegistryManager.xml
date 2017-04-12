@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRegistryManager.xml 
+	DESCRIPTION: ddtunit data file for TestRegistryManager.java test case HISTORY: 
+	Jan 03, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.manager.TestRegistryManager">
+		<group id="testRegistryService">
+			 
+			<test id="testRegistryService_test1">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.RegistryTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestRegistryManager">
+						<item type="string">/com/bbb/cms/manager/RegistryTemplateManager</item>
+					</obj>
+					<obj id="pageName" type="string">RegistryFeatures</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+				</objs>
+				<asserts>
+					<assert id="pageTitle" type="java.lang.String" action="isNotNull"></assert>
+					<assert id="pageHeaderCopy" type="java.lang.String" action="isNotNull"></assert>
+					<assert id="brandImagesSize" type="java.lang.Integer" action="isGT">0</assert> 
+				</asserts>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

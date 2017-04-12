@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestGetItemInventory.xml 
+	DESCRIPTION: ddtunit data file for TestRestGetItemInventory.java test case HISTORY: 
+	Nov 16, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.commerce.TestRestGetItemInventory">
+	
+	<group id="testGetItemsInventoryLoggedinUser">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="login" type="string">4178test@bbb.com</obj>
+					<obj id="password" type="string">Test@123</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/login</obj>
+					<obj id="pSkuId" type="string">16830275</obj>
+					<obj id="pStoreId" type="string"></obj>
+					<obj id="pItemQty" type="java.lang.Integer">1</obj>
+					<obj id="operation" type="string">addItem</obj>
+					<obj id="registryId" type="string"></obj>
+					<obj id="getInventoryOfItem" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getInventoryStatus</obj>
+					
+				</objs>
+			</test>
+		</group>
+		<group id="testGetItemsInventoryAnonymousUser">
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="pSkuId" type="string">13637911</obj>
+					<obj id="pStoreId" type="string">null</obj>
+					<obj id="pItemQty" type="java.lang.Integer">1</obj>
+					<obj id="operation" type="string">productDisplay</obj>
+					<obj id="registryId" type="string">null</obj>
+					<obj id="getInventoryOfItem" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getInventoryStatus</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testGetItemsInventoryError">
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="pSkuId" type="string">13637911</obj>
+					<obj id="pStoreId" type="string"></obj>
+					<obj id="pItemQty" type="java.lang.Integer">1</obj>
+					<obj id="operation" type="string">onlineToStore</obj>
+					<obj id="registryId" type="string">null</obj>
+					<obj id="getInventoryOfItem" type="string">/rest/bean/com/bbb/rest/generic/BBBSessionManagerFacade/getInventoryStatus</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>
+ 

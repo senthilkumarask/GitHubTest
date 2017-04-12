@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_favourite_store">
+  <ReviewIssue id="GXX0IHR4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:01:29:248 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:01:46:364 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Lokesh_Duseja</AssignedTo>
+    <File line="9">test/com/bbb/account/TestBBBFavStore.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Incorrect Filename, date and description</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GXX0JGQ7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:02:14:575 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:02:36:334 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Lokesh_Duseja</AssignedTo>
+    <File line="30">test/com/bbb/account/TestBBBFavStore.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Change the email and password to what is there in test database</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GXX0KPG2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:03:12:530 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:03:30:240 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Lokesh_Duseja</AssignedTo>
+    <File line="48">test/com/bbb/account/TestBBBFavStore.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add Testcases for remove, modify favorite store also</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GXX0LG71">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:03:47:197 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-01-27 :: 15:04:26:107 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Lokesh_Duseja</ReviewerId>
+    <AssignedTo>Lokesh_Duseja</AssignedTo>
+    <File line="5">test/com/bbb/account/TestBBBFavStore.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Add complete header with correct filename, description, correct dates</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

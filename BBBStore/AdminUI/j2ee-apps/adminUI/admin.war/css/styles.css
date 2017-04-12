@@ -1,0 +1,131 @@
+body, .ui-widget, .ui-widget select
+{
+	font-family: "Verdana", "Helvetica", "Arial",  "sans-serif", "Trebuchet MS";
+        font-size: 8pt;
+}
+.ui-widget-header {
+	padding:3px 3px;
+	font-weight:bold;
+}
+.ui-widget-overlay {
+	
+	background: #eeeeee;
+	opacity: .3;
+	
+	filter: Alpha(Opacity=30);
+}
+input::-ms-clear 
+{
+	display: none;
+}
+.input-field-container
+{
+	padding:3px 3px;
+}
+.input-field-label 
+{
+	padding:3px 0px 3px 0px;
+}
+#tabs
+{    
+	border: none;
+	background:white;
+
+}
+#tabs .ui-widget-content
+{
+	color:black; 
+}
+html, body {
+/*
+    height: 100%;
+    margin:0;
+*/
+}
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.header {
+    display: table-row;
+}
+.header-cell {
+    padding:10px 10px 0px 10px
+}
+.content {
+    display: table-row; 
+    height: 100%;
+}
+.content-cell {
+    padding:0px 10px 0px 10px
+}
+.footer {
+    display: table-row;
+}
+.footer-cell {
+    padding:0px 10px 10px 10px
+}
+.input-field-wrapper input {
+	font:inherit;
+}
+.input-field-label {
+
+}
+.input-field-error {
+
+ 	color:red;
+	padding-top:3px;
+}
+.list {
+	list-style-image:url('../images/list-icon.png');
+}
+.xlist {
+	list-style-image:url('../images/xlist-icon.png');
+}
+.category {
+	list-style-image:url('../images/list-category.png');
+}
+.xcategory {
+	list-style-image:url('../images/xlist-category.png');
+}
+.dcategory {
+	list-style-image:url('../images/dlist-category.png');
+}
+.dxcategory {
+	list-style-image:url('../images/dxlist-category.png');
+}
+.eph_node {
+	list-style-image:url('../images/eph-category.png');
+}
+.jda_category {
+	list-style-image:url('../images/jda-category.png');
+}
+.rule {
+	list-style-image:url('../images/diamond-crown.png');
+}
+.eph_rule {
+	list-style-image:url('../images/emerald-crown.png');
+}
+.jda_rule {
+	list-style-image:url('../images/ruby-crown.png');
+}
+.facet {
+	list-style-image:url('../images/diamond.png');
+}
+.eph_facet {
+	list-style-image:url('../images/emerald.png');
+}
+.jda_facet {
+	list-style-image:url('../images/ruby.png');
+}
+.sku {
+	list-style-image:url('../images/sku.png');
+}
+.xsku {
+	list-style-image:url('../images/xsku.png');
+}
+input#categoryForm_is_deleted:checked + label {
+	color:red;
+	font-weight:bold;
+}

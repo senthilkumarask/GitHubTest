@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+ATG-Config-Path: config/
+ATG-Required: BBBStore.core
+ATG-Class-Path: classes 
+    lib/commons-lang-2.4.jar 
+    lib/commons-logging-1.1.1.jar
+    lib/standard.jar
+    lib/jstl.jar

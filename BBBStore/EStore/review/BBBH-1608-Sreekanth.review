@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-1608">
+  <ReviewIssue id="IM86YORX">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 16:59:50:637 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:00:04:768 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2">config/com/bbb/thirdparty/omniture/tools/OmnitureBoostedCategoryTools.properties</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM87BDVZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:09:43:055 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:13:14:285 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="65">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedCategoryTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>We may end up having nested condition of Type and keyword list</Summary>
+    <Description>As per omniture spec, I am afraid we can write condition like 
+type=not
+keyword="*.*
+type= AND
+keyword=xyz
+I believe our framework does not support this nesting conditioning, we should explore more and change the code.
+
+List&lt;String&gt; searchedTypeList = getBbbCatalogTools().getAllValuesForKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.L2_BOOSTING_REQUEST_TYPE_NOT );
+		if (!BBBUtility.isListEmpty(searchedTypeList)) {
+			searchType = searchedTypeList.get(0);
+		}
+		
+		searchVO.setType(searchType);
+		
+		
+		List&lt;String&gt; searchKeywordList = getBbbCatalogTools().getAllValuesForKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.L2_BOOSTING_KEYWORDS_TO_OMIT );
+		if (!BBBUtility.isListEmpty(searchKeywordList)) {
+			String searchKeywordString = searchKeywordList.get(0);
+			String[] keywordArray = searchKeywordString.split(BBBCoreConstants.COMMA);
+			searchVO.setKeywords(Arrays.asList(keywordArray));
+		}
+		</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM87U53Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:24:18:134 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:26:12:186 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="63">src/com/bbb/thirdparty/omniture/tools/OmnitureBoostedProductTools.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Logic may not work when we have nested type and keyword logic. Refer detailed comment from L2 boosting class</Summary>
+    <Description>String searchType = BBBCoreConstants.BLANK;
+		List&lt;String&gt; searchedTypeList = getBbbCatalogTools().getAllValuesForKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.L2_BOOSTING_REQUEST_TYPE_NOT );
+		if (!BBBUtility.isListEmpty(searchedTypeList)) {
+			searchType = searchedTypeList.get(0);
+		}
+		
+		searchVO.setType(searchType);
+		
+		List&lt;String&gt; searchKeywordList = getBbbCatalogTools().getAllValuesForKey(BBBCoreConstants.OMNITURE_BOOSTING, BBBCoreConstants.OMNITURE_BOOSTED_PRODUCTS_KEYWORDS_TO_OMIT);
+		if (!BBBUtility.isListEmpty(searchKeywordList)) {
+			String searchKeywordString = searchKeywordList.get(0);
+			String[] keywordArray = searchKeywordString.split(BBBCoreConstants.COMMA);
+			searchVO.setKeywords(Arrays.asList(keywordArray));
+		}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IM881TGS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:30:16:300 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-03-25 :: 17:42:27:653 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="197">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Use foreach loop and meaningful name for variables</Summary>
+    <Description>Use foreach loop and meaningful name for variables</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

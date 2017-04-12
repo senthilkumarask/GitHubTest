@@ -1,0 +1,13 @@
+<form id="getProductRestDetails" name="Product Details">
+	<description>This service will provide product details.</description>
+	<action>/rest/bean/com/bbb/rest/catalog/BBBRestCatalogToolImpl/getProductRestDetails</action>
+	<params>
+		<param type="text" id="atg-rest-depth" name="atg-rest-depth" required="true" class="reqBody" >6</param>
+		<param type="text" id="atg-rest-input" name="atg-rest-input" required="true" class="reqBody">json</param>
+		<param type="select" name="atg-rest-output" id="atg-rest-output" required="true" class="reqBody">json:json,xml:xml</param>
+		<param type="text" id="clientID"  name="clientID" required="true" class="reqHead">client123</param>
+		<param type="text" id="token" name="token" class="reqHead" >client123</param>
+		<param type="text" id="arg1" name="productId" required="true" class="reqBody" >1014630104</param>
+		<param type="select" name="X-bbb-site-id" id="X-bbb-site-id" class="reqHead">BuyBuyBaby,BedBathUS,BedBathCanada</param>
+	</params>
+</form>

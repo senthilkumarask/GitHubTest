@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-207">
+  <ReviewIssue id="IDLCQCWA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 13:34:58:954 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-08-21 :: 14:19:59:113 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sunil Kumar</ReviewerId>
+    <AssignedTo>Sunil Kumar</AssignedTo>
+    <File line="325">src/com/bbb/rest/search/RestSearchManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Remove constants</Summary>
+    <Description>Remove constants</Description>
+    <Annotation>122587</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

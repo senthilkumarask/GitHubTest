@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  <item-descriptor name="siteStaticPage" display-name-resource="itemDescriptorSiteStaticPage"  display-property="pageTitle" cache-mode="simple" item-cache-size="1000" last-modified-property="lastModifiedDate">
+  	<attribute name="updateLastModified" value="true"/>
+  	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	     <table name="BBB_Static_Template" type="primary" id-column-names="static_template_id">
+	     	<property name="id" column-name="static_template_id" display-name-resource="staticTemplateId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        	</property>
+	        <property name="pageName" column-name="page_name" data-type="enumerated" display-name-resource="pageName" required="true" category-resource="BasicInfo">
+	             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="1" />
+	             	<attribute name="uiwritable" value="true"/>
+					<attribute name="useCodeForValue" value="false"/>
+						<option value="Careers" code="201"/>
+						<option value="CorporateResponsibilityReport" code="202"/>
+						<option value="EasyReturns" code="203"/>
+						<option value="FAQ" code="204"/>
+						<option value="FAQDetails" code="205"/>
+						<option value="GiftPackagingPopUp" code="206"/>
+						<option value="GiftPackagingUnavailable" code="207"/>
+						<option value="GlossaryPage" code="208"/>
+						<option value="GuidesPage" code="209"/>
+						<option value="MediaRelations" code="210"/>
+						<option value="PrivacyPolicy" code="211"/>
+						<option value="SafetyAndRecalls" code="212"/>
+						<option value="ShippingPolicies" code="213"/>
+						<option value="TermsOfUse" code="215"/>
+						<option value="CorporateSalesReport" code="216"/>
+						<option value="CanadaStoreLocator" code="217"/>
+						<option value="Others" code="218"/>
+						<option value="CareersEOD" code="219"/>
+						<option value="HealthyWomen" code="220"/>
+						<option value="HealthyPregnancyGuide" code="221"/>
+						<option value="PrenatalCare" code="222"/>
+						<option value="FirstTrimesterIssues" code="223"/>
+						<option value="TransitioningToSolidFoods" code="224" />
+						<option value="TopTips" code="225"/>
+						<option value="BreastFeeding" code="226"/>
+						<option value="Sleep" code="227"/>
+						<option value="HealthyBabyHealthyYou" code="228"/>
+						<option value="HealthyBaby" code="229"/>
+						<option value="Eat" code="230"/>
+						<option value="TipsSleep " code="231"/>
+						<option value="Bathe" code="232"/>
+						<option value="EatingHealthyAndExercising" code="233" />
+						<option value="MoreResources" code="234" />
+						<option value="CommonPhysicalChanges" code="235" />
+						<option value="MedicationsDuringPregnancy" code="236" />
+						<option value="LaborandDelivery" code="237" />
+						<option value="ChoosingDayCareProvider" code="238" />
+						<option value="TakingCareYourNewborn" code="239" />
+						<option value="BreastfeedingYourNewborn" code="240" />
+						<option value="TakingCareofYou" code="241" />
+						<option value="Play" code="242" />
+						<option value="SafeAndSound" code="243" />
+						<option value="SummerSunSafety" code="245" />
+						<option value="HalloweenSafety" code="246" />
+						<option value="BundlingForWinter" code="247" />
+						<option value="TravelingWithBaby" code="248" />
+						<option value="HealthyWomanRegistration" code="249" />
+						<option value="InternationalShippingPolicies" code="250" />
+	            </property>
+	            <property name="pageTitle" column-name="page_title" data-type="String" display-name-resource="pageTitle" required="true" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="2" />
+	            </property>
+	       
+	            <property name="pageHeaderCopy" column-name="page_header_copy" data-type="big string" display-name-resource="pageHeaderCopy" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="3" />
+	            </property>
+	            
+	            <property name="pageCopy" column-name="page_copy" data-type="big string" display-name-resource="pageCopy" category-resource="BasicInfo" property-type="com.bbb.commerce.catalog.ActionURLOverride">
+	             <attribute name="propertySortPriority" value="4" />
+	            </property>
+	            
+	            <property name="bbbPageName" column-name="bbb_page_name" data-type="String" display-name-resource="bbbPageName" category-resource="BasicInfo">
+	             <attribute name="propertySortPriority" value="5" />
+	            </property>
+	            
+	            <property name="pageType" column-name="page_type" data-type="enumerated" display-name-resource="pageType" category-resource="BasicInfo">
+	            	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+	             	<attribute name="propertySortPriority" value="6" />
+	            	 <attribute name="uiwritable" value="true"/>
+					<attribute name="useCodeForValue" value="true"/>
+						<option value="FullPage" code="201"/>
+						<option value="Popup" code="202"/>
+	            </property>
+	            <property name="seoUrl" column-name="seo_url" display-name-resource="seoUrl" data-type="string" category-resource="BasicInfo" >
+  					<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        			<attribute name="propertySortPriority" value="7"/>
+  			</property> 
+  			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BasicInfo" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        		<attribute name="propertySortPriority" value="7"/>
+  			</property>
+  			
+  			<property name="parentPage" column-name="parent_page_id" item-type="siteStaticPage" repository="/com/bbb/cms/repository/StaticTemplate" display-name-resource="Parent Page" category-resource="BasicInfo">
+                    <attribute name="propertySortPriority" value="8" />
+            </property>
+            
+            <property name="headTagContent" column-name="HEAD_TAG_CONTENT" display-name-resource="headTagContent" data-type="big string" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="9"/>
+			</property>
+			
+			<property name="bodyEndTagContent" column-name="BODY_END_TAG_CONTENT" display-name-resource="bodyEndTagContent" data-type="big string" category-resource="BasicInfo">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="10"/>
+			</property>
+			
+			<property name="registryRibbonFlag" column-name="Registry_Ribbon_Flag" display-name-resource="registryRibbonFlag" data-type="boolean" category-resource="BasicInfo" default="false">
+				<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+                <attribute name="propertySortPriority" value="11"/>
+			</property>
+  			
+	     </table>
+	     <table name="BBB_Static_Site" type="multi" id-column-names="static_template_id">
+            <property name="siteId" column-name="site_id" data-type="set" component-item-type="siteConfiguration" required="true" repository="/atg/multisite/SiteRepository" 
+            display-name-resource="siteId" category-resource="StaticTemplateSites">
+             <attribute name="propertySortPriority" value="5" />
+            </property>
+    	</table>
+    	
+    	<table name="BBB_OMINITURE_STATIC_DATA" type="multi" id-column-names="static_template_id"
+           multi-column-name="omniture_key">
+        <property name="OmnitureData" column-names="omniture_value" data-type="map" component-data-type="string">
+    	<attribute name="propertySortPriority" value="8"/>
+    	</property>
+    	</table>
+   </item-descriptor>
+</gsa-template>

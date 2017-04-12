@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestGiftRegistryFormHandlerAddAll1.xml
+
+  DESCRIPTION: ddtunit data file for TestGiftRegistryFormHandlerAddAll1.java test case
+
+  HISTORY:
+  Feb 25, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.kickstarters.manager.TestKickStarterManager1">      
+      <group id="testPopularItems">
+        <test id="testHandler_test1">
+			<objs>
+				<obj id="kickStarterManager" type="com.bbb.kickstarters.manager.TestKickStarterManager1" hint="call" 
+				      method="resolveName" calltype="com.bbb.kickstarters.manager.TestKickStarterManager1">
+					<item type="string">/com/bbb/kickstarters/manager/KickStarterManager</item>
+				</obj>
+			<obj id="site" type="string">BedBathUS</obj>
+			<obj id="registryType" type="string">Housewarming</obj>
+			</objs>	
+        </test>
+      </group>
+     </cluster>
+</ddtunit>
+

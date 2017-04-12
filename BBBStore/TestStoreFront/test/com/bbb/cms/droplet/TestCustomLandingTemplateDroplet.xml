@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestCategoryLandingDroplet.xml 
+	DESCRIPTION: ddtunit data file for CategoryLandingDroplet.java test case 
+	HISTORY: Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.droplet.TestCustomLandingTemplateDroplet">
+		<group id="testServiceCustomLandingTemplate">
+			<test id="testServiceCustomLandingTemplate_test1">
+				<objs>
+					<obj id="customLandingTemplateDroplet"
+						type="com.bbb.cms.droplet.CustomLandingTemplateDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestCustomLandingTemplateDroplet">
+						<item type="string">/com/bbb/cms/droplet/CustomLandingTemplateDroplet</item>
+					</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.cms.droplet.TestCustomLandingTemplateDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.cms.droplet.TestCustomLandingTemplateDroplet">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="categoryId" type="string">12001</obj>
+					<obj id="channelID" type="string">DesktopWeb</obj>
+					<obj id="templateName" type="string">customLandingTemplate</obj>
+					<obj id="altURLRequired" type="string">true</obj>
+					
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

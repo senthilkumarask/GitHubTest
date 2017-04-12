@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.selfservice.TestTellAFriend">
+			<group id="testTellAFriendBabyBook">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="tellAFriend" type="string">/rest/bean/com/bbb/selfservice/BabyBookFormHandler/tellAFriend</obj>
+					
+					<obj id="babyBookErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="babyBookSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					
+					<obj id="senderFirstName" type="String">Neha</obj>
+					<obj id="senderLastName" type="String">Jain</obj>
+					<obj id="senderEmailAddr" type="String">test@sapient.com</obj>
+					<obj id="recipientFirstName" type="String">Amit</obj>
+					<obj id="recipientLastName" type="String">kumar</obj>
+					<obj id="recipientEmailAddr" type="String">amit_1@example.com</obj>
+				</objs> 
+			</test>
+		</group>
+		
+		<group id="testTellAFriendFormException">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="babyBookErrorURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="babyBookSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					
+				</objs> 
+			</test>
+		</group>
+			
+	</cluster>
+</ddtunit>
+ 

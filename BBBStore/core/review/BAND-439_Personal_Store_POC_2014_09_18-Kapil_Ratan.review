@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-439_Personal_Store_POC_2014_09_18">
+  <ReviewIssue id="I0NK30OW">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-29 :: 14:00:08:960 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-09-29 :: 14:00:53:260 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Kapil_Ratan</ReviewerId>
+    <AssignedTo>Rachit</AssignedTo>
+    <File line="17">config/com/bbb/personalstore/repository/personalStore.xml</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add item-cache and query-cache size in each item descriptors</Summary>
+    <Description>Its value can be set to say 100 for each type of item-descriptor</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

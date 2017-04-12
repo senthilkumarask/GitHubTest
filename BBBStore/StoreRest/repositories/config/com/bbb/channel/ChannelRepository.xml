@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>Channels</name>
+		<author></author>
+	</header>
+
+
+<item-descriptor display-name-resource="itemDescriptorChannel" cache-mode="simple" id-space-name="channelInfo" query-cache-size="50" name="channelInfo" display-property="channelName" item-cache-size="50">
+         <attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+         
+         <table id-column-names="CHANNEL_ID" name="BBB_CHANNEL_INFO" type="primary">
+         <property name="id" column-name="CHANNEL_ID" display-name-resource="channelId">
+         	<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+         	<attribute name="propertySortPriority" value="0"/>
+         </property>
+         <property name="channelName" data-type="string" column-name="CHANNEL_NAME" display-name-resource="channelName" required="true">
+         	<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+         	<attribute name="propertySortPriority" value="1"/>
+         </property>
+         </table>
+         
+         <table name="BBB_GS_CHAN_CATS" type="multi" id-column-names="CHANNEL_ID" multi-column-name="site_id">
+			<property name="appCategories" column-names="cat_container_id" data-type="map" component-item-type="categoryContainer" display-name-resource="appCategories">
+				<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+				<attribute name="propertySortPriority" value="2"/>
+			</property>
+		</table>
+		
+		
+		<table name="BBB_GS_CH_THEME" type="multi" id-column-name="CHANNEL_ID">
+			<property name="channelThemes" column-name="CHANNEL_THEME_ID"  display-name-resource="channelThemes" component-item-type="channelThemeInfo" data-type="set" category-resource="appChannelThemes" repository="/com/bbb/channelTheme/ChannelThemeRepository">
+				<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources" />
+				<attribute name="propertySortPriority" value="3" />
+      		</property>
+     	</table>
+</item-descriptor>
+   
+   <item-descriptor name="categoryContainer" cache-mode="simple" display-property="id" display-name-resource="categoryContainer" last-modified-property="lastModifiedDate">
+      <attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+      <attribute name="updateLastModified" value="true"/>
+      
+      <table name="BBB_GS_CATEGORY_CONTNR" type="primary" id-column-names="cat_container_id">
+      	<property name="id" column-name="cat_container_id" display-name-resource="catContainerId" category-resource="categoryContainer">
+			<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+        	<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="categoryContainer" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+			<attribute name="propertySortPriority" value="7"/>
+		</property>  
+		      
+        
+      </table>
+      
+      <table name="BBB_GS_CONT_CATS" type="multi" multi-column-name="sequence_num" id-column-names="cat_container_id">
+           
+        <property name="categories" column-names="category_id" data-type="list" display-name-resource="categories" component-item-type="category" category-resource="categoryContainer" 
+        		repository="/atg/commerce/catalog/ProductCatalog">
+            <attribute name="resourceBundle" value="com.bbb.channel.ChannelTemplateResources"/>
+            <attribute name="propertySortPriority" value="1"/>
+        </property> 
+    </table>    
+    </item-descriptor>
+
+</gsa-template>

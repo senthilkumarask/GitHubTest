@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2012, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: com.bbb.rest.account.xml 
+	DESCRIPTION: ddtunit data file for com.bbb.rest.account.java test case HISTORY: 
+	Nov 21, 2012 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.account.TestRestHandleContactUsRequest">
+	
+	
+		<group id="testContactUsViaEmailRequestSuccess">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+				    <obj id="subjectCategory" type="string">Product Inquiry</obj>
+				    <obj id="firstName" type="string">tester</obj>
+				    <obj id="lastName" type="string">test</obj>
+				    <obj id="emailMessage" type="string">test</obj>
+				    <obj id="contactType" type="string">email</obj>
+				    <obj id="email" type="string">test@sap.com</obj>
+				    <obj id="confirmEmail" type="string">test@sap.com</obj>
+				    <obj id="validateCaptcha" type="boolean">false</obj>
+				    <obj id="contactUsSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="contactUsErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testContactUsViaPhoneRequestSuccess">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="subjectCategory" type="string">Product Inquiry</obj>
+				    <obj id="firstName" type="string">tester</obj>
+				    <obj id="lastName" type="string">test</obj>
+				    <obj id="emailMessage" type="string">test</obj>
+				    <obj id="contactType" type="string">phone</obj>
+				    <obj id="phoneNumber" type="string">1112229876</obj>
+				    <obj id="phoneExt" type="string">123</obj>
+				    <obj id="selectedTimeZone" type="string">CST</obj>
+				    <obj id="selectedTimeCall" type="string">6:00</obj>
+				    <obj id="amPM" type="string">am</obj>
+				    <obj id="validateCaptcha" type="boolean">false</obj>
+				     <obj id="contactUsSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="contactUsErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+		<group id="testContactUsRequestFailure">
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-return-form-handler-exceptions" type="boolean">true</obj>
+					<obj id="loginRequest" type="string">/rest/bean/atg/userprofiling/ProfileFormHandler/loginUser</obj>
+					<obj id="validateCaptcha" type="boolean">true</obj>
+					<obj id="captchaAnswer" type="string">text5</obj>
+					 <obj id="contactUsSuccessURL" type="string">atg-rest-ignore-redirect</obj>
+					<obj id="contactUsErrorURL" type="string">atg-rest-ignore-redirect</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>
+ 

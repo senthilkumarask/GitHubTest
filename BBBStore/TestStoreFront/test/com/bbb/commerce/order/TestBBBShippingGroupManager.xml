@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.TestBBBShippingGroupManager">
+       <group id="testGetStorePickupShippingGroup">
+        <test id="testGetStorePickupShippingGroup">
+			<objs>
+				<obj id="bbbShippingGroupManager" type="com.bbb.commerce.order.TestBBBShippingGroupManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBShippingGroupManager">
+					<item type="string">/atg/commerce/order/ShippingGroupManager</item>
+				</obj>	
+				<obj id="orderTools" type="com.bbb.commerce.order.TestBBBShippingGroupManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBShippingGroupManager">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="storeId1" type="string">
+					store123
+				</obj>	
+				<obj id="storeId2" type="string">
+					store456
+				</obj>		
+			</objs>	
+			<asserts> 
+	        	<assert id="param1" type="java.lang.String" action="isEqual">store123</assert>
+	        	<assert id="param2" type="java.lang.String" action="isEqual">store456</assert>	        	
+	        </asserts>		 
+        </test>
+      </group>        
+    </cluster>
+</ddtunit>
+

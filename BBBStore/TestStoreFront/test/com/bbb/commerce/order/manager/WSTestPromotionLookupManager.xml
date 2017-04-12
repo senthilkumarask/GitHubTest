@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.manager.WSTestPromotionLookupManager">
+       <group id="testGetPromotions">
+        <test id="testGetPromotions">
+			<objs>
+				<obj id="bbbPromotionLookupManager" type="com.bbb.commerce.order.manager.PromotionLookupManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.manager.WSTestPromotionLookupManager">
+					<item type="string">/com/bbb/commerce/checkout/manager/PromotionLookupManager</item>
+				</obj>
+                <obj id="ordermanager" type="atg.commerce.order.OrderManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.manager.WSTestPromotionLookupManager">
+                    <item type="string">/atg/commerce/order/OrderManager</item>
+                </obj>  
+                <obj id="bbbCartFormHandler" type="com.bbb.commerce.order.purchase.BBBCartFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.order.manager.WSTestPromotionLookupManager">
+                    <item type="string">/atg/commerce/order/purchase/CartModifierFormHandler</item>
+                </obj>  
+                <obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+			</objs>			 
+        </test>
+      </group>        
+    </cluster>
+</ddtunit>
+

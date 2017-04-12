@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template xml-combine="append">
+
+  <header>
+    <name>BBB Custom Catalog</name>
+     <author></author>
+    <version>$Revision: #1 $</version>
+  </header>
+  
+<item-descriptor name="category" xml-combine="append" item-cache-size="5000" cache-mode="simple" query-cache-size="5000">
+</item-descriptor>
+<item-descriptor name="category-info" xml-combine="append" item-cache-size="5000" cache-mode="simple" query-cache-size="5000">
+</item-descriptor>
+<item-descriptor name="product" xml-combine="append" item-cache-size="100000" cache-mode="simple" query-cache-size="20000">
+</item-descriptor>
+<item-descriptor name="product-info" xml-combine="append" item-cache-size="100000" cache-mode="simple" query-cache-size="20000">
+</item-descriptor>
+<item-descriptor name="sku" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="70000">
+</item-descriptor>
+<item-descriptor name="sku-info" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="70000">
+</item-descriptor>
+<item-descriptor name="sku-link" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="70000">
+</item-descriptor>
+<item-descriptor name="media" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="70000">
+</item-descriptor>
+<item-descriptor name="media-external" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="media-internal-binary" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="media-internal-text" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="bbbPrdTranslation" xml-combine="append" item-cache-size="100000" cache-mode="simple" query-cache-size="60000">
+</item-descriptor>
+<item-descriptor name="productTab" xml-combine="append" item-cache-size="10000" cache-mode="simple" query-cache-size="100">
+</item-descriptor>
+<item-descriptor name="bbbPrdReln" xml-combine="append" item-cache-size="100000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="bbbBrand" xml-combine="append" item-cache-size="4000" cache-mode="simple" query-cache-size="4000">
+</item-descriptor>
+<item-descriptor name="bbbRollUpType" xml-combine="append" item-cache-size="100" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="bbbPrdMediaReln" xml-combine="append" item-cache-size="8000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="bbbOtherMedia" xml-combine="append" item-cache-size="1000" cache-mode="simple" query-cache-size="1000">
+</item-descriptor>
+<item-descriptor name="bbbEcoFeeSKU" xml-combine="append" item-cache-size="10000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="skuShippingMethods" xml-combine="append" item-cache-size="10000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="bbbSKUTranslation" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="bbbskuAttrReln" xml-combine="append" item-cache-size="300000" cache-mode="simple" query-cache-size="1000">
+</item-descriptor>
+<item-descriptor name="rebateInfo" xml-combine="append" item-cache-size="1000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="attributeInfo" xml-combine="append" item-cache-size="500" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="attrTransaltion" xml-combine="append" item-cache-size="2000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="class" xml-combine="append" item-cache-size="50000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="jdaDept" xml-combine="append" item-cache-size="2000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="jdaSubDept" xml-combine="append" item-cache-size="2000" cache-mode="simple" query-cache-size="8000">
+</item-descriptor>
+<item-descriptor name="skuThresholds" xml-combine="append" item-cache-size="10000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="configurableSku" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+<item-descriptor name="recommendedSkus" xml-combine="append" item-cache-size="200000" cache-mode="simple" query-cache-size="10000">
+</item-descriptor>
+
+<!-- 
+<query-items item-descriptor="productTab" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbPrdReln" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbBrand" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbRollUpType" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbPrdMediaReln" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbOtherMedia" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbEcoFeeSKU" quiet="true">ALL</query-items>
+<query-items item-descriptor="skuShippingMethods" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbSKUTranslation" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbskuAttrReln" quiet="true">ALL</query-items>
+<query-items item-descriptor="rebateInfo" quiet="true">ALL</query-items>
+<query-items item-descriptor="attributeInfo" quiet="true">ALL</query-items>
+<query-items item-descriptor="attrTransaltion" quiet="true">ALL</query-items>
+<query-items item-descriptor="class" quiet="true">ALL</query-items>
+<query-items item-descriptor="jdaDept" quiet="true">ALL</query-items>
+<query-items item-descriptor="jdaSubDept" quiet="true">ALL</query-items>
+<query-items item-descriptor="skuThresholds" quiet="true">ALL</query-items>
+<query-items item-descriptor="sku" quiet="true">ALL</query-items>
+<query-items item-descriptor="product" quiet="true">ALL</query-items>
+<query-items item-descriptor="category" quiet="true">ALL</query-items>
+<query-items item-descriptor="bbbPrdTranslation" quiet="true">ALL</query-items>
+
+
+<query-items item-descriptor="productTab" quiet="true">ALL</query-items>
+<query-items item-descriptor="jdaDept" quiet="true">ALL</query-items>
+<query-items item-descriptor="jdaSubDept" quiet="true">ALL</query-items>
+-->
+
+
+</gsa-template>

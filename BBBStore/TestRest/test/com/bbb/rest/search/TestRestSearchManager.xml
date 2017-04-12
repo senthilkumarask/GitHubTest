@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY:
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.search.TestRestSearchManager">
+		<group id="testRestSearchManager">
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">java.util.HashMap:java.lang.String:java.lang.String:[pagSortOpt=P_Sort_Price,pagFilterOpt=10,fromCollege=false,keyword=sheets,catalogId=,pagSortOptOrder=1,pagNum=1,catalogRefId=,frmBrandPage=false]</obj>
+				</objs>
+				<!-- <asserts>
+		        	<assert id="count" action="isEqual" type="int">0</assert>
+		        </asserts> -->
+			</test>
+		</group>
+		<group id="testRestSearchManagerError">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">java.util.HashMap:java.lang.String:java.lang.String:[pagSortOpt=P_Sort_Price,pagFilterOpt=10,fromCollege=false,keyword=,catalogId=,pagSortOptOrder=1,pagNum=1,catalogRefId=,frmBrandPage=true]</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMPerformTypeAheadSearch">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">Shee</obj>
+					<obj id="showPopularTerms" type="string">true</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">abcd</obj>
+					<obj id="showPopularTerms" type="string">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMPerformTypeAheadSearchError">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">ab</obj>
+					<obj id="showPopularTerms" type="string">false</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string"></obj>
+					<obj id="showPopularTerms" type="string">false</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMGetAllNavigation">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">30001</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">10005</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMGetAllNavigationErr">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMGetCollegesByState">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">TX</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">9</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string"></obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testRSMGetCollegeMerchandize">
+			 <test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">TX</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="atg-rest-http-method" type="string">POST</obj>
+					<obj id="arg1" type="string">444444</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

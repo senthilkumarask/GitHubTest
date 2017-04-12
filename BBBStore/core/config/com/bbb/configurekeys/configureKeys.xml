@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+    <header>
+        <name>BBB Configurable Keys Repository</name>
+        <author></author>
+        <version>1</version>
+    </header>
+
+	<item-descriptor name="configKeys" display-name-resource="itemDescriptorConfigKeys" display-property="configTypeDesc" item-cache-size="8000" cache-mode="simple" query-cache-size="8000" > 
+		 <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+		<table name="BBB_CONFIG_KEYS" type="primary" id-column-name="config_type_id">
+			<property name="id" column-name="config_type_id" display-name-resource="id" category-resource="BasicInfo" writable="false">
+        	 <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="0" />	
+			</property>
+			<property name="configTypeDesc" column-name="config_type_desc" display-name-resource="configTypeDesc" category-resource="BasicInfo" data-type="string">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="2" />	
+			</property>
+
+			<property name="configType" data-type="enumerated" column-name="config_type" display-name-resource="configType" category-resource="BasicInfo"  >
+			<attribute name="unique" value="true"/>
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="useCodeForValue" value="false"/>
+				<attribute name="propertySortPriority" value="1" />	
+				<option value="CreditClassForOrderTermination" code="80001"/>
+				<option value="CreditClassForCreateAccount" code="80002"/>
+				<option value="allowedCreditClass" code="80003"/>
+				<option value="taxwareKeys" code="80004"/>
+				<option value="ShippingCarriers" code="80005"/>
+				<option value="WebServiceEndPoints" code="80006"/>
+				<option value="ThirdPartyURLs" code="80007"/>
+				<option value="PreAuthPaymentAmount" code="80008"/>
+				<option value="FlagDrivenFunctions" code="80009"/>
+				<option value="valueLinkKeys" code="80010"/>
+				<option value="valueLinkRequestHeader" code="80011"/>
+				<option value="valueLinkResponseHeader" code="80012"/>
+				<option value="valueLinkRequestBody" code="80013"/>
+				<option value="valueLinkResponseBody" code="80014"/>
+				<option value="valueLinkKeys_BuyBuyBaby" code="80015"/>
+				<option value="valueLinkKeys_BedBathUS" code="80016"/>
+				<option value="valueLinkKeys_BedBathCanada" code="80017"/>
+				<option value="ContentCatalogKeys" code="80025"/>
+				<option value="WSDLKeys" code="80026"/>
+				<option value="WSStubClasses" code="80027"/>
+				<option value="WSEndPoint" code="80028"/>
+				<option value="WSTimeout" code="80029"/>
+				<option value="WSDLSiteFlags" code="80030"/>
+				<option value="WSDL_Inventory" code="80031"/>
+				<option value="WSDL_GiftRegisrty" code="80032"/>
+				<option value="BOPUSCONFIG" code="80033"/>			
+				<option value="BBBJMSConnectionFactory" code="80036"/>
+				<option value="HTTPClientReqParams" code="80037"/>
+				<option value="HTTPClientReqParams_BuyBuyBaby" code="80038"/>
+				<option value="HTTPClientReqParams_BedBathUS" code="80039"/>
+				<option value="HTTPClientReqParams_BedBathCanada" code="80040"/>
+				<option value="HTTPClientOptParams" code="80041"/>
+				<option value="HTTPClientOptParams_BuyBuyBaby" code="80042"/>
+				<option value="HTTPClientOptParams_BedBathUS" code="80043"/>
+				<option value="HTTPClientOptParams_BedBathCanada" code="80044"/>
+				<option value="WSResponseProcessor" code="80045"/>
+				<option value="HTTPConnectionAttributes" code="80046"/>			
+				<option value="BBBLiveClicker" code="80047"/>
+				<option value="CertonaKeys" code="80048"/>
+				<option value="KirschKeys" code="80049"/>
+				<option value="QASKeys" code="80050"/>
+				<option value="FBAppIdKeys" code="80051"/>				
+				<option value="GenderMap" code="80052"/>
+				<option value="BBBJMSObject" code="80053"/>
+				<option value="CartAndCheckoutKeys" code="80054"/>
+				<option value="StoreLocatorFlag" code="80055"/>
+				<option value="RKGKeys" code="80056"/>
+				<option value="SMTPConfig" code="80057"/>
+				<option value="SellerRegistrationNumber" code="80058"/>
+				<option value="CollegeStoresFlag" code="80059"/>
+				<option value="EasyReturnsKeys" code="80060"/>
+				<option value="MOM365Keys" code="80061"/>
+				<option value="HTMLCacheKeys" code="80062"/>
+				<option value="ObjectCacheKeys" code="80063"/>
+				<option value="BBBWebServices" code="80064"/>
+				<option value="TibcoKeys" code="80065"/>
+				<option value="CatalogCacheQueries" code="80066"/>
+				<option value="MapQuestStoreType" code="80067"/>
+				<option value="ReferralControls" code="80068"/>
+				<option value="ReferralControls_RegistryEvents" code="80069"/>
+				<option value="DimConfig" code="80070"/>
+				<option value="DimDisplayConfig" code="80071"/>
+				<option value="DimNonDisplayConfig" code="80072"/>
+				<option value="ScheduledFeedsConfig" code="80073"/>
+				<option value="ICROSSINGTag_Keys" code="80074"/>
+				<option value="BBBSubscriberJMSConnectionFactory" code="80075"/>
+				<option value="GiftRegistryConfig" code="80076"/>
+				<option value="PageThemeKeys" code="80077"/>
+				<option value="ICROSSINGTag_Cat_Keys" code="80078"/>
+				<option value="MobileWebConfig" code="80079"/>
+				<option value="ServiceCacheMapType" code="80080"/>
+				<option value="RepoCacheMapType" code="80081"/>
+				<option value="FeedSchedulerKeys" code="80082"/>
+				<option value="WSDL_PayPal" code="80083"/>
+				<option value="MobilePagenames" code="99998"/>
+				<option value="FAKEDISPLAYNAME%" code="99999"/>
+				<option value="International_Shipping" code="80084"/>
+				<option value="WSDL_International_Shipping" code="80085"/>
+				<option value="skedgeMe" code="80086"/>				
+				<option value="LTLConfig_KEYS" code="80088"/>
+				<option value="valueLinkKeys_TBS_BedBathUS" code="80089"/>
+				<option value="valueLinkKeys_TBS_BuyBuyBaby" code="80090"/>
+				<option value="valueLinkKeys_TBS_BedBathCanada" code="80091"/>
+				<option value="HTTPClientReqParams_TBS_BuyBuyBaby" code="80092"/>
+				<option value="HTTPClientReqParams_TBS_BedBathUS" code="80093"/>
+				<option value="HTTPClientReqParams_TBS_BedBathCanada" code="80094"/>
+				<option value="HTTPClientOptParams_TBS_BuyBuyBaby" code="80095"/>
+				<option value="HTTPClientOptParams_TBS_BedBathUS" code="80096"/>
+				<option value="HTTPClientOptParams_TBS_BedBathCanada" code="80097"/>
+				<option value="CustomOrderDisplayConfig" code="80098"/>
+				<option value="WSDL_Fedex" code="9800456"/>
+				<option value="EXIMKeys" code="80099"/>
+				<option value="CoherenceCacheKeys" code="80100"/>
+				<option value="GS_Heartbeat" code="80101"/>
+				<option value="DefaultStoreType" code="80102"/>
+               	<option value="CoherenceCacheMonitorKeys" code="80103"/>
+				<option value="NetworkInventoryFlag" code="80104"/>
+                <option value="GiftWrapAutoWaiveFlag" code="80105"/>
+				<option value="OpinionLabKeys" code="80106"/>						
+				<option value="unsubmittedOrdersSchedulerConfigValues" code="80107"/>
+				<option value="WSDL_AutoWaiveShipping" code="80109"/>			
+                <option value="AutoWaiveShippingFlag" code="80108"/>
+               	<option value="NotifyRegistrant" code="80110"/>
+               	<option value="OmnitureBoosting" code="80111"/>
+               	<option value="invLocalStoreRepoSchedulerConfigValues" code="80112"/>
+               	<option value="EDWfields" code="80113"/>
+				<option value="AdvancedOrderInquiryKeys" code="80115"/>
+				<option value="SameDayDeliveryKeys" code="80116"/>				
+				<option value="SearchCacheSchedulerKeys" code="80117"/>
+				<option value="PorchServiceKeys" code="80118"/>				
+				<option value="VendorKeys" code="80122"/>
+				<option value="AdBlockerPages" code="80123"/>
+			</property>
+		 </table>
+		
+	  <table name="BBB_REL_CONFIG_KEY_VALUE"  id-column-names="config_type_id" type="multi">
+       <property name="configKeyValue" display-name-resource="configKeyValue" column-name="config_key_id" data-type="set"
+              component-item-type="configKeysValue" category-resource="BasicInfo">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>  
+        <attribute name="propertySortPriority" value="4"/>       
+       </property>
+      </table>  	
+      <named-query>
+			<rql-query>
+				<query-name>getConfigValueByConfigType</query-name>
+				<rql>configType=?0</rql>
+			</rql-query>
+		</named-query>
+		
+		
+		</item-descriptor>
+		
+		
+		<item-descriptor name="configKeysValue" display-name-resource="itemDescriptorConfigKeysValue" display-property="configKey" item-cache-size="8000" cache-mode="simple" query-cache-size="8000" >
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>  
+		<table name="BBB_CONFIG_KEY_VALUE" type="primary" id-column-name="config_key_id">
+
+			<property name="id" column-name="config_key_id" display-name-resource="id" writable="false">
+			<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="1" />	
+			</property>
+			
+		<property name="configKey" column-name="config_key" display-name-resource="configKeyDefault" data-type="string" category-resource="BasicInfo">
+		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="2" />	
+		</property>
+				
+		<property name="configValueDefault" column-name="config_value" display-name-resource="configValueDefault" data-type="string" category-resource="BasicInfo">
+		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+				<attribute name="propertySortPriority" value="3" />
+		</property>
+		</table>
+		
+		 <property name="configValue" display-name-resource="configValue" data-type="string" hidden="true">
+           <derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>configValueDefault</expression>       
+           </derivation>
+           <attribute name="propertySortPriority" value="2"/> 
+           <attribute name="defaultProperty" value="configValueDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="configValue"/>
+           <attribute name="translations" value="translations"/>
+       </property>
+      
+		
+	  <table name="BBB_CONFIG_SITE_TRANSLATN" type="multi" id-column-names="config_key_id">
+       <property name="translations" display-name-resource="translations" column-name="translation_id" data-type="set"
+                component-item-type="configKeysTranslation" category-resource="translations">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>  
+        <attribute name="propertySortPriority" value="1"/>       
+       </property>
+      </table>  
+				
+		 </item-descriptor>
+		
+		
+	<item-descriptor name="configKeysTranslation" item-cache-size="8000" query-cache-size="8000" display-name-resource="itemDescriptorConfigKeysTrs" display-property="site">
+     <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+     <table name="BBB_CONFIG_KEYS_TRANSLATIONS" id-column-names="translation_id" type="primary">
+    
+     
+     <property name="id" column-name="translation_id" display-name-resource="translationId" category-resource="TranslationInfo" writable="true">
+        		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        		<attribute name="propertySortPriority" value="0" />
+       </property>
+       <property name="site" column-name="SITE_ID" display-name-resource="translationSite" item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="TranslationInfo">
+              <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="1"/> 
+       </property>
+       <property name="channel" column-name="CHANNEL_ID" display-name-resource="Channel" item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository" category-resource="TranslationInfo">
+              <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+              <attribute name="propertySortPriority" value="2"/> 
+       </property>
+       <property name="configValue" column-name="config_value" display-name-resource="configValue" data-type="string" category-resource="TranslationInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="3"/>    
+       </property>
+      
+     </table>
+          
+     
+    </item-descriptor>
+    
+	<!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component    
+    <query-items item-descriptor="configKeys" quiet="true">ALL</query-items>
+    -->
+</gsa-template>

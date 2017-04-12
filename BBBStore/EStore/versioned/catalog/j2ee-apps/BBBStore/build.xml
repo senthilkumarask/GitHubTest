@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="{APP-NAME}" default="build.ear">
+
+<target name="changeCss">
+	
+	<replaceregexp byline="true"  flags="g">
+      <regexp pattern="url\((')?/_assets"/>
+      <substitution expression="url\(\1/store/_assets"/>
+      <fileset dir="store.war/_assets">
+        <include name="**/*.css"/>
+      </fileset>
+    </replaceregexp>
+    <replaceregexp byline="true"  flags="g">
+      <regexp pattern='url\("/_assets'/>
+      <substitution expression='url\("/store/_assets'/>
+      <fileset dir="store.war/_assets">
+        <include name="**/*.css"/>
+      </fileset>
+    </replaceregexp>	
+</target>
+	
+<target name="build.war">
+	
+ 	<war destfile="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/store.war" update="true" webxml="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/BBBStore/store.war/WEB-INF/web.xml">
+	<fileset dir="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/BBBStore/store.war">
+		<include name="**/*"/>
+		<exclude name="WEB-INF/web.xml"/>
+	</fileset>
+	</war>
+	<!--<place-holder-for-war-task/>-->
+ </target>
+
+<target name="build.ear" depends="build.war">
+  <ear destfile="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/BBBStore.ear" appxml="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/BBBStore/META-INF/application.xml">
+    <metainf dir="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps/BBBStore/META-INF" includes="DYNAMO-INF/**/*"/>
+    <fileset dir="D:\ATG\ATG10.0.2\BBBStore\StoreFront/j2ee-apps" includes="*.war,*.jar"/>
+  </ear>
+</target>
+</project>
+<!-- @version $Id: //product/Eclipse/main/plugins/atg.project/templates/build.xml#1 $$Change: 425088 $ -->

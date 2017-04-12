@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.mapquest.TestSearchInStore">
+		<group id="testSearchInStorePostal">
+			<test id="testSearchInStorePostal">
+				<objs>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="password" type="string">Sapient!2</obj>
+					<obj id="username" type="string">test1@example.com</obj>
+					<obj id="searchString" type="string">90012</obj>
+					<obj id="radius" type="string">100</obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageNumber" type="string"></obj>
+					<obj id="pageSize" type="string">5</obj>
+					<obj id="skuId" type="string">14750312</obj>
+					<obj id="searchInStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchSKUInStore</obj>
+					<obj id="orderedQty" type="string">1</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSearchInStoreByError">
+			<test id="testSearchInStoreByError">
+				<objs>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+					<obj id="skuId" type="string"></obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageNumber" type="string"></obj>
+					<obj id="pageSize" type="string">5</obj>
+					<obj id="searchInStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchSKUInStore</obj>
+					<obj id="orderedQty" type="string">1</obj>
+					<obj id="searchString" type="string">10002</obj>
+					<obj id="radius" type="string">100</obj>		
+				</objs>
+			</test>
+		</group>
+		<group id="testSearchStorePageKey">
+			<test id="testSearchStorePageKey">
+				<objs>
+				<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+					<obj id="searchString" type="string">40.099998|-76.305603</obj>
+					<obj id="radius" type="string">100</obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageSize" type="string">4</obj>
+					<obj id="pageNumber" type="string">2</obj>
+					<obj id="skuId" type="string">14750312</obj>
+					<obj id="orderedQty" type="string">2</obj>
+					<obj id="searchInStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchSKUInStore</obj>
+				</objs>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

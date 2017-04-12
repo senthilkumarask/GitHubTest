@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1745">
+  <ReviewIssue id="IQK67FIU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 20:50:42:390 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 16:53:54:297 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="1865">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>How is this config key different from else block in getEPHBoostingScheme() method where we are looking for BCC config key</Summary>
+    <Description>getEphLookUpUtil().isEpHLookUpEnable()
+
+isEpHLook flag is a flag which will be in/off the EPH lookup and getEPHBoostingScheme() method will check how to use EPH,it would be sort.filter and off
+
+Incase SiteSpect have sort/filter value flowing to the application then we should have key to off the EPH logic.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK6CLV9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 20:54:43:893 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-14 :: 05:28:47:931 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2098">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>use proper variable name</Summary>
+    <Description>st</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK6X0V5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 21:10:36:449 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 13:11:15:903 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2276">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Why are we saving this in cache which is good for only 1 hour? Do we have any cache which is available for more than 1 hour? I believe this data won't change, is n't it? Please discuss with before you move to new cache.</Summary>
+    <Description>final String cacheName = getCatalogTools().getAllValuesForKey(BBBCoreConstants.OBJECT_CACHE_CONFIG_KEY , BBBCoreConstants.KEYWORD_SEARCH_CACHE_NAME).get(0);</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQK70KNE">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-12 :: 21:13:22:058 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-20 :: 16:51:42:249 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="2284">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>Can we catch null pointer exception which is a run time exception? Why cannot we have null check?</Summary>
+    <Description>catch (NullPointerException exception) {
+                     logError("EndecaSearchUtil.fetchAllDimensionValues || NullPointerException occured in " +
+                                   GETTING_CACHE_TIMEOUT_FOR + BBBCoreConstants.KEYWORD_SEARCH_CACHE_TIMEOUT, exception);
+                     cacheTimeout = 3600000;
+               }
+
+If There is exception ,code using a default timeout 3600000</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

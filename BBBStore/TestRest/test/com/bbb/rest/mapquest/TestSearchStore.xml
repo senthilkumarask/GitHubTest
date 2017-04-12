@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.mapquest.TestSearchStore">
+		<group id="testSearchStorePostal">
+			<test id="testSearchStorePostal">
+				<objs>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="searchStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchStores</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+					<obj id="searchString" type="string">10002</obj>
+					<obj id="radius" type="string">100</obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageNumber" type="string"></obj>
+					<obj id="pageSize" type="string">5</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSearchStorePageKey">
+			<test id="testSearchStorePageKey">
+				<objs>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="searchStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchStores</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+					<obj id="searchString" type="string">40.099998|-76.305603</obj>
+					<obj id="radius" type="string">100</obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageNumber" type="string">2</obj>
+					<obj id="pageSize" type="string">3</obj>
+				</objs>
+			</test>
+		</group>
+		<group id="testSearchStoreError">
+			<test id="testSearchStoreError">
+				<objs>
+					<obj id="atg-rest-depth" type="string">5</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="searchStore" type="string">/rest/bean/com/bbb/rest/selfservice/SearchStoreService/searchStores</obj>
+					<obj id="username" type="string">test2@test.com</obj>
+					<obj id="password" type="string">Sapient!2</obj>				
+					<obj id="searchString" type="string"></obj>
+					<obj id="radius" type="string"></obj>
+					<obj id="pageKey" type="string"></obj>
+					<obj id="pageNumber" type="string">2</obj>
+					<obj id="pageSize" type="string">3</obj>
+				</objs>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

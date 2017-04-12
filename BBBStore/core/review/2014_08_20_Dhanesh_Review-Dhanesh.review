@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="2014_08_20_Dhanesh_Review">
+  <ReviewIssue id="HZ2XOGET">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 13:27:52:085 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-08-20 :: 13:35:11:193 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo></AssignedTo>
+    <File line="128">src/com/bbb/seo/BBBCategoryUrlTemplate.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>We are running while (true)</Summary>
+    <Description>The logic should be altered  in such a way that not to use the while(true)  and get the  unique category item
+
+RepositoryItem parent = item;
+			    while (true) {
+			      if (isLoggingDebug()) logDebug("finding the ancestors.  parent = " + parent.getRepositoryId());
+			      parent = (RepositoryItem)parent.getPropertyValue(getCatalogTools().getParentCategoryPropertyName());
+			      if (parent == null)
+			        break;
+			      ancestors.addFirst(parent);
+			    }
+
+Try to get the individual  item and add to the list .</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

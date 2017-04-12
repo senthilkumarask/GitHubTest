@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="DisablePayPalStory">
+  <ReviewIssue id="HVXP6K8D">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:02:02:413 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 16:13:25:733 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="83">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary></Summary>
+    <Description>Change the method call using reference of  checkoutmanager’s new method.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXP6WX9">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:02:18:861 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:02:56:406 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="83">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description>Change the method call using reference of  checkoutmanager’s new method.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXPCYUP">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:07:01:297 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:07:45:130 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary></Summary>
+    <Description>Make single call to Droplet and retain the flag value on JSP for checks at different places on the page.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVXPQ14U">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-02 :: 17:17:10:782 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 16:14:03:485 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="1398">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description>Dont call getCartItemVOList method created another method in checkoutManager which does the following
+                1. get all commerce Item 
+                2. Loop on all the commerce Items
+                3. make minimal sku detail call for each item.
+                4. As soon as found one LTL item break the loop and return true.
+</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HVYN1AV1">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-03 :: 08:49:43:933 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-03 :: 08:51:12:150 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="83">src/com/bbb/commerce/order/purchase/DisplaySingleShippingDroplet.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+  <ReviewIssue id="HWXD5VRN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 16:05:17:651 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-06-27 :: 16:08:05:185 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Harsh</ReviewerId>
+    <AssignedTo>Seema</AssignedTo>
+    <File line="1365">src/com/bbb/commerce/checkout/manager/BBBCheckoutManager.java</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Do iteration on Shipping Group instead of Commerce Items to avoid performance issue</Summary>
+    <Description>Instead of Iteration on all CommerceItems in the order,do or make iteration on Shipping Groups to check for LTL Items ,so that at max 7 iterations can take place.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.closed</Status>
+  </ReviewIssue>
+</Review>

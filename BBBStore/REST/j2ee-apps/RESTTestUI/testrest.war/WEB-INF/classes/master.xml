@@ -1,0 +1,63 @@
+<rest-apis>
+	<description>Rest APIs</description>
+	<rest-api>
+		<api-name>loginUser</api-name>
+		<api-desc>User Login</api-desc>
+		<api-def-xml-path>login.xml</api-def-xml-path>
+	</rest-api>	
+	<rest-api>
+		<api-name>performSearchAPI</api-name>
+		<api-desc>performSearchAPI</api-desc>
+		<api-def-xml-path>performSearch.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addItemToOrder</api-name>
+		<api-desc>addItemToOrder</api-desc>
+		<api-def-xml-path>addItemToOrder.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>getProductDetail</api-name>
+		<api-desc>getProductDetail</api-desc>
+		<api-def-xml-path>getProductDetail.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addCreditCardToProfile</api-name>
+		<api-desc>addCreditCardToProfile</api-desc>
+		<api-def-xml-path>addCreditCardToProfile.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addItemToGiftRegistry</api-name>
+		<api-desc>addItemToGiftRegistry</api-desc>
+		<api-def-xml-path>addItemToGiftRegistry.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addShippingAddressToOrder</api-name>
+		<api-desc >addShippingAddressToOrder</api-desc>
+		<api-def-xml-path >addShippingAddressToOrder.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addBillingAddrToOrder</api-name>
+		<api-desc >addBillingAddrToOrder</api-desc>
+		<api-def-xml-path >addBillingAddrToOrder.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>addCreditCardToOrder</api-name>
+		<api-desc >addCreditCardToOrder</api-desc>
+		<api-def-xml-path >addCreditCardToOrder.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>getProfileInfo</api-name>
+		<api-desc >getProfileInfo</api-desc>
+		<api-def-xml-path >getProfileInfo.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>placeOrder</api-name>
+		<api-desc >placeOrder</api-desc>
+		<api-def-xml-path >placeOrder.xml</api-def-xml-path >
+	</rest-api>
+	<rest-api>
+		<api-name>checkShippingMethodForSkus</api-name>
+		<api-desc >checkShippingMethodForSkus</api-desc>
+		<api-def-xml-path >checkShippingMethodForSkus.xml</api-def-xml-path >
+	</rest-api>
+</rest-apis>

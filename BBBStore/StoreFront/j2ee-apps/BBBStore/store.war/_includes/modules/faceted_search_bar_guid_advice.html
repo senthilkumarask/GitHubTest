@@ -1,0 +1,43 @@
+<div id="searchBox">
+	<form id="frmSearchCriteria" method="post">
+		<fieldset class="searchGroup">
+			<legend class="offScreen"><bbbl:label key="promoKeyRelated" language="${pageContext.request.locale.language}" /></legend>
+	      	<div class="searchTitle">
+				<h5>Current Search</h5>
+				<a href="#" class="lnkSearchReset" title="reset">reset</a>
+			</div>
+			<div class="searchContent">
+				<ul class="searchList">
+					<li class="clearfix"><div class="searchListItem">"sheets"</div> <a href="#" class="lnkSearchRemove" title="remove">X</a> </li>
+				</ul>
+			</div>
+		</fieldset>
+	</form>
+	<div class="facetBoxArrow"></div>
+</div>
+<div id="facetGroupTitle">
+	<h5>Narrow Results By</h5>
+</div>
+<nav id="facetBox">
+	<form id="frmFacetedSearch" method="post" action="#">
+		<fieldset class="facetGroup firstGroup">
+			<div class="facetTitle">
+				<a href="#" title="Department"><h5>Department</h5></a>
+			</div>
+			<div class="facetContent">
+				<ul class="facetDepartmentList">
+					<li><a href="#deptBed" class="deptBed" title="Bed &amp; Bath">Bed &amp; Bath <span class="facetCount">(340)</span></a></li>
+					<li><a href="#deptKitchen" class="deptKitchen" title="Kitchen &amp; Dining">Kitchen &amp; Dining <span class="facetCount">(20)</span></a></li>
+					<li><a href="#deptHome" class="deptHome" title="Home Decor &amp; Window">Home Decor &amp; Window <span class="facetCount">(40)</span></a></li>
+					<li><a href="#deptStorage" class="deptStorage" title="Storage &amp; Cleaning">Storage &amp; Cleaning <span class="facetCount">(100)</span></a></li>
+					<li><a href="#deptBaby" class="deptBaby" title="Baby &amp; Kids">Baby &amp; Kids <span class="facetCount">(5)</span></a></li>
+					<li><a href="#deptSeasonalSpring" class="deptSeasonalSpring" title="Spring seasonal">Seasonal <span class="facetCount">(0)</span></a></li>
+					<li><a href="#deptSeasonalFall" class="deptSeasonalFall" title="Fall seasonal">Seasonal <span class="facetCount">(0)</span></a></li>
+					<li><a href="#deptSeasonalXmas" class="deptSeasonalXmas" title="Christmas seasonal">Seasonal <span class="facetCount">(0)</span></a></li>
+					<li><a href="#deptSeasonalWinter" class="deptSeasonalWinter" title="Winter seasonal">Seasonal <span class="facetCount">(0)</span></a></li>
+				</ul>
+			</div>
+		</fieldset>
+		<input type="submit" class="hidden" value="" />
+	</form>
+</nav>

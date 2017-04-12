@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="CMS_LABEL_2011_11_03_anuragjoshi">
+  <ReviewIssue id="GUTDIN5W">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:55:19:556 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:56:14:275 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="65">src/com/bbb/cms/manager/LblTxtTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>siteId is not a member variable. So it should not be mSiteId. </Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+     <ReviewIssue id="GUTDJ7AB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:55:45:635 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:56:10:525 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="64">src/com/bbb/cms/manager/LblTxtTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>mLblTxtValue is not a member variable. So change the naming convention</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTDK7LL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:56:32:697 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:59:03:993 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="64">src/com/bbb/cms/manager/LblTxtTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>change the naming convention of the variable</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTDNL05">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:59:10:037 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 11:59:18:074 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="139">src/com/bbb/cms/manager/LblTxtTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>change the naming convention</Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTDQ12Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:01:04:178 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:01:25:424 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="222">src/com/bbb/cms/manager/LblTxtTemplateManager.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>See if you can change it to named query in the future</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTDRZCK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:02:35:252 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:02:44:255 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="4">src/com/bbb/cms/tags/LabelTag.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>Organize Imports and run PMD</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GUTEV6M5">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:33:04:253 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-10 :: 12:34:03:401 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Rajendra Karamcheti</ReviewerId>
+    <AssignedTo>Rajendra Karamcheti</AssignedTo>
+    <File line="136">src/com/bbb/cms/tags/LabelTag.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation>All error messages are coming from Resources file. Please refer to error logging framework. Make similar changes in all the three tag files</Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

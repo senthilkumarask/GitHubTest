@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRegistryItemsDisplayDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestRegistryItemsDisplayDroplet.java test case HISTORY: 
+	Nov 09, 2011 Initial version 
+					
+	-->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.giftregistry.TestRegistryItemsDisplayDroplet">
+		 	
+		
+      <!--  Test Cases for RegistryItemsDisplayDroplet -->
+      <group id="testCase1">
+		<test id="test1">
+				<objs>
+					<obj id="registryItemsDisplay"
+						type="com.bbb.commerce.giftregistry.TestRegistryItemsDisplayDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestRegistryItemsDisplayDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet</item>
+					</obj>
+					<obj id="username0" type="string">test1@example.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>	
+				</objs>
+			</test>
+      </group> 
+      
+       <!--  Test Cases for RegistryItemsDisplayDroplet -->
+       <group id="testCase2">
+        <test id="test2">
+			<objs>
+					<obj id="registryItemsDisplay"
+						type="com.bbb.commerce.giftregistry.TestRegistryItemsDisplayDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestRegistryItemsDisplayDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/RegistryItemsDisplayDroplet</item>
+					</obj>
+					<obj id="username0" type="string">test1@example.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>	
+				</objs>   
+        </test>
+      </group>    
+      
+      	
+	</cluster>
+</ddtunit>

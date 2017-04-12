@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSchoolLookupDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSchoolLookupDroplet.java test case
+
+  HISTORY:
+  April 26, 2012  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.cms.droplet.TestSchoolLookupDroplet">
+      <group id="testSchoolLookupDroplet">
+        <test id="testSchoolLookupDroplet_test1">
+			<objs>
+				<obj id="schoolLookupDroplet" type="com.bbb.commerce.catalog.droplet.SchoolLookupDroplet" hint="call" method="resolveName" calltype="com.bbb.cms.droplet.TestSchoolLookupDroplet">
+					<item type="string">/com/bbb/commerce/catalog/droplet/SchoolLookupDroplet</item>
+				</obj>
+				<obj id="schoolId" type="string">11386</obj>
+			</objs>			   
+		</test>
+      </group>
+    </cluster>
+</ddtunit>

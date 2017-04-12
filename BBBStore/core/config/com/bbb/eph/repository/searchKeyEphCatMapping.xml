@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+	<header>
+		<name>SearchKey EPH Category Mapping Repository</name>
+	</header>
+	
+	<!-- item descriptor for SearchKey EPH Category Mapping -->
+	<item-descriptor name="ephCategoryMapping" cache-mode="disabled" display-property="searchKeyword">
+	 	<table name="BBB_KEYWORD_EPH_CAT" type="primary" id-column-name="id">			
+			<property name="searchKeyword" data-type="string" column-name="SEARCH_KEYWORD" />			
+			<property name="concept" data-type="string" column-name="CONCEPT" />
+			<property name="ephIds" data-type="string" column-name="EPH_IDS" />				
+			<property name="categoryIds" data-type="string" column-name="CATEGORY_IDS" />
+			<property name="lastModifiedDate" data-type="timestamp" column-name="LAST_MODIFIED_DATE" />
+		</table>
+	</item-descriptor>
+		
+</gsa-template>

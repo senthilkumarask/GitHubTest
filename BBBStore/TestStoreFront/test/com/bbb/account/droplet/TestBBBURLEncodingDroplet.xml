@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBURLEncodingDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBURLEncodingDroplet.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.account.droplet.TestBBBURLEncodingDroplet">
+       <group id="testBBBURLEncodingDroplet">
+        <test id="testBBBURLEncodingDroplet">
+			<objs>
+				<obj id="encodingDroplet"  type="com.bbb.account.droplet.BBBURLEncodingDroplet" hint="call" method="resolveName" calltype="com.bbb.account.droplet.TestBBBURLEncodingDroplet">
+					<item type="String">/com/bbb/account/droplet/BBBURLEncodingDroplet</item>
+				</obj>
+				<obj id="encodingType" type="String">UTF-8</obj>		
+				<obj id="URL" type="String">http://bedbathandbeyondcr4qa.com/store/product/K-Cup-reg-Variety-Pack-Coffee-for-Keurig-reg-Brewers-Set-of-60/1015970243</obj>		
+				
+			</objs>	 
+        </test>
+      </group>
+    </cluster>
+</ddtunit>
+

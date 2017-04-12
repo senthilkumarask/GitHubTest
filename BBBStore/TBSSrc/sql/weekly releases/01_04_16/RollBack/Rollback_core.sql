@@ -1,0 +1,1 @@
+alter table BBB_CORE.bbb_store_ship_grp DROP COLUMN shipping_info_id;

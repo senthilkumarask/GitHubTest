@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBProfileFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBProfileFormHandler.java test case
+
+  HISTORY:
+  Oct 14, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.order.TestBBBCommerceItemManager">
+       <group id="testShouldMergeItems">
+        <test id="testShouldMergeItems">
+			<objs>
+				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.TestBBBCommerceItemManager" hint="call" method="resolveName" calltype="com.bbb.commerce.order.TestBBBCommerceItemManager">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				<obj id="catalogRefId" type="string">
+					sku40041
+				</obj>
+				<obj id="productId" type="string">
+					prod10037
+				</obj>
+				<obj id="qty" type="string">
+					1
+				</obj>
+			</objs>			 
+        </test>
+      </group>        
+    </cluster>
+</ddtunit>
+

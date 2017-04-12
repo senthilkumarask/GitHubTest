@@ -1,0 +1,103 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestInternationalOrderXmlRepoTools.xml 
+	DESCRIPTION: ddtunit data file for TestInternationalOrderXmlRepoTools.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+	
+	<!-- testCreateDSOrderId -->
+	
+	<group id="testCreateDSOrderId">
+        <test id="test1">
+			<objs>
+				<obj id="internationalCheckoutManager" type="com.bbb.internationalshipping.manager.InternationalCheckoutManager" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/com/bbb/internationalshipping/manager/InternationalCheckoutManager</item>
+				</obj>
+				
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName"
+				 calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+							
+				
+				<obj id="bbbCommerceItemManager" type="com.bbb.commerce.order.BBBCommerceItemManager" hint="call"
+				 method="resolveName" calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/atg/commerce/order/CommerceItemManager</item>
+				</obj>
+				
+				<obj id="catalogRefId1" type="string">
+					sku10013
+				</obj>
+				<obj id="productId1" type="string">
+					prod10033
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+                <obj id="siteId" type="string">
+                    BedBathUS
+                </obj>
+                
+			</objs>      
+        </test>
+      </group>
+      
+          
+      <group id="testPersistOrderXml">
+        <test id="test1">
+			<objs>
+				<obj id="internationalCheckoutManager" type="com.bbb.internationalshipping.manager.InternationalCheckoutManager" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/com/bbb/internationalshipping/manager/InternationalCheckoutManager</item>
+				</obj>
+							
+				<obj id="orderId" type="string">
+					50000000o1280015
+				</obj>
+				<obj id="e4XOrderId" type="string">
+					1234567890
+				</obj>
+				<obj id="merchantOrderId" type="string">1234567890</obj>
+				<obj id="countryCode" type="string">IN</obj>
+				<obj id="currencyCode" type="string">INR</obj>
+				
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName"
+				 calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+				
+			</objs>      
+        </test>
+      </group>
+      
+     <group id="testCreateCartCookies">
+        <test id="test1">
+			<objs>
+				<obj id="internationalCheckoutManager" type="com.bbb.internationalshipping.manager.InternationalCheckoutManager" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/com/bbb/internationalshipping/manager/InternationalCheckoutManager</item>
+				</obj>	
+				<obj id="bbbOrderTools" type="com.bbb.ecommerce.order.BBBOrderTools" hint="call" method="resolveName"
+				 calltype="com.bbb.internationalshipping.manager.TestInternationalCheckoutManager">
+					<item type="string">/atg/commerce/order/OrderTools</item>
+				</obj>
+				<obj id="orderType" type="string">
+                    default
+                </obj>	
+                <obj id="profile" type="string">
+					/atg/userprofiling/Profile
+				</obj>		
+			</objs>      
+        </test>
+      </group>
+	</cluster>
+</ddtunit>
+ 

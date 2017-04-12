@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gsa-template SYSTEM "dynamosystemresource:/atg/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>BBB Cart :: Items Exclusion repository </name>
+        <author></author>
+    </header>
+       
+     <item-descriptor name="cartItemExclusion" item-cache-size="25000" item-expire-timeout="3600000" query-cache-size="25000" cache-mode="simple">
+        <table name="item_excluded" type="primary" id-column-names="sku_id,reason_cd">
+            <property name="skuId" column-name="sku_id" data-type="long" display-name-resource="skuId" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="reasonCode" column-name="reason_cd" data-type="string" display-name-resource="reasonCode" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="siteFlag" column-name="site_flag" data-type="string" display-name-resource="siteFlag" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="startDate" column-name="start_dt" data-type="timestamp" display-name-resource="startDate" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="endDate" column-name="end_dt" data-type="timestamp" display-name-resource="endDate" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="lastModifiedDate" column-name="last_mod_dt" data-type="timestamp" display-name-resource="lastModifiedDate" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+             <property name="itemComment" column-name="item_comment" data-type="string" display-name-resource="itemComment" required="true" >
+                <attribute name="resourceBundle" value="com.bbb.tbs.resources.BBBTBSRepositoryTemplateResources"/>
+            </property>
+        </table>
+     </item-descriptor>   
+</gsa-template>

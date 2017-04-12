@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Certona Feed Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="feed" display-name-resource="certonaFeedRepository" cache-mode="simple" item-cache-size="100" item-cache-timeout="720">
+		<table name="BBB_CERTONA_FEED" type="primary" id-column-name="feed_id">
+			<property name="id" column-name="feed_id" display-name-resource="feedId" category-resource="BasicInfo" writable="true">
+        	</property>
+        	<property name="lastModifiedDate" column-name="Last_modified_date" display-name="LastModifiedDate" data-type="timestamp" category-resource="BasicInfo">
+            	
+            	<attribute name="propertySortPriority" value="1"/>
+           	</property>
+           	<property name="schedulerCompletionDate" column-name="Scheduler_completion_date" display-name="schedulerCompletionDate" data-type="timestamp" category-resource="BasicInfo">
+            	
+            	<attribute name="propertySortPriority" value="2"/>
+           	</property>
+           	<property name="schedulerStartDate" column-name="Scheduler_start_date" display-name="schedulerStartDate" data-type="timestamp" category-resource="BasicInfo">
+            	
+            	<attribute name="propertySortPriority" value="3"/>
+           	</property>
+           	<property name="status" column-name="Status" display-name="Status" data-type="boolean" category-resource="BasicInfo">
+            	
+            	<attribute name="propertySortPriority" value="4"/>
+           	</property>
+           	<property name="typeOfFeed" column-name="Type_of_feed" display-name="TypeOfFeed" data-type="string" category-resource="BasicInfo">
+            	
+            	<attribute name="propertySortPriority" value="5"/>
+           	</property>
+            <property name="mode" column-name="feed_mode" display-name="mode" data-type="enumerated"  category-resource="BasicInfo">
+
+            	<attribute name="propertySortPriority" value="6"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="incremental" code="0"/>
+				<option value="full" code="1"/>
+           	</property>
+		</table>
+    </item-descriptor>
+</gsa-template>

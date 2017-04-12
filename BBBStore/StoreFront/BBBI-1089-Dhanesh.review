@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1089">
+  <ReviewIssue id="IQIIQ42N">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 17:05:37:055 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-11 :: 17:08:16:326 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhanesh</ReviewerId>
+    <AssignedTo>Dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Incorrect Logic</Summary>
+    <Description>Why are we checking for "!myItemsFlag" condition in below line?
+
+&lt;c:when test="${isChecklistDisabled or null eq isChecklistDisabled or empty isChecklistDisabled or !myItemsFlag }"&gt;
+
+I believe we should first check for "myItemsFlag" to be true and then only check the rest of the conditions.
+i.e. 
+
+&lt;c:when test="${myItemsFlag }"&gt;
+   &lt;c:when test="${isChecklistDisabled or null eq isChecklistDisabled or empty isChecklistDisabled}"&gt;
+	--- Other Code ---
+	--- Other Code ---
+   &lt;/c:when&gt;
+&lt;/c:when&gt;
+   </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

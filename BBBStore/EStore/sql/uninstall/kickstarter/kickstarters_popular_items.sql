@@ -1,0 +1,8 @@
+SET DEFINE OFF;
+
+drop table BBB_POPULAR_ITEMS_REG_TYS
+
+drop table BBB_POPULAR_ITEMS;
+
+
+COMMIT;

@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestAddStoreItemsToRegistry.xml 
+	DESCRIPTION: ddtunit data file for TestAddStoreItemsToRegistry.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.stofu.TestAddStoreItemsToRegistry">
+		<group id="testAddStoreItemsToRegistry">
+			 
+			<test id="test1">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567","qty":"2"},{"skuId":"17052098","prodId":"1017052098","registryId":"198410567","qty":"2"}]}</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager/addStoreItemsToGiftRegistry</obj>
+				</objs>
+			 	 
+			</test>
+		</group>
+		<group id="testAddStoreItemsToRegistryError">
+			 
+			<test id="test2">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567a","qty":"2"}]}</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager/addStoreItemsToGiftRegistry</obj>
+				</objs>
+			 	 
+			</test>
+		</group>
+		<group id="testAddStoreItemsToRegistrySkuError">
+			 
+			<test id="test3">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945a","prodId":"","registryId":"198410567","qty":"2"}]}</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager/addStoreItemsToGiftRegistry</obj>
+				</objs>
+			 	 
+			</test>
+		</group>
+		
+		<group id="testAddStoreItemsToRegistryQuantityError">
+			 
+			<test id="test4">
+				<objs>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="jsonCollectionObj" type="string">{"addItemResults":[{"skuId":"16325945","prodId":"","registryId":"198410567","qty":"-2"}]}</obj>
+					<obj id="addRegistryRequest" type="string">/rest/bean/com/bbb/commerce/giftregistry/manager/GSGiftRegistryManager/addStoreItemsToGiftRegistry</obj>
+				</objs>
+			 	 
+			</test>
+		</group> 
+	</cluster>
+</ddtunit>
+ 

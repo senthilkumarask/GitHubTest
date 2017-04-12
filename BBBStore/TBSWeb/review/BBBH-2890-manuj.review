@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBH-2890">
+  <ReviewIssue id="INAD54JJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 19:38:03:391 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 19:38:07:022 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="1">review/BBBH-2890-manuj.review</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INAEVGFK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:26:31:472 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:26:47:107 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Code Review Comments</Summary>
+    <Description>ajax_handler_cart_sfl.jsp
+	PriceDroplet call is not required.
+cartBodysfl.jsp
+	Remove the priceList set check. Not required. Line number 82-105
+itemJustMovedToSave_ajax_handler.jsp
+	Remove the priceList set check. Remove from Line number 54 -77</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INAEXUQ2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:28:23:306 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:29:36:001 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Code Review Comments</Summary>
+    <Description>ajax_handler_cart_sfl.jsp
+	PriceDroplet call is not required.
+cartBodysfl.jsp
+	Remove the priceList set check. Not required. Line number 82-105
+itemJustMovedToSave_ajax_handler.jsp
+	Remove the priceList set check. Remove from Line number 54 -77</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INAF00NO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:30:04:308 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:30:12:463 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Code Review Comments</Summary>
+    <Description>ajax_handler_cart_sfl.jsp
+	PriceDroplet call is not required.
+cartBodysfl.jsp
+	Remove the priceList set check. Not required. Line number 82-105
+itemJustMovedToSave_ajax_handler.jsp
+	Remove the priceList set check. Remove from Line number 54 -77</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INAF12DM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:30:53:194 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:30:55:330 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description>da</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="INAF1NBG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:31:20:332 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-04-21 :: 20:31:25:699 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>manuj</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary></Summary>
+    <Description>ajax_handler_cart_sfl.jsp
+	PriceDroplet call is not required.
+cartBodysfl.jsp
+	Remove the priceList set check. Not required. Line number 82-105
+itemJustMovedToSave_ajax_handler.jsp
+	Remove the priceList set check. Remove from Line number 54 -77</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

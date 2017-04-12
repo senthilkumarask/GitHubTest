@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND-645_34899_Type_Ahead_Search">
+  <ReviewIssue id="I1T0H6LK">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-28 :: 14:17:36:872 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 13:27:08:014 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1907">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Run PMD and findbug and fix critical and major errors</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1T0HT1Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-28 :: 14:18:05:975 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 13:30:26:182 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="1962">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Instead of catching a null pointer check for null pointer and in getting null pointer in response set default max value</Summary>
+    <Description>try{&#xD;
+			matches = Integer.parseInt(getCatalogTools().getAllValuesForKey(BBBCoreConstants.CONTENT_CATALOG_KEYS,typeAheadKey).get(0));&#xD;
+		}catch (NumberFormatException e) {&#xD;
+		logError(BBBCoreErrorConstants.CATALOG_ERROR_1014, e);&#xD;
+		matches= getMaxMatches();&#xD;
+		} catch (NullPointerException e) {&#xD;
+		logError(BBBCoreErrorConstants.CATALOG_ERROR_1014, e);&#xD;
+		matches= getMaxMatches();</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1T0IB3F">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-28 :: 14:18:29:355 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-30 :: 13:22:15:228 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Imran</ReviewerId>
+    <AssignedTo>Pradhuman</AssignedTo>
+    <File line="2001">src/com/bbb/search/endeca/EndecaSearch.java</File>
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Java doc comments are missing from new method create getTypeAheadMaxMatches()</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-147">
+  <ReviewIssue id="IP67FI1E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:36:29:714 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:37:29:196 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1301">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Update the logdebug to print check_for_records_flag</Summary>
+    <Description>Also add performance logging</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP67IDTN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:38:44:219 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:39:07:070 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1356">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Move this final String constant</Summary>
+    <Description>"{call BBB_CORE.OMNITURE_REPORT_DATA_PKG.PURGE_OMNITURE_DATA(?, ?, ?, ?)}"</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP67J8EH">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:39:23:849 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:40:26:549 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1354">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can you test this properly or talk to Ashish once? I remember we had some issues in Gemini by setting AutoCommit to true</Summary>
+    <Description>connectionPurgedData.setAutoCommit(true);
+
+Take his recommendation do accordingly.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP67RZM2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:46:12:362 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:48:00:156 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1299">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Repeated code</Summary>
+    <Description>archiveOlderRecords
+
+We have the same code excpet calling proper stored proc, set the variables but we are handling same exception etc is n't it? Why do not we refactor the method to use common piece of code effectively. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP67UT8Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:48:24:074 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:48:39:360 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1294">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Add comments and more logging</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IP67VH8H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:48:55:169 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-07 :: 21:49:13:230 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sku134</ReviewerId>
+    <AssignedTo>sku134</AssignedTo>
+    <File line="1408">src/com/bbb/thirdparty/omniture/tools/OmnitureReportAPIToolsImpl.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>LogDebug output parameters</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

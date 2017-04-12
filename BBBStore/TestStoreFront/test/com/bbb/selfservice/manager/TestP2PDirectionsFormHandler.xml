@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestStoreLocatorDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestStoreLocatorDroplet.java test case 
+	HISTORY: DEc 30, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.selfservice.manager.TestP2PDirectionsFormHandler">
+		<group id="testP2PDirectionsFormHandler">
+			<test id="testP2PDirectionsFormHandler">
+				<objs>
+					<obj id="p2PDirectionsFormHandler" type="com.bbb.selfservice.formhandler.P2PDirectionsFormHandler" hint="call" method="resolveName" calltype="com.bbb.selfservice.manager.TestP2PDirectionsFormHandler">
+						<item type="string">/com/bbb/selfservice/P2PDirectionsFormHandler</item>
+					</obj>
+					<obj id="siteContextManager"
+						type="com.bbb.selfservice.manager.TestP2PDirectionsFormHandler"
+						hint="call" method="resolveName"
+						calltype="com.bbb.selfservice.manager.TestP2PDirectionsFormHandler">
+						<item type="string">/atg/multisite/SiteContextManager</item>
+					</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj>
+					<obj id="postalCode" type="string">08812</obj>
+					<obj id="street" type="string">08812</obj>
+					<obj id="city" type="string">Green Brook</obj>
+					<obj id="state" type="string">NJ</obj>
+					<obj id="routeStartPoint" type="string">Dunellen, NJ 08812</obj>
+					<obj id="routeEndPoint" type="string">303 Route 22 East,Green Brook,NJ,08812</obj>					
+					<obj id="destPostalCode" type="string">08812</obj>
+					<obj id="destStreet" type="string">303 Route 22 East</obj>
+					<obj id="destCity" type="string">Green Brook</obj>
+					<obj id="destState" type="string">NJ</obj>
+				</objs>			
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="dhanesh_10302014_PSI5">
+  <ReviewIssue id="I1WKNHFC">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-31 :: 02:05:41:688 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 14:25:21:271 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhanesh</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="1">EStore/config/com/bbb/personalstore/manager/PersonalStoreManager.properties</File>
+    <Type>item.type.label.optimization</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>personalStoreTools=/com/bbb/personalstore/tools/PersonalStoreTools</Summary>
+    <Description>duplicate entries of personalStoreTools=/com/bbb/personalstore/tools/PersonalStoreTools</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1WKOCFD">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-31 :: 02:06:21:865 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 14:25:09:748 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhanesh</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="214">EStore/src/com/bbb/personalstore/manager/PersonalStoreManager.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>remove if (isLoggingDebug())   check</Summary>
+    <Description>if (isLoggingDebug()) {</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1WKUQAS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-31 :: 02:11:19:780 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 14:25:00:859 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhanesh</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="291">EStore/src/com/bbb/search/droplet/SearchDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move hard coded strings into  constants file</Summary>
+    <Description>Move hard coded strings into  constants file so that to avoid duplicate constants.
+example : In  SearchDroplet.java  - "enteredSearchTerm" is hard coded in droplet. 
+String searchTerm = pRequest.getParameter("enteredSearchTerm");
+The same comment applies to all other java classes.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1WL0YC6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-31 :: 02:16:10:134 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 14:24:47:779 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhanesh</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="362">EStore/src/com/bbb/commerce/browse/droplet/CategoryLandingDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>if (isLoggingDebug() )  - remove the check and add logError</Summary>
+    <Description>Add logErrors in the exception block instead of logging  errors using logDebug statement. </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1WLD26Y">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-31 :: 02:25:35:002 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-11-14 :: 14:24:36:892 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>dhanesh</ReviewerId>
+    <AssignedTo>dhanesh</AssignedTo>
+    <File line="19">core/config/com/bbb/personalstore/repository/personalStore.xml</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>cache-mode="simple" item-cache-size="100" query-cache-size="100" - Change the cache size, timeout</Summary>
+    <Description>	cache-mode="simple" item-cache-size="100" query-cache-size="100" change this as follows.
+cache-mode="simple"   item-cache-size="1000" item-cache-timeout="86400000" query-cache-size="1000".
+
+It is applicable for all item descriptors defined in the personalStore.xml</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBCompareProductHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBCompareProductHandler.java test case
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.catalog.comparison.TestBBBCompareProductHandler">
+       
+       <group id="testCompareProductHandlerAddProduct">
+	        <test id="testCompareProductHandlerAddProduct">
+				<objs>
+					<obj id="bbbCompareProductHandler" type="com.bbb.commerce.catalog.comparison.BBBCompareProductHandler" 
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.comparison.TestBBBCompareProductHandler">
+						<item type="string">/atg/commerce/catalog/comparison/ProductListHandler</item>
+					</obj>	
+					<obj id="productID" type="string">17463665</obj>		
+				</objs>
+							 
+	        </test>	       
+      </group>   
+      
+      <group id="testCompareProductHandlerRemoveProduct">
+	        <test id="testCompareProductHandlerRemoveProduct">
+				<objs>
+					<obj id="bbbCompareProductHandler" type="com.bbb.commerce.catalog.comparison.BBBCompareProductHandler" 
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.comparison.TestBBBCompareProductHandler">
+						<item type="string">/atg/commerce/catalog/comparison/ProductListHandler</item>
+					</obj>	
+					<obj id="productIDAdd1" type="string">1017951653</obj>
+					<obj id="productIDAdd2" type="string">1016005185</obj>
+					<obj id="productIDAdd3" type="string">1017951688</obj>
+					<obj id="productIDRemove" type="string">1017951653</obj>		
+				</objs>
+							 
+	        </test>	       
+      </group>  
+      
+    </cluster>
+</ddtunit>
+

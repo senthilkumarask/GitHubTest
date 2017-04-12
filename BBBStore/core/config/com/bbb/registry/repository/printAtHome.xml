@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+	<header>
+		<name>Print At Home Repository</name>
+		<author>BBB Technical Team</author>
+		<version>1.0</version>
+	</header>                   
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--          printAtHome          -->
+  <!--                               -->
+  <!--///////////////////////////////-->                                                  
+	<item-descriptor name="printAtHome" display-name-resource="printAtHome" cache-mode="simple" display-property="title">
+		<table name="BBB_PRINT_AT_HOME" id-column-name="id" type="primary">
+			<property name="title" data-type="string" column-name="title" display-name-resource="title" category-resource="printAtHome" >							
+			<attribute name="propertySortPriority" value="-5"/>
+			</property>
+			<property name="introductoryMessage" data-type="big string" column-name="introductory_message" display-name-resource="introductoryMessage" category-resource="printAtHome" >					
+			<attribute name="propertySortPriority" value="-4"/>
+			</property>
+			<property name="heroImageURL" data-type="string" column-name="hero_image_url" display-name-resource="heroImageURL" category-resource="printAtHome" >					
+			<attribute name="propertySortPriority" value="-3"/>
+			</property>
+			  <!-- This property defines consultant site -->
+		    <property name="sites"   display-name-resource="sites" column-name="site_id"  item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="printAtHome"  >
+			 <attribute name="propertySortPriority" value="-2"/>
+		    </property>
+		    <property name="promoContent" data-type="big string" column-name="promo_content" display-name-resource="promoContent" category-resource="printAtHome" >					
+			<attribute name="propertySortPriority" value="-4"/>
+			</property>		
+		    <property name="id" data-type="string" column-name="id" />
+		</table>
+		 <!-- This property has the list of pick list repository items which are specific to  registeryType,customer type,site and channel -->
+		<table name="BBB_ANNOUNCEMENT_CARDS"  type="multi" id-column-names="id" multi-column-name="sequence_num">
+			<property  name="announcementCards" column-name="announcement_cards_ids" data-type="list" component-item-type="announcementcard" category-resource="printAtHome" display-name-resource="printAtHome">
+			 <attribute name="propertySortPriority" value="-1"/>
+             </property>
+		</table> 		
+	</item-descriptor>	
+  <!--///////////////////////////////-->
+  <!--                               -->
+  <!--   Announcement Card           -->
+  <!--                               -->
+  <!--///////////////////////////////--> 
+	<item-descriptor name="announcementcard" cache-mode="simple" display-name-resource="announcementCard" display-property="title" >
+		<table name="BBB_ANNOUNCEMENT_CARD" id-column-name="id" type="primary">	
+		<property name="title" data-type="string" column-name="title" display-name-resource="title" category-resource="printAtHome" >							
+			<attribute name="propertySortPriority" value="-6"/>
+		</property>
+		<property name="thumbnailImage" data-type="string" column-name="thumbnail_image_url" display-name-resource="thumbnailImage" category-resource="printAtHome" >					
+			<attribute name="propertySortPriority" value="-3"/>
+		</property>
+		<property name="cardContent" data-type="big string" column-name="card_content" display-name-resource="cardContent" category-resource="printAtHome" >							
+			<attribute name="propertySortPriority" value="-7"/>
+		</property>
+		    <property name="id" data-type="string" column-name="id" />
+		</table>	
+	</item-descriptor>
+	<!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component
+ 		<query-items item-descriptor="printAtHome" quiet="true">ALL</query-items>
+ 		<query-items item-descriptor="announcementcard" quiet="true">ALL</query-items>
+ 		
+ 	-->
+</gsa-template>

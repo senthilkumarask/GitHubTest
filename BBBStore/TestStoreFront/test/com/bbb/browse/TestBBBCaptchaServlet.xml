@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBreadcrumbDroplet.xml
+
+  DESCRIPTION: ddtunit data file for BreadcrumbDroplet.java test case
+
+  HISTORY:
+  Nov 30, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.browse.TestBBBCaptchaServlet">
+       <group id="testBBBCaptchaServlet">
+        <test id="testBBBCaptchaServlet_test">
+			<objs>
+				<obj id="bbbCaptchaServlet" type="com.bbb.browse.BBBCaptchaServlet" hint="call" method="resolveName" calltype="com.bbb.browse.TestBBBCaptchaServlet">
+					<item type="string">/com/bbb/browse/BBBCaptchaServlet</item>
+				</obj>
+			</objs>      
+        </test>
+      </group>
+      
+      
+    </cluster>
+</ddtunit>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://atg.bedbathandbeyond.com/interfaces/ProfileService/v1/ProfileService.wsdl" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns="http://bedbathandbeyond.com/atg" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://atg.bedbathandbeyond.com/interfaces/ProfileService/v1/ProfileService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://atg.bedbathandbeyond.com/interfaces/ProfileService/v1/ProfileService.wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://bedbathandbeyond.com/atg" schemaLocation="schema/bbb-profile.xsd"/>
+		</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginRequest">
+    <wsdl:part name="request" element="ns:loginRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LoginResponse">
+    <wsdl:part name="response" element="ns:loginResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordResponse">
+    <wsdl:part name="response" element="ns:forgotPasswordResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BillingAddressResponse">
+    <wsdl:part name="response" element="ns:billingAddressResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LinkCoRegistrantResponse">
+    <wsdl:part name="response" element="ns:linkCoRegistrantResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="BillingAddressRequest">
+    <wsdl:part name="request" element="ns:billingAddressRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ForgotPasswordRequest">
+    <wsdl:part name="request" element="ns:forgotPasswordRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CreateUserRequest">
+    <wsdl:part name="request" element="ns:profileRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ProfileInfoResponse">
+    <wsdl:part name="response" element="ns:profileInfoResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LinkProfileAndRegistryResponse">
+    <wsdl:part name="response" element="ns:linkProfileResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CreateUserResponse">
+    <wsdl:part name="response" element="ns:profileResponseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ProfileInfoRequest">
+    <wsdl:part name="request" element="ns:profileInfoRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LinkProfileAndRegistryRequest">
+    <wsdl:part name="request" element="ns:linkProfileRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LinkCoRegistrantRequest">
+    <wsdl:part name="request" element="ns:linkCoRegistrantRequestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestVO">
+    <wsdl:part name="request" element="ns:requestVO">
+    </wsdl:part>
+    <wsdl:part name="appId" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ResponseVO">
+    <wsdl:part name="response" element="ns:responseVO">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ProfileServicePortType">
+    <wsdl:operation name="createUser">
+      <wsdl:input message="tns:CreateUserRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:CreateUserResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input message="tns:LoginRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forgotPassword">
+      <wsdl:input message="tns:ForgotPasswordRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ForgotPasswordResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfileInfo">
+      <wsdl:input message="tns:ProfileInfoRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ProfileInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkProfileAndRegistry">
+      <wsdl:input message="tns:LinkProfileAndRegistryRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:LinkProfileAndRegistryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkCoRegistrant">
+      <wsdl:input message="tns:LinkCoRegistrantRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:LinkCoRegistrantResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBillingAddress">
+      <wsdl:input message="tns:BillingAddressRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:BillingAddressResponse">
+    </wsdl:output>
+    </wsdl:operation>
+	<wsdl:operation name="getResponseVO">
+      <wsdl:input message="tns:RequestVO">
+    </wsdl:input>
+      <wsdl:output message="tns:ResponseVO">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProfileServiceBinding" type="tns:ProfileServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="createUser">
+      <soap:operation soapAction="createUserOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="loginOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="forgotPassword">
+      <soap:operation soapAction="forgotPasswordOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfileInfo">
+      <soap:operation soapAction="getProfileInfoOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />   
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkProfileAndRegistry">
+      <soap:operation soapAction="linkProfileAndRegistryOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkCoRegistrant">
+      <soap:operation soapAction="linkCoRegistrantOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal"  />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal"  />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBillingAddress">
+      <soap:operation soapAction="getBillingAddressOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+	<wsdl:operation name="getResponseVO">
+      <soap:operation soapAction="getResponseVOOperation"/>
+      <wsdl:input>
+        <soap:body parts="request" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="response" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProfileService">
+    <wsdl:port name="ProfileServicePort" binding="tns:ProfileServiceBinding">
+      <soap:address location="http://localhost/webservices/services/ProfileService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

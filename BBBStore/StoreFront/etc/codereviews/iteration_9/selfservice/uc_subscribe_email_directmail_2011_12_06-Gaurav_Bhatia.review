@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_subscribe_email_directmail_2011_12_06">
+  <ReviewIssue id="GVW0OQ9C">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 12:59:09:360 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:49:42:269 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File></File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>All text needs to come from label </Summary>
+    <Description>All text needs to come from label </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVW1S2TB">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 13:29:45:215 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:49:20:598 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="191">j2ee-apps/BBBStore/store.war/selfservice/email_signup.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Phone number - a separate input box is coming below phone numbers field </Summary>
+    <Description>need to hide additional phone input box </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVW26GY6">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-07 :: 13:40:56:718 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-08 :: 15:50:21:427 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Gaurav_Bhatia</ReviewerId>
+    <AssignedTo>Kunjal_Shah</AssignedTo>
+    <File line="270">j2ee-apps/BBBStore/store.war/selfservice/email_signup.jsp</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Link to sub and unsub should be passed as parameter to &lt;bbbt:textarea&gt;</Summary>
+    <Description>&lt;p&gt;If at any time you do not want to receive email, offers and/or cariculars from us and our subsidiaries, you can always remove yourself from our email list by entering your information in our &lt;a href="${pageContext.request.contextPath}/selfservice/unsubscribe_email.jsp" title="email unsubscribe"&gt;email unsubscribe page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If at any time you do not want to receive email, offers and/or cariculars from us and our subsidiaries, you can always remove yourself from our email list by entering your information in our &lt;a href="${pageContext.request.contextPath}/selfservice/unsubscribe_direct_mail.jsp" title="direct email unsubscribe"&gt;direct email unsubscribe page&lt;/a&gt;.&lt;/p&gt;
+                            </Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

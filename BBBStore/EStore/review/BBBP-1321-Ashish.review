@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBP-1321">
+  <ReviewIssue id="IFF2TEZL">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-06 :: 13:30:13:089 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2015-10-06 :: 13:30:40:227 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Ashish</ReviewerId>
+    <AssignedTo>Sunil Kumar</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>General comments</Summary>
+    <Description>Checkout page should not display with out any item in the cart.
+In accessory lead product add to cart is not working: Add to cart click is opening the registry drop down.
+Item has been added to your cart is hard coded.
+For non logged in user in case of no item available in the cart checkout will appear. Click on checkout it leads user to checkout but issue occurs when user click on Next button. (Intermittent)
+After click on checkout button user will go for the single page checkout (Under development). User mostly land to the new checkout page except the LTL item . This is must to implement for this story. Lalit lets pick this once this functionality will be delivered by cart team.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

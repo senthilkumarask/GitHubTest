@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BAND_503_CLP_LEFT_NAV">
+  <ReviewIssue id="I11ZNELR">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:24:40:815 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:27:21:392 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>imageMapContentis already cheking for empty String, no need to check for 'null' String</Summary>
+    <Description>"${(not empty imageMapContent) &amp;&amp;(imageMapContent ne 'null' )}</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I11ZO1CS">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:25:10:300 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:26:30:378 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>promoBoxContent)  is already cheking for empty String, no need to check for 'null' String</Summary>
+    <Description>${(not empty promoBoxContent) &amp;&amp;(promoBoxContent ne 'null' )}</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I11ZXWZA">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:32:51:190 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:33:33:452 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Put JSP Comment why we added omnitureFlag Flag?</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I1206F0R">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:39:27:819 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:45:00:625 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Write Proper JSP Cpmment do not put HTML comment</Summary>
+    <Description>Instead of writing &lt;!-- Band-503 CLP Link on Search Results Page changes start--&gt;&#xD;
+Put &lt;%--  checking If promoSlot1ImgLink URL is not empty and contain ? append **** --%&gt;&#xD;
+&#xD;
+Fix this for all your changes.</Description>
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I120NQFO">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:52:55:764 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 16:53:59:976 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Write Proper JSP Comment, do not put html comment.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I122UEJ8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 17:54:06:164 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 17:54:49:939 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.clarity</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>modify html comment to JSP comment.</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="I122X0FJ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 17:56:07:855 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-10-09 :: 17:58:44:272 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sachin</ReviewerId>
+    <AssignedTo>Nishant</AssignedTo>
+    <File line="" />
+    <Type>item.type.label.usability</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Remove unused variable referrerUrl, referrerCatId and fromClpName</Summary>
+    <Description />
+    <Annotation />
+    <Revision />
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
+

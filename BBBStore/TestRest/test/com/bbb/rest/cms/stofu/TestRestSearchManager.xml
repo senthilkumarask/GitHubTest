@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2013, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestRestStaticContent.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Jan 10, 2013 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.stofu.TestRestSearchManager">
+	
+		<group id="testPerformSearchErr">
+			 <test id="test_search_err">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="restSearchAPI" type="string">/rest/bean/com/bbb/rest/search/RestSearchManager/getAllCategories</obj>
+				</objs>
+			</test>			
+		</group>
+		<group id="testPerformSearchSuccess">
+			 <test id="test_search_success">
+				<objs>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="atg-rest-depth" type="string">3</obj>
+					<obj id="restSearchAPI" type="string">/rest/bean/com/bbb/rest/search/RestSearchManager/getAllCategories</obj>
+				</objs>
+			</test>			
+		</group>		
+		</cluster>
+</ddtunit>

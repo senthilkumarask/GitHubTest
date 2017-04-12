@@ -1,0 +1,376 @@
+<div class="registryForm">
+	<fieldset class="radioGroup">
+		<legend>
+			<c:choose>
+				<c:when test="${event == 'BA1'}">
+					<bbbl:label key="lbl_registrants_contact_addr_reg" language ="${pageContext.request.locale.language}"/>
+				</c:when>
+				<c:otherwise>
+					<bbbl:label key="lbl_registrants_contact_addr" language ="${pageContext.request.locale.language}"/>
+				</c:otherwise>
+			</c:choose>
+		</legend>
+		
+		<%-- Iterate on address book to display addresses in address book --%>
+		<div class="radioItem input clearfix">
+				<div class="radio">
+					<dsp:input id="radRegistryRegistrantAddress3" type="radio"
+							name="radRegistryRegistrantAddressName"
+							value="regShippingAddress"
+							bean="GiftRegistryFormHandler.regContactAddress" >
+                        <dsp:tagAttribute name="aria-checked" value="false"/>
+                        <dsp:tagAttribute name="aria-labelledby" value="lblradRegistryRegistrantAddress3"/>
+                    </dsp:input>
+				</div>
+				<div class="label">
+					<label id="lblradRegistryRegistrantAddress3" for="radRegistryRegistrantAddress3"> 
+					<span class="displayToggle"><%-- Address label --%></span>
+					</label>
+				</div>
+				 <div class="error"></div>
+		</div>
+		<%-- Iterate on address book to display addresses in address book --%>
+		
+		<div class="radioItem input last clearfix">
+			<div class="radio">
+				<dsp:input id="radRegistryRegistrantAddressNew"
+					value="newPrimaryRegAddress" type="radio"
+					name="radRegistryRegistrantAddressName" 
+					bean="GiftRegistryFormHandler.regContactAddress" >
+                    <dsp:tagAttribute name="aria-checked" value="false"/>
+                    <dsp:tagAttribute name="aria-labelledby" value="lblradRegistryRegistrantAddressNew"/>
+                </dsp:input>
+			</div>			
+			<div class="label">
+				<label id="lblradRegistryRegistrantAddressNew" for="radRegistryRegistrantAddressNew">
+					<bbbl:label key="lbl_registrants_new_contact_addr" language ="${pageContext.request.locale.language}"/>
+					</label>
+	
+			</div>
+			<div class="clear"></div>
+
+			<div class="subForm clearfix hidden validateFormWithQAS">
+					
+					<div class="inputField clearfix">
+						<label id="lbltxtRegistryRegistrantContactFirstName" for="txtRegistryRegistrantContactFirstName" class="marTop_10">
+								<bbbl:label key="lbl_registrants_firstname" language ="${pageContext.request.locale.language}"/> 
+								<span class="required">*</span>
+							<span class="txtOffScreen"><bbbl:label key='lbl_enter_first_name' language="${pageContext.request.locale.language}" /></span>
+						</label>
+						<dsp:input id="txtRegistryRegistrantContactFirstName"
+							type="text"
+							name="txtRegistryRegistrantContactFirstNameName"
+							bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.firstName"
+							beanvalue="Profile.firstName" disabled="true" >
+                            <dsp:tagAttribute name="aria-required" value="true"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactFirstName errortxtRegistryRegistrantContactFirstName"/>
+                        </dsp:input>
+					</div>
+					
+
+					
+					<div class="inputField clearfix">
+						<label id="lbltxtRegistryRegistrantContactLastName" for="txtRegistryRegistrantContactLastName">
+						<bbbl:label key="lbl_registrants_lastname" language ="${pageContext.request.locale.language}"/> 	
+							<span class="required">*</span>
+							<span class="txtOffScreen"><bbbl:label key='lbl_enter_last_name' language="${pageContext.request.locale.language}" /></span>
+						</label>
+						
+						<dsp:input id="txtRegistryRegistrantContactLastName"
+								type="text"
+								name="txtRegistryRegistrantContactLastNameName"
+								bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.lastName"
+								beanvalue="Profile.lastName" disabled="true">
+                            <dsp:tagAttribute name="aria-required" value="true"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactLastName errortxtRegistryRegistrantContactLastName"/>
+                        </dsp:input>
+					</div>
+					
+					<div class="inputField clearfix" id="regContactAddrLine1">
+						<label id="lbltxtRegistryRegistrantContactAddress1" for="txtRegistryRegistrantContactAddress1">
+								<bbbl:label key="lbl_registrants_addr_line1" language ="${pageContext.request.locale.language}"/>
+								<span class="required">*</span>
+						</label>
+						<c:choose>
+							<c:when test="${not empty shipTo_POBoxOn &&  shipTo_POBoxOn && (currentSiteId ne BedBathCanadaSite)}">
+							<c:set var="iclassValue" value=""/>
+							</c:when>
+							<c:otherwise>
+							<c:set var="iclassValue" value="poBoxAddNotAllowed"/>
+							</c:otherwise>
+						</c:choose>	
+						<dsp:input id="txtRegistryRegistrantContactAddress1"
+								type="text"
+								name="txtRegistryRegistrantContactAddress1Name"
+								bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.addressLine1" 
+								iclass="${iclassValue} required addressAlphanumericbasicpunc cannotStartWithWhiteSpace QASAddress1" maxlength="30" >
+                            <dsp:tagAttribute name="aria-required" value="true"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactAddress1 errortxtRegistryRegistrantContactAddress1"/>
+                        </dsp:input>
+					</div>
+					
+
+					
+					<div class="inputField clearfix" id="regContactAddrLine2">
+						<label id="lbltxtRegistryRegistrantContactAddress2" for="txtRegistryRegistrantContactAddress2">
+							<bbbl:label key="lbl_registrants_addr_line2" language ="${pageContext.request.locale.language}"/>
+						</label>
+						<dsp:input id="txtRegistryRegistrantContactAddress2"
+									type="text"
+									name="txtRegistryRegistrantContactAddress2Name"
+									bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.addressLine2" iclass="${iclassValue} addressAlphanumericbasicpunc cannotStartWithWhiteSpace QASAddress2" maxlength="30" >
+                            <dsp:tagAttribute name="aria-required" value="false"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactAddress2 errortxtRegistryRegistrantContactAddress2"/>
+                        </dsp:input>
+					</div>
+					
+
+					
+
+					<div class="inputField clearfix" id="regContactCity">
+						<label id="lbltxtRegistryRegistrantContactCity" for="txtRegistryRegistrantContactCity"> 
+					<bbbl:label key="lbl_registrants_city" language ="${pageContext.request.locale.language}"/>
+							<span class="required">*</span>
+						</label>
+						<dsp:input id="txtRegistryRegistrantContactCity"
+									type="text" name="txtRegistryRegistrantContactCityName"
+									bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.city" iclass="required cannotStartWithWhiteSpace QASCityName" maxlength="30" >
+                            <dsp:tagAttribute name="aria-required" value="true"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactCity errortxtRegistryRegistrantContactCity"/>
+                        </dsp:input>
+					</div>
+					
+
+					
+					<div class="inputSelect pushDown" id="regContactState">
+						<label id="lblselRegistryRegistrantContactState" for="selRegistryRegistrantContactState">
+								<dsp:getvalueof id="siteId" idtype="java.lang.String" param="siteId" />
+								<c:choose>
+									<c:when test="${siteId == BedBathCanadaSite}">
+										<bbbl:label key="lbl_registrants_statecanada" language ="${pageContext.request.locale.language}"/>
+									</c:when>
+									<c:otherwise>
+										<bbbl:label key="lbl_registrants_state" language ="${pageContext.request.locale.language}"/>
+									</c:otherwise>
+								</c:choose>
+							<span class="required">*</span>
+						</label>
+						
+						<dsp:select bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.state" id="selRegistryRegistrantContactState" name="selRegistryRegistrantContactStateName" iclass="uniform requiredValidation QASStateName">
+							<dsp:tagAttribute name="aria-required" value="true"/>
+                            <dsp:tagAttribute name="aria-labelledby" value="lblselRegistryRegistrantContactState errorselRegistryRegistrantContactState"/>
+							<dsp:droplet name="StateDroplet">
+							    <dsp:param name="NoShowUSTerr" value="noShowOnRegistry" />
+								<dsp:oparam name="output">
+										<c:choose>
+											<c:when test="${siteId == BedBathCanadaSite}">
+												<dsp:option value="Select"><bbbl:label key='lbl_regcreate_reginfo_selectcanada' language="${pageContext.request.locale.language}" /></dsp:option>
+											</c:when>
+											<c:otherwise>
+												<dsp:option value="Select"><bbbl:label key='lbl_regcreate_reginfo_select' language="${pageContext.request.locale.language}" /></dsp:option>
+											</c:otherwise>
+										</c:choose>
+									<dsp:droplet name="ForEach">
+										<dsp:param name="array" param="location" />
+										<dsp:oparam name="output">
+											<dsp:getvalueof param="element.stateName" id="elementVal">
+											<dsp:getvalueof param="element.stateCode" id="stateCode"/>
+											<dsp:option value="${stateCode}">
+												${elementVal}
+											</dsp:option>
+											</dsp:getvalueof>
+										</dsp:oparam>
+									</dsp:droplet>
+								</dsp:oparam>
+							</dsp:droplet>
+
+						</dsp:select>
+						<label id="errorselRegistryRegistrantContactState" for="selRegistryRegistrantContactState" generated="true" class="error" style="display:none;"></label>
+						<label for="selRegistryRegistrantContactState" class="offScreen">
+								<dsp:getvalueof id="siteId" idtype="java.lang.String" param="siteId" />
+								<c:choose>
+									<c:when test="${siteId == BedBathCanadaSite}">
+										<bbbl:label key="lbl_registrants_statecanada" language ="${pageContext.request.locale.language}"/>
+									</c:when>
+									<c:otherwise>
+										<bbbl:label key="lbl_registrants_state" language ="${pageContext.request.locale.language}"/>
+									</c:otherwise>
+								</c:choose>
+							<span class="required">*</span>
+						</label>
+					</div>
+					
+					<div class="inputField clearfix" id="regContactZip">
+						<label id="lbltxtRegistryRegistrantContactZip" for="txtRegistryRegistrantContactZip">
+						<c:choose>
+						<c:when test="${currentSiteId eq BedBathCanadaSite}">
+							<bbbl:label key="lbl_registrants_zip_ca" language ="${pageContext.request.locale.language}"/>
+							</c:when>
+							<c:otherwise>
+							<bbbl:label key="lbl_registrants_zip" language ="${pageContext.request.locale.language}"/>
+							</c:otherwise></c:choose>
+							
+							 <span
+								class="required">*</span>
+						</label>
+						<c:choose>
+          									<c:when test="${currentSiteId eq BedBathCanadaSite}">
+								<dsp:input id="txtRegistryRegistrantContactZip"
+									type="text" name="txtRegistryRegistrantContactZipName"
+									bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.zip" iclass="required zipCA QASZipUS" >
+                                    <dsp:tagAttribute name="aria-required" value="true"/>
+                                    <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactZip errortxtRegistryRegistrantContactZip"/>
+                                </dsp:input>
+							</c:when>
+							<c:otherwise>
+								<dsp:input id="txtRegistryRegistrantContactZip"
+									type="text" name="txtRegistryRegistrantContactZipName"
+									bean="GiftRegistryFormHandler.registryVO.primaryRegistrant.contactAddress.zip" iclass="required zipUS QASZipUS" >
+                                    <dsp:tagAttribute name="aria-required" value="true"/>
+                                    <dsp:tagAttribute name="aria-labelledby" value="lbltxtRegistryRegistrantContactZip errortxtRegistryRegistrantContactZip"/>
+                                </dsp:input>
+							</c:otherwise>
+						</c:choose>
+					</div>
+					
+			</div>
+		</div>
+	</fieldset>
+</div>
+
+
+
+
+
+<%-- Code from address book --%>
+<%-- <dsp:page>
+	<dsp:importbean bean="/atg/commerce/util/MapToArrayDefaultFirst"/>
+	<dsp:droplet name="MapToArrayDefaultFirst">
+		<dsp:param name="defaultId" bean="Profile.shippingAddress.repositoryId"/>
+		<dsp:param name="map" bean="Profile.secondaryAddresses"/>
+		<dsp:param name="sortByKeys" value="true"/>
+		<dsp:oparam name="output">
+		  <c:set var="counter" value="0"/>
+		  <dsp:getvalueof var="sortedArray" vartype="java.lang.Object" param="sortedArray"/>
+		  <c:choose>
+ 				 <c:when test="${empty sortedArray}">
+					<dsp:setvalue bean="ProfileFormHandler.useShippingAddressAsDefault" value="true" />
+					<dsp:setvalue bean="ProfileFormHandler.useBillingAddressAsDefault" value="true" />
+					<c:set var="chkboxdisabled" value="true"/>
+				</c:when>
+  				<c:otherwise>
+  					<c:set var="chkboxdisabled" value="false"/>
+  					<dsp:setvalue bean="ProfileFormHandler.useShippingAddressAsDefault" value="false" />
+					<dsp:setvalue bean="ProfileFormHandler.useBillingAddressAsDefault" value="false" />
+					
+        			<c:set var="idcount" value="0"/>
+        			<c:forEach var="shippingAddress" items="${sortedArray}">
+        	    		<c:set var="idcount" value="${idcount + 1}"/>
+			          	<dsp:setvalue param="shippingAddress" value="${shippingAddress}"/>
+			            <c:if test="${not empty shippingAddress}">
+							<c:set var="count" value="0"/>
+		          
+		                     <dsp:droplet name="Compare">
+		                       <dsp:param name="obj1" bean="Profile.shippingAddress.repositoryId"/>
+		                       <dsp:param name="obj2" param="shippingAddress.value.id"/>
+		                       <dsp:oparam name="equal">
+		                         <c:set var="isDefault" value="true"/>
+		                       </dsp:oparam>
+		                       <dsp:oparam name="default">
+		                         <c:set var="isDefault" value="false"/>
+		                       </dsp:oparam>
+		                     </dsp:droplet>
+		                                          
+		                     <dsp:droplet name="Compare">
+		                       <dsp:param name="obj1" bean="Profile.billingAddress.repositoryId"/>
+		                       <dsp:param name="obj2" param="shippingAddress.value.id"/>
+		                       <dsp:oparam name="equal">
+		                         <c:set var="isBillDefault" value="true"/>
+		                       </dsp:oparam>
+		                       <dsp:oparam name="default">
+		                         <c:set var="isBillDefault" value="false"/>
+		                       </dsp:oparam>
+		                     </dsp:droplet>  
+
+
+						      Display Address Details
+           
+      					<div class="grid_4 ${(idcount%2 == 1) ? 'alpha' : 'omega'}"> 
+      
+      						<div id="addressEntry-${idcount}" class="cardEntry ${isDefault? 'isPreferredShipping': ''} ${isBillDefault? 'isPreferredBilling': ''} 
+      							clearfix" >
+          						
+          						<c:set var="counter" value="${counter + 1}"/>
+						          	<div class="grid_2 noMar">
+			                        	  <div class="item">Shipping</div>
+			                      	</div>
+									<div class="grid_2 noMar">
+			                          <div class="item">
+			                          	<c:choose>
+						                  	<c:when test="${isDefault}">
+						                        <strong><bbbl:label key="lbl_addressbook_preferredaddress" language ="${pageContext.request.locale.language}"/></strong>
+						                     </c:when>
+			                     			<c:otherwise>
+					                           	<dsp:a  bean="ProfileFormHandler.defaultShippingAddress"  href="${contextPath}/account/address_book.jsp" paramvalue="shippingAddress.key">
+					                      	   		<bbbl:label key="lbl_addressbook_makepreferredshipping" language ="${pageContext.request.locale.language}"/> 
+					                      		</dsp:a>
+			                     			</c:otherwise>
+			          	    			</c:choose>
+			                         </div>
+                      				</div>
+                      				
+                      				<hr/>
+									<div class="grid_2 noMar">
+									    <div class="item" >Billing</div>
+									</div>
+									<div class="grid_2 noMar">
+									    <div class="item">
+									    	<c:choose>
+												<c:when test="${isBillDefault}">
+												   <strong><bbbl:label key="lbl_addressbook_preferredbiiling" language ="${pageContext.request.locale.language}"/></strong>
+												</c:when>
+												<c:otherwise>
+												   <dsp:a  bean="ProfileFormHandler.defaultBillingAddress"  href="${contextPath}/account/address_book.jsp" paramvalue="shippingAddress.key">
+													  <bbbl:label key="lbl_addcreditcard_preferredbilling" language ="${pageContext.request.locale.language}"/>
+													
+													</dsp:a>
+													
+												</c:otherwise>
+											</c:choose>
+									    </div>
+									</div>
+                      
+                      				<hr/>
+                      				<div class="grid_4 noMar">
+				                        <dsp:include page="displayAddress.jsp" flush="false">
+				                 			<dsp:param name="address" param="shippingAddress.value"/>
+				                  			<dsp:param name="private" value="false"/>
+				                  		</dsp:include>
+                      				</div>
+                      
+                      				<div class="grid_4 noMar">
+                         				<div class="item">
+											<dsp:a iclass="editAddressEntry" href="#editEntry" paramvalue="shippingAddress.key">
+												 <bbbl:label key="lbl_addressbook_edit" language ="${pageContext.request.locale.language}"/>
+											</dsp:a>
+										</div>
+                       				</div>
+			                       <div class="grid_4 noMar">
+			                           <div class="item">
+			           	                 <dsp:a  iclass="removeAddressEntry" href="#removeEntry" paramvalue="shippingAddress.key">
+			              		              <bbbl:label key="lbl_addressbook_remove" language ="${pageContext.request.locale.language}"/>
+			              		         </dsp:a>
+			                          </div>
+			                      </div>
+			                      <dsp:input iclass="cardId" name="cardId" type="hidden" bean="ProfileFormHandler.editValue.nickname" paramvalue="shippingAddress.key" />
+			                      <dsp:input iclass="defaultShippingAddress" name="defaultShippingAddress" type="hidden" bean="ProfileFormHandler.useShippingAddressAsDefault" value="${isDefault}" />
+			                      <dsp:input iclass="defaultBillingAddress" name="defaultBillingAddress" type="hidden" bean="ProfileFormHandler.useBillingAddressAsDefault" value="${isBillDefault}" />
+			   				</div>
+                	</div>
+          		</c:if>
+      		  </c:forEach>
+			</c:otherwise>
+		</c:choose>
+ 	</dsp:oparam>
+	</dsp:droplet> MapToArrayDefaultFirst (sort saved addresses)
+</dsp:page> --%>

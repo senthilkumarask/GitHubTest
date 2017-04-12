@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Category Chat Template</name>
+        <author></author>
+    </header>
+    
+    <item-descriptor name="bccManagedCategory" display-name="BCC Managed Category" sub-type-value="bccManagedCategory" sub-type-property="type" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" display-property="categoryName" last-modified-property="lastModifiedDate">
+    <attribute name="updateLastModified" value="true"/>
+		<table name="BBB_BCC_CATEGORIES" type="primary" id-column-name="id" >
+			<property expert="false" readable="true" default="bccManagedCategory" column-name="category_type" data-type="enumerated" hidden="true" writable="true" name="type" required="false" cache-mode="inherit" queryable="true">
+		        <attribute name="uiwritable" value="false"/>
+		        <attribute name="useCodeForValue" value="false"/>
+		        <option value="bccManagedCategory" code="0"/>
+		        <option value="bccManagedPromotionCategory" code="4001"/>
+		    </property>
+			<property name="categoryId" column-name="category_id" display-name-resource="categoryId" item-type="category" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="1"/>
+        	 	<attribute name="unique" value="true"/>
+			</property>     	
+           	<property name="chatEnabled" column-name="chat_enable" display-name-resource="chatEnabled" data-type="boolean">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="chatURL" column-name="chat_url" display-name-resource="chatURL" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="3"/>
+    		</property>
+    		<property name="chatCode" column-name="chat_code" display-name-resource="chatCode" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="4"/>
+    		</property>
+    		<property name="catPromoId" column-name="PROMO_CONTAINER_ID" display-name-resource="catPromoId" item-type="promoKeysValue" repository="/com/bbb/catalog/BBBManagedCatalogRepository" category-resource="PromotionalBanner" >
+            	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+                <attribute name="propertySortPriority" value="2"/>
+            </property>
+    		
+			<property name="lastModifiedDate" column-name="LAST_MODIFIED_DATE" display-name-resource="lastModifiedDate" data-type="timestamp" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        		<attribute name="propertySortPriority" value="60"/>
+  			</property>
+				
+			<!-- Added for # 216 BV Smart SEO Implementation -->
+			<property name="displayaskandanswer" column-name="display_ask_and_answer" display-name-resource="displayaskandanswer" data-type="enumerated" default="Hide">
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="7"/>
+            	<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+	            	<option value="Hide" code="0"/>
+            		<option value="Show" code="1"/>
+        	</property>     
+      <!--@author psin52 Added for story 117-A5 | Grid/List view configurable -->
+
+	        <property name="defaultViewValue" column-name="defaultView_Value" display-name-resource="GridListConfigure" data-type="enumerated" >
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="8"/>
+            	<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            		<option value="Grid" code="1"/>
+            		<option value="List" code="2"/>
+        	</property>
+        	<property name="zoomValue" column-name="zoom_Value" display-name-resource="zoomConfigure" data-type="string" >
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="9"/>
+        	</property>
+		</table>
+		
+		<table name="BBB_BCC_CATEGORIES_L2LIST" type="multi" id-column-names="id"	multi-column-name="sequence_num" >
+        	<!-- Added for # 458 Global Nav- Configure L2/L3 display -->
+			<property name="l2ExclusionList" column-name="L2_Exclusion_list" display-name-resource="l2ExclusionList" data-type="list" component-data-type="string">
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="9"/>
+        	</property>
+		</table>
+		
+		<table name="BBB_BCC_CATEGORIES_L3LIST" type="multi" id-column-names="id"	multi-column-name="sequence_num" >
+	        	<!-- Added for # 458 Global Nav- Configure L2/L3 display -->
+				<property name="l3ExclusionList" column-name="L3_Exclusion_list" display-name-resource="l3ExclusionList" data-type="list" component-data-type="string">
+	    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+		            <attribute name="propertySortPriority" value="10"/>
+	        	</property>
+			
+		</table>
+		<table name="BBB_CAT_DEF_SORT" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+	     	<property name="defCatSortOption" column-names="DEF_CAT_SORT_ID" display-name-resource="defCatSortOption" data-type="map" component-item-type="sortingOption"  category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="20"/>
+		 	</property>
+		</table>
+				
+		<table name="BBB_CAT_SORT_OPT_LIST" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+	     	<property name="catSortOptionList" column-names="SORT_OPT_ID" display-name-resource="catSortOptionList" data-type="map" component-item-type="sortOptionList" category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+	      		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	      		<attribute name="propertySortPriority" value="21"/>
+	     	</property>
+		</table>
+		<property name="categoryName" data-type="string" hidden="true" queryable="true">
+			 <derivation>
+           		<expression>categoryId.displayName</expression>
+			</derivation>
+       </property>
+    </item-descriptor>
+    
+    <item-descriptor name="bccManagedPromotionCategory" sub-type-value="bccManagedPromotionCategory" super-type="bccManagedCategory" display-name="BCC Managed Promotional Category" cache-mode="simple" item-cache-size="10000" query-cache-size="10000" display-property="categoryName" last-modified-property="lastModifiedDate">
+    <attribute name="updateLastModified" value="true"/>
+		<table name="BBB_BCC_PROMO_CATEGORIES" type="auxiliary" id-column-names="category_id"  shared-table-sequence="1">			     	
+           	<property name="showQuickViewLink" column-name="SHOW_QUICK_VIEW" display-name-resource="showQuickViewLink" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showProductCompare" column-name="SHOW_PRODUCT_COMPARE" display-name-resource="showProductCompare" data-type="boolean" default="false">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showColorSwatches" column-name="SHOW_COLOR_SWATCH" display-name-resource="showColorSwatches" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showTitle" column-name="SHOW_TITLE" display-name-resource="showTitle" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showReviewRatings" column-name="SHOW_REVIEW_RATINGS" display-name-resource="showReviewRatings" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showPrice" column-name="SHOW_PRICE" display-name-resource="showPrice" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showGlobalAttributes" column-name="SHOW_GLOBAL_ATTRIBUTE" display-name-resource="showGlobalAttributes" data-type="boolean" default="false">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    		<property name="showFilters" column-name="SHOW_FILTERS" display-name-resource="showFilters" data-type="boolean" default="true">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="2"/>
+    		</property>
+    	</table>		
+		
+		<table name="BBB_PROMO_PROD_ATTRIBUTES" type="multi" id-column-names="category_id"	multi-column-name="seq_number"  shared-table-sequence="1">
+			<property name="productAttributes" column-name="PROD_ATTRIBUTE_ID" display-name-resource="productAttributes" data-type="list" component-item-type="attributeInfo" category-resource="PromotionalBanner" repository="/atg/commerce/catalog/ProductCatalog">
+    	        <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	            <attribute name="propertySortPriority" value="2"/>
+        	</property>
+		</table>
+				
+    </item-descriptor>
+    
+	
+   	    <!--///////////////////////////////-->
+    	<!--     web 2.1  Sorting Options  -->
+    	<!--///////////////////////////////-->
+    	
+	<item-descriptor name="sortingOption" display-name="BCC MANAGED SORTING OPTION" cache-mode="simple" item-cache-size="500" query-cache-size="500" last-modified-property="lastModifiedDate" display-property="sortingValue" >
+		<attribute name="updateLastModified" value="true"/>
+		<table name="BBB_SORTING_OPTIONS" id-column-name="SORTING_OPTION_ID" type="primary">
+			<property column-name="sorting_Code" data-type="string" name="sortingCode" writable="true" display-name-resource="sortingCode" >
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="55"/>
+			</property>
+			<property column-name="sorting_Value" data-type="string" name="sortingValue" writable="true" display-name-resource="sortingValue" >
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="56"/>
+			</property>
+			<property column-name="sorting_Order" data-type="enumerated" name="sortingOrder" writable="true" display-name-resource="sortingOrder" >
+				<option value="ascending" code="0"/>
+				<option value="descending" code="1"/>
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="57"/>
+			</property>
+			<property column-name="sorting_Url_Param" data-type="string" name="sortingUrlParam" writable="true" display-name-resource="sortingUrlParam" >
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="59"/>
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        		<attribute name="propertySortPriority" value="58"/>
+  			</property>
+ 		</table>
+ 	</item-descriptor>
+ 	
+ 	<item-descriptor name="sortOptionList" display-name-resource="sortOptionList" cache-mode="simple" display-property="sortingOptionName" item-cache-size="100" query-cache-size="100" >
+	  	<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources" />
+	  	<table name="BBB_SORT_OPT_LIST" type="primary" id-column-name="SORT_OPT_ID">
+  			<property name="id" column-name="SORT_OPT_ID" display-name-resource="id" writable="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+  			</property>
+  			<property name="sortingOptionNameDefault" column-name="sort_opt_name_default" data-type="string" hidden="true">
+  				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+  			</property>
+   		</table>
+	  	<table name="BBB_SORT_OPTION_LIST" type="multi" id-column-names="id" multi-column-name="sequence_num">
+	 		<property name="sortingOptions" column-names="SORTING_OPTION_ID" display-name-resource="sortingOptions" data-type="list" component-item-type="sortingOption" category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+			  	<attribute name="propertySortPriority" value="3"/>
+			</property>
+	  	</table>
+	  	<property name="sortingOptionName" data-type="string" hidden="true" queryable="true">
+			<derivation user-method="com.bbb.commerce.catalog.GenericListTranslation">
+            	<expression>sortingOptionNameDefault</expression>
+			</derivation>
+			<attribute name="property" value="sortingOptions"/>
+			<attribute name="itemDescProperty" value="sortingValue"/>
+	     </property>
+ 	</item-descriptor>
+ 	<item-descriptor name="bccManagedBrand" cache-mode="simple" display-property="brandName" display-name="BCC MANAGED BRAND" last-modified-property="lastModifiedDate" query-cache-size="5000">
+		<attribute name="updateLastModified" value="true"/>
+	    <table name="BBB_BCC_BRANDS" type="primary" id-column-name="id">
+			<property name="brandId" column-name="brand_id" display-name-resource="brandId" item-type="bbbBrand" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="0"/>	
+			</property>
+			<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BBBBrands" hidden="true">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="7"/>
+			</property>
+			<!--R2.2 BRAND Promo container from BCC Start -->
+			 <property name="brandPromoId" column-name="PROMO_CONTAINER_ID" display-name-resource="brandPromoId" item-type="promoKeysValue" repository="/com/bbb/catalog/BBBManagedCatalogRepository" category-resource="PromotionalBanner" >
+		          <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+		          <attribute name="propertySortPriority" value="1"/>
+		      </property>
+		      <!--R2.2 BRAND Promo container from BCC END -->
+		</table>
+		<table name="BBB_BRAND_DEF_SORT_CHANN_MAP" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+			<property name="defBrandSortOption" column-names="DEF_BRAND_SORT_ID" display-name-resource="defBrandSortOption" data-type="map" component-item-type="sortingOption"  category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="20"/>
+			</property>
+		</table>
+		<table name="BBB_BRAND_SORT_LIST_CHANN_MAP" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+			<property name="brandSortOptList" column-name="BRAND_SORT_OPT_ID" display-name-resource="brandSortOptList" data-type="map" component-item-type="sortOptionList" category-resource="BBBSortingOption" repository="/com/bbb/catalog/BBBManagedCatalogRepository">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="7"/>
+			</property>	
+		</table>
+	  		<property name="brandName" data-type="string" hidden="true" queryable="true">
+			 <derivation>
+            	<expression>brandId.brandName</expression>
+			</derivation>
+	       </property>
+	</item-descriptor>
+	
+	<!-- R2.2 BRAND Promo container from BCC Start -->
+	<item-descriptor name="promoKeysValue" display-name-resource="itemDescriptorPromoKeyValue" display-property="promoId" item-cache-size="100" query-cache-size="100" cache-mode="simple">
+			<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>  
+		<table name="BBB_PROMO_CONTAINER" type="primary" id-column-name="PROMO_CONTAINER_ID">
+
+		<property name="promoId" column-name="PROMO_CONTAINER_ID" display-name-resource="promoId" writable="false">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="1" />	
+		</property>
+			
+		<property name="brandContentDefault" column-name="brand_content"  display-name-resource="brandContent" data-type="big string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="3"/>
+    	</property>
+    	<property name="jsFilePathDefault" column-name="js_file_path"  display-name-resource="jsFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="4"/>
+    	</property>
+    	<property name="cssFilePathDefault" column-name="css_file_path" display-name-resource="cssFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="5"/>
+    	</property>
+			
+		</table>		
+		 <property name="brandContent" display-name-resource="brandContent" data-type="big string" hidden="true">
+           <derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>brandContentDefault</expression>       
+           </derivation>
+           <attribute name="propertySortPriority" value="2"/> 
+           <attribute name="defaultProperty" value="brandContentDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="brandContent"/>
+           <attribute name="translations" value="translations"/>
+       </property>		
+        <property name="jsFilePath" display-name-resource="jsFilePath" data-type="string" hidden="true">
+           <derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>jsFilePathDefault</expression>       
+           </derivation>
+           <attribute name="propertySortPriority" value="2"/> 
+           <attribute name="defaultProperty" value="jsFilePathDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="jsFilePath"/>
+           <attribute name="translations" value="translations"/>
+       </property>	
+        <property name="cssFilePath" display-name-resource="cssFilePath" data-type="string" hidden="true">
+           <derivation user-method="com.bbb.framework.cms.ConfigKeySiteChannelTranslation">
+                  <expression>cssFilePathDefault</expression>       
+           </derivation>
+           <attribute name="propertySortPriority" value="2"/> 
+           <attribute name="defaultProperty" value="cssFilePathDefault"/>
+           <attribute name="defaultSite" value="BedBathUS"/>
+           <attribute name="defaultChannel" value="DesktopWeb" />
+           <attribute name="property" value="cssFilePath"/>
+           <attribute name="translations" value="translations"/>
+       </property>	
+	  <table name="BBB_PROMO_SITE_TRANSLATN" type="multi" id-column-names="PROMO_CONTAINER_ID">
+       <property name="translations" display-name-resource="translations" column-name="translation_id" data-type="set"
+                component-item-type="promoKeysTranslation" category-resource="translations">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>  
+        <attribute name="propertySortPriority" value="1"/>       
+       </property>
+      </table>  
+				
+	 </item-descriptor>
+	 
+	<item-descriptor name="promoKeysTranslation" item-cache-size="8000"  query-cache-size="8000" display-name-resource="itemDescriptorBrandTrs" display-property="site">
+     <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+     <table name="BBB_PROMO_KEYS_TRANSLATIONS" id-column-names="translation_id" type="primary">
+    
+     
+     <property name="id" column-name="translation_id" display-name-resource="translationId" category-resource="TranslationInfo" writable="true">
+        		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+        		<attribute name="propertySortPriority" value="0" />
+       </property>
+       <property name="site" column-name="SITE_ID" display-name-resource="translationSite"   item-type="siteConfiguration" repository="/atg/multisite/SiteRepository" category-resource="TranslationInfo">
+              <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+             <attribute name="propertySortPriority" value="1"/> 
+       </property>
+       <property name="channel" column-name="CHANNEL_ID" display-name-resource="Channel"  item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository" category-resource="TranslationInfo">
+              <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+              <attribute name="propertySortPriority" value="2"/> 
+       </property>
+      <property name="brandContent" column-name="brand_content"  display-name-resource="brandContent" data-type="big string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="3"/>
+    	</property>
+    	<property name="jsFilePath" column-name="js_file_path" display-name-resource="jsFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="4"/>
+    	</property>
+    	<property name="cssFilePath" column-name="css_file_path" display-name-resource="cssFilePath" data-type="string">
+	    		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	        	<attribute name="propertySortPriority" value="5"/>
+    	</property>
+      
+     </table>
+          
+     
+    </item-descriptor>	 
+	 
+	 
+	 <!-- R2.2 BRAND Promo container from BCC END -->
+	
+	
+	<item-descriptor name="bccManagedUSCanadaCatMap" display-property="USCategoryID" display-name="BCC Category Mapping" cache-mode="simple" item-cache-size="1000" query-cache-size="1000">
+	       
+		<table name="BBB_US_CANADA_CAT_MAP" type="primary" id-column-names="id">
+			<property name="USCategoryID" column-name="US_CATEGORY_ID" display-name-resource="USCategoryID" item-type="category" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="21"/>
+			</property>	
+			<property name="CanadaCategoryID" column-name="CANADA_CATEGORY_ID" display-name-resource="CanadaCategoryID" item-type="category" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="22"/>
+			</property>	
+		</table>
+			
+		<table name="BBB_EQ_US_URL_MAP" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+			<property name="USUrl" column-name="US_URL" display-name-resource="USUrl" component-data-type="string" data-type="map" category-resource="BBBUSUrl">
+ 				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="23"/>
+			</property>	
+		</table>
+		<table name="BBB_EQ_CANADA_URL_MAP" type="multi" id-column-names="id" multi-column-name="CHANNEL_ID">
+			<property name="CanadaUrl" column-name="CANADA_URL" display-name-resource="CanadaUrl" component-data-type="string" data-type="map" category-resource="BBBCanadaUrl">
+				<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+				<attribute name="propertySortPriority" value="24"/>
+			</property>
+		</table>
+	</item-descriptor>
+	
+	<item-descriptor name="bccManagedCategoryRedirectURLs" cache-mode="simple" display-property="sourceCategoryId" display-name-resource="categoryRedirectURLs" last-modified-property="lastModifiedDate" item-cache-size="1000" query-cache-size="1000">
+     <attribute name="updateLastModified" value="true"/>
+     <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+     <table name="BBB_CATEGORY_REDIRECT_URLs" type="primary" id-column-name="id">
+	       <property name="sourceCategoryId" column-name="source_category_id" display-name-resource="sourceCategoryId" writable="true" item-type="category" repository="/atg/commerce/catalog/ProductCatalog">
+	         <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	         <attribute name="propertySortPriority" value="0"/>
+	       </property>
+	       <property name="targetRedirectURL" column-name="target_redirect_url" display-name-resource="targetRedirectURL" writable="true" data-type="string">
+	         <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	         <attribute name="propertySortPriority" value="1"/>
+	       </property>
+	       <property name="mobileTargetRedirectURL" column-name="mobile_target_redirect_url" display-name-resource="mobileTargetRedirectURL" writable="true" data-type="string">
+	         <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	         <attribute name="propertySortPriority" value="2"/>
+	       </property>
+	       <property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="BBBCatgegoryRedirectURL" hidden="true">
+	         <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+	         <attribute name="propertySortPriority" value="3"/>
+	       </property>
+     </table>
+  </item-descriptor>
+  
+  <item-descriptor name="categoryDetails" display-name="categoryDetails" cache-mode="simple" query-cache-size="5000" item-cache-size="5000" last-modified-property="lastModifiedDate" item-cache-timeout="3600000" query-expire-timeout="3600000" display-property="catName">
+		 <attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+		 <table name="BBB_CATEGORY_DETAILS" type="primary" id-column-name="category_Id">
+		 <property name="ID" writable="true" column-names="category_Id" display-name-resource="mainCategoryId"  data-type="String">
+		 <attribute name="propertySortPriority" value="1" />
+		 </property>
+		  <property name="catName" column-names="cat_Name" display-name-resource="categoryName"  data-type="String" >
+		 <attribute name="propertySortPriority" value="2" />
+		 </property>
+		 <property name="lastModifiedDate" column-names="last_Modified_Date" display-name="lastModifiedDate" hidden="true" data-type="timestamp">
+		 <attribute name="propertySortPriority" value="2" />
+		 </property>
+		 </table>
+		 <table name="BBB_CATEGORY_RECOMM_RELN" type="multi" id-column-names="category_Id" multi-column-name="sequence_num">
+			<property name="catRecommId" column-names="cat_Recomm_Id" display-name-resource="catRecommId" 
+			data-type="list" component-item-type="categoryRecommendations"  >
+			<attribute name="propertySortPriority" value="3" />
+			</property>
+		</table>
+	</item-descriptor>
+		
+	<item-descriptor name="categoryRecommendations" display-name="categoryRecommendations" cache-mode="simple" query-cache-size="20000" item-cache-size="20000" last-modified-property="lastModifiedDate" item-cache-timeout="3600000" query-expire-timeout="3600000" display-property="recommText">
+		<attribute name="resourceBundle" value="com.bbb.commerce.catalog.BBBCatalogTemplateResources"/>
+		 <table name="BBB_CATEGORY_RECOMMENDATIONS" type="primary" id-column-name="cat_Recomm_Id">
+		 <property name="catRecommId" column-names="cat_Recomm_Id" display-name-resource="catRecommId" data-type="String">
+		  <attribute name="propertySortPriority" value="0" />
+		 </property>
+		 <property name="recommImageUrl" column-names="recomm_Image_Url" display-name-resource="recommImageUrl"  data-type="String">
+		  <attribute name="propertySortPriority" value="2" />
+		 </property>
+		 <property name="recommText" column-names="recomm_Text" display-name-resource="recommText"  data-type="String">
+		  <attribute name="propertySortPriority" value="1" />
+		 </property>
+		 <property name="recommLink" column-names="recomm_Link" display-name-resource="recommLink"  data-type="String">
+		  <attribute name="propertySortPriority" value="3" />
+		 </property>
+		 <property name="lastModifiedDate" column-names="last_Modified_Date" display-name-resource="lastModifiedDate" hidden="true" data-type="timestamp">
+		  <attribute name="propertySortPriority" value="4" />
+		 </property>
+		 </table>
+		 
+	</item-descriptor>	
+</gsa-template>

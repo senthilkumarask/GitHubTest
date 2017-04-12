@@ -1,0 +1,39 @@
+<?xml version="1.0" ?> 
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+		
+		<xs:simpleType name="TypeEnum">
+			<xs:restriction base="xs:string">
+		    	<xs:enumeration value="TYPE_BABY_BOOK_REGISTRATION" />		     	
+		    </xs:restriction>
+		</xs:simpleType>		
+		<xs:element name="main">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="DATA_RECORD" type="BABYBOOKREQUEST" minOccurs="1" maxOccurs="1" /> 
+  				</xs:sequence>
+  			</xs:complexType>
+ 		 </xs:element>
+		
+		 <xs:complexType name="BABYBOOKREQUEST">
+ 			<xs:sequence>
+ 			    <xs:element name="TYPE" type="TypeEnum" />
+				<xs:element name="FIRST_NM" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="LAST_NM" type="xs:string" maxOccurs="1" minOccurs="1"/>				
+				<xs:element name="ADDR1" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="ADDR2" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="CITY" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="STATE_CD" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="ZIP" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="DAY_PHONE" type="xs:string" maxOccurs="1" minOccurs="1"/>
+				<xs:element name="EMAIL_ADDR" type="xs:string" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="EVENT_DATE" type="xs:dateTime" maxOccurs="1" minOccurs="0"/>				
+				<xs:element name="EMAIL_OFFER" type="xs:boolean" maxOccurs="1" minOccurs="0"/>
+				<xs:element name="SUBMIT_DT" type="xs:dateTime" />					
+				<xs:element name="SITE_FLAG" type="xs:string" />
+			</xs:sequence>			
+		</xs:complexType>
+   </xs:schema>
+
+
+
+

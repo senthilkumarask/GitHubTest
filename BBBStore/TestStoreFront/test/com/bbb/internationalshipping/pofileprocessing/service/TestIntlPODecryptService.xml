@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--Copyright 2014, BBB  All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestIntlPODecryptService.xml 
+	DESCRIPTION: ddtunit data file for TestIntlPODecryptService.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	
+	<cluster id="com.bbb.internationalshipping.pofileprocessing.service.TestIntlPODecryptService">
+	
+	<!-- testUnmarshalPOFile -->
+	
+	<group id="testUnmarshalPOFile">
+        <test id="test1">
+			<objs>
+			
+			<obj id="intlPoDecrypt" type="com.bbb.internationalshipping.fulfillment.poservice.IntlPODecryptService" hint="call" 
+				method="resolveName" calltype="com.bbb.internationalshipping.pofileprocessing.service.TestIntlPODecryptService">
+					<item type="string">/com/bbb/internationalshipping/fulfillment/poservice/IntlPODecryptService</item>
+				</obj>
+							   
+                <obj id="filePath" type="String">
+				/u02/opt/weblogic/borderfree/jobs/dev/international/purchaseorder/bbby/podecryptservice/2014-07-04-05-33-01-PO-E4X001000271444.xml.asc</obj> 
+      
+               <!-- <obj id="filePath" type="String">C:/pgp/podecryptservice/2014-07-04-05-33-01-PO-E4X001000271444.xml.asc</obj>-->
+			</objs>      
+        </test>
+      </group>
+      
+          
+     
+	</cluster>
+</ddtunit>
+ 

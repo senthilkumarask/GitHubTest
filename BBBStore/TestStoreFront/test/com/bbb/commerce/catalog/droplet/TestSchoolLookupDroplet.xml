@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestSchoolLookupDroplet.xml
+
+  DESCRIPTION: ddtunit data file for TestSchoolLookupDroplet.java test case
+
+  HISTORY:
+  16 March 2012 Initial version
+  
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.catalog.droplet.TestSchoolLookupDroplet">
+       
+       <group id="testServiceForSchoolLookupDroplet">
+	        <test id="testServiceForSchoolLookupDroplet">
+				<objs>
+					<obj id="bbbSchoolLookupDroplet" type="com.bbb.commerce.catalog.droplet.SchoolLookupDroplet" 
+						hint="call" method="resolveName" calltype="com.bbb.commerce.catalog.droplet.TestSchoolLookupDroplet">
+						<item type="string">/com/bbb/commerce/catalog/droplet/SchoolLookupDroplet</item>
+					</obj>	
+					<obj id="schoolId" type="string">11647</obj>				
+				</objs>
+				<asserts>
+		        	<assert id="schoolName" action="isEqual" type="java.lang.String">Baker College</assert>
+		        	<assert id="addrLine1" action="isNotNull" type="java.lang.String"></assert>
+		        	<assert id="zip" action="isNotNull" type="java.lang.String"></assert>
+		        </asserts>			 
+	        </test>	       
+      </group>     
+    </cluster>
+</ddtunit>
+

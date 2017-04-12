@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Table CheckList</name>
+    <author></author>
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--              Table CheckList -->
+    <!--///////////////////////////////-->
+    
+    
+<item-descriptor name="tableChkList" display-name-resource="tableChkList" display-property="name" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	<table name="BBB_GS_TABLE_CHKLIST" type="primary" id-column-name="chklist_id">
+		<property name="id" column-name="chklist_id" display-name-resource="chklist_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="channel" column-name="channel" display-name-resource="channel" item-type="channelInfo" category-resource="MasterInfo" required="true" repository="/com/bbb/channel/ChannelRepository">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			<attribute name="propertySortPriority" value="1" />
+		</property>
+		<property name="name" column-name="chk_list_name" display-name-resource="name" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources" />
+			<attribute name="propertySortPriority" value="2" />
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="3"/>
+		</property>
+	</table>
+		 
+  	 <table name="BBB_GS_CHKLIST_REL" type="multi" id-column-names="chklist_id" multi-column-name="sequence_num">
+  	 	<property name="chkListColmns" column-names="chk_list_colmn" display-name-resource="chkListColmns" data-type="list" component-item-type="chkListColmn" category-resource="chkListColmns">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table>
+		
+</item-descriptor>
+
+<item-descriptor name="chkListColmn" display-name-resource="chkListColmn" display-property="primaryCategory" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_CHK_COLUMN" type="primary" id-column-name="chkListColmn_id">
+		<property name="id" column-name="chkListColmn_id" display-name-resource="chkListColmn_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="primaryCategory" column-name="primary_category" display-name-resource="primaryCategory" item-type="category" category-resource="ChkListColmInfo" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="2"/>
+		</property>  
+		
+	</table>
+	<table name="BBB_GS_FEATURED_CAT" type="multi" id-column-names="chkListColmn_id" multi-column-name="sequence_num">
+  	 	<property name="featuredCategory" column-names="featured_category" display-name-resource="featuredCategory" data-type="list" component-item-type="category" category-resource="featuredCategoryCat" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table>
+  	 <table name="BBB_GS_PLUS_CAT" type="multi" id-column-names="chkListColmn_id" multi-column-name="sequence_num">
+  	 	<property name="plusCategory" column-names="plus_category" display-name-resource="plusCategory" data-type="list" component-item-type="category" category-resource="plusCategoryCat" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>
+		</property>
+  	 </table>
+  	
+	
+	
+</item-descriptor>
+
+
+ 
+</gsa-template>

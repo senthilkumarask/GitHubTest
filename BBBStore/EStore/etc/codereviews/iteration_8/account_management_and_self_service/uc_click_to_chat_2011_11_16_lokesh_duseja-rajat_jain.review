@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="uc_click_to_chat_2011_11_16_lokesh_duseja">
+  <ReviewIssue id="GVBKUY7H">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 05:40:42:221 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-23 :: 21:24:16:014 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>rajat_jain</ReviewerId>
+    <AssignedTo>lokesh_duseja</AssignedTo>
+    <File line="94">src/com/bbb/selfservice/common/SelfServiceUtil.java</File>
+    <Type>item.type.label.missing</Type>
+    <Severity>item.severity.label.minor</Severity>
+    <Summary>Addition of Configurable Chat On/Off Switch</Summary>
+    <Description>In addition to the chat time window also add a configurable on/off switch to turn the chat on/off on the site.
+Clients have asked for this so they can turn th functionality on/off easily on each site, we had discussed this during a clarification meeting as well.</Description>
+    <Annotation></Annotation>
+    <Revision>Modified the code, now getting values from site repository extension table BBB_CHAT_ATTRIBUTES</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

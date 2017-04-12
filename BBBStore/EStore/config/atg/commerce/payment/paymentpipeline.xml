@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pipelinemanager
+	PUBLIC "-//Art Technology Group, Inc.//DTD Dynamo Pipeline Manager//EN"
+	'http://www.atg.com/dtds/pipelinemanager/pipelinemanager_1.0.dtd'>
+
+<pipelinemanager>
+
+	<!-- This chain is used to process a gift card payment -->
+	<!-- group. This single chain knows how to auth(getBalance)/debit(rdeem) -->
+	<!-- a payment group. It also creates the GiftCardInfo -->
+	<!-- object that is used by the GiftCardProcessor to -->
+	<!-- perform an auth/debit/credit. -->
+	<!-- This chain gets invoked from the PaymentManager. -->
+
+	<pipelinechain name="giftCardProcessorChain"
+		transaction="TX_REQUIRED" headlink="createGiftCardInfo">
+		<pipelinelink name="createGiftCardInfo" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/CreateGiftCardInfo" />
+			<transition returnvalue="1" link="processGiftCard" />
+		</pipelinelink>
+		<pipelinelink name="processGiftCard" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/ProcessGiftCard" />
+		</pipelinelink>
+	</pipelinechain>
+	
+	<pipelinechain name="paypalProcessorChain" transaction="TX_REQUIRED" headlink="createPayPalInfo">
+		<pipelinelink name="createPayPalInfo" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/CreatePayPalInfo" />
+			<transition returnvalue="1" link="processPaypal" />
+		</pipelinelink>
+		<pipelinelink name="processPaypal" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/ProcessPaypal" />
+		</pipelinelink>
+	</pipelinechain>
+	
+	<pipelinechain name="payatRegisterProcessorChain" transaction="TX_REQUIRED" headlink="createPayAtRegesterInfo">
+		<pipelinelink name="createPayAtRegesterInfo" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/CreatePayAtRegisterInfo" />
+			<transition returnvalue="1" link="processPayAtRegister" />
+		</pipelinelink>
+		<pipelinelink name="processPayAtRegister" transaction="TX_MANDATORY">
+			<processor jndi="/com/bbb/commerce/payment/processor/ProcessPayAtRegister" />
+		</pipelinelink>
+	</pipelinechain>
+	
+
+</pipelinemanager>
+

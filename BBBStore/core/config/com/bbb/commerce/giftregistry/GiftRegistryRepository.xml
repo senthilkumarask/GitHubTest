@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE gsa-template PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+
+  <header>
+    <name>Gift Registry</name>
+    <author></author>
+  </header>
+
+   <!--///////////////////////////////-->
+  <!--           Gift Registry       -->
+  <!--///////////////////////////////-->
+
+<item-descriptor name="giftregistry" cache-mode="simple" item-cache-timeout="550000" query-expire-timeout="550000" last-modified-property="lastModifiedDate">
+	<attribute name="updateLastModified" value="true"/>
+   <table name="BBB_REGISTRY" type="primary" id-column-name="registry_id">
+       <property name="registryId" category-resource="BBNBCustom" column-name="registry_id" display-name="registryId" data-type="string" required="true"
+       readable="true" writable="true" queryable="true"/>
+	   <property name="registryStatus" column-names="registry_status" category-resource="BBNBCustom" display-name="registryStatus"  data-type="String"/>
+       <property name="eventType" column-names="event_type" category-resource="BBNBCustom" display-name="eventType"  data-type="String"/>
+       <property name="eventDate" column-names="event_date" category-resource="BBNBCustom" display-name="eventDate" data-type="timestamp" />
+       <property name="registryOwner" column-names="registry_owner" category-resource="BBNBCustom" display-name="registryOwner" item-type="user"
+               readable="true" writable="true" queryable="true" repository="/atg/userprofiling/ProfileAdapterRepository"/>
+       <property name="registryCoOwner" column-names="registry_co_owner" category-resource="BBNBCustom" display-name="registryCoOwner" item-type="user"
+               readable="true" writable="true" queryable="true" repository="/atg/userprofiling/ProfileAdapterRepository"/>
+       <property name="lastModifiedDate" column-name="last_modified_date" display-name-resource="lastModifiedDate" data-type="timestamp"/>
+   		<property name="regBG" column-names="REGISTRANT_BG" data-type="String" />
+   		<property name="coRegBG" column-names="COREGISTRANT_BG" data-type="String" />
+   </table>
+   <table name="BBB_REGISTRY_AFFILIATES" type="auxiliary" id-column-name="registry_id">
+		<property name="affiliateTag" column-name="affiliate_tag" data-type="string"/>
+		<property name="sessionId" column-name="session_id" data-type="string"/>
+	</table>
+</item-descriptor>
+<item-descriptor name="RegistryRecommendations" display-property="registryId" cache-mode="distributedJMS" item-cache-timeout="3600000" query-expire-timeout="3600000">
+	<table name="bbb_reg_recomm" type="primary" id-column-names="registry_id">
+		<property name="registryId" column-names="registry_id" data-type="String" />
+		<property name="registrantName" column-names="registrant_name" data-type="String"/>
+		<property name="eventType" column-names="event_type" data-type="String"/>
+      	<property name="eventDate" column-names="event_date" data-type="timestamp" />
+      	<property name="recommendationViewDate" column-name="recommendation_view_date" display-name-resource="recommendationViewDate" data-type="timestamp"/>
+      	<property name="siteId" column-name="site_id" data-type="String"></property>
+      	<property name="emailOption" column-name="email_option" data-type="enumerated">
+      		 <attribute name="useCodeForValue" value="true"/>
+      		    <option value="never" code="-1"/>
+				<option value="daily" code="0"/>
+				<option value="weekly" code="1" />
+				<option value="monthly" code="2"/>
+      	</property>
+    </table>
+	<table name="bbb_reg_invitees_tokens"  type="multi" multi-column-name="invitee_token_id" id-column-names="registry_Id">
+		<property name="invitees" column-names="invitee_id" data-type="map" component-item-type="invitee"/>
+	</table>
+	<table name="bbb_reg_recomm_prof_rel" type="multi" id-column-names="registry_Id">
+		<property name="recommenderItems" column-names="recommender_item_id" data-type="set" component-item-type="RecommenderProfiles" />
+	</table>
+</item-descriptor>
+<item-descriptor name="RecommenderProfiles" display-property="inviteeProfileId" cache-mode="distributedJMS" item-cache-size="1000" item-cache-timeout="3600000" query-expire-timeout="3600000">
+	<table name="bbb_reg_recomm_profiles" type="primary" id-column-names="recommender_item_id">
+		<property name="inviteeProfileId" column-names="invitee_profile_id" item-type="user" repository="/atg/userprofiling/ProfileAdapterRepository/"/>
+		<property name="inviteeStatus" column-names="invitee_status" data-type="enumerated">
+		 <attribute name="useCodeForValue" value="true"/>
+				<option value="active" code="1"/>
+				<option value="block" code="0" />
+		</property>
+		<property name="isFromFacebook" column-name="is_from_fb" data-type="enumerated">
+      		<attribute name="useCodeForValue" value="false"/>      			
+      			<option value="false" code="0"/>      		
+      			<option value="true" code="1"/>
+      	</property>		
+	</table>
+	<table name="bbb_reg_recomm_items" type="multi" id-column-names="recommender_item_id">
+			<property name="recommendations" column-names="recommendation_id" data-type="set" component-item-type="RegistryRecommondationProducts" />
+	</table>
+</item-descriptor>
+<item-descriptor name="RegistryRecommondationProducts" display-property="sku" cache-mode="distributedJMS" item-cache-size="1000" last-modified-property="lastModifiedDate" item-cache-timeout="3600000" query-expire-timeout="3600000">
+	<attribute name="updateLastModified" value="true"/>
+	<table name="bbb_reg_recomm_products" type="primary" id-column-names="recommendation_id">
+		<property name="sku" column-names="sku_id" data-type="string"/>
+		<property name="recommendedQuantity" column-names="recommended_quantity" data-type="long" />
+		<property name="acceptedQuantity" column-names="accepted_quantity" data-type="long" />
+		<property name="declined" column-names="declined" data-type="enumerated">
+		<attribute name="useCodeForValue" value="true"/>
+				<option value="true" code="1"/>
+				<option value="false" code="0" />
+		</property>
+		<property name="comment" column-names="recommendation_comment" data-type="String" />
+		<property name="recommendedDate" column-names="recommended_date" data-type="timestamp"/>
+		<property name="lastModifiedDate" column-names="last_mod_date" data-type="timestamp"/>
+	</table>
+</item-descriptor>
+<item-descriptor name="invitee" display-property="inviteeEmailIid" cache-mode="simple" item-cache-size="1000">
+	<table name="bbb_reg_invitees" type="primary" id-column-names="invitee_id">
+		<property name="inviteeId" column-names="invitee_id" data-type="String" />
+		<property name="inviteeEmailIid" column-names="invitee_email_id" data-type="String" />
+		<property name="tokenCreationDate" column-names="token_creation_date" data-type="timestamp"/>
+		<property name="tokenStatus" column-names="status" data-type="enumerated">
+				<option value="active" code="1"/>
+				<option value="inactive" code="0" />
+		</property>		
+	</table>
+</item-descriptor>
+<item-descriptor name="RecommendationEmailDaily" display-property="registryId" cache-mode="simple" item-cache-size="1000">
+	<table name="batch_recomm_email_daily" type="primary" id-column-names="registry_id">
+		<property name="registryId" column-names="registry_id" data-type="String" />
+		<property name="userId" column-names="user_id" data-type="String"/>
+		<property name="firstName" column-names="first_name" data-type="String"/>
+		<property name="lastName" column-names="last_name" data-type="String"/>
+		<property name="recommendation_count" column-names="recommendation_count" data-type="int"/>
+		<property name="email" column-names="registrant_email" data-type="String"/>
+		<property name="emailOption" column-name="email_option" data-type="enumerated">
+   		 	<attribute name="useCodeForValue" value="true"/>
+   		    <option value="never" code="-1"/>
+			<option value="daily" code="0"/>
+			<option value="weekly" code="1" />
+			<option value="monthly" code="2"/>
+      	</property>
+      	<property name="eventType" column-names="event_type" data-type="String"/>
+      	<property name="siteId" column-name="site_id" data-type="String" />
+	</table>
+</item-descriptor>
+
+<item-descriptor name="RecommendationEmailWeekly" display-property="registryId" cache-mode="simple" item-cache-size="1000">
+	<table name="batch_recomm_email_weekly" type="primary" id-column-names="registry_id">
+		<property name="registryId" column-names="registry_id" data-type="String" />
+		<property name="userId" column-names="user_id" data-type="String"/>
+		<property name="firstName" column-names="first_name" data-type="String"/>
+		<property name="lastName" column-names="last_name" data-type="String"/>
+		<property name="recommendation_count" column-names="recommendation_count" data-type="int"/>
+		<property name="email" column-names="registrant_email" data-type="String"/>
+		<property name="emailOption" column-name="email_option" data-type="enumerated">
+   		 	<attribute name="useCodeForValue" value="true"/>
+   		    <option value="never" code="-1"/>
+			<option value="daily" code="0"/>
+			<option value="weekly" code="1" />
+			<option value="monthly" code="2"/>
+      	</property>
+      	<property name="eventType" column-names="event_type" data-type="String"/>
+      	<property name="siteId" column-name="site_id" data-type="String" />
+	</table>
+</item-descriptor>
+
+<item-descriptor name="RecommendationEmailMonthly" display-property="registryId" cache-mode="simple" item-cache-size="1000">
+	<table name="batch_recomm_email_monthly" type="primary" id-column-names="registry_id">
+		<property name="registryId" column-names="registry_id" data-type="String" />
+		<property name="userId" column-names="user_id" data-type="String"/>
+		<property name="firstName" column-names="first_name" data-type="String"/>
+		<property name="lastName" column-names="last_name" data-type="String"/>
+		<property name="recommendation_count" column-names="recommendation_count" data-type="int"/>
+		<property name="email" column-names="registrant_email" data-type="String"/>
+		<property name="emailOption" column-name="email_option" data-type="enumerated">
+   		 	<attribute name="useCodeForValue" value="true"/>
+   		    <option value="never" code="-1"/>
+			<option value="daily" code="0"/>
+			<option value="weekly" code="1" />
+			<option value="monthly" code="2"/>
+      	</property>
+      	<property name="eventType" column-names="event_type" data-type="String"/>
+      	<property name="siteId" column-name="site_id" data-type="String" />
+	</table>
+</item-descriptor>
+
+<item-descriptor name="RecommEmailJobMaster" display-property="id">
+	<table name="Recomm_Email_Job_Master" type="primary" id-column-names="id">
+		<property name="id" column-names="id" data-type="String" />
+		<property name="lastExecDate" column-names="last_execution_date" data-type="timestamp" />
+		<property name="jobType" column-names="job_type" data-type="enumerated">
+		 	<attribute name="useCodeForValue" value="true"/>
+			<option value="daily" code="0"/>
+			<option value="weekly" code="1" />
+			<option value="monthly" code="2" />
+		</property>
+	</table>
+</item-descriptor>
+</gsa-template>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE gsa-template
+       PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+    <header>
+        <name>BBB Admin Repository</name>
+        <author>Logixal</author>
+        <version>1</version>
+    </header>
+  <!--///////////////////////////////  -->
+  <!--          List Type          	   -->
+  <!--///////////////////////////////  -->
+
+  <item-descriptor name="listType" last-modified-property="lastModifiedDate" cache-mode="simple" display-property="typeName">
+	<attribute name="updateLastModified" value="true"/>
+      
+  	<table name="BBB_LIST_TYPE" type="primary" id-column-name="type_id">
+    	<property name="typeId" column-name="type_id"  data-type="string" required="true" display-name="Type Id">
+    	</property>
+    	<property name="typeName" column-name="type_name" data-type="string" required="true" display-name="Type Name">
+    	</property>
+    	<property name="subTypeCode" column-name="sub_type_code"  data-type="string" display-name="Sub-Type Code">
+    	</property>
+        <property name="subTypeName" column-name="sub_type_name"  data-type="string" display-name="Sub-Type Name">
+        </property>
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>		   
+    </table>
+    </item-descriptor>
+  
+  <!--///////////////////////////////  -->
+  <!--          List         	   -->
+  <!--///////////////////////////////  -->
+
+  <item-descriptor name="list" last-modified-property="lastModifiedDate" cache-mode="simple" display-property="displayName">
+	<attribute name="updateLastModified" value="true"/>
+      
+  	<table name="BBB_LIST" type="primary" id-column-name="list_id">
+  	<property name="listId" column-name="list_id" data-type="string" required="true" display-name="List Id">
+    	</property>
+    	<property name="subTypeCode" column-name="sub_type_code" data-type="string" display-name="Sub Type Code">
+    	</property>
+    	<property name="displayName" column-name="display_name"  data-type="string" display-name="Display Name">
+    	</property>
+        <property name="sequenceNumber" column-name="sequence_num"  data-type="int"  display-name="Sequence Number">
+        </property>
+        <property name="isDisabled" column-name="is_disabled"  data-type="boolean" display-name="Disabled">
+        </property> 
+        <property name="allowDuplicates" column-name="allow_duplicates" data-type="boolean" display-name="Allow Duplicates">
+  		</property>
+  		<property name="sites" column-name="site_flag" data-type="string" display-name="Sites">
+    	</property> 		   
+    	<property name="createdUser" column-name="create_user"  data-type="string" display-name="Created User">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Created">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified">
+    	</property>		   
+    </table>
+     <table name="BBB_LIST_CHLDCAT" type="multi" id-column-name="list_id" multi-column-name="sequence_num">
+    	<property name="categories" column-name="list_cat_id" data-type="list" component-item-type="listCategory" display-name="Categories" >
+    	</property>
+    </table>
+    
+  </item-descriptor>
+  
+  
+  
+  <!--///////////////////////////////  -->
+  <!-- 	List-Category Association Audit-->
+  <!--///////////////////////////////  -->
+
+
+    
+   <item-descriptor name="listCategoryAssocAudit" last-modified-property="lastModifiedDate" cache-mode="simple">
+	  <attribute name="updateLastModified" value="true"/>
+	  <table name="BBB_LIST_CHLDCAT_AUDIT" type="primary" id-column-names="list_id,list_cat_id">
+	  	<property name="auditId" column-names="list_id,list_cat_id"  data-types="string,string" required="true" display-name="Audit Id">
+	        </property>
+	        <property name="listId" column-names="list_id"  data-types="string,string" required="true" display-name="Audit Id">
+	        </property>
+	        <property name="listCategoryId" column-names="list_cat_id"  data-types="string,string" required="true" display-name="Audit Id">
+	        </property> 
+	    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+	        </property> 
+	        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+	  	</property>
+	  	<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+	    	</property> 		   
+	    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+	    	</property>		   
+	   </table>
+    </item-descriptor>
+    
+    
+  <!--///////////////////////////////  -->
+  <!-- 	List-Category  Audit			-->
+  <!--///////////////////////////////  -->
+    
+    <item-descriptor name="listCategoryAudit" last-modified-property="lastModifiedDate" cache-mode="simple">
+		<attribute name="updateLastModified" value="true"/>
+	      
+	  	<table name="BBB_LIST_CAT_AUDIT" type="primary" id-column-name="audit_id">
+	  		<property name="auditId" column-name="audit_id"  data-type="string" required="true" display-name="Audit Id">
+	        </property> 
+	    	<property name="listId" column-name="list_id"  data-type="string" required="true" display-name="List Id">
+	        </property> 
+	        <property name="listCategoryId" column-name="list_cat_id" data-type="string" display-name="List Category Id">
+	  	</property>
+	  	<property name="listDisplayName" column-name="list_display_name" data-type="string" required="true" display-name="List Display Name">
+	    	</property> 		   
+	    	<property name="listSubTypeCode" column-name="list_sub_type_code" data-type="string" required="true" display-name="List Subtype Code">
+	    	</property>
+	    	<property name="catDisplayName" column-name="cat_display_name" data-type="string" display-name="Category Display Name">
+	    	</property>	
+	    	<property name="reasonCode" column-name="reason_cd" data-type="string" required="true" display-name="Reason Code">
+	    	</property>
+	    	<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+	    	</property> 		   
+	    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" required="true" display-name="Last Modified Date">
+	    	</property> 
+	    </table>
+    </item-descriptor>  
+  
+  
+  
+  <!--///////////////////////////////  -->
+  <!--          Category          	   -->
+  <!--///////////////////////////////  -->
+  
+  <item-descriptor name="listCategory" last-modified-property="lastModifiedDate" cache-mode="simple" display-property="categoryName">
+	<attribute name="updateLastModified" value="true"/>
+      
+  	<table name="BBB_LIST_CATEGORY" type="primary" id-column-name="list_cat_id">
+    	<property name="categoryId" column-name="list_cat_id"  data-type="string" required="true" display-name="Category Id">
+    	</property>
+    	<property name="categoryName" column-name="name"  data-type="string" required="true" display-name="Category Name">
+    	</property>
+    	<property name="suggestedQuantity" column-name="suggested_qty"  data-type="int" display-name="Suggested Quantity">
+    	</property>
+    	<property name="parentCategory" column-name="primary_parent_cat_id"  item-type="listCategory" display-name="Parent Category">
+    	</property>
+    	<property name="displayName" column-name="display_name"  data-type="string" required="true" display-name="Display Name">
+    	</property>
+    	<property name="categoryUrlUS" column-name="category_url" data-type="string" display-name="US Category Url">
+    	</property>
+    	<property name="categoryImageUrlUS" column-name="image_url"  data-type="string" display-name="US Category Image Url">
+    	</property>
+    	<property name="categoryUrlTBS" column-name="tbs_category_url" data-type="string" display-name="TBS Category Url">
+    	</property>
+    	<property name="categoryImageUrlTBS" column-name="tbs_image_url"  data-type="string" display-name="TBS Category Image Url">
+    	</property>
+    	<property name="categoryUrlBABY" column-name="baby_category_url" data-type="string" display-name="Baby Category Url">
+    	</property>
+    	<property name="categoryImageUrlBABY" column-name="baby_image_url"  data-type="string" display-name="Baby Category Image Url">
+    	</property>
+    	<property name="categoryUrlCA" column-name="ca_category_url" data-type="string" display-name="CA Category Url">
+    	</property>
+    	<property name="categoryImageUrlCA" column-name="ca_image_url"  data-type="string" display-name="CA Category Image Url">
+    	</property>
+    	
+	   	<!-- DM-387 Added new properties -->
+   	<property name="mobCategoryUrlUS" column-name="mob_category_url"  data-type="string" display-name="Mobile Category Url US">
+   	</property>
+   	<property name="mobImageUrlUS" column-name="mob_image_url"  data-type="string" display-name="Mobile Image Url US">
+   	</property>
+   	<property name="mobCategoryUrlBaby" column-name="mob_baby_category_url"  data-type="string" display-name="Mobile Baby Category Url">
+   	</property>
+   	<property name="mobImageUrlBaby" column-name="mob_baby_image_url"  data-type="string" display-name="Mobile Baby Category Image Url">
+   	</property>
+   	<property name="mobCategoryUrlCA" column-name="mob_ca_category_url"  data-type="string" display-name="Mobile CA Category Url">
+   	</property>
+   	<property name="mobImageUrlCA" column-name="mob_ca_image_url"  data-type="string" display-name="Mobile CA Category Image Url">
+   	</property>
+   	<property name="tbsCategoryUrlBaby" column-name="tbs_baby_category_url"  data-type="string" display-name="TBS Baby Category Url">
+   	</property>
+   	<property name="tbsImageUrlBaby" column-name="tbs_baby_image_url"  data-type="string" display-name="TBS Baby Category Image Url">
+   	</property>
+   	<property name="tbsCategoryUrlCA" column-name="tbs_ca_category_url"  data-type="string" display-name="TBS CA Category Url">
+   	</property>
+   	<property name="tbsImageUrlCA" column-name="tbs_ca_image_url"  data-type="string" display-name="TBS CA Category Image Url">
+   	</property>
+   	
+   	<property name="urlOverride" column-name="url_override" data-type="boolean" display-name="Override US Url">
+ 	</property>
+ 	<property name="babyUrlOverride" column-name="baby_url_override" data-type="boolean" display-name="Override Baby Url">
+ 	</property>
+   	<property name="caUrlOverride" column-name="ca_url_override" data-type="boolean" display-name="Override CA Url">
+ 	</property>
+ 	<property name="mobUrlOverride" column-name="mob_url_override" data-type="boolean" display-name="Override Mobile US Url">
+ 	</property>
+	<property name="mobBabyUrlOverride" column-name="mob_baby_url_override" data-type="boolean" display-name="Override Mobile Baby Url">
+ 	</property>
+ 	<property name="mobCAUrlOverride" column-name="mob_ca_url_override" data-type="boolean" display-name="Override Mobile CA Url">
+ 	</property>
+   	<property name="tbsUrlOverride" column-name="tbs_url_override" data-type="boolean" display-name="Override TBS US Url">
+ 	</property>
+ 	<property name="tbsBabyUrlOverride" column-name="tbs_baby_url_override" data-type="boolean" display-name="Override TBS Baby Url">
+ 	</property>
+	<property name="tbsCAUrlOverride" column-name="tbs_ca_url_override" data-type="boolean" display-name="Override TBS CA Url">
+ 	</property>
+	 	<!-- New properties Finished -->
+ 	
+    	<property name="configComplete" column-name="is_config_complete"  data-type="boolean" display-name="Config Complete">
+        </property>
+        <property name="visibleOnChecklist" column-name="is_visible_on_checklist"  data-type="boolean" display-name="Visible On Checklist">
+        </property>
+        <property name="visibleOnRegList" column-name="is_visible_on_reg_list"  data-type="boolean" display-name="Visible On Reglist">
+        </property>
+        <property name="childPrdNeedForDisplay" column-name="is_child_prd_needed_to_disp"  data-type="boolean" display-name="Child Product needed for Display">
+        </property>
+    	<property name="thresholdQuantity" column-name="threshold_qty"  data-type="int" display-name="Threshold Quantity">
+        </property>
+        <property name="thresholdAmount" column-name="threshold_amt"  data-type="double" display-name="Threshold Amount">
+        </property> 
+        <property name="serviceType" column-name="service_type_cd" data-type="string" display-name="Service Type">
+  		</property>
+  		<property name="isDisabled" column-name="is_disabled"  data-type="boolean" required="true" display-name="Disabled">
+        </property> 
+        <property name="isDeleted" column-name="is_deleted"  data-type="boolean" required="true" display-name="Disabled">
+        </property>		   
+    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation Date">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>		   
+    	<property name="facetIdPkgCount" column-name="facet_id_pkg_cnt" item-type="skuFacetType"
+             repository="/com/bbb/ipad/SkuFacetRepository"  display-name="Facet Id Package Count">
+    	</property>	
+    </table>
+    
+    <property name="facetIdPkgCntDescription" data-type="string"
+              writable="false" hidden="true" queryable="true" display-name-resource="Facet Id Package Count Description">
+               <derivation>
+           		<expression>facetIdPkgCount.description</expression>
+			</derivation>
+    </property>
+    
+    <table name="BBB_LIST_CAT_CHLDCAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+    <property name="childCategory" column-name="child_list_cat_id" data-type="list" component-item-type="listCategory" required="true" display-name="Child Categories">
+    	</property>
+    </table>
+    <table name="BBB_LIST_RULES_JDA_CAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+		<property name="jdaRules" column-name="rule_id" data-type="list" component-item-type="jdaRule" required="true" display-name="JDA Rules">
+		</property>
+	</table>
+	<table name="BBB_LIST_RULES_EPH_CAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+		<property name="ephRules" column-name="rule_id" data-type="list" component-item-type="ephRule" required="true" display-name="EPH Rules">
+		</property>
+	</table>
+	<table name="BBB_LIST_RULES_FACET_CAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+		<property name="facetRules" column-name="rule_id" data-type="list" component-item-type="facetRule" required="true" display-name="Facet Rules">
+		</property>
+	</table>
+	<table name="BBB_LIST_RULES_SKU_CAT" type="multi" id-column-name="list_cat_id" multi-column-name="sequence_num">
+		<property name="skuRules" column-name="rule_id" data-type="list" component-item-type="skuRule" required="true" display-name="Sku Rules">
+		</property>
+	</table>
+  </item-descriptor>
+  
+  
+  <!--///////////////////////////////  -->
+  <!--Category-Child Category Association Audit  -->
+  <!--///////////////////////////////  -->
+
+    <item-descriptor name="ChildCategoryAssocAudit" last-modified-property="lastModifiedDate" cache-mode="simple">
+		<attribute name="updateLastModified" value="true"/>
+	      
+	  	<table name="BBB_LIST_CAT_CHLDCAT_AUDIT" type="primary" id-column-names="list_cat_id,child_list_cat_id">
+	  		<property name="auditId" column-names="list_cat_id,child_list_cat_id"  data-types="string,string" required="true" display-name="Audit Id">
+	    	</property>
+	    	<property name="childCategory" column-name="child_list_cat_id"  data-type="string" required="true" display-name="Child category Id">
+	    	</property>
+	    	<property name="categoryId" column-name="list_cat_id" data-type="string" required="true" display-name="Category Id">
+	    	</property>
+	    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+	        </property> 
+	        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+	  		</property>
+	  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+	    	</property> 		   
+	    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+	    	</property>		   
+	    </table>
+    </item-descriptor>
+  
+  
+  
+    
+  
+   <!-- /////////////////////////////// 
+           Facet Rules           
+  ///////////////////////////////  -->
+   <item-descriptor name="ephNode" last-modified-property="lastModifiedDate" cache-mode="simple" display-property="displayName">
+	<attribute name="updateLastModified" value="true"/>
+  	<table name="BBB_EPH_NODE" type="primary" id-column-name="eph_node_id">
+  	<property name="ephNodeId" column-name="eph_node_id"  data-type="string" required="true" display-name="Eph Node Id">
+    	</property>
+  	<property name="displayName" column-name="display_name"  data-type="string" display-name="Display Name">
+    	</property>
+    	<property name="isRootNode" column-name="is_root_node"  data-type="boolean" display-name="Is Root Node">
+    	</property> 
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation Date">
+  	</property>
+  	<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>	
+    </table>
+    	
+    <table name="BBB_EPH_NODE_PARENT" type="multi" id-column-name="parent_node_id">
+    	<property name="childNodes" column-name="child_node_id" data-type="set" component-item-type="ephNode" display-name="Child Nodes">
+    	</property>		   
+    </table>
+    <table name="BBB_EPH_NODE_PARENT" type="multi" id-column-name="child_node_id">
+    	<property name="parentNode" column-name="parent_node_id" data-type="set" component-item-type="ephNode" display-name="Child Nodes">
+    	</property>		   
+    </table>
+    <table name="BBB_PRODUCT_EPH" type="multi" id-column-name="EPH_PROD_NODE_ID">
+    	<property name="ephProds" column-name="product_id" data-type="set" component-item-type="ephProd" display-name="EPH Products">
+    	</property>		   
+    </table>
+    <table name="BBB_SKU_EPH" type="multi" id-column-name="EPH_PROD_NODE_ID">
+    	<property name="ephSkus" column-name="sku_id" data-type="set" component-item-type="ephSku" display-name="EPH Skus">
+    	</property>		   
+    </table>
+  </item-descriptor>
+  
+  
+    <item-descriptor name="ephProd" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+      
+  	<table name="BBB_PRODUCT_EPH" type="primary" id-column-name="product_id">
+  	    <property name="ephProdId" column-name="product_id"  data-type="string" required="true" display-name="Eph Prod Id">
+    	</property>
+    	<property name="ephNodeId" column-name="EPH_PROD_NODE_ID"  data-type="string" required="true" display-name="Eph Node Id">
+    	</property>
+    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>		   
+    </table>
+    </item-descriptor>
+    
+   <item-descriptor name="ephSku" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+   	<table name="BBB_SKU_EPH" type="primary" id-column-name="sku_id">
+   		<property name="ephSkuId" column-name="sku_id"  data-type="string" required="true" display-name="Eph Sku Id">
+    	</property>
+    	<property name="ephNodeId" column-name="EPH_PROD_NODE_ID"  data-type="string" required="true" display-name="Eph Node Id">
+    	</property>
+    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>		   
+    </table>
+    </item-descriptor>
+  
+  
+  
+   <item-descriptor name="jdaFacet" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+  	<table name="BBB_LIST_JDA_FACETS" type="primary" id-column-names="jda_dept_id,jda_sub_dept_id,facet_id,facet_value_id">
+  	<property name="jdaFacetId" column-name="facet_id"  item-type="skuFacetType"
+             repository="/com/bbb/ipad/SkuFacetRepository"  required="true" display-name="JDA facet Id">
+    	</property>
+  	<property name="jdaDeptId" column-name="jda_dept_id"  data-type="string"  required="true" display-name="JDA Dept Id">
+    	</property>
+  	<property name="jdaSubDeptId" column-name="jda_sub_dept_id"  data-type="string" display-name="Sub Dept Id">
+    	</property>
+    	<property name="jdaClass" column-name="jda_class"  data-type="string" display-name="JDA Class">
+    	</property> 
+    	<property name="facetValueId" column-name="facet_value_id"  data-type="string" display-name="Facet Value Id">
+    	</property>
+    	<property name="facetValueDescription" column-name="facet_value_desc"  data-type="string" display-name="Facet Value Description">
+    	</property> 
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation date">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>	
+    </table> 
+  </item-descriptor>
+  
+  <item-descriptor name="ephFacet" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+  	<table name="BBB_LIST_EPH_FACETS" type="primary" id-column-names="eph_id,facet_id,facet_value_id">
+  	<property name="ephFacetId" column-name="facet_id"  item-type="skuFacetType"
+             repository="/com/bbb/ipad/SkuFacetRepository" required="true" display-name="Eph Facet Id">
+    	</property>
+  	<property name="ephId" column-name="eph_id"  data-type="string" required="true" display-name="Eph Id">
+    	</property>
+    	<property name="facetValueId" column-name="facet_value_id"  data-type="string" display-name="Facet Value Id">
+    	</property> 
+    	<property name="facetValueDescription" column-name="facet_value_desc"  data-type="string" display-name="Facet Value Description">
+    	</property> 
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation date">
+  	</property>
+  	<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>	
+    </table> 
+  </item-descriptor>
+  	
+  	
+  <item-descriptor name="facetValuePairs" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+	<table name="BBB_FACET_VALUE_PAIRS" type="primary" id-column-names="facet_id,facet_value_id">
+	<property name="facetId" column-name="facet_id"  item-type="skuFacetType"
+             repository="/com/bbb/ipad/SkuFacetRepository" required="true" display-name="Facet Id">
+    	</property>
+    	<property name="facetValueId" column-name="facet_value_id"  data-type="string" display-name="Facet Value Id">
+    	</property>
+    	<property name="facetValueDescription" column-name="facet_value_desc"  data-type="string" display-name="description">
+    	</property>
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation date">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>	
+    </table> 
+  </item-descriptor>
+  
+  <item-descriptor name="facetTypes" last-modified-property="lastModifiedDate" cache-mode="simple">
+	<attribute name="updateLastModified" value="true"/>
+  	<table name="BBB_FACET_TYPES" type="primary" id-column-name="facet_id">
+  		<property name="facetTypeId" column-name="facet_id"  data-type="string" required="true" display-name="Facet Type Id">
+    	</property> 
+    	<property name="description" column-name="description"  data-type="string" display-name="Description">
+    	</property>  		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>	
+    </table> 
+  </item-descriptor>
+  
+  <item-descriptor name="rule" last-modified-property="lastModifiedDate" cache-mode="simple" display-property="facetRuleName" sub-type-property="type">
+	<attribute name="updateLastModified" value="true"/>
+	  
+  	<table name="BBB_LIST_RULES" type="primary" id-column-name="rule_id">
+  		<property name="type" column-name="RULE_TYPE_CD" data-type="enumerated">
+  			<option value="jdaRule" code='2'/>
+  			<option value="ephRule" code='1'/>
+  			<option value="facetRule" code='3'/>
+  		</property>
+  		<property name="ruleId" column-name="rule_id"  data-type="string" required="true" display-name="Rule Id">
+    	</property>
+  		<property name="facetRuleName" column-name="facet_rule_name"  data-type="string" display-name="Facet Rule Name">
+    	</property>
+    	<property name="faceValueList" column-name="facet_value_pair_list"  data-type="string" display-name="Face Value List">
+    	</property> 
+        <property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Creation Date">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>			   
+    </table> 
+  </item-descriptor>
+  
+  <!-- JDA rule item type is a sub type of a rule -->
+  
+  <item-descriptor name="jdaRule" sub-type-value="jdaRule" super-type="rule">
+  	<table name="BBB_LIST_RULES_JDA" type="auxiliary" id-column-name="rule_id">
+  		<property name="jdaRuleId" column-name="rule_id" data-type="string" required="true" display-name="JDA Rule Id">
+    	</property>
+    	<property name="jdaDeptId" column-name="jda_dept_id" data-type="string" display-name="JDA Department">
+    	</property>
+    	<property name="jdaSubDeptId" column-name="jda_sub_dept_id"  data-type="string" display-name="JDA Sub Department">
+    	</property>
+        <property name="jdaClass" column-name="jda_class"  data-type="string" display-name="JDA Class">
+        </property> 
+	 </table>
+  	
+  </item-descriptor>
+  
+  <!-- EPH rule item type is a sub type of a rule -->
+  <item-descriptor name="ephRule" sub-type-value="ephRule" super-type="rule">
+  	<table name="BBB_LIST_RULES_EPH" type="auxiliary" id-column-name="rule_id">
+  		<property name="ephRuleId" column-name="rule_id" data-type="string" required="true" display-name="EPH Rule Id">
+    	</property> 
+    	<property name="ephId" column-name="eph_node_id" data-type="string" display-name="EPH Id">
+    	</property> 
+	 </table>
+  </item-descriptor>
+  
+  <!-- facet rule item type is a sub type of a rule -->
+  <item-descriptor name="facetRule" sub-type-value="facetRule" super-type="rule">
+  </item-descriptor>
+  
+  <item-descriptor name="skuRule" last-modified-property="lastModifiedDate" cache-mode="simple">
+ 	<attribute name="updateLastModified" value="true"/>
+   	<table name="BBB_LIST_RULES_SKU" type="primary" id-column-name="rule_id">
+   	  	<property name="skuRuleId" column-name="rule_id"  data-type="string" required="true" display-name="Sku Rule Id">
+    	</property>
+  		<property name="skuId" column-name="sku_id"  data-type="string" display-name="Sku Id">
+    	</property>
+        <property name="ruleEvaluation" column-name="rule_evaluation_cd" data-type="string" required="true" display-name="Rule Evaluation Code">
+  		</property>		   
+    	<property name="createdUser" column-name="create_user"  data-type="string" required="true" display-name="User Created">
+        </property> 
+        <property name="creationDate" column-name="create_date" data-type="timestamp" display-name="Date Creation">
+  		</property>
+  		<property name="lastModifiedUser" column-name="last_mod_user" data-type="string" required="true" display-name="Last Modified User">
+    	</property> 		   
+    	<property name="lastModifiedDate" column-name="last_mod_date" data-type="timestamp" display-name="Last Modified Date">
+    	</property>		   
+    </table> 
+  </item-descriptor>
+  
+  <query-items item-descriptor="jdaFacet" quiet="true">ALL</query-items>
+  <query-items item-descriptor="ephFacet" quiet="true">ALL</query-items>
+  <query-items item-descriptor="facetValuePairs" quiet="true">ALL</query-items>
+  <query-items item-descriptor="ephNode" quiet="true">ALL</query-items>
+  <query-items item-descriptor="listType" quiet="true">ALL</query-items>
+  <query-items item-descriptor="listCategory" quiet="true">ALL</query-items>
+  
+  
+  
+  
+  </gsa-template>

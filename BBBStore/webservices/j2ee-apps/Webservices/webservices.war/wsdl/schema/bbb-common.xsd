@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://bedbathandbeyond.com/atg" targetNamespace="http://bedbathandbeyond.com/atg" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:annotation>
+        <xs:documentation>Version-20150616</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="Currency">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="USD"/>
+			<xs:enumeration value="CAD"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Site">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BedBathUS"/>
+			<xs:enumeration value="BedBathCanada"/>
+			<xs:enumeration value="BuyBuyBaby"/>
+			<xs:enumeration value="TBS_BedBathUS"/>
+			<xs:enumeration value="TBS_BedBathCanada"/>
+			<xs:enumeration value="TBS_BuyBuyBaby"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ShippingMethod">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="STANDARD"/>
+			<xs:enumeration value="EXPRESS"/>
+			<xs:enumeration value="EXPEDITED"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="MessageError">
+		<xs:sequence>
+			<xs:element name="code" type="xs:string" minOccurs="0"/>
+			<xs:element name="description" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Address">
+		<xs:sequence>
+			<xs:element name="firstNm" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>First Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="midNm" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Middle Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lastNm" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Last Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="addressLine1" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Address Line 1</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="addressLine2" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Address Line 2.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="company" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="city" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>City Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="state" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>State (APO/FPO)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="zipCode" type="PostalCode" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Postal Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="country" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Country</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dayPhone" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Day Phone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="evePhone" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Evening Phone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="email" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>email address</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="PostalCode">
+		<xs:annotation>
+			<xs:documentation>For US: 12345(-1234), For Canada: A1B 2C3</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{5}(-[0-9]{4})?)|([A-Y,a-y]{1}[0-9]{1}[A-Z,a-z]{1} [0-9]{1}[A-Z,a-z]{1}[0-9]{1})"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Price">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0.00"/>
+			<xs:fractionDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AdjustmentList">
+		<xs:sequence>
+			<xs:element name="adjustment" type="Adjustment" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Adjustment">
+		<xs:sequence>
+			<xs:choice>
+				<xs:sequence>
+					<xs:element name="atgPromotionId" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>ATG coupon/promotion Id of the promotion applied.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="couponCode" type="xs:string" minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Coupon code of the promotion applied.</xs:documentation>
+						</xs:annotation>
+					</xs:element>				
+				</xs:sequence>
+				<xs:element name="couponCode" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Coupon code of the promotion applied.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+			<xs:element name="discountAmount" type="xs:decimal">
+				<xs:annotation>
+					<xs:documentation>The discount due the promotion.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="promotionDescription" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Promotion description from ATG</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="promotionType" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>Promotion type from ATG</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

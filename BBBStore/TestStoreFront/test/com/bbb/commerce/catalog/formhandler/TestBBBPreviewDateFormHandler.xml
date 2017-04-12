@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!-- 
+
+  Copyright 2011, BBB  All Rights Reserved.
+
+  Reproduction or use of this file without express written
+  consent is prohibited.
+
+  FILE:  TestBBBPreviewDateFormHandler.xml
+
+  DESCRIPTION: ddtunit data file for TestBBBPreviewDateFormHandler.java test case
+
+  HISTORY:
+  Nov 03, 2011  Initial version
+
+
+ -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.catalog.formhandler.TestBBBPreviewDateFormHandler">
+      
+      <group id="testBBBPreviewDateFormHandler">
+        <test id="testBBBPreviewDateFormHandler">
+			<objs>
+				<obj id="bbbPreviewDateFormHandler" 
+					   type="com.bbb.commerce.catalog.formhandler.BBBPreviewDateFormHandler" 
+					   hint="call" method="resolveName" 
+					   calltype="com.bbb.commerce.catalog.formhandler.TestBBBPreviewDateFormHandler">
+					<item type="string">/com/bbb/commerce/catalog/formhandler/BBBPreviewDateFormHandler</item>
+				</obj>
+				<obj id="date" type="String">12/12/2013</obj>
+				<obj id="time" type="String">4:30</obj>
+			</objs>      
+			<asserts> 
+	        	<assert id="testValue" type="java.lang.Boolean" action="isEqual">false</assert>
+	        </asserts>  
+        </test>
+      </group>
+      
+     </cluster>
+</ddtunit>

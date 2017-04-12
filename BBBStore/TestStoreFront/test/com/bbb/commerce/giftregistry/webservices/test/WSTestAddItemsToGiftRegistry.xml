@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+    <cluster id="com.bbb.commerce.giftregistry.webservices.test.WSTestAddItemsToGiftRegistry">
+     <group id="testWSService">
+        <test id="testWSService_testws">
+			<objs>
+				<obj id="giftRegistryManager" type="com.bbb.commerce.giftregistry.formhandler.GiftRegistryFormHandler" hint="call" method="resolveName" calltype="com.bbb.commerce.giftregistry.webservices.test.WSTestAddItemsToGiftRegistry">
+					<item type="string">/com/bbb/commerce/giftregistry/formhandler/GiftRegistryFormHandler</item>
+				</obj>
+				<obj id="quantity" type="String">1</obj>
+                <obj id="skuId" type="String">100712</obj>
+                 <obj id="productId" type="String">1010166152</obj>
+                <obj id="registryId" type="String">153501693</obj>
+                 <obj id="siteFlag" type="String">2</obj>
+                 <obj id="siteId" type="string">BuyBuyBaby</obj>
+                 <obj id="username" type="string">skumar1@sapient.com</obj>
+                 <obj id="jsonObj" type="string">{"addItemResults":[{"skuId":"10166152","prodId":"1010166152","registryId":"153501693","qty":"1","price":"$20.00"}],"parentProdId":"124954","registryName":"Anniversary"}</obj>
+                
+			</objs>      
+        </test>
+      </group>
+    </cluster>
+</ddtunit>

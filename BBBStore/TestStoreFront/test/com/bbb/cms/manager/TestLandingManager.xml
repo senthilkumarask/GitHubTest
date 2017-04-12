@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.cms.manager.TestLandingManager">
+		<group id="testLandingService">
+			 
+			<test id="testLandingServicee_test2">
+				<objs>
+					<obj id="manager" type="com.bbb.cms.manager.LandingTemplateManager"
+						hint="call" method="resolveName" calltype="com.bbb.cms.manager.TestLandingManager">
+						<item type="string">/com/bbb/cms/manager/LandingTemplateManager</item>
+					</obj>
+					<obj id="pageName" type="string">CollegeLandingPage</obj>
+					<obj id="categoryId" type="string">cat50001</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+				</objs>
+				<asserts>
+					<assert id="pageTitle" type="java.lang.String" action="isNotNull"></assert>
+					 
+					<assert id="heroImagesSize" type="java.lang.Integer" action="isGT">0</assert>
+				</asserts>
+			</test>
+		</group>
+		
+	</cluster>
+</ddtunit>

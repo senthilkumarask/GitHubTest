@@ -1,0 +1,262 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: TestLblTextManager.xml 
+	DESCRIPTION: ddtunit data file for TestLblTextManager.java test case HISTORY: 
+	Oct 14, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.rest.cms.TestStaticContent">
+		<group id="testStaticContent">
+			 <test id="test1">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">EasyReturns</obj>
+				</objs>
+			</test>
+		
+			 <test id="test3">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">errorPage</obj>
+				</objs>
+			</test>
+			<!-- <test id="test4">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">4</obj>
+					<obj id="atg-rest-input" type="string">xml</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="arg1" type="string">errorPage</obj>
+				</objs>
+			</test> -->
+		</group>	
+		
+		<group id="testRegistryContent">
+			 <test id="test1">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">RegistryFeatures</obj>
+				</objs>
+			</test>
+			<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">RegistryFeaturesss</obj>
+				</objs>
+			</test>
+			
+	
+		</group>	
+		
+			<group id="getAllGuide">
+			 <test id="test1">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">0</obj>
+					<obj id="arg2" type="string">0</obj>
+				</objs>
+			</test>
+ 			<!-- <test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">4</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="arg1" type="string">1</obj>
+					<obj id="arg2" type="string">3</obj>
+				</objs>
+			</test> -->
+			 <test id="test3">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">1</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string"></obj>
+					<obj id="arg2" type="string"></obj>
+				</objs>
+			</test>
+ 		<!-- 	<test id="test4">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">4</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">xml</obj>
+					<obj id="arg1" type="string">1</obj>
+					<obj id="arg2" type="string">99</obj>
+				</objs>
+			</test> -->
+		</group>
+		
+			<group id="getGuide">
+	
+			
+				 <test id="test3">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">BG10008</obj>
+				</objs>
+			</test>
+			<test id="test4">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">BG100087</obj>
+				</objs>
+			</test>
+		</group>
+		
+			<group id="getConfigKeys">
+
+			
+			 <test id="test3">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ThirdPartyURLs</obj>
+					<obj id="arg2" type="string">js_BazaarVoice_ca</obj>
+				</objs>
+			</test>
+			<test id="test4">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ThirdPartyURLs</obj>
+					<obj id="arg2" type="string">js_BazaarVoice_ca</obj>
+				</objs>
+			</test> 
+		</group>
+		
+			<group id="getConfigType">
+		
+	<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ThirdPartyURLs</obj>
+				</objs>
+			</test> 
+		</group>
+		
+			<group id="getConfigTypeNullInput">
+		
+	<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">2</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+					<obj id="arg1" type="string">ThirdPartyURLs</obj>
+				</objs>
+			</test> 
+		</group>
+		<group id="getLabel">
+		
+	 		<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+						<obj id="arg1" type="java.lang.Integer">2</obj>
+					<obj id="arg2" type="string">txt_fb_extend_profile_with_pwd</obj>
+					<obj id="arg3" type="string">en_US</obj>
+				
+					
+				</objs>
+			</test>
+			<test id="test3">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+						<obj id="arg1" type="java.lang.Integer">2</obj>
+					<obj id="arg2" type="string"></obj>
+					<obj id="arg3" type="string">en_US</obj>
+				
+					
+				</objs>
+			</test>
+		</group>
+		
+		
+			<group id="getMultipleLabel">
+		
+	 		<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>
+						<obj id="arg1" type="string">2</obj>
+					<obj id="arg2" type="string">txt_fb_extend_profile_with_pwd</obj>
+					<obj id="arg3" type="string">en_US</obj>
+				
+					
+				</objs>
+			</test>
+			
+		</group>
+		
+		
+		<group id="getMultipleLabelException">
+		
+	 		<test id="test2">
+				<objs>
+					<obj id="host" type="string">bedbathandbeyondcr4qa.com</obj>
+					<obj id="port" type="int">7003</obj>
+					<obj id="atg-rest-depth" type="string">0</obj>
+					<obj id="atg-rest-input" type="string">json</obj>
+					<obj id="atg-rest-output" type="string">json</obj>					
+				</objs>
+			</test>		
+		</group>
+	</cluster>
+</ddtunit>
+ 

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'> 
+	
+	<xs:element name="Orders" type="OrderStatusType"/>
+
+	<xs:complexType name="OrderStatusType">
+		<xs:sequence>
+			<xs:element name="Order_Attributes" type="OrderAttributesType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the header level information of an order</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="OrderAttributesType">
+		<xs:sequence>			
+			<xs:element name="Order_Number" type="xs:string" minOccurs="1" maxOccurs="1"> 
+                <xs:annotation> 
+                        <xs:documentation>BBB Order Number</xs:documentation> 
+                </xs:annotation> 
+            </xs:element>			
+			<xs:element name="Order_State" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>State of an order</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="State_Description" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>State description to be displayed to user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Status_Change_Date" type="xs:dateTime">
+				<xs:annotation>
+					<xs:documentation>To be displayed to user.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reason" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>OPTIONAL, this is not displayed to user.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Shipping_Group" type="ShippingGroupType" minOccurs="1" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the fields for tracking per shipment</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ShippingGroupType">
+		<xs:sequence>
+			<xs:element name="Shipment_Group_Id" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Shipping Group Id to uniquely indentify a shipment in an order.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Shipment_State" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Status of the Shipping Group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="State_Description" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>State description to be displayed to user</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Shipment_Tracking" type="ShipmentTrackingType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>This structure defines the fields for tracking per shipment</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Order_Line_Item" type="OrderLineItemType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>TBS Next - This structure defines the fields for tracking per Item.</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+		</xs:sequence>
+	</xs:complexType>	
+	<xs:complexType name="OrderLineItemType">
+		<xs:sequence>			
+			<xs:element name="Item_Id" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Item ID to uniquely indentify an Item.</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="Item_Status" minOccurs="0" maxOccurs="1">
+			<xs:annotation>
+					<xs:documentation>TBS Next - Shipment status for this Line Item. </xs:documentation>
+				</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="IN_PROCESS"/>
+							<xs:enumeration value="SHIPPED"/>
+							<xs:enumeration value="PARTIALLY_SHIPPED"/>
+							<xs:enumeration value="CANCELLED"/>
+							<xs:enumeration value="OTHER"/>	
+						</xs:restriction>
+					</xs:simpleType>
+			</xs:element>			
+			<xs:element name="Item_Status_Description" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Shipment status description for this Line Item. </xs:documentation>
+				</xs:annotation>
+			</xs:element>	
+			<xs:element name="Total_Item_Quantity" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Total Line Item Quantity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="Tracking" type="ItemTrackingType" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>TBS Next - This structure holds the shipment trackings</xs:documentation>
+				</xs:annotation>
+			</xs:element>	
+		</xs:sequence>
+	</xs:complexType>		
+	<xs:complexType name="ItemTrackingType">
+		<xs:sequence>
+			<xs:element name="Tracking_Number" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next -Tracking Number for this shipment.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Carrier_Code" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Shipping Carrier Code for this shipment..</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="Shipment_Date" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Shipment date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Shipment_Quantity" type="xs:decimal" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>TBS Next - Quantity Shipped</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="ShipmentTrackingType">
+		<xs:sequence>
+			<xs:element name="Tracking_Number" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Shipping Group Id to uniquely indentify a shipment in an order.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Carrier_Code" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Shipping Carrier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="URL" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Carrier tracking url</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="actual_ship_date" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The shipment date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

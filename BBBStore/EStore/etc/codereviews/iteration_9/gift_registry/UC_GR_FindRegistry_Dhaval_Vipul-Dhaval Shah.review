@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_GR_FindRegistry_Dhaval_Vipul">
+  <ReviewIssue id="GVYKPZ7E">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 07:55:32:282 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 11:44:22:865 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval Shah</ReviewerId>
+    <AssignedTo>Vipul Agarwal</AssignedTo>
+    <File line="84">src/com/bbb/commerce/giftregistry/droplet/GiftRegistryFlyoutDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Convert numbers into constants</Summary>
+    <Description>Use contant names as NOT_LOGGED_IN, LOGGED_IN_WITH_SINGLE REG etc.</Description>
+    <Annotation></Annotation>
+    <Revision>The numbers have been converted to constants.</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVYKRKP4">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 07:56:46:792 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-10 :: 20:43:27:964 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval Shah</ReviewerId>
+    <AssignedTo>Vipul Agarwal</AssignedTo>
+    <File line="82">src/com/bbb/commerce/giftregistry/droplet/GiftRegistryFlyoutDroplet.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>We need a common method across the project for this</Summary>
+    <Description>It should be in a utility class which tells if user is logged in or not. This will help us encapsulate logic in future if we need to check more than just isTransient(). Check with Raj &amp; Praveen to get their opinion</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="GVYKUHP2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-09 :: 07:59:02:870 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-12-12 :: 11:44:11:089 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Dhaval Shah</ReviewerId>
+    <AssignedTo>Vipul Agarwal</AssignedTo>
+    <File line="41">src/com/bbb/commerce/giftregistry/droplet/GiftRegistryFlyoutDroplet.java</File>
+    <Type>item.type.label.codingStandards</Type>
+    <Severity>item.severity.label.normal</Severity>
+    <Summary>Move all these constants to a common class</Summary>
+    <Description>These need to be public so that we do not have to define them again in JSP and anywhere else where we refer to them</Description>
+    <Annotation></Annotation>
+    <Revision>The constants have been moved to a common class - BBBCoreConstants and BBBWebServiceConstants</Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

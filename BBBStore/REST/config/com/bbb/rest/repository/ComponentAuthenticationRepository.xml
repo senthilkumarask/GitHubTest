@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+  	
+     <item-descriptor name="clientInfo" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+     	 <table name="BBB_CLIENT_INFO" type="primary" id-column-names="client_id">
+	      	<property name="clientID" column-name="client_id" data-type="string" required="true" />
+	      	<property name="clientToken" column-name="client_token" data-type="string" required="true"/>
+	     </table>
+	     <table name="BBB_CLIENT_ROLE" id-column-name="id" multi-column-name="seq_number" type="multi">
+	      	<property name="role" column-name="role_id" data-type="list" component-item-type="rolePersona"/>
+	     </table>
+	     <!-- Setting isAuthenticated as transient property-->
+		<!--  <property name="isAuthenticated" data-type="boolean"/> -->
+     </item-descriptor>
+     
+     <item-descriptor name="rolePersona" cache-mode="simple" item-cache-size="100" query-cache-size="100">
+	   <table name="BBB_ROLE_PERSONA" type="primary" id-column-names="id">	   		
+		  	<property name="roleName" column-name="role_name" data-type="string" required="true"/>
+		  	<property name="persona" column-name="persona" data-type="string" required="true"/>
+		  	<property name="isSecurePersona" column-name="IS_SECURE_PERSONA" data-type="string" required="true"/>
+		  	<property name="applicableSiteId" column-name="APPLICABLE_SITE_ID" data-type="string" required="false"/>
+	   </table>
+  	</item-descriptor>
+     
+</gsa-template>

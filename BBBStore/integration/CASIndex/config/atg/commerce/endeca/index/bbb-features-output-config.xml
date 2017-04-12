@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE item PUBLIC "-//Art Technology Group, Inc.//DTD Repository Ouput Specifier 1.0//EN" "http://www.atg.com/dtds/search/indexing-dependency-schema.dtd">
+
+<item item-descriptor-name="skuFacetType" is-document="true">
+
+  <title property-name="id"/>
+  <properties>
+    <property name="id" output-name="P_Facet_Id" text-searchable="true" type="string"/>
+    <property name="description" is-dimension="true" output-name="Features" text-searchable="true" type="string"/>    
+  </properties>
+</item>

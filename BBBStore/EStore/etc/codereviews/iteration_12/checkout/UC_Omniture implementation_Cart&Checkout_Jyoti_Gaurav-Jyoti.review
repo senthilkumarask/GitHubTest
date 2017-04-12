@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="UC_Omniture implementation_Cart&amp;Checkout_Jyoti_Gaurav">
+  <ReviewIssue id="GZF22IK8">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-03-05 :: 10:44:36:536 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2012-03-05 :: 17:28:30:795 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Jyoti</ReviewerId>
+    <AssignedTo>Jyoti</AssignedTo>
+    <File line="352">src/com/bbb/commerce/order/droplet/BBBOrderOmnitureDroplet.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>iterate on shippingroups, and create product rows, handle store pickup and item level promotion check to be added for each item</Summary>
+    <Description>All comments are incorporated.</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

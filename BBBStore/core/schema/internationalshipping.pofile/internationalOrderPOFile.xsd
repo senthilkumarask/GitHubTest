@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  OrderFeed  + -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="OrderFeed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Order"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.OrderFeed"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.OrderFeed">
+    <xs:attribute name="version" default="1.0"/>
+  </xs:attributeGroup>
+  <!-- Order -->
+  <xs:element name="Order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="OrderId"/>
+        <xs:element ref="OrderDate"/>
+          <xs:element name="FraudState" type="xs:string" minOccurs="0"/>
+        <xs:element ref="DomesticBasket"/>
+        <xs:element minOccurs="0" ref="COPShippingMethod"/>
+        <xs:element ref="DomesticProfile"/>
+        <xs:element minOccurs="0" ref="TPLShippingMethod"/>
+        <xs:element minOccurs="0" ref="InternationalProfile"/>
+        <xs:element ref="CreditCard"/>
+        <xs:element minOccurs="0" ref="Marketing"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="E4XOrderId"/>
+        <xs:element minOccurs="0" ref="MerchantOrderId"/>
+        <xs:element minOccurs="0" ref="MerchantOrderRef"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="E4XOrderId" type="xs:string"/>
+  <xs:element name="MerchantOrderId" type="xs:string"/>
+  <xs:element name="MerchantOrderRef" type="xs:string"/>
+  <xs:element name="OrderDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CreateDate"/>
+        <xs:element minOccurs="0" ref="ExpiryDate"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateDate" type="xs:string"/>
+  <xs:element name="ExpiryDate" type="xs:string"/>
+  <!-- DomesticBasket -->
+  <xs:element name="DomesticBasket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="BasketDetails"/>
+        <xs:element ref="OrderDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- BasketDetails -->
+  <xs:element name="BasketDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="BasketItem"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BasketItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="BasketItemID"/>
+        <xs:element ref="MerchantSKU"/>
+        <xs:element minOccurs="0" ref="ProductName"/>
+        <xs:element minOccurs="0" ref="ProductURL"/>
+        <xs:element minOccurs="0" ref="ProductDescription"/>
+        <xs:element ref="ProductListPrice"/>
+        <xs:element minOccurs="0" ref="ProductDiscount"/>
+        <xs:element ref="ProductSalePrice"/>
+        <xs:element ref="ProductQuantity"/>
+        <xs:element minOccurs="0" ref="ProductExtraShipping"/>
+        <xs:element minOccurs="0" ref="ProductExtraHandling"/>
+        <xs:element minOccurs="0" ref="ProductVAT"/>
+        <xs:element minOccurs="0" ref="ProductParentCategoryID"/>
+        <xs:element minOccurs="0" ref="ProductParentCategoryName"/>
+        <xs:element minOccurs="0" ref="Custom"/>
+        <xs:element minOccurs="0" ref="CountryOfFulfillment"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BasketItemID" type="xs:string"/>
+  <xs:element name="MerchantSKU" type="xs:string"/>
+  <xs:element name="ProductName" type="xs:string"/>
+  <xs:element name="ProductURL" type="xs:string"/>
+  <xs:element name="ProductDescription" type="xs:string"/>
+  <xs:element name="ProductListPrice" type="xs:string"/>
+  <xs:element name="ProductDiscount" type="xs:string"/>
+  <xs:element name="ProductSalePrice" type="xs:string"/>
+  <xs:element name="ProductQuantity" type="xs:string"/>
+  <xs:element name="ProductExtraShipping" type="xs:string"/>
+  <xs:element name="ProductExtraHandling" type="xs:string"/>
+  <xs:element name="ProductVAT" type="xs:string"/>
+  <xs:element name="ProductParentCategoryID" type="xs:string"/>
+  <xs:element name="ProductParentCategoryName" type="xs:string"/>
+  <!-- OrderDetails -->
+  <xs:element name="OrderDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="TotalProductSaleValue"/>
+        <xs:element minOccurs="0" ref="TotalItemLevelDiscounts"/>
+        <xs:element minOccurs="0" ref="TotalOrderLevelDiscounts"/>
+        <xs:element ref="TotalDiscounts"/>
+        <xs:element minOccurs="0" ref="TotalProductVAT"/>
+        <xs:element minOccurs="0" ref="TotalServiceVAT"/>
+        <xs:element minOccurs="0" ref="TotalVAT"/>
+        <xs:element minOccurs="0" ref="Custom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TotalProductSaleValue" type="xs:string"/>
+  <xs:element name="TotalItemLevelDiscounts" type="xs:string"/>
+  <xs:element name="TotalOrderLevelDiscounts" type="xs:string"/>
+  <xs:element name="TotalDiscounts" type="xs:string"/>
+  <xs:element name="TotalProductVAT" type="xs:string"/>
+  <xs:element name="TotalServiceVAT" type="xs:string"/>
+  <xs:element name="TotalVAT" type="xs:string"/>
+  <xs:element name="Custom" type="xs:string"/>
+  <xs:element name="CountryOfFulfillment" type="xs:string"/>
+  <!-- COPShippingOptions -->
+  <xs:element name="COPShippingMethod" type="DeliveryServiceTypeRef"/>
+  <!-- !  TPLShippingMethod -->
+  <xs:element name="TPLShippingMethod" type="DeliveryServiceTypeRef"/>
+  <xs:complexType name="DeliveryServiceTypeRef">
+    <xs:sequence>
+      <xs:element ref="DeliveryServiceType"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeliveryServiceType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="DeliveryServiceName"/>
+        <xs:element ref="ShippingPrice"/>
+        <xs:element ref="HandlingPrice"/>
+        <xs:element ref="DeliveryPromiseMin"/>
+        <xs:element ref="DeliveryPromiseMax"/>
+        <xs:element ref="ExtraInsurancePrice"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.DeliveryServiceType"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.DeliveryServiceType">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Standard"/>
+          <xs:enumeration value="Express"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="DeliveryServiceName" type="xs:string"/>
+  <xs:element name="ShippingPrice" type="xs:string"/>
+  <xs:element name="HandlingPrice" type="xs:string"/>
+  <xs:element name="DeliveryPromiseMin" type="xs:string"/>
+  <xs:element name="DeliveryPromiseMax" type="xs:string"/>
+  <xs:element name="ExtraInsurancePrice" type="xs:string"/>
+  <!-- DomesticProfile -->
+  <xs:element name="DomesticProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- InternationalProfile -->
+  <xs:element name="InternationalProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Credit card -->
+  <xs:element name="CreditCard">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Type"/>
+        <xs:element ref="NameOnCard"/>
+        <xs:element ref="Number"/>
+        <xs:element ref="Expiry"/>
+        <xs:element ref="CVN"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Type" type="xs:string"/>
+  <xs:element name="NameOnCard" type="xs:string"/>
+  <xs:element name="Number" type="xs:string"/>
+  <xs:element name="CVN" type="xs:string"/>
+  <xs:element name="Expiry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Month"/>
+        <xs:element ref="Year"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Month" type="xs:string"/>
+  <xs:element name="Year" type="xs:string"/>
+  <!-- Marketing -->
+  <xs:element name="Marketing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Address -->
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="ProfileID"/>
+        <xs:element ref="FirstName"/>
+        <xs:element minOccurs="0" ref="MiddleInitials"/>
+        <xs:element ref="LastName"/>
+        <xs:element ref="AddressLine1"/>
+        <xs:element minOccurs="0" ref="AddressLine2"/>
+        <xs:element minOccurs="0" ref="AddressLine3"/>
+        <xs:element ref="City"/>
+        <xs:element ref="Region"/>
+        <xs:element ref="Country"/>
+        <xs:element ref="PostalCode"/>
+        <xs:element minOccurs="0" ref="Email"/>
+        <xs:element minOccurs="0" ref="PrimaryPhone"/>
+        <xs:element minOccurs="0" ref="SecondaryPhone"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.Address"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Address">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="Billing"/>
+          <xs:enumeration value="Shipping"/>
+          <xs:enumeration value="Marketing"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="ProfileID" type="xs:string"/>
+  <xs:element name="FirstName" type="xs:string"/>
+  <xs:element name="MiddleInitials" type="xs:string"/>
+  <xs:element name="LastName" type="xs:string"/>
+  <xs:element name="AddressLine1" type="xs:string"/>
+  <xs:element name="AddressLine2" type="xs:string"/>
+  <xs:element name="AddressLine3" type="xs:string"/>
+  <xs:element name="City" type="xs:string"/>
+  <xs:element name="Region" type="xs:string"/>
+  <xs:element name="Country" type="xs:string"/>
+  <xs:element name="PostalCode" type="xs:string"/>
+  <xs:element name="Email" type="xs:string"/>
+  <xs:element name="PrimaryPhone" type="xs:string"/>
+  <xs:element name="SecondaryPhone" type="xs:string"/>
+</xs:schema>

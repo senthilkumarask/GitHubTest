@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2011, BBB All Rights Reserved. Reproduction or use of this 
+	file without express written consent is prohibited. FILE: GetRegistryVODroplet.xml 
+	DESCRIPTION: ddtunit data file for GetRegistryVODroplet.java test case HISTORY: 
+	Nov 09, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.giftregistry.TestProfileExistCheckDroplet">
+		<group id="testService">
+			<test id="testService_test1">
+				<objs>
+					<obj id="profileExistCheckDroplet"
+						type="com.bbb.commerce.giftregistry.TestProfileExistCheckDroplet"
+						hint="call" method="resolveName"
+						calltype="com.bbb.commerce.giftregistry.TestProfileExistCheckDroplet">
+						<item type="string">/com/bbb/commerce/giftregistry/droplet/ProfileExistCheckDroplet</item>
+					</obj>
+					<obj id="emailId1" type="string">sachin@test.com</obj>
+					<obj id="emailId2" type="string">skumar2@sapient.com</obj>
+					<obj id="siteId" type="string">BuyBuyBaby</obj> 
+				</objs>
+				<asserts>
+					</asserts>
+			</test>
+		</group>
+	</cluster>
+</ddtunit>

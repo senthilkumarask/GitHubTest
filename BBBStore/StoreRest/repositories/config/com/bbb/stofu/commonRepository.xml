@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<gsa-template>
+
+  <header>
+    <name>Common Repository</name>
+    <author></author> 
+  </header>
+  
+    <!--///////////////////////////////-->
+  	<!--     Common repository       -->
+    <!--///////////////////////////////-->
+    
+<item-descriptor name="ImageBox" display-name-resource="ImageBox" display-property="imageName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_IMAGE_BOX" type="primary" id-column-name="image_id">
+		<property name="id" column-name="image_id" display-name-resource="image_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="imageUrl" column-name="image_url" display-name-resource="imageUrl" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="imageDescription" column-name="image_description" display-name-resource="imageDescription" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+	 	<property name="imageName" column-name="image_name" display-name-resource="imageName" data-type="string" category-resource="MasterInfo" required="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="imageLink" column-name="image_link" display-name-resource="imageLink" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="5"/>
+		</property>  
+  		
+	</table>
+	<property name="imageView" display-name="imageURLView" data-type="string" category-resource="ImageView">
+			<derivation method="firstNonNull">
+				<expression>imageUrl</expression>
+			</derivation>
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>       		
+		</property>
+	
+	
+</item-descriptor>
+
+
+<item-descriptor name="ImageCarousel" display-name-resource="ImageCarousel" display-property="carouselName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_CAROUSEL" type="primary" id-column-name="image_carousel_id">
+		<property name="id" column-name="image_carousel_id" display-name-resource="image_carousel_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="carouselName" column-name="carousel_Name" display-name-resource="carouselName" data-type="string" category-resource="MasterInfo" required="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="imageRotationInterval" column-name="image_Rotation_Interval" display-name-resource="imageRotationInterval" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+	 	<property name="flowDirection" column-name="flow_Direction" display-name-resource="flowDirection" data-type="enumerated" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+        		<attribute name="uiwritable" value="true"/>
+            	<attribute name="useCodeForValue" value="false"/>
+            	<option value="Horizontal" code="0"/>
+            	<option value="Vertical" code="1"/>
+				<option value="Diagonal" code="2"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="5"/>
+		</property>  
+		
+	</table>
+	
+	<table name="BBB_GS_CAROUSEL_IMAGE" type="multi" id-column-names="image_carousel_id" multi-column-name="sequence_num">
+  	 	<property name="Images" column-names="Image" display-name-resource="Images" data-type="list" component-item-type="ImageBox" category-resource="Images">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+  	 </table>
+  	 
+  	 <table name="BBB_GS_CAROUSEL_TEXT" type="multi" id-column-name="image_carousel_id" multi-column-name="text_key">
+			<property name="texts" column-name="text" display-name="texts" data-type="map" component-data-type="string" category-resource="Texts">
+				<attribute name="propertySortPriority" value="0" />
+			</property>
+	</table>
+	
+	
+</item-descriptor>
+
+<item-descriptor name="Style" display-name-resource="Style" display-property="styleName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_STYLE" type="primary" id-column-name="style_id">
+		<property name="id" column-name="style_id" display-name-resource="style_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="styleName" column-name="style_Name" display-name-resource="styleName" data-type="string" category-resource="MasterInfo" required="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="styleImage" column-name="style_Image" display-name-resource="styleImage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="styleSecImage" column-name="style_sec_image" display-name-resource="styleSecImage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		
+		<property name="displayOrder" column-name="style_display_order" display-name-resource="displayOrder" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property>
+		
+		<property name="searchFilter" column-name="search_filter" display-name-resource="searchFilter" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="5"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="6"/>
+		</property>  
+	</table>
+	 <table name="BBB_GS_STYLE_CH_THEME" type="multi" id-column-name="style_id">
+			<property name="channelTheme" column-name="channel_theme_id" display-name-resource="channelTheme" component-item-type="channelThemeInfo" data-type="set" category-resource="appTheme" repository="/com/bbb/channelTheme/ChannelThemeRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="0" />
+      		</property>
+     </table>
+	
+	<table name="BBB_GS_STYLE_IDEABOOK" type="multi" id-column-name="style_id" multi-column-name="sequence_num">
+		<property name="styleIdeaBook" column-name="style_idea_book"  display-name-resource="styleIdeaBook" component-item-type="IdeaBookStyleTemplate" data-type="list" category-resource="MasterInfo"
+				repository="/com/bbb/stofu/IdeaBookStyleRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+      	</property>
+    </table>
+    <table name="BBB_GS_STYLE_SITE_REL" type="multi" id-column-name="style_id">
+			<property name="sites" column-name="site_id"  display-name-resource="sites" component-item-type="siteConfiguration" data-type="set" category-resource="appSites" repository="/atg/multisite/SiteRepository">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="6" />
+      	</property>
+     </table>
+	
+	
+</item-descriptor>
+
+<item-descriptor name="CategoryPanel" display-name-resource="CategoryPanel" display-property="category" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_CATEGORY_PANEL" type="primary" id-column-name="cat_panel_id">
+		<property name="id" column-name="cat_panel_id" display-name-resource="cat_panel_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="category" column-name="category" display-name-resource="category" item-type="category" category-resource="MasterInfo" repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		
+		<property name="catPanelName" column-name="cat_panel_name" display-name-resource="catPanelName" data-type="string" category-resource="MasterInfo" required="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		
+		<property name="catImage" column-name="cat_Image" display-name-resource="catImage" data-type="string" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+		</property>  
+		
+	</table>
+	
+	<table name="BBB_GS_CATEGORY_PRIORITY" type="multi" id-column-names="cat_panel_id" multi-column-name="sequence_num">
+			<property name="categoriesList" column-names="category_list"  display-name-resource="priorityCategoryList" component-item-type="category" data-type="list" category-resource="MasterInfo" repository="/atg/commerce/catalog/ProductCatalog">
+				<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources" />
+				<attribute name="propertySortPriority" value="5" />
+      	</property>
+    </table>
+    
+</item-descriptor>
+
+<item-descriptor name="productHotSpot" display-name-resource="productHotSpot" display-property="xCordinate" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_IDEA_PRODUCT" type="primary" id-column-name="idea_product_id">
+		<property name="id" column-name="idea_product_id" display-name-resource="idea_product_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="skuId" column-name="sku_id" display-name-resource="skuId" item-type="sku"  repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>	
+		</property>
+		<property name="productId" column-name="product_id" display-name-resource="productId" item-type="product"  repository="/atg/commerce/catalog/ProductCatalog">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>	
+		</property>
+		<property name="xCordinate" column-name="x_cordinate" display-name-resource="xCordinate" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		
+		<property name="yCordinate" column-name="y_cordinate" display-name-resource="yCordinate" data-type="int" category-resource="MasterInfo">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.stofu.StofuTemplateResources"/>
+			<attribute name="propertySortPriority" value="7"/>
+		</property>  
+	</table>
+</item-descriptor>
+
+
+<item-descriptor name="tab" display-name-resource="tab" display-property="tabName" cache-mode="simple" item-cache-size="1000" query-cache-size="1000" last-modified-property="lastModifiedDate">
+	<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+	<attribute name="updateLastModified" value="true"/>
+	
+	<table name="BBB_GS_INTRO_TAB" type="primary" id-column-name="tab_id">
+		<property name="id" column-name="tab_id" display-name-resource="tab_id" writable="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="0"/>	
+		</property>
+		<property name="tabName" column-name="tab_name" display-name-resource="tabName" data-type="string" category-resource="IntroScreen">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="1"/>
+		</property>
+		<property name="tabHeader" column-name="tab_header" display-name-resource="tabHeader" data-type="string" category-resource="IntroScreen">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="2"/>
+		</property>
+		<property name="tabInstrText" column-name="tab_instr_text" display-name-resource="tabInstrText" data-type="big string" category-resource="IntroScreen">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+	 	<property name="tabButnText" column-name="tab_butn_text" display-name-resource="tabButnText" data-type="string" category-resource="IntroScreen">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="3"/>
+		</property>
+		<property name="lastModifiedDate" column-name="last_mod_date" display-name-resource="lastModifiedDate" data-type="timestamp" category-resource="MasterInfo" hidden="true">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+			<attribute name="propertySortPriority" value="4"/>
+		</property>  
+  		
+		<!-- <property name="tabBtnActnLink" column-name="tab_btn_actn_link" display-name-resource="tabBtnActnLink" data-type="string" category-resource="IntroScreen">
+			<attribute name="resourceBundle" value="com.bbb.ipad.IPadTemplateResources"/>
+        		<attribute name="propertySortPriority" value="4"/>
+		</property> -->
+	</table>
+	
+	
+</item-descriptor>
+
+</gsa-template>

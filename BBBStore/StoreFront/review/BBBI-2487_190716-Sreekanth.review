@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-2487_190716">
+  <ReviewIssue id="IQUAKDSZ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:50:26:915 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:51:54:412 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="258">j2ee-apps/BBBStore/store.war/search/search_grid.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Are we adding this param to Image href? Even though image href points to different search PLP, do not we consider that as new search and remove vendor URL param? Same rule apply for related searches too</Summary>
+    <Description>&lt;a href="${imageHREF}${vendorParam}" title="&lt;dsp:valueof param="element.imageAlt"/&gt;"&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQUAMQJ7">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:52:16:723 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:53:15:937 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="224">j2ee-apps/BBBStore/store.war/search/search_list.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Are we adding this param to Image href? Even though image href points to different search PLP, do not we consider that as new search and remove vendor URL param? Same rule apply for related searches too</Summary>
+    <Description>&lt;a href="${imageHREF}${vendorParam}" title="&lt;dsp:valueof param="element.imageAlt"/&gt;"&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQUAOBYN">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:53:31:151 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:54:00:351 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="14">j2ee-apps/BBBStore/store.war/_includes/header/searchFlyout.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Did not we add this in header.jsp? Do we need this here again?</Summary>
+    <Description>&lt;c:if test="${not empty vendorParam}"&gt;
+	  &lt;c:set var="vendorKey" value="${vendorKey}"/&gt;
+	  &lt;c:set var="vendorParam" value="${vendorParam}"/&gt;  
+	&lt;/c:if&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQUARXWT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:56:19:565 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-07-19 :: 22:56:57:938 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Manuj</AssignedTo>
+    <File line="29">j2ee-apps/BBBStore/store.war/search/search_grid.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Is this include to get session variable value? Cannot we include this in a common place instead of include it in three different pages?</Summary>
+    <Description>&lt;%@ include file="/_includes/modules/getVendorParam.jsp"%&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

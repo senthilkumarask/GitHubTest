@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1743">
+  <ReviewIssue id="IPSQE1DU">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 15:58:10:050 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-23 :: 15:58:41:841 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sunil</AssignedTo>
+    <File line="220">src/com/bbb/search/endeca/boosting/OPBSearchBoostingStrategy.java</File>
+    <Type>item.type.label.suggestion</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Can you log original user input as well?</Summary>
+    <Description>keyword</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.resolution.label.validNeedsfixing</Resolution>
+    <Status>item.status.label.resolved</Status>
+  </ReviewIssue>
+</Review>

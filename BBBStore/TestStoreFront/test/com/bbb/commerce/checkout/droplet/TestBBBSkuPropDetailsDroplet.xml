@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!-- 
+	Copyright 2012, BBB All Rights Reserved. 
+	Reproduction or use of this file without express written consent is prohibited. 
+	FILE: TestBBBSkuPropDetailsDroplet.xml 
+	DESCRIPTION: ddtunit data file for TestBBBSkuPropDetailsDroplet.java test 
+	case HISTORY: Sep 05, 2011 Initial version -->
+
+<ddtunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ddtunit.sourceforge.net/ddtunit.xsd">
+	<cluster id="com.bbb.commerce.checkout.droplet.TestBBBSkuPropDetailsDroplet">
+		<group id="testService">
+			<test id="testService_test">
+				<objs>
+					<obj id="BBBSkuPropDetailsDroplet" type="com.bbb.commerce.checkout.droplet.BBBSkuPropDetailsDroplet" hint="call" method="resolveName" calltype="com.bbb.commerce.checkout.droplet.TestBBBSkuPropDetailsDroplet">
+						<item type="string">/com/bbb/commerce/checkout/droplet/BBBSkuPropDetailsDroplet</item>
+					</obj>
+					<obj id="listPriceId" type="string">plist100005</obj>
+					<obj id="salePriceId" type="string">plist100004</obj>
+					<obj id="catalogId" type="string">masterCatalog</obj>
+					<obj id="catalogRefId" type="string">sku40041</obj>
+					<obj id="productId" type="string">prod10037</obj>
+					<obj id="orderType" type="string">default</obj>
+					<obj id="siteId" type="string">BedBathUS</obj>
+					<obj id="state" type="string">CA</obj>
+				</objs>
+			</test>
+		</group>
+
+
+	</cluster>
+</ddtunit>
+

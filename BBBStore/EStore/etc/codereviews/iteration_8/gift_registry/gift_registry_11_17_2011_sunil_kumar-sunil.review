@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="gift_registry_11_17_2011_sunil_kumar">
+  <ReviewIssue id="GV4MFKXM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 08:50:21:178 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2011-11-18 :: 08:51:40:943 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>sunil</ReviewerId>
+    <AssignedTo>sunil</AssignedTo>
+    <File></File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary></Summary>
+    <Description>code review for droplet	</Description>
+    <Annotation></Annotation>
+    <Revision>1</Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

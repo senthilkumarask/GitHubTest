@@ -1,0 +1,1046 @@
+<toolbar xml-combine="append">
+
+  <!-- Toolbar customizations for the BBB-defined items in Merchandising -->
+<operation-menu id="pricelistsBrowseOpMenu">
+      <toolbar-scope asset-area="pricelists" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item id="addToProject" />
+    </operation-menu>
+    
+     <operation-menu id="PersonalStoreBrowseOpMenu">
+      <toolbar-scope asset-area="personalStore" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="PersonalStoreFindOpMenu">
+      <toolbar-scope asset-area="personalStore" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="ChannelsBrowseOpMenu">
+      <toolbar-scope asset-area="channels" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+
+     <operation-menu id="kickStarterBrowseOpMenu">
+      <toolbar-scope asset-area="kickStarter" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+   <operation-menu id="kickStarterFindOpMenu">
+      <toolbar-scope asset-area="kickStarter" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="searchConfigBrowseOpMenu">
+      <toolbar-scope asset-area="searchConfigGroups" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+     <operation-menu id="searchConfigFindOpMenu">
+      <toolbar-scope asset-area="searchConfigGroups" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+       <operation-menu id="mobileClpTemplateOpMenu">
+      <toolbar-scope asset-area="mobileClpTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+   <operation-menu id="clpTemplateOpMenu">
+      <toolbar-scope asset-area="clpTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="mobileClpTemplateFindOpMenu">
+      <toolbar-scope asset-area="mobileClpTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="clpTemplateFindOpMenu">
+      <toolbar-scope asset-area="clpTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+         <operation-menu id="printAtHomeBrowseOpMenu">
+      <toolbar-scope asset-area="printAtHome" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+   <operation-menu id="printAtHomeFindOpMenu">
+      <toolbar-scope asset-area="printAtHome" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+  <operation-menu id="shippingMethodsBrowseOpMenu">
+      <toolbar-scope asset-area="shipping" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="shippingMethodsFindOpMenu">
+      <toolbar-scope asset-area="shipping" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+     <operation-menu id="holidayMessagingBrowseOpMenu">
+      <toolbar-scope asset-area="holidayMessaging" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+       <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="holidayMessagingFindOpMenu">
+      <toolbar-scope asset-area="holidayMessaging" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+       <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="regionsBrowseOpMenu">
+      <toolbar-scope asset-area="shipping" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+	</operation-menu>
+	<operation-menu id="regionsFindOpMenu">
+	      <toolbar-scope asset-area="shipping" pane-id="find"/>
+	      <operation-menu-item id="edit" />
+	      <operation-menu-item divider="true" />
+	      <operation-menu-item id="duplicate" />
+	      <operation-menu-item id="delete" />
+	      <operation-menu-item divider="true" />
+	      <operation-menu-item id="addToProject" />
+	      <operation-menu-item id="addToWorkbench" />
+	      <operation-menu-item id="export" />
+	</operation-menu>
+    <operation-menu id="stateFindOpMenu">
+      <toolbar-scope asset-area="state" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>  
+    <operation-menu id="deliverySurchargeFindOpMenu">
+      <toolbar-scope asset-area="deliverySurcharge" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>  
+      
+	<operation-menu id="cmsBrowseOpMenu">
+      <toolbar-scope asset-area="cms" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="cmsFindOpMenu">
+      <toolbar-scope asset-area="CMS" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="bridalTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="bridalTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="labelTemplateWebBrowseOpMenu">
+      <toolbar-scope asset-area="Web" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="labelTemplateMobileBrowseOpMenu">
+      <toolbar-scope asset-area="Mobile" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="labelTemplateFF1BrowseOpMenu">
+      <toolbar-scope asset-area="ff1Label" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="labelTemplateFF2BrowseOpMenu">
+      <toolbar-scope asset-area="ff2Label" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <!-- <operation-menu id="labelTemplateFindOpMenu">
+      <toolbar-scope asset-area="labelTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>  -->
+    
+       <operation-menu id="registryTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="registryTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+     <operation-menu id="guidesTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="guidesTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <!-- <operation-menu id="guidesTemplateFindOpMenu">
+      <toolbar-scope asset-area="guidesTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>  -->
+    
+     <operation-menu id="staticTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="staticTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+      <operation-menu id="webFooterLinksBrowseMenu">
+      <toolbar-scope asset-area="webFooterLinks" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+        <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+
+    <operation-menu id="manageCheckListItemsBrowseMenu">
+      <toolbar-scope asset-area="ManageCheckListLink" pane-id="browse"/>
+	  <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+        <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+	
+     <operation-menu id="personalizedShopTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="personalizedShopTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+        <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="WSstaticTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="mobStaticTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <!-- <operation-menu id="staticTemplateFindOpMenu">
+      <toolbar-scope asset-area="staticTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu>  -->
+    
+    
+    <operation-menu id="landingTemplateRootBrowseOpMenu">
+      <toolbar-scope asset-area="landingTemplateRoot" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+
+    
+     <!--<operation-menu id="landingTemplateRootFindOpMenu">
+      <toolbar-scope asset-area="landingTemplateRoot" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu> -->
+    
+    
+    <operation-menu id="MDHomeScreenTemplateBrowseOpMenu">
+      <toolbar-scope asset-area="MDHomeScreenTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+    
+    
+    <operation-menu id="MDHomeCarouselContentBrowseOpMenu">
+      <toolbar-scope asset-area="MDHomeCarouselContent" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+    
+    <operation-menu id="homePageWSRootBrowseOpMenu">
+      <toolbar-scope asset-area="WSHomePageTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="MobileWebTemplatesBrowseOpMenu">
+      <toolbar-scope asset-area="MobileWebTemplates" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="homePageWSRootFindOpMenu">
+      <toolbar-scope asset-area="WSHomePageTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="catLandingWSRootBrowseOpMenu">
+      <toolbar-scope asset-area="WSCategoryLandingTemplate" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="catLandingWSRootFindOpMenu">
+      <toolbar-scope asset-area="WSCategoryLandingTemplate" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="bccManagedCategoryOpBrowse">
+      <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="bccManagedCategoryOpMenu">
+      <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="bccManagedCountryOpBrowse">
+      <toolbar-scope asset-area="BBBInternationalBillingRepository" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="bccManagedCountryOpMenu">
+      <toolbar-scope asset-area="BBBInternationalBillingRepository" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+ 
+    <operation-menu id="homePageTemplateRootBrowseOpMenu">
+      <toolbar-scope asset-area="homePageTemplateRoot" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+      <operation-menu id="recommendationPageTemplateRootBrowseOpMenu">
+      <toolbar-scope asset-area="recommendationTemplateRoot" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="appointmentTypeTemplateRootBrowseOpMenu">
+      <toolbar-scope asset-area="appointmentTemplateRoot" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="recommenderPageTemplateRootBrowseOpMenu">
+      <toolbar-scope asset-area="recommenderTemplateRoot" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="pageTabsOrderingBrowseOpMenu">
+      <toolbar-scope asset-area="pageTabsOrdering" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+   <!--  <operation-menu id="homePageTemplateRootFindOpMenu">
+      <toolbar-scope asset-area="homePageTemplateRoot" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="export" />
+    </operation-menu> -->
+    <operation-menu id="navigationLinksWSBrowseOpMenu">
+      <toolbar-scope asset-area="navigationLinksWS" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="navigationLinksWSFindOpMenu">
+      <toolbar-scope asset-area="navigationLinksWS" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="configBrowseOpMenu">
+      <toolbar-scope asset-area="configKeys" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="configFindOpMenu">
+      <toolbar-scope asset-area="configKeys" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="configRepBrowseOpMenu">
+      <toolbar-scope asset-area="configRepository" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="configRepFindOpMenu">
+      <toolbar-scope asset-area="configRepository" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="schoolBrowseOpMenu">
+      <toolbar-scope asset-area="schoolsHome" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="schoolFindOpMenu">
+      <toolbar-scope asset-area="schoolsHome" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="tipsPersonalizationBrowseOpMenu">
+      <toolbar-scope asset-area="tipsPersonalization" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="tipsPersonalizationOpMenu">
+      <toolbar-scope asset-area="tipsPersonalization" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="emailRepositoryBrowseOpMenu">
+      <toolbar-scope asset-area="emailRepository" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="emailRepositoryOpMenu">
+      <toolbar-scope asset-area="emailRepository" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="regCatBrowseOpMenu">
+      <toolbar-scope asset-area="regCat" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="regCatOpMenu">
+      <toolbar-scope asset-area="regCat" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+         <operation-menu id="intlRestrictionBrowseOpMenu">
+      <toolbar-scope asset-area="internationalShippingRestrictions" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="intlRestrictionFindOpMenu">
+      <toolbar-scope asset-area="internationalShippingRestrictions" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicate" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+     <operation-menu id="restrictedJDADeptBrowseOpMenu">
+      <toolbar-scope asset-area="restrictedJdaDept" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+      
+      
+      
+    </operation-menu>
+    <operation-menu id="restrictedJDADeptFindOpMenu">
+      <toolbar-scope asset-area="restrictedJdaDept" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+     <operation-menu id="restrictedJDASubDeptBrowseOpMenu">
+      <toolbar-scope asset-area="restrictedJdaSubDept" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="restrictedJDASubDeptFindOpMenu">
+      <toolbar-scope asset-area="restrictedJdaSubDept" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    
+     <operation-menu id="restrictedJDAClassBrowseOpMenu">
+      <toolbar-scope asset-area="restrictedJdaclass" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="restrictedJDAClassFindOpMenu">
+      <toolbar-scope asset-area="restrictedJdaclass" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+     <operation-menu id="restrictedBrandsBrowseOpMenu">
+      <toolbar-scope asset-area="restrictedBBBBrands" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    <operation-menu id="restrictedBrandsFindOpMenu">
+      <toolbar-scope asset-area="restrictedBBBBrands" pane-id="find"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+     <operation-menu id="recommendedSkusBrowseOpMenu">
+      <toolbar-scope asset-area="recommendedSkus" pane-id="browse"/>
+      <operation-menu-item id="edit" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="duplicateToSameRoot" />
+      <operation-menu-item id="delete" />
+      <operation-menu-item divider="true" />
+      <operation-menu-item id="addToProject" />
+      <operation-menu-item id="addToWorkbench" />
+      <operation-menu-item id="export" />
+    </operation-menu>
+    
+    <operation-menu id="SearchBoostMappingBrowseOpMenu">
+     <toolbar-scope asset-area="SearchBoostData" pane-id="browse"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+    <operation-menu id="SearchBoostMappingFindOpMenu">
+     <toolbar-scope asset-area="SearchBoostData" pane-id="find"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+    <operation-menu id="CategoryDetailsBrowseOpMenu">
+     <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="browse"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+    
+     <operation-menu id="CategoryDetailsFindOpMenu">
+     <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="find"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+    
+    <operation-menu id="CategoryRecommendationsBrowseOpMenu">
+     <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="browse"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+    <operation-menu id="CategoryRecommendationsFindOpMenu">
+     <toolbar-scope asset-area="BBBManagedCatalogRepository" pane-id="find"/>
+     <operation-menu-item id="edit"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="duplicateToSameRoot"/>
+     <operation-menu-item id="delete"/>
+     <operation-menu-item divider="true"/>
+     <operation-menu-item id="addToProject"/>
+     <operation-menu-item id="addToWorkbench" />
+     <operation-menu-item id="export"/>
+    </operation-menu>
+         
+</toolbar>
+<!-- @version $Id: //hosting-blueprint/B2CBlueprint/version/10.0.2/EStore/Versioned/config/atg/remote/commerce/toolbar/MerchandisingToolbar.xml#1 $$Change: 633540 $-->

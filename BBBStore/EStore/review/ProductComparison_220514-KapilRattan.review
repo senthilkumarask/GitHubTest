@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="ProductComparison_220514">
+  <ReviewIssue id="HVHU08QQ">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 14:32:46:850 IST</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2014-05-22 :: 14:33:01:740 IST</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>KapilRattan</ReviewerId>
+    <AssignedTo>KapilRattan</AssignedTo>
+    <File line="12098">src/com/bbb/commerce/catalog/BBBCatalogToolsImpl.java</File>
+    <Type>item.label.unset</Type>
+    <Severity>item.label.unset</Severity>
+    <Summary>please review</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

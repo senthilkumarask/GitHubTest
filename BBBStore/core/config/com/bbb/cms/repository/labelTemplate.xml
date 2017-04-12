@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+        PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+        "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+<gsa-template>
+    <header>
+        <name>Label Template</name>
+        <author></author>
+    </header>
+  <!--///////////////////////////////-->
+  <!--          Label/TextArea       -->
+  <!--///////////////////////////////-->
+  
+    <item-descriptor name="labelTextArea" display-name-resource="itemDescriptorLabelTemplate" display-property="key" cache-mode="simple" item-cache-size="5000" query-cache-size="5000">
+    <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+      <table name="BBB_LBL_TXT" type="primary" id-column-name="LBL_TXT_ID" >
+       <property name="id" column-name="LBL_TXT_ID" display-name-resource="labelId" category-resource="BasicInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       </property>
+       <property name="key" column-name="KEY" data-type="string"  writable="true" display-name-resource="key" category-resource="BasicInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="2"/>
+       </property>
+       
+       <property name="language" column-name="LANGUAGE"  display-name-resource="language" data-type="enumerated" category-resource="BasicInfo">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="3"/>
+        <attribute name="uiwritable" value="true"/>
+        <attribute name="useCodeForValue" value="true"/>
+        <option value="English" code="001"/>
+       </property>
+       
+        <property name="templateType" column-name="TEMPLATE_TYPE"  display-name-resource="templateType" data-type="enumerated" category-resource="BasicInfo">
+          <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+          <attribute name="propertySortPriority" value="1"/>
+          <attribute name="uiwritable" value="true"/>
+          <attribute name="useCodeForValue" value="true"/>
+          <option value="Label" code="0"/>
+          <option value="TextArea" code="1"/>
+          <option value="ErrorMsg" code="2"/>
+          
+        </property>
+        
+        <property name="channel" column-name="CHANNEL" writable="true" display-name-resource="channel" item-type="channelInfo" repository="/com/bbb/channel/ChannelRepository" category-resource="BasicInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="4"/>
+       </property>
+        
+       <property name="labelValueDefault" column-name="LABEL_VALUE" display-name-resource="labelValueDefault" data-type="string" category-resource="BasicInfo">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="4"/>
+        </property>
+        
+       <property name="textAreaValueDefault" column-name="TEXTAREA_VALUE" display-name-resource="textAreaValueDefault" data-type="big string" category-resource="BasicInfo">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="5"/>
+       </property>
+      
+       <property name="errorMsgDefault" column-name="ERROR_MSG" display-name-resource="errorMsgDefault" data-type="string" category-resource="BasicInfo">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+        <attribute name="propertySortPriority" value="6"/>
+       </property>
+       
+     </table>
+      
+      <table name="BBB_LBL_TXT_SITE_TRANSLATIONS" type="multi" multi-column-name="site_id" id-column-names="LBL_TXT_ID">
+       <property name="translations" display-name-resource="translations" column-name="translation_id" data-type="map"
+                component-item-type="lblTxtTranslation" category-resource="translations">
+        <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>  
+        <attribute name="propertySortPriority" value="7"/>       
+       </property>
+      </table>  
+    </item-descriptor>
+    
+  <!--///////////////////////////////-->
+  <!--  Label/TextArea Translations  -->
+  <!--///////////////////////////////-->
+    <item-descriptor name="lblTxtTranslation" display-name-resource="itemDescriptorLabelTemplateTrans" display-property="id" item-cache-size="8000" query-cache-size="8000">
+		<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+     <table name="BBB_LBL_TXT_TRANSLATIONS" id-column-names="translation_id" type="primary">
+     
+     <property name="id" column-name="translation_id" display-name-resource="labelId" category-resource="TranslationInfo" writable="true">
+        		<attribute name="propertySortPriority" value="0" />
+             	<attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources" />
+       </property>
+       <property name="labelValue" column-name="LABEL_VALUE" display-name-resource="labelValue" data-type="string" category-resource="TranslationInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="1"/>   
+       </property>
+       <property name="textAreaValue" column-name="TEXTAREA_VALUE" display-name-resource="textAreaValue" data-type="big string" category-resource="TranslationInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="2"/>   
+       </property>
+       <property name="errorMsg" column-name="ERROR_MSG" display-name-resource="errorMsg" data-type="string" category-resource="TranslationInfo">
+         <attribute name="resourceBundle" value="com.bbb.cms.CmsTemplateResources"/>
+         <attribute name="propertySortPriority" value="3"/>   
+       </property>
+       
+     </table>
+    </item-descriptor>
+<!-- Will be loaded from /com/bbb/repository/uitl/BBBCacheLoadingService component    
+	 <query-items item-descriptor="labelTextArea" quiet="true">ALL</query-items>
+    <query-items item-descriptor="lblTxtTranslation" quiet="true">ALL</query-items>
+ -->    
+</gsa-template>  
+
+
+
+
+
+
+
+
+
+
+
+  

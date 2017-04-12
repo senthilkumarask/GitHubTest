@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI:3815_3007">
+  <ReviewIssue id="IRE7ZBNT">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 21:33:28:649 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-08-02 :: 21:34:11:864 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth</ReviewerId>
+    <AssignedTo>Sreekanth</AssignedTo>
+    <File line="30">j2ee-apps/BBBStore/store.war/_includes/mPulse.jsp</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Any reason for commenting vendor portion of the code? It is important to have that variable set with vendor names too</Summary>
+    <Description>&lt;%-- &lt;c:when test="${sessionScope.VendorParam ne null}"&gt;
+ 		&lt;c:set var="vendorName" value="${sessionScope.VendorParam}_SearchVendor_Sitespect"/&gt;
+ 		&lt;c:set var="mPulseTaggingVariable"&gt;&lt;bbbc:config key="${vendorName}" configName="VendorKeys" /&gt;&lt;/c:set&gt;
+ 	&lt;/c:when&gt; --%&gt;</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>

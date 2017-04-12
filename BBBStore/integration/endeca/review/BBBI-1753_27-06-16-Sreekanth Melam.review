@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Review id="BBBI-1753_27-06-16">
+  <ReviewIssue id="IQ1F0O2V">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:49:46:087 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:50:11:343 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1466">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>How did we test this piece and when will we integrate this with real method?</Summary>
+    <Description></Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1F3FUM">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:51:55:390 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:52:46:985 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1488">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What's the purpose of this check? Are we making sure that there are SWS applied? Does not the method List&lt;String&gt; colorSWS=getSWScolors(); takes care the same?</Summary>
+    <Description>if(userInput != null){</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1F4N6Q">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:52:51:554 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:53:54:942 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1493">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>What's the input to this method? Do we supply userInput list to this method and that returns the colors from the input? How the logic in this method is different from getKeywordSearchColors()?</Summary>
+    <Description>List&lt;String&gt; colorSWS=getSWScolors();</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1F82TG">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:55:31:780 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:57:07:616 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1512">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Are we iterating through descriptors until we get COLORGROUP because it's a list?</Summary>
+    <Description>for(CurrentDescriptorVO pVo : searchResults.getDescriptors()){</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1FB7F2">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:57:57:710 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 17:58:18:135 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="1531">src/com/bbb/search/endeca/EndecaSearchUtil.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.major</Severity>
+    <Summary>Can we check once if we can optimize the if else blocks?</Summary>
+    <Description>if(colorCountPrimary == 1 &amp;&amp; colorCountSWS == 0 &amp;&amp; colorCountFacet == 0){
+		vlogDebug("EndecaSearchUtil.updateSwatchImageUrls: primary Search color applied - " + colorStringInKeyword);
+		applyMatchingColor(colorStringInKeyword, searchResults);
+	}
+	/*
+	 * when 1 color is being searched in both primary search and SWS and color facet is null, 
+	 * apply Sku image having the color in SWS into product image for Multi-SKU products
+	 */
+	else if(colorCountPrimary == 1 &amp;&amp; colorCountSWS == 1 &amp;&amp; colorCountFacet == 0){
+		vlogDebug("EndecaSearchUtil.updateSwatchImageUrls: SWS color applied - " + colorStringSWS);
+		applyMatchingColor(colorStringSWS, searchResults);
+	}
+	/*
+	 * when 1 color is being searched in both primary search and color Facet and SWS is null, 
+	 * apply Sku image having the color in color Facet into product image for Multi-SKU products
+	 */
+	else if(colorCountPrimary == 1 &amp;&amp; colorCountFacet == 1 &amp;&amp; colorCountSWS == 0){
+		vlogDebug("EndecaSearchUtil.updateSwatchImageUrls: Facet color applied - " + colorStringFacet);
+		applyMatchingColor(colorStringFacet, searchResults);
+	}
+	/*
+	 * when primary search and SWS are null and 1 colors facet is applied, 
+	 * apply Sku image having the color in color Facet into product image for Multi-SKU products
+	 */
+	else if(colorCountPrimary == 0 &amp;&amp; colorCountSWS == 0 &amp;&amp; colorCountFacet ==1){
+		vlogDebug("EndecaSearchUtil.updateSwatchImageUrls: Facet color applied - " + colorStringFacet);
+		applyMatchingColor(colorStringFacet, searchResults);
+	}
+	/*
+	 * when primary search and colors facet are null and 1 color is being search with SWS, 
+	 * apply Sku image having the color in SWS into product image for Multi-SKU products
+	 */
+	else if(colorCountPrimary == 0 &amp;&amp; colorCountSWS == 1 &amp;&amp; colorCountFacet ==0){
+		vlogDebug("EndecaSearchUtil.updateSwatchImageUrls: SWS color applied - " + colorStringSWS);
+		applyMatchingColor(colorStringSWS, searchResults);
+	}</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1FE729">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 18:00:17:217 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 18:00:45:891 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="48">config/com/bbb/search/endeca/EndecaSearchUtil.properties</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Let's track this review comment until we integrate with real methods which identify color from user input</Summary>
+    <Description>#List of colors for keyword search and SWS- to be removed once we get the identify color method
+keywordSearchColors
+SWScolors</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+  <ReviewIssue id="IQ1FGG9Z">
+    <ReviewIssueMeta>
+      <CreationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 18:02:02:471 EDT</CreationDate>
+      <LastModificationDate format="yyyy-MM-dd :: HH:mm:ss:SSS z">2016-06-29 :: 18:02:36:675 EDT</LastModificationDate>
+    </ReviewIssueMeta>
+    <ReviewerId>Sreekanth Melam</ReviewerId>
+    <AssignedTo>Sreekanth Melam</AssignedTo>
+    <File line="156">src/com/bbb/search/endeca/EndecaContentResponseParser.java</File>
+    <Type>item.type.label.programLogic</Type>
+    <Severity>item.severity.label.critical</Severity>
+    <Summary>Is this the current method for COLORBLUE project which we are avoiding if color relevancy is ON?</Summary>
+    <Description>updateSwatchImageUrls(searchResults)</Description>
+    <Annotation></Annotation>
+    <Revision></Revision>
+    <Resolution>item.label.unset</Resolution>
+    <Status>item.status.label.open</Status>
+  </ReviewIssue>
+</Review>
